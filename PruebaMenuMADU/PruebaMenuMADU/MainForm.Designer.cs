@@ -86,7 +86,6 @@ namespace PruebaMenuMADU
             this.buttonFiltro.Name = "buttonFiltro";
             this.buttonFiltro.Size = new System.Drawing.Size(60, 35);
             this.buttonFiltro.TabIndex = 6;
-            this.buttonFiltro.Text = "Filtro";
             this.buttonFiltro.UseVisualStyleBackColor = true;
             // 
             // panelModificar
