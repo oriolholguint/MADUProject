@@ -70,7 +70,7 @@ namespace PruebaMenuMADU
             this.buttonPersonajes.Name = "buttonPersonajes";
             this.buttonPersonajes.Size = new System.Drawing.Size(175, 43);
             this.buttonPersonajes.TabIndex = 2;
-            this.buttonPersonajes.Text = "Personajes3";
+            this.buttonPersonajes.Text = "Personajes";
             this.buttonPersonajes.UseVisualStyleBackColor = true;
             this.buttonPersonajes.Click += new System.EventHandler(this.buttonPersonajes_Click);
             // 
