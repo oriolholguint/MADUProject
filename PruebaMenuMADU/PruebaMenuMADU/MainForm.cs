@@ -85,6 +85,12 @@ namespace PruebaMenuMADU
             panelModificar.Controls.Add(modificarPersonaje);
             modificarPersonaje.Show();
         }
-       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CrearPreguntasForm cp = new CrearPreguntasForm();
+
+            cp.ShowDialog();
+        }
     }
 }
