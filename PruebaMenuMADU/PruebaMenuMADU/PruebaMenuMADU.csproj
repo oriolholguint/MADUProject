@@ -94,6 +94,7 @@
     <Compile Include="ModificarPregunta.Designer.cs">
       <DependentUpon>ModificarPregunta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pregunta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearPreguntasForm.resx">
