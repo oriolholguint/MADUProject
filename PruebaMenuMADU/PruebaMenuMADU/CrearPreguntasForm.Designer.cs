@@ -35,33 +35,34 @@
             this.cbxTipoPreg = new System.Windows.Forms.ComboBox();
             this.gbImagen = new System.Windows.Forms.GroupBox();
             this.btnCargarImagen = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbImagenPregunta = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbAudio = new System.Windows.Forms.GroupBox();
-            this.cbxAudio = new System.Windows.Forms.CheckBox();
             this.btnCargarAudio = new System.Windows.Forms.Button();
+            this.cbxAudio = new System.Windows.Forms.CheckBox();
             this.btnAñadirPregunta = new System.Windows.Forms.Button();
             this.flpListaPreguntas = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtUrlOculta = new System.Windows.Forms.TextBox();
             this.gbImagen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 81);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 96);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // txtNombrePreg
             // 
             this.txtNombrePreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombrePreg.Location = new System.Drawing.Point(227, 115);
+            this.txtNombrePreg.Location = new System.Drawing.Point(227, 126);
             this.txtNombrePreg.Multiline = true;
             this.txtNombrePreg.Name = "txtNombrePreg";
             this.txtNombrePreg.Size = new System.Drawing.Size(1662, 103);
@@ -81,6 +82,7 @@
             this.cbxGeneroPreg.Name = "cbxGeneroPreg";
             this.cbxGeneroPreg.Size = new System.Drawing.Size(236, 37);
             this.cbxGeneroPreg.TabIndex = 4;
+            this.cbxGeneroPreg.SelectedIndexChanged += new System.EventHandler(this.cbxGeneroPreg_SelectedIndexChanged);
             // 
             // cbxEdad
             // 
@@ -112,11 +114,12 @@
             // 
             // gbImagen
             // 
+            this.gbImagen.Controls.Add(this.txtUrlOculta);
             this.gbImagen.Controls.Add(this.btnCargarImagen);
-            this.gbImagen.Controls.Add(this.pictureBox1);
+            this.gbImagen.Controls.Add(this.pbImagenPregunta);
             this.gbImagen.Location = new System.Drawing.Point(242, 327);
             this.gbImagen.Name = "gbImagen";
-            this.gbImagen.Size = new System.Drawing.Size(660, 358);
+            this.gbImagen.Size = new System.Drawing.Size(660, 380);
             this.gbImagen.TabIndex = 7;
             this.gbImagen.TabStop = false;
             this.gbImagen.Text = "Imagen";
@@ -124,20 +127,21 @@
             // btnCargarImagen
             // 
             this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.Location = new System.Drawing.Point(222, 287);
+            this.btnCargarImagen.Location = new System.Drawing.Point(225, 309);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(210, 49);
             this.btnCargarImagen.TabIndex = 1;
             this.btnCargarImagen.Text = "Cargar Imagen";
             this.btnCargarImagen.UseVisualStyleBackColor = true;
+            this.btnCargarImagen.Click += new System.EventHandler(this.btnCargarImagen_Click);
             // 
-            // pictureBox1
+            // pbImagenPregunta
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(648, 241);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbImagenPregunta.Location = new System.Drawing.Point(6, 21);
+            this.pbImagenPregunta.Name = "pbImagenPregunta";
+            this.pbImagenPregunta.Size = new System.Drawing.Size(648, 241);
+            this.pbImagenPregunta.TabIndex = 0;
+            this.pbImagenPregunta.TabStop = false;
             // 
             // label1
             // 
@@ -180,6 +184,16 @@
             this.gbAudio.TabStop = false;
             this.gbAudio.Text = "Audio";
             // 
+            // btnCargarAudio
+            // 
+            this.btnCargarAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarAudio.Location = new System.Drawing.Point(233, 287);
+            this.btnCargarAudio.Name = "btnCargarAudio";
+            this.btnCargarAudio.Size = new System.Drawing.Size(210, 49);
+            this.btnCargarAudio.TabIndex = 1;
+            this.btnCargarAudio.Text = "Cargar Audio";
+            this.btnCargarAudio.UseVisualStyleBackColor = true;
+            // 
             // cbxAudio
             // 
             this.cbxAudio.Appearance = System.Windows.Forms.Appearance.Button;
@@ -190,16 +204,6 @@
             this.cbxAudio.Text = "Play";
             this.cbxAudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbxAudio.UseVisualStyleBackColor = true;
-            // 
-            // btnCargarAudio
-            // 
-            this.btnCargarAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarAudio.Location = new System.Drawing.Point(233, 287);
-            this.btnCargarAudio.Name = "btnCargarAudio";
-            this.btnCargarAudio.Size = new System.Drawing.Size(210, 49);
-            this.btnCargarAudio.TabIndex = 1;
-            this.btnCargarAudio.Text = "Cargar Audio";
-            this.btnCargarAudio.UseVisualStyleBackColor = true;
             // 
             // btnAñadirPregunta
             // 
@@ -216,10 +220,17 @@
             this.flpListaPreguntas.AutoScroll = true;
             this.flpListaPreguntas.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.flpListaPreguntas.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flpListaPreguntas.Location = new System.Drawing.Point(0, 81);
+            this.flpListaPreguntas.Location = new System.Drawing.Point(0, 96);
             this.flpListaPreguntas.Name = "flpListaPreguntas";
-            this.flpListaPreguntas.Size = new System.Drawing.Size(206, 902);
+            this.flpListaPreguntas.Size = new System.Drawing.Size(206, 887);
             this.flpListaPreguntas.TabIndex = 13;
+            // 
+            // txtUrlOculta
+            // 
+            this.txtUrlOculta.Location = new System.Drawing.Point(38, 268);
+            this.txtUrlOculta.Name = "txtUrlOculta";
+            this.txtUrlOculta.Size = new System.Drawing.Size(584, 22);
+            this.txtUrlOculta.TabIndex = 2;
             // 
             // CrearPreguntasForm
             // 
@@ -242,7 +253,8 @@
             this.Text = "CrearPreguntasForm";
             this.Load += new System.EventHandler(this.CrearPreguntasForm_Load);
             this.gbImagen.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbImagen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).EndInit();
             this.gbAudio.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,7 +270,7 @@
         private System.Windows.Forms.ComboBox cbxTipoPreg;
         private System.Windows.Forms.GroupBox gbImagen;
         private System.Windows.Forms.Button btnCargarImagen;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbImagenPregunta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -267,5 +279,6 @@
         private System.Windows.Forms.CheckBox cbxAudio;
         private System.Windows.Forms.Button btnAñadirPregunta;
         private System.Windows.Forms.FlowLayoutPanel flpListaPreguntas;
+        private System.Windows.Forms.TextBox txtUrlOculta;
     }
 }

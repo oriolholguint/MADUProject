@@ -91,8 +91,33 @@ namespace PruebaMenuMADU
 
         }
 
+        private void cbxGeneroPreg_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCargarImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog getImage = new OpenFileDialog();
+            getImage.InitialDirectory = "C:\\";
+            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+
+            if (getImage.ShowDialog() == DialogResult.OK)
+            {
+                pbImagenPregunta.ImageLocation = getImage.FileName;
+                txtUrlOculta.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 
 
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ninguna imagen", "Sin seleccion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
 
+            //SaveFileDialog guardarImagen = new SaveFileDialog();
+            //guardarImagen.InitialDirectory = "";
+
+
+        }
     }
 }

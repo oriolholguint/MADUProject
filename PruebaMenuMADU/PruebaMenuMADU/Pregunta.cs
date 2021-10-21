@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace PruebaMenuMADU
 
         public Boolean MayorDeEdad { get; set; }
 
+        public BindingList<Respuesta> ListaRespuestas { get; set; }
 
 
         public Pregunta()
