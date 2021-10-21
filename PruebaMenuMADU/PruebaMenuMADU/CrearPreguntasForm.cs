@@ -25,6 +25,15 @@ namespace PruebaMenuMADU
 
         }
 
+        private void vaciarCampos() {
+
+            txtNombrePreg.Text = "";
+            cbxGeneroPreg.SelectedItem = null;
+            cbxTipoPreg.SelectedItem = null;
+            cbxEdad.SelectedItem = null;
+        
+        }
+
         private void btnAñadirPregunta_Click(object sender, EventArgs e)
         {
             Pregunta pregunta = new Pregunta();
@@ -48,12 +57,42 @@ namespace PruebaMenuMADU
             preguntas.Add(pregunta);
 
             Button btnSeleccionarPregunta = new Button();
+            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
             btnSeleccionarPregunta.Text = "Pregunta " + pregunta.id;
+            
             btnSeleccionarPregunta.Size = new Size(130,122);
 
             btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
             flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
+            btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta);
+            vaciarCampos();
 
         }
+       
+
+        private void btnSeleccionarPregunta_Click(object sender, EventArgs e, Pregunta preg)
+        {
+            
+
+            txtNombrePreg.Text = preg.NombrePregunta;
+            cbxGeneroPreg.SelectedItem = preg.Genero;
+            cbxTipoPreg.SelectedItem = preg.Tipo;
+
+            if (preg.MayorDeEdad)
+            {
+                cbxEdad.SelectedIndex = 1;
+            }
+            else
+            {
+                cbxEdad.SelectedIndex = 0;
+            }
+            
+
+
+        }
+
+
+
+
     }
 }
