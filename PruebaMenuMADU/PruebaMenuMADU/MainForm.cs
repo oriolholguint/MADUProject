@@ -85,6 +85,10 @@ namespace PruebaMenuMADU
             panelModificar.Controls.Add(modificarPersonaje);
             modificarPersonaje.Show();
         }
-       
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
