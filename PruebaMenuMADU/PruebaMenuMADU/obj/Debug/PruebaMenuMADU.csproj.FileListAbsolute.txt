@@ -14,20 +14,19 @@ E:\DAM2\M13 - Proyecto\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Da
 E:\DAM2\M13 - Proyecto\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPregunta.resources
 E:\DAM2\M13 - Proyecto\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarGenero.resources
 E:\DAM2\M13 - Proyecto\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPersonaje.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe.config
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.pdb
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csprojAssemblyReference.cache
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearPreguntasForm.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewGeneros.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPersonajes.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Menu.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarGenero.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPersonaje.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPregunta.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Properties.Resources.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.GenerateResource.cache
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CoreCompileInputs.cache
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.exe
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.pdb
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe.config
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.pdb
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.AssemblyReference.cache
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewGeneros.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPersonajes.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Menu.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarGenero.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPersonaje.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPregunta.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Properties.Resources.resources
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.GenerateResource.cache
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CoreCompileInputs.cache
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.exe
+C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.pdb
