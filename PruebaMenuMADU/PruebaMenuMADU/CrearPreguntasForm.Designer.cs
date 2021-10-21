@@ -45,9 +45,17 @@
             this.btnAñadirPregunta = new System.Windows.Forms.Button();
             this.flpListaPreguntas = new System.Windows.Forms.FlowLayoutPanel();
             this.txtUrlOculta = new System.Windows.Forms.TextBox();
+            this.gbRespuestas = new System.Windows.Forms.GroupBox();
+            this.tlp2Respuestas = new System.Windows.Forms.TableLayoutPanel();
+            this.txtResp1 = new System.Windows.Forms.TextBox();
+            this.txtResp2 = new System.Windows.Forms.TextBox();
+            this.rdbResp1 = new System.Windows.Forms.RadioButton();
+            this.rdbResp2 = new System.Windows.Forms.RadioButton();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
+            this.gbRespuestas.SuspendLayout();
+            this.tlp2Respuestas.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -102,24 +110,21 @@
             this.cbxTipoPreg.FormattingEnabled = true;
             this.cbxTipoPreg.Items.AddRange(new object[] {
             "De 2 respuestas",
-            "De 4 respuestas",
-            "Imagen de 2 respuestas",
-            "Imagen de 4 respuestas",
-            "Audio de 2 respuestas",
-            "Audio de 4 respuestas"});
+            "De 4 respuestas"});
             this.cbxTipoPreg.Location = new System.Drawing.Point(992, 254);
             this.cbxTipoPreg.Name = "cbxTipoPreg";
             this.cbxTipoPreg.Size = new System.Drawing.Size(295, 37);
             this.cbxTipoPreg.TabIndex = 6;
+            this.cbxTipoPreg.SelectedIndexChanged += new System.EventHandler(this.cbxTipoPreg_SelectedIndexChanged);
             // 
             // gbImagen
             // 
             this.gbImagen.Controls.Add(this.txtUrlOculta);
             this.gbImagen.Controls.Add(this.btnCargarImagen);
             this.gbImagen.Controls.Add(this.pbImagenPregunta);
-            this.gbImagen.Location = new System.Drawing.Point(242, 327);
+            this.gbImagen.Location = new System.Drawing.Point(240, 305);
             this.gbImagen.Name = "gbImagen";
-            this.gbImagen.Size = new System.Drawing.Size(660, 380);
+            this.gbImagen.Size = new System.Drawing.Size(660, 358);
             this.gbImagen.TabIndex = 7;
             this.gbImagen.TabStop = false;
             this.gbImagen.Text = "Imagen";
@@ -127,7 +132,7 @@
             // btnCargarImagen
             // 
             this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.Location = new System.Drawing.Point(225, 309);
+            this.btnCargarImagen.Location = new System.Drawing.Point(230, 296);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(210, 49);
             this.btnCargarImagen.TabIndex = 1;
@@ -177,7 +182,7 @@
             // 
             this.gbAudio.Controls.Add(this.btnCargarAudio);
             this.gbAudio.Controls.Add(this.cbxAudio);
-            this.gbAudio.Location = new System.Drawing.Point(1170, 327);
+            this.gbAudio.Location = new System.Drawing.Point(1169, 305);
             this.gbAudio.Name = "gbAudio";
             this.gbAudio.Size = new System.Drawing.Size(660, 358);
             this.gbAudio.TabIndex = 11;
@@ -207,7 +212,7 @@
             // 
             // btnAñadirPregunta
             // 
-            this.btnAñadirPregunta.Location = new System.Drawing.Point(820, 825);
+            this.btnAñadirPregunta.Location = new System.Drawing.Point(967, 431);
             this.btnAñadirPregunta.Name = "btnAñadirPregunta";
             this.btnAñadirPregunta.Size = new System.Drawing.Size(166, 34);
             this.btnAñadirPregunta.TabIndex = 12;
@@ -218,7 +223,7 @@
             // flpListaPreguntas
             // 
             this.flpListaPreguntas.AutoScroll = true;
-            this.flpListaPreguntas.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.flpListaPreguntas.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.flpListaPreguntas.Dock = System.Windows.Forms.DockStyle.Left;
             this.flpListaPreguntas.Location = new System.Drawing.Point(0, 96);
             this.flpListaPreguntas.Name = "flpListaPreguntas";
@@ -232,11 +237,84 @@
             this.txtUrlOculta.Size = new System.Drawing.Size(584, 22);
             this.txtUrlOculta.TabIndex = 2;
             // 
+            // gbRespuestas
+            // 
+            this.gbRespuestas.Controls.Add(this.tlp2Respuestas);
+            this.gbRespuestas.Location = new System.Drawing.Point(240, 669);
+            this.gbRespuestas.Name = "gbRespuestas";
+            this.gbRespuestas.Size = new System.Drawing.Size(1657, 302);
+            this.gbRespuestas.TabIndex = 14;
+            this.gbRespuestas.TabStop = false;
+            this.gbRespuestas.Text = "Respuestas";
+            // 
+            // tlp2Respuestas
+            // 
+            this.tlp2Respuestas.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tlp2Respuestas.ColumnCount = 4;
+            this.tlp2Respuestas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.26057F));
+            this.tlp2Respuestas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tlp2Respuestas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 706F));
+            this.tlp2Respuestas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tlp2Respuestas.Controls.Add(this.rdbResp2, 3, 0);
+            this.tlp2Respuestas.Controls.Add(this.txtResp2, 2, 0);
+            this.tlp2Respuestas.Controls.Add(this.txtResp1, 0, 0);
+            this.tlp2Respuestas.Controls.Add(this.rdbResp1, 1, 0);
+            this.tlp2Respuestas.Location = new System.Drawing.Point(6, 21);
+            this.tlp2Respuestas.Name = "tlp2Respuestas";
+            this.tlp2Respuestas.RowCount = 1;
+            this.tlp2Respuestas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp2Respuestas.Size = new System.Drawing.Size(1643, 85);
+            this.tlp2Respuestas.TabIndex = 1;
+            // 
+            // txtResp1
+            // 
+            this.txtResp1.BackColor = System.Drawing.Color.LightBlue;
+            this.txtResp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResp1.Location = new System.Drawing.Point(3, 3);
+            this.txtResp1.Name = "txtResp1";
+            this.txtResp1.Size = new System.Drawing.Size(738, 75);
+            this.txtResp1.TabIndex = 0;
+            // 
+            // txtResp2
+            // 
+            this.txtResp2.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtResp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResp2.Location = new System.Drawing.Point(845, 3);
+            this.txtResp2.Name = "txtResp2";
+            this.txtResp2.Size = new System.Drawing.Size(700, 75);
+            this.txtResp2.TabIndex = 1;
+            // 
+            // rdbResp1
+            // 
+            this.rdbResp1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbResp1.BackColor = System.Drawing.Color.LightBlue;
+            this.rdbResp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbResp1.Location = new System.Drawing.Point(747, 3);
+            this.rdbResp1.Name = "rdbResp1";
+            this.rdbResp1.Size = new System.Drawing.Size(92, 78);
+            this.rdbResp1.TabIndex = 2;
+            this.rdbResp1.TabStop = true;
+            this.rdbResp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rdbResp1.UseVisualStyleBackColor = false;
+            // 
+            // rdbResp2
+            // 
+            this.rdbResp2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbResp2.BackColor = System.Drawing.Color.SteelBlue;
+            this.rdbResp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbResp2.Location = new System.Drawing.Point(1551, 3);
+            this.rdbResp2.Name = "rdbResp2";
+            this.rdbResp2.Size = new System.Drawing.Size(89, 79);
+            this.rdbResp2.TabIndex = 3;
+            this.rdbResp2.TabStop = true;
+            this.rdbResp2.UseVisualStyleBackColor = false;
+            // 
             // CrearPreguntasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 983);
+            this.Controls.Add(this.gbRespuestas);
             this.Controls.Add(this.flpListaPreguntas);
             this.Controls.Add(this.btnAñadirPregunta);
             this.Controls.Add(this.gbAudio);
@@ -256,6 +334,9 @@
             this.gbImagen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).EndInit();
             this.gbAudio.ResumeLayout(false);
+            this.gbRespuestas.ResumeLayout(false);
+            this.tlp2Respuestas.ResumeLayout(false);
+            this.tlp2Respuestas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,5 +361,11 @@
         private System.Windows.Forms.Button btnAñadirPregunta;
         private System.Windows.Forms.FlowLayoutPanel flpListaPreguntas;
         private System.Windows.Forms.TextBox txtUrlOculta;
+        private System.Windows.Forms.GroupBox gbRespuestas;
+        private System.Windows.Forms.TableLayoutPanel tlp2Respuestas;
+        private System.Windows.Forms.TextBox txtResp1;
+        private System.Windows.Forms.TextBox txtResp2;
+        private System.Windows.Forms.RadioButton rdbResp1;
+        private System.Windows.Forms.RadioButton rdbResp2;
     }
 }

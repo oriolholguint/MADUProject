@@ -13,6 +13,7 @@ namespace PruebaMenuMADU
     public partial class CrearPreguntasForm : Form
     {
         BindingList<Pregunta> preguntas = new BindingList<Pregunta>();
+        BindingList<Respuesta> respuestas = new BindingList<Respuesta>();
 
 
         public CrearPreguntasForm()
@@ -118,6 +119,18 @@ namespace PruebaMenuMADU
             //guardarImagen.InitialDirectory = "";
 
 
+        }
+
+        private void cbxTipoPreg_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTipoPreg.SelectedIndex == 0)
+            {
+                tlp2Respuestas.Visible = true;
+            }
+            else
+            {
+                tlp2Respuestas.Visible = false;
+            }
         }
     }
 }

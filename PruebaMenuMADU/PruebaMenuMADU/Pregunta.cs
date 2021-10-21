@@ -29,7 +29,7 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad)
+        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad, BindingList<Respuesta> ListaRespuestas)
         {
             this.id = id;
             this.NombrePregunta = NombrePregunta;
@@ -37,6 +37,7 @@ namespace PruebaMenuMADU
             this.Tipo = Tipo;
             this.UrlImgAudio = UrlImgAudio;
             this.MayorDeEdad = MayorDeEdad;
+            this.ListaRespuestas = ListaRespuestas;
         }
 
 
