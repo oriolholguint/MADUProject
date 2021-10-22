@@ -53,7 +53,7 @@ namespace PruebaMenuMADU
             }
         }
 
-        private void labelRegistro_Click(object sender, EventArgs e)
+        private void labelRegistro_Click_1(object sender, EventArgs e)
         {
             RecuperarContrasenya a = new RecuperarContrasenya();
             a.ShowDialog();

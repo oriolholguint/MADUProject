@@ -76,6 +76,7 @@ namespace PruebaMenuMADU
             // 
             // buttonLogIn
             // 
+            this.buttonLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogIn.Location = new System.Drawing.Point(398, 533);
             this.buttonLogIn.Name = "buttonLogIn";
@@ -88,12 +89,14 @@ namespace PruebaMenuMADU
             // labelRegistro
             // 
             this.labelRegistro.AutoSize = true;
+            this.labelRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRegistro.Location = new System.Drawing.Point(458, 463);
             this.labelRegistro.Name = "labelRegistro";
             this.labelRegistro.Size = new System.Drawing.Size(99, 18);
             this.labelRegistro.TabIndex = 6;
             this.labelRegistro.Text = "Sing Up Here!";
+            this.labelRegistro.Click += new System.EventHandler(this.labelRegistro_Click_1);
             // 
             // textBoxPassword
             // 
