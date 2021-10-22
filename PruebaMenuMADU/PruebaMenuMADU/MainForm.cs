@@ -92,5 +92,10 @@ namespace PruebaMenuMADU
 
             cp.ShowDialog();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

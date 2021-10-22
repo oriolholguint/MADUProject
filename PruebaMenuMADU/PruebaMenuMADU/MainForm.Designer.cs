@@ -38,96 +38,91 @@ namespace PruebaMenuMADU
             this.panelDatos = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            //
+            // 
             // buttonPreguntas
-            //
+            // 
             this.buttonPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPreguntas.Location = new System.Drawing.Point(177, 34);
-            this.buttonPreguntas.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPreguntas.Location = new System.Drawing.Point(133, 28);
             this.buttonPreguntas.Name = "buttonPreguntas";
-            this.buttonPreguntas.Size = new System.Drawing.Size(153, 43);
+            this.buttonPreguntas.Size = new System.Drawing.Size(115, 35);
             this.buttonPreguntas.TabIndex = 0;
             this.buttonPreguntas.Text = "Preguntas";
             this.buttonPreguntas.UseVisualStyleBackColor = true;
             this.buttonPreguntas.Click += new System.EventHandler(this.buttonPreguntas_Click);
-            //
+            // 
             // buttonGeneros
-            //
+            // 
             this.buttonGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGeneros.Location = new System.Drawing.Point(16, 34);
-            this.buttonGeneros.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGeneros.Location = new System.Drawing.Point(12, 28);
             this.buttonGeneros.Name = "buttonGeneros";
-            this.buttonGeneros.Size = new System.Drawing.Size(153, 43);
+            this.buttonGeneros.Size = new System.Drawing.Size(115, 35);
             this.buttonGeneros.TabIndex = 1;
             this.buttonGeneros.Text = "Generos";
             this.buttonGeneros.UseVisualStyleBackColor = true;
             this.buttonGeneros.Click += new System.EventHandler(this.buttonGeneros_Click);
-            //
+            // 
             // buttonPersonajes
-            //
+            // 
             this.buttonPersonajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPersonajes.Location = new System.Drawing.Point(339, 34);
-            this.buttonPersonajes.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPersonajes.Location = new System.Drawing.Point(254, 28);
             this.buttonPersonajes.Name = "buttonPersonajes";
-            this.buttonPersonajes.Size = new System.Drawing.Size(175, 43);
+            this.buttonPersonajes.Size = new System.Drawing.Size(131, 35);
             this.buttonPersonajes.TabIndex = 2;
             this.buttonPersonajes.Text = "Personajes";
             this.buttonPersonajes.UseVisualStyleBackColor = true;
             this.buttonPersonajes.Click += new System.EventHandler(this.buttonPersonajes_Click);
-            //
+            // 
             // toolStrip1
-            //
+            // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1924, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1443, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
-            //
+            // 
             // buttonFiltro
-            //
+            // 
             this.buttonFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFiltro.Location = new System.Drawing.Point(1336, 34);
-            this.buttonFiltro.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonFiltro.Location = new System.Drawing.Point(1002, 28);
             this.buttonFiltro.Name = "buttonFiltro";
-            this.buttonFiltro.Size = new System.Drawing.Size(80, 43);
+            this.buttonFiltro.Size = new System.Drawing.Size(60, 35);
             this.buttonFiltro.TabIndex = 6;
             this.buttonFiltro.UseVisualStyleBackColor = true;
-            //
+            // 
             // panelModificar
-            //
+            // 
             this.panelModificar.BackColor = System.Drawing.Color.DarkGray;
-            this.panelModificar.Location = new System.Drawing.Point(1424, 85);
-            this.panelModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.panelModificar.Location = new System.Drawing.Point(1068, 69);
             this.panelModificar.Name = "panelModificar";
-            this.panelModificar.Size = new System.Drawing.Size(613, 886);
+            this.panelModificar.Size = new System.Drawing.Size(460, 720);
             this.panelModificar.TabIndex = 7;
-            //
+            // 
             // panelDatos
-            //
+            // 
             this.panelDatos.BackColor = System.Drawing.Color.DarkGray;
-            this.panelDatos.Location = new System.Drawing.Point(16, 85);
-            this.panelDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDatos.Location = new System.Drawing.Point(12, 69);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(1400, 886);
+            this.panelDatos.Size = new System.Drawing.Size(1050, 720);
             this.panelDatos.TabIndex = 11;
-            //
+            // 
             // button1
-            //
+            // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(593, 34);
+            this.button1.Location = new System.Drawing.Point(445, 28);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(259, 43);
+            this.button1.Size = new System.Drawing.Size(194, 35);
             this.button1.TabIndex = 12;
             this.button1.Text = "Crear Preguntas";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            //
+            // 
             // Menu
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 983);
+            this.ClientSize = new System.Drawing.Size(1443, 799);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelDatos);
             this.Controls.Add(this.panelModificar);
@@ -136,7 +131,6 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.buttonPersonajes);
             this.Controls.Add(this.buttonGeneros);
             this.Controls.Add(this.buttonPreguntas);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
