@@ -66,6 +66,7 @@ namespace PruebaMenuMADU
             // 
             // buttonEnviar
             // 
+            this.buttonEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEnviar.Location = new System.Drawing.Point(161, 468);
             this.buttonEnviar.Name = "buttonEnviar";
             this.buttonEnviar.Size = new System.Drawing.Size(217, 56);
