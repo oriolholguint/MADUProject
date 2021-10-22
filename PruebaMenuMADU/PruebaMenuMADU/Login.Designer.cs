@@ -91,11 +91,11 @@ namespace PruebaMenuMADU
             this.labelRegistro.AutoSize = true;
             this.labelRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRegistro.Location = new System.Drawing.Point(458, 463);
+            this.labelRegistro.Location = new System.Drawing.Point(430, 463);
             this.labelRegistro.Name = "labelRegistro";
-            this.labelRegistro.Size = new System.Drawing.Size(99, 18);
+            this.labelRegistro.Size = new System.Drawing.Size(162, 18);
             this.labelRegistro.TabIndex = 6;
-            this.labelRegistro.Text = "Sing Up Here!";
+            this.labelRegistro.Text = "Forgot your password?";
             this.labelRegistro.Click += new System.EventHandler(this.labelRegistro_Click_1);
             // 
             // textBoxPassword
