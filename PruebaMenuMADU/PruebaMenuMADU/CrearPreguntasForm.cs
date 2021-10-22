@@ -92,7 +92,9 @@ namespace PruebaMenuMADU
             Button btnSeleccionarPregunta = new Button();
             btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
             btnSeleccionarPregunta.Text = "Pregunta " + pregunta.id;
+            btnSeleccionarPregunta.BackColor = Color.LightCyan;
             
+
             btnSeleccionarPregunta.Size = new Size(130,122);
 
             btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
