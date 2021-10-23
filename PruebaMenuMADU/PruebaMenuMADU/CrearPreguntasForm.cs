@@ -37,6 +37,18 @@ namespace PruebaMenuMADU
             txtResp3.Text = "";
             txtResp4.Text = "";
 
+            rdbResp1.Text = "C";
+            rdbResp1.BackColor = Color.DarkGray;
+
+            rdbResp2.Text = "C";
+            rdbResp2.BackColor = Color.DarkGray;
+
+            rdbResp3.Text = "C";
+            rdbResp3.BackColor = Color.DarkGray;
+
+            rdbResp4.Text = "C";
+            rdbResp4.BackColor = Color.DarkGray;
+
 
         }
 
@@ -70,9 +82,16 @@ namespace PruebaMenuMADU
         private void btnAñadirPregunta_Click(object sender, EventArgs e)
         {
             Pregunta pregunta = new Pregunta();
-            BindingList<Respuesta> respuestas = new BindingList<Respuesta>();
 
-            pregunta.id = preguntas.Count() + 1;
+            //BindingList<Respuesta> respuestas = new BindingList<Respuesta>();
+            int i = 0;
+            foreach (var item in preguntas)
+            {
+                i++;
+            }
+
+
+            pregunta.id = i + 1;
             pregunta.NombrePregunta = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedItem;
             pregunta.Tipo = (String)cbxTipoPreg.SelectedItem;
@@ -87,41 +106,34 @@ namespace PruebaMenuMADU
                 pregunta.MayorDeEdad = false;
             }
 
-            preguntas.Add(pregunta);
+            pregunta.ListaRespuestas = new BindingList<Respuesta>();
 
-            Button btnSeleccionarPregunta = new Button();
-            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
-            btnSeleccionarPregunta.Text = "Pregunta " + pregunta.id;
-            btnSeleccionarPregunta.BackColor = Color.LightCyan;
-            
-
-            btnSeleccionarPregunta.Size = new Size(130,122);
-
-            btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
-            flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
-            btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, respuestas);
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                Respuesta respuesta1 = new Respuesta();
-                respuesta1.id = 1;
-                respuesta1.NombreRespuesta = txtResp1.Text;
-                Respuesta respuesta2 = new Respuesta();
-                respuesta2.id = 2;
-                respuesta2.NombreRespuesta = txtResp2.Text;
+               
+                Respuesta respuesta1;
+                Respuesta respuesta2;
+
                 if (rdbResp1.Checked)
-                {
-                    respuesta1.Correcta = true;
-                    respuesta2.Correcta = false;
+                {                   
+                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
+                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
+
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1.Correcta = false;
-                    respuesta2.Correcta = true;
+                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
+                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
                 }
 
-                respuestas.Add(respuesta1);
-                respuestas.Add(respuesta2);
+                
+
+               
             }
             else
             {
@@ -132,7 +144,6 @@ namespace PruebaMenuMADU
                 Respuesta respuesta2 = new Respuesta();
                 respuesta2.id = 2;
                 respuesta2.NombreRespuesta = txtResp2.Text;
-
                 Respuesta respuesta3 = new Respuesta();
                 respuesta3.id = 3;
                 respuesta3.NombreRespuesta = txtResp3.Text;
@@ -145,6 +156,10 @@ namespace PruebaMenuMADU
                     respuesta2.Correcta = false;
                     respuesta3.Correcta = false;
                     respuesta4.Correcta = false;
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
+                    pregunta.ListaRespuestas.Add(respuesta3);
+                    pregunta.ListaRespuestas.Add(respuesta4);
                 }
                 if (rdbResp2.Checked)
                 {
@@ -152,6 +167,10 @@ namespace PruebaMenuMADU
                     respuesta2.Correcta = true;
                     respuesta3.Correcta = false;
                     respuesta4.Correcta = false;
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
+                    pregunta.ListaRespuestas.Add(respuesta3);
+                    pregunta.ListaRespuestas.Add(respuesta4);
                 }
                 if (rdbResp3.Checked)
                 {
@@ -159,6 +178,10 @@ namespace PruebaMenuMADU
                     respuesta2.Correcta = false;
                     respuesta3.Correcta = true;
                     respuesta4.Correcta = false;
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
+                    pregunta.ListaRespuestas.Add(respuesta3);
+                    pregunta.ListaRespuestas.Add(respuesta4);
                 }
                 if (rdbResp2.Checked)
                 {
@@ -166,16 +189,48 @@ namespace PruebaMenuMADU
                     respuesta2.Correcta = false;
                     respuesta3.Correcta = false;
                     respuesta4.Correcta = true;
+                    pregunta.ListaRespuestas.Add(respuesta1);
+                    pregunta.ListaRespuestas.Add(respuesta2);
+                    pregunta.ListaRespuestas.Add(respuesta3);
+                    pregunta.ListaRespuestas.Add(respuesta4);
                 }
 
 
-                respuestas.Add(respuesta1);
-                respuestas.Add(respuesta2);
-                respuestas.Add(respuesta3);
-                respuestas.Add(respuesta4);
+                
 
+                
             }
 
+            preguntas.Add(pregunta);
+
+            Button btnSeleccionarPregunta = new Button();
+            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
+            btnSeleccionarPregunta.Text = "P " + pregunta.id;
+            btnSeleccionarPregunta.BackColor = Color.LightCyan;
+            btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
+
+            btnSeleccionarPregunta.Size = new Size(130, 122);
+
+            btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
+            flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
+            btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta);
+
+            Button btnEliminarPregunta = new Button();
+            btnEliminarPregunta.Name = "btnEliminarPregunta";
+            btnEliminarPregunta.Text = "Eliminar";
+            btnEliminarPregunta.BackColor = Color.LightCoral;
+            btnEliminarPregunta.FlatStyle = FlatStyle.Flat;
+            btnEliminarPregunta.FlatAppearance.BorderColor = Color.Red;
+            btnEliminarPregunta.FlatAppearance.BorderSize = 2;
+            btnEliminarPregunta.FlatAppearance.MouseOverBackColor = Color.MistyRose;
+
+
+
+            btnEliminarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
+            btnEliminarPregunta.Size = new Size(130, 40);
+            btnEliminarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 50);
+            flpListaPreguntas.Controls.Add(btnEliminarPregunta);
+            btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta);
 
             vaciarCampos();
             OcultarColumna();
@@ -183,9 +238,32 @@ namespace PruebaMenuMADU
         }
        
 
-        private void btnSeleccionarPregunta_Click(object sender, EventArgs e, Pregunta preg, BindingList<Respuesta> respuestas)
+        private void btnSeleccionarPregunta_Click(object sender, EventArgs e, Pregunta preg)
         {
+            //Button btnModificarPregunta = new Button();
+            //btnModificarPregunta.Name = "btnModificarPregunta";
+            //btnModificarPregunta.Text = "Modificar pregunta";
+            //btnModificarPregunta.BackColor = Color.PaleGoldenrod;
+            //btnModificarPregunta.FlatStyle = FlatStyle.Flat;
+            //btnModificarPregunta.FlatAppearance.BorderColor = Color.Goldenrod;
+            //btnModificarPregunta.FlatAppearance.BorderSize = 2;
+            //btnModificarPregunta.FlatAppearance.MouseOverBackColor = Color.LightYellow;
+
+
+
+            //btnModificarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
             
+
+            //btnModificarPregunta.Size = new Size(190, 40);
+
+            //btnModificarPregunta.Location = new Point(650,183);
+           
+            //gbRespuestas.Controls.Add(btnModificarPregunta);
+            
+            //btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, preg.id, respuestas);
+
+
+
 
             txtNombrePreg.Text = preg.NombrePregunta;
             cbxGeneroPreg.SelectedItem = preg.Genero;
@@ -204,27 +282,27 @@ namespace PruebaMenuMADU
             {
                 
              
-                txtResp1.Text = respuestas[0].NombreRespuesta;
-                rdbResp1.Checked = respuestas[0].Correcta;
+                txtResp1.Text = preg.ListaRespuestas[0].NombreRespuesta;
+                rdbResp1.Checked = preg.ListaRespuestas[0].Correcta;
 
-                txtResp2.Text = respuestas[1].NombreRespuesta;
-                rdbResp2.Checked = respuestas[1].Correcta;
+                txtResp2.Text = preg.ListaRespuestas[1].NombreRespuesta;
+                rdbResp2.Checked = preg.ListaRespuestas[1].Correcta;
 
             }
             else
             {
                 MostrarColumna();
-                txtResp1.Text = respuestas[0].NombreRespuesta;
-                rdbResp1.Checked = respuestas[0].Correcta;
+                txtResp1.Text = preg.ListaRespuestas[0].NombreRespuesta;
+                rdbResp1.Checked = preg.ListaRespuestas[0].Correcta;
 
-                txtResp2.Text = respuestas[1].NombreRespuesta;
-                rdbResp2.Checked = respuestas[1].Correcta;
+                txtResp2.Text = preg.ListaRespuestas[1].NombreRespuesta;
+                rdbResp2.Checked = preg.ListaRespuestas[1].Correcta;
 
-                txtResp3.Text = respuestas[2].NombreRespuesta;
-                rdbResp3.Checked = respuestas[2].Correcta;
+                txtResp3.Text = preg.ListaRespuestas[2].NombreRespuesta;
+                rdbResp3.Checked = preg.ListaRespuestas[2].Correcta;
 
-                txtResp4.Text = respuestas[3].NombreRespuesta;
-                rdbResp4.Checked = respuestas[3].Correcta;
+                txtResp4.Text = preg.ListaRespuestas[3].NombreRespuesta;
+                rdbResp4.Checked = preg.ListaRespuestas[3].Correcta;
             }
 
         }
@@ -334,5 +412,18 @@ namespace PruebaMenuMADU
             rdbResp4.Text = "B";
             rdbResp4.BackColor = Color.LightGreen;
         }
+
+        //private void btnModificarPregunta_Click(object sender, EventArgs e, int id, BindingList<Respuesta> respuestas)
+        //{
+
+
+
+        //}
+
+        private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg)
+        {
+
+        }
+
     }
 }

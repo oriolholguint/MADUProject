@@ -223,13 +223,18 @@
             // 
             // btnAñadirPregunta
             // 
+            this.btnAñadirPregunta.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnAñadirPregunta.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnAñadirPregunta.FlatAppearance.BorderSize = 2;
+            this.btnAñadirPregunta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAñadirPregunta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñadirPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAñadirPregunta.Location = new System.Drawing.Point(700, 226);
+            this.btnAñadirPregunta.Location = new System.Drawing.Point(616, 225);
             this.btnAñadirPregunta.Name = "btnAñadirPregunta";
-            this.btnAñadirPregunta.Size = new System.Drawing.Size(206, 49);
+            this.btnAñadirPregunta.Size = new System.Drawing.Size(229, 49);
             this.btnAñadirPregunta.TabIndex = 12;
             this.btnAñadirPregunta.Text = "Añadir pregunta";
-            this.btnAñadirPregunta.UseVisualStyleBackColor = true;
+            this.btnAñadirPregunta.UseVisualStyleBackColor = false;
             this.btnAñadirPregunta.Click += new System.EventHandler(this.btnAñadirPregunta_Click);
             // 
             // flpListaPreguntas
@@ -280,7 +285,7 @@
             // rdbResp4
             // 
             this.rdbResp4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbResp4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.rdbResp4.BackColor = System.Drawing.Color.DarkGray;
             this.rdbResp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResp4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.rdbResp4.Location = new System.Drawing.Point(1551, 87);
@@ -296,7 +301,7 @@
             // rdbResp3
             // 
             this.rdbResp3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbResp3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.rdbResp3.BackColor = System.Drawing.Color.DarkGray;
             this.rdbResp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResp3.Location = new System.Drawing.Point(747, 87);
             this.rdbResp3.Name = "rdbResp3";
@@ -339,7 +344,7 @@
             // rdbResp1
             // 
             this.rdbResp1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbResp1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.rdbResp1.BackColor = System.Drawing.Color.DarkGray;
             this.rdbResp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResp1.Location = new System.Drawing.Point(747, 3);
             this.rdbResp1.Name = "rdbResp1";
@@ -354,7 +359,7 @@
             // rdbResp2
             // 
             this.rdbResp2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbResp2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.rdbResp2.BackColor = System.Drawing.Color.DarkGray;
             this.rdbResp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResp2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.rdbResp2.Location = new System.Drawing.Point(1551, 3);
