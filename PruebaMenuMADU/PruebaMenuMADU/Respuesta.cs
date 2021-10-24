@@ -27,7 +27,10 @@ namespace PruebaMenuMADU
         }
 
 
-
+        public override string ToString()
+        {
+            return "id: " + this.id + ", Nombre Respuesta: " + this.NombreRespuesta + ", Correcta: " + this.Correcta;
+        }
 
 
     }

@@ -39,6 +39,12 @@ namespace PruebaMenuMADU
             this.UrlImgAudio = UrlImgAudio;
             this.MayorDeEdad = MayorDeEdad;
             this.ListaRespuestas = ListaRespuestas;
+            
+        }
+
+        public override string ToString()
+        {
+            return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.UrlImgAudio + ", Mayor de Edad: " + this.MayorDeEdad;
         }
 
 

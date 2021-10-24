@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtNombrePreg = new System.Windows.Forms.TextBox();
             this.cbxGeneroPreg = new System.Windows.Forms.ComboBox();
             this.cbxEdad = new System.Windows.Forms.ComboBox();
@@ -55,21 +54,17 @@
             this.rdbResp1 = new System.Windows.Forms.RadioButton();
             this.rdbResp2 = new System.Windows.Forms.RadioButton();
             this.txtResp4 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlCrearPreguntas = new System.Windows.Forms.Panel();
+            this.btnCrearPreguntas = new System.Windows.Forms.Button();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
             this.gbRespuestas.SuspendLayout();
             this.tlpRespuestas.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlCrearPreguntas.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 96);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // txtNombrePreg
             // 
@@ -381,11 +376,46 @@
             this.txtResp4.Size = new System.Drawing.Size(700, 75);
             this.txtResp4.TabIndex = 4;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.flowLayoutPanel1.Controls.Add(this.pnlCrearPreguntas);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1907, 96);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // pnlCrearPreguntas
+            // 
+            this.pnlCrearPreguntas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pnlCrearPreguntas.Controls.Add(this.btnCrearPreguntas);
+            this.pnlCrearPreguntas.Location = new System.Drawing.Point(3, 3);
+            this.pnlCrearPreguntas.Name = "pnlCrearPreguntas";
+            this.pnlCrearPreguntas.Size = new System.Drawing.Size(1921, 87);
+            this.pnlCrearPreguntas.TabIndex = 0;
+            // 
+            // btnCrearPreguntas
+            // 
+            this.btnCrearPreguntas.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnCrearPreguntas.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnCrearPreguntas.FlatAppearance.BorderSize = 2;
+            this.btnCrearPreguntas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCrearPreguntas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearPreguntas.Location = new System.Drawing.Point(1665, 18);
+            this.btnCrearPreguntas.Name = "btnCrearPreguntas";
+            this.btnCrearPreguntas.Size = new System.Drawing.Size(229, 49);
+            this.btnCrearPreguntas.TabIndex = 13;
+            this.btnCrearPreguntas.Text = "Crear Preguntas";
+            this.btnCrearPreguntas.UseVisualStyleBackColor = false;
+            this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
+            // 
             // CrearPreguntasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 983);
+            this.ClientSize = new System.Drawing.Size(1907, 983);
             this.Controls.Add(this.gbRespuestas);
             this.Controls.Add(this.flpListaPreguntas);
             this.Controls.Add(this.gbAudio);
@@ -408,14 +438,14 @@
             this.gbRespuestas.ResumeLayout(false);
             this.tlpRespuestas.ResumeLayout(false);
             this.tlpRespuestas.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.pnlCrearPreguntas.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TextBox txtNombrePreg;
         private System.Windows.Forms.ComboBox cbxGeneroPreg;
         private System.Windows.Forms.ComboBox cbxEdad;
@@ -442,5 +472,8 @@
         private System.Windows.Forms.RadioButton rdbResp3;
         private System.Windows.Forms.TextBox txtResp3;
         private System.Windows.Forms.TextBox txtResp4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel pnlCrearPreguntas;
+        private System.Windows.Forms.Button btnCrearPreguntas;
     }
 }
