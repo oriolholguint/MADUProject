@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PruebaMenuMADU
 {
-    class Respuesta
+    public class Respuesta
     {
         public int id { get; set; }
         public String NombreRespuesta { get; set; }
