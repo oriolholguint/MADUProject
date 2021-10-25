@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PruebaMenuMADU
 {
-    class Pregunta
+    public class Pregunta
     {
         public int id { get; set; }
 
@@ -18,11 +18,11 @@ namespace PruebaMenuMADU
 
         public String Tipo { get; set; }
 
-        public String UrlImgAudio { get; set; }
+        public String Url { get; set; }
 
         public Boolean MayorDeEdad { get; set; }
 
-        public BindingList<Respuesta> ListaRespuestas { get; set; }
+        public Respuesta[] respuestas { get; set; }
 
 
         public Pregunta()
@@ -30,21 +30,21 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad, BindingList<Respuesta> ListaRespuestas)
+        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad, Respuesta[] respuestas)
         {
             this.id = id;
             this.NombrePregunta = NombrePregunta;
             this.Genero = Genero;
             this.Tipo = Tipo;
-            this.UrlImgAudio = UrlImgAudio;
+            this.Url = UrlImgAudio;
             this.MayorDeEdad = MayorDeEdad;
-            this.ListaRespuestas = ListaRespuestas;
+            this.respuestas = respuestas;
             
         }
 
         public override string ToString()
         {
-            return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.UrlImgAudio + ", Mayor de Edad: " + this.MayorDeEdad;
+            return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.Url + ", Mayor de Edad: " + this.MayorDeEdad;
         }
 
 
