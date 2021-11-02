@@ -12,6 +12,8 @@ namespace PruebaMenuMADU
 {
     public partial class ModificarPersonaje : Form
     {
+
+
         public ModificarPersonaje()
         {
             InitializeComponent();
