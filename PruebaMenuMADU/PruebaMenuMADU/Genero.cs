@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,11 @@ namespace PruebaMenuMADU
 
         public String ImagenMenu { get; set; }
 
-        public Personaje [] Personajes { get; set; }
+        public Personaje[] Personajes { get; set; }
 
-        public Partida [] Partidas { get; set; }
+        public Partida[] Partidas { get; set; }
 
-        public Pregunta [] Preguntas { get; set; }
+        public Pregunta[] Preguntas { get; set; }
 
         public Genero()
         {
@@ -28,7 +29,7 @@ namespace PruebaMenuMADU
         }
 
         public Genero(String Nombre, String MusicaFondo, String ImagenFondo, String ImagenMenu,
-                      Personaje [] Personajes, Partida [] Partidas, Pregunta [] Preguntas)
+                      Personaje[] Personajes, Partida[] Partidas, Pregunta[] Preguntas)
         {
             this.Nombre = Nombre;
             this.MusicaFondo = MusicaFondo;
