@@ -37,8 +37,8 @@ namespace PruebaMenuMADU
         public override string ToString()
         {
             return "Pregunta Descripcion: " + PreguntaDescripcion +
-                   "Imagen: " + Imagen + 
-                   "Sonido: " + Sonido + 
+                   "Imagen: " + Imagen +
+                   "Sonido: " + Sonido +
                    "EsMayorEdad: " + EsMayorEdad +
                    "Respuestas: " + Respuestas;
         }
