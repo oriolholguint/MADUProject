@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PruebaMenuMADU
 {
-    class Pregunta
+    public class Pregunta
     {
         public int id { get; set; }
 
@@ -16,10 +18,12 @@ namespace PruebaMenuMADU
 
         public String Tipo { get; set; }
 
-        public String UrlImgAudio { get; set; }
+        public String UrlImagen { get; set; }
+        public String UrlAudio { get; set; }
 
         public Boolean MayorDeEdad { get; set; }
 
+        public Respuesta[] respuestas { get; set; }
 
 
         public Pregunta()
@@ -27,15 +31,25 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad)
+        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImagen, String UrlAudio ,Boolean MayorDeEdad, Respuesta[] respuestas)
         {
             this.id = id;
             this.NombrePregunta = NombrePregunta;
             this.Genero = Genero;
             this.Tipo = Tipo;
-            this.UrlImgAudio = UrlImgAudio;
+            this.UrlImagen = UrlImagen;
+            this.UrlAudio = UrlAudio;
             this.MayorDeEdad = MayorDeEdad;
+            this.respuestas = respuestas;
+            
         }
+
+
+
+        //public override string ToString()
+        //{
+        //    return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.Url + ", Mayor de Edad: " + this.MayorDeEdad;
+        //}
 
 
     }
