@@ -1,4 +1,4 @@
-﻿/*namespace PruebaMenuMADU
+﻿namespace PruebaMenuMADU
 {
     partial class CrearPreguntasForm
     {
@@ -480,4 +480,4 @@
         private System.Windows.Forms.Panel pnlCrearPreguntas;
         private System.Windows.Forms.Button btnCrearPreguntas;
     }
-}*/
+}
