@@ -42,5 +42,6 @@ namespace PruebaMenuMADU
                    "EsMayorEdad: " + EsMayorEdad +
                    "Respuestas: " + Respuestas;
         }
+            
     }
 }

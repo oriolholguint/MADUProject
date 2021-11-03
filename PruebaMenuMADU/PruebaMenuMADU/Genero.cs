@@ -17,11 +17,11 @@ namespace PruebaMenuMADU
 
         public String ImagenMenu { get; set; }
 
-        public Personaje [] Personajes { get; set; }
+        public Personaje[] Personajes { get; set; }
 
-        public Partida [] Partidas { get; set; }
+        public Partida[] Partidas { get; set; }
 
-        public Pregunta [] Preguntas { get; set; }
+        public Pregunta[] Preguntas { get; set; }
 
         public Genero()
         {
