@@ -56,7 +56,7 @@ namespace PruebaMenuMADU
             //Se añaden todas las preguntas a una lista global
             for(int i = 0; i < Generos.Count; i++)
             {
-                PreguntasList.AddRange(Generos[i].Preguntas); 
+                PreguntasList.AddRange(Generos[i].Preguntas);
             }
 
             Preguntas = new BindingList<Pregunta>(PreguntasList);

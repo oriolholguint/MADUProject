@@ -38,70 +38,84 @@ namespace PruebaMenuMADU
             this.btnCrearPreguntas = new System.Windows.Forms.Button();
             this.cbxGeneros = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
+            //
             // buttonPreguntas
-            // 
+            //
             this.buttonPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.buttonPreguntas.Location = new System.Drawing.Point(185, 34);
             this.buttonPreguntas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
+            this.buttonPreguntas.Location = new System.Drawing.Point(133, 28);
+
             this.buttonPreguntas.Name = "buttonPreguntas";
-            this.buttonPreguntas.Size = new System.Drawing.Size(153, 43);
+            this.buttonPreguntas.Size = new System.Drawing.Size(115, 35);
             this.buttonPreguntas.TabIndex = 0;
             this.buttonPreguntas.Text = "Preguntas";
             this.buttonPreguntas.UseVisualStyleBackColor = true;
             this.buttonPreguntas.Click += new System.EventHandler(this.buttonPreguntas_Click);
-            // 
+            //
+            // buttonGeneros
+            //
+            this.buttonGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGeneros.Location = new System.Drawing.Point(12, 28);
+            this.buttonGeneros.Name = "buttonGeneros";
+            this.buttonGeneros.Size = new System.Drawing.Size(115, 35);
+            this.buttonGeneros.TabIndex = 1;
+            this.buttonGeneros.Text = "Generos";
+            this.buttonGeneros.UseVisualStyleBackColor = true;
+            this.buttonGeneros.Click += new System.EventHandler(this.buttonGeneros_Click);
+            //
             // buttonPersonajes
-            // 
+            //
             this.buttonPersonajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPersonajes.Location = new System.Drawing.Point(347, 34);
-            this.buttonPersonajes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPersonajes.Location = new System.Drawing.Point(254, 28);
             this.buttonPersonajes.Name = "buttonPersonajes";
-            this.buttonPersonajes.Size = new System.Drawing.Size(175, 43);
+            this.buttonPersonajes.Size = new System.Drawing.Size(131, 35);
             this.buttonPersonajes.TabIndex = 2;
             this.buttonPersonajes.Text = "Personajes";
             this.buttonPersonajes.UseVisualStyleBackColor = true;
             this.buttonPersonajes.Click += new System.EventHandler(this.buttonPersonajes_Click);
-            // 
+            //
             // toolStrip1
-            // 
+            //
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1540, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1443, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
-            // 
+            //
             // buttonFiltro
-            // 
+            //
             this.buttonFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFiltro.Location = new System.Drawing.Point(1336, 34);
             this.buttonFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonFiltro.Name = "buttonFiltro";
-            this.buttonFiltro.Size = new System.Drawing.Size(80, 43);
+            this.buttonFiltro.Size = new System.Drawing.Size(60, 35);
             this.buttonFiltro.TabIndex = 6;
             this.buttonFiltro.UseVisualStyleBackColor = true;
-            // 
+            //
             // panelModificar
-            // 
+            //
             this.panelModificar.BackColor = System.Drawing.Color.DarkGray;
             this.panelModificar.Location = new System.Drawing.Point(1424, 85);
             this.panelModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelModificar.Name = "panelModificar";
-            this.panelModificar.Size = new System.Drawing.Size(613, 886);
+            this.panelModificar.Size = new System.Drawing.Size(460, 720);
             this.panelModificar.TabIndex = 7;
-            // 
+            //
             // panelDatos
-            // 
+            //
             this.panelDatos.BackColor = System.Drawing.Color.DarkGray;
             this.panelDatos.Location = new System.Drawing.Point(16, 85);
             this.panelDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(1400, 886);
+            this.panelDatos.Size = new System.Drawing.Size(1050, 720);
             this.panelDatos.TabIndex = 11;
-            // 
+            //
             // btnCrearPreguntas
-            // 
+            //
             this.btnCrearPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPreguntas.Location = new System.Drawing.Point(593, 34);
             this.btnCrearPreguntas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -111,9 +125,9 @@ namespace PruebaMenuMADU
             this.btnCrearPreguntas.Text = "Crear Preguntas";
             this.btnCrearPreguntas.UseVisualStyleBackColor = true;
             this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
-            // 
+            //
             // cbxGeneros
-            // 
+            //
             this.cbxGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGeneros.FormattingEnabled = true;
@@ -123,9 +137,9 @@ namespace PruebaMenuMADU
             this.cbxGeneros.Size = new System.Drawing.Size(160, 37);
             this.cbxGeneros.TabIndex = 0;
             this.cbxGeneros.SelectedIndexChanged += new System.EventHandler(this.cbxGeneros_SelectedIndexChanged);
-            // 
+            //
             // Menu
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1540, 846);
