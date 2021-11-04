@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PruebaMenuMADU
 {
-    public partial class ModificarPersonaje : Form
+    public partial class DataGridViewGeneros : Form
     {
-        public ModificarPersonaje()
+        public DataGridViewGeneros()
         {
             InitializeComponent();
         }

@@ -10,38 +10,43 @@ namespace PruebaMenuMADU
 {
     public class Pregunta
     {
-        public String PreguntaDescripcion { get; set; }
+        public int id { get; set; }
 
-        public String Imagen { get; set; }
+        public String NombrePregunta { get; set; }
 
-        public String Sonido { get; set; }
+        public String Genero { get; set; }
 
-        public Boolean EsMayorEdad { get; set; }
+        public String Tipo { get; set; }
 
-        public Respuesta[] Respuestas { get; set; }
+        public String Url { get; set; }
+
+        public Boolean MayorDeEdad { get; set; }
+
+        public Respuesta[] respuestas { get; set; }
+
 
         public Pregunta()
         {
 
         }
 
-        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean EsMayorEdad, Respuesta [] Respuestas)
+        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImgAudio, Boolean MayorDeEdad, Respuesta[] respuestas)
         {
-            this.PreguntaDescripcion = PreguntaDescripcion;
-            this.Imagen = Imagen;
-            this.Sonido = Sonido;
-            this.EsMayorEdad = EsMayorEdad;
-            this.Respuestas = Respuestas;
+            this.id = id;
+            this.NombrePregunta = NombrePregunta;
+            this.Genero = Genero;
+            this.Tipo = Tipo;
+            this.Url = UrlImgAudio;
+            this.MayorDeEdad = MayorDeEdad;
+            this.respuestas = respuestas;
+            
         }
 
         public override string ToString()
         {
-            return "Pregunta Descripcion: " + PreguntaDescripcion +
-                   "Imagen: " + Imagen +
-                   "Sonido: " + Sonido +
-                   "EsMayorEdad: " + EsMayorEdad +
-                   "Respuestas: " + Respuestas;
+            return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.Url + ", Mayor de Edad: " + this.MayorDeEdad;
         }
-            
+
+
     }
 }

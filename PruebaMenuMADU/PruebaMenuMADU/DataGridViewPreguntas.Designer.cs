@@ -30,10 +30,12 @@ namespace PruebaMenuMADU
         private void InitializeComponent()
         {
             this.dataGridViewTablaPreguntas = new System.Windows.Forms.DataGridView();
-            this.PreguntaDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ImagenPregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SonidoPregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EsMayorEdadPregunta = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.IdPregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GeneroPregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MayorEdadPregunta = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.TipoPregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrlImagenAudio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTablaPreguntas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,13 +45,14 @@ namespace PruebaMenuMADU
             this.dataGridViewTablaPreguntas.AllowUserToDeleteRows = false;
             this.dataGridViewTablaPreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTablaPreguntas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PreguntaDescripcion,
-            this.ImagenPregunta,
-            this.SonidoPregunta,
-            this.EsMayorEdadPregunta});
+            this.IdPregunta,
+            this.Pregunta,
+            this.GeneroPregunta,
+            this.MayorEdadPregunta,
+            this.TipoPregunta,
+            this.UrlImagenAudio});
             this.dataGridViewTablaPreguntas.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewTablaPreguntas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridViewTablaPreguntas.MultiSelect = false;
             this.dataGridViewTablaPreguntas.Name = "dataGridViewTablaPreguntas";
             this.dataGridViewTablaPreguntas.ReadOnly = true;
             this.dataGridViewTablaPreguntas.RowHeadersWidth = 51;
@@ -58,49 +61,66 @@ namespace PruebaMenuMADU
             this.dataGridViewTablaPreguntas.TabIndex = 0;
             this.dataGridViewTablaPreguntas.SelectionChanged += new System.EventHandler(this.dataGridViewTablaPreguntas_SelectionChanged);
             // 
-            // PreguntaDescripcion
+            // IdPregunta
             // 
-            this.PreguntaDescripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PreguntaDescripcion.DataPropertyName = "PreguntaDescripcion";
-            this.PreguntaDescripcion.HeaderText = "Pregunta";
-            this.PreguntaDescripcion.MinimumWidth = 6;
-            this.PreguntaDescripcion.Name = "PreguntaDescripcion";
-            this.PreguntaDescripcion.ReadOnly = true;
+            this.IdPregunta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.IdPregunta.DataPropertyName = "id";
+            this.IdPregunta.HeaderText = "Id";
+            this.IdPregunta.MinimumWidth = 6;
+            this.IdPregunta.Name = "IdPregunta";
+            this.IdPregunta.ReadOnly = true;
+            this.IdPregunta.Width = 125;
             // 
-            // ImagenPregunta
+            // Pregunta
             // 
-            this.ImagenPregunta.DataPropertyName = "Imagen";
-            this.ImagenPregunta.HeaderText = "Imagen";
-            this.ImagenPregunta.MinimumWidth = 6;
-            this.ImagenPregunta.Name = "ImagenPregunta";
-            this.ImagenPregunta.ReadOnly = true;
-            this.ImagenPregunta.Width = 125;
+            this.Pregunta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Pregunta.DataPropertyName = "NombrePregunta";
+            this.Pregunta.HeaderText = "Pregunta";
+            this.Pregunta.MinimumWidth = 6;
+            this.Pregunta.Name = "Pregunta";
+            this.Pregunta.ReadOnly = true;
             // 
-            // SonidoPregunta
+            // GeneroPregunta
             // 
-            this.SonidoPregunta.DataPropertyName = "Sonido";
-            this.SonidoPregunta.HeaderText = "Sonido";
-            this.SonidoPregunta.MinimumWidth = 6;
-            this.SonidoPregunta.Name = "SonidoPregunta";
-            this.SonidoPregunta.ReadOnly = true;
-            this.SonidoPregunta.Width = 125;
+            this.GeneroPregunta.DataPropertyName = "Genero";
+            this.GeneroPregunta.HeaderText = "Genero";
+            this.GeneroPregunta.MinimumWidth = 6;
+            this.GeneroPregunta.Name = "GeneroPregunta";
+            this.GeneroPregunta.ReadOnly = true;
+            this.GeneroPregunta.Width = 125;
             // 
-            // EsMayorEdadPregunta
+            // MayorEdadPregunta
             // 
-            this.EsMayorEdadPregunta.DataPropertyName = "EsMayorEdad";
-            this.EsMayorEdadPregunta.HeaderText = "Mayor Edad";
-            this.EsMayorEdadPregunta.MinimumWidth = 6;
-            this.EsMayorEdadPregunta.Name = "EsMayorEdadPregunta";
-            this.EsMayorEdadPregunta.ReadOnly = true;
-            this.EsMayorEdadPregunta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.EsMayorEdadPregunta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.EsMayorEdadPregunta.Width = 125;
+            this.MayorEdadPregunta.DataPropertyName = "MayorDeEdad";
+            this.MayorEdadPregunta.HeaderText = "Mayor Edad";
+            this.MayorEdadPregunta.MinimumWidth = 6;
+            this.MayorEdadPregunta.Name = "MayorEdadPregunta";
+            this.MayorEdadPregunta.ReadOnly = true;
+            this.MayorEdadPregunta.Width = 125;
+            // 
+            // TipoPregunta
+            // 
+            this.TipoPregunta.DataPropertyName = "Tipo";
+            this.TipoPregunta.HeaderText = "Tipo";
+            this.TipoPregunta.MinimumWidth = 6;
+            this.TipoPregunta.Name = "TipoPregunta";
+            this.TipoPregunta.ReadOnly = true;
+            this.TipoPregunta.Width = 125;
+            // 
+            // UrlImagenAudio
+            // 
+            this.UrlImagenAudio.DataPropertyName = "UrlImgAudio";
+            this.UrlImagenAudio.HeaderText = "Url Imagen/Audio";
+            this.UrlImagenAudio.MinimumWidth = 6;
+            this.UrlImagenAudio.Name = "UrlImagenAudio";
+            this.UrlImagenAudio.ReadOnly = true;
+            this.UrlImagenAudio.Width = 125;
             // 
             // DataGridViewPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 884);
+            this.ClientSize = new System.Drawing.Size(1400, 886);
             this.Controls.Add(this.dataGridViewTablaPreguntas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -113,9 +133,11 @@ namespace PruebaMenuMADU
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewTablaPreguntas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PreguntaDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ImagenPregunta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SonidoPregunta;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn EsMayorEdadPregunta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdPregunta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pregunta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GeneroPregunta;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn MayorEdadPregunta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoPregunta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrlImagenAudio;
     }
 }

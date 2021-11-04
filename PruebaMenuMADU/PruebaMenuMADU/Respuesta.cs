@@ -9,25 +9,30 @@ namespace PruebaMenuMADU
 
      public class Respuesta
     {
-        public String RespuestaDescripcion { get; set; }
+        public int id { get; set; }
+        public String NombreRespuesta { get; set; }
+        public Boolean Correcta { get; set; }
 
-        public Boolean EsCorrecta { get; set; }
 
         public Respuesta()
         { 
         
         }
 
-        public Respuesta(String RespuestaDescripcion,Boolean EsCorrecta)
+
+        public Respuesta(int id,String NombreRespuesta,Boolean Correcta)
         {
-            this.RespuestaDescripcion = RespuestaDescripcion;
-            this.EsCorrecta = EsCorrecta;
+            this.id = id;
+            this.NombreRespuesta = NombreRespuesta;
+            this.Correcta = Correcta;
         }
+
 
         public override string ToString()
         {
-            return "Respuesta Descripcion: " + this.RespuestaDescripcion + 
-                   ", EsCorrecta: " + this.EsCorrecta;
+            return "id: " + this.id + ", Nombre Respuesta: " + this.NombreRespuesta + ", Correcta: " + this.Correcta;
         }
+
+
     }
 }

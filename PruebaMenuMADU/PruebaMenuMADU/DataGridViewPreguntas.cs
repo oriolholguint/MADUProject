@@ -12,26 +12,18 @@ namespace PruebaMenuMADU
 {
     public partial class DataGridViewPreguntas : Form
     {
-        BindingList<Pregunta> Preguntas;
-        Genero GeneroSeleccionado;
-
-        ModificarPregunta ModificarPregunta;
+        BindingList<Pregunta> Preguntas = new BindingList<Pregunta>();
+        ModificarPregunta ModificarPregunta = new ModificarPregunta();
 
         public DataGridViewPreguntas()
         {
             InitializeComponent();
         }
 
-        public DataGridViewPreguntas(Genero GeneroSeleccionado, ModificarPregunta ModificarPregunta)
+        public void SetPreguntas (BindingList<Pregunta> Preguntas, ModificarPregunta ModificarPregunta)
         {
-            InitializeComponent();
-            this.GeneroSeleccionado = GeneroSeleccionado;
-
-            List<Pregunta> PreguntasList = new List<Pregunta>(GeneroSeleccionado.Preguntas);
-            Preguntas = new BindingList<Pregunta>(PreguntasList);
-
+            this.Preguntas = Preguntas;
             this.ModificarPregunta = ModificarPregunta;
-
             RecargarDataGridView();
         }
 
@@ -44,20 +36,8 @@ namespace PruebaMenuMADU
 
         private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
         {
-            CargarPreguntaSeleccionada();
+            Pregunta pregunta = (Pregunta) dataGridViewTablaPreguntas.CurrentRow.DataBoundItem;
+            ModificarPregunta.SetPregunta(pregunta);
         }
-
-        private void CargarPreguntaSeleccionada()
-        {
-            if (Preguntas.Count != 0)
-            {
-                ModificarPregunta.setPregunta(Preguntas, (Pregunta)dataGridViewTablaPreguntas.CurrentRow.DataBoundItem);
-            }
-        }
-
-        /*private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
-        {
-            ModificarPregunta = new ModificarPregunta(Preguntas, (Pregunta)dataGridViewTablaPreguntas.CurrentRow.DataBoundItem);
-        }*/
     }
 }
