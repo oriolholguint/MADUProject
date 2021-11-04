@@ -12,26 +12,25 @@ namespace PruebaMenuMADU
 {
     public partial class ModificarPregunta : Form
     {
-        Pregunta Pregunta = new Pregunta();
+        Pregunta Pregunta;
+        BindingList<Pregunta> Preguntas;
 
         public ModificarPregunta()
         {
             InitializeComponent();
         }
 
-        public void SetPregunta(Pregunta Pregunta)
+        public void setPregunta(BindingList<Pregunta> Preguntas, Pregunta Pregunta)
         {
+            this.Preguntas = Preguntas;
             this.Pregunta = Pregunta;
             RellenarTextBoxes();
         }
 
         private void RellenarTextBoxes()
         {
-            textBoxId.Text = Pregunta.id.ToString();
-            textBoxPregunta.Text = Pregunta.NombrePregunta;
-            comboBoxGenero.Text = Pregunta.Genero;
-            comboBoxTipo.Text = Pregunta.Tipo;
-            if(Pregunta.MayorDeEdad)
+            textBoxPregunta.Text = Pregunta.PreguntaDescripcion;
+            if(Pregunta.EsMayorEdad)
             {
                 checkBoxMayorEdad.Checked = true;
             }
@@ -39,9 +38,10 @@ namespace PruebaMenuMADU
             {
                 checkBoxMayorEdad.Checked = false;
             }
-            textBoxImagen.Text = Pregunta.UrlImgAudio;
-            textBoxSonido.Text = Pregunta.UrlImgAudio;
-
+            textBoxImagen.Text = Pregunta.Imagen;
+            textBoxSonido.Text = Pregunta.Sonido;
         }
+
+       
     }
 }
