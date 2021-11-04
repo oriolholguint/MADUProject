@@ -46,7 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrearPreguntasForm.cs" />
+    <Compile Include="CrearPreguntasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewGeneros.Designer.cs">
+      <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearPreguntasForm.Designer.cs">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </Compile>
@@ -94,6 +102,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Respuesta.cs" />
+    <EmbeddedResource Include="DataGridViewGeneros.resx">
+      <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </EmbeddedResource>
