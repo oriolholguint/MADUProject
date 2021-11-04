@@ -77,14 +77,18 @@
             // 
             // cbxGeneroPreg
             // 
+            this.cbxGeneroPreg.AutoCompleteCustomSource.AddRange(new string[] {
+            "Rock",
+            "Electronica",
+            "Pop",
+            "Hip-Hop"});
             this.cbxGeneroPreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGeneroPreg.FormattingEnabled = true;
             this.cbxGeneroPreg.Items.AddRange(new object[] {
             "Rock",
             "Electronica",
             "Hip-Hop",
-            "Pop",
-            "Añadir nuevo genero..."});
+            "Pop"});
             this.cbxGeneroPreg.Location = new System.Drawing.Point(356, 259);
             this.cbxGeneroPreg.Name = "cbxGeneroPreg";
             this.cbxGeneroPreg.Size = new System.Drawing.Size(236, 37);
