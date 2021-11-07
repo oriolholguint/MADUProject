@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearGenero.Designer.cs">
+      <DependentUpon>CrearGenero.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearPreguntasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     <Compile Include="RecuperarContrasenya.Designer.cs">
       <DependentUpon>RecuperarContrasenya.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CrearGenero.resx">
+      <DependentUpon>CrearGenero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </EmbeddedResource>
