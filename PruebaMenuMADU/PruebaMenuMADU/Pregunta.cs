@@ -10,47 +10,37 @@ namespace PruebaMenuMADU
 {
     public class Pregunta
     {
-        public int id { get; set; }
+        public String PreguntaDescripcion { get; set; }
 
-        public String NombrePregunta { get; set; }
+        public String Imagen { get; set; }
 
-        public String Genero { get; set; }
+        public String Sonido { get; set; }
 
-        public String Tipo { get; set; }
+        public Boolean EsMayorEdad { get; set; }
 
-        public String UrlImagen { get; set; }
-        public String UrlAudio { get; set; }
-
-        public Boolean MayorDeEdad { get; set; }
-
-        public Respuesta[] respuestas { get; set; }
-
+        public Respuesta[] Respuestas { get; set; }
 
         public Pregunta()
         {
 
         }
 
-        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImagen, String UrlAudio ,Boolean MayorDeEdad, Respuesta[] respuestas)
+        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean EsMayorEdad, Respuesta [] Respuestas)
         {
-            this.id = id;
-            this.NombrePregunta = NombrePregunta;
-            this.Genero = Genero;
-            this.Tipo = Tipo;
-            this.UrlImagen = UrlImagen;
-            this.UrlAudio = UrlAudio;
-            this.MayorDeEdad = MayorDeEdad;
-            this.respuestas = respuestas;
-            
+            this.PreguntaDescripcion = PreguntaDescripcion;
+            this.Imagen = Imagen;
+            this.Sonido = Sonido;
+            this.EsMayorEdad = EsMayorEdad;
+            this.Respuestas = Respuestas;
         }
 
-
-
-        //public override string ToString()
-        //{
-        //    return "id: " + this.id + ", Nombre Pregunta: " + this.NombrePregunta + ", Genero: " + this.Genero + ", Tipo: " + this.Tipo + ", Url: " + this.Url + ", Mayor de Edad: " + this.MayorDeEdad;
-        //}
-
-
+        public override string ToString()
+        {
+            return "Pregunta Descripcion: " + PreguntaDescripcion +
+                   "Imagen: " + Imagen +
+                   "Sonido: " + Sonido +
+                   "EsMayorEdad: " + EsMayorEdad +
+                   "Respuestas: " + Respuestas;
+        }
     }
 }

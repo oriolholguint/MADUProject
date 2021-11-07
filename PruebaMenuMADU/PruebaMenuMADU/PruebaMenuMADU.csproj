@@ -49,14 +49,19 @@
     <Compile Include="CrearPreguntasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearPreguntasForm.Designer.cs">
-      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
+    <Compile Include="CrearPreguntasForm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrearPreguntasForm.resx</DependentUpon>
     </Compile>
     <Compile Include="DataGridViewGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataGridViewGeneros.Designer.cs">
       <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearPreguntasForm.Designer.cs">
+      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataGridViewPersonajes.cs">
       <SubType>Form</SubType>
@@ -71,6 +76,13 @@
       <DependentUpon>DataGridViewPreguntas.cs</DependentUpon>
     </Compile>
     <Compile Include="Genero.cs" />
+    <Compile Include="Jugador.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,21 +107,37 @@
     <Compile Include="ModificarPregunta.Designer.cs">
       <DependentUpon>ModificarPregunta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partida.cs" />
+    <Compile Include="Personaje.cs" />
     <Compile Include="Pregunta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Respuesta.cs" />
+    <Compile Include="RecuperarContrasenya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarContrasenya.Designer.cs">
+      <DependentUpon>RecuperarContrasenya.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewGeneros.resx">
       <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrearPreguntasForm.resx">
+      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewPersonajes.resx">
       <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewPreguntas.resx">
       <DependentUpon>DataGridViewPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -133,6 +161,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecuperarContrasenya.resx">
+      <DependentUpon>RecuperarContrasenya.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoAGeneral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoAGeneral .png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
