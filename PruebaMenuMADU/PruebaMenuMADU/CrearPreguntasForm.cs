@@ -101,19 +101,19 @@ namespace PruebaMenuMADU
 
 
             pregunta.id = i;
-            pregunta.NombrePregunta = txtNombrePreg.Text;
+            pregunta.PreguntaDescripcion = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedItem;
             pregunta.Tipo = (String)cbxTipoPreg.SelectedItem;
-            pregunta.UrlImagen = "urlprueba";
-            pregunta.UrlAudio = "urlaudioprueba";
+            pregunta.Imagen = "urlprueba";
+            pregunta.Sonido = "Sonidoprueba";
 
             if (cbxEdad.SelectedIndex == 0)
             {
-                pregunta.MayorDeEdad = false;
+                pregunta.EsMayorEdad = false;
             }
             else
             {
-                pregunta.MayorDeEdad = true;
+                pregunta.EsMayorEdad = true;
             }
 
 
@@ -121,7 +121,7 @@ namespace PruebaMenuMADU
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                pregunta.respuestas = new Respuesta[2];
+                pregunta.Respuestas = new Respuesta[2];
 
                 Respuesta respuesta1;
                 Respuesta respuesta2;
@@ -130,19 +130,19 @@ namespace PruebaMenuMADU
                 {
 
 
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
+                    respuesta1 = new Respuesta(txtResp1.Text, true);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
 
                 }
                 if (rdbResp2.Checked)
                 {
 
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, true);
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
 
 
                 }
@@ -150,7 +150,7 @@ namespace PruebaMenuMADU
             }
             else
             {
-                pregunta.respuestas = new Respuesta[4];
+                pregunta.Respuestas = new Respuesta[4];
 
                 Respuesta respuesta1;
                 Respuesta respuesta2;
@@ -161,52 +161,52 @@ namespace PruebaMenuMADU
                 {
 
 
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, true);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
+                    pregunta.Respuestas[2] = respuesta3;
+                    pregunta.Respuestas[3] = respuesta4;
 
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, true);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
+                    pregunta.Respuestas[2] = respuesta3;
+                    pregunta.Respuestas[3] = respuesta4;
                 }
                 if (rdbResp3.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, true);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, true);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
+                    pregunta.Respuestas[2] = respuesta3;
+                    pregunta.Respuestas[3] = respuesta4;
                 }
                 if (rdbResp4.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, true);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.Respuestas[0] = respuesta1;
+                    pregunta.Respuestas[1] = respuesta2;
+                    pregunta.Respuestas[2] = respuesta3;
+                    pregunta.Respuestas[3] = respuesta4;
                 }
 
 
@@ -279,12 +279,12 @@ namespace PruebaMenuMADU
         {
 
 
-            txtNombrePreg.Text = preg.NombrePregunta;
+            txtNombrePreg.Text = preg.PreguntaDescripcion;
 
             cbxGeneroPreg.SelectedItem = preg.Genero;
             cbxTipoPreg.SelectedItem = preg.Tipo;
 
-            if (preg.MayorDeEdad)
+            if (preg.EsMayorEdad)
             {
                 cbxEdad.SelectedIndex = 1;
             }
@@ -295,18 +295,18 @@ namespace PruebaMenuMADU
 
 
 
-            //MessageBox.Show(preg.respuestas[0].NombreRespuesta);
+            //MessageBox.Show(preg.Respuestas[0].RespuestaDescripcion);
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                preg.respuestas = new Respuesta[2];
+                preg.Respuestas = new Respuesta[2];
 
 
-                txtResp1.Text = preg.respuestas[0].NombreRespuesta;
-                rdbResp1.Checked = preg.respuestas[0].Correcta;
+                txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
+                rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
-                txtResp2.Text = preg.respuestas[1].NombreRespuesta;
-                rdbResp2.Checked = preg.respuestas[1].Correcta;
+                txtResp2.Text = preg.Respuestas[1].RespuestaDescripcion;
+                rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;
 
                 if (rdbResp1.Checked)
                 {
@@ -343,20 +343,20 @@ namespace PruebaMenuMADU
 
             if (cbxTipoPreg.SelectedIndex == 1)
             {
-                preg.respuestas = new Respuesta[4];
+                preg.Respuestas = new Respuesta[4];
 
                 MostrarColumna();
-                txtResp1.Text = preg.respuestas[0].NombreRespuesta;
-                rdbResp1.Checked = preg.respuestas[0].Correcta;
+                txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
+                rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
-                txtResp2.Text = preg.respuestas[1].NombreRespuesta;
-                rdbResp2.Checked = preg.respuestas[1].Correcta;
+                txtResp2.Text = preg.Respuestas[1].RespuestaDescripcion;
+                rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;
 
-                txtResp3.Text = preg.respuestas[2].NombreRespuesta;
-                rdbResp3.Checked = preg.respuestas[2].Correcta;
+                txtResp3.Text = preg.Respuestas[2].RespuestaDescripcion;
+                rdbResp3.Checked = preg.Respuestas[2].EsCorrecta;
 
-                txtResp4.Text = preg.respuestas[3].NombreRespuesta;
-                rdbResp4.Checked = preg.respuestas[3].Correcta;
+                txtResp4.Text = preg.Respuestas[3].RespuestaDescripcion;
+                rdbResp4.Checked = preg.Respuestas[3].EsCorrecta;
 
 
                 if (rdbResp1.Checked)
@@ -539,46 +539,46 @@ namespace PruebaMenuMADU
         {
 
 
-            preg.NombrePregunta = txtNombrePreg.Text;
+            preg.PreguntaDescripcion = txtNombrePreg.Text;
 
             preg.Genero = (String)cbxGeneroPreg.SelectedItem;
 
             preg.Tipo = (String)cbxGeneroPreg.SelectedItem;
             if (cbxEdad.SelectedIndex == 0)
             {
-                preg.MayorDeEdad = false;
+                preg.EsMayorEdad = false;
             }
             else
             {
-                preg.MayorDeEdad = true;
+                preg.EsMayorEdad = true;
             }
 
-            preg.UrlImagen = "mod";
-            preg.UrlAudio = "mod";
+            preg.Imagen = "mod";
+            preg.Sonido = "mod";
 
 
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                preg.respuestas = new Respuesta[2];
+                preg.Respuestas = new Respuesta[2];
 
                 Respuesta respuesta1;
                 Respuesta respuesta2;
 
                 if (rdbResp1.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[0] = respuesta2;
+                    respuesta1 = new Respuesta(txtResp1.Text, true);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[0] = respuesta2;
 
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[0] = respuesta2;
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, true);
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[0] = respuesta2;
                 }
 
 
@@ -586,7 +586,7 @@ namespace PruebaMenuMADU
             else
             {
 
-                preg.respuestas = new Respuesta[4];
+                preg.Respuestas = new Respuesta[4];
                 Respuesta respuesta1;
                 Respuesta respuesta2;
                 Respuesta respuesta3;
@@ -594,51 +594,51 @@ namespace PruebaMenuMADU
 
                 if (rdbResp1.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, true);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[1] = respuesta2;
-                    preg.respuestas[2] = respuesta3;
-                    preg.respuestas[3] = respuesta4;
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[1] = respuesta2;
+                    preg.Respuestas[2] = respuesta3;
+                    preg.Respuestas[3] = respuesta4;
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, true);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[1] = respuesta2;
-                    preg.respuestas[2] = respuesta3;
-                    preg.respuestas[3] = respuesta4;
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[1] = respuesta2;
+                    preg.Respuestas[2] = respuesta3;
+                    preg.Respuestas[3] = respuesta4;
                 }
                 if (rdbResp3.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, true);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, true);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[1] = respuesta2;
-                    preg.respuestas[2] = respuesta3;
-                    preg.respuestas[3] = respuesta4;
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[1] = respuesta2;
+                    preg.Respuestas[2] = respuesta3;
+                    preg.Respuestas[3] = respuesta4;
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, true);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                    preg.respuestas[0] = respuesta1;
-                    preg.respuestas[1] = respuesta2;
-                    preg.respuestas[2] = respuesta3;
-                    preg.respuestas[3] = respuesta4;
+                    preg.Respuestas[0] = respuesta1;
+                    preg.Respuestas[1] = respuesta2;
+                    preg.Respuestas[2] = respuesta3;
+                    preg.Respuestas[3] = respuesta4;
                 }
 
 
