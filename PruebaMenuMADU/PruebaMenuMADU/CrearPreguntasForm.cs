@@ -16,7 +16,7 @@ namespace PruebaMenuMADU
         BindingList<Genero> generos = new BindingList<Genero>();
 
 
-        public CrearPreguntasForm()
+        /*public CrearPreguntasForm()
         {
             InitializeComponent();
         }
@@ -692,7 +692,7 @@ namespace PruebaMenuMADU
 
 
 
-        }
+        }*/
 
 
 
