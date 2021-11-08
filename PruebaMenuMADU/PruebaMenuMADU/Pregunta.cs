@@ -12,6 +12,8 @@ namespace PruebaMenuMADU
     {
         public String PreguntaDescripcion { get; set; }
 
+        public String Genero { get; set; }
+
         public String Imagen { get; set; }
 
         public String Sonido { get; set; }

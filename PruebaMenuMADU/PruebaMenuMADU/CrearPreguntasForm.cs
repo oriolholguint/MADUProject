@@ -100,10 +100,9 @@ namespace PruebaMenuMADU
             }
 
 
-            pregunta.id = i;
+            
             pregunta.PreguntaDescripcion = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedItem;
-            pregunta.Tipo = (String)cbxTipoPreg.SelectedItem;
             pregunta.Imagen = "urlprueba";
             pregunta.Sonido = "Sonidoprueba";
 
@@ -219,7 +218,7 @@ namespace PruebaMenuMADU
 
             Button btnSeleccionarPregunta = new Button();
             btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
-            btnSeleccionarPregunta.Text = "P " + pregunta.id;
+            btnSeleccionarPregunta.Text = "P ";
             btnSeleccionarPregunta.BackColor = Color.LightCyan;
             btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
 
@@ -245,7 +244,7 @@ namespace PruebaMenuMADU
             btnModificarPregunta.Size = new Size(130, 40);
             btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
             flpListaPreguntas.Controls.Add(btnModificarPregunta);
-            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, pregunta.id);
+            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta);
 
 
 
@@ -282,7 +281,6 @@ namespace PruebaMenuMADU
             txtNombrePreg.Text = preg.PreguntaDescripcion;
 
             cbxGeneroPreg.SelectedItem = preg.Genero;
-            cbxTipoPreg.SelectedItem = preg.Tipo;
 
             if (preg.EsMayorEdad)
             {
@@ -535,7 +533,7 @@ namespace PruebaMenuMADU
         }
 
 
-        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg, int id)
+        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg)
         {
 
 
@@ -543,7 +541,7 @@ namespace PruebaMenuMADU
 
             preg.Genero = (String)cbxGeneroPreg.SelectedItem;
 
-            preg.Tipo = (String)cbxGeneroPreg.SelectedItem;
+            /*preg.Tipo = (String)cbxGeneroPreg.SelectedItem; çÇÇ*//**/
             if (cbxEdad.SelectedIndex == 0)
             {
                 preg.EsMayorEdad = false;

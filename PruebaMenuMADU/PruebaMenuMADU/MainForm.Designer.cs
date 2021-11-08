@@ -54,17 +54,7 @@ namespace PruebaMenuMADU
             this.buttonPreguntas.Text = "Preguntas";
             this.buttonPreguntas.UseVisualStyleBackColor = true;
             this.buttonPreguntas.Click += new System.EventHandler(this.buttonPreguntas_Click);
-            //
-            // buttonGeneros
-            //
-            this.buttonGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGeneros.Location = new System.Drawing.Point(12, 28);
-            this.buttonGeneros.Name = "buttonGeneros";
-            this.buttonGeneros.Size = new System.Drawing.Size(115, 35);
-            this.buttonGeneros.TabIndex = 1;
-            this.buttonGeneros.Text = "Generos";
-            this.buttonGeneros.UseVisualStyleBackColor = true;
-            this.buttonGeneros.Click += new System.EventHandler(this.buttonGeneros_Click);
+
             //
             // buttonPersonajes
             //

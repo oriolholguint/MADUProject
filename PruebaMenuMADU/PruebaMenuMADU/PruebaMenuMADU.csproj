@@ -49,17 +49,17 @@
     <Compile Include="CrearPreguntasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearPreguntasForm1.Designer.cs">
+    <!-- <Compile Include="CrearPreguntasForm1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrearPreguntasForm.resx</DependentUpon>
-    </Compile>
-    <Compile Include="DataGridViewGeneros.cs">
+    </Compile> -->
+    <!-- <Compile Include="DataGridViewGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataGridViewGeneros.Designer.cs">
       <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
-    </Compile>
+    </Compile> -->
     <Compile Include="CrearPreguntasForm.Designer.cs">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </Compile>
@@ -119,16 +119,16 @@
     <Compile Include="RecuperarContrasenya.Designer.cs">
       <DependentUpon>RecuperarContrasenya.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CrearPreguntasForm.resx">
+    <!-- <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DataGridViewGeneros.resx">
+    </EmbeddedResource> -->
+    <!-- <EmbeddedResource Include="DataGridViewGeneros.resx">
       <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
-    </EmbeddedResource>
+    </EmbeddedResource> -->
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput>
+      <!-- <Generator>ResXFileCodeGenerator</Generator> -->
+      <!-- <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput> -->
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewPersonajes.resx">
       <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>

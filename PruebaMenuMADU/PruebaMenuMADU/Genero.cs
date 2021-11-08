@@ -11,7 +11,9 @@ namespace PruebaMenuMADU
     {
         public String Nombre { get; set; }
 
+        
         public String MusicaFondo { get; set; }
+
 
         public String ImagenFondo { get; set; }
 
