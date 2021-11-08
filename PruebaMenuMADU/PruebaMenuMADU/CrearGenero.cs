@@ -16,5 +16,10 @@ namespace PruebaMenuMADU
         {
             InitializeComponent();
         }
+
+        private void btnCargarImagen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

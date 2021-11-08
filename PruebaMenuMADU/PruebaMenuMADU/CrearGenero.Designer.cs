@@ -39,7 +39,7 @@ namespace PruebaMenuMADU
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCargarMusica = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtNombreGenero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -79,13 +79,14 @@ namespace PruebaMenuMADU
             // btnCargarImagen
             // 
             this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.Location = new System.Drawing.Point(171, 284);
+            this.btnCargarImagen.Location = new System.Drawing.Point(143, 284);
             this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(158, 40);
             this.btnCargarImagen.TabIndex = 1;
             this.btnCargarImagen.Text = "Cargar Imagen";
             this.btnCargarImagen.UseVisualStyleBackColor = true;
+            this.btnCargarImagen.Click += new System.EventHandler(this.btnCargarImagen_Click);
             // 
             // pbImagenGenero
             // 
@@ -141,7 +142,7 @@ namespace PruebaMenuMADU
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnCargarMusica);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Location = new System.Drawing.Point(893, 203);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -160,16 +161,16 @@ namespace PruebaMenuMADU
             this.textBox2.Size = new System.Drawing.Size(368, 20);
             this.textBox2.TabIndex = 2;
             // 
-            // button2
+            // btnCargarMusica
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(141, 284);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cargar Musica de fondo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCargarMusica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarMusica.Location = new System.Drawing.Point(125, 284);
+            this.btnCargarMusica.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCargarMusica.Name = "btnCargarMusica";
+            this.btnCargarMusica.Size = new System.Drawing.Size(158, 40);
+            this.btnCargarMusica.TabIndex = 1;
+            this.btnCargarMusica.Text = "Cargar Musica de fondo";
+            this.btnCargarMusica.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -264,7 +265,7 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCargarMusica;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txtNombreGenero;
         private System.Windows.Forms.Label label1;
