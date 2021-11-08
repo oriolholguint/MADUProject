@@ -187,7 +187,7 @@ namespace PruebaMenuMADU
             this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreGenero.Multiline = true;
             this.txtNombreGenero.Name = "txtNombreGenero";
-            this.txtNombreGenero.Size = new System.Drawing.Size(772, 84);
+            this.txtNombreGenero.Size = new System.Drawing.Size(819, 84);
             this.txtNombreGenero.TabIndex = 11;
             // 
             // label1
@@ -216,7 +216,7 @@ namespace PruebaMenuMADU
             // 
             this.button1.BackColor = System.Drawing.Color.PaleGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(905, 71);
+            this.button1.Location = new System.Drawing.Point(973, 71);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(258, 84);
