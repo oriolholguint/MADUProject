@@ -130,15 +130,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-    </EmbeddedResource> -->
+    </EmbeddedResource>
     <!-- <EmbeddedResource Include="DataGridViewGeneros.resx">
       <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
     </EmbeddedResource> -->
-    <EmbeddedResource Include="CrearPreguntasForm.resx">
-      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-      <!-- <Generator>ResXFileCodeGenerator</Generator> -->
-      <!-- <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput> -->
-    </EmbeddedResource>
+    <!-- <EmbeddedResource Include="CrearPreguntasForm.resx">
+      <DependentUpon>CrearPreguntasForm.cs</DependentUpon> -->
+    <!-- <Generator>ResXFileCodeGenerator</Generator> -->
+    <!-- <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput> -->
+    <!-- </EmbeddedResource> -->
     <EmbeddedResource Include="DataGridViewPersonajes.resx">
       <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +194,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoAGeneral .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

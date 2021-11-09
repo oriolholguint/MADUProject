@@ -29,6 +29,7 @@ namespace PruebaMenuMADU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearGenero));
             this.gbImagen = new System.Windows.Forms.GroupBox();
             this.txtUrlOculta = new System.Windows.Forms.TextBox();
             this.btnCargarImagen = new System.Windows.Forms.Button();
@@ -38,19 +39,21 @@ namespace PruebaMenuMADU
             this.BntCargarFondo = new System.Windows.Forms.Button();
             this.pbBg = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.wmpMusic = new AxWMPLib.AxWindowsMediaPlayer();
             this.txtUrlMusic = new System.Windows.Forms.TextBox();
             this.btnCargarMusica = new System.Windows.Forms.Button();
-            this.pbMusic = new System.Windows.Forms.PictureBox();
             this.txtNombreGenero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtGenreName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBg)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wmpMusic)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,9 +146,9 @@ namespace PruebaMenuMADU
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.wmpMusic);
             this.groupBox2.Controls.Add(this.txtUrlMusic);
             this.groupBox2.Controls.Add(this.btnCargarMusica);
-            this.groupBox2.Controls.Add(this.pbMusic);
             this.groupBox2.Location = new System.Drawing.Point(893, 203);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -154,6 +157,15 @@ namespace PruebaMenuMADU
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cargar musica de fondo para el Género";
+            // 
+            // wmpMusic
+            // 
+            this.wmpMusic.Enabled = true;
+            this.wmpMusic.Location = new System.Drawing.Point(43, 26);
+            this.wmpMusic.Name = "wmpMusic";
+            this.wmpMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpMusic.OcxState")));
+            this.wmpMusic.Size = new System.Drawing.Size(306, 190);
+            this.wmpMusic.TabIndex = 3;
             // 
             // txtUrlMusic
             // 
@@ -175,23 +187,14 @@ namespace PruebaMenuMADU
             this.btnCargarMusica.UseVisualStyleBackColor = true;
             this.btnCargarMusica.Click += new System.EventHandler(this.btnCargarMusica_Click);
             // 
-            // pbMusic
-            // 
-            this.pbMusic.Location = new System.Drawing.Point(27, 26);
-            this.pbMusic.Margin = new System.Windows.Forms.Padding(2);
-            this.pbMusic.Name = "pbMusic";
-            this.pbMusic.Size = new System.Drawing.Size(354, 200);
-            this.pbMusic.TabIndex = 0;
-            this.pbMusic.TabStop = false;
-            // 
             // txtNombreGenero
             // 
             this.txtNombreGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreGenero.Location = new System.Drawing.Point(59, 71);
+            this.txtNombreGenero.Location = new System.Drawing.Point(30, 71);
             this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreGenero.Multiline = true;
             this.txtNombreGenero.Name = "txtNombreGenero";
-            this.txtNombreGenero.Size = new System.Drawing.Size(819, 84);
+            this.txtNombreGenero.Size = new System.Drawing.Size(489, 84);
             this.txtNombreGenero.TabIndex = 11;
             // 
             // label1
@@ -209,6 +212,9 @@ namespace PruebaMenuMADU
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtGenreName);
+            this.panel1.Controls.Add(this.txtNombreGenero);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -220,21 +226,44 @@ namespace PruebaMenuMADU
             // 
             this.button1.BackColor = System.Drawing.Color.PaleGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(973, 71);
+            this.button1.Location = new System.Drawing.Point(1033, 71);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(258, 84);
             this.button1.TabIndex = 3;
             this.button1.Text = "Crear Género";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtGenreName
+            // 
+            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenreName.Location = new System.Drawing.Point(543, 71);
+            this.txtGenreName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGenreName.Multiline = true;
+            this.txtGenreName.Name = "txtGenreName";
+            this.txtGenreName.Size = new System.Drawing.Size(486, 84);
+            this.txtGenreName.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(553, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Name of the new genre:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // CrearGenero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 843);
+            this.ClientSize = new System.Drawing.Size(1302, 593);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtNombreGenero);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbImagen);
@@ -249,8 +278,9 @@ namespace PruebaMenuMADU
             ((System.ComponentModel.ISupportInitialize)(this.pbBg)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wmpMusic)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,10 +299,12 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtUrlMusic;
         private System.Windows.Forms.Button btnCargarMusica;
-        private System.Windows.Forms.PictureBox pbMusic;
         private System.Windows.Forms.TextBox txtNombreGenero;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private AxWMPLib.AxWindowsMediaPlayer wmpMusic;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtGenreName;
     }
 }

@@ -19,11 +19,11 @@ namespace PruebaMenuMADU
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog imagePick = new FolderBrowserDialog();
+            OpenFileDialog imagePick = new OpenFileDialog();
             if (imagePick.ShowDialog() == DialogResult.OK)
             {
-                txtUrlOculta.Text = imagePick.SelectedPath;
-                Bitmap image = new Bitmap(imagePick.SelectedPath);
+                txtUrlOculta.Text = imagePick.FileName;
+                Bitmap image = new Bitmap(imagePick.FileName);
                 pbImagenGenero.Dock = DockStyle.Fill;
                 pbImagenGenero.Image = (Image)image;
             }
@@ -37,11 +37,11 @@ namespace PruebaMenuMADU
 
         private void BntCargarFondo_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog bgPick = new FolderBrowserDialog();
+            OpenFileDialog bgPick = new OpenFileDialog();
             if (bgPick.ShowDialog() == DialogResult.OK)
             {
-                txtUrlBackground.Text = bgPick.SelectedPath;
-                Bitmap image = new Bitmap(bgPick.SelectedPath);
+                txtUrlBackground.Text = bgPick.FileName;
+                Bitmap image = new Bitmap(bgPick.FileName);
                 pbBg.Dock = DockStyle.Fill;
                 pbBg.Image = (Image)image;
             }
@@ -49,14 +49,39 @@ namespace PruebaMenuMADU
 
         private void btnCargarMusica_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog bgPick = new FolderBrowserDialog();
-            if (bgPick.ShowDialog() == DialogResult.OK)
+            OpenFileDialog musicFile = new OpenFileDialog();
+            if (musicFile.ShowDialog() == DialogResult.OK)
             {
-                txtUrlBackground.Text = bgPick.SelectedPath;
-                /*Bitmap image = new Bitmap(bgPick.SelectedPath);
-                pbBg.Dock = DockStyle.Fill;
-                pbBg.Image = (Image)image;*/
+                txtUrlMusic.Text = musicFile.FileName;
+                wmpMusic.URL = txtUrlMusic.Text;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Personaje[] personajesRap = new Personaje[5];
+            Partida[] partidasRap = new Partida[10];
+            Pregunta[] preguntasRap = new Pregunta[60];
+            String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
+            foreach(String element in nonNullableStrings)
+            {
+                if (String.IsNullOrEmpty(element){
+
+                    MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;                
+                }
+            }
+            
+            Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
+            Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
+
+
+            Console.WriteLine(spanish.ToString() + " , " + english.ToString());
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

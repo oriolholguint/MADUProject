@@ -53,10 +53,8 @@ C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.AssemblyReference.cache
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.exe
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.pdb
-
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearGenero.resources
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearPreguntasForm.resources
-
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPersonajes.resources
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Login.resources
@@ -67,8 +65,12 @@ C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Properties.Resources.resources
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.RecuperarContrasenya.resources
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.GenerateResource.cache
-
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CoreCompileInputs.cache
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe.config
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe
 C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.pdb
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Interop.WMPLib.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\Interop.WMPLib.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.ResolveComReference.cache

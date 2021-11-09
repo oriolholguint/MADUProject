@@ -43,7 +43,7 @@ namespace PruebaMenuMADU
             Personaje[] personajesRap = new Personaje[1];
             Partida[] partidasRap = new Partida[1];
             Pregunta[] preguntasRap = new Pregunta[1];
-            preguntasRap[0] = preguntaRapPrueba;
+            preguntasRap[0] = preguntaRapPrueba;    
 
             Genero Rock = new Genero("Rock", "Musica", "Musica", "Imagen", personajesRock, partidasRock, preguntasRock);
             Genero Rap = new Genero("Rap", "Musica", "Musica", "Imagen", personajesRap, partidasRap, preguntasRap);
