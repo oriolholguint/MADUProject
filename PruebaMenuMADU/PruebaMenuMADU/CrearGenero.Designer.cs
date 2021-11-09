@@ -34,13 +34,13 @@ namespace PruebaMenuMADU
             this.btnCargarImagen = new System.Windows.Forms.Button();
             this.pbImagenGenero = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUrlBackground = new System.Windows.Forms.TextBox();
             this.BntCargarFondo = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbBg = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUrlMusic = new System.Windows.Forms.TextBox();
             this.btnCargarMusica = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbMusic = new System.Windows.Forms.PictureBox();
             this.txtNombreGenero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,9 +48,9 @@ namespace PruebaMenuMADU
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBg)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@ namespace PruebaMenuMADU
             this.txtUrlOculta.Name = "txtUrlOculta";
             this.txtUrlOculta.Size = new System.Drawing.Size(364, 20);
             this.txtUrlOculta.TabIndex = 2;
+            this.txtUrlOculta.TextChanged += new System.EventHandler(this.txtUrlOculta_TextChanged);
             // 
             // btnCargarImagen
             // 
@@ -99,25 +100,25 @@ namespace PruebaMenuMADU
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtUrlBackground);
             this.groupBox1.Controls.Add(this.BntCargarFondo);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(476, 203);
+            this.groupBox1.Controls.Add(this.pbBg);
+            this.groupBox1.Location = new System.Drawing.Point(473, 203);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(402, 372);
+            this.groupBox1.Size = new System.Drawing.Size(405, 372);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Imagen para el fondo del Género";
             // 
-            // textBox1
+            // txtUrlBackground
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 248);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtUrlBackground.Location = new System.Drawing.Point(15, 248);
+            this.txtUrlBackground.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUrlBackground.Name = "txtUrlBackground";
+            this.txtUrlBackground.Size = new System.Drawing.Size(371, 20);
+            this.txtUrlBackground.TabIndex = 2;
             // 
             // BntCargarFondo
             // 
@@ -129,21 +130,22 @@ namespace PruebaMenuMADU
             this.BntCargarFondo.TabIndex = 1;
             this.BntCargarFondo.Text = "Elegir imagen de fondo";
             this.BntCargarFondo.UseVisualStyleBackColor = true;
+            this.BntCargarFondo.Click += new System.EventHandler(this.BntCargarFondo_Click);
             // 
-            // pictureBox1
+            // pbBg
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(44, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 200);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbBg.Location = new System.Drawing.Point(44, 26);
+            this.pbBg.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBg.Name = "pbBg";
+            this.pbBg.Size = new System.Drawing.Size(313, 200);
+            this.pbBg.TabIndex = 0;
+            this.pbBg.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtUrlMusic);
             this.groupBox2.Controls.Add(this.btnCargarMusica);
-            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.pbMusic);
             this.groupBox2.Location = new System.Drawing.Point(893, 203);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -153,13 +155,13 @@ namespace PruebaMenuMADU
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cargar musica de fondo para el Género";
             // 
-            // textBox2
+            // txtUrlMusic
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 248);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(368, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtUrlMusic.Location = new System.Drawing.Point(13, 248);
+            this.txtUrlMusic.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUrlMusic.Name = "txtUrlMusic";
+            this.txtUrlMusic.Size = new System.Drawing.Size(368, 20);
+            this.txtUrlMusic.TabIndex = 2;
             // 
             // btnCargarMusica
             // 
@@ -171,15 +173,16 @@ namespace PruebaMenuMADU
             this.btnCargarMusica.TabIndex = 1;
             this.btnCargarMusica.Text = "Cargar Musica de fondo";
             this.btnCargarMusica.UseVisualStyleBackColor = true;
+            this.btnCargarMusica.Click += new System.EventHandler(this.btnCargarMusica_Click);
             // 
-            // pictureBox2
+            // pbMusic
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(27, 26);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(354, 200);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbMusic.Location = new System.Drawing.Point(27, 26);
+            this.pbMusic.Margin = new System.Windows.Forms.Padding(2);
+            this.pbMusic.Name = "pbMusic";
+            this.pbMusic.Size = new System.Drawing.Size(354, 200);
+            this.pbMusic.TabIndex = 0;
+            this.pbMusic.TabStop = false;
             // 
             // txtNombreGenero
             // 
@@ -243,10 +246,10 @@ namespace PruebaMenuMADU
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBg)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,13 +263,13 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Button btnCargarImagen;
         private System.Windows.Forms.PictureBox pbImagenGenero;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUrlBackground;
         private System.Windows.Forms.Button BntCargarFondo;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbBg;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUrlMusic;
         private System.Windows.Forms.Button btnCargarMusica;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbMusic;
         private System.Windows.Forms.TextBox txtNombreGenero;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
