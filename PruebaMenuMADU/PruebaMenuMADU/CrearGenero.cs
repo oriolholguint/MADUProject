@@ -63,15 +63,27 @@ namespace PruebaMenuMADU
             Partida[] partidasRap = new Partida[10];
             Pregunta[] preguntasRap = new Pregunta[60];
             String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
+            int paths = 0;
             foreach(String element in nonNullableStrings)
             {
-                if (String.IsNullOrEmpty(element){
+                if (String.IsNullOrEmpty(element)){
 
                     MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;                
                 }
+                if (System.IO.Directory.Exists(element))
+                {
+                    paths++;
+                }
+                
             }
-            
+            if(paths<3)
+            {
+
+                MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
             Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
 
