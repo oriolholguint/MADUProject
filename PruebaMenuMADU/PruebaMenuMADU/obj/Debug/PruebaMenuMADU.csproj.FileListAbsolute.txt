@@ -47,3 +47,8 @@ C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMAD
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe.config
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.exe
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\PruebaMenuMADU.pdb
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\Interop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.ResolveComReference.cache
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Interop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\AxInterop.WMPLib.dll

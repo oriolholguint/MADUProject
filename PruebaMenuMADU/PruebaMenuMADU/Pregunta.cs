@@ -10,16 +10,13 @@ namespace PruebaMenuMADU
 {
     public class Pregunta
     {
-        public int id { get; set; }
-
+       
         public String NombrePregunta { get; set; }
 
         public String Genero { get; set; }
-
-        public String Tipo { get; set; }
-
-        public String UrlImagen { get; set; }
-        public String UrlAudio { get; set; }
+                
+        public String Imagen { get; set; }
+        public String Sonido { get; set; }
 
         public Boolean MayorDeEdad { get; set; }
 
@@ -31,14 +28,13 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(int id, String NombrePregunta, String Genero, String Tipo, String UrlImagen, String UrlAudio ,Boolean MayorDeEdad, Respuesta[] respuestas)
+        public Pregunta(String NombrePregunta, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] respuestas)
         {
-            this.id = id;
+            
             this.NombrePregunta = NombrePregunta;
             this.Genero = Genero;
-            this.Tipo = Tipo;
-            this.UrlImagen = UrlImagen;
-            this.UrlAudio = UrlAudio;
+            this.Imagen = Imagen;
+            this.Sonido = Sonido;
             this.MayorDeEdad = MayorDeEdad;
             this.respuestas = respuestas;
             

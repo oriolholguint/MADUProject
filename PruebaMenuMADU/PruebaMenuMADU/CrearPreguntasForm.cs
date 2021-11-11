@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace PruebaMenuMADU
 {
@@ -36,6 +40,17 @@ namespace PruebaMenuMADU
             cbxGeneroPreg.SelectedItem = null;
             cbxTipoPreg.SelectedItem = null;
             cbxEdad.SelectedItem = null;
+            pbImagenPregunta.Image = null;
+
+            txtImgAnt.Text = "";
+            txtImgOrigen.Text = "";
+            txtUrlImg.Text = "";
+
+            Reproductor.URL = null;
+            txtAudioAnt.Text = "";
+            txtAudioNuevo.Text = "";
+            txtAudioOrigen.Text = "";
+
             txtResp1.Text = "";
             txtResp2.Text = "";
             txtResp3.Text = "";
@@ -90,20 +105,52 @@ namespace PruebaMenuMADU
         {
             Pregunta pregunta = new Pregunta();
 
-            //BindingList<Respuesta> respuestas = new BindingList<Respuesta>();
-            int i = 1;
-            foreach (var item in preguntas)
-            {
-                i++;
-            }
-           
-
-            pregunta.id = i;
+            
+            
             pregunta.NombrePregunta = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedItem;           
-            pregunta.Tipo = (String)cbxTipoPreg.SelectedItem;
-            pregunta.UrlImagen = "urlprueba";
-            pregunta.UrlAudio = "urlaudioprueba";
+            
+           
+
+            if (txtImgOrigen.Text.Equals("") && txtImgOrigen.Text.Equals(""))
+            {
+                pregunta.Imagen = "";
+            }
+            else {
+                if (!File.Exists(txtUrlImg.Text))
+                {
+                    pregunta.Imagen = txtUrlImg.Text;
+                    File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
+                   
+                }
+                else
+                {
+                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                }
+
+            }
+
+
+
+            if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
+            {
+                pregunta.Sonido = "";
+            }
+            else
+            {
+                if (!File.Exists(txtAudioNuevo.Text))
+                {
+                    pregunta.Sonido = txtAudioNuevo.Text;
+                    File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
+                   
+                }
+                else
+                {
+                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                }
+
+            }
+
 
             if (cbxEdad.SelectedIndex == 0)
             {
@@ -127,21 +174,20 @@ namespace PruebaMenuMADU
                 if (rdbResp1.Checked)
                 {
                    
-
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-
+                    respuesta1 = new Respuesta("Verdadero", true);
+                    respuesta2 = new Respuesta("False", false);
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                   
                 }
                 if (rdbResp2.Checked)
                 {
                    
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-
+                    respuesta1 = new Respuesta("Falso", false);
+                    respuesta2 = new Respuesta("Verdadero", true);
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                   
 
                 }
 
@@ -159,52 +205,52 @@ namespace PruebaMenuMADU
                 {
 
 
-                    respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, true);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
-                  
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.respuestas.SetValue(respuesta3, 2);
+                    pregunta.respuestas.SetValue(respuesta4, 3);
+
                 }
                 if (rdbResp2.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, true);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.respuestas.SetValue(respuesta3, 2);
+                    pregunta.respuestas.SetValue(respuesta4, 3);
                 }
                 if (rdbResp3.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, true);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, true);
+                    respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.respuestas.SetValue(respuesta3, 2);
+                    pregunta.respuestas.SetValue(respuesta4, 3);
                 }
                 if (rdbResp4.Checked)
                 {
-                    respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                    respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                    respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                    respuesta4 = new Respuesta(4, txtResp4.Text, true);
+                    respuesta1 = new Respuesta(txtResp1.Text, false);
+                    respuesta2 = new Respuesta(txtResp2.Text, false);
+                    respuesta3 = new Respuesta(txtResp3.Text, false);
+                    respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                    pregunta.respuestas[0] = respuesta1;
-                    pregunta.respuestas[1] = respuesta2;
-                    pregunta.respuestas[2] = respuesta3;
-                    pregunta.respuestas[3] = respuesta4;
+                    pregunta.respuestas.SetValue(respuesta1, 0);
+                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.respuestas.SetValue(respuesta3, 2);
+                    pregunta.respuestas.SetValue(respuesta4, 3);
                 }
 
 
@@ -216,8 +262,7 @@ namespace PruebaMenuMADU
             preguntas.Add(pregunta);
 
             Button btnSeleccionarPregunta = new Button();
-            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
-            btnSeleccionarPregunta.Text = "P " + pregunta.id;
+            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";          
             btnSeleccionarPregunta.BackColor = Color.LightCyan;
             btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
 
@@ -243,7 +288,7 @@ namespace PruebaMenuMADU
             btnModificarPregunta.Size = new Size(130, 40);
             btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
             flpListaPreguntas.Controls.Add(btnModificarPregunta);
-            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta,pregunta.id);
+            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta);
 
 
 
@@ -279,8 +324,7 @@ namespace PruebaMenuMADU
            
             txtNombrePreg.Text = preg.NombrePregunta;      
            
-            cbxGeneroPreg.SelectedItem = preg.Genero;
-            cbxTipoPreg.SelectedItem = preg.Tipo;
+            cbxGeneroPreg.SelectedItem = preg.Genero;           
 
             if (preg.MayorDeEdad)
             {
@@ -291,15 +335,32 @@ namespace PruebaMenuMADU
                 cbxEdad.SelectedIndex = 0;
             }
 
+            txtImgAnt.Text = preg.Imagen;
+            txtAudioAnt.Text = preg.Sonido;
+            
 
+            if (!preg.Imagen.Equals("")) {
+                pbImagenPregunta.ImageLocation = preg.Imagen;
+            }
 
-            //MessageBox.Show(preg.respuestas[0].NombreRespuesta);
+            if (!preg.Sonido.Equals("")) {
+                Reproductor.URL = preg.Sonido;
+            }
+
+            int num = preg.respuestas.Length;
+
+            if (num == 2) {
+                cbxTipoPreg.SelectedIndex = 0;
+
+            } else if(num == 4){
+                cbxTipoPreg.SelectedIndex = 1;
+            }
+            
+
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                preg.respuestas = new Respuesta[2];
-                
-
+              
                 txtResp1.Text = preg.respuestas[0].NombreRespuesta;
                 rdbResp1.Checked = preg.respuestas[0].Correcta;
 
@@ -341,7 +402,7 @@ namespace PruebaMenuMADU
 
             if (cbxTipoPreg.SelectedIndex == 1)
             {
-                preg.respuestas = new Respuesta[4];
+               
 
                 MostrarColumna();
                 txtResp1.Text = preg.respuestas[0].NombreRespuesta;
@@ -439,9 +500,27 @@ namespace PruebaMenuMADU
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
-                pbImagenPregunta.ImageLocation = getImage.FileName;
-                txtUrlOculta.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                
+                String []palabras = getImage.FileName.Split('\\');
+                String nombreImagen = palabras[palabras.Length - 1];
+               
+               
 
+
+                pbImagenPregunta.ImageLocation = getImage.FileName;
+                txtImgOrigen.Text = getImage.FileName;
+                txtUrlImg.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                string path = System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
+                if (Environment.OSVersion.Version.Major >= 6)
+                {
+                    path = System.IO.Directory.GetParent(path).ToString();
+                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    //MessageBox.Show(rutaCompleta);
+                    txtUrlImg.Text = rutaCompleta + nombreImagen;
+
+                }
+
+               
 
             }
             else
@@ -449,8 +528,7 @@ namespace PruebaMenuMADU
                 MessageBox.Show("No se selecciono ninguna imagen", "Sin seleccion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
 
-            //SaveFileDialog guardarImagen = new SaveFileDialog();
-            //guardarImagen.InitialDirectory = "";
+            
 
 
         }
@@ -461,11 +539,15 @@ namespace PruebaMenuMADU
             {
                 
                 OcultarColumna();
+                txtResp1.Text = "Verdadero";
+                txtResp2.Text = "Falso";
             }
             else
             {
 
                 MostrarColumna();
+                txtResp1.Text = "";
+                txtResp2.Text = "";
 
             }
         }
@@ -533,7 +615,7 @@ namespace PruebaMenuMADU
         }
 
 
-        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg,int id)
+        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg)
         {
                         
                 
@@ -541,7 +623,7 @@ namespace PruebaMenuMADU
 
             preg.Genero = (String)cbxGeneroPreg.SelectedItem;
             
-            preg.Tipo = (String)cbxGeneroPreg.SelectedItem;
+            
             if (cbxEdad.SelectedIndex == 0)
             {
                 preg.MayorDeEdad = false;
@@ -551,32 +633,91 @@ namespace PruebaMenuMADU
                 preg.MayorDeEdad = true;
             }
 
-            preg.UrlImagen = "mod";
-            preg.UrlAudio = "mod";
+
+
+
+            if (txtImgOrigen.Text.Equals("") && txtImgOrigen.Text.Equals(""))
+            {
+                
+                if(File.Exists(preg.Imagen))
+                {
+                    File.Delete(preg.Imagen);
+
+                }
+                preg.Imagen = "";
+            }
+            else
+            {
+                if (!File.Exists(txtUrlImg.Text))
+                {
+                    File.Delete(txtImgAnt.Text);
+
+                    preg.Imagen = txtUrlImg.Text;
+                    
+                    File.Copy(txtImgOrigen.Text, txtUrlImg.Text);                    
+
+                }
+                else
+                {
+
+                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                }
+
+            }
+
+
+
+            if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
+            {
+               
+
+                if (File.Exists(preg.Sonido))
+                {
+                    File.Delete(preg.Sonido);
+
+                }
+                preg.Sonido = "";
+
+            }
+            else
+            {
+                if (!File.Exists(txtAudioNuevo.Text))
+                {
+                    File.Delete(txtAudioAnt.Text);
+
+                    preg.Sonido = txtAudioNuevo.Text;
+                    File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
+
+                }
+                else
+                {
+                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                }
+
+            }
 
 
 
             if (cbxTipoPreg.SelectedIndex == 0)
                     {
-                        preg.respuestas = new Respuesta[2];
-
+                        
                         Respuesta respuesta1;
                         Respuesta respuesta2;
 
                         if (rdbResp1.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[0] = respuesta2;
+                            respuesta1 = new Respuesta(txtResp1.Text, true);
+                            respuesta2 = new Respuesta(txtResp2.Text, false);
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
 
                         }
                         if (rdbResp2.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[0] = respuesta2;
+                            respuesta1 = new Respuesta(txtResp1.Text, false);
+                            respuesta2 = new Respuesta(txtResp2.Text, true);
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
                         }
 
 
@@ -584,7 +725,7 @@ namespace PruebaMenuMADU
                     else
                     {
 
-                        preg.respuestas = new Respuesta[4];
+                        
                         Respuesta respuesta1;
                         Respuesta respuesta2;
                         Respuesta respuesta3;
@@ -592,57 +733,56 @@ namespace PruebaMenuMADU
 
                         if (rdbResp1.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, true);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                            respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                            respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                            respuesta1 = new Respuesta(txtResp1.Text, true);
+                            respuesta2 = new Respuesta(txtResp2.Text, false);
+                            respuesta3 = new Respuesta(txtResp3.Text, false);
+                            respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[1] = respuesta2;
-                            preg.respuestas[2] = respuesta3;
-                            preg.respuestas[3] = respuesta4;
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.respuestas.SetValue(respuesta3, 2);
+                            preg.respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp2.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, true);
-                            respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                            respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                            respuesta1 = new Respuesta(txtResp1.Text, false);
+                            respuesta2 = new Respuesta(txtResp2.Text, true);
+                            respuesta3 = new Respuesta(txtResp3.Text, false);
+                            respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[1] = respuesta2;
-                            preg.respuestas[2] = respuesta3;
-                            preg.respuestas[3] = respuesta4;
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.respuestas.SetValue(respuesta3, 2);
+                            preg.respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp3.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                            respuesta3 = new Respuesta(3, txtResp3.Text, true);
-                            respuesta4 = new Respuesta(4, txtResp4.Text, false);
+                            respuesta1 = new Respuesta(txtResp1.Text, false);
+                            respuesta2 = new Respuesta(txtResp2.Text, false);
+                            respuesta3 = new Respuesta(txtResp3.Text, true);
+                            respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[1] = respuesta2;
-                            preg.respuestas[2] = respuesta3;
-                            preg.respuestas[3] = respuesta4;
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.respuestas.SetValue(respuesta3, 2);
+                            preg.respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp2.Checked)
                         {
-                            respuesta1 = new Respuesta(1, txtResp1.Text, false);
-                            respuesta2 = new Respuesta(2, txtResp2.Text, false);
-                            respuesta3 = new Respuesta(3, txtResp3.Text, false);
-                            respuesta4 = new Respuesta(4, txtResp4.Text, true);
+                            respuesta1 = new Respuesta(txtResp1.Text, false);
+                            respuesta2 = new Respuesta(txtResp2.Text, false);
+                            respuesta3 = new Respuesta(txtResp3.Text, false);
+                            respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                            preg.respuestas[0] = respuesta1;
-                            preg.respuestas[1] = respuesta2;
-                            preg.respuestas[2] = respuesta3;
-                            preg.respuestas[3] = respuesta4;
+                            preg.respuestas.SetValue(respuesta1, 0);
+                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.respuestas.SetValue(respuesta3, 2);
+                            preg.respuestas.SetValue(respuesta4, 3);
                         }
 
 
                     }
-
-                   // preguntas[id] = preg;                   
+                
             
         }
 
@@ -680,20 +820,72 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            int id = 1;
-            //Generar Json
-            foreach (var pregunta in preguntas)
-            {
-                MessageBox.Show(pregunta.ToString());
-
-            }
+            
+           
 
 
 
         }
 
-       
+        private void btnCargarAudio_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog getAudio = new OpenFileDialog();
+            getAudio.InitialDirectory = "C:\\";
+            getAudio.Filter = "Archivos de Audio (*.mp3)(*.mp4)|*.mp3;*mp4|WAV (*.wav)|*.wav|WMA (*.wma)|*.wma";
+
+            if (getAudio.ShowDialog() == DialogResult.OK)
+            {
+
+                String[] palabras = getAudio.FileName.Split('\\');
+                String nombreAudio = palabras[palabras.Length - 1];
+                String[] nombreSinExtension = palabras[palabras.Length - 1].Split('.');
+               
 
 
+                //pbImagenPregunta.ImageLocation = getAudio.FileName;
+                txtAudioOrigen.Text = getAudio.FileName;
+                txtAudioNuevo.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                string path = System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
+                if (Environment.OSVersion.Version.Major >= 6)
+                {
+                    path = System.IO.Directory.GetParent(path).ToString();
+                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    
+                    txtAudioNuevo.Text = rutaCompleta + nombreAudio;
+                    Reproductor.URL = txtAudioOrigen.Text;
+
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ningun audio", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+        }
+
+        
+
+        private void btnSinImagen_Click(object sender, EventArgs e)
+        {
+            pbImagenPregunta.Image = null;
+
+           
+            txtImgOrigen.Text = "";
+            txtUrlImg.Text = "";
+        }
+
+        private void btnSinAudio_Click(object sender, EventArgs e)
+        {
+            Reproductor.URL = null;
+
+            
+            txtAudioNuevo.Text = "";
+            txtAudioOrigen.Text = "";
+        }
     }
 }
