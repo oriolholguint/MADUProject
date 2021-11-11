@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        /*private void InitializeComponent()
         {
             this.txtNombrePreg = new System.Windows.Forms.TextBox();
             this.cbxGeneroPreg = new System.Windows.Forms.ComboBox();
@@ -411,7 +411,7 @@
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
             this.btnCrearPreguntas.Size = new System.Drawing.Size(229, 49);
             this.btnCrearPreguntas.TabIndex = 13;
-            this.btnCrearPreguntas.Text = "Crear Preguntas";
+            this.btnCrearPreguntas.Text = "Crear PreguntasEsp";
             this.btnCrearPreguntas.UseVisualStyleBackColor = false;
             this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
             // 
@@ -448,7 +448,7 @@
             this.PerformLayout();
 
         }
-
+        */
         #endregion
         private System.Windows.Forms.TextBox txtNombrePreg;
         private System.Windows.Forms.ComboBox cbxGeneroPreg;
