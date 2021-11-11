@@ -20,8 +20,22 @@ namespace PruebaMenuMADU
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog imagePick = new OpenFileDialog();
+            
             if (imagePick.ShowDialog() == DialogResult.OK)
             {
+                String[] imageTypeAccepted = new String[] { "png", "jpg", "jpeg", "gif" };
+                foreach (String type in imageTypeAccepted)
+                {
+                    
+                    if (imagePick.FileName.Split('.').Last().Equals(type))
+                    {
+                        break;
+                    }else if (type.Equals(imageTypeAccepted.Last()))
+                    {
+                        MessageBox.Show("Tipo de archivo no admitido", "Error al añadir archivo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
+                }
                 txtUrlOculta.Text = imagePick.FileName;
                 Bitmap image = new Bitmap(imagePick.FileName);
                 pbImagenGenero.Dock = DockStyle.Fill;
@@ -40,6 +54,20 @@ namespace PruebaMenuMADU
             OpenFileDialog bgPick = new OpenFileDialog();
             if (bgPick.ShowDialog() == DialogResult.OK)
             {
+                String[] imageTypeAccepted = new String[] { "png", "jpg", "jpeg", "gif" };
+                foreach (String type in imageTypeAccepted)
+                {
+
+                    if (bgPick.FileName.Split('.').Last().Equals(type))
+                    {
+                        break;
+                    }
+                    else if (type.Equals(imageTypeAccepted.Last()))
+                    {
+                        MessageBox.Show("Tipo de archivo no admitido", "Error al añadir archivo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
+                }
                 txtUrlBackground.Text = bgPick.FileName;
                 Bitmap image = new Bitmap(bgPick.FileName);
                 pbBg.Dock = DockStyle.Fill;
@@ -52,6 +80,20 @@ namespace PruebaMenuMADU
             OpenFileDialog musicFile = new OpenFileDialog();
             if (musicFile.ShowDialog() == DialogResult.OK)
             {
+                String[] videoTypeAccepted = new String[] {"mp3", "wav", "wma"};   
+                foreach (String type in videoTypeAccepted)
+                {
+
+                    if (musicFile.FileName.Split('.').Last().Equals(type))
+                    {
+                        break;
+                    }
+                    else if (type.Equals(videoTypeAccepted.Last()))
+                    {
+                        MessageBox.Show("Tipo de archivo no admitido", "Error al añadir archivo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
+                }
                 txtUrlMusic.Text = musicFile.FileName;
                 wmpMusic.URL = txtUrlMusic.Text;
             }
