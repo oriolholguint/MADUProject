@@ -366,9 +366,6 @@ namespace PruebaMenuMADU
                 txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
                 rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
-                txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
-                rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
-
                 txtResp2.Text = preg.Respuestas[1].RespuestaDescripcion;
                 rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;
 
