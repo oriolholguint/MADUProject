@@ -101,9 +101,9 @@ namespace PruebaMenuMADU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Personaje[] personajesRap = new Personaje[5];
+            List <Personaje> personajesRap = new List<Personaje>();
             Partida[] partidasRap = new Partida[10];
-            Pregunta[] preguntasRap = new Pregunta[60];
+            List<Pregunta> preguntasRap = new List<Pregunta>();
             String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
             int paths = 0;
             foreach(String element in nonNullableStrings)

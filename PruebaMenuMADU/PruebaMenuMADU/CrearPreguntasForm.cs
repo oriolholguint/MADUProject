@@ -541,7 +541,7 @@ namespace PruebaMenuMADU
 
             preg.Genero = (String)cbxGeneroPreg.SelectedItem;
 
-            /*preg.Tipo = (String)cbxGeneroPreg.SelectedItem; çÇÇ*//**/
+            /*preg.Tipo = (String)cbxGeneroPreg.SelectedItem; çÇÇ*//**//*
             if (cbxEdad.SelectedIndex == 0)
             {
                 preg.EsMayorEdad = false;

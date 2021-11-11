@@ -51,13 +51,13 @@ namespace PruebaMenuMADU
             Pregunta preguntaRapPrueba = new Pregunta("Pregunta Rap", "Imagen", "Sonido", false, respuestasPrueba);
             Pregunta preguntaRapPrueba2 = new Pregunta("Pregunta Rap2", "Imagen", "Sonido", false, respuestasPrueba);
 
-            Personaje[] personajesRock = new Personaje[1];
+            List<Personaje> personajesRock = new List<Personaje>();
             Partida[] partidasRock = new Partida[1];
             List<Pregunta> preguntasRock = new List<Pregunta>();
             preguntasRock.Add(preguntaRockPrueba);
             preguntasRock.Add(preguntaRockPrueba2);
 
-            Personaje[] personajesRap = new Personaje[1];
+            List<Personaje> personajesRap = new List<Personaje>();
             Partida[] partidasRap = new Partida[1];
             List<Pregunta> preguntasRap = new List<Pregunta>();
             preguntasRap.Add(preguntaRapPrueba);
