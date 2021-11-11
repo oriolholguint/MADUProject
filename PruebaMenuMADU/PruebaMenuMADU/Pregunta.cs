@@ -20,20 +20,22 @@ namespace PruebaMenuMADU
 
         public Boolean EsMayorEdad { get; set; }
 
-        public List<Respuesta> Respuestas { get; set; }
+        public Respuesta[] Respuestas { get; set; }
 
         public Pregunta()
         {
 
         }
 
-        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean EsMayorEdad, List<Respuesta> Respuestas)
+        public Pregunta(String NombrePregunta, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] respuestas)
         {
+
             this.PreguntaDescripcion = PreguntaDescripcion;
             this.Imagen = Imagen;
             this.Sonido = Sonido;
             this.EsMayorEdad = EsMayorEdad;
             this.Respuestas = Respuestas;
+
         }
 
         public override string ToString()

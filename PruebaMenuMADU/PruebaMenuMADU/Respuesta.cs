@@ -14,8 +14,8 @@ namespace PruebaMenuMADU
         public Boolean EsCorrecta { get; set; }
 
         public Respuesta()
-        { 
-        
+        {
+
         }
 
         public Respuesta(String RespuestaDescripcion,Boolean EsCorrecta)
@@ -26,8 +26,7 @@ namespace PruebaMenuMADU
 
         public override string ToString()
         {
-            return "Respuesta Descripcion: " + this.RespuestaDescripcion + 
-                   ", EsCorrecta: " + this.EsCorrecta;
+            return "Nombre Respuesta: " + this.RespuestaDescripcion + ", Correcta: " + this.EsCorrecta;
         }
     }
 }

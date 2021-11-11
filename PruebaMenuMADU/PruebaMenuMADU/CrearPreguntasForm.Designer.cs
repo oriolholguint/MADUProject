@@ -28,20 +28,29 @@
         /// </summary>
         /*private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPreguntasForm));
             this.txtNombrePreg = new System.Windows.Forms.TextBox();
             this.cbxGeneroPreg = new System.Windows.Forms.ComboBox();
             this.cbxEdad = new System.Windows.Forms.ComboBox();
             this.cbxTipoPreg = new System.Windows.Forms.ComboBox();
             this.gbImagen = new System.Windows.Forms.GroupBox();
-            this.txtUrlOculta = new System.Windows.Forms.TextBox();
+            this.btnSinImagen = new System.Windows.Forms.Button();
+            this.txtImgAnt = new System.Windows.Forms.TextBox();
+            this.txtImgOrigen = new System.Windows.Forms.TextBox();
+            this.txtUrlImg = new System.Windows.Forms.TextBox();
             this.btnCargarImagen = new System.Windows.Forms.Button();
             this.pbImagenPregunta = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbAudio = new System.Windows.Forms.GroupBox();
+            this.btnSinAudio = new System.Windows.Forms.Button();
+            this.txtAudioAnt = new System.Windows.Forms.TextBox();
+            this.btnReproduciir = new System.Windows.Forms.Button();
+            this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
+            this.txtAudioNuevo = new System.Windows.Forms.TextBox();
+            this.txtAudioOrigen = new System.Windows.Forms.TextBox();
             this.btnCargarAudio = new System.Windows.Forms.Button();
-            this.cbxAudio = new System.Windows.Forms.CheckBox();
             this.btnAñadirPregunta = new System.Windows.Forms.Button();
             this.flpListaPreguntas = new System.Windows.Forms.FlowLayoutPanel();
             this.gbRespuestas = new System.Windows.Forms.GroupBox();
@@ -60,6 +69,7 @@
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
             this.gbRespuestas.SuspendLayout();
             this.tlpRespuestas.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -82,6 +92,7 @@
             "Electronica",
             "Pop",
             "Hip-Hop"});
+            this.cbxGeneroPreg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxGeneroPreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGeneroPreg.FormattingEnabled = true;
             this.cbxGeneroPreg.Items.AddRange(new object[] {
@@ -97,6 +108,7 @@
             // 
             // cbxEdad
             // 
+            this.cbxEdad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEdad.FormattingEnabled = true;
             this.cbxEdad.Items.AddRange(new object[] {
@@ -109,6 +121,7 @@
             // 
             // cbxTipoPreg
             // 
+            this.cbxTipoPreg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoPreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTipoPreg.FormattingEnabled = true;
             this.cbxTipoPreg.Items.AddRange(new object[] {
@@ -122,7 +135,10 @@
             // 
             // gbImagen
             // 
-            this.gbImagen.Controls.Add(this.txtUrlOculta);
+            this.gbImagen.Controls.Add(this.btnSinImagen);
+            this.gbImagen.Controls.Add(this.txtImgAnt);
+            this.gbImagen.Controls.Add(this.txtImgOrigen);
+            this.gbImagen.Controls.Add(this.txtUrlImg);
             this.gbImagen.Controls.Add(this.btnCargarImagen);
             this.gbImagen.Controls.Add(this.pbImagenPregunta);
             this.gbImagen.Location = new System.Drawing.Point(240, 305);
@@ -132,17 +148,45 @@
             this.gbImagen.TabStop = false;
             this.gbImagen.Text = "Imagen";
             // 
-            // txtUrlOculta
+            // btnSinImagen
             // 
-            this.txtUrlOculta.Location = new System.Drawing.Point(38, 268);
-            this.txtUrlOculta.Name = "txtUrlOculta";
-            this.txtUrlOculta.Size = new System.Drawing.Size(584, 22);
-            this.txtUrlOculta.TabIndex = 2;
+            this.btnSinImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSinImagen.Location = new System.Drawing.Point(322, 296);
+            this.btnSinImagen.Name = "btnSinImagen";
+            this.btnSinImagen.Size = new System.Drawing.Size(210, 49);
+            this.btnSinImagen.TabIndex = 5;
+            this.btnSinImagen.Text = "Sin Imagen";
+            this.btnSinImagen.UseVisualStyleBackColor = true;
+            this.btnSinImagen.Click += new System.EventHandler(this.btnSinImagen_Click);
+            // 
+            // txtImgAnt
+            // 
+            this.txtImgAnt.Location = new System.Drawing.Point(9, 296);
+            this.txtImgAnt.Name = "txtImgAnt";
+            this.txtImgAnt.Size = new System.Drawing.Size(52, 22);
+            this.txtImgAnt.TabIndex = 4;
+            this.txtImgAnt.Visible = false;
+            // 
+            // txtImgOrigen
+            // 
+            this.txtImgOrigen.Location = new System.Drawing.Point(9, 268);
+            this.txtImgOrigen.Name = "txtImgOrigen";
+            this.txtImgOrigen.Size = new System.Drawing.Size(290, 22);
+            this.txtImgOrigen.TabIndex = 3;
+            this.txtImgOrigen.Visible = false;
+            // 
+            // txtUrlImg
+            // 
+            this.txtUrlImg.Location = new System.Drawing.Point(322, 268);
+            this.txtUrlImg.Name = "txtUrlImg";
+            this.txtUrlImg.Size = new System.Drawing.Size(300, 22);
+            this.txtUrlImg.TabIndex = 2;
+            this.txtUrlImg.Visible = false;
             // 
             // btnCargarImagen
             // 
             this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.Location = new System.Drawing.Point(230, 296);
+            this.btnCargarImagen.Location = new System.Drawing.Point(89, 296);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(210, 49);
             this.btnCargarImagen.TabIndex = 1;
@@ -190,8 +234,13 @@
             // 
             // gbAudio
             // 
+            this.gbAudio.Controls.Add(this.btnSinAudio);
+            this.gbAudio.Controls.Add(this.txtAudioAnt);
+            this.gbAudio.Controls.Add(this.btnReproduciir);
+            this.gbAudio.Controls.Add(this.Reproductor);
+            this.gbAudio.Controls.Add(this.txtAudioNuevo);
+            this.gbAudio.Controls.Add(this.txtAudioOrigen);
             this.gbAudio.Controls.Add(this.btnCargarAudio);
-            this.gbAudio.Controls.Add(this.cbxAudio);
             this.gbAudio.Location = new System.Drawing.Point(1226, 305);
             this.gbAudio.Name = "gbAudio";
             this.gbAudio.Size = new System.Drawing.Size(660, 358);
@@ -199,26 +248,70 @@
             this.gbAudio.TabStop = false;
             this.gbAudio.Text = "Audio";
             // 
+            // btnSinAudio
+            // 
+            this.btnSinAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSinAudio.Location = new System.Drawing.Point(365, 303);
+            this.btnSinAudio.Name = "btnSinAudio";
+            this.btnSinAudio.Size = new System.Drawing.Size(210, 49);
+            this.btnSinAudio.TabIndex = 7;
+            this.btnSinAudio.Text = "Sin Audio";
+            this.btnSinAudio.UseVisualStyleBackColor = true;
+            this.btnSinAudio.Click += new System.EventHandler(this.btnSinAudio_Click);
+            // 
+            // txtAudioAnt
+            // 
+            this.txtAudioAnt.Location = new System.Drawing.Point(16, 296);
+            this.txtAudioAnt.Name = "txtAudioAnt";
+            this.txtAudioAnt.Size = new System.Drawing.Size(34, 22);
+            this.txtAudioAnt.TabIndex = 6;
+            this.txtAudioAnt.Visible = false;
+            // 
+            // btnReproduciir
+            // 
+            this.btnReproduciir.Location = new System.Drawing.Point(16, 329);
+            this.btnReproduciir.Name = "btnReproduciir";
+            this.btnReproduciir.Size = new System.Drawing.Size(75, 23);
+            this.btnReproduciir.TabIndex = 5;
+            this.btnReproduciir.Text = "play";
+            this.btnReproduciir.UseVisualStyleBackColor = true;
+           
+            // 
+            // Reproductor
+            // 
+            this.Reproductor.Enabled = true;
+            this.Reproductor.Location = new System.Drawing.Point(28, 37);
+            this.Reproductor.Name = "Reproductor";
+            this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
+            this.Reproductor.Size = new System.Drawing.Size(426, 166);
+            this.Reproductor.TabIndex = 4;
+            // 
+            // txtAudioNuevo
+            // 
+            this.txtAudioNuevo.Location = new System.Drawing.Point(365, 268);
+            this.txtAudioNuevo.Name = "txtAudioNuevo";
+            this.txtAudioNuevo.Size = new System.Drawing.Size(276, 22);
+            this.txtAudioNuevo.TabIndex = 3;
+            this.txtAudioNuevo.Visible = false;
+            // 
+            // txtAudioOrigen
+            // 
+            this.txtAudioOrigen.Location = new System.Drawing.Point(16, 268);
+            this.txtAudioOrigen.Name = "txtAudioOrigen";
+            this.txtAudioOrigen.Size = new System.Drawing.Size(320, 22);
+            this.txtAudioOrigen.TabIndex = 2;
+            this.txtAudioOrigen.Visible = false;
+            // 
             // btnCargarAudio
             // 
             this.btnCargarAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarAudio.Location = new System.Drawing.Point(233, 287);
+            this.btnCargarAudio.Location = new System.Drawing.Point(126, 303);
             this.btnCargarAudio.Name = "btnCargarAudio";
             this.btnCargarAudio.Size = new System.Drawing.Size(210, 49);
             this.btnCargarAudio.TabIndex = 1;
             this.btnCargarAudio.Text = "Cargar Audio";
             this.btnCargarAudio.UseVisualStyleBackColor = true;
-            // 
-            // cbxAudio
-            // 
-            this.cbxAudio.Appearance = System.Windows.Forms.Appearance.Button;
-            this.cbxAudio.Location = new System.Drawing.Point(209, 21);
-            this.cbxAudio.Name = "cbxAudio";
-            this.cbxAudio.Size = new System.Drawing.Size(274, 224);
-            this.cbxAudio.TabIndex = 0;
-            this.cbxAudio.Text = "Play";
-            this.cbxAudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbxAudio.UseVisualStyleBackColor = true;
+            this.btnCargarAudio.Click += new System.EventHandler(this.btnCargarAudio_Click);
             // 
             // btnAñadirPregunta
             // 
@@ -439,6 +532,8 @@
             this.gbImagen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).EndInit();
             this.gbAudio.ResumeLayout(false);
+            this.gbAudio.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
             this.gbRespuestas.ResumeLayout(false);
             this.tlpRespuestas.ResumeLayout(false);
             this.tlpRespuestas.PerformLayout();
@@ -462,10 +557,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox gbAudio;
         private System.Windows.Forms.Button btnCargarAudio;
-        private System.Windows.Forms.CheckBox cbxAudio;
         private System.Windows.Forms.Button btnAñadirPregunta;
         private System.Windows.Forms.FlowLayoutPanel flpListaPreguntas;
-        private System.Windows.Forms.TextBox txtUrlOculta;
+        private System.Windows.Forms.TextBox txtUrlImg;
         private System.Windows.Forms.GroupBox gbRespuestas;
         private System.Windows.Forms.TableLayoutPanel tlpRespuestas;
         private System.Windows.Forms.TextBox txtResp1;
@@ -479,5 +573,14 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnlCrearPreguntas;
         private System.Windows.Forms.Button btnCrearPreguntas;
+        private System.Windows.Forms.TextBox txtImgOrigen;
+        private System.Windows.Forms.TextBox txtAudioOrigen;
+        private System.Windows.Forms.TextBox txtAudioNuevo;
+        private AxWMPLib.AxWindowsMediaPlayer Reproductor;
+        private System.Windows.Forms.Button btnReproduciir;
+        private System.Windows.Forms.TextBox txtImgAnt;
+        private System.Windows.Forms.TextBox txtAudioAnt;
+        private System.Windows.Forms.Button btnSinImagen;
+        private System.Windows.Forms.Button btnSinAudio;
     }
 }
