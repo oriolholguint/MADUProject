@@ -20,14 +20,14 @@ namespace PruebaMenuMADU
 
         public Boolean EsMayorEdad { get; set; }
 
-        public Respuesta[] Respuestas { get; set; }
+        public List<Respuesta> Respuestas { get; set; }
 
         public Pregunta()
         {
 
         }
 
-        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean EsMayorEdad, Respuesta [] Respuestas)
+        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean EsMayorEdad, List<Respuesta> Respuestas)
         {
             this.PreguntaDescripcion = PreguntaDescripcion;
             this.Imagen = Imagen;

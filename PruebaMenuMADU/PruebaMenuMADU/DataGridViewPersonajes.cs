@@ -13,7 +13,8 @@ namespace PruebaMenuMADU
     public partial class DataGridViewPersonajes : Form
     {
         BindingList<Personaje> Personajes;
-        Genero GeneroSeleccionado;
+        Genero GeneroSeleccionadoEsp;
+        Genero GeneroSeleccionadoEng;
 
         ModificarPersonaje ModificarPersonaje;
 
@@ -22,12 +23,12 @@ namespace PruebaMenuMADU
             InitializeComponent();
         }
 
-        public DataGridViewPersonajes(Genero GeneroSeleccionado, ModificarPersonaje ModificarPersonaje)
+        public DataGridViewPersonajes(Genero GeneroSeleccionadoEsp, Genero GeneroSeleccionadoEng, ModificarPersonaje ModificarPersonaje)
         {
             InitializeComponent();
-            this.GeneroSeleccionado = GeneroSeleccionado;
+            this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
 
-            List<Personaje> PersonajesList = new List<Personaje>(GeneroSeleccionado.Personajes);
+            List<Personaje> PersonajesList = new List<Personaje>(GeneroSeleccionadoEsp.Personajes);
             Personajes = new BindingList<Personaje>(PersonajesList);
 
             this.ModificarPersonaje = ModificarPersonaje;

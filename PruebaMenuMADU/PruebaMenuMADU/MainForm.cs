@@ -12,8 +12,13 @@ namespace PruebaMenuMADU
 {
     public partial class Menu : Form
     {
-        List<Genero> Generos = new List<Genero>();
-        BindingList<Pregunta> Preguntas;
+        List<Genero> GenerosEsp = new List<Genero>();
+        List<Genero> GenerosEng = new List<Genero>();
+
+        Genero GeneroSeleccionadoEsp;
+        Genero GeneroSeleccionadoEng;
+
+        //BindingList<Pregunta> Preguntas;
 
         ModificarPregunta ModificarPregunta;
         ModificarPersonaje ModificarPersonaje;
@@ -25,45 +30,54 @@ namespace PruebaMenuMADU
             crearGenerosPrueba();
         }
 
+        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, Genero Genero)
+        {
+            int Indice = GenerosEsp.IndexOf(Genero);
+            GenerosEsp[Indice].Preguntas = PreguntasEsp;
+            GenerosEsp[Indice].Preguntas = PreguntasEng;
+        }
+
+        //Metodo de prueba para tener generos.
         public void crearGenerosPrueba()
         {
-            Respuesta[] respuestasPrueba = {new Respuesta("Respuesta 1", true),
-                                            new Respuesta("Respuesta 2", true),
-                                            new Respuesta("Respuesta 3", true),
-                                            new Respuesta("Respuesta 4", true)};
+            List<Respuesta> respuestasPrueba = new List<Respuesta>();
+            respuestasPrueba.Add(new Respuesta("Respuesta 1", true));
+            respuestasPrueba.Add(new Respuesta("Respuesta 2", true));
+            respuestasPrueba.Add(new Respuesta("Respuesta 3", true));
+            respuestasPrueba.Add(new Respuesta("Respuesta 4", true));
 
             Pregunta preguntaRockPrueba = new Pregunta("Pregunta Rock", "Imagen", "Sonido", false, respuestasPrueba);
+            Pregunta preguntaRockPrueba2 = new Pregunta("Pregunta Rock2", "Imagen", "Sonido", false, respuestasPrueba);
             Pregunta preguntaRapPrueba = new Pregunta("Pregunta Rap", "Imagen", "Sonido", false, respuestasPrueba);
+            Pregunta preguntaRapPrueba2 = new Pregunta("Pregunta Rap2", "Imagen", "Sonido", false, respuestasPrueba);
 
             Personaje[] personajesRock = new Personaje[1];
             Partida[] partidasRock = new Partida[1];
-            Pregunta[] preguntasRock = new Pregunta[1];
-            preguntasRock[0] = preguntaRockPrueba;
+            List<Pregunta> preguntasRock = new List<Pregunta>();
+            preguntasRock.Add(preguntaRockPrueba);
+            preguntasRock.Add(preguntaRockPrueba2);
 
             Personaje[] personajesRap = new Personaje[1];
             Partida[] partidasRap = new Partida[1];
-            Pregunta[] preguntasRap = new Pregunta[1];
-            preguntasRap[0] = preguntaRapPrueba;    
+            List<Pregunta> preguntasRap = new List<Pregunta>();
+            preguntasRap.Add(preguntaRapPrueba);
+            preguntasRap.Add(preguntaRapPrueba2);
 
             Genero Rock = new Genero("Rock", "Musica", "Musica", "Imagen", personajesRock, partidasRock, preguntasRock);
             Genero Rap = new Genero("Rap", "Musica", "Musica", "Imagen", personajesRap, partidasRap, preguntasRap);
 
-            Generos.Add(Rock);
-            Generos.Add(Rap);
+            GenerosEsp.Add(Rock);
+            GenerosEsp.Add(Rap);
+
+            GenerosEng.Add(Rock);
+            GenerosEng.Add(Rap);
 
             List<Pregunta> PreguntasList = new List<Pregunta>();
 
-            //Se añaden todas las preguntas a una lista global
-            for(int i = 0; i < Generos.Count; i++)
-            {
-                PreguntasList.AddRange(Generos[i].Preguntas);
-            }
-
-            Preguntas = new BindingList<Pregunta>(PreguntasList);
-
-            ObtenerComboBoxGeneros(Generos);
+            ObtenerComboBoxGeneros(GenerosEsp);
         }
 
+        //Rellenamos el combo box de generos
         private void ObtenerComboBoxGeneros(List<Genero> Generos)
         {
             cbxGeneros.Items.Add("Generos");
@@ -103,9 +117,9 @@ namespace PruebaMenuMADU
 
         private void cbxGeneros_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Genero generoSeleccionado = GetGeneroSeleccionado();
+            GetGenerosSeleccionados();
 
-            if (generoSeleccionado != null)
+            if (GeneroSeleccionadoEsp != null)
             {
                 ActivarBotonesOpciones();
                 BorrarPanelDatos();
@@ -119,54 +133,33 @@ namespace PruebaMenuMADU
             }
         }
 
-        public Genero GetGeneroSeleccionado()
+        public void GetGenerosSeleccionados()
         {
-            Genero generoSeleccionado = null;
             Boolean generoEncontrado = false;
             int counter = 0;
 
             if(!cbxGeneros.SelectedItem.Equals("Generos"))
             {
-                while(counter < Generos.Count && !generoEncontrado)
+                while(counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if(Generos[counter].Nombre.Equals(cbxGeneros.SelectedItem))
+                    if(GenerosEsp[counter].Nombre.Equals(cbxGeneros.SelectedItem))
                     {
                         generoEncontrado = true;
-                        generoSeleccionado = Generos[counter];
-
+                        GeneroSeleccionadoEsp = GenerosEsp[counter];
+                        GeneroSeleccionadoEng = GenerosEng[counter];
                     }
                     else
                     {
                         counter++;
                     }
                 }
+
             }
 
-            return generoSeleccionado;
         }
 
-        private void ActivarBotonesOpciones()
-        {
-            buttonPersonajes.Enabled = true;
-            buttonPreguntas.Enabled = true;
-        }
-
-        private void DesactivarBotonesOpciones()
-        {
-            buttonPersonajes.Enabled = false;
-            buttonPreguntas.Enabled = false;
-        }
-
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            CrearPreguntasForm cp = new CrearPreguntasForm();
-
-            cp.ShowDialog();
-        }*/
-
-        //Metodos Paneles Datos y Modificar
+        //Formularios Crear y Modificar
         #region
-
         private void BorrarPanelDatos()
         {
             //Elimino el form del panel datagridview en el caso que haya uno diferente
@@ -174,15 +167,6 @@ namespace PruebaMenuMADU
             {
                 panelDatos.Controls.RemoveAt(0);
             }
-        }
-
-        private void MostrarGridPreguntas()
-        {
-            //Muestro en el panel de DataGridViews el correspondiente a Preguntas
-            DataGridViewPreguntas DgvPreguntas = new DataGridViewPreguntas(GetGeneroSeleccionado(), ModificarPregunta);
-            DgvPreguntas.TopLevel = false;
-            panelDatos.Controls.Add(DgvPreguntas);
-            DgvPreguntas.Show();
         }
 
         private void BorrarPanelModificar()
@@ -194,10 +178,19 @@ namespace PruebaMenuMADU
             }
         }
 
+        private void MostrarGridPreguntas()
+        {
+            //Muestro en el panel de DataGridViews el correspondiente a PreguntasEsp
+            DataGridViewPreguntas DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
+            DgvPreguntas.TopLevel = false;
+            panelDatos.Controls.Add(DgvPreguntas);
+            DgvPreguntas.Show();
+        }
+
         private void MostrarFormModificarPregunta()
         {
             //Muestro en el panel de modificaciones el correspondiente a modificar una pregunta.
-            ModificarPregunta = new ModificarPregunta();
+            ModificarPregunta = new ModificarPregunta(ObtenerNombreGeneros(), this);
             ModificarPregunta.TopLevel = false;
             panelModificar.Controls.Add(ModificarPregunta);
             ModificarPregunta.Show();
@@ -205,7 +198,7 @@ namespace PruebaMenuMADU
 
         private void MostrarGridPersonajes()
         {
-            DataGridViewPersonajes DgvPersonajes = new DataGridViewPersonajes(GetGeneroSeleccionado(), ModificarPersonaje);
+            DataGridViewPersonajes DgvPersonajes = new DataGridViewPersonajes(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPersonaje);
             DgvPersonajes.TopLevel = false;
             panelDatos.Controls.Add(DgvPersonajes);
             DgvPersonajes.Show();
@@ -221,9 +214,85 @@ namespace PruebaMenuMADU
 
         #endregion
 
+        //Activar/Desactivar Botones Opciones
+        #region
+        private void ActivarBotonesOpciones()
+        {
+            buttonPersonajes.Enabled = true;
+            buttonPreguntas.Enabled = true;
+        }
+
+        private void DesactivarBotonesOpciones()
+        {
+            buttonPersonajes.Enabled = false;
+            buttonPreguntas.Enabled = false;
+        }
+
+        #endregion
+
+        //Metodos Para Enviar Datos a ModificarPregunta
+        #region
+
+        public List<String> ObtenerNombreGeneros()
+        {
+            List<String> NombreGeneros = new List<String>();
+
+            for(int i = 0; i < GenerosEsp.Count; i++)
+            {
+                NombreGeneros.Add(GenerosEsp[i].Nombre);
+            }
+
+            return NombreGeneros;
+        }
+
+        public List<Pregunta> ObtenerPreguntasEsp(String NombreGenero)
+        {
+            List<Pregunta> PreguntasEspCambio = null;
+            Boolean GeneroEncontrado = false;
+            int counter = 0;
+
+            while (!GeneroEncontrado && counter < GenerosEsp.Count)
+            {
+                if (GenerosEsp[counter].Nombre.Equals(NombreGenero))
+                {
+                    PreguntasEspCambio = GenerosEsp[counter].Preguntas;
+                    GeneroEncontrado = true;
+                }
+
+                counter++;
+            }
+
+            return PreguntasEspCambio;
+        }
+
+        public List<Pregunta> ObtenerPreguntasEng(String NombreGenero)
+        {
+            List<Pregunta> PreguntasEngCambio = null;
+            Boolean GeneroEncontrado = false;
+            int counter = 0;
+
+            while (!GeneroEncontrado && counter < GenerosEsp.Count)
+            {
+                if (GenerosEsp[counter].Nombre.Equals(NombreGenero))
+                {
+                    PreguntasEngCambio = GenerosEsp[counter].Preguntas;
+                    GeneroEncontrado = true;
+                }
+
+                counter++;
+            }
+
+
+            return PreguntasEngCambio;
+        }
+
+        #endregion
+
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
+            CrearPreguntasForm cp = new CrearPreguntasForm();
 
+            cp.ShowDialog();
         }
 
     }

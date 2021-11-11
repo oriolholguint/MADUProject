@@ -48,13 +48,13 @@ namespace PruebaMenuMADU
             this.SonidoPregunta,
             this.EsMayorEdadPregunta});
             this.dataGridViewTablaPreguntas.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewTablaPreguntas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewTablaPreguntas.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewTablaPreguntas.MultiSelect = false;
             this.dataGridViewTablaPreguntas.Name = "dataGridViewTablaPreguntas";
             this.dataGridViewTablaPreguntas.ReadOnly = true;
             this.dataGridViewTablaPreguntas.RowHeadersWidth = 51;
             this.dataGridViewTablaPreguntas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewTablaPreguntas.Size = new System.Drawing.Size(1400, 886);
+            this.dataGridViewTablaPreguntas.Size = new System.Drawing.Size(1187, 886);
             this.dataGridViewTablaPreguntas.TabIndex = 0;
             this.dataGridViewTablaPreguntas.SelectionChanged += new System.EventHandler(this.dataGridViewTablaPreguntas_SelectionChanged);
             // 
@@ -100,10 +100,10 @@ namespace PruebaMenuMADU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 884);
+            this.ClientSize = new System.Drawing.Size(1187, 884);
             this.Controls.Add(this.dataGridViewTablaPreguntas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DataGridViewPreguntas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTablaPreguntas)).EndInit();
             this.ResumeLayout(false);

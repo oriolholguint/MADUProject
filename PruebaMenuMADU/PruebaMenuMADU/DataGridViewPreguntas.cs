@@ -12,9 +12,12 @@ namespace PruebaMenuMADU
 {
     public partial class DataGridViewPreguntas : Form
     {
-        BindingList<Pregunta> Preguntas;
-        Genero GeneroSeleccionado;
+        Genero GeneroSeleccionadoEsp;
+        Genero GeneroSeleccionadoEng;
 
+        BindingList<Pregunta> PreguntasEsp;
+        BindingList<Pregunta> PreguntasEng;
+        
         ModificarPregunta ModificarPregunta;
 
         public DataGridViewPreguntas()
@@ -22,13 +25,18 @@ namespace PruebaMenuMADU
             InitializeComponent();
         }
 
-        public DataGridViewPreguntas(Genero GeneroSeleccionado, ModificarPregunta ModificarPregunta)
+        public DataGridViewPreguntas(Genero GeneroSeleccionadoEsp, Genero GeneroSeleccionadoEng, ModificarPregunta ModificarPregunta)
         {
             InitializeComponent();
-            this.GeneroSeleccionado = GeneroSeleccionado;
+            
+            this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
+            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
 
-            List<Pregunta> PreguntasList = new List<Pregunta>(GeneroSeleccionado.Preguntas);
-            Preguntas = new BindingList<Pregunta>(PreguntasList);
+            List<Pregunta> PreguntasListEsp = new List<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
+            PreguntasEsp = new BindingList<Pregunta>(PreguntasListEsp);
+
+            List<Pregunta> PreguntasListEng = new List<Pregunta>(GeneroSeleccionadoEng.Preguntas);
+            PreguntasEng = new BindingList<Pregunta>(PreguntasListEng);
 
             this.ModificarPregunta = ModificarPregunta;
 
@@ -37,7 +45,7 @@ namespace PruebaMenuMADU
 
         private void RecargarDataGridView()
         {
-            dataGridViewTablaPreguntas.DataSource = Preguntas;            
+            dataGridViewTablaPreguntas.DataSource = PreguntasEsp;            
             dataGridViewTablaPreguntas.Update();
             dataGridViewTablaPreguntas.Refresh();
         }
@@ -49,15 +57,21 @@ namespace PruebaMenuMADU
 
         private void CargarPreguntaSeleccionada()
         {
-            if (Preguntas.Count != 0)
+            if (PreguntasEsp.Count != 0)
             {
-                ModificarPregunta.setPregunta(Preguntas, (Pregunta)dataGridViewTablaPreguntas.CurrentRow.DataBoundItem);
+                Pregunta PreguntaSeleccionadaEsp;
+                Pregunta PreguntaSeleccionadaEng;
+
+                //Obtengo el objeto de la pregunta seleccionada.
+                PreguntaSeleccionadaEsp = (Pregunta) dataGridViewTablaPreguntas.CurrentRow.DataBoundItem;
+                int IndicePregunta = PreguntasEsp.IndexOf(PreguntaSeleccionadaEsp);
+                //Obtengo la pregunta seleccionada en ingles ya que tengo el indice de la fila seleccionada.
+                PreguntaSeleccionadaEng = PreguntasEng[IndicePregunta];
+
+                ModificarPregunta.setPregunta(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, PreguntaSeleccionadaEsp, PreguntaSeleccionadaEng);
             }
         }
 
-        /*private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
-        {
-            ModificarPregunta = new ModificarPregunta(Preguntas, (Pregunta)dataGridViewTablaPreguntas.CurrentRow.DataBoundItem);
-        }*/
+        
     }
 }

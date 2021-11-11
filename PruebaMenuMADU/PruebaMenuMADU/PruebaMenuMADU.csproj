@@ -139,6 +139,11 @@
     <!-- <Generator>ResXFileCodeGenerator</Generator> -->
     <!-- <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput> -->
     <!-- </EmbeddedResource> -->
+    <!-- <EmbeddedResource Include="CrearPreguntasForm.resx">
+      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource> -->
     <EmbeddedResource Include="DataGridViewPersonajes.resx">
       <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>
     </EmbeddedResource>
