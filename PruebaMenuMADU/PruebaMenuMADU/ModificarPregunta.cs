@@ -62,7 +62,7 @@ namespace PruebaMenuMADU
         {
             //Añado la pregunta en Español
             textBoxPregunta.Text = PreguntaEsp.PreguntaDescripcion;
-            if (PreguntaEsp.Respuestas.Count == 2)
+            if (PreguntaEsp.Respuestas.Length == 2)
             {
                 //Respuestas Esp
                 textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;

@@ -109,7 +109,7 @@ namespace PruebaMenuMADU
 
 
 
-            pregunta.NombrePregunta = txtNombrePreg.Text;
+            pregunta.PreguntaDescripcion = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedItem;
 
 
@@ -178,8 +178,8 @@ namespace PruebaMenuMADU
 
                     respuesta1 = new Respuesta("Verdadero", true);
                     respuesta2 = new Respuesta("False", false);
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
 
                 }
                 if (rdbResp2.Checked)
@@ -187,8 +187,8 @@ namespace PruebaMenuMADU
 
                     respuesta1 = new Respuesta("Falso", false);
                     respuesta2 = new Respuesta("Verdadero", true);
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
 
 
                 }
@@ -212,10 +212,10 @@ namespace PruebaMenuMADU
                     respuesta3 = new Respuesta(txtResp3.Text, false);
                     respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
-                    pregunta.respuestas.SetValue(respuesta3, 2);
-                    pregunta.respuestas.SetValue(respuesta4, 3);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta3, 2);
+                    pregunta.Respuestas.SetValue(respuesta4, 3);
 
                 }
                 if (rdbResp2.Checked)
@@ -225,10 +225,10 @@ namespace PruebaMenuMADU
                     respuesta3 = new Respuesta(txtResp3.Text, false);
                     respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
-                    pregunta.respuestas.SetValue(respuesta3, 2);
-                    pregunta.respuestas.SetValue(respuesta4, 3);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta3, 2);
+                    pregunta.Respuestas.SetValue(respuesta4, 3);
                 }
                 if (rdbResp3.Checked)
                 {
@@ -237,10 +237,10 @@ namespace PruebaMenuMADU
                     respuesta3 = new Respuesta(txtResp3.Text, true);
                     respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
-                    pregunta.respuestas.SetValue(respuesta3, 2);
-                    pregunta.respuestas.SetValue(respuesta4, 3);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta3, 2);
+                    pregunta.Respuestas.SetValue(respuesta4, 3);
                 }
                 if (rdbResp4.Checked)
                 {
@@ -249,10 +249,10 @@ namespace PruebaMenuMADU
                     respuesta3 = new Respuesta(txtResp3.Text, false);
                     respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                    pregunta.respuestas.SetValue(respuesta1, 0);
-                    pregunta.respuestas.SetValue(respuesta2, 1);
-                    pregunta.respuestas.SetValue(respuesta3, 2);
-                    pregunta.respuestas.SetValue(respuesta4, 3);
+                    pregunta.Respuestas.SetValue(respuesta1, 0);
+                    pregunta.Respuestas.SetValue(respuesta2, 1);
+                    pregunta.Respuestas.SetValue(respuesta3, 2);
+                    pregunta.Respuestas.SetValue(respuesta4, 3);
                 }
 
 
@@ -324,7 +324,7 @@ namespace PruebaMenuMADU
         {
 
 
-            txtNombrePreg.Text = preg.NombrePregunta;
+            txtNombrePreg.Text = preg.PreguntaDescripcion;
 
             cbxGeneroPreg.SelectedItem = preg.Genero;
 
@@ -349,7 +349,7 @@ namespace PruebaMenuMADU
                 Reproductor.URL = preg.Sonido;
             }
 
-            int num = preg.respuestas.Length;
+            int num = preg.Respuestas.Length;
 
             if (num == 2) {
                 cbxTipoPreg.SelectedIndex = 0;
@@ -363,8 +363,8 @@ namespace PruebaMenuMADU
             if (cbxTipoPreg.SelectedIndex == 0)
             {
 
-                txtResp1.Text = preg.respuestas[0].NombreRespuesta;
-                rdbResp1.Checked = preg.respuestas[0].Correcta;
+                txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
+                rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
                 txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
                 rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
@@ -713,16 +713,16 @@ namespace PruebaMenuMADU
                         {
                             respuesta1 = new Respuesta(txtResp1.Text, true);
                             respuesta2 = new Respuesta(txtResp2.Text, false);
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
 
                         }
                         if (rdbResp2.Checked)
                         {
                             respuesta1 = new Respuesta(txtResp1.Text, false);
                             respuesta2 = new Respuesta(txtResp2.Text, true);
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
                         }
 
 
@@ -743,10 +743,10 @@ namespace PruebaMenuMADU
                             respuesta3 = new Respuesta(txtResp3.Text, false);
                             respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
-                            preg.respuestas.SetValue(respuesta3, 2);
-                            preg.respuestas.SetValue(respuesta4, 3);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta3, 2);
+                            preg.Respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp2.Checked)
                         {
@@ -755,10 +755,10 @@ namespace PruebaMenuMADU
                             respuesta3 = new Respuesta(txtResp3.Text, false);
                             respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
-                            preg.respuestas.SetValue(respuesta3, 2);
-                            preg.respuestas.SetValue(respuesta4, 3);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta3, 2);
+                            preg.Respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp3.Checked)
                         {
@@ -767,10 +767,10 @@ namespace PruebaMenuMADU
                             respuesta3 = new Respuesta(txtResp3.Text, true);
                             respuesta4 = new Respuesta(txtResp4.Text, false);
 
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
-                            preg.respuestas.SetValue(respuesta3, 2);
-                            preg.respuestas.SetValue(respuesta4, 3);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta3, 2);
+                            preg.Respuestas.SetValue(respuesta4, 3);
                         }
                         if (rdbResp2.Checked)
                         {
@@ -779,10 +779,10 @@ namespace PruebaMenuMADU
                             respuesta3 = new Respuesta(txtResp3.Text, false);
                             respuesta4 = new Respuesta(txtResp4.Text, true);
 
-                            preg.respuestas.SetValue(respuesta1, 0);
-                            preg.respuestas.SetValue(respuesta2, 1);
-                            preg.respuestas.SetValue(respuesta3, 2);
-                            preg.respuestas.SetValue(respuesta4, 3);
+                            preg.Respuestas.SetValue(respuesta1, 0);
+                            preg.Respuestas.SetValue(respuesta2, 1);
+                            preg.Respuestas.SetValue(respuesta3, 2);
+                            preg.Respuestas.SetValue(respuesta4, 3);
                         }
 
 

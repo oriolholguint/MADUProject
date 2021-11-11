@@ -27,7 +27,18 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(String NombrePregunta, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] respuestas)
+        public Pregunta(String PreguntaDescripcion, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
+        {
+
+            this.PreguntaDescripcion = PreguntaDescripcion;
+            this.Imagen = Imagen;
+            this.Sonido = Sonido;
+            this.Genero = Genero;
+            this.EsMayorEdad = EsMayorEdad;
+            this.Respuestas = Respuestas;
+
+        }
+        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
         {
 
             this.PreguntaDescripcion = PreguntaDescripcion;

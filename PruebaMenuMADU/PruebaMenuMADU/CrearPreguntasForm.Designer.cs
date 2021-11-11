@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        /*private void InitializeComponent()
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPreguntasForm));
             this.txtNombrePreg = new System.Windows.Forms.TextBox();
@@ -125,8 +125,8 @@
             this.cbxTipoPreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTipoPreg.FormattingEnabled = true;
             this.cbxTipoPreg.Items.AddRange(new object[] {
-            "De 2 respuestas",
-            "De 4 respuestas"});
+            "De 2 Respuestas",
+            "De 4 Respuestas"});
             this.cbxTipoPreg.Location = new System.Drawing.Point(992, 254);
             this.cbxTipoPreg.Name = "cbxTipoPreg";
             this.cbxTipoPreg.Size = new System.Drawing.Size(295, 37);
@@ -543,7 +543,7 @@
             this.PerformLayout();
 
         }
-        */
+        
         #endregion
         private System.Windows.Forms.TextBox txtNombrePreg;
         private System.Windows.Forms.ComboBox cbxGeneroPreg;

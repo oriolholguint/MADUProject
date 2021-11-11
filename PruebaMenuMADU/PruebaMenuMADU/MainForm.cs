@@ -40,16 +40,17 @@ namespace PruebaMenuMADU
         //Metodo de prueba para tener generos.
         public void crearGenerosPrueba()
         {
-            List<Respuesta> respuestasPrueba = new List<Respuesta>();
-            respuestasPrueba.Add(new Respuesta("Respuesta 1", true));
-            respuestasPrueba.Add(new Respuesta("Respuesta 2", true));
-            respuestasPrueba.Add(new Respuesta("Respuesta 3", true));
-            respuestasPrueba.Add(new Respuesta("Respuesta 4", true));
+            List<Respuesta> RespuestasPrueba = new List<Respuesta>();
+            RespuestasPrueba.Add(new Respuesta("Respuesta 1", true));
+            RespuestasPrueba.Add(new Respuesta("Respuesta 2", true));
+            RespuestasPrueba.Add(new Respuesta("Respuesta 3", true));
+            RespuestasPrueba.Add(new Respuesta("Respuesta 4", true));
 
-            Pregunta preguntaRockPrueba = new Pregunta("Pregunta Rock", "Imagen", "Sonido", false, respuestasPrueba);
-            Pregunta preguntaRockPrueba2 = new Pregunta("Pregunta Rock2", "Imagen", "Sonido", false, respuestasPrueba);
-            Pregunta preguntaRapPrueba = new Pregunta("Pregunta Rap", "Imagen", "Sonido", false, respuestasPrueba);
-            Pregunta preguntaRapPrueba2 = new Pregunta("Pregunta Rap2", "Imagen", "Sonido", false, respuestasPrueba);
+
+            Pregunta preguntaRockPrueba = new Pregunta("Pregunta Rock", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
+            Pregunta preguntaRockPrueba2 = new Pregunta("Pregunta Rock2", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
+            Pregunta preguntaRapPrueba = new Pregunta("Pregunta Rap", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
+            Pregunta preguntaRapPrueba2 = new Pregunta("Pregunta Rap2", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
 
             List<Personaje> personajesRock = new List<Personaje>();
             Partida[] partidasRock = new Partida[1];
