@@ -296,5 +296,22 @@ namespace PruebaMenuMADU
             cp.ShowDialog();
         }
 
+        private void buttAddGenre_Click(object sender, EventArgs e)
+        {
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
+            cg.ShowDialog();
+            Console.WriteLine("when is this done");
+            if (cg.getCreatedGenre("esp") == null)
+            {
+                MessageBox.Show("No se ha añadido ningun genero", "Error en la creacion de Generos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            else
+            {
+                this.GenerosEsp.Add(cg.getCreatedGenre("esp"));
+                this.GenerosEsp.Add(cg.getCreatedGenre("eng"));
+            }
+            
+        }
     }
 }

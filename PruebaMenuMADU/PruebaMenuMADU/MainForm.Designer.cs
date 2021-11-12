@@ -36,6 +36,7 @@ namespace PruebaMenuMADU
             this.panelDatos = new System.Windows.Forms.Panel();
             this.btnCrearPreguntas = new System.Windows.Forms.Button();
             this.cbxGeneros = new System.Windows.Forms.ComboBox();
+            this.buttAddGenre = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPreguntas
@@ -53,7 +54,7 @@ namespace PruebaMenuMADU
             // 
             this.buttonPersonajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonajes.Location = new System.Drawing.Point(263, 29);
-            this.buttonPersonajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonPersonajes.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPersonajes.Name = "buttonPersonajes";
             this.buttonPersonajes.Size = new System.Drawing.Size(120, 32);
             this.buttonPersonajes.TabIndex = 2;
@@ -90,7 +91,7 @@ namespace PruebaMenuMADU
             // 
             this.btnCrearPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPreguntas.Location = new System.Drawing.Point(708, 28);
-            this.btnCrearPreguntas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearPreguntas.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
             this.btnCrearPreguntas.Size = new System.Drawing.Size(194, 32);
             this.btnCrearPreguntas.TabIndex = 12;
@@ -109,11 +110,24 @@ namespace PruebaMenuMADU
             this.cbxGeneros.TabIndex = 0;
             this.cbxGeneros.SelectedIndexChanged += new System.EventHandler(this.cbxGeneros_SelectedIndexChanged);
             // 
+            // buttAddGenre
+            // 
+            this.buttAddGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttAddGenre.Location = new System.Drawing.Point(510, 27);
+            this.buttAddGenre.Margin = new System.Windows.Forms.Padding(2);
+            this.buttAddGenre.Name = "buttAddGenre";
+            this.buttAddGenre.Size = new System.Drawing.Size(194, 32);
+            this.buttAddGenre.TabIndex = 13;
+            this.buttAddGenre.Text = "Crear Generos";
+            this.buttAddGenre.UseVisualStyleBackColor = true;
+            this.buttAddGenre.Click += new System.EventHandler(this.buttAddGenre_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1443, 786);
+            this.Controls.Add(this.buttAddGenre);
             this.Controls.Add(this.buttonPersonajes);
             this.Controls.Add(this.cbxGeneros);
             this.Controls.Add(this.btnCrearPreguntas);
@@ -138,5 +152,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Panel panelDatos;
         private System.Windows.Forms.Button btnCrearPreguntas;
         private System.Windows.Forms.ComboBox cbxGeneros;
+        private System.Windows.Forms.Button buttAddGenre;
     }
 }
