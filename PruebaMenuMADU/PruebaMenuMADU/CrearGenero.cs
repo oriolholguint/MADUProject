@@ -157,12 +157,12 @@ namespace PruebaMenuMADU
             }
 
             if (controlDeNombre) {
+                this.createdEng = english;
+                this.createdEsp = spanish;
                 this.Close();
                     return;
-                Console.WriteLine("control pasao");
             }
             spanish = null;
-            Console.WriteLine("control NO pasao");
             english = null;
             this.Close();
 

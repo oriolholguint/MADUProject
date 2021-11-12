@@ -300,7 +300,6 @@ namespace PruebaMenuMADU
         {
             CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
             cg.ShowDialog();
-            Console.WriteLine("when is this done");
             if (cg.getCreatedGenre("esp") == null)
             {
                 MessageBox.Show("No se ha añadido ningun genero", "Error en la creacion de Generos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -310,6 +309,7 @@ namespace PruebaMenuMADU
             {
                 this.GenerosEsp.Add(cg.getCreatedGenre("esp"));
                 this.GenerosEsp.Add(cg.getCreatedGenre("eng"));
+                Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
             }
             
         }
