@@ -71,6 +71,8 @@ namespace PruebaMenuMADU
         }
 
         //Rellenamos el combo box de generos
+        #region
+
         private void ObtenerComboBoxGeneros(List<Genero> Generos)
         {
             cbxGeneros.Items.Add("Generos");
@@ -80,6 +82,8 @@ namespace PruebaMenuMADU
                 cbxGeneros.Items.Add(Generos[i].Nombre);
             }
         }
+
+        #endregion
 
         //Eventos Botones Click
         #region
@@ -107,6 +111,9 @@ namespace PruebaMenuMADU
         }
 
         #endregion
+
+        //Metodos y Eventos de Generos
+        #region
 
         private void cbxGeneros_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -203,6 +210,8 @@ namespace PruebaMenuMADU
             return GeneroEng;
         }
 
+        #endregion
+
         //Formularios Crear y Modificar
         #region
         private void BorrarPanelDatos()
@@ -292,13 +301,6 @@ namespace PruebaMenuMADU
 
         #endregion
 
-        private void btnCrearPreguntas_Click(object sender, EventArgs e)
-        {
-            CrearPreguntasForm cp = new CrearPreguntasForm();
-
-            cp.ShowDialog();
-        }
-
         //Metodos Leer Ficheros de Generos
         #region
 
@@ -310,6 +312,16 @@ namespace PruebaMenuMADU
             JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEng.json"));
             GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
         }
+
+        #endregion
+
+        private void btnCrearPreguntas_Click(object sender, EventArgs e)
+        {
+            CrearPreguntasForm cp = new CrearPreguntasForm();
+
+            cp.ShowDialog();
+        }
+
 
         private void buttAddGenre_Click(object sender, EventArgs e)
         {

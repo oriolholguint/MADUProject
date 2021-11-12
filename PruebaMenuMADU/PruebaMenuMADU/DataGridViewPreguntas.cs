@@ -41,6 +41,9 @@ namespace PruebaMenuMADU
             this.ModificarPregunta = ModificarPregunta;
 
             RecargarDataGridView();
+            //Elimino la columna genero ya que no es necesario para el datagridview
+            dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
+
         }
 
         private void RecargarDataGridView()

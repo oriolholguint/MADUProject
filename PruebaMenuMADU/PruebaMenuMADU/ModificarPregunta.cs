@@ -60,24 +60,18 @@ namespace PruebaMenuMADU
 
         private void RellenarDatosPregunta(Pregunta PreguntaEsp, Pregunta PreguntaEng)
         {
+            //CheckBox Tipo de Pregunta
             if(PreguntaEsp.Respuestas.Length == 2)
             {
                 checkBoxTipoPregunta.Checked = true;
-            }
 
-            //Añado la pregunta en Español
-            textBoxPregunta.Text = PreguntaEsp.PreguntaDescripcion;
-            //Añado la pregunta en Ingles
-            textBoxQuestion.Text = PreguntaEng.PreguntaDescripcion;
-            if (PreguntaEsp.Respuestas.Length == 2)
-            {
-                //Respuestas Esp
+                //Añado el texto de las Respuestas Esp
                 textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
                 textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
                 textBoxRespuesta3.Enabled = false;
                 textBoxRespuesta4.Enabled = false;
 
-                //Respuestas Eng
+                //Añado el texto de las Respuestas Eng
                 textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
                 textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
                 textBoxAnwser3.Enabled = false;
@@ -95,6 +89,8 @@ namespace PruebaMenuMADU
             }
             else
             {
+                checkBoxTipoPregunta.Checked = false;
+
                 //Respuestas en Esp
                 textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
                 textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
@@ -138,6 +134,11 @@ namespace PruebaMenuMADU
                 }
             }
 
+            //Añado texto de la pregunta en Español
+            textBoxPregunta.Text = PreguntaEsp.PreguntaDescripcion;
+            //Añado texto de la pregunta en Ingles
+            textBoxQuestion.Text = PreguntaEng.PreguntaDescripcion;
+
             //Añado informacion conjunta y utilizo la pregunta en español
             if (PreguntaEsp.EsMayorEdad)
             {
@@ -173,11 +174,15 @@ namespace PruebaMenuMADU
         #endregion
 
         //Evento Seleccion de Nuevo Genero
+        #region
+
         private void comboBoxGenero_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GeneroEspCambio = Menu.GetGeneroEsp(comboBoxGenero.SelectedItem.ToString());
             GeneroEngCambio = Menu.GetGeneroEng(comboBoxGenero.SelectedItem.ToString());
         }
+
+        #endregion
 
         //Evento Eliminar Pregunta
         #region
@@ -208,6 +213,7 @@ namespace PruebaMenuMADU
         private void buttonLimpiarModificacion_Click(object sender, EventArgs e)
         {
             RellenarDatosPregunta(PreguntaEsp, PreguntaEng);
+            CambiarTipoPregunta();
         }
 
         #endregion
@@ -218,33 +224,59 @@ namespace PruebaMenuMADU
         //Evento Cambiar Tipo Pregunta
         #region
 
-        private void checkBoxTipoPregunta_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxTipoPregunta_Click(object sender, EventArgs e)
+        {
+            CambiarTipoPregunta();   
+        }
+
+        private void CambiarTipoPregunta()
         {
             if (checkBoxTipoPregunta.Checked == true)
             {
+                //Si alguno de los radiobuttons no disponibles estan seleccionados, se selecciona el primer radio button.
+                if (radioButtonRespuesta3.Enabled == true || radioButtonRespuesta4.Enabled == true)
+                {
+                    radioButtonRespuesta1.Checked = true;
+                }
+                //Añado las respuestas disponibles
                 textBoxRespuesta1.Text = "Verdadero";
                 textBoxRespuesta2.Text = "Falso";
                 textBoxAnwser1.Text = "True";
                 textBoxAnwser2.Text = "False";
+                //Deshabilito opcion de escribir en textbox no necesarios
                 textBoxRespuesta3.Enabled = false;
                 textBoxRespuesta4.Enabled = false;
                 textBoxAnwser3.Enabled = false;
                 textBoxAnwser4.Enabled = false;
+                //Borro el texto que hay en los textbox no necesarios
+                textBoxAnwser3.Text = "";
+                textBoxAnwser4.Text = "";
+                textBoxRespuesta3.Text = "";
+                textBoxRespuesta4.Text = "";
+                //Deshabilito la opcion de marcar radio buttons no necesarios.
                 radioButtonRespuesta3.Enabled = false;
                 radioButtonRespuesta4.Enabled = false;
+                radioButtonRespuesta3.Checked = false;
+                radioButtonRespuesta4.Checked = false;
+
             }
             else
             {
                 textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
                 textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
+                textBoxRespuesta3.Text = PreguntaEsp.Respuestas[2].RespuestaDescripcion;
+                textBoxRespuesta4.Text = PreguntaEsp.Respuestas[3].RespuestaDescripcion;
                 textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
                 textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
+                textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
+                textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
                 textBoxRespuesta3.Enabled = true;
                 textBoxRespuesta4.Enabled = true;
                 textBoxAnwser3.Enabled = true;
                 textBoxAnwser4.Enabled = true;
                 radioButtonRespuesta3.Enabled = true;
                 radioButtonRespuesta4.Enabled = true;
+                MarcarRespuestaCorrecta(PreguntaEsp);
             }
         }
 
@@ -273,6 +305,7 @@ namespace PruebaMenuMADU
                 Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
             }
 
+            
         }
 
         #endregion
@@ -391,18 +424,18 @@ namespace PruebaMenuMADU
             {
                 if (Pregunta.Respuestas[counterRespuestas].EsCorrecta == true)
                 {
-                    switch (counterRespuestas + 1)
+                    switch (counterRespuestas)
                     {
-                        case 1:
+                        case 0:
                             radioButtonRespuesta1.Checked = true;
                             break;
-                        case 2:
+                        case 1:
                             radioButtonRespuesta2.Checked = true;
                             break;
-                        case 3:
+                        case 2:
                             radioButtonRespuesta3.Checked = true;
                             break;
-                        case 4:
+                        case 3:
                             radioButtonRespuesta4.Checked = true;
                             break;
                     }
@@ -416,6 +449,6 @@ namespace PruebaMenuMADU
 
         #endregion
 
-
+        
     }
 }
