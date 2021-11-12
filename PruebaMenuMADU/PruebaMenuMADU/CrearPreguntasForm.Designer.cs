@@ -46,7 +46,6 @@
             this.gbAudio = new System.Windows.Forms.GroupBox();
             this.btnSinAudio = new System.Windows.Forms.Button();
             this.txtAudioAnt = new System.Windows.Forms.TextBox();
-            this.btnReproduciir = new System.Windows.Forms.Button();
             this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
             this.txtAudioNuevo = new System.Windows.Forms.TextBox();
             this.txtAudioOrigen = new System.Windows.Forms.TextBox();
@@ -66,6 +65,14 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlCrearPreguntas = new System.Windows.Forms.Panel();
             this.btnCrearPreguntas = new System.Windows.Forms.Button();
+            this.tabIdioma = new System.Windows.Forms.TabControl();
+            this.tabEspañol = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabIngles = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlSeleccionIdioma = new System.Windows.Forms.Panel();
+            this.rdbEspañol = new System.Windows.Forms.RadioButton();
+            this.rdbIngles = new System.Windows.Forms.RadioButton();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
@@ -74,15 +81,20 @@
             this.tlpRespuestas.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnlCrearPreguntas.SuspendLayout();
+            this.tabIdioma.SuspendLayout();
+            this.tabEspañol.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.pnlSeleccionIdioma.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtNombrePreg
             // 
             this.txtNombrePreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombrePreg.Location = new System.Drawing.Point(227, 126);
+            this.txtNombrePreg.Location = new System.Drawing.Point(22, 62);
             this.txtNombrePreg.Multiline = true;
             this.txtNombrePreg.Name = "txtNombrePreg";
-            this.txtNombrePreg.Size = new System.Drawing.Size(1662, 103);
+            this.txtNombrePreg.Size = new System.Drawing.Size(1677, 103);
             this.txtNombrePreg.TabIndex = 2;
             // 
             // cbxGeneroPreg
@@ -100,7 +112,7 @@
             "Electronica",
             "Hip-Hop",
             "Pop"});
-            this.cbxGeneroPreg.Location = new System.Drawing.Point(356, 259);
+            this.cbxGeneroPreg.Location = new System.Drawing.Point(156, 190);
             this.cbxGeneroPreg.Name = "cbxGeneroPreg";
             this.cbxGeneroPreg.Size = new System.Drawing.Size(236, 37);
             this.cbxGeneroPreg.TabIndex = 4;
@@ -114,7 +126,7 @@
             this.cbxEdad.Items.AddRange(new object[] {
             "Menor de edad",
             "Mayor de edad"});
-            this.cbxEdad.Location = new System.Drawing.Point(1686, 259);
+            this.cbxEdad.Location = new System.Drawing.Point(1468, 185);
             this.cbxEdad.Name = "cbxEdad";
             this.cbxEdad.Size = new System.Drawing.Size(203, 37);
             this.cbxEdad.TabIndex = 5;
@@ -127,7 +139,7 @@
             this.cbxTipoPreg.Items.AddRange(new object[] {
             "De 2 Respuestas",
             "De 4 Respuestas"});
-            this.cbxTipoPreg.Location = new System.Drawing.Point(992, 254);
+            this.cbxTipoPreg.Location = new System.Drawing.Point(705, 185);
             this.cbxTipoPreg.Name = "cbxTipoPreg";
             this.cbxTipoPreg.Size = new System.Drawing.Size(295, 37);
             this.cbxTipoPreg.TabIndex = 6;
@@ -141,7 +153,7 @@
             this.gbImagen.Controls.Add(this.txtUrlImg);
             this.gbImagen.Controls.Add(this.btnCargarImagen);
             this.gbImagen.Controls.Add(this.pbImagenPregunta);
-            this.gbImagen.Location = new System.Drawing.Point(240, 305);
+            this.gbImagen.Location = new System.Drawing.Point(22, 230);
             this.gbImagen.Name = "gbImagen";
             this.gbImagen.Size = new System.Drawing.Size(660, 358);
             this.gbImagen.TabIndex = 7;
@@ -206,7 +218,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(222, 262);
+            this.label1.Location = new System.Drawing.Point(17, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 29);
             this.label1.TabIndex = 8;
@@ -216,7 +228,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1565, 262);
+            this.label2.Location = new System.Drawing.Point(1362, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 29);
             this.label2.TabIndex = 9;
@@ -226,7 +238,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(899, 259);
+            this.label3.Location = new System.Drawing.Point(608, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 29);
             this.label3.TabIndex = 10;
@@ -236,12 +248,11 @@
             // 
             this.gbAudio.Controls.Add(this.btnSinAudio);
             this.gbAudio.Controls.Add(this.txtAudioAnt);
-            this.gbAudio.Controls.Add(this.btnReproduciir);
             this.gbAudio.Controls.Add(this.Reproductor);
             this.gbAudio.Controls.Add(this.txtAudioNuevo);
             this.gbAudio.Controls.Add(this.txtAudioOrigen);
             this.gbAudio.Controls.Add(this.btnCargarAudio);
-            this.gbAudio.Location = new System.Drawing.Point(1226, 305);
+            this.gbAudio.Location = new System.Drawing.Point(1019, 230);
             this.gbAudio.Name = "gbAudio";
             this.gbAudio.Size = new System.Drawing.Size(660, 358);
             this.gbAudio.TabIndex = 11;
@@ -251,7 +262,7 @@
             // btnSinAudio
             // 
             this.btnSinAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSinAudio.Location = new System.Drawing.Point(365, 303);
+            this.btnSinAudio.Location = new System.Drawing.Point(365, 296);
             this.btnSinAudio.Name = "btnSinAudio";
             this.btnSinAudio.Size = new System.Drawing.Size(210, 49);
             this.btnSinAudio.TabIndex = 7;
@@ -266,16 +277,6 @@
             this.txtAudioAnt.Size = new System.Drawing.Size(34, 22);
             this.txtAudioAnt.TabIndex = 6;
             this.txtAudioAnt.Visible = false;
-            // 
-            // btnReproduciir
-            // 
-            this.btnReproduciir.Location = new System.Drawing.Point(16, 329);
-            this.btnReproduciir.Name = "btnReproduciir";
-            this.btnReproduciir.Size = new System.Drawing.Size(75, 23);
-            this.btnReproduciir.TabIndex = 5;
-            this.btnReproduciir.Text = "play";
-            this.btnReproduciir.UseVisualStyleBackColor = true;
-           
             // 
             // Reproductor
             // 
@@ -305,7 +306,7 @@
             // btnCargarAudio
             // 
             this.btnCargarAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarAudio.Location = new System.Drawing.Point(126, 303);
+            this.btnCargarAudio.Location = new System.Drawing.Point(126, 296);
             this.btnCargarAudio.Name = "btnCargarAudio";
             this.btnCargarAudio.Size = new System.Drawing.Size(210, 49);
             this.btnCargarAudio.TabIndex = 1;
@@ -321,7 +322,7 @@
             this.btnAñadirPregunta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAñadirPregunta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñadirPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAñadirPregunta.Location = new System.Drawing.Point(616, 225);
+            this.btnAñadirPregunta.Location = new System.Drawing.Point(752, 17);
             this.btnAñadirPregunta.Name = "btnAñadirPregunta";
             this.btnAñadirPregunta.Size = new System.Drawing.Size(229, 49);
             this.btnAñadirPregunta.TabIndex = 12;
@@ -336,16 +337,15 @@
             this.flpListaPreguntas.Dock = System.Windows.Forms.DockStyle.Left;
             this.flpListaPreguntas.Location = new System.Drawing.Point(0, 96);
             this.flpListaPreguntas.Name = "flpListaPreguntas";
-            this.flpListaPreguntas.Size = new System.Drawing.Size(206, 887);
+            this.flpListaPreguntas.Size = new System.Drawing.Size(206, 904);
             this.flpListaPreguntas.TabIndex = 13;
             // 
             // gbRespuestas
             // 
             this.gbRespuestas.Controls.Add(this.tlpRespuestas);
-            this.gbRespuestas.Controls.Add(this.btnAñadirPregunta);
-            this.gbRespuestas.Location = new System.Drawing.Point(240, 669);
+            this.gbRespuestas.Location = new System.Drawing.Point(22, 590);
             this.gbRespuestas.Name = "gbRespuestas";
-            this.gbRespuestas.Size = new System.Drawing.Size(1657, 302);
+            this.gbRespuestas.Size = new System.Drawing.Size(1657, 205);
             this.gbRespuestas.TabIndex = 14;
             this.gbRespuestas.TabStop = false;
             this.gbRespuestas.Text = "Respuestas";
@@ -480,7 +480,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1907, 96);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 96);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pnlCrearPreguntas
@@ -500,30 +500,123 @@
             this.btnCrearPreguntas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCrearPreguntas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPreguntas.Location = new System.Drawing.Point(1665, 18);
+            this.btnCrearPreguntas.Location = new System.Drawing.Point(1606, 18);
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
-            this.btnCrearPreguntas.Size = new System.Drawing.Size(229, 49);
+            this.btnCrearPreguntas.Size = new System.Drawing.Size(288, 49);
             this.btnCrearPreguntas.TabIndex = 13;
-            this.btnCrearPreguntas.Text = "Crear PreguntasEsp";
+            this.btnCrearPreguntas.Text = "Crear Preguntas";
             this.btnCrearPreguntas.UseVisualStyleBackColor = false;
             this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
+            // 
+            // tabIdioma
+            // 
+            this.tabIdioma.Controls.Add(this.tabEspañol);
+            this.tabIdioma.Controls.Add(this.tabIngles);
+            this.tabIdioma.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabIdioma.Location = new System.Drawing.Point(206, 96);
+            this.tabIdioma.Name = "tabIdioma";
+            this.tabIdioma.SelectedIndex = 0;
+            this.tabIdioma.Size = new System.Drawing.Size(1718, 904);
+            this.tabIdioma.TabIndex = 15;
+            // 
+            // tabEspañol
+            // 
+            this.tabEspañol.Controls.Add(this.pictureBox1);
+            this.tabEspañol.Controls.Add(this.txtNombrePreg);
+            this.tabEspañol.Controls.Add(this.gbRespuestas);
+            this.tabEspañol.Controls.Add(this.label1);
+            this.tabEspañol.Controls.Add(this.cbxGeneroPreg);
+            this.tabEspañol.Controls.Add(this.gbAudio);
+            this.tabEspañol.Controls.Add(this.label3);
+            this.tabEspañol.Controls.Add(this.gbImagen);
+            this.tabEspañol.Controls.Add(this.label2);
+            this.tabEspañol.Controls.Add(this.cbxEdad);
+            this.tabEspañol.Controls.Add(this.cbxTipoPreg);
+            this.tabEspañol.Location = new System.Drawing.Point(4, 25);
+            this.tabEspañol.Name = "tabEspañol";
+            this.tabEspañol.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEspañol.Size = new System.Drawing.Size(1710, 875);
+            this.tabEspañol.TabIndex = 0;
+            this.tabEspañol.Text = "tabPage1";
+            this.tabEspañol.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox1.Image = global::PruebaMenuMADU.Properties.Resources.logoAGeneral_;
+            this.pictureBox1.Location = new System.Drawing.Point(764, 286);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabIngles
+            // 
+            this.tabIngles.Location = new System.Drawing.Point(4, 25);
+            this.tabIngles.Name = "tabIngles";
+            this.tabIngles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabIngles.Size = new System.Drawing.Size(1710, 875);
+            this.tabIngles.TabIndex = 1;
+            this.tabIngles.Text = "tabPage2";
+            this.tabIngles.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.btnAñadirPregunta);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(206, 922);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1718, 78);
+            this.panel1.TabIndex = 16;
+            // 
+            // pnlSeleccionIdioma
+            // 
+            this.pnlSeleccionIdioma.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlSeleccionIdioma.Controls.Add(this.rdbEspañol);
+            this.pnlSeleccionIdioma.Controls.Add(this.rdbIngles);
+            this.pnlSeleccionIdioma.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeleccionIdioma.Location = new System.Drawing.Point(206, 96);
+            this.pnlSeleccionIdioma.Name = "pnlSeleccionIdioma";
+            this.pnlSeleccionIdioma.Size = new System.Drawing.Size(1718, 81);
+            this.pnlSeleccionIdioma.TabIndex = 22;
+            // 
+            // rdbEspañol
+            // 
+            this.rdbEspañol.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbEspañol.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.bandera_españa;
+            this.rdbEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rdbEspañol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbEspañol.Location = new System.Drawing.Point(768, 15);
+            this.rdbEspañol.Name = "rdbEspañol";
+            this.rdbEspañol.Size = new System.Drawing.Size(93, 60);
+            this.rdbEspañol.TabIndex = 2;
+            this.rdbEspañol.TabStop = true;
+            this.rdbEspañol.UseVisualStyleBackColor = true;
+            // 
+            // rdbIngles
+            // 
+            this.rdbIngles.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbIngles.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.bandera_inglesa;
+            this.rdbIngles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rdbIngles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbIngles.Location = new System.Drawing.Point(891, 15);
+            this.rdbIngles.Name = "rdbIngles";
+            this.rdbIngles.Size = new System.Drawing.Size(99, 60);
+            this.rdbIngles.TabIndex = 1;
+            this.rdbIngles.TabStop = true;
+            this.rdbIngles.UseVisualStyleBackColor = true;
             // 
             // CrearPreguntasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1907, 983);
-            this.Controls.Add(this.gbRespuestas);
+            this.ClientSize = new System.Drawing.Size(1924, 1000);
+            this.Controls.Add(this.pnlSeleccionIdioma);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabIdioma);
             this.Controls.Add(this.flpListaPreguntas);
-            this.Controls.Add(this.gbAudio);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.gbImagen);
-            this.Controls.Add(this.cbxTipoPreg);
-            this.Controls.Add(this.cbxEdad);
-            this.Controls.Add(this.cbxGeneroPreg);
-            this.Controls.Add(this.txtNombrePreg);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "CrearPreguntasForm";
             this.Text = "CrearPreguntasForm";
@@ -539,8 +632,13 @@
             this.tlpRespuestas.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pnlCrearPreguntas.ResumeLayout(false);
+            this.tabIdioma.ResumeLayout(false);
+            this.tabEspañol.ResumeLayout(false);
+            this.tabEspañol.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.pnlSeleccionIdioma.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
         
@@ -577,10 +675,17 @@
         private System.Windows.Forms.TextBox txtAudioOrigen;
         private System.Windows.Forms.TextBox txtAudioNuevo;
         private AxWMPLib.AxWindowsMediaPlayer Reproductor;
-        private System.Windows.Forms.Button btnReproduciir;
         private System.Windows.Forms.TextBox txtImgAnt;
         private System.Windows.Forms.TextBox txtAudioAnt;
         private System.Windows.Forms.Button btnSinImagen;
         private System.Windows.Forms.Button btnSinAudio;
+        private System.Windows.Forms.TabControl tabIdioma;
+        private System.Windows.Forms.TabPage tabEspañol;
+        private System.Windows.Forms.TabPage tabIngles;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlSeleccionIdioma;
+        private System.Windows.Forms.RadioButton rdbEspañol;
+        private System.Windows.Forms.RadioButton rdbIngles;
     }
 }
