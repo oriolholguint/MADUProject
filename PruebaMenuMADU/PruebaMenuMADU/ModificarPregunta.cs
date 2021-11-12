@@ -221,6 +221,34 @@ namespace PruebaMenuMADU
         //Evento Guardar Modificacion
         #region
 
+        private void buttonGuardar_Click(object sender, EventArgs e)
+        {
+            Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
+            Pregunta PreguntaEngToAdd = CrearPreguntaEng();
+
+            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
+            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+
+            if (GeneroEspCambio != null)
+            {
+                //Se devuelven la lista de un nuevo genero
+                GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
+                GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
+                Menu.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
+            }
+            else
+            {
+                //Se devuelven la lista de preguntas del mismo generos
+                GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
+                GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
+                Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
+            }
+
+
+        }
+
+        #endregion
+
         //Evento Cambiar Tipo Pregunta
         #region
 
@@ -278,34 +306,6 @@ namespace PruebaMenuMADU
                 radioButtonRespuesta4.Enabled = true;
                 MarcarRespuestaCorrecta(PreguntaEsp);
             }
-        }
-
-        #endregion
-
-        private void buttonGuardar_Click(object sender, EventArgs e)
-        {
-            Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
-            Pregunta PreguntaEngToAdd = CrearPreguntaEng();
-
-            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
-
-            if (GeneroEspCambio != null)
-            {                
-                //Se devuelven la lista de un nuevo genero
-                GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
-                GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
-            }
-            else
-            {
-                //Se devuelven la lista de preguntas del mismo generos
-                GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
-                GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
-            }
-
-            
         }
 
         #endregion
