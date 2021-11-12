@@ -45,9 +45,9 @@ namespace PruebaMenuMADU
             this.txtNombreGenero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtGenreName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtGenreName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -196,6 +196,7 @@ namespace PruebaMenuMADU
             this.txtNombreGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreGenero.Location = new System.Drawing.Point(11, 71);
             this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreGenero.MaxLength = 20;
             this.txtNombreGenero.Multiline = true;
             this.txtNombreGenero.Name = "txtNombreGenero";
             this.txtNombreGenero.Size = new System.Drawing.Size(528, 84);
@@ -227,29 +228,6 @@ namespace PruebaMenuMADU
             this.panel1.Size = new System.Drawing.Size(1302, 172);
             this.panel1.TabIndex = 13;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1033, 71);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 84);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Crear Género";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtGenreName
-            // 
-            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGenreName.Location = new System.Drawing.Point(543, 71);
-            this.txtGenreName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtGenreName.Multiline = true;
-            this.txtGenreName.Name = "txtGenreName";
-            this.txtGenreName.Size = new System.Drawing.Size(486, 84);
-            this.txtGenreName.TabIndex = 14;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -262,6 +240,30 @@ namespace PruebaMenuMADU
             this.label2.TabIndex = 14;
             this.label2.Text = "Name of the new genre:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtGenreName
+            // 
+            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenreName.Location = new System.Drawing.Point(543, 71);
+            this.txtGenreName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGenreName.MaxLength = 20;
+            this.txtGenreName.Multiline = true;
+            this.txtGenreName.Name = "txtGenreName";
+            this.txtGenreName.Size = new System.Drawing.Size(486, 84);
+            this.txtGenreName.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1033, 71);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(258, 84);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Crear Género";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CrearGenero
             // 

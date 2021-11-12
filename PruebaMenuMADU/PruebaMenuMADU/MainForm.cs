@@ -310,7 +310,7 @@ namespace PruebaMenuMADU
             JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEng.json"));
             GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
         }
-
+        #endregion
         private void buttAddGenre_Click(object sender, EventArgs e)
         {
             CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
