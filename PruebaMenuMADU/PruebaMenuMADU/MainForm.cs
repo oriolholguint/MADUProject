@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +14,8 @@ namespace PruebaMenuMADU
 {
     public partial class Menu : Form
     {
-        List<Genero> GenerosEsp = new List<Genero>();
-        List<Genero> GenerosEng = new List<Genero>();
+        List<Genero> GenerosEsp;
+        List<Genero> GenerosEng;
 
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
@@ -27,55 +29,45 @@ namespace PruebaMenuMADU
         public Menu()
         {
             InitializeComponent();
-            crearGenerosPrueba();
-        }
-
-        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, Genero Genero)
-        {
-            int Indice = GenerosEsp.IndexOf(Genero);
-            GenerosEsp[Indice].Preguntas = PreguntasEsp;
-            GenerosEsp[Indice].Preguntas = PreguntasEng;
-        }
-
-        //Metodo de prueba para tener generos.
-        public void crearGenerosPrueba()
-        {
-            List<Respuesta> RespuestasPrueba = new List<Respuesta>();
-            RespuestasPrueba.Add(new Respuesta("Respuesta 1", true));
-            RespuestasPrueba.Add(new Respuesta("Respuesta 2", true));
-            RespuestasPrueba.Add(new Respuesta("Respuesta 3", true));
-            RespuestasPrueba.Add(new Respuesta("Respuesta 4", true));
-
-
-            Pregunta preguntaRockPrueba = new Pregunta("Pregunta Rock", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
-            Pregunta preguntaRockPrueba2 = new Pregunta("Pregunta Rock2", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
-            Pregunta preguntaRapPrueba = new Pregunta("Pregunta Rap", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
-            Pregunta preguntaRapPrueba2 = new Pregunta("Pregunta Rap2", "Imagen", "Sonido", false, RespuestasPrueba.ToArray());
-
-            List<Personaje> personajesRock = new List<Personaje>();
-            Partida[] partidasRock = new Partida[1];
-            List<Pregunta> preguntasRock = new List<Pregunta>();
-            preguntasRock.Add(preguntaRockPrueba);
-            preguntasRock.Add(preguntaRockPrueba2);
-
-            List<Personaje> personajesRap = new List<Personaje>();
-            Partida[] partidasRap = new Partida[1];
-            List<Pregunta> preguntasRap = new List<Pregunta>();
-            preguntasRap.Add(preguntaRapPrueba);
-            preguntasRap.Add(preguntaRapPrueba2);
-
-            Genero Rock = new Genero("Rock", "Musica", "Musica", "Imagen", personajesRock, partidasRock, preguntasRock);
-            Genero Rap = new Genero("Rap", "Musica", "Musica", "Imagen", personajesRap, partidasRap, preguntasRap);
-
-            GenerosEsp.Add(Rock);
-            GenerosEsp.Add(Rap);
-
-            GenerosEng.Add(Rock);
-            GenerosEng.Add(Rap);
-
-            List<Pregunta> PreguntasList = new List<Pregunta>();
-
+            LeerFicheroGeneros();
             ObtenerComboBoxGeneros(GenerosEsp);
+        }
+
+        public void SetPreguntasList(Genero GeneroEspCambio, Genero GeneroEngCambio, Genero GeneroEsp, Genero GeneroEng)
+        {
+            int IndiceGeneroCambio;
+            int IndiceGenero;
+
+            IndiceGeneroCambio = this.GenerosEsp.IndexOf(GeneroEspCambio);
+            this.GenerosEsp[IndiceGeneroCambio].Preguntas = GeneroEspCambio.Preguntas;
+            this.GenerosEng[IndiceGeneroCambio].Preguntas = GeneroEngCambio.Preguntas;
+
+            IndiceGenero = this.GenerosEsp.IndexOf(GeneroEsp);
+            this.GenerosEsp[IndiceGenero].Preguntas = GeneroEsp.Preguntas;
+            this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
+        }
+
+        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, String Genero)
+        {
+            Boolean GeneroEncontrado = false;
+            int counter = 0;
+            int Indice = 0;
+
+            while(!GeneroEncontrado && counter < GenerosEsp.Count)
+            {
+                if(GenerosEsp[counter].Nombre.Equals(Genero))
+                {
+                    GeneroEncontrado = true;
+                    Indice = counter;
+                }
+                else
+                {
+                    counter++;
+                }
+            }
+
+            GenerosEsp[Indice].Preguntas = PreguntasEsp;
+            GenerosEng[Indice].Preguntas = PreguntasEng;
         }
 
         //Rellenamos el combo box de generos
@@ -118,7 +110,7 @@ namespace PruebaMenuMADU
 
         private void cbxGeneros_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GetGenerosSeleccionados();
+            GetGenerosSeleccionados(cbxGeneros.SelectedItem.ToString());
 
             if (GeneroSeleccionadoEsp != null)
             {
@@ -134,7 +126,7 @@ namespace PruebaMenuMADU
             }
         }
 
-        public void GetGenerosSeleccionados()
+        public void GetGenerosSeleccionados(String Genero)
         {
             Boolean generoEncontrado = false;
             int counter = 0;
@@ -143,7 +135,7 @@ namespace PruebaMenuMADU
             {
                 while(counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if(GenerosEsp[counter].Nombre.Equals(cbxGeneros.SelectedItem))
+                    if(GenerosEsp[counter].Nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroSeleccionadoEsp = GenerosEsp[counter];
@@ -157,6 +149,58 @@ namespace PruebaMenuMADU
 
             }
 
+        }
+
+        public Genero GetGeneroEsp(String Genero)
+        {
+            Genero GeneroEsp = null;
+
+            Boolean generoEncontrado = false;
+            int counter = 0;
+
+            if (!cbxGeneros.SelectedItem.Equals("Generos"))
+            {
+                while (counter < GenerosEsp.Count && !generoEncontrado)
+                {
+                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    {
+                        generoEncontrado = true;
+                        GeneroEsp = GenerosEsp[counter];
+                    }
+                    else
+                    {
+                        counter++;
+                    }
+                }
+            }
+
+            return GeneroEsp;
+        }
+
+        public Genero GetGeneroEng(String Genero)
+        {
+            Genero GeneroEng = null;
+
+            Boolean generoEncontrado = false;
+            int counter = 0;
+
+            if (!cbxGeneros.SelectedItem.Equals("Generos"))
+            {
+                while (counter < GenerosEsp.Count && !generoEncontrado)
+                {
+                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    {
+                        generoEncontrado = true;
+                        GeneroEng = GenerosEng[counter];
+                    }
+                    else
+                    {
+                        counter++;
+                    }
+                }
+            }
+
+            return GeneroEng;
         }
 
         //Formularios Crear y Modificar
@@ -246,47 +290,6 @@ namespace PruebaMenuMADU
             return NombreGeneros;
         }
 
-        public List<Pregunta> ObtenerPreguntasEsp(String NombreGenero)
-        {
-            List<Pregunta> PreguntasEspCambio = null;
-            Boolean GeneroEncontrado = false;
-            int counter = 0;
-
-            while (!GeneroEncontrado && counter < GenerosEsp.Count)
-            {
-                if (GenerosEsp[counter].Nombre.Equals(NombreGenero))
-                {
-                    PreguntasEspCambio = GenerosEsp[counter].Preguntas;
-                    GeneroEncontrado = true;
-                }
-
-                counter++;
-            }
-
-            return PreguntasEspCambio;
-        }
-
-        public List<Pregunta> ObtenerPreguntasEng(String NombreGenero)
-        {
-            List<Pregunta> PreguntasEngCambio = null;
-            Boolean GeneroEncontrado = false;
-            int counter = 0;
-
-            while (!GeneroEncontrado && counter < GenerosEsp.Count)
-            {
-                if (GenerosEsp[counter].Nombre.Equals(NombreGenero))
-                {
-                    PreguntasEngCambio = GenerosEsp[counter].Preguntas;
-                    GeneroEncontrado = true;
-                }
-
-                counter++;
-            }
-
-
-            return PreguntasEngCambio;
-        }
-
         #endregion
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
@@ -296,5 +299,18 @@ namespace PruebaMenuMADU
             cp.ShowDialog();
         }
 
+        //Metodos Leer Ficheros de Generos
+        #region
+
+        private void LeerFicheroGeneros()
+        {
+            JArray jArrayGenerosEsp = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEsp.json"));
+            GenerosEsp = jArrayGenerosEsp.ToObject<List<Genero>>();
+
+            JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEng.json"));
+            GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
+        }
+
+        #endregion
     }
 }
