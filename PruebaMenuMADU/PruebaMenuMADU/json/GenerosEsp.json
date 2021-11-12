@@ -1,0 +1,166 @@
+[
+  {
+    "Nombre": "Rock",
+    "MusicaFondo": "Musica Fondo Rock",
+    "ImagenFondo": "Imagen Fondo Rock",
+    "ImagenMenu": "Imagen Menu Rock",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "¿Qué banda nació primero?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "The Rolling Stones",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "The Beatles",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "The Doors",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "The Who",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿En qué año se formó Nirvana?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "1990",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "1989",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "1988",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "1987",
+            "EsCorrecta": "True"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿Cuando inicio el Rock en Español?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Entre 1930 y 1940",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "Entre 1950 y 1960",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "Entre 1970 y 1980",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "Entre 1990 y 2000",
+            "EsCorrecta": "False"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Nombre": "Rap",
+    "MusicaFondo": "Musica Fondo Rap",
+    "ImagenFondo": "Imagen Fondo Rap",
+    "ImagenMenu": "Imagen Menu Rap",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "¿En que época surgió el hip-hop?",
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "En los 70",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "En los 60",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "En los 90",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "En los 80",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "5",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "4",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "2",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "3",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿En que país surgió el rap?",
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Inglaterra",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "Mexico",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "Francia",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "Estados Unidos",
+            "EsCorrecta": "True"
+          }
+        ]
+      }
+    ]
+  }
+]

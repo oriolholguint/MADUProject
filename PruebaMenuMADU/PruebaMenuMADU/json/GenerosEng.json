@@ -1,0 +1,166 @@
+[
+  {
+    "Nombre": "Rock",
+    "MusicaFondo": "Musica Fondo Rock",
+    "ImagenFondo": "Imagen Fondo Rock",
+    "ImagenMenu": "Imagen Menu Rock",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "Which band was born first?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "The Rolling Stones",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "The Beatles",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "The Doors",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "The Who",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "What year was Nirvana formed?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "1990",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "1989",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "1988",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "1987",
+            "EsCorrecta": "True"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "When did Rock en Español start?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Between 1930 & 1940",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "Between 1950 & 1960",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "Between 1970 & 1980",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "Between 1990 & 2000",
+            "EsCorrecta": "False"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Nombre": "Rap",
+    "MusicaFondo": "Musica Fondo Rap",
+    "ImagenFondo": "Imagen Fondo Rap",
+    "ImagenMenu": "Imagen Menu Rap",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "At what time did hip-hop emerge?",
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "In the 70s",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "In the 60",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "In the 90",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "In the 80",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "How many 'elements' is hip-hop made of?",
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "5",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "4",
+            "EsCorrecta": "True"
+          },
+          {
+            "RespuestaDescripcion": "2",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "3",
+            "EsCorrecta": "False"
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "In which country did rap emerge?",
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": "False",
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "England",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "Mexico",
+            "EsCorrecta": "False"
+          },
+          {
+            "RespuestaDescripcion": "France",
+            "EsCorreca": "False"
+          },
+          {
+            "RespuestaDescripcion": "United States",
+            "EsCorrecta": "True"
+          }
+        ]
+      }
+    ]
+  }
+]
