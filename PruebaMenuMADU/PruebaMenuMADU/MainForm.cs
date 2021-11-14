@@ -14,6 +14,9 @@ namespace PruebaMenuMADU
 {
     public partial class Menu : Form
     {
+        String PathGenerosEsp = "..\\..\\json\\GenerosEsp.json";
+        String PathGenerosEng = "..\\..\\json\\GenerosEng.json";
+
         List<Genero> GenerosEsp;
         List<Genero> GenerosEng;
 
@@ -306,10 +309,10 @@ namespace PruebaMenuMADU
 
         private void LeerFicheroGeneros()
         {
-            JArray jArrayGenerosEsp = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEsp.json"));
+            JArray jArrayGenerosEsp = JArray.Parse(File.ReadAllText(PathGenerosEsp));
             GenerosEsp = jArrayGenerosEsp.ToObject<List<Genero>>();
 
-            JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEng.json"));
+            JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText(PathGenerosEng));
             GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
         }
 
@@ -339,6 +342,15 @@ namespace PruebaMenuMADU
                 Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
             }
 
+        }
+
+        private void buttonGenerarJSON_Click(object sender, EventArgs e)
+        {
+            JArray ArrayGenerosEsp = (JArray)JToken.FromObject(GenerosEsp);
+            File.WriteAllText(PathGenerosEsp, ArrayGenerosEsp.ToString());
+
+            JArray ArrayGenerosEng = (JArray)JToken.FromObject(GenerosEng);
+            File.WriteAllText(PathGenerosEng, ArrayGenerosEng.ToString());
         }
     }
 }
