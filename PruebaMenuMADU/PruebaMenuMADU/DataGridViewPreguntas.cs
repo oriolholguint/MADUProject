@@ -53,6 +53,7 @@ namespace PruebaMenuMADU
             dataGridViewTablaPreguntas.Refresh();
         }
 
+        //Cuando se seleccione una pregunta se tendra que enviar al formulario de modificar
         private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
         {
             CargarPreguntaSeleccionada();
