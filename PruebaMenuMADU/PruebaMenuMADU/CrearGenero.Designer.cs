@@ -48,6 +48,7 @@ namespace PruebaMenuMADU
             this.label2 = new System.Windows.Forms.Label();
             this.txtGenreName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.butCancel = new System.Windows.Forms.Button();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -201,6 +202,7 @@ namespace PruebaMenuMADU
             this.txtNombreGenero.Name = "txtNombreGenero";
             this.txtNombreGenero.Size = new System.Drawing.Size(528, 84);
             this.txtNombreGenero.TabIndex = 11;
+            this.txtNombreGenero.TextChanged += new System.EventHandler(this.txtNombreGenero_TextChanged);
             // 
             // label1
             // 
@@ -251,6 +253,7 @@ namespace PruebaMenuMADU
             this.txtGenreName.Name = "txtGenreName";
             this.txtGenreName.Size = new System.Drawing.Size(486, 84);
             this.txtGenreName.TabIndex = 14;
+            this.txtGenreName.TextChanged += new System.EventHandler(this.txtGenreName_TextChanged);
             // 
             // button1
             // 
@@ -265,17 +268,30 @@ namespace PruebaMenuMADU
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // butCancel
+            // 
+            this.butCancel.BackColor = System.Drawing.Color.PaleGreen;
+            this.butCancel.Location = new System.Drawing.Point(457, 580);
+            this.butCancel.Name = "butCancel";
+            this.butCancel.Size = new System.Drawing.Size(405, 23);
+            this.butCancel.TabIndex = 14;
+            this.butCancel.Text = "Cancelar y volver al menú";
+            this.butCancel.UseVisualStyleBackColor = false;
+            this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
+            // 
             // CrearGenero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 593);
+            this.ClientSize = new System.Drawing.Size(1302, 614);
+            this.Controls.Add(this.butCancel);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbImagen);
             this.Controls.Add(this.panel1);
             this.Name = "CrearGenero";
             this.Text = "CrearGenero";
+            this.Load += new System.EventHandler(this.CrearGenero_Load);
             this.gbImagen.ResumeLayout(false);
             this.gbImagen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).EndInit();
@@ -311,5 +327,6 @@ namespace PruebaMenuMADU
         private AxWMPLib.AxWindowsMediaPlayer wmpMusic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtGenreName;
+        private System.Windows.Forms.Button butCancel;
     }
 }

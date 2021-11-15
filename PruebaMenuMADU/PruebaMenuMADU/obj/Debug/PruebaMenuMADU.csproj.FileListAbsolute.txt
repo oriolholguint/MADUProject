@@ -101,3 +101,6 @@ D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMA
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
