@@ -131,7 +131,7 @@ namespace PruebaMenuMADU
                 BorrarPanelDatos();
                 BorrarPanelModificar();
             }
-            else
+            else 
             {
                 DesactivarBotonesOpciones();
                 BorrarPanelDatos();
@@ -141,6 +141,8 @@ namespace PruebaMenuMADU
 
         public void GetGenerosSeleccionados(String Genero)
         {
+            GeneroSeleccionadoEsp = null;
+            GeneroSeleccionadoEng = null;
             Boolean generoEncontrado = false;
             int counter = 0;
 
