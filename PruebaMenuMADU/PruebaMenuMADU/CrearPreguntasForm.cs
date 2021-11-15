@@ -900,7 +900,9 @@ namespace PruebaMenuMADU
 
         private void rdbIngles_CheckedChanged(object sender, EventArgs e)
         {
-            tabIdioma.SelectedTab = tabIngles;
+            tabIdioma.SelectedTab = tabIdioma.TabPages["tabIngles"];
         }
+
+       
     }
 }

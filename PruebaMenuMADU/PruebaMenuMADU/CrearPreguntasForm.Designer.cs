@@ -594,6 +594,7 @@
             this.rdbEspañol.TabIndex = 2;
             this.rdbEspañol.TabStop = true;
             this.rdbEspañol.UseVisualStyleBackColor = true;
+           
             // 
             // rdbIngles
             // 
