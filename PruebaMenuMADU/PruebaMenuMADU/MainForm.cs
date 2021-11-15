@@ -96,13 +96,18 @@ namespace PruebaMenuMADU
 
         private void buttonPreguntas_Click(object sender, EventArgs e)
         {
+            
             BorrarPanelModificar();
 
-            MostrarFormModificarPregunta();
+            if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
+            {
+                MostrarFormModificarPregunta();
+            }
 
             BorrarPanelDatos();
 
             MostrarGridPreguntas();
+            
         }
 
         private void buttonPersonajes_Click(object sender, EventArgs e)
