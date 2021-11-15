@@ -84,6 +84,12 @@
     <Compile Include="DataGridViewPreguntas.Designer.cs">
       <DependentUpon>DataGridViewPreguntas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPersonajesGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonajesGenero.Designer.cs">
+      <DependentUpon>FormPersonajesGenero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Genero.cs" />
     <Compile Include="Jugador.cs" />
     <Compile Include="Login.cs">
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewPreguntas.resx">
       <DependentUpon>DataGridViewPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonajesGenero.resx">
+      <DependentUpon>FormPersonajesGenero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

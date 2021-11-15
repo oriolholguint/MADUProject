@@ -41,11 +41,11 @@ namespace PruebaMenuMADU
             // 
             this.labelRContra.AutoSize = true;
             this.labelRContra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRContra.Location = new System.Drawing.Point(88, 309);
+            this.labelRContra.Location = new System.Drawing.Point(125, 306);
             this.labelRContra.Name = "labelRContra";
-            this.labelRContra.Size = new System.Drawing.Size(363, 33);
+            this.labelRContra.Size = new System.Drawing.Size(291, 33);
             this.labelRContra.TabIndex = 3;
-            this.labelRContra.Text = "Recuperar Contrasenya:";
+            this.labelRContra.Text = "¿Forgot password?";
             // 
             // labelEmail
             // 
