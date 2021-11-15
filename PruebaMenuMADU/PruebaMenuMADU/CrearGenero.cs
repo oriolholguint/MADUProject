@@ -12,9 +12,17 @@ namespace PruebaMenuMADU
 {
     public partial class CrearGenero : Form
     {
-        public CrearGenero()
+        Genero createdEng { get; set; }
+        List<Genero> listaEsp { get; set; }
+        List<Genero> listaEng { get; set; }
+        Genero createdEsp { get; set; }
+
+        public Boolean manualCancel = false;
+    public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
             InitializeComponent();
+            this.listaEsp = listaEsp;
+            this.listaEng = listaEng;
         }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
@@ -113,8 +121,10 @@ namespace PruebaMenuMADU
                     MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;                
                 }
-                if (System.IO.Directory.Exists(element))
+                
+                if (System.IO.File.Exists(element))
                 {
+
                     paths++;
                 }
                 
@@ -125,15 +135,66 @@ namespace PruebaMenuMADU
                 MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-
+            
             Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
+            Boolean controlDeNombre = true;
+            foreach (Genero gen in this.listaEsp)
+            {
+                if (gen.Nombre.Equals(spanish.Nombre))
+                {
+                    MessageBox.Show("Nombre para el nuevo genero incorrecto", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    controlDeNombre = false;
+                    break;
+                }
+            }
+            foreach (Genero gen in this.listaEng)
+            {
+                if (gen.Nombre.Equals(english.Nombre))
+                {
+                    MessageBox.Show("Nombre para el nuevo genero(version ingles) incorrecto/a", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    controlDeNombre = false;
+                    break;
+                }
+            }
+
+            if (controlDeNombre) {
+                this.createdEng = english;
+                this.createdEsp = spanish;
+                this.Close();
+                    return;
+            }
+            spanish = null;
+            english = null;
+            this.Close();
 
 
-            Console.WriteLine(spanish.ToString() + " , " + english.ToString());
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        internal Genero getCreatedGenre(String lang){return (lang.Contains("es") ? this.createdEsp : this.createdEng);}
+
+        private void butCancel_Click(object sender, EventArgs e)
+        {
+            manualCancel = true;
+            this.Close();
+        }
+
+        private void CrearGenero_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGenreName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreGenero_TextChanged(object sender, EventArgs e)
         {
 
         }

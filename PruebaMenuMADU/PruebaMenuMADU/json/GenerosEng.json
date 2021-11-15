@@ -1,0 +1,214 @@
+[
+  {
+    "Nombre": "Rock",
+    "MusicaFondo": "Musica Fondo Rock",
+    "ImagenFondo": "Imagen Fondo Rock",
+    "ImagenMenu": "Imagen Menu Rock",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "Which band was born first?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "The Rolling Stones",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "The Beatles",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "The Doors",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "The Who",
+            "EsCorrecta": false
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "What year was Nirvana formed?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "1990",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "1989",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "1988",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "1987",
+            "EsCorrecta": true
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "When did Rock en Español start?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Between 1930 & 1940",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Between 1950 & 1960",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "Between 1970 & 1980",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Between 1990 & 2000",
+            "EsCorrecta": false
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Try JSON 1",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Try JSON 2",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Try JSON 3",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "Try JSON 4",
+            "EsCorrecta": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Nombre": "Rap",
+    "MusicaFondo": "Musica Fondo Rap",
+    "ImagenFondo": "Imagen Fondo Rap",
+    "ImagenMenu": "Imagen Menu Rap",
+    "Personajes": [],
+    "Partidas": [],
+    "Preguntas": [
+      {
+        "PreguntaDescripcion": "At what time did hip-hop emerge?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "In the 70s",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "In the 60",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "In the 90",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "In the 80",
+            "EsCorrecta": false
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "How many 'elements' is hip-hop made of?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "5",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "4",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "2",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "3",
+            "EsCorrecta": false
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "In which country did rap emerge?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "England",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Mexico",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "France",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "United States",
+            "EsCorrecta": true
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "True",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "False",
+            "EsCorrecta": false
+          }
+        ]
+      }
+    ]
+  }
+]
