@@ -17,8 +17,8 @@ namespace PruebaMenuMADU
         List<Genero> listaEng { get; set; }
         Genero createdEsp { get; set; }
 
-        Boolean manualCancel = false;
-        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
+        public Boolean manualCancel = false;
+    public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
             InitializeComponent();
             this.listaEsp = listaEsp;
