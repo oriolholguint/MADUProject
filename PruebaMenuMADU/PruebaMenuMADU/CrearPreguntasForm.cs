@@ -892,5 +892,15 @@ namespace PruebaMenuMADU
             txtAudioNuevo.Text = "";
             txtAudioOrigen.Text = "";
         }
+
+        private void rdbEspañol_CheckedChanged(object sender, EventArgs e)
+        {
+            tabIdioma.SelectedTab = tabIdioma.TabPages["tabEspañol"];
+        }
+
+        private void rdbIngles_CheckedChanged(object sender, EventArgs e)
+        {
+            tabIdioma.SelectedTab = tabIngles;
+        }
     }
 }

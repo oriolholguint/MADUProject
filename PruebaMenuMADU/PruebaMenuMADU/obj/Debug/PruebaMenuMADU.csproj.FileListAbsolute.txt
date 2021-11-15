@@ -31,7 +31,6 @@ C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\De
 C:\Users\oriol\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.pdb
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csprojAssemblyReference.cache
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearPreguntasForm.resources
-C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewGeneros.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPersonajes.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Menu.resources
@@ -101,6 +100,14 @@ D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMA
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
-C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
-C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
-C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Interop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\Interop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.ResolveComReference.cache
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearGenero.resources
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Login.resources
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.RecuperarContrasenya.resources
+C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete

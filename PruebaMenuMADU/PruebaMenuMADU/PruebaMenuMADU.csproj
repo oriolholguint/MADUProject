@@ -223,5 +223,11 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera_españa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera_inglesa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
