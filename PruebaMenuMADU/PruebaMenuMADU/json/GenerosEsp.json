@@ -9,73 +9,101 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿Qué banda nació primero?",
+        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": "False",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "The Rolling Stones",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "The Beatles",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
           },
           {
             "RespuestaDescripcion": "The Doors",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "The Who",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           }
         ]
       },
       {
         "PreguntaDescripcion": "¿En qué año se formó Nirvana?",
+        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": "False",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "1990",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "1989",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "1988",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "1987",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
           }
         ]
       },
       {
         "PreguntaDescripcion": "¿Cuando inicio el Rock en Español?",
+        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": "False",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "Entre 1930 y 1940",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "Entre 1950 y 1960",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
           },
           {
             "RespuestaDescripcion": "Entre 1970 y 1980",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "Entre 1990 y 2000",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rock",
+        "Sonido": "Sonido Pregunta Rock",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Prueba JSON 1",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Prueba JSON 2",
+            "EsCorrecta": false
+          },
+          {
+            "RespuestaDescripcion": "Prueba JSON 3",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "Prueba JSON 4",
+            "EsCorrecta": false
           }
         ]
       }
@@ -91,73 +119,93 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿En que época surgió el hip-hop?",
+        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": "False",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "En los 70",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
           },
           {
             "RespuestaDescripcion": "En los 60",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "En los 90",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "En los 80",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           }
         ]
       },
       {
         "PreguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": "False",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "5",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "4",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
           },
           {
             "RespuestaDescripcion": "2",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "3",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           }
         ]
       },
       {
         "PreguntaDescripcion": "¿En que país surgió el rap?",
+        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": "False",
+        "EsMayorEdad": false,
         "Respuestas": [
           {
             "RespuestaDescripcion": "Inglaterra",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "Mexico",
-            "EsCorrecta": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "Francia",
-            "EsCorreca": "False"
+            "EsCorrecta": false
           },
           {
             "RespuestaDescripcion": "Estados Unidos",
-            "EsCorrecta": "True"
+            "EsCorrecta": true
+          }
+        ]
+      },
+      {
+        "PreguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
+        "Genero": null,
+        "Imagen": "Imagen Pregunta Rap",
+        "Sonido": "Sonido Pregunta Rap",
+        "EsMayorEdad": false,
+        "Respuestas": [
+          {
+            "RespuestaDescripcion": "Verdadero",
+            "EsCorrecta": true
+          },
+          {
+            "RespuestaDescripcion": "Falso",
+            "EsCorrecta": false
           }
         ]
       }
