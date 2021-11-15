@@ -14,6 +14,9 @@ namespace PruebaMenuMADU
 {
     public partial class Menu : Form
     {
+        String PathGenerosEsp = "..\\..\\json\\GenerosEsp.json";
+        String PathGenerosEng = "..\\..\\json\\GenerosEng.json";
+
         List<Genero> GenerosEsp;
         List<Genero> GenerosEng;
 
@@ -70,18 +73,25 @@ namespace PruebaMenuMADU
             GenerosEng[Indice].Preguntas = PreguntasEng;
         }
 
-        //Rellenamos el combo box de generos
+        //Relleno el combo box de generos
+        #region
+
         private void ObtenerComboBoxGeneros(List<Genero> Generos)
         {
-            cbxGeneros.Items.Add("Generos");
+            cbxGeneros.Items.Clear(); //Limpio todos los generos para no repetirlos al crear uno
+
+            cbxGeneros.Items.Add("Generos"); //Añado string genero que no mostrara ninguno
             cbxGeneros.SelectedIndex = 0;
+            //Recogo todos los nombres de los generos en español para mostrarlos en el combobox
             for(int i = 0; i < Generos.Count; i++)
             {
                 cbxGeneros.Items.Add(Generos[i].Nombre);
             }
         }
 
-        //Eventos Botones Click
+        #endregion
+
+        //Eventos Botones Click (Preguntas y Personajes)
         #region
 
         private void buttonPreguntas_Click(object sender, EventArgs e)
@@ -108,6 +118,9 @@ namespace PruebaMenuMADU
 
         #endregion
 
+        //Metodos y Eventos de Generos
+        #region
+
         private void cbxGeneros_SelectedIndexChanged(object sender, EventArgs e)
         {
             GetGenerosSeleccionados(cbxGeneros.SelectedItem.ToString());
@@ -118,7 +131,7 @@ namespace PruebaMenuMADU
                 BorrarPanelDatos();
                 BorrarPanelModificar();
             }
-            else
+            else 
             {
                 DesactivarBotonesOpciones();
                 BorrarPanelDatos();
@@ -128,6 +141,8 @@ namespace PruebaMenuMADU
 
         public void GetGenerosSeleccionados(String Genero)
         {
+            GeneroSeleccionadoEsp = null;
+            GeneroSeleccionadoEng = null;
             Boolean generoEncontrado = false;
             int counter = 0;
 
@@ -202,6 +217,8 @@ namespace PruebaMenuMADU
 
             return GeneroEng;
         }
+
+        #endregion
 
         //Formularios Crear y Modificar
         #region
@@ -292,6 +309,44 @@ namespace PruebaMenuMADU
 
         #endregion
 
+        //Metodos Leer Ficheros de Generos
+        #region
+
+        private void LeerFicheroGeneros()
+        {
+            JArray jArrayGenerosEsp = JArray.Parse(File.ReadAllText(PathGenerosEsp));
+            GenerosEsp = jArrayGenerosEsp.ToObject<List<Genero>>();
+
+            JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText(PathGenerosEng));
+            GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
+        }
+
+        #endregion
+
+        //Metodos Crear Fichero JSON
+        #region
+
+        private void buttonGenerarJSON_Click(object sender, EventArgs e)
+        {
+            CrearFicheroJson();
+        }
+
+        private void CrearFicheroJson()
+        {
+            JArray ArrayGenerosEsp = (JArray)JToken.FromObject(GenerosEsp);
+            File.WriteAllText(PathGenerosEsp, ArrayGenerosEsp.ToString());
+
+            JArray ArrayGenerosEng = (JArray)JToken.FromObject(GenerosEng);
+            File.WriteAllText(PathGenerosEng, ArrayGenerosEng.ToString());
+
+            if (File.Exists(PathGenerosEsp) && File.Exists(PathGenerosEng))
+            {
+                MessageBox.Show("JSON Generado Correctamente", "JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        #endregion
+
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
             CrearPreguntasForm cp = new CrearPreguntasForm();
@@ -299,23 +354,12 @@ namespace PruebaMenuMADU
             cp.ShowDialog();
         }
 
-        //Metodos Leer Ficheros de Generos
-        #region
 
-        private void LeerFicheroGeneros()
-        {
-            JArray jArrayGenerosEsp = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEsp.json"));
-            GenerosEsp = jArrayGenerosEsp.ToObject<List<Genero>>();
-
-            JArray jArrayGenerosEng = JArray.Parse(File.ReadAllText("..\\..\\json\\GenerosEng.json"));
-            GenerosEng = jArrayGenerosEng.ToObject<List<Genero>>();
-        }
-        #endregion
         private void buttAddGenre_Click(object sender, EventArgs e)
         {
             CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
             cg.ShowDialog();
-            if (cg.getCreatedGenre("esp") == null)
+            if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {
                 MessageBox.Show("No se ha añadido ningun genero", "Error en la creacion de Generos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -323,10 +367,12 @@ namespace PruebaMenuMADU
             else
             {
                 this.GenerosEsp.Add(cg.getCreatedGenre("esp"));
-                this.GenerosEsp.Add(cg.getCreatedGenre("eng"));
+                this.GenerosEng.Add(cg.getCreatedGenre("eng"));
+                ObtenerComboBoxGeneros(GenerosEsp); //Recargo combo box de generos
                 Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
             }
 
         }
+
     }
 }

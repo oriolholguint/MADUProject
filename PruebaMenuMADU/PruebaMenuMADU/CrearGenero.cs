@@ -16,7 +16,9 @@ namespace PruebaMenuMADU
         List<Genero> listaEsp { get; set; }
         List<Genero> listaEng { get; set; }
         Genero createdEsp { get; set; }
-        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
+
+        public Boolean manualCancel = false;
+    public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
             InitializeComponent();
             this.listaEsp = listaEsp;
@@ -175,5 +177,26 @@ namespace PruebaMenuMADU
         }
 
         internal Genero getCreatedGenre(String lang){return (lang.Contains("es") ? this.createdEsp : this.createdEng);}
+
+        private void butCancel_Click(object sender, EventArgs e)
+        {
+            manualCancel = true;
+            this.Close();
+        }
+
+        private void CrearGenero_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGenreName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreGenero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
