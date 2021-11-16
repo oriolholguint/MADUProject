@@ -32,6 +32,7 @@ namespace PruebaMenuMADU
 
         private void btnCargarImagen1_Click(object sender, EventArgs e)
         {
+            
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
             getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
@@ -44,6 +45,7 @@ namespace PruebaMenuMADU
 
         private void btnCargarImagen2_Click(object sender, EventArgs e)
         {
+            
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
             getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
@@ -56,6 +58,7 @@ namespace PruebaMenuMADU
 
         private void btnCargarImagen3_Click(object sender, EventArgs e)
         {
+            
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
             getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
@@ -73,6 +76,7 @@ namespace PruebaMenuMADU
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            
             String nomRank1, nomRank2, nomRank3,rutaImgR1, rutaImgR2, rutaImgR3;
             int posGenero;
 
@@ -99,16 +103,37 @@ namespace PruebaMenuMADU
             perRank3.Imagen = rutaImgR3;
             perRank3.PosicionRanking = 3;
 
+            if (!String.IsNullOrEmpty(nomRank1) || !String.IsNullOrWhiteSpace(nomRank1))
+            {
+                if (!String.IsNullOrEmpty(nomRank2) || !String.IsNullOrWhiteSpace(nomRank2))
+                {
+                    if (!String.IsNullOrEmpty(nomRank3) || !String.IsNullOrWhiteSpace(nomRank3))
+                    {
+                        personatges.Add(perRank1);
+                        personatges.Add(perRank2);
+                        personatges.Add(perRank3);
 
-            personatges.Add(perRank1);
-            personatges.Add(perRank2);
-            personatges.Add(perRank3);
+                        GeneroEspanyol[posGenero].Personajes = personatges;
+                        GeneroIngles[posGenero].Personajes = personatges;
+
+                        this.Close();
+                    } 
+                    else 
+                    {
+                        MessageBox.Show("Error al Crear Personaje");
+                    }
+                } 
+                else 
+                {
+                    MessageBox.Show("Error al Crear Personaje");
+                }
+            } else 
+            {
+                MessageBox.Show("Error al Crear Personaje");
+            } 
 
 
-            GeneroEspanyol[posGenero].Personajes = personatges;
-            GeneroIngles[posGenero].Personajes = personatges;
 
-            this.Close();
         }
     }
 }
