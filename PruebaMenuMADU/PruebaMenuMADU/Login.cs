@@ -39,7 +39,7 @@ namespace PruebaMenuMADU
             {
                 if (passTextBox.Equals(pass))
                 {
-                     Menu mainForm = new Menu();
+                    Menu mainForm = new Menu();
                     mainForm.Show();
                 }
                 else
