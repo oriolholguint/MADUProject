@@ -10,10 +10,8 @@ namespace PruebaMenuMADU
     public class Genero
     {
         public String Nombre { get; set; }
-
         
         public String MusicaFondo { get; set; }
-
 
         public String ImagenFondo { get; set; }
 
@@ -24,6 +22,8 @@ namespace PruebaMenuMADU
         public Partida [] Partidas { get; set; }
 
         public List<Pregunta> Preguntas { get; set; }
+
+     
 
         public Genero()
         {

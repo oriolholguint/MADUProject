@@ -38,6 +38,7 @@ namespace PruebaMenuMADU
             this.cbxGeneros = new System.Windows.Forms.ComboBox();
             this.buttAddGenre = new System.Windows.Forms.Button();
             this.buttonGenerarJSON = new System.Windows.Forms.Button();
+            this.buttonCrearP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPreguntas
@@ -68,7 +69,9 @@ namespace PruebaMenuMADU
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
+
             this.toolStrip1.Size = new System.Drawing.Size(1464, 25);
+
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -77,7 +80,9 @@ namespace PruebaMenuMADU
             this.panelModificar.BackColor = System.Drawing.Color.DarkGray;
             this.panelModificar.Location = new System.Drawing.Point(908, 67);
             this.panelModificar.Name = "panelModificar";
+
             this.panelModificar.Size = new System.Drawing.Size(550, 718);
+
             this.panelModificar.TabIndex = 7;
             // 
             // panelDatos
@@ -135,11 +140,26 @@ namespace PruebaMenuMADU
             this.buttonGenerarJSON.UseVisualStyleBackColor = true;
             this.buttonGenerarJSON.Click += new System.EventHandler(this.buttonGenerarJSON_Click);
             // 
+            // buttonCrearP
+            // 
+            this.buttonCrearP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearP.Location = new System.Drawing.Point(908, 27);
+            this.buttonCrearP.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearP.Name = "buttonCrearP";
+            this.buttonCrearP.Size = new System.Drawing.Size(194, 32);
+            this.buttonCrearP.TabIndex = 15;
+            this.buttonCrearP.Text = "Crear Personajes";
+            this.buttonCrearP.UseVisualStyleBackColor = true;
+            this.buttonCrearP.Click += new System.EventHandler(this.buttonCrearP_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1464, 786);
+
+            this.ClientSize = new System.Drawing.Size(1443, 786);
+            this.Controls.Add(this.buttonCrearP);
+
             this.Controls.Add(this.buttonGenerarJSON);
             this.Controls.Add(this.buttAddGenre);
             this.Controls.Add(this.buttonPersonajes);
@@ -168,5 +188,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.ComboBox cbxGeneros;
         private System.Windows.Forms.Button buttAddGenre;
         private System.Windows.Forms.Button buttonGenerarJSON;
+        private System.Windows.Forms.Button buttonCrearP;
     }
 }
