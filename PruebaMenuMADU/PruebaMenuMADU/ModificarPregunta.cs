@@ -210,9 +210,11 @@ namespace PruebaMenuMADU
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            TextBox[] txtbs = { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion };
+            TextBox[] txtbs = ((checkBoxTipoPregunta.Checked) ?  (new TextBox[]{ textBoxAnwser1, textBoxAnwser2, textBoxRespuesta1, textBoxRespuesta2, textBoxPregunta, textBoxQuestion }) : (new TextBox[] { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion }));
             Boolean error = false;
-            foreach(TextBox txt in txtbs)
+            //HAY UN BUG AQUI
+            //HAY UN BUG AQUI
+            foreach (TextBox txt in txtbs)
             {
                 if (String.IsNullOrEmpty(txt.Text) || String.IsNullOrWhiteSpace(txt.Text))
                 {
