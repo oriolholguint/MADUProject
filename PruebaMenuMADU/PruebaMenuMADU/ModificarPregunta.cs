@@ -214,7 +214,7 @@ namespace PruebaMenuMADU
             Boolean error = false;
             foreach(TextBox txt in txtbs)
             {
-                if (String.IsNullOrEmpty(txt.Text))
+                if (String.IsNullOrEmpty(txt.Text) || String.IsNullOrWhiteSpace(txt.Text))
                 {
                     errorProvider1.SetError(txt, "Llena los campos de pregunta");
                     error = true;
