@@ -247,7 +247,7 @@ namespace PruebaMenuMADU
             this.groupBox1.Controls.Add(this.labelRespuesta4);
             this.groupBox1.Location = new System.Drawing.Point(18, 171);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(497, 166);
+            this.groupBox1.Size = new System.Drawing.Size(528, 166);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Respuestas";
@@ -382,7 +382,7 @@ namespace PruebaMenuMADU
             this.groupBoxAnwsers.Controls.Add(this.labelAnwser4);
             this.groupBoxAnwsers.Location = new System.Drawing.Point(18, 344);
             this.groupBoxAnwsers.Name = "groupBoxAnwsers";
-            this.groupBoxAnwsers.Size = new System.Drawing.Size(497, 165);
+            this.groupBoxAnwsers.Size = new System.Drawing.Size(528, 165);
             this.groupBoxAnwsers.TabIndex = 24;
             this.groupBoxAnwsers.TabStop = false;
             this.groupBoxAnwsers.Text = "Anwsers";

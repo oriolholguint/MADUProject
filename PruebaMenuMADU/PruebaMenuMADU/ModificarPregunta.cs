@@ -210,31 +210,18 @@ namespace PruebaMenuMADU
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
+            TextBox[] txtbs = { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion };
             Boolean error = false;
-            if (String.IsNullOrEmpty(textBoxRespuesta1.Text) || String.IsNullOrEmpty(textBoxAnwser1.Text)) {
-                errorProvider1.SetError(textBoxRespuesta1, "Llena los campos de pregunta");
-                errorProvider1.SetError(textBoxAnwser1, "Llena los campos de pregunta");
-                error = true; }
-            if (String.IsNullOrEmpty(textBoxRespuesta2.Text) || String.IsNullOrEmpty(textBoxAnwser2.Text))
+            foreach(TextBox txt in txtbs)
             {
-                errorProvider1.SetError(textBoxRespuesta2, "Llena los campos de pregunta");
-                errorProvider1.SetError(textBoxAnwser2, "Llena los campos de pregunta");
-                error = true;
+                if (String.IsNullOrEmpty(txt.Text))
+                {
+                    errorProvider1.SetError(txt, "Llena los campos de pregunta");
+                    error = true;
+                }
+                else { errorProvider1.SetError(txt, null); }
             }
-            if (String.IsNullOrEmpty(textBoxRespuesta3.Text) || String.IsNullOrEmpty(textBoxAnwser3.Text))
-            {
-                errorProvider1.SetError(textBoxRespuesta3, "Llena los campos de pregunta");
-                errorProvider1.SetError(textBoxAnwser3, "Llena los campos de pregunta");
-                error = true;
-            }
-            if (String.IsNullOrEmpty(textBoxRespuesta4.Text) || String.IsNullOrEmpty(textBoxAnwser4.Text))
-            {
-                errorProvider1.SetError(textBoxRespuesta4, "Llena los campos de pregunta");
-                errorProvider1.SetError(textBoxAnwser4, "Llena los campos de pregunta");
-                error = true;
-            }
-
-
+           
 
             if (!error)
             {
