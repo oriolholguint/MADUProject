@@ -23,7 +23,7 @@ namespace PruebaMenuMADU
 
         List<String> NombreGeneros;
         Menu MainForm;
- 
+
         public ModificarPregunta()
         {
             InitializeComponent();
@@ -38,11 +38,11 @@ namespace PruebaMenuMADU
 
         public void setPregunta(Genero GeneroSeleccionadoEsp,
                                 Genero GeneroSeleccionadoEng,
-                                Pregunta PreguntaEsp, 
+                                Pregunta PreguntaEsp,
                                 Pregunta PreguntaEng)
         {
             this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
-            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng; 
+            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
             this.PreguntaEsp = PreguntaEsp;
             this.PreguntaEng = PreguntaEng;
             textBoxRespuesta3.Enabled = true;
@@ -189,7 +189,7 @@ namespace PruebaMenuMADU
             GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
 
             MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, GeneroSeleccionadoEsp.Nombre);
-            
+
         }
 
         #endregion
@@ -215,6 +215,21 @@ namespace PruebaMenuMADU
 
             GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
             GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+
+            TextBox[] txtbs = ((checkBoxTipoPregunta.Checked) ?  (new TextBox[]{ textBoxAnwser1, textBoxAnwser2, textBoxRespuesta1, textBoxRespuesta2, textBoxPregunta, textBoxQuestion }) : (new TextBox[] { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion }));
+            Boolean error = false;
+            //HAY UN BUG AQUI
+            //HAY UN BUG AQUI
+            foreach (TextBox txt in txtbs)
+            {
+                if (String.IsNullOrEmpty(txt.Text) || String.IsNullOrWhiteSpace(txt.Text))
+                {
+                    errorProvider1.SetError(txt, "Llena los campos de pregunta");
+                    error = true;
+                }
+                else { errorProvider1.SetError(txt, null); }
+            }
+
 
             if (GeneroEspCambio != null)
             {
@@ -245,7 +260,7 @@ namespace PruebaMenuMADU
 
         private void checkBoxTipoPregunta_Click(object sender, EventArgs e)
         {
-            CambiarTipoPregunta();   
+            CambiarTipoPregunta();
         }
 
         private void CambiarTipoPregunta()
@@ -331,7 +346,7 @@ namespace PruebaMenuMADU
 
         private Pregunta CrearPreguntaEsp()
         {
-            Pregunta Pregunta = new Pregunta(); 
+            Pregunta Pregunta = new Pregunta();
 
             Pregunta.PreguntaDescripcion = textBoxPregunta.Text;
             if (checkBoxMayorEdad.Checked == true)
@@ -486,6 +501,6 @@ namespace PruebaMenuMADU
 
         #endregion
 
-        
+
     }
 }

@@ -77,6 +77,7 @@ namespace PruebaMenuMADU
             this.txtUrlOculta.Location = new System.Drawing.Point(16, 284);
             this.txtUrlOculta.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrlOculta.Name = "txtUrlOculta";
+            this.txtUrlOculta.ReadOnly = true;
             this.txtUrlOculta.Size = new System.Drawing.Size(364, 20);
             this.txtUrlOculta.TabIndex = 2;
             this.txtUrlOculta.TextChanged += new System.EventHandler(this.txtUrlOculta_TextChanged);
@@ -123,6 +124,7 @@ namespace PruebaMenuMADU
             this.txtUrlBackground.Location = new System.Drawing.Point(15, 284);
             this.txtUrlBackground.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrlBackground.Name = "txtUrlBackground";
+            this.txtUrlBackground.ReadOnly = true;
             this.txtUrlBackground.Size = new System.Drawing.Size(446, 20);
             this.txtUrlBackground.TabIndex = 2;
             // 
@@ -177,6 +179,7 @@ namespace PruebaMenuMADU
             this.txtUrlMusic.Location = new System.Drawing.Point(13, 284);
             this.txtUrlMusic.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrlMusic.Name = "txtUrlMusic";
+            this.txtUrlMusic.ReadOnly = true;
             this.txtUrlMusic.Size = new System.Drawing.Size(368, 20);
             this.txtUrlMusic.TabIndex = 2;
             // 

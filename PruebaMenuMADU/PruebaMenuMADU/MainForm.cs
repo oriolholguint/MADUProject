@@ -383,5 +383,10 @@ namespace PruebaMenuMADU
 
         }
 
+        private void buttonCrearP_Click(object sender, EventArgs e)
+        {
+            FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng);
+            f.ShowDialog();
+        }
     }
 }
