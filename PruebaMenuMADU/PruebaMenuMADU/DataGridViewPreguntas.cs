@@ -14,9 +14,6 @@ namespace PruebaMenuMADU
     {
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
-
-        BindingList<Pregunta> PreguntasEsp;
-        BindingList<Pregunta> PreguntasEng;
         
         ModificarPregunta ModificarPregunta;
 
@@ -32,12 +29,6 @@ namespace PruebaMenuMADU
             this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
             this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
 
-            List<Pregunta> PreguntasListEsp = new List<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
-            PreguntasEsp = new BindingList<Pregunta>(PreguntasListEsp);
-
-            List<Pregunta> PreguntasListEng = new List<Pregunta>(GeneroSeleccionadoEng.Preguntas);
-            PreguntasEng = new BindingList<Pregunta>(PreguntasListEng);
-
             this.ModificarPregunta = ModificarPregunta;
 
             RecargarDataGridView();
@@ -46,9 +37,9 @@ namespace PruebaMenuMADU
 
         }
 
-        private void RecargarDataGridView()
+        public void RecargarDataGridView()
         {
-            dataGridViewTablaPreguntas.DataSource = PreguntasEsp;            
+            dataGridViewTablaPreguntas.DataSource = GeneroSeleccionadoEsp.Preguntas;            
             dataGridViewTablaPreguntas.Update();
             dataGridViewTablaPreguntas.Refresh();
         }
@@ -61,16 +52,18 @@ namespace PruebaMenuMADU
 
         private void CargarPreguntaSeleccionada()
         {
-            if (PreguntasEsp.Count != 0)
+            if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
             {
+                int IndicePregunta = 0;
+
                 Pregunta PreguntaSeleccionadaEsp;
                 Pregunta PreguntaSeleccionadaEng;
 
                 //Obtengo el objeto de la pregunta seleccionada.
                 PreguntaSeleccionadaEsp = (Pregunta) dataGridViewTablaPreguntas.CurrentRow.DataBoundItem;
-                int IndicePregunta = PreguntasEsp.IndexOf(PreguntaSeleccionadaEsp);
+                IndicePregunta = GeneroSeleccionadoEsp.Preguntas.IndexOf(PreguntaSeleccionadaEsp);
                 //Obtengo la pregunta seleccionada en ingles ya que tengo el indice de la fila seleccionada.
-                PreguntaSeleccionadaEng = PreguntasEng[IndicePregunta];
+                PreguntaSeleccionadaEng = GeneroSeleccionadoEng.Preguntas[IndicePregunta];
 
                 ModificarPregunta.setPregunta(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, PreguntaSeleccionadaEsp, PreguntaSeleccionadaEng);
             }

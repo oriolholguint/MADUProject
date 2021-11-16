@@ -217,7 +217,6 @@ namespace PruebaMenuMADU
             this.textBoxPregunta.Name = "textBoxPregunta";
             this.textBoxPregunta.Size = new System.Drawing.Size(409, 29);
             this.textBoxPregunta.TabIndex = 16;
-            this.textBoxPregunta.TextChanged += new System.EventHandler(this.textBoxPregunta_TextChanged);
             // 
             // textBoxImagen
             // 

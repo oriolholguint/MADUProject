@@ -135,7 +135,7 @@ namespace PruebaMenuMADU
             this.buttonGenerarJSON.UseVisualStyleBackColor = true;
             this.buttonGenerarJSON.Click += new System.EventHandler(this.buttonGenerarJSON_Click);
             // 
-            // Menu
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,8 +149,8 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.panelModificar);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.buttonPreguntas);
-            this.Name = "Menu";
-            this.Text = "Menu";
+            this.Name = "MainForm";
+            this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();

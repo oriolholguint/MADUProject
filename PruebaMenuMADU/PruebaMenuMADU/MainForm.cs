@@ -23,7 +23,7 @@ namespace PruebaMenuMADU
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
 
-        //BindingList<Pregunta> Preguntas;
+        DataGridViewPreguntas DgvPreguntas;
 
         ModificarPregunta ModificarPregunta;
         ModificarPersonaje ModificarPersonaje;
@@ -48,9 +48,11 @@ namespace PruebaMenuMADU
             IndiceGenero = this.GenerosEsp.IndexOf(GeneroEsp);
             this.GenerosEsp[IndiceGenero].Preguntas = GeneroEsp.Preguntas;
             this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
+
+            DgvPreguntas.RecargarDataGridView();
         }
 
-        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, String Genero)
+        public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
         {
             Boolean GeneroEncontrado = false;
             int counter = 0;
@@ -69,8 +71,10 @@ namespace PruebaMenuMADU
                 }
             }
 
-            GenerosEsp[Indice].Preguntas = PreguntasEsp;
-            GenerosEng[Indice].Preguntas = PreguntasEng;
+            GenerosEsp[Indice] = GeneroEsp;
+            GenerosEng[Indice] = GeneroEng;
+
+            DgvPreguntas.RecargarDataGridView();
         }
 
         //Relleno el combo box de generos
@@ -248,7 +252,7 @@ namespace PruebaMenuMADU
         private void MostrarGridPreguntas()
         {
             //Muestro en el panel de DataGridViews el correspondiente a PreguntasEsp
-            DataGridViewPreguntas DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
+            DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
             DgvPreguntas.TopLevel = false;
             panelDatos.Controls.Add(DgvPreguntas);
             DgvPreguntas.Show();
