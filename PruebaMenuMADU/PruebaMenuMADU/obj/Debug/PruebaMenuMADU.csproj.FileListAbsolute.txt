@@ -111,3 +111,6 @@ C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMAD
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Login.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.RecuperarContrasenya.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Downloads\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete

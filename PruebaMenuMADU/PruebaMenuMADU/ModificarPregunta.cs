@@ -210,25 +210,55 @@ namespace PruebaMenuMADU
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
-            Pregunta PreguntaEngToAdd = CrearPreguntaEng();
-
-            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
-
-            if (GeneroEspCambio != null)
+            Boolean error = false;
+            if (String.IsNullOrEmpty(textBoxRespuesta1.Text) || String.IsNullOrEmpty(textBoxAnwser1.Text)) {
+                errorProvider1.SetError(textBoxRespuesta1, "Llena los campos de pregunta");
+                errorProvider1.SetError(textBoxAnwser1, "Llena los campos de pregunta");
+                error = true; }
+            if (String.IsNullOrEmpty(textBoxRespuesta2.Text) || String.IsNullOrEmpty(textBoxAnwser2.Text))
             {
-                //Se devuelven la lista de un nuevo genero
-                GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
-                GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
+                errorProvider1.SetError(textBoxRespuesta2, "Llena los campos de pregunta");
+                errorProvider1.SetError(textBoxAnwser2, "Llena los campos de pregunta");
+                error = true;
             }
-            else
+            if (String.IsNullOrEmpty(textBoxRespuesta3.Text) || String.IsNullOrEmpty(textBoxAnwser3.Text))
             {
-                //Se devuelven la lista de preguntas del mismo generos
-                GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
-                GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
+                errorProvider1.SetError(textBoxRespuesta3, "Llena los campos de pregunta");
+                errorProvider1.SetError(textBoxAnwser3, "Llena los campos de pregunta");
+                error = true;
+            }
+            if (String.IsNullOrEmpty(textBoxRespuesta4.Text) || String.IsNullOrEmpty(textBoxAnwser4.Text))
+            {
+                errorProvider1.SetError(textBoxRespuesta4, "Llena los campos de pregunta");
+                errorProvider1.SetError(textBoxAnwser4, "Llena los campos de pregunta");
+                error = true;
+            }
+
+
+
+            if (!error)
+            {
+                Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
+                Pregunta PreguntaEngToAdd = CrearPreguntaEng();
+
+                GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
+                GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+
+                if (GeneroEspCambio != null)
+                {
+                    //Se devuelven la lista de un nuevo genero
+
+                    GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
+                    GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
+                    Menu.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
+                }
+                else
+                {
+                    //Se devuelven la lista de preguntas del mismo generos
+                    GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
+                    GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
+                    Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
+                }
             }
 
         }
@@ -483,8 +513,12 @@ namespace PruebaMenuMADU
             }
         }
 
+
         #endregion
 
-        
+        private void textBoxPregunta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
