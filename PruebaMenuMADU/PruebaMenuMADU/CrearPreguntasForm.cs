@@ -45,15 +45,15 @@ namespace PruebaMenuMADU
         {
 
             OcultarColumna();
-            Genero Rock = new Genero("Rock", "xx", "xx", "xx", null, null, null);
-            Genero Electronica = new Genero("Electronica", "xx", "xx", "xx", null, null, null);
-            Genero HipHop = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, null);
-            Genero Pop = new Genero("Pop", "xx", "xx", "xx", null, null, null);
+            Genero Rock = new Genero("Rock", "xx", "xx", "xx", null, null, preguntas);
+            Genero Electronica = new Genero("Electronica", "xx", "xx", "xx", null, null, preguntas);
+            Genero HipHop = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntas);
+            Genero Pop = new Genero("Pop", "xx", "xx", "xx", null, null, preguntas);
 
-            Genero RockEng = new Genero("Rock", "xx", "xx", "xx", null, null, null);
-            Genero ElectronicEng = new Genero("Electronic", "xx", "xx", "xx", null, null, null);
-            Genero HipHopEng = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, null);
-            Genero PopEng = new Genero("Pop", "xx", "xx", "xx", null, null, null);
+            Genero RockEng = new Genero("Rock", "xx", "xx", "xx", null, null, preguntasEng);
+            Genero ElectronicEng = new Genero("Electronic", "xx", "xx", "xx", null, null, preguntasEng);
+            Genero HipHopEng = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntasEng);
+            Genero PopEng = new Genero("Pop", "xx", "xx", "xx", null, null, preguntasEng);
 
             generosEsp.Add(Rock);
             generosEsp.Add(Electronica);
@@ -339,6 +339,7 @@ namespace PruebaMenuMADU
                 if (cbxGeneroPreg.SelectedItem.Equals(gen.Nombre))
                 {
                     gen.Preguntas = preguntas;
+                    MessageBox.Show("Test");
                 }
             }
 
@@ -503,9 +504,10 @@ namespace PruebaMenuMADU
                 if (cbxGenreQuest.SelectedItem.Equals(gen.Nombre))
                 {
                     gen.Preguntas = preguntasEng;
+                    
                 }
             }
-
+            
 
 
             Button btnSeleccionarPregunta = new Button();
@@ -557,7 +559,7 @@ namespace PruebaMenuMADU
             btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
 
 
-
+            
 
             vaciarCampos();
             OcultarColumna();
