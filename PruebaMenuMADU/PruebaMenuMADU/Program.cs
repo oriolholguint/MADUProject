@@ -16,7 +16,7 @@ namespace PruebaMenuMADU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPersonajesGenero());
+            Application.Run(new Login());
         }
     }
 }
