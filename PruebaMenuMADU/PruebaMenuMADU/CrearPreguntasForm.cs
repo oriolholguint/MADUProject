@@ -250,7 +250,7 @@ namespace PruebaMenuMADU
                 {
 
                     respuesta1 = new Respuesta("Verdadero", true);
-                    respuesta2 = new Respuesta("False", false);
+                    respuesta2 = new Respuesta("Falso", false);
                     pregunta.Respuestas.SetValue(respuesta1, 0);
                     pregunta.Respuestas.SetValue(respuesta2, 1);
 
@@ -258,8 +258,8 @@ namespace PruebaMenuMADU
                 if (rdbResp2.Checked)
                 {
 
-                    respuesta1 = new Respuesta("Falso", false);
-                    respuesta2 = new Respuesta("Verdadero", true);
+                    respuesta1 = new Respuesta("Verdadero", false);
+                    respuesta2 = new Respuesta("Falso", true);
                     pregunta.Respuestas.SetValue(respuesta1, 0);
                     pregunta.Respuestas.SetValue(respuesta2, 1);
 

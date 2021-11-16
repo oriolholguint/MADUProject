@@ -1046,6 +1046,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "CrearPreguntasForm";
             this.Text = "CrearPreguntasForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CrearPreguntasForm_Load);
             this.gbImagen.ResumeLayout(false);
             this.gbImagen.PerformLayout();
