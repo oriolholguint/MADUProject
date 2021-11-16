@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace PruebaMenuMADU
     {
         public String PreguntaDescripcion { get; set; }
 
+        [JsonIgnore]
         public String Genero { get; set; }
 
         public String Imagen { get; set; }

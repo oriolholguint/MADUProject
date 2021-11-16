@@ -9,7 +9,6 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "Which band was born first?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -34,7 +33,6 @@
       },
       {
         "PreguntaDescripcion": "What year was Nirvana formed?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -59,7 +57,6 @@
       },
       {
         "PreguntaDescripcion": "When did Rock en Español start?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -84,7 +81,6 @@
       },
       {
         "PreguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -119,7 +115,6 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "At what time did hip-hop emerge?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
@@ -144,7 +139,6 @@
       },
       {
         "PreguntaDescripcion": "How many 'elements' is hip-hop made of?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -169,7 +163,6 @@
       },
       {
         "PreguntaDescripcion": "In which country did rap emerge?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
@@ -194,7 +187,6 @@
       },
       {
         "PreguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,

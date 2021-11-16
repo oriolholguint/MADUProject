@@ -9,7 +9,6 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿Qué banda nació primero?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -34,7 +33,6 @@
       },
       {
         "PreguntaDescripcion": "¿En qué año se formó Nirvana?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -59,7 +57,6 @@
       },
       {
         "PreguntaDescripcion": "¿Cuando inicio el Rock en Español?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -84,7 +81,6 @@
       },
       {
         "PreguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rock",
         "Sonido": "Sonido Pregunta Rock",
         "EsMayorEdad": false,
@@ -119,7 +115,6 @@
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿En que época surgió el hip-hop?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
@@ -144,7 +139,6 @@
       },
       {
         "PreguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
@@ -169,7 +163,6 @@
       },
       {
         "PreguntaDescripcion": "¿En que país surgió el rap?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
@@ -194,7 +187,6 @@
       },
       {
         "PreguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
-        "Genero": null,
         "Imagen": "Imagen Pregunta Rap",
         "Sonido": "Sonido Pregunta Rap",
         "EsMayorEdad": false,
