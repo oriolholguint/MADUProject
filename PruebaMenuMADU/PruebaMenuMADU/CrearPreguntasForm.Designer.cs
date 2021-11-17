@@ -81,7 +81,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cbxQuestAge = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAnsName = new System.Windows.Forms.TextBox();
+            this.txtQuestName = new System.Windows.Forms.TextBox();
             this.Answers = new System.Windows.Forms.GroupBox();
             this.tlpAnswers = new System.Windows.Forms.TableLayoutPanel();
             this.txtAns2 = new System.Windows.Forms.TextBox();
@@ -616,7 +616,7 @@
             this.gbEngQuest.Controls.Add(this.pictureBox2);
             this.gbEngQuest.Controls.Add(this.cbxQuestAge);
             this.gbEngQuest.Controls.Add(this.label4);
-            this.gbEngQuest.Controls.Add(this.txtAnsName);
+            this.gbEngQuest.Controls.Add(this.txtQuestName);
             this.gbEngQuest.Controls.Add(this.Answers);
             this.gbEngQuest.Controls.Add(this.label5);
             this.gbEngQuest.Controls.Add(this.cbxGenreQuest);
@@ -733,14 +733,14 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Age: ";
             // 
-            // txtAnsName
+            // txtQuestName
             // 
-            this.txtAnsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnsName.Location = new System.Drawing.Point(15, 21);
-            this.txtAnsName.Multiline = true;
-            this.txtAnsName.Name = "txtAnsName";
-            this.txtAnsName.Size = new System.Drawing.Size(1677, 103);
-            this.txtAnsName.TabIndex = 2;
+            this.txtQuestName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuestName.Location = new System.Drawing.Point(15, 21);
+            this.txtQuestName.Multiline = true;
+            this.txtQuestName.Name = "txtQuestName";
+            this.txtQuestName.Size = new System.Drawing.Size(1677, 103);
+            this.txtQuestName.TabIndex = 2;
             // 
             // Answers
             // 
@@ -1140,7 +1140,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox cbxQuestAge;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAnsName;
+        private System.Windows.Forms.TextBox txtQuestName;
         private System.Windows.Forms.GroupBox Answers;
         private System.Windows.Forms.TableLayoutPanel tlpAnswers;
         private System.Windows.Forms.RadioButton rdbAns4;
