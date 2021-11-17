@@ -1407,5 +1407,126 @@ namespace PruebaMenuMADU
             rdbResp4.BackColor = Color.LightGreen;
 
         }
+
+        private void btnLoadImage_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog getImage = new OpenFileDialog();
+            getImage.InitialDirectory = "C:\\";
+            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+
+            if (getImage.ShowDialog() == DialogResult.OK)
+            {
+
+                String[] palabras = getImage.FileName.Split('\\');
+                String nombreImagen = palabras[palabras.Length - 1];
+
+
+
+                pbQuestImage.ImageLocation = getImage.FileName;
+                pbImagenPregunta.ImageLocation = getImage.FileName;
+
+
+                txtOriginImg.Text = getImage.FileName;
+                txtImgOrigen.Text = getImage.FileName;
+
+                txtUrlImageEngl.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                txtUrlImg.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                
+                string path = System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
+                if (Environment.OSVersion.Version.Major >= 6)
+                {
+                    path = System.IO.Directory.GetParent(path).ToString();
+                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+
+                    txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
+                    txtUrlImg.Text = rutaCompleta + nombreImagen;
+                   
+
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ninguna imagen", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+        }
+
+        private void btnWithoutImage_Click(object sender, EventArgs e)
+        {
+
+
+            pbQuestImage.Image = null;
+            txtOriginImg.Text = "";
+            txtUrlImageEngl.Text = "";
+
+            pbImagenPregunta.Image = null;
+            txtImgOrigen.Text = "";
+            txtUrlImg.Text = "";
+
+
+
+        }
+
+        private void btnLoadAudio_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog getAudio = new OpenFileDialog();
+            getAudio.InitialDirectory = "C:\\";
+            getAudio.Filter = "Archivos de Audio (*.mp3)(*.mp4)|*.mp3;*mp4|WAV (*.wav)|*.wav|WMA (*.wma)|*.wma";
+
+            if (getAudio.ShowDialog() == DialogResult.OK)
+            {
+
+                String[] palabras = getAudio.FileName.Split('\\');
+                String nombreAudio = palabras[palabras.Length - 1];
+                String[] nombreSinExtension = palabras[palabras.Length - 1].Split('.');
+                               
+                txtOriginAudio.Text = getAudio.FileName;
+                txtAudioOrigen.Text = getAudio.FileName;
+                               
+                txtNewAudio.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                txtAudioNuevo.Text = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+
+                string path = System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
+                if (Environment.OSVersion.Version.Major >= 6)
+                {
+                    path = System.IO.Directory.GetParent(path).ToString();
+                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+
+                    txtNewAudio.Text = rutaCompleta + nombreAudio;
+                    txtAudioNuevo.Text = rutaCompleta + nombreAudio;
+
+                    Player.URL = txtOriginAudio.Text;
+                    Reproductor.URL = txtAudioOrigen.Text;
+                   
+
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ningun audio", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+        }
+
+        private void btnOutAudio_Click(object sender, EventArgs e)
+        {
+            Player.URL = null;
+            txtNewAudio.Text = "";
+            txtOriginAudio.Text = "";
+
+            Reproductor.URL = null;
+            txtAudioNuevo.Text = "";
+            txtAudioOrigen.Text = "";
+           
+        }
     }
 }

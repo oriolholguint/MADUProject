@@ -96,11 +96,11 @@
             this.cbxGenreQuest = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.gbImage = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnWithoutImage = new System.Windows.Forms.Button();
             this.txtOldImg = new System.Windows.Forms.TextBox();
             this.txtOriginImg = new System.Windows.Forms.TextBox();
             this.txtUrlImageEngl = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLoadImage = new System.Windows.Forms.Button();
             this.pbQuestImage = new System.Windows.Forms.PictureBox();
             this.cbxQuestType = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -654,6 +654,7 @@
             this.btnOutAudio.TabIndex = 7;
             this.btnOutAudio.Text = "Without Audio";
             this.btnOutAudio.UseVisualStyleBackColor = true;
+            this.btnOutAudio.Click += new System.EventHandler(this.btnOutAudio_Click);
             // 
             // txtOldAudio
             // 
@@ -697,6 +698,7 @@
             this.btnLoadAudio.TabIndex = 1;
             this.btnLoadAudio.Text = "Load Audio";
             this.btnLoadAudio.UseVisualStyleBackColor = true;
+            this.btnLoadAudio.Click += new System.EventHandler(this.btnLoadAudio_Click);
             // 
             // pictureBox2
             // 
@@ -913,11 +915,11 @@
             // 
             // gbImage
             // 
-            this.gbImage.Controls.Add(this.button3);
+            this.gbImage.Controls.Add(this.btnWithoutImage);
             this.gbImage.Controls.Add(this.txtOldImg);
             this.gbImage.Controls.Add(this.txtOriginImg);
             this.gbImage.Controls.Add(this.txtUrlImageEngl);
-            this.gbImage.Controls.Add(this.button4);
+            this.gbImage.Controls.Add(this.btnLoadImage);
             this.gbImage.Controls.Add(this.pbQuestImage);
             this.gbImage.Location = new System.Drawing.Point(21, 179);
             this.gbImage.Name = "gbImage";
@@ -926,15 +928,16 @@
             this.gbImage.TabStop = false;
             this.gbImage.Text = "Image";
             // 
-            // button3
+            // btnWithoutImage
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(322, 262);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(210, 49);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Whitout Image";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnWithoutImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWithoutImage.Location = new System.Drawing.Point(322, 262);
+            this.btnWithoutImage.Name = "btnWithoutImage";
+            this.btnWithoutImage.Size = new System.Drawing.Size(210, 49);
+            this.btnWithoutImage.TabIndex = 5;
+            this.btnWithoutImage.Text = "Without Image";
+            this.btnWithoutImage.UseVisualStyleBackColor = true;
+            this.btnWithoutImage.Click += new System.EventHandler(this.btnWithoutImage_Click);
             // 
             // txtOldImg
             // 
@@ -960,15 +963,16 @@
             this.txtUrlImageEngl.TabIndex = 2;
             this.txtUrlImageEngl.Visible = false;
             // 
-            // button4
+            // btnLoadImage
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(90, 262);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(210, 49);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Load Image";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLoadImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadImage.Location = new System.Drawing.Point(90, 262);
+            this.btnLoadImage.Name = "btnLoadImage";
+            this.btnLoadImage.Size = new System.Drawing.Size(210, 49);
+            this.btnLoadImage.TabIndex = 1;
+            this.btnLoadImage.Text = "Load Image";
+            this.btnLoadImage.UseVisualStyleBackColor = true;
+            this.btnLoadImage.Click += new System.EventHandler(this.btnLoadImage_Click);
             // 
             // pbQuestImage
             // 
@@ -1155,11 +1159,11 @@
         private System.Windows.Forms.ComboBox cbxGenreQuest;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox gbImage;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnWithoutImage;
         private System.Windows.Forms.TextBox txtOldImg;
         private System.Windows.Forms.TextBox txtOriginImg;
         private System.Windows.Forms.TextBox txtUrlImageEngl;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLoadImage;
         private System.Windows.Forms.PictureBox pbQuestImage;
         private System.Windows.Forms.ComboBox cbxQuestType;
     }
