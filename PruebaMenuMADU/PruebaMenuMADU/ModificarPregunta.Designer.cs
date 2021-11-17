@@ -92,7 +92,7 @@ namespace PruebaMenuMADU
             this.comboBoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxGenero.FormattingEnabled = true;
             this.comboBoxGenero.Location = new System.Drawing.Point(29, 71);
-            this.comboBoxGenero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxGenero.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxGenero.Name = "comboBoxGenero";
             this.comboBoxGenero.Size = new System.Drawing.Size(225, 37);
             this.comboBoxGenero.TabIndex = 2;
@@ -103,7 +103,7 @@ namespace PruebaMenuMADU
             this.checkBoxMayorEdad.AutoSize = true;
             this.checkBoxMayorEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMayorEdad.Location = new System.Drawing.Point(645, 73);
-            this.checkBoxMayorEdad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMayorEdad.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMayorEdad.Name = "checkBoxMayorEdad";
             this.checkBoxMayorEdad.Size = new System.Drawing.Size(75, 33);
             this.checkBoxMayorEdad.TabIndex = 4;
@@ -178,9 +178,10 @@ namespace PruebaMenuMADU
             // 
             // buttonEliminar
             // 
+            this.buttonEliminar.Enabled = false;
             this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEliminar.Location = new System.Drawing.Point(16, 828);
-            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(133, 43);
             this.buttonEliminar.TabIndex = 11;
@@ -190,9 +191,10 @@ namespace PruebaMenuMADU
             // 
             // buttonLimpiarModificacion
             // 
+            this.buttonLimpiarModificacion.Enabled = false;
             this.buttonLimpiarModificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLimpiarModificacion.Location = new System.Drawing.Point(312, 828);
-            this.buttonLimpiarModificacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLimpiarModificacion.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLimpiarModificacion.Name = "buttonLimpiarModificacion";
             this.buttonLimpiarModificacion.Size = new System.Drawing.Size(267, 43);
             this.buttonLimpiarModificacion.TabIndex = 12;
@@ -202,9 +204,10 @@ namespace PruebaMenuMADU
             // 
             // buttonGuardar
             // 
+            this.buttonGuardar.Enabled = false;
             this.buttonGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.Location = new System.Drawing.Point(587, 828);
-            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(133, 43);
             this.buttonGuardar.TabIndex = 13;
@@ -227,7 +230,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPregunta.Location = new System.Drawing.Point(143, 127);
-            this.textBoxPregunta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPregunta.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPregunta.Name = "textBoxPregunta";
             this.textBoxPregunta.Size = new System.Drawing.Size(577, 34);
             this.textBoxPregunta.TabIndex = 16;
@@ -236,7 +239,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxImagen.Location = new System.Drawing.Point(115, 743);
-            this.textBoxImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxImagen.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxImagen.Name = "textBoxImagen";
             this.textBoxImagen.Size = new System.Drawing.Size(557, 30);
             this.textBoxImagen.TabIndex = 17;
@@ -245,7 +248,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxSonido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSonido.Location = new System.Drawing.Point(115, 785);
-            this.textBoxSonido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSonido.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSonido.Name = "textBoxSonido";
             this.textBoxSonido.Size = new System.Drawing.Size(557, 30);
             this.textBoxSonido.TabIndex = 18;
@@ -261,9 +264,9 @@ namespace PruebaMenuMADU
             this.groupBox1.Controls.Add(this.labelRespuesta3);
             this.groupBox1.Controls.Add(this.labelRespuesta4);
             this.groupBox1.Location = new System.Drawing.Point(24, 210);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(704, 204);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
@@ -273,7 +276,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxRespuesta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRespuesta4.Location = new System.Drawing.Point(168, 158);
-            this.textBoxRespuesta4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRespuesta4.Name = "textBoxRespuesta4";
             this.textBoxRespuesta4.Size = new System.Drawing.Size(528, 30);
             this.textBoxRespuesta4.TabIndex = 23;
@@ -282,7 +285,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxRespuesta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRespuesta3.Location = new System.Drawing.Point(168, 116);
-            this.textBoxRespuesta3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRespuesta3.Name = "textBoxRespuesta3";
             this.textBoxRespuesta3.Size = new System.Drawing.Size(528, 30);
             this.textBoxRespuesta3.TabIndex = 22;
@@ -291,7 +294,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxRespuesta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRespuesta2.Location = new System.Drawing.Point(168, 74);
-            this.textBoxRespuesta2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRespuesta2.Name = "textBoxRespuesta2";
             this.textBoxRespuesta2.Size = new System.Drawing.Size(528, 30);
             this.textBoxRespuesta2.TabIndex = 21;
@@ -300,7 +303,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxRespuesta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRespuesta1.Location = new System.Drawing.Point(168, 31);
-            this.textBoxRespuesta1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRespuesta1.Name = "textBoxRespuesta1";
             this.textBoxRespuesta1.Size = new System.Drawing.Size(528, 30);
             this.textBoxRespuesta1.TabIndex = 20;
@@ -360,7 +363,7 @@ namespace PruebaMenuMADU
             // buttonAbrirFicherosImagen
             // 
             this.buttonAbrirFicherosImagen.Location = new System.Drawing.Point(680, 743);
-            this.buttonAbrirFicherosImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAbrirFicherosImagen.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAbrirFicherosImagen.Name = "buttonAbrirFicherosImagen";
             this.buttonAbrirFicherosImagen.Size = new System.Drawing.Size(40, 30);
             this.buttonAbrirFicherosImagen.TabIndex = 20;
@@ -369,7 +372,7 @@ namespace PruebaMenuMADU
             // buttonAbrirFicherosSonido
             // 
             this.buttonAbrirFicherosSonido.Location = new System.Drawing.Point(680, 784);
-            this.buttonAbrirFicherosSonido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAbrirFicherosSonido.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAbrirFicherosSonido.Name = "buttonAbrirFicherosSonido";
             this.buttonAbrirFicherosSonido.Size = new System.Drawing.Size(40, 30);
             this.buttonAbrirFicherosSonido.TabIndex = 21;
@@ -390,7 +393,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxQuestion.Location = new System.Drawing.Point(143, 169);
-            this.textBoxQuestion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxQuestion.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxQuestion.Name = "textBoxQuestion";
             this.textBoxQuestion.Size = new System.Drawing.Size(577, 34);
             this.textBoxQuestion.TabIndex = 23;
@@ -406,9 +409,9 @@ namespace PruebaMenuMADU
             this.groupBoxAnwsers.Controls.Add(this.labelAnwser3);
             this.groupBoxAnwsers.Controls.Add(this.labelAnwser4);
             this.groupBoxAnwsers.Location = new System.Drawing.Point(24, 423);
-            this.groupBoxAnwsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxAnwsers.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAnwsers.Name = "groupBoxAnwsers";
-            this.groupBoxAnwsers.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxAnwsers.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxAnwsers.Size = new System.Drawing.Size(704, 203);
             this.groupBoxAnwsers.TabIndex = 24;
             this.groupBoxAnwsers.TabStop = false;
@@ -418,7 +421,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxAnwser4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAnwser4.Location = new System.Drawing.Point(168, 158);
-            this.textBoxAnwser4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAnwser4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAnwser4.Name = "textBoxAnwser4";
             this.textBoxAnwser4.Size = new System.Drawing.Size(528, 30);
             this.textBoxAnwser4.TabIndex = 23;
@@ -427,7 +430,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxAnwser3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAnwser3.Location = new System.Drawing.Point(168, 116);
-            this.textBoxAnwser3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAnwser3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAnwser3.Name = "textBoxAnwser3";
             this.textBoxAnwser3.Size = new System.Drawing.Size(528, 30);
             this.textBoxAnwser3.TabIndex = 22;
@@ -436,7 +439,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxAnwser2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAnwser2.Location = new System.Drawing.Point(168, 74);
-            this.textBoxAnwser2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAnwser2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAnwser2.Name = "textBoxAnwser2";
             this.textBoxAnwser2.Size = new System.Drawing.Size(528, 30);
             this.textBoxAnwser2.TabIndex = 21;
@@ -445,7 +448,7 @@ namespace PruebaMenuMADU
             // 
             this.textBoxAnwser1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAnwser1.Location = new System.Drawing.Point(165, 32);
-            this.textBoxAnwser1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAnwser1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAnwser1.Name = "textBoxAnwser1";
             this.textBoxAnwser1.Size = new System.Drawing.Size(531, 30);
             this.textBoxAnwser1.TabIndex = 20;
@@ -499,7 +502,7 @@ namespace PruebaMenuMADU
             this.checkBoxTipoPregunta.AutoSize = true;
             this.checkBoxTipoPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxTipoPregunta.Location = new System.Drawing.Point(279, 73);
-            this.checkBoxTipoPregunta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxTipoPregunta.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxTipoPregunta.Name = "checkBoxTipoPregunta";
             this.checkBoxTipoPregunta.Size = new System.Drawing.Size(319, 33);
             this.checkBoxTipoPregunta.TabIndex = 28;
@@ -541,7 +544,7 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.comboBoxGenero);
             this.Controls.Add(this.labelPregunta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificarPregunta";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

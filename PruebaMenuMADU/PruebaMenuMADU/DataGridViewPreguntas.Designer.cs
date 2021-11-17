@@ -41,6 +41,7 @@ namespace PruebaMenuMADU
             // 
             this.dataGridViewTablaPreguntas.AllowUserToAddRows = false;
             this.dataGridViewTablaPreguntas.AllowUserToDeleteRows = false;
+            this.dataGridViewTablaPreguntas.AllowUserToResizeRows = false;
             this.dataGridViewTablaPreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTablaPreguntas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PreguntaDescripcion,
@@ -52,12 +53,12 @@ namespace PruebaMenuMADU
             this.dataGridViewTablaPreguntas.MultiSelect = false;
             this.dataGridViewTablaPreguntas.Name = "dataGridViewTablaPreguntas";
             this.dataGridViewTablaPreguntas.ReadOnly = true;
+            this.dataGridViewTablaPreguntas.RowHeadersVisible = false;
             this.dataGridViewTablaPreguntas.RowHeadersWidth = 51;
             this.dataGridViewTablaPreguntas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewTablaPreguntas.Size = new System.Drawing.Size(1187, 886);
             this.dataGridViewTablaPreguntas.TabIndex = 0;
             this.dataGridViewTablaPreguntas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTablaPreguntas_CellClick);
-            this.dataGridViewTablaPreguntas.SelectionChanged += new System.EventHandler(this.dataGridViewTablaPreguntas_SelectionChanged);
             // 
             // PreguntaDescripcion
             // 
@@ -75,6 +76,7 @@ namespace PruebaMenuMADU
             this.ImagenPregunta.MinimumWidth = 6;
             this.ImagenPregunta.Name = "ImagenPregunta";
             this.ImagenPregunta.ReadOnly = true;
+            this.ImagenPregunta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ImagenPregunta.Width = 125;
             // 
             // SonidoPregunta
@@ -84,6 +86,7 @@ namespace PruebaMenuMADU
             this.SonidoPregunta.MinimumWidth = 6;
             this.SonidoPregunta.Name = "SonidoPregunta";
             this.SonidoPregunta.ReadOnly = true;
+            this.SonidoPregunta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.SonidoPregunta.Width = 125;
             // 
             // EsMayorEdadPregunta

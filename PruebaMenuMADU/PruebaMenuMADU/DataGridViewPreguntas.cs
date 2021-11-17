@@ -25,33 +25,25 @@ namespace PruebaMenuMADU
         public DataGridViewPreguntas(Genero GeneroSeleccionadoEsp, Genero GeneroSeleccionadoEng, ModificarPregunta ModificarPregunta)
         {
             InitializeComponent();
-            
+
             this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
             this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
 
             this.ModificarPregunta = ModificarPregunta;
 
             RecargarDataGridView();
-            
-            //Elimino la columna genero ya que no es necesario para el datagridview
-            dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
-
         }
 
         public void RecargarDataGridView()
         {
-            dataGridViewTablaPreguntas.DataSource = null;  //De aqui va al evento Selection_Changed porque sigue seleccionado el indice 3?
+            //dataGridViewTablaPreguntas.DataSource = null; Si activo esta linea tengo que crear metodo que diseñe la data grid view
             dataGridViewTablaPreguntas.DataSource = new BindingList<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
-            /*dataGridViewTablaPreguntas.Update();
-            dataGridViewTablaPreguntas.Refresh();*/
+            dataGridViewTablaPreguntas.Update();
+            dataGridViewTablaPreguntas.Refresh();
+            //Elimino la columna genero ya que no es necesario para el datagridview
+            dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
         }
 
-        //Cuando se seleccione una pregunta se tendra que enviar al formulario de modificar
-        private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
-        {
-
-        }
-        
 
         public void CargarPreguntaSeleccionada()
         {
@@ -75,7 +67,7 @@ namespace PruebaMenuMADU
         private void dataGridViewTablaPreguntas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             CargarPreguntaSeleccionada();
-
+            ModificarPregunta.ActivarBotonesOpciones(); //Activo botones de Guardar, Limpiar y Eliminar
         }
     }
 }
