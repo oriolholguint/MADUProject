@@ -215,25 +215,10 @@ namespace PruebaMenuMADU
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            if (PreguntaEsp != null)
+            if (PreguntaEsp != null && !ValidarCampos())
             {
                 Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
                 Pregunta PreguntaEngToAdd = CrearPreguntaEng();
-
-                /*TextBox[] txtbs = ((checkBoxTipoPregunta.Checked) ?  (new TextBox[]{ textBoxAnwser1, textBoxAnwser2, textBoxRespuesta1, textBoxRespuesta2, textBoxPregunta, textBoxQuestion }) : (new TextBox[] { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion }));
-                Boolean error = false;
-                //HAY UN BUG AQUI
-                //HAY UN BUG AQUI
-                foreach (TextBox txt in txtbs)
-                {
-                    if (String.IsNullOrEmpty(txt.Text) || String.IsNullOrWhiteSpace(txt.Text))
-                    {
-                        errorProvider1.SetError(txt, "Llena los campos de pregunta");
-                        error = true;
-                    }
-                    else { errorProvider1.SetError(txt, null); }
-                }*/
-
 
                 if (GeneroEspCambio != null)
                 {
@@ -256,12 +241,9 @@ namespace PruebaMenuMADU
                     GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
                     MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, comboBoxGenero.Text);
                 }
+
+                errorProvider1.Clear();
             }
-        }
-
-        public void ComprobarCamposVacios()
-        {
-
         }
 
         #endregion
@@ -272,6 +254,7 @@ namespace PruebaMenuMADU
         private void checkBoxTipoPregunta_Click(object sender, EventArgs e)
         {
             CambiarTipoPregunta();
+            errorProvider1.Clear();
         }
 
         private void CambiarTipoPregunta()
@@ -291,8 +274,12 @@ namespace PruebaMenuMADU
                     textBoxAnwser1.Text = "True";
                     textBoxAnwser2.Text = "False";
                     //Deshabilito opcion de escribir en textbox no necesarios
+                    textBoxRespuesta1.Enabled = false;
+                    textBoxRespuesta2.Enabled = false;
                     textBoxRespuesta3.Enabled = false;
                     textBoxRespuesta4.Enabled = false;
+                    textBoxAnwser1.Enabled = false;
+                    textBoxAnwser2.Enabled = false;
                     textBoxAnwser3.Enabled = false;
                     textBoxAnwser4.Enabled = false;
                     //Borro el texto que hay en los textbox no necesarios
@@ -318,8 +305,12 @@ namespace PruebaMenuMADU
                         textBoxAnwser1.Text = "";
                         textBoxAnwser2.Text = "";
                         //Se activa las respuestas 3 y 4, ya que el tipo se cambia de 2 a 4 respuestas
+                        textBoxRespuesta1.Enabled = true;
+                        textBoxRespuesta2.Enabled = true;
                         textBoxRespuesta3.Enabled = true;
                         textBoxRespuesta4.Enabled = true;
+                        textBoxAnwser1.Enabled = true;
+                        textBoxAnwser2.Enabled = true;
                         textBoxAnwser3.Enabled = true;
                         textBoxAnwser4.Enabled = true;
                         //Se activa los radiobuttons de las respuestas 3 y 4
@@ -340,12 +331,16 @@ namespace PruebaMenuMADU
                         textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
                         textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
                         //Se activa los radiobuttons de las respuestas 3 y 4
-                        textBoxRespuesta3.Enabled = true;
-                        textBoxRespuesta4.Enabled = true;
-                        textBoxAnwser3.Enabled = true;
-                        textBoxAnwser4.Enabled = true;
                         radioButtonRespuesta3.Enabled = true;
                         radioButtonRespuesta4.Enabled = true;
+                        textBoxRespuesta1.Enabled = true;
+                        textBoxRespuesta2.Enabled = true;
+                        textBoxRespuesta3.Enabled = true;
+                        textBoxRespuesta4.Enabled = true;
+                        textBoxAnwser1.Enabled = true;
+                        textBoxAnwser2.Enabled = true;
+                        textBoxAnwser3.Enabled = true;
+                        textBoxAnwser4.Enabled = true;
 
                         SeleccionarRespuestaCorrecta(PreguntaEsp);
                     }
@@ -520,6 +515,106 @@ namespace PruebaMenuMADU
             buttonGuardar.Enabled = true;
             buttonLimpiarModificacion.Enabled = true;
             buttonEliminar.Enabled = true;
+        }
+
+        private Boolean ValidarCampos()
+        {
+            Boolean ErrorEncontrado = false;
+
+            if(String.IsNullOrEmpty(textBoxPregunta.Text))
+            {
+                errorProvider1.SetError(textBoxPregunta, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if(String.IsNullOrEmpty(textBoxQuestion.Text))
+            {
+                errorProvider1.SetError(textBoxQuestion, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if(String.IsNullOrEmpty(textBoxRespuesta1.Text))
+            {
+                errorProvider1.SetError(textBoxRespuesta1, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if (String.IsNullOrEmpty(textBoxRespuesta2.Text))
+            {
+                errorProvider1.SetError(textBoxRespuesta2, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if (String.IsNullOrEmpty(textBoxAnwser1.Text))
+            {
+                errorProvider1.SetError(textBoxAnwser1, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if (String.IsNullOrEmpty(textBoxAnwser2.Text))
+            {
+                errorProvider1.SetError(textBoxAnwser2, "El campo no puede quedar vacio");
+                ErrorEncontrado = true;
+            }
+
+            if (checkBoxTipoPregunta.Checked == false)
+            {
+                if (String.IsNullOrEmpty(textBoxRespuesta3.Text))
+                {
+                    errorProvider1.SetError(textBoxRespuesta3, "El campo no puede quedar vacio");
+                    ErrorEncontrado = true;
+                }
+
+                if (String.IsNullOrEmpty(textBoxRespuesta4.Text))
+                {
+                    errorProvider1.SetError(textBoxRespuesta4, "El campo no puede quedar vacio");
+                    ErrorEncontrado = true;
+                }
+
+                if (String.IsNullOrEmpty(textBoxAnwser3.Text))
+                {
+                    errorProvider1.SetError(textBoxAnwser3, "El campo no puede quedar vacio");
+                    ErrorEncontrado = true;
+                }
+
+                if (String.IsNullOrEmpty(textBoxAnwser4.Text))
+                {
+                    errorProvider1.SetError(textBoxAnwser4, "El campo no puede quedar vacio");
+                    ErrorEncontrado = true;
+                }
+            }
+
+            return ErrorEncontrado;
+        }
+
+        private void buttonAbrirFicherosImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ImagenSeleccionada = new OpenFileDialog();
+            ImagenSeleccionada.Filter = "Ficheros JPG (*.jpg) | *.jpg";
+            ImagenSeleccionada.Filter = "Ficheros JPEG (*.jpeg) | *.jpeg";
+            ImagenSeleccionada.Filter = "Ficheros PNG (*.png) | *.png";
+            ImagenSeleccionada.Filter = "Ficheros GIF (*.gif)|*.gif|Ficheros PNG (*.png)|*.png|Ficheros JPEG(*.jpeg)|*.jpeg |Ficheros JPG (*.jpg)|*.jpg";
+
+            if (ImagenSeleccionada.ShowDialog() == DialogResult.OK)
+            {
+                
+
+            }
+        }
+
+        private void buttonAbrirFicherosSonido_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog SonidoSeleccionado = new OpenFileDialog();
+            SonidoSeleccionado.Filter = "Archivo MP3 (*.mp3) | *.mp3";
+            SonidoSeleccionado.Filter = "Archivo WAV (*.wav) | *.wav";
+            SonidoSeleccionado.Filter = "Archivo WMA (*.wma) | *.wma";
+            SonidoSeleccionado.Filter = "Archivo MP3 (*.mp3)|*.mp3|Archivo WAV(*.wav)|*.wav|Archivo WMA (*.wma)|*.wma";
+
+            if (SonidoSeleccionado.ShowDialog() == DialogResult.OK)
+            {
+
+
+            }
         }
     }
 }
