@@ -36,6 +36,7 @@ namespace PruebaMenuMADU
             ObtenerComboBoxGeneros(GenerosEsp);
         }
 
+         
         public void SetPreguntasList(Genero GeneroEspCambio, Genero GeneroEngCambio, Genero GeneroEsp, Genero GeneroEng)
         {
             int IndiceGeneroCambio;
@@ -50,6 +51,7 @@ namespace PruebaMenuMADU
             this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
 
             DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
         }
 
         public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
@@ -75,6 +77,7 @@ namespace PruebaMenuMADU
             GenerosEng[Indice] = GeneroEng;
 
             DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
         }
 
         //Relleno el combo box de generos

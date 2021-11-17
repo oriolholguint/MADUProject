@@ -32,6 +32,7 @@ namespace PruebaMenuMADU
             this.ModificarPregunta = ModificarPregunta;
 
             RecargarDataGridView();
+            
             //Elimino la columna genero ya que no es necesario para el datagridview
             dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
 
@@ -39,20 +40,22 @@ namespace PruebaMenuMADU
 
         public void RecargarDataGridView()
         {
-            dataGridViewTablaPreguntas.DataSource = GeneroSeleccionadoEsp.Preguntas;            
-            dataGridViewTablaPreguntas.Update();
-            dataGridViewTablaPreguntas.Refresh();
+            dataGridViewTablaPreguntas.DataSource = null;  //De aqui va al evento Selection_Changed porque sigue seleccionado el indice 3?
+            dataGridViewTablaPreguntas.DataSource = new BindingList<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
+            /*dataGridViewTablaPreguntas.Update();
+            dataGridViewTablaPreguntas.Refresh();*/
         }
 
         //Cuando se seleccione una pregunta se tendra que enviar al formulario de modificar
         private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
         {
-            CargarPreguntaSeleccionada();
-        }
 
-        private void CargarPreguntaSeleccionada()
+        }
+        
+
+        public void CargarPreguntaSeleccionada()
         {
-            if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
+            if (GeneroSeleccionadoEsp.Preguntas.Count != 0 && dataGridViewTablaPreguntas.Rows.Count > 0 )
             {
                 int IndicePregunta = 0;
 
@@ -69,6 +72,10 @@ namespace PruebaMenuMADU
             }
         }
 
-        
+        private void dataGridViewTablaPreguntas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarPreguntaSeleccionada();
+
+        }
     }
 }

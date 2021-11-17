@@ -18,10 +18,10 @@ namespace PruebaMenuMADU
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
 
+        //Se usa en el caso que el usuario quiera cambiar el genero de la pregunta
         Genero GeneroEspCambio = null;
         Genero GeneroEngCambio = null;
 
-        List<String> NombreGeneros;
         Menu MainForm;
 
         public ModificarPregunta()
@@ -213,10 +213,7 @@ namespace PruebaMenuMADU
             Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
             Pregunta PreguntaEngToAdd = CrearPreguntaEng();
 
-            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
-
-            TextBox[] txtbs = ((checkBoxTipoPregunta.Checked) ?  (new TextBox[]{ textBoxAnwser1, textBoxAnwser2, textBoxRespuesta1, textBoxRespuesta2, textBoxPregunta, textBoxQuestion }) : (new TextBox[] { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion }));
+            /*TextBox[] txtbs = ((checkBoxTipoPregunta.Checked) ?  (new TextBox[]{ textBoxAnwser1, textBoxAnwser2, textBoxRespuesta1, textBoxRespuesta2, textBoxPregunta, textBoxQuestion }) : (new TextBox[] { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion }));
             Boolean error = false;
             //HAY UN BUG AQUI
             //HAY UN BUG AQUI
@@ -228,12 +225,15 @@ namespace PruebaMenuMADU
                     error = true;
                 }
                 else { errorProvider1.SetError(txt, null); }
-            }
+            }*/
 
 
             if (GeneroEspCambio != null)
             {
                 //Se devuelven la lista de un nuevo genero
+
+                GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
+                GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
 
                 GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
                 GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
@@ -241,11 +241,15 @@ namespace PruebaMenuMADU
             }
             else
             {
+                GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
+                GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+
                 //Se devuelven la lista de preguntas del mismo generos
                 GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
                 GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
                 MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, comboBoxGenero.Text);
             }
+            
         }
 
         public void ComprobarCamposVacios()
