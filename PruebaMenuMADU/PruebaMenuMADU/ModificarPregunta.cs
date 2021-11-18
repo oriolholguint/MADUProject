@@ -254,7 +254,7 @@ namespace PruebaMenuMADU
         private void checkBoxTipoPregunta_Click(object sender, EventArgs e)
         {
             CambiarTipoPregunta();
-            errorProvider1.Clear();
+            CleanErrorProvider();
         }
 
         private void CambiarTipoPregunta()
@@ -345,6 +345,17 @@ namespace PruebaMenuMADU
                         SeleccionarRespuestaCorrecta(PreguntaEsp);
                     }
                 }
+            }
+        }
+
+        private void CleanErrorProvider()
+        {
+            TextBox[] textBoxes = { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2,
+                textBoxRespuesta3, textBoxRespuesta4};
+
+            for(int i = 0; i < textBoxes.Length; i++)
+            {
+                errorProvider1.SetError(textBoxes[i], null);
             }
         }
 
@@ -521,66 +532,18 @@ namespace PruebaMenuMADU
         {
             Boolean ErrorEncontrado = false;
 
-            if(String.IsNullOrEmpty(textBoxPregunta.Text))
-            {
-                errorProvider1.SetError(textBoxPregunta, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
+            TextBox[] textBoxes = { textBoxAnwser1, textBoxAnwser2, textBoxAnwser3, textBoxAnwser4, textBoxRespuesta1, textBoxRespuesta2, 
+                textBoxRespuesta3, textBoxRespuesta4, textBoxPregunta, textBoxQuestion };
 
-            if(String.IsNullOrEmpty(textBoxQuestion.Text))
+            for(int i = 0; i < textBoxes.Length; i++)
             {
-                errorProvider1.SetError(textBoxQuestion, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
-
-            if(String.IsNullOrEmpty(textBoxRespuesta1.Text))
-            {
-                errorProvider1.SetError(textBoxRespuesta1, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
-
-            if (String.IsNullOrEmpty(textBoxRespuesta2.Text))
-            {
-                errorProvider1.SetError(textBoxRespuesta2, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
-
-            if (String.IsNullOrEmpty(textBoxAnwser1.Text))
-            {
-                errorProvider1.SetError(textBoxAnwser1, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
-
-            if (String.IsNullOrEmpty(textBoxAnwser2.Text))
-            {
-                errorProvider1.SetError(textBoxAnwser2, "El campo no puede quedar vacio");
-                ErrorEncontrado = true;
-            }
-
-            if (checkBoxTipoPregunta.Checked == false)
-            {
-                if (String.IsNullOrEmpty(textBoxRespuesta3.Text))
+                if (String.IsNullOrEmpty(textBoxes[i].Text))
                 {
-                    errorProvider1.SetError(textBoxRespuesta3, "El campo no puede quedar vacio");
-                    ErrorEncontrado = true;
-                }
-
-                if (String.IsNullOrEmpty(textBoxRespuesta4.Text))
-                {
-                    errorProvider1.SetError(textBoxRespuesta4, "El campo no puede quedar vacio");
-                    ErrorEncontrado = true;
-                }
-
-                if (String.IsNullOrEmpty(textBoxAnwser3.Text))
-                {
-                    errorProvider1.SetError(textBoxAnwser3, "El campo no puede quedar vacio");
-                    ErrorEncontrado = true;
-                }
-
-                if (String.IsNullOrEmpty(textBoxAnwser4.Text))
-                {
-                    errorProvider1.SetError(textBoxAnwser4, "El campo no puede quedar vacio");
-                    ErrorEncontrado = true;
+                    if (textBoxes[i].Enabled == true)
+                    {
+                        errorProvider1.SetError(textBoxes[i], "El campo no puede quedar vacio");
+                        ErrorEncontrado = true;
+                    }
                 }
             }
 

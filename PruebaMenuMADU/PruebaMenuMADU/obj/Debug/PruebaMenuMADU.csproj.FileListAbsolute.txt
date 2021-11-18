@@ -138,3 +138,4 @@ C:\Users\cep.CEPNET0\Desktop\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug
 C:\Users\cep.CEPNET0\Desktop\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
 C:\Users\cep.CEPNET0\Desktop\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.exe
 C:\Users\cep.CEPNET0\Desktop\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.pdb
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
