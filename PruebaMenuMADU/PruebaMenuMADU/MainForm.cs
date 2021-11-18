@@ -355,7 +355,15 @@ namespace PruebaMenuMADU
             cg.ShowDialog();
             this.GeneroSeleccionadoEsp = cg.getCreatedGenre("esp") != null ? cg.getCreatedGenre("esp") : this.GeneroSeleccionadoEsp;
             this.GeneroSeleccionadoEng = cg.getCreatedGenre("eng") != null ? cg.getCreatedGenre("eng") : this.GeneroSeleccionadoEng;
-            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("No se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.Nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            /*if (cg.deleteGenre)
+            {
+                Boolean found = false;
+                while (found)
+                {
+                    if(this.lista)
+                }
+            }*/
+            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.Nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 
         }
     }

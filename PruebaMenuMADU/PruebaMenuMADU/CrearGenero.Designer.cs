@@ -49,6 +49,7 @@ namespace PruebaMenuMADU
             this.txtGenreName = new System.Windows.Forms.TextBox();
             this.btnCreateEdit = new System.Windows.Forms.Button();
             this.butCancel = new System.Windows.Forms.Button();
+            this.btnDeleteGenre = new System.Windows.Forms.Button();
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -282,11 +283,23 @@ namespace PruebaMenuMADU
             this.butCancel.UseVisualStyleBackColor = false;
             this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
             // 
+            // btnDeleteGenre
+            // 
+            this.btnDeleteGenre.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDeleteGenre.Location = new System.Drawing.Point(27, 580);
+            this.btnDeleteGenre.Name = "btnDeleteGenre";
+            this.btnDeleteGenre.Size = new System.Drawing.Size(405, 23);
+            this.btnDeleteGenre.TabIndex = 15;
+            this.btnDeleteGenre.Text = "Eliminar Genero";
+            this.btnDeleteGenre.UseVisualStyleBackColor = false;
+            this.btnDeleteGenre.Click += new System.EventHandler(this.btnDeleteGenre_Click);
+            // 
             // CrearGenero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1302, 614);
+            this.Controls.Add(this.btnDeleteGenre);
             this.Controls.Add(this.butCancel);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -331,5 +344,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Label lblNewNameEng;
         private System.Windows.Forms.TextBox txtGenreName;
         private System.Windows.Forms.Button butCancel;
+        private System.Windows.Forms.Button btnDeleteGenre;
     }
 }
