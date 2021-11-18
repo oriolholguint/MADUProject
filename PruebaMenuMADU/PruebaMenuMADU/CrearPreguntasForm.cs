@@ -74,6 +74,12 @@ namespace PruebaMenuMADU
             cbxGenreQuest.DisplayMember = "Nombre";
             cbxGenreQuest.ValueMember = "Nombre";
 
+            tabIdioma.SelectedTab = tabEspañol;
+
+            btnEspañol.FlatStyle = FlatStyle.Flat;
+            btnEspañol.FlatAppearance.BorderColor = Color.Blue;
+            btnEspañol.FlatAppearance.BorderSize = 3;
+
 
         }
 
@@ -86,6 +92,7 @@ namespace PruebaMenuMADU
             cbxTipoPreg.SelectedItem = null;
             cbxEdad.SelectedItem = null;
             pbImagenPregunta.Image = null;
+            pbQuestImage.Image = null;
 
             txtImgAnt.Text = "";
             txtImgOrigen.Text = "";
@@ -125,6 +132,14 @@ namespace PruebaMenuMADU
             rdbAns2.Checked = false;
             rdbAns3.Checked = false;
             rdbAns4.Checked = false;
+
+            tabIdioma.SelectedTab = tabEspañol;
+
+            btnEspañol.FlatStyle = FlatStyle.Flat;
+            btnEspañol.FlatAppearance.BorderColor = Color.Blue;
+            btnEspañol.FlatAppearance.BorderSize = 3;
+
+            btnIngles.FlatStyle = FlatStyle.Standard;
 
         }
 
@@ -234,7 +249,7 @@ namespace PruebaMenuMADU
             pregunta.Genero = (String)cbxGeneroPreg.SelectedValue;
 
 
-            if (txtImgOrigen.Text.Equals("") && txtImgOrigen.Text.Equals(""))
+            if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
             {
                 pregunta.Imagen = "";
             }
@@ -290,28 +305,20 @@ namespace PruebaMenuMADU
             {
                 pregunta.Respuestas = new Respuesta[2];
 
-                Respuesta respuesta1;
-                Respuesta respuesta2;
+                Respuesta respuesta1 = new Respuesta("Verdadero", false);
+                Respuesta respuesta2 = new Respuesta("Falso", false);
 
                 if (rdbResp1.BackColor == Color.LightGreen)
                 {
-
-                    respuesta1 = new Respuesta("Verdadero", true);
-                    respuesta2 = new Respuesta("Falso", false);
-                    pregunta.Respuestas.SetValue(respuesta1, 0);
-                    pregunta.Respuestas.SetValue(respuesta2, 1);
-
+                    respuesta1.EsCorrecta = true;
                 }
                 if (rdbResp2.BackColor == Color.LightGreen)
                 {
-
-                    respuesta1 = new Respuesta("Verdadero", false);
-                    respuesta2 = new Respuesta("Falso", true);
-                    pregunta.Respuestas.SetValue(respuesta1, 0);
-                    pregunta.Respuestas.SetValue(respuesta2, 1);
-
-
+                    respuesta2.EsCorrecta = true;
                 }
+
+                pregunta.Respuestas[0] = respuesta1;
+                pregunta.Respuestas[1] = respuesta2;
 
             }
             else
@@ -360,46 +367,8 @@ namespace PruebaMenuMADU
             preguntaEng.Genero = (String)cbxGenreQuest.SelectedValue;
 
 
-            if (txtUrlImageEngl.Text.Equals("") && txtOriginImg.Text.Equals(""))
-            {
-                preguntaEng.Imagen = "";
-            }
-            else
-            {
-                if (!File.Exists(txtUrlImageEngl.Text))
-                {
-                    preguntaEng.Imagen = txtUrlImageEngl.Text;
-                    File.Copy(txtOriginImg.Text, txtUrlImageEngl.Text);
-
-                }
-                else
-                {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
-                }
-
-            }
-
-
-
-            if (txtNewAudio.Text.Equals("") && txtOriginAudio.Text.Equals(""))
-            {
-                preguntaEng.Sonido = "";
-            }
-            else
-            {
-                if (!File.Exists(txtNewAudio.Text))
-                {
-                    preguntaEng.Sonido = txtNewAudio.Text;
-                    File.Copy(txtOriginAudio.Text, txtNewAudio.Text);
-
-                }
-                else
-                {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
-                }
-
-            }
-
+            preguntaEng.Imagen = txtUrlImg.Text;
+            preguntaEng.Sonido = txtNewAudio.Text;  
 
             if (cbxQuestAge.SelectedIndex == 0)
             {
@@ -417,28 +386,20 @@ namespace PruebaMenuMADU
             {
                 preguntaEng.Respuestas = new Respuesta[2];
 
-                Respuesta respuesta1;
-                Respuesta respuesta2;
+                Respuesta respuesta1 = new Respuesta("True", false);
+                Respuesta respuesta2 = new Respuesta("False", false);
 
                 if (rdbAns1.BackColor == Color.LightGreen)
                 {
-
-                    respuesta1 = new Respuesta("True", true);
-                    respuesta2 = new Respuesta("False", false);
-                    preguntaEng.Respuestas.SetValue(respuesta1, 0);
-                    preguntaEng.Respuestas.SetValue(respuesta2, 1);
-
+                    respuesta1.EsCorrecta = true;
                 }
                 if (rdbAns2.BackColor == Color.LightGreen)
                 {
-                    respuesta1 = new Respuesta("True", false);
-                    respuesta2 = new Respuesta("False", true);
-                    preguntaEng.Respuestas.SetValue(respuesta1, 0);
-                    preguntaEng.Respuestas.SetValue(respuesta2, 1);
-
-
+                    respuesta2.EsCorrecta = true;
                 }
 
+                preguntaEng.Respuestas[0] = respuesta1;
+                preguntaEng.Respuestas[1] = respuesta2;
             }
             else
             {
@@ -477,10 +438,11 @@ namespace PruebaMenuMADU
 
             preguntasEng.Add(preguntaEng);
 
+            RadioButton btnSeleccionarPregunta = new RadioButton();
+            btnSeleccionarPregunta.Appearance = Appearance.Button;
 
-            Button btnSeleccionarPregunta = new Button();
-            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
-            //btnSeleccionarPregunta.BackColor = Color.LightCyan;
+            //Button btnSeleccionarPregunta = new Button();
+            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";           
             String url = "C:\\Users\\david\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\ImageQuiz.jpg";
             Image bkg = Image.FromFile(url);
 
@@ -489,7 +451,8 @@ namespace PruebaMenuMADU
             btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
 
             btnSeleccionarPregunta.Size = new Size(130, 122);
-
+                        
+            btnSeleccionarPregunta.FlatAppearance.CheckedBackColor = Color.Blue;          
             btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
             flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
             btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, preguntaEng);
@@ -510,7 +473,7 @@ namespace PruebaMenuMADU
             btnModificarPregunta.Size = new Size(130, 40);
             btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
             flpListaPreguntas.Controls.Add(btnModificarPregunta);
-            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta);
+            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, preguntaEng);
 
 
 
@@ -543,11 +506,20 @@ namespace PruebaMenuMADU
         private void btnSeleccionarPregunta_Click(object sender, EventArgs e, Pregunta preg, Pregunta pregEng)
         {
 
+            tabIdioma.SelectedTab = tabEspañol;
+
+            btnEspañol.FlatStyle = FlatStyle.Flat;
+            btnEspañol.FlatAppearance.BorderColor = Color.Blue;
+            btnEspañol.FlatAppearance.BorderSize = 3;
+
+            btnIngles.FlatStyle = FlatStyle.Standard;
+
+
             //Seleccionar preguntas Español
 
             txtNombrePreg.Text = preg.PreguntaDescripcion;
 
-            cbxGeneroPreg.SelectedItem = preg.Genero;
+            cbxGeneroPreg.SelectedValue = preg.Genero;
 
             if (preg.EsMayorEdad)
             {
@@ -565,9 +537,17 @@ namespace PruebaMenuMADU
             if (!preg.Imagen.Equals("")) {
                 pbImagenPregunta.ImageLocation = preg.Imagen;
             }
+            else
+            {
+                pbImagenPregunta.ImageLocation = null;
+            }
 
             if (!preg.Sonido.Equals("")) {
                 Reproductor.URL = preg.Sonido;
+            }
+            else
+            {
+                Reproductor.URL = null;
             }
 
             int num = preg.Respuestas.Length;
@@ -579,14 +559,12 @@ namespace PruebaMenuMADU
                 cbxTipoPreg.SelectedIndex = 1;
             }
 
-
+           
+            
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-
-                txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
-                rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
-
+                               
                 txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
                 rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
@@ -614,7 +592,7 @@ namespace PruebaMenuMADU
 
             }
 
-            if (cbxTipoPreg.SelectedIndex == 1)
+           else
             {
 
 
@@ -677,7 +655,7 @@ namespace PruebaMenuMADU
 
             txtQuestName.Text = pregEng.PreguntaDescripcion;
 
-            cbxGenreQuest.SelectedItem = pregEng.Genero;
+            cbxGenreQuest.SelectedValue = pregEng.Genero;
 
             if (pregEng.EsMayorEdad)
             {
@@ -746,7 +724,7 @@ namespace PruebaMenuMADU
 
             }
 
-            if (cbxQuestType.SelectedIndex == 1)
+           else
             {
 
 
@@ -846,6 +824,7 @@ namespace PruebaMenuMADU
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
                     
                     txtUrlImg.Text = rutaCompleta + nombreImagen;
+                    txtImgAnt.Text = rutaCompleta + nombreImagen;
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
 
                 }
@@ -955,14 +934,13 @@ namespace PruebaMenuMADU
         }
 
 
-        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg)
+        private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg, Pregunta pregEng)
         {
 
+            //modificar Español
 
             preg.PreguntaDescripcion = txtNombrePreg.Text;
-
-            preg.Genero = (String)cbxGeneroPreg.SelectedItem;
-
+            preg.Genero = (String)cbxGeneroPreg.SelectedValue;
 
             if (cbxEdad.SelectedIndex == 0)
             {
@@ -974,9 +952,7 @@ namespace PruebaMenuMADU
             }
 
 
-
-
-            if (txtImgOrigen.Text.Equals("") && txtImgOrigen.Text.Equals(""))
+            if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
             {
 
                 if(File.Exists(preg.Imagen))
@@ -1004,7 +980,6 @@ namespace PruebaMenuMADU
                 }
 
             }
-
 
 
             if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
@@ -1037,99 +1012,190 @@ namespace PruebaMenuMADU
             }
 
 
-
             if (cbxTipoPreg.SelectedIndex == 0)
-                    {
+            {
+                
+                preg.Respuestas = new Respuesta[2];
 
-                        Respuesta respuesta1;
-                        Respuesta respuesta2;
-
-                        if (rdbResp1.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, true);
-                            respuesta2 = new Respuesta(txtResp2.Text, false);
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-
-                        }
-                        if (rdbResp2.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, false);
-                            respuesta2 = new Respuesta(txtResp2.Text, true);
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-                        }
+                Respuesta resp1 = new Respuesta("Verdadero", false);
+                Respuesta resp2 = new Respuesta("Falso", false);
 
 
-                    }
-                    else
-                    {
+                if (rdbResp1.BackColor == Color.LightGreen)
+                {
+                    resp1.EsCorrecta = true;
+
+                }
+                if (rdbResp2.BackColor == Color.LightGreen)
+                {
+                    resp2.EsCorrecta = true;
+                }
+
+                preg.Respuestas.SetValue(resp1, 0);
+                preg.Respuestas.SetValue(resp2, 1);
+
+            }
+            else
+            {
+                preg.Respuestas = new Respuesta[4];
+
+                Respuesta resp1 = new Respuesta(txtResp1.Text,false);
+                Respuesta resp2 = new Respuesta(txtResp2.Text, false);
+                Respuesta resp3 = new Respuesta(txtResp3.Text, false);
+                Respuesta resp4 = new Respuesta(txtResp4.Text, false);
+                                
+
+                if (rdbResp1.BackColor == Color.LightGreen)
+                {
+                    resp1.EsCorrecta = true;                                        
+                }
+                if (rdbResp2.BackColor == Color.LightGreen)
+                {
+                    resp2.EsCorrecta = true;
+                   
+                }
+                if (rdbResp3.BackColor == Color.LightGreen)
+                {
+                    resp3.EsCorrecta = true;
+                }
+                if (rdbResp4.BackColor == Color.LightGreen)
+                {
+                    resp4.EsCorrecta = true;
+                }
+                               
+
+                preg.Respuestas.SetValue(resp1, 0);
+                preg.Respuestas.SetValue(resp2, 1);
+                preg.Respuestas.SetValue(resp3, 2);
+                preg.Respuestas.SetValue(resp4, 3);
+
+            }
 
 
-                        Respuesta respuesta1;
-                        Respuesta respuesta2;
-                        Respuesta respuesta3;
-                        Respuesta respuesta4;
-
-                        if (rdbResp1.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, true);
-                            respuesta2 = new Respuesta(txtResp2.Text, false);
-                            respuesta3 = new Respuesta(txtResp3.Text, false);
-                            respuesta4 = new Respuesta(txtResp4.Text, false);
-
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-                            preg.Respuestas.SetValue(respuesta3, 2);
-                            preg.Respuestas.SetValue(respuesta4, 3);
-                        }
-                        if (rdbResp2.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, false);
-                            respuesta2 = new Respuesta(txtResp2.Text, true);
-                            respuesta3 = new Respuesta(txtResp3.Text, false);
-                            respuesta4 = new Respuesta(txtResp4.Text, false);
-
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-                            preg.Respuestas.SetValue(respuesta3, 2);
-                            preg.Respuestas.SetValue(respuesta4, 3);
-                        }
-                        if (rdbResp3.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, false);
-                            respuesta2 = new Respuesta(txtResp2.Text, false);
-                            respuesta3 = new Respuesta(txtResp3.Text, true);
-                            respuesta4 = new Respuesta(txtResp4.Text, false);
-
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-                            preg.Respuestas.SetValue(respuesta3, 2);
-                            preg.Respuestas.SetValue(respuesta4, 3);
-                        }
-                        if (rdbResp2.Checked)
-                        {
-                            respuesta1 = new Respuesta(txtResp1.Text, false);
-                            respuesta2 = new Respuesta(txtResp2.Text, false);
-                            respuesta3 = new Respuesta(txtResp3.Text, false);
-                            respuesta4 = new Respuesta(txtResp4.Text, true);
-
-                            preg.Respuestas.SetValue(respuesta1, 0);
-                            preg.Respuestas.SetValue(respuesta2, 1);
-                            preg.Respuestas.SetValue(respuesta3, 2);
-                            preg.Respuestas.SetValue(respuesta4, 3);
-                        }
+            //Modificar Ingles
 
 
-                    }
+            pregEng.PreguntaDescripcion = txtQuestName.Text;
+            pregEng.Genero = (String)cbxGenreQuest.SelectedValue;
+
+            if (cbxQuestAge.SelectedIndex == 0)
+            {
+                pregEng.EsMayorEdad = false;
+            }
+            else
+            {
+                pregEng.EsMayorEdad = true;
+            }
+
+            pregEng.Imagen = txtUrlImg.Text;            
+
+
+            if (txtNewAudio.Text.Equals("") && txtOriginAudio.Text.Equals(""))
+            {
+
+
+                if (File.Exists(pregEng.Sonido))
+                {
+                    File.Delete(pregEng.Sonido);
+
+                }
+                pregEng.Sonido = "";
+
+            }
+            else
+            {
+                if (!File.Exists(txtNewAudio.Text))
+                {
+                    File.Delete(txtOldAudio.Text);
+
+                    pregEng.Sonido = txtNewAudio.Text;
+                    File.Copy(txtOriginAudio.Text, txtNewAudio.Text);
+
+                }
+                else
+                {
+                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                }
+
+            }
+
+
+            if (cbxQuestType.SelectedIndex == 0)
+            {
+
+                pregEng.Respuestas = new Respuesta[2];
+
+                Respuesta resp1 = new Respuesta("Verdadero", false);
+                Respuesta resp2 = new Respuesta("Falso", false);
+
+
+                if (rdbAns1.BackColor == Color.LightGreen)
+                {
+                    resp1.EsCorrecta = true;
+
+                }
+                if (rdbAns2.BackColor == Color.LightGreen)
+                {
+                    resp2.EsCorrecta = true;
+                }
+
+                pregEng.Respuestas.SetValue(resp1, 0);
+                pregEng.Respuestas.SetValue(resp2, 1);
+
+            }
+            else
+            {
+                pregEng.Respuestas = new Respuesta[4];
+
+                Respuesta resp1 = new Respuesta(txtAns1.Text, false);
+                Respuesta resp2 = new Respuesta(txtAns2.Text, false);
+                Respuesta resp3 = new Respuesta(txtAns3.Text, false);
+                Respuesta resp4 = new Respuesta(txtAns4.Text, false);
+
+
+                if (rdbAns1.BackColor == Color.LightGreen)
+                {
+                    resp1.EsCorrecta = true;
+                }
+                if (rdbAns2.BackColor == Color.LightGreen)
+                {
+                    resp2.EsCorrecta = true;
+                }
+                if (rdbAns3.BackColor == Color.LightGreen)
+                {
+                    resp3.EsCorrecta = true;
+                }
+                if (rdbAns4.BackColor == Color.LightGreen)
+                {
+                    resp4.EsCorrecta = true;
+                }
+
+
+                pregEng.Respuestas.SetValue(resp1, 0);
+                pregEng.Respuestas.SetValue(resp2, 1);
+                pregEng.Respuestas.SetValue(resp3, 2);
+                pregEng.Respuestas.SetValue(resp4, 3);
+
+            }
+
 
 
         }
 
 
 
-        private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg,Pregunta pregEng, Button botonSeleccionar, Button BotonEliminar, Button botonModificar)
+        private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg,Pregunta pregEng, RadioButton botonSeleccionar, Button BotonEliminar, Button botonModificar)
         {
+
+            if (!preg.Imagen.Equals(""))
+            {
+                File.Delete(preg.Imagen);
+            }
+            if (!preg.Sonido.Equals(""))
+            {
+                File.Delete(preg.Sonido);
+            }
+
 
             preguntas.Remove(preg);
             preguntasEng.Remove(pregEng);
@@ -1236,6 +1302,7 @@ namespace PruebaMenuMADU
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
 
                     txtAudioNuevo.Text = rutaCompleta + nombreAudio;
+                    txtAudioAnt.Text = rutaCompleta + nombreAudio;
                     txtNewAudio.Text = rutaCompleta + nombreAudio;
 
                     Reproductor.URL = txtAudioOrigen.Text;
@@ -1265,7 +1332,6 @@ namespace PruebaMenuMADU
             txtUrlImg.Text = "";
 
 
-
             pbQuestImage.Image = null;
             txtOriginImg.Text = "";
             txtUrlImageEngl.Text = "";
@@ -1290,12 +1356,26 @@ namespace PruebaMenuMADU
 
         private void btnEspañol_Click(object sender, EventArgs e)
         {
-            tabIdioma.SelectedTab = tabEspañol;            
+            tabIdioma.SelectedTab = tabEspañol;
+
+            btnEspañol.FlatStyle = FlatStyle.Flat;
+            btnEspañol.FlatAppearance.BorderColor = Color.Blue;
+            btnEspañol.FlatAppearance.BorderSize = 3;
+
+            btnIngles.FlatStyle = FlatStyle.Standard;
+
         }
 
         private void btnIngles_Click(object sender, EventArgs e)
         {
             tabIdioma.SelectedTab = tabIngles;
+
+            btnIngles.FlatStyle = FlatStyle.Flat;
+            btnIngles.FlatAppearance.BorderColor = Color.Blue;
+            btnIngles.FlatAppearance.BorderSize = 3;
+
+            btnEspañol.FlatStyle = FlatStyle.Standard;
+
         }
 
         private void cbxQuestType_SelectedIndexChanged(object sender, EventArgs e)
@@ -1440,6 +1520,7 @@ namespace PruebaMenuMADU
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
 
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
+                    txtImgAnt.Text = rutaCompleta + nombreImagen;
                     txtUrlImg.Text = rutaCompleta + nombreImagen;
                    
 
@@ -1458,7 +1539,6 @@ namespace PruebaMenuMADU
 
         private void btnWithoutImage_Click(object sender, EventArgs e)
         {
-
 
             pbQuestImage.Image = null;
             txtOriginImg.Text = "";
@@ -1499,6 +1579,7 @@ namespace PruebaMenuMADU
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
 
                     txtNewAudio.Text = rutaCompleta + nombreAudio;
+                    txtAudioAnt.Text = rutaCompleta + nombreAudio;
                     txtAudioNuevo.Text = rutaCompleta + nombreAudio;
 
                     Player.URL = txtOriginAudio.Text;

@@ -217,7 +217,6 @@
             this.txtImgAnt.Name = "txtImgAnt";
             this.txtImgAnt.Size = new System.Drawing.Size(52, 22);
             this.txtImgAnt.TabIndex = 4;
-            this.txtImgAnt.Visible = false;
             // 
             // txtImgOrigen
             // 
@@ -225,7 +224,6 @@
             this.txtImgOrigen.Name = "txtImgOrigen";
             this.txtImgOrigen.Size = new System.Drawing.Size(290, 22);
             this.txtImgOrigen.TabIndex = 3;
-            this.txtImgOrigen.Visible = false;
             // 
             // txtUrlImg
             // 
@@ -233,7 +231,6 @@
             this.txtUrlImg.Name = "txtUrlImg";
             this.txtUrlImg.Size = new System.Drawing.Size(300, 22);
             this.txtUrlImg.TabIndex = 2;
-            this.txtUrlImg.Visible = false;
             // 
             // btnCargarImagen
             // 
@@ -251,6 +248,7 @@
             this.pbImagenPregunta.Location = new System.Drawing.Point(41, 20);
             this.pbImagenPregunta.Name = "pbImagenPregunta";
             this.pbImagenPregunta.Size = new System.Drawing.Size(565, 209);
+            this.pbImagenPregunta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenPregunta.TabIndex = 0;
             this.pbImagenPregunta.TabStop = false;
             // 
@@ -316,7 +314,6 @@
             this.txtAudioAnt.Name = "txtAudioAnt";
             this.txtAudioAnt.Size = new System.Drawing.Size(34, 22);
             this.txtAudioAnt.TabIndex = 6;
-            this.txtAudioAnt.Visible = false;
             // 
             // Reproductor
             // 
@@ -333,7 +330,6 @@
             this.txtAudioNuevo.Name = "txtAudioNuevo";
             this.txtAudioNuevo.Size = new System.Drawing.Size(276, 22);
             this.txtAudioNuevo.TabIndex = 3;
-            this.txtAudioNuevo.Visible = false;
             // 
             // txtAudioOrigen
             // 
@@ -341,7 +337,6 @@
             this.txtAudioOrigen.Name = "txtAudioOrigen";
             this.txtAudioOrigen.Size = new System.Drawing.Size(320, 22);
             this.txtAudioOrigen.TabIndex = 2;
-            this.txtAudioOrigen.Visible = false;
             // 
             // btnCargarAudio
             // 
@@ -945,7 +940,6 @@
             this.txtOldImg.Name = "txtOldImg";
             this.txtOldImg.Size = new System.Drawing.Size(52, 22);
             this.txtOldImg.TabIndex = 4;
-            this.txtOldImg.Visible = false;
             // 
             // txtOriginImg
             // 
@@ -953,7 +947,6 @@
             this.txtOriginImg.Name = "txtOriginImg";
             this.txtOriginImg.Size = new System.Drawing.Size(290, 22);
             this.txtOriginImg.TabIndex = 3;
-            this.txtOriginImg.Visible = false;
             // 
             // txtUrlImageEngl
             // 
@@ -961,7 +954,6 @@
             this.txtUrlImageEngl.Name = "txtUrlImageEngl";
             this.txtUrlImageEngl.Size = new System.Drawing.Size(300, 22);
             this.txtUrlImageEngl.TabIndex = 2;
-            this.txtUrlImageEngl.Visible = false;
             // 
             // btnLoadImage
             // 
@@ -979,6 +971,7 @@
             this.pbQuestImage.Location = new System.Drawing.Point(41, 20);
             this.pbQuestImage.Name = "pbQuestImage";
             this.pbQuestImage.Size = new System.Drawing.Size(565, 209);
+            this.pbQuestImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbQuestImage.TabIndex = 0;
             this.pbQuestImage.TabStop = false;
             // 
