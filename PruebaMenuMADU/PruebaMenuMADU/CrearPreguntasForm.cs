@@ -86,6 +86,8 @@ namespace PruebaMenuMADU
 
         private void vaciarCampos()
         {
+            txtResp1.ReadOnly = true;
+            txtResp2.ReadOnly = true;
 
             txtNombrePreg.Text = "";
             cbxGeneroPreg.SelectedItem = null;
@@ -145,6 +147,9 @@ namespace PruebaMenuMADU
 
         private void OcultarColumna()
         {
+            txtResp1.ReadOnly = true;
+            txtResp2.ReadOnly = true;
+
             txtResp3.Visible = false;
             txtResp4.Visible = false;
             rdbResp3.Visible = false;
@@ -209,6 +214,9 @@ namespace PruebaMenuMADU
 
         private void MostrarColumna()
         {
+            txtResp1.ReadOnly = false;
+            txtResp2.ReadOnly = false;
+
             txtResp3.Visible = true;
             txtResp4.Visible = true;
             rdbResp3.Visible = true;
@@ -436,69 +444,99 @@ namespace PruebaMenuMADU
 
             }
 
-            preguntasEng.Add(preguntaEng);
+            if (txtQuestName.Text.Equals(""))
+            {
+                MessageBox.Show("Pregunta descripcion en ingles vacia");
 
-            RadioButton btnSeleccionarPregunta = new RadioButton();
-            btnSeleccionarPregunta.Appearance = Appearance.Button;
+            } else if (cbxTipoPreg.SelectedItem == null)
+            {
+                MessageBox.Show("Selecciona un tipo");
+            }
+            else if (cbxEdad.SelectedItem == null)
+            {
+                MessageBox.Show("Selecciona una edad");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 0 && rdbResp1.BackColor == Color.LightGreen && rdbResp2.BackColor == Color.LightGreen)
+            {
+                MessageBox.Show("Selecciona la respuesta correcta");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 1 && rdbResp1.BackColor == Color.LightGreen && rdbResp2.BackColor == Color.LightGreen && rdbResp3.BackColor == Color.LightGreen && rdbResp4.BackColor == Color.LightGreen)
+            {
+                MessageBox.Show("Selecciona la respuesta correcta");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 1 && txtResp1.Text.Equals("") || txtResp2.Text.Equals("") || txtResp3.Text.Equals("") || txtResp4.Text.Equals("") || txtAns1.Text.Equals("") || txtAns2.Text.Equals("") || txtAns3.Equals("") || txtAns4.Text.Equals(""))
+            {
+                MessageBox.Show("Hay respuestas vacias");
+            }
+            else
+            {
 
-            //Button btnSeleccionarPregunta = new Button();
-            btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";           
-            String url = "C:\\Users\\david\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\ImageQuiz.jpg";
-            Image bkg = Image.FromFile(url);
+                preguntasEng.Add(preguntaEng);
 
-            btnSeleccionarPregunta.BackgroundImage = bkg;
-            btnSeleccionarPregunta.BackgroundImageLayout = ImageLayout.Stretch;
-            btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
+                RadioButton btnSeleccionarPregunta = new RadioButton();
+                btnSeleccionarPregunta.Appearance = Appearance.Button;
 
-            btnSeleccionarPregunta.Size = new Size(130, 122);
-                        
-            btnSeleccionarPregunta.FlatAppearance.CheckedBackColor = Color.Blue;          
-            btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
-            flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
-            btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, preguntaEng);
+                //Button btnSeleccionarPregunta = new Button();
+                btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
+                String url = "C:\\Users\\david\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\ImageQuiz.jpg";
+                Image bkg = Image.FromFile(url);
 
+                btnSeleccionarPregunta.BackgroundImage = bkg;
+                btnSeleccionarPregunta.BackgroundImageLayout = ImageLayout.Stretch;
+                btnSeleccionarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
 
-            Button btnModificarPregunta = new Button();
-            btnModificarPregunta.Name = "btnModificarPregunta";
-            btnModificarPregunta.Text = "Modificar";
-            btnModificarPregunta.BackColor = Color.PaleGoldenrod;
-            btnModificarPregunta.FlatStyle = FlatStyle.Flat;
-            btnModificarPregunta.FlatAppearance.BorderColor = Color.Goldenrod;
-            btnModificarPregunta.FlatAppearance.BorderSize = 2;
-            btnModificarPregunta.FlatAppearance.MouseOverBackColor = Color.LightYellow;
+                btnSeleccionarPregunta.Size = new Size(130, 122);
 
-
-
-            btnModificarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
-            btnModificarPregunta.Size = new Size(130, 40);
-            btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
-            flpListaPreguntas.Controls.Add(btnModificarPregunta);
-            btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, preguntaEng);
-
-
-
-            Button btnEliminarPregunta = new Button();
-            btnEliminarPregunta.Name = "btnEliminarPregunta";
-            btnEliminarPregunta.Text = "Eliminar";
-            btnEliminarPregunta.BackColor = Color.LightCoral;
-            btnEliminarPregunta.FlatStyle = FlatStyle.Flat;
-            btnEliminarPregunta.FlatAppearance.BorderColor = Color.Red;
-            btnEliminarPregunta.FlatAppearance.BorderSize = 2;
-            btnEliminarPregunta.FlatAppearance.MouseOverBackColor = Color.MistyRose;
+                btnSeleccionarPregunta.FlatAppearance.CheckedBackColor = Color.Blue;
+                btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
+                flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
+                btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, preguntaEng);
 
 
+                Button btnModificarPregunta = new Button();
+                btnModificarPregunta.Name = "btnModificarPregunta";
+                btnModificarPregunta.Text = "Modificar";
+                btnModificarPregunta.BackColor = Color.PaleGoldenrod;
+                btnModificarPregunta.FlatStyle = FlatStyle.Flat;
+                btnModificarPregunta.FlatAppearance.BorderColor = Color.Goldenrod;
+                btnModificarPregunta.FlatAppearance.BorderSize = 2;
+                btnModificarPregunta.FlatAppearance.MouseOverBackColor = Color.LightYellow;
 
-            btnEliminarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
-            btnEliminarPregunta.Size = new Size(130, 40);
-            btnEliminarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 50);
-            flpListaPreguntas.Controls.Add(btnEliminarPregunta);
-            btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta, preguntaEng, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
 
 
+                btnModificarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
+                btnModificarPregunta.Size = new Size(130, 40);
+                btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
+                flpListaPreguntas.Controls.Add(btnModificarPregunta);
+                btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, preguntaEng);
+
+
+
+                Button btnEliminarPregunta = new Button();
+                btnEliminarPregunta.Name = "btnEliminarPregunta";
+                btnEliminarPregunta.Text = "Eliminar";
+                btnEliminarPregunta.BackColor = Color.LightCoral;
+                btnEliminarPregunta.FlatStyle = FlatStyle.Flat;
+                btnEliminarPregunta.FlatAppearance.BorderColor = Color.Red;
+                btnEliminarPregunta.FlatAppearance.BorderSize = 2;
+                btnEliminarPregunta.FlatAppearance.MouseOverBackColor = Color.MistyRose;
+
+
+
+                btnEliminarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
+                btnEliminarPregunta.Size = new Size(130, 40);
+                btnEliminarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 50);
+                flpListaPreguntas.Controls.Add(btnEliminarPregunta);
+                btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta, preguntaEng, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
+
+
+
+
+                vaciarCampos();
+                OcultarColumna();
+            }
             
 
-            vaciarCampos();
-            OcultarColumna();
 
         }
 
