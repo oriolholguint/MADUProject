@@ -292,11 +292,13 @@ namespace PruebaMenuMADU
         private void ActivarBotonesOpciones()
         {
             buttonPreguntas.Enabled = true;
+            BtnGenConfig.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
             buttonPreguntas.Enabled = false;
+            BtnGenConfig.Enabled = false;
         }
 
         #endregion
@@ -382,10 +384,18 @@ namespace PruebaMenuMADU
 
         }
 
-        private void buttonCrearP_Click(object sender, EventArgs e)
+        private void ButtonCrearP_Click(object sender, EventArgs e)
         {
             FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng);
             f.ShowDialog();
+        }
+
+        private void BtnGenConfig_Click(object sender, EventArgs e)
+        {
+            
+            CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
+            cg.ShowDialog();
+            
         }
     }
 }
