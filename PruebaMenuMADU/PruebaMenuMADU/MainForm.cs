@@ -358,7 +358,7 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            CrearPreguntasForm cp = new CrearPreguntasForm();
+            CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng);
 
             cp.ShowDialog();
         }
