@@ -18,13 +18,15 @@ namespace PruebaMenuMADU
         Genero createdEsp { get; set; }
 
         Boolean editBool = false;
+        public Boolean deleteGenre { get; set; }
 
 
-        public Boolean manualCancel = false;
+    public Boolean manualCancel = false;
 
         public CrearGenero(Genero Esp, Genero Eng)
         {
             InitializeComponent();
+            this.deleteGenre = false;
             this.editBool = true;
             modifyGenre(Esp, Eng);
             editMode();
@@ -32,6 +34,7 @@ namespace PruebaMenuMADU
         public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
             InitializeComponent();
+            this.deleteGenre = false;
             this.listaEsp = listaEsp;
             this.listaEng = listaEng;
         }
@@ -229,6 +232,12 @@ namespace PruebaMenuMADU
         private void txtNombreGenero_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDeleteGenre_Click(object sender, EventArgs e)
+        {
+            this.deleteGenre = true;
+            this.Close();
         }
     }
 }

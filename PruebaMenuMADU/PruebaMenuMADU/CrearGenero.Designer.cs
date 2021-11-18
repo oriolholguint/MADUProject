@@ -292,6 +292,7 @@ namespace PruebaMenuMADU
             this.btnDeleteGenre.TabIndex = 15;
             this.btnDeleteGenre.Text = "Eliminar Genero";
             this.btnDeleteGenre.UseVisualStyleBackColor = false;
+            this.btnDeleteGenre.Click += new System.EventHandler(this.btnDeleteGenre_Click);
             // 
             // CrearGenero
             // 
