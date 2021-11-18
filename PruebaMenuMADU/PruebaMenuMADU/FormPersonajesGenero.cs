@@ -20,12 +20,12 @@ namespace PruebaMenuMADU
             foreach (Genero item in GeneroEspanyol)
             {
                 comboBox1.Items.Add(item.Nombre);
-               
+
             }
         }
 
         public List<Genero> GeneroEspanyol { get; set; }
-        //generoespañol[2].persionajes = 
+        //generoespañol[2].persionajes =
         public List<Genero> GeneroIngles { get; set; }
 
         List<Personaje> personatges = new List<Personaje>();
@@ -41,6 +41,7 @@ namespace PruebaMenuMADU
                 pbImagenPRank1.ImageLocation = getImage.FileName;
             }
         }
+
 
         private void btnCargarImagen2_Click(object sender, EventArgs e)
         {
@@ -68,7 +69,7 @@ namespace PruebaMenuMADU
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCrear_Click(object sender, EventArgs e)

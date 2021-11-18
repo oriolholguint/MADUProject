@@ -28,13 +28,13 @@ namespace PruebaMenuMADU
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog imagePick = new OpenFileDialog();
-            
+
             if (imagePick.ShowDialog() == DialogResult.OK)
             {
                 String[] imageTypeAccepted = new String[] { "png", "jpg", "jpeg", "gif" };
                 foreach (String type in imageTypeAccepted)
                 {
-                    
+
                     if (imagePick.FileName.Split('.').Last().Equals(type))
                     {
                         break;
@@ -49,7 +49,19 @@ namespace PruebaMenuMADU
                 pbImagenGenero.Dock = DockStyle.Fill;
                 pbImagenGenero.Image = (Image)image;
             }
-            
+
+        }
+        private void modifyGenre(Genero gen)
+        {
+            txtGenreName.Text = gen.Nombre;
+            txtNombreGenero.Text = gen.Nombre;
+            txtUrlBackground.Text = gen.ImagenFondo;
+            txtUrlMusic.Text = gen.MusicaFondo;
+            txtUrlOculta.Text = gen.ImagenMenu;
+            pbBg.Image = Image.FromFile(gen.ImagenFondo);
+            pbImagenGenero.Image = Image.FromFile(gen.ImagenMenu);
+            wmpMusic.URL = gen.MusicaFondo;
+
         }
 
         private void txtUrlOculta_TextChanged(object sender, EventArgs e)
@@ -57,6 +69,7 @@ namespace PruebaMenuMADU
 
         }
 
+        
         private void BntCargarFondo_Click(object sender, EventArgs e)
         {
             OpenFileDialog bgPick = new OpenFileDialog();
@@ -88,7 +101,7 @@ namespace PruebaMenuMADU
             OpenFileDialog musicFile = new OpenFileDialog();
             if (musicFile.ShowDialog() == DialogResult.OK)
             {
-                String[] videoTypeAccepted = new String[] {"mp3", "wav", "wma"};   
+                String[] videoTypeAccepted = new String[] {"mp3", "wav", "wma"};
                 foreach (String type in videoTypeAccepted)
                 {
 
@@ -119,15 +132,15 @@ namespace PruebaMenuMADU
                 if (String.IsNullOrEmpty(element)){
 
                     MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return;                
+                    return;
                 }
-                
+
                 if (System.IO.File.Exists(element))
                 {
 
                     paths++;
                 }
-                
+
             }
             if(paths<3)
             {
@@ -135,7 +148,7 @@ namespace PruebaMenuMADU
                 MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            
+
             Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Boolean controlDeNombre = true;
