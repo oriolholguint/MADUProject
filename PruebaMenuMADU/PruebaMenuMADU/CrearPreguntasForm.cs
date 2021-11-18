@@ -823,8 +823,7 @@ namespace PruebaMenuMADU
                     path = System.IO.Directory.GetParent(path).ToString();
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
                     
-                    txtUrlImg.Text = rutaCompleta + nombreImagen;
-                    txtImgAnt.Text = rutaCompleta + nombreImagen;
+                    txtUrlImg.Text = rutaCompleta + nombreImagen;                   
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
 
                 }
@@ -1087,37 +1086,9 @@ namespace PruebaMenuMADU
                 pregEng.EsMayorEdad = true;
             }
 
-            pregEng.Imagen = txtUrlImg.Text;            
-
-
-            if (txtNewAudio.Text.Equals("") && txtOriginAudio.Text.Equals(""))
-            {
-
-
-                if (File.Exists(pregEng.Sonido))
-                {
-                    File.Delete(pregEng.Sonido);
-
-                }
-                pregEng.Sonido = "";
-
-            }
-            else
-            {
-                if (!File.Exists(txtNewAudio.Text))
-                {
-                    File.Delete(txtOldAudio.Text);
-
-                    pregEng.Sonido = txtNewAudio.Text;
-                    File.Copy(txtOriginAudio.Text, txtNewAudio.Text);
-
-                }
-                else
-                {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
-                }
-
-            }
+            pregEng.Imagen = txtUrlImg.Text;
+            pregEng.Sonido = txtNewAudio.Text;
+            
 
 
             if (cbxQuestType.SelectedIndex == 0)
@@ -1301,8 +1272,7 @@ namespace PruebaMenuMADU
                     path = System.IO.Directory.GetParent(path).ToString();
                     String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
 
-                    txtAudioNuevo.Text = rutaCompleta + nombreAudio;
-                    txtAudioAnt.Text = rutaCompleta + nombreAudio;
+                    txtAudioNuevo.Text = rutaCompleta + nombreAudio;                   
                     txtNewAudio.Text = rutaCompleta + nombreAudio;
 
                     Reproductor.URL = txtAudioOrigen.Text;
