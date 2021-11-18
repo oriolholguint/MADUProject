@@ -17,7 +17,7 @@ namespace PruebaMenuMADU
         List<Genero> listaEng { get; set; }
         Genero createdEsp { get; set; }
 
-        Boolean edit = false;
+        Boolean editBool = false;
 
 
         public Boolean manualCancel = false;
@@ -25,7 +25,7 @@ namespace PruebaMenuMADU
         public CrearGenero(Genero Esp, Genero Eng)
         {
             InitializeComponent();
-            this.edit = true;
+            this.editBool = true;
             modifyGenre(Esp, Eng);
             editMode();
         }
@@ -39,6 +39,7 @@ namespace PruebaMenuMADU
         {
             lblNewName.Text = "Nombre del genero:";
             lblNewNameEng.Text = "Name of the genre: ";
+            btnCreateEdit.Text = "Editar Genero";
         }
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
@@ -167,22 +168,25 @@ namespace PruebaMenuMADU
             Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajesRap, partidasRap, preguntasRap);
             Boolean controlDeNombre = true;
-            foreach (Genero gen in this.listaEsp)
+            if (!this.editBool) 
             {
-                if (gen.Nombre.Equals(spanish.Nombre))
+                foreach (Genero gen in this.listaEsp)
                 {
-                    MessageBox.Show("Nombre para el nuevo genero incorrecto", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    controlDeNombre = false;
-                    break;
+                    if (gen.Nombre.Equals(spanish.Nombre))
+                    {
+                        MessageBox.Show("Nombre para el nuevo genero incorrecto", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        controlDeNombre = false;
+                        break;
+                    }
                 }
-            }
-            foreach (Genero gen in this.listaEng)
-            {
-                if (gen.Nombre.Equals(english.Nombre))
+                foreach (Genero gen in this.listaEng)
                 {
-                    MessageBox.Show("Nombre para el nuevo genero(version ingles) incorrecto/a", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    controlDeNombre = false;
-                    break;
+                    if (gen.Nombre.Equals(english.Nombre))
+                    {
+                        MessageBox.Show("Nombre para el nuevo genero(version ingles) incorrecto/a", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        controlDeNombre = false;
+                        break;
+                    }
                 }
             }
 

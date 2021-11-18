@@ -395,7 +395,10 @@ namespace PruebaMenuMADU
             
             CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
             cg.ShowDialog();
-            
+            this.GeneroSeleccionadoEsp = cg.getCreatedGenre("esp") != null ? cg.getCreatedGenre("esp") : this.GeneroSeleccionadoEsp;
+            this.GeneroSeleccionadoEng = cg.getCreatedGenre("eng") != null ? cg.getCreatedGenre("eng") : this.GeneroSeleccionadoEng;
+            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("No se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.Nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
         }
     }
 }
