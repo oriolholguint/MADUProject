@@ -17,14 +17,29 @@ namespace PruebaMenuMADU
         List<Genero> listaEng { get; set; }
         Genero createdEsp { get; set; }
 
+        Boolean edit = false;
+
+
         public Boolean manualCancel = false;
-    public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
+
+        public CrearGenero(Genero Esp, Genero Eng)
+        {
+            InitializeComponent();
+            this.edit = true;
+            modifyGenre(Esp, Eng);
+            editMode();
+        }
+        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
             InitializeComponent();
             this.listaEsp = listaEsp;
             this.listaEng = listaEng;
         }
-
+        public void editMode()
+        {
+            lblNewName.Text = "Nombre del genero:";
+            lblNewNameEng.Text = "Name of the genre: ";
+        }
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog imagePick = new OpenFileDialog();
@@ -51,16 +66,16 @@ namespace PruebaMenuMADU
             }
 
         }
-        private void modifyGenre(Genero gen)
+        private void modifyGenre(Genero genEsp,Genero genEng)
         {
-            txtGenreName.Text = gen.Nombre;
-            txtNombreGenero.Text = gen.Nombre;
-            txtUrlBackground.Text = gen.ImagenFondo;
-            txtUrlMusic.Text = gen.MusicaFondo;
-            txtUrlOculta.Text = gen.ImagenMenu;
-            pbBg.Image = Image.FromFile(gen.ImagenFondo);
-            pbImagenGenero.Image = Image.FromFile(gen.ImagenMenu);
-            wmpMusic.URL = gen.MusicaFondo;
+            txtGenreName.Text = genEng.Nombre;
+            txtNombreGenero.Text = genEsp.Nombre;
+            txtUrlBackground.Text = genEsp.ImagenFondo;
+            txtUrlMusic.Text = genEsp.MusicaFondo;
+            txtUrlOculta.Text = genEsp.ImagenMenu;
+            pbBg.Image = Image.FromFile(genEsp.ImagenFondo);
+            pbImagenGenero.Image = Image.FromFile(genEsp.ImagenMenu);
+            wmpMusic.URL = genEsp.MusicaFondo;
 
         }
 

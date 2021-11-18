@@ -29,6 +29,7 @@ namespace PruebaMenuMADU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.buttonPreguntas = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.panelModificar = new System.Windows.Forms.Panel();
@@ -38,12 +39,13 @@ namespace PruebaMenuMADU
             this.buttAddGenre = new System.Windows.Forms.Button();
             this.buttonGenerarJSON = new System.Windows.Forms.Button();
             this.buttonGestionarPersonajes = new System.Windows.Forms.Button();
+            this.BtnGenConfig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPreguntas
             // 
             this.buttonPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPreguntas.Location = new System.Drawing.Point(138, 29);
+            this.buttonPreguntas.Location = new System.Drawing.Point(172, 29);
             this.buttonPreguntas.Name = "buttonPreguntas";
             this.buttonPreguntas.Size = new System.Drawing.Size(120, 32);
             this.buttonPreguntas.TabIndex = 0;
@@ -79,8 +81,8 @@ namespace PruebaMenuMADU
             // btnCrearPreguntas
             // 
             this.btnCrearPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPreguntas.Location = new System.Drawing.Point(708, 29);
-            this.btnCrearPreguntas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearPreguntas.Location = new System.Drawing.Point(742, 29);
+            this.btnCrearPreguntas.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
             this.btnCrearPreguntas.Size = new System.Drawing.Size(194, 32);
             this.btnCrearPreguntas.TabIndex = 12;
@@ -93,7 +95,7 @@ namespace PruebaMenuMADU
             this.cbxGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGeneros.FormattingEnabled = true;
-            this.cbxGeneros.Location = new System.Drawing.Point(12, 29);
+            this.cbxGeneros.Location = new System.Drawing.Point(46, 29);
             this.cbxGeneros.Name = "cbxGeneros";
             this.cbxGeneros.Size = new System.Drawing.Size(121, 32);
             this.cbxGeneros.TabIndex = 0;
@@ -102,8 +104,8 @@ namespace PruebaMenuMADU
             // buttAddGenre
             // 
             this.buttAddGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttAddGenre.Location = new System.Drawing.Point(509, 29);
-            this.buttAddGenre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttAddGenre.Location = new System.Drawing.Point(543, 29);
+            this.buttAddGenre.Margin = new System.Windows.Forms.Padding(2);
             this.buttAddGenre.Name = "buttAddGenre";
             this.buttAddGenre.Size = new System.Drawing.Size(194, 32);
             this.buttAddGenre.TabIndex = 13;
@@ -115,7 +117,7 @@ namespace PruebaMenuMADU
             // 
             this.buttonGenerarJSON.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGenerarJSON.Location = new System.Drawing.Point(1334, 29);
-            this.buttonGenerarJSON.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGenerarJSON.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerarJSON.Name = "buttonGenerarJSON";
             this.buttonGenerarJSON.Size = new System.Drawing.Size(194, 32);
             this.buttonGenerarJSON.TabIndex = 14;
@@ -126,20 +128,34 @@ namespace PruebaMenuMADU
             // buttonGestionarPersonajes
             // 
             this.buttonGestionarPersonajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGestionarPersonajes.Location = new System.Drawing.Point(263, 29);
-            this.buttonGestionarPersonajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGestionarPersonajes.Location = new System.Drawing.Point(297, 29);
+            this.buttonGestionarPersonajes.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGestionarPersonajes.Name = "buttonGestionarPersonajes";
             this.buttonGestionarPersonajes.Size = new System.Drawing.Size(242, 32);
             this.buttonGestionarPersonajes.TabIndex = 15;
             this.buttonGestionarPersonajes.Text = "Gestionar Personajes";
             this.buttonGestionarPersonajes.UseVisualStyleBackColor = true;
-            this.buttonGestionarPersonajes.Click += new System.EventHandler(this.buttonCrearP_Click);
+            this.buttonGestionarPersonajes.Click += new System.EventHandler(this.ButtonCrearP_Click);
+            // 
+            // BtnGenConfig
+            // 
+            this.BtnGenConfig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGenConfig.BackgroundImage")));
+            this.BtnGenConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGenConfig.Enabled = false;
+            this.BtnGenConfig.Location = new System.Drawing.Point(10, 29);
+            this.BtnGenConfig.Name = "BtnGenConfig";
+            this.BtnGenConfig.Size = new System.Drawing.Size(32, 32);
+            this.BtnGenConfig.TabIndex = 16;
+            this.BtnGenConfig.UseVisualStyleBackColor = true;
+            this.BtnGenConfig.Click += new System.EventHandler(this.BtnGenConfig_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.Controls.Add(this.BtnGenConfig);
             this.Controls.Add(this.buttonGestionarPersonajes);
             this.Controls.Add(this.buttonGenerarJSON);
             this.Controls.Add(this.buttAddGenre);
@@ -151,7 +167,6 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.buttonPreguntas);
             this.Name = "Menu";
             this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +183,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Button buttAddGenre;
         private System.Windows.Forms.Button buttonGenerarJSON;
         private System.Windows.Forms.Button buttonGestionarPersonajes;
+        private System.Windows.Forms.Button BtnGenConfig;
     }
 }
