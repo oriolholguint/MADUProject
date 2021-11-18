@@ -97,38 +97,6 @@ namespace PruebaMenuMADU
 
         #endregion
 
-        //Eventos Botones Click (Preguntas y Personajes)
-        #region
-
-        private void buttonPreguntas_Click(object sender, EventArgs e)
-        {
-            
-            BorrarPanelModificar();
-
-            if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
-            {
-                MostrarFormModificarPregunta();
-            }
-
-            BorrarPanelDatos();
-
-            MostrarGridPreguntas();
-            
-        }
-
-        private void buttonPersonajes_Click(object sender, EventArgs e)
-        {
-            BorrarPanelModificar();
-
-            MostrarFormModificarPersonaje();
-
-            BorrarPanelDatos();
-
-            MostrarGridPersonajes();
-        }
-
-        #endregion
-
         //Metodos y Eventos de Generos
         #region
 
@@ -141,6 +109,12 @@ namespace PruebaMenuMADU
                 ActivarBotonesOpciones();
                 BorrarPanelDatos();
                 BorrarPanelModificar();
+
+                if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
+                {
+                    MostrarFormModificarPregunta();
+                    MostrarGridPreguntas();
+                }
             }
             else 
             {
@@ -267,22 +241,6 @@ namespace PruebaMenuMADU
             ModificarPregunta.TopLevel = false;
             panelModificar.Controls.Add(ModificarPregunta);
             ModificarPregunta.Show();
-        }
-
-        private void MostrarGridPersonajes()
-        {
-            DataGridViewPersonajes DgvPersonajes = new DataGridViewPersonajes(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPersonaje);
-            DgvPersonajes.TopLevel = false;
-            panelDatos.Controls.Add(DgvPersonajes);
-            DgvPersonajes.Show();
-        }
-
-        private void MostrarFormModificarPersonaje()
-        {
-            ModificarPersonaje = new ModificarPersonaje();
-            ModificarPersonaje.TopLevel = false;
-            panelModificar.Controls.Add(ModificarPersonaje);
-            ModificarPersonaje.Show();
         }
 
         #endregion
