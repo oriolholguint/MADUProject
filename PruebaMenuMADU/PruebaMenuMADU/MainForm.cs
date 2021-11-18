@@ -36,7 +36,6 @@ namespace PruebaMenuMADU
             ObtenerComboBoxGeneros(GenerosEsp);
         }
 
-         
         public void SetPreguntasList(Genero GeneroEspCambio, Genero GeneroEngCambio, Genero GeneroEsp, Genero GeneroEng)
         {
             int IndiceGeneroCambio;
@@ -57,19 +56,19 @@ namespace PruebaMenuMADU
         public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
         {
             Boolean GeneroEncontrado = false;
-            int counter = 0;
+            int Counter = 0;
             int Indice = 0;
 
-            while(!GeneroEncontrado && counter < GenerosEsp.Count)
+            while(!GeneroEncontrado && Counter < GenerosEsp.Count)
             {
-                if(GenerosEsp[counter].Nombre.Equals(Genero))
+                if(GenerosEsp[Counter].Nombre.Equals(Genero))
                 {
                     GeneroEncontrado = true;
-                    Indice = counter;
+                    Indice = Counter;
                 }
                 else
                 {
-                    counter++;
+                    Counter++;
                 }
             }
 
@@ -292,13 +291,11 @@ namespace PruebaMenuMADU
         #region
         private void ActivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = true;
             buttonPreguntas.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = false;
             buttonPreguntas.Enabled = false;
         }
 
@@ -365,7 +362,6 @@ namespace PruebaMenuMADU
 
             cp.ShowDialog();
         }
-
 
         private void buttAddGenre_Click(object sender, EventArgs e)
         {
