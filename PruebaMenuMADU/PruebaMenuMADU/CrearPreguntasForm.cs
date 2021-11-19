@@ -80,12 +80,14 @@ namespace PruebaMenuMADU
             btnEspañol.FlatAppearance.BorderColor = Color.Blue;
             btnEspañol.FlatAppearance.BorderSize = 3;
 
-
+           
         }
 
 
         private void vaciarCampos()
         {
+            cbxTipoPreg.SelectedIndex = 0;
+
             txtResp1.ReadOnly = true;
             txtResp2.ReadOnly = true;
 
@@ -105,10 +107,10 @@ namespace PruebaMenuMADU
             txtAudioNuevo.Text = "";
             txtAudioOrigen.Text = "";
 
-            txtResp1.Text = "";
-            txtResp2.Text = "";
-            txtResp3.Text = "";
-            txtResp4.Text = "";
+            //txtResp1.Text = "";
+            //txtResp2.Text = "";
+            //txtResp3.Text = "";
+            //txtResp4.Text = "";
 
            
             rdbResp1.BackColor = Color.DarkGray;
@@ -149,31 +151,21 @@ namespace PruebaMenuMADU
         {
             txtResp1.ReadOnly = true;
             txtResp2.ReadOnly = true;
+            txtAns1.ReadOnly = true;
+            txtAns2.ReadOnly = true;
 
             txtResp3.Visible = false;
             txtResp4.Visible = false;
             rdbResp3.Visible = false;
             rdbResp4.Visible = false;
 
-            txtResp3.Text = "";
-            txtResp4.Text = "";
-
-            rdbResp3.Enabled = false;
-            rdbResp4.Enabled = false;
-
-
-
-
+          
             txtAns3.Visible = false;
             txtAns4.Visible = false;
             rdbAns3.Visible = false;
-            rdbAns4.Visible = false;
+            rdbAns4.Visible = false;                      
 
-            txtAns3.Text = "";
-            txtAns4.Text = "";
-
-            rdbAns3.Enabled = false;
-            rdbAns4.Enabled = false;
+         
 
 
         }
@@ -182,9 +174,7 @@ namespace PruebaMenuMADU
         {
             txtResp1.Text = "";
             txtResp2.Text = "";
-            txtResp3.Text = "";
-            txtResp4.Text = "";
-
+            
 
             rdbResp1.BackColor = Color.DarkGray;
             rdbResp1.Checked = false;
@@ -214,31 +204,22 @@ namespace PruebaMenuMADU
 
         private void MostrarColumna()
         {
+            
             txtResp1.ReadOnly = false;
             txtResp2.ReadOnly = false;
+            txtAns1.ReadOnly = false;
+            txtAns2.ReadOnly = false;
 
             txtResp3.Visible = true;
             txtResp4.Visible = true;
             rdbResp3.Visible = true;
             rdbResp4.Visible = true;
 
-            txtResp3.Enabled = true;
-            txtResp4.Enabled = true;
-            rdbResp3.Enabled = true;
-            rdbResp4.Enabled = true;
-
-
 
             txtAns3.Visible = true;
             txtAns4.Visible = true;
             rdbAns3.Visible = true;
             rdbAns4.Visible = true;
-
-            txtAns3.Enabled = true;
-            txtAns4.Enabled = true;
-            rdbAns3.Enabled = true;
-            rdbAns4.Enabled = true;
-
 
         }
 
@@ -270,7 +251,8 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                   //Si la imagen exite coge la imagen existente
+                    pregunta.Imagen = txtUrlImg.Text;
                 }
 
             }
@@ -291,7 +273,8 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                    //Si el audio existe cogeme el audio existente
+                    pregunta.Sonido = txtAudioNuevo.Text;
                 }
 
             }
@@ -444,9 +427,9 @@ namespace PruebaMenuMADU
 
             }
 
-            if (txtQuestName.Text.Equals(""))
+            if (txtQuestName.Text.Equals("") || txtNombrePreg.Text.Equals(""))
             {
-                MessageBox.Show("Pregunta descripcion en ingles vacia");
+                MessageBox.Show("Pregunta descripcion esta vacia");
 
             } else if (cbxTipoPreg.SelectedItem == null)
             {
@@ -456,17 +439,17 @@ namespace PruebaMenuMADU
             {
                 MessageBox.Show("Selecciona una edad");
             }
-            else if (cbxTipoPreg.SelectedIndex == 0 && rdbResp1.BackColor == Color.LightGreen && rdbResp2.BackColor == Color.LightGreen)
+            else if (cbxTipoPreg.SelectedIndex == 0 && rdbResp1.BackColor == Color.DarkGray || rdbResp2.BackColor == Color.DarkGray)
             {
-                MessageBox.Show("Selecciona la respuesta correcta");
+                MessageBox.Show("Selecciona la respuesta correcta de las 2 opciones");
             }
-            else if (cbxTipoPreg.SelectedIndex == 1 && rdbResp1.BackColor == Color.LightGreen && rdbResp2.BackColor == Color.LightGreen && rdbResp3.BackColor == Color.LightGreen && rdbResp4.BackColor == Color.LightGreen)
+            else if (cbxTipoPreg.SelectedIndex == 1 && rdbResp1.BackColor == Color.DarkGray && rdbResp2.BackColor == Color.DarkGray && rdbResp3.BackColor == Color.DarkGray && rdbResp4.BackColor == Color.DarkGray)
             {
-                MessageBox.Show("Selecciona la respuesta correcta");
+                MessageBox.Show("Selecciona la respuesta correcta de las 4 opciones");
             }
-            else if (cbxTipoPreg.SelectedIndex == 1 && txtResp1.Text.Equals("") || txtResp2.Text.Equals("") || txtResp3.Text.Equals("") || txtResp4.Text.Equals("") || txtAns1.Text.Equals("") || txtAns2.Text.Equals("") || txtAns3.Equals("") || txtAns4.Text.Equals(""))
+            else if (cbxTipoPreg.SelectedIndex == 1 && txtResp1.Text.Equals("") || txtResp2.Text.Equals("") || txtResp3.Text.Equals("") || txtResp4.Text.Equals("") || txtAns1.Text.Equals("") || txtAns2.Text.Equals("") || txtAns3.Text.Equals("") || txtAns4.Text.Equals(""))
             {
-                MessageBox.Show("Hay respuestas vacias");
+                MessageBox.Show("Hay respuestas vacias de las 4 opciones" );
             }
             else
             {
@@ -478,7 +461,7 @@ namespace PruebaMenuMADU
 
                 //Button btnSeleccionarPregunta = new Button();
                 btnSeleccionarPregunta.Name = "btnSeleccionarPregunta";
-                String url = "C:\\Users\\david\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\ImageQuiz.jpg";
+                String url = "..\\..\\Resources\\ImageQuiz.jpg";
                 Image bkg = Image.FromFile(url);
 
                 btnSeleccionarPregunta.BackgroundImage = bkg;
@@ -820,8 +803,6 @@ namespace PruebaMenuMADU
 
 
 
-
-
         }
 
         private void cbxGeneroPreg_SelectedIndexChanged(object sender, EventArgs e)
@@ -859,14 +840,13 @@ namespace PruebaMenuMADU
                 if (Environment.OSVersion.Version.Major >= 6)
                 {
                     path = System.IO.Directory.GetParent(path).ToString();
-                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    String rutaCompleta = "..\\..\\Resources\\";
                     
+
                     txtUrlImg.Text = rutaCompleta + nombreImagen;                   
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
 
                 }
-
-
 
             }
             else
@@ -898,11 +878,11 @@ namespace PruebaMenuMADU
 
                 MostrarColumna();
                 cbxQuestType.SelectedIndex = 1;
-                txtResp1.Text = "";
-                txtResp2.Text = "";
+                txtResp1.Text = "Resp1";
+                txtResp2.Text = "Resp2";
 
-                txtAns1.Text = "";
-                txtAns2.Text = "";
+                txtAns1.Text = "Ans1";
+                txtAns2.Text = "Ans2";
                 
             }
         }
@@ -925,7 +905,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp2_CheckedChanged(object sender, EventArgs e)
         {
-           
+                        
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.LightGreen;
             rdbResp3.BackColor = Color.Red;
@@ -940,7 +920,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp3_CheckedChanged(object sender, EventArgs e)
         {
-                       
+                        
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.LightGreen;
@@ -956,7 +936,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp4_CheckedChanged(object sender, EventArgs e)
         {
-                       
+                     
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.Red;           
             rdbResp3.BackColor = Color.Red;
@@ -991,20 +971,14 @@ namespace PruebaMenuMADU
 
             if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
             {
-
-                if(File.Exists(preg.Imagen))
-                {
-                    File.Delete(preg.Imagen);
-
-                }
+                               
                 preg.Imagen = "";
             }
             else
             {
                 if (!File.Exists(txtUrlImg.Text))
                 {
-                    File.Delete(txtImgAnt.Text);
-
+                        
                     preg.Imagen = txtUrlImg.Text;
 
                     File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
@@ -1012,8 +986,9 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
-
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                   //Si la imagen existe cogeme la existente
+                    preg.Imagen = txtUrlImg.Text;
+                   
                 }
 
             }
@@ -1021,13 +996,7 @@ namespace PruebaMenuMADU
 
             if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
             {
-
-
-                if (File.Exists(preg.Sonido))
-                {
-                    File.Delete(preg.Sonido);
-
-                }
+                                
                 preg.Sonido = "";
 
             }
@@ -1035,15 +1004,15 @@ namespace PruebaMenuMADU
             {
                 if (!File.Exists(txtAudioNuevo.Text))
                 {
-                    File.Delete(txtAudioAnt.Text);
-
+                    
                     preg.Sonido = txtAudioNuevo.Text;
                     File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
 
                 }
                 else
                 {
-                    MessageBox.Show("La ruta de destino ya contiene un archivo con el mismo nombre.");
+                    //Si el audio existe coger el audo existente
+                    preg.Sonido = txtAudioNuevo.Text;
                 }
 
             }
@@ -1196,14 +1165,14 @@ namespace PruebaMenuMADU
         private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg,Pregunta pregEng, RadioButton botonSeleccionar, Button BotonEliminar, Button botonModificar)
         {
 
-            if (!preg.Imagen.Equals(""))
-            {
-                File.Delete(preg.Imagen);
-            }
-            if (!preg.Sonido.Equals(""))
-            {
-                File.Delete(preg.Sonido);
-            }
+            //if (!preg.Imagen.Equals(""))
+            //{
+            //    File.Delete(preg.Imagen);
+            //}
+            //if (!preg.Sonido.Equals(""))
+            //{
+            //    File.Delete(preg.Sonido);
+            //}
 
 
             preguntas.Remove(preg);
@@ -1308,7 +1277,7 @@ namespace PruebaMenuMADU
                 if (Environment.OSVersion.Version.Major >= 6)
                 {
                     path = System.IO.Directory.GetParent(path).ToString();
-                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    String rutaCompleta = "..\\..\\Resources\\";
 
                     txtAudioNuevo.Text = rutaCompleta + nombreAudio;                   
                     txtNewAudio.Text = rutaCompleta + nombreAudio;
@@ -1436,7 +1405,7 @@ namespace PruebaMenuMADU
 
         private void rdbAns1_CheckedChanged(object sender, EventArgs e)
         {
-
+            
             rdbAns1.BackColor = Color.LightGreen;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
@@ -1452,6 +1421,7 @@ namespace PruebaMenuMADU
 
         private void rdbAns2_CheckedChanged(object sender, EventArgs e)
         {
+                       
 
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.LightGreen;
@@ -1468,7 +1438,8 @@ namespace PruebaMenuMADU
 
         private void rdbAns3_CheckedChanged(object sender, EventArgs e)
         {
-           
+                        
+
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.LightGreen;
@@ -1483,6 +1454,7 @@ namespace PruebaMenuMADU
 
         private void rdbAns4_CheckedChanged(object sender, EventArgs e)
         {
+                       
            
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
@@ -1525,7 +1497,7 @@ namespace PruebaMenuMADU
                 if (Environment.OSVersion.Version.Major >= 6)
                 {
                     path = System.IO.Directory.GetParent(path).ToString();
-                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    String rutaCompleta = "..\\..\\Resources\\";
 
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
                     txtImgAnt.Text = rutaCompleta + nombreImagen;
@@ -1584,7 +1556,7 @@ namespace PruebaMenuMADU
                 if (Environment.OSVersion.Version.Major >= 6)
                 {
                     path = System.IO.Directory.GetParent(path).ToString();
-                    String rutaCompleta = path + "\\source\\repos\\MADUProject\\MADUProject\\PruebaMenuMADU\\PruebaMenuMADU\\Resources\\";
+                    String rutaCompleta = "..\\..\\Resources\\";
 
                     txtNewAudio.Text = rutaCompleta + nombreAudio;
                     txtAudioAnt.Text = rutaCompleta + nombreAudio;
