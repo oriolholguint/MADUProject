@@ -14,9 +14,6 @@ namespace PruebaMenuMADU
     {
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
-
-        BindingList<Pregunta> PreguntasEsp;
-        BindingList<Pregunta> PreguntasEng;
         
         ModificarPregunta ModificarPregunta;
 
@@ -28,54 +25,49 @@ namespace PruebaMenuMADU
         public DataGridViewPreguntas(Genero GeneroSeleccionadoEsp, Genero GeneroSeleccionadoEng, ModificarPregunta ModificarPregunta)
         {
             InitializeComponent();
-            
+
             this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
             this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
-
-            List<Pregunta> PreguntasListEsp = new List<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
-            PreguntasEsp = new BindingList<Pregunta>(PreguntasListEsp);
-
-            List<Pregunta> PreguntasListEng = new List<Pregunta>(GeneroSeleccionadoEng.Preguntas);
-            PreguntasEng = new BindingList<Pregunta>(PreguntasListEng);
 
             this.ModificarPregunta = ModificarPregunta;
 
             RecargarDataGridView();
-            //Elimino la columna genero ya que no es necesario para el datagridview
-            dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
-
         }
 
-        private void RecargarDataGridView()
+        public void RecargarDataGridView()
         {
-            dataGridViewTablaPreguntas.DataSource = PreguntasEsp;            
+            //dataGridViewTablaPreguntas.DataSource = null; Si activo esta linea tengo que crear metodo que diseñe la data grid view
+            dataGridViewTablaPreguntas.DataSource = new BindingList<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
             dataGridViewTablaPreguntas.Update();
             dataGridViewTablaPreguntas.Refresh();
+            //Elimino la columna genero ya que no es necesario para el datagridview
+            dataGridViewTablaPreguntas.Columns["Genero"].Visible = false;
         }
 
-        //Cuando se seleccione una pregunta se tendra que enviar al formulario de modificar
-        private void dataGridViewTablaPreguntas_SelectionChanged(object sender, EventArgs e)
-        {
-            CargarPreguntaSeleccionada();
-        }
 
-        private void CargarPreguntaSeleccionada()
+        public void CargarPreguntaSeleccionada()
         {
-            if (PreguntasEsp.Count != 0)
+            if (GeneroSeleccionadoEsp.Preguntas.Count != 0 && dataGridViewTablaPreguntas.Rows.Count > 0 )
             {
+                int IndicePregunta = 0;
+
                 Pregunta PreguntaSeleccionadaEsp;
                 Pregunta PreguntaSeleccionadaEng;
 
                 //Obtengo el objeto de la pregunta seleccionada.
                 PreguntaSeleccionadaEsp = (Pregunta) dataGridViewTablaPreguntas.CurrentRow.DataBoundItem;
-                int IndicePregunta = PreguntasEsp.IndexOf(PreguntaSeleccionadaEsp);
+                IndicePregunta = GeneroSeleccionadoEsp.Preguntas.IndexOf(PreguntaSeleccionadaEsp);
                 //Obtengo la pregunta seleccionada en ingles ya que tengo el indice de la fila seleccionada.
-                PreguntaSeleccionadaEng = PreguntasEng[IndicePregunta];
+                PreguntaSeleccionadaEng = GeneroSeleccionadoEng.Preguntas[IndicePregunta];
 
                 ModificarPregunta.setPregunta(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, PreguntaSeleccionadaEsp, PreguntaSeleccionadaEng);
             }
         }
 
-        
+        private void dataGridViewTablaPreguntas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarPreguntaSeleccionada();
+            ModificarPregunta.ActivarBotonesOpciones(); //Activo botones de Guardar, Limpiar y Eliminar
+        }
     }
 }

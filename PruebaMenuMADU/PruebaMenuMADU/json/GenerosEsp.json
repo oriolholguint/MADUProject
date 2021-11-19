@@ -202,5 +202,25 @@
         ]
       }
     ]
+  },
+  {
+    "Nombre": "Pop",
+    "MusicaFondo": "C:\\Users\\cep.CEPNET0\\Downloads\\2Pac - Dear Mama (Official Music Video).mp3",
+    "ImagenFondo": "C:\\Users\\cep.CEPNET0\\Downloads\\1603970279-pexels-photo-3.jpg",
+    "ImagenMenu": "C:\\Users\\cep.CEPNET0\\Downloads\\offset_comp_772626-opt.jpg",
+    "Personajes": [],
+    "Partidas": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "Preguntas": []
   }
 ]

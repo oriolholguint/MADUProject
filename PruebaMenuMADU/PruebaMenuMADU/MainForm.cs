@@ -23,7 +23,7 @@ namespace PruebaMenuMADU
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
 
-        //BindingList<Pregunta> Preguntas;
+        DataGridViewPreguntas DgvPreguntas;
 
         ModificarPregunta ModificarPregunta;
         ModificarPersonaje ModificarPersonaje;
@@ -48,29 +48,35 @@ namespace PruebaMenuMADU
             IndiceGenero = this.GenerosEsp.IndexOf(GeneroEsp);
             this.GenerosEsp[IndiceGenero].Preguntas = GeneroEsp.Preguntas;
             this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
+
+            DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
         }
 
-        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, String Genero)
+        public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
         {
             Boolean GeneroEncontrado = false;
-            int counter = 0;
+            int Counter = 0;
             int Indice = 0;
 
-            while(!GeneroEncontrado && counter < GenerosEsp.Count)
+            while(!GeneroEncontrado && Counter < GenerosEsp.Count)
             {
-                if(GenerosEsp[counter].Nombre.Equals(Genero))
+                if(GenerosEsp[Counter].Nombre.Equals(Genero))
                 {
                     GeneroEncontrado = true;
-                    Indice = counter;
+                    Indice = Counter;
                 }
                 else
                 {
-                    counter++;
+                    Counter++;
                 }
             }
 
-            GenerosEsp[Indice].Preguntas = PreguntasEsp;
-            GenerosEng[Indice].Preguntas = PreguntasEng;
+            GenerosEsp[Indice] = GeneroEsp;
+            GenerosEng[Indice] = GeneroEng;
+
+            DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
         }
 
         //Relleno el combo box de generos
@@ -91,38 +97,6 @@ namespace PruebaMenuMADU
 
         #endregion
 
-        //Eventos Botones Click (Preguntas y Personajes)
-        #region
-
-        private void buttonPreguntas_Click(object sender, EventArgs e)
-        {
-            
-            BorrarPanelModificar();
-
-            if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
-            {
-                MostrarFormModificarPregunta();
-            }
-
-            BorrarPanelDatos();
-
-            MostrarGridPreguntas();
-            
-        }
-
-        private void buttonPersonajes_Click(object sender, EventArgs e)
-        {
-            BorrarPanelModificar();
-
-            MostrarFormModificarPersonaje();
-
-            BorrarPanelDatos();
-
-            MostrarGridPersonajes();
-        }
-
-        #endregion
-
         //Metodos y Eventos de Generos
         #region
 
@@ -135,6 +109,12 @@ namespace PruebaMenuMADU
                 ActivarBotonesOpciones();
                 BorrarPanelDatos();
                 BorrarPanelModificar();
+
+                if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
+                {
+                    MostrarFormModificarPregunta();
+                    MostrarGridPreguntas();
+                }
             }
             else 
             {
@@ -248,7 +228,7 @@ namespace PruebaMenuMADU
         private void MostrarGridPreguntas()
         {
             //Muestro en el panel de DataGridViews el correspondiente a PreguntasEsp
-            DataGridViewPreguntas DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
+            DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
             DgvPreguntas.TopLevel = false;
             panelDatos.Controls.Add(DgvPreguntas);
             DgvPreguntas.Show();
@@ -263,36 +243,20 @@ namespace PruebaMenuMADU
             ModificarPregunta.Show();
         }
 
-        private void MostrarGridPersonajes()
-        {
-            DataGridViewPersonajes DgvPersonajes = new DataGridViewPersonajes(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPersonaje);
-            DgvPersonajes.TopLevel = false;
-            panelDatos.Controls.Add(DgvPersonajes);
-            DgvPersonajes.Show();
-        }
-
-        private void MostrarFormModificarPersonaje()
-        {
-            ModificarPersonaje = new ModificarPersonaje();
-            ModificarPersonaje.TopLevel = false;
-            panelModificar.Controls.Add(ModificarPersonaje);
-            ModificarPersonaje.Show();
-        }
-
         #endregion
 
         //Activar/Desactivar Botones Opciones
         #region
         private void ActivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = true;
             buttonPreguntas.Enabled = true;
+            BtnGenConfig.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = false;
             buttonPreguntas.Enabled = false;
+            BtnGenConfig.Enabled = false;
         }
 
         #endregion
@@ -354,11 +318,10 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            CrearPreguntasForm cp = new CrearPreguntasForm();
+            CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng);
 
             cp.ShowDialog();
         }
-
 
         private void buttAddGenre_Click(object sender, EventArgs e)
         {
@@ -379,10 +342,29 @@ namespace PruebaMenuMADU
 
         }
 
-        private void buttonCrearP_Click(object sender, EventArgs e)
+        private void ButtonCrearP_Click(object sender, EventArgs e)
         {
             FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng);
             f.ShowDialog();
+        }
+
+        private void BtnGenConfig_Click(object sender, EventArgs e)
+        {
+            
+            CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
+            cg.ShowDialog();
+            this.GeneroSeleccionadoEsp = cg.getCreatedGenre("esp") != null ? cg.getCreatedGenre("esp") : this.GeneroSeleccionadoEsp;
+            this.GeneroSeleccionadoEng = cg.getCreatedGenre("eng") != null ? cg.getCreatedGenre("eng") : this.GeneroSeleccionadoEng;
+            /*if (cg.deleteGenre)
+            {
+                Boolean found = false;
+                while (found)
+                {
+                    if(this.lista)
+                }
+            }*/
+            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.Nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
         }
     }
 }
