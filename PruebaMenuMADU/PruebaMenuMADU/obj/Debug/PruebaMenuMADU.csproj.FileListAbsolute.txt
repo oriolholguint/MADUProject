@@ -163,3 +163,4 @@ C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\
 C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.GenerateResource.cache
 C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CoreCompileInputs.cache
 C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources

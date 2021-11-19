@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -222,6 +223,8 @@ namespace PruebaMenuMADU
 
                 if (GeneroEspCambio != null)
                 {
+                    ResourceManager.addImageToResources(textBoxImagen.Text);
+                    ResourceManager.addSoundToResources(textBoxSonido.Text);
                     //Se devuelven la lista de un nuevo genero
 
                     GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
@@ -233,6 +236,9 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
+                    ResourceManager.addImageToResources(textBoxImagen.Text);
+                    ResourceManager.addSoundToResources(textBoxSonido.Text);
+
                     GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
                     GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
 
@@ -377,8 +383,10 @@ namespace PruebaMenuMADU
             {
                 Pregunta.EsMayorEdad = false;
             }
-            Pregunta.Imagen = textBoxImagen.Text;
-            Pregunta.Sonido = textBoxSonido.Text;
+            String imageName = textBoxImagen.Text.Split('\\').Last();
+            Pregunta.Imagen = ResourceManager.IMAGES_PATH + imageName;
+            String soundName = textBoxSonido.Text.Split('\\').Last();
+            Pregunta.Sonido = ResourceManager.SOUNDS_PATH + soundName;
             Pregunta.Respuestas = CrearRespuestaEsp();
             GuardarRespuestaCorrecta(Pregunta);
 
@@ -398,8 +406,10 @@ namespace PruebaMenuMADU
             {
                 Pregunta.EsMayorEdad = false;
             }
-            Pregunta.Imagen = textBoxImagen.Text;
-            Pregunta.Sonido = textBoxSonido.Text;
+            String imageName = textBoxImagen.Text.Split('\\').Last();
+            Pregunta.Imagen = ResourceManager.IMAGES_PATH + imageName;
+            String soundName = textBoxSonido.Text.Split('\\').Last();
+            Pregunta.Sonido = ResourceManager.SOUNDS_PATH + soundName;
             Pregunta.Respuestas = CrearRespuestasEng();
             GuardarRespuestaCorrecta(Pregunta);
 
@@ -553,29 +563,23 @@ namespace PruebaMenuMADU
         private void buttonAbrirFicherosImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ImagenSeleccionada = new OpenFileDialog();
-            ImagenSeleccionada.Filter = "Ficheros JPG (*.jpg) | *.jpg";
-            ImagenSeleccionada.Filter = "Ficheros JPEG (*.jpeg) | *.jpeg";
-            ImagenSeleccionada.Filter = "Ficheros PNG (*.png) | *.png";
-            ImagenSeleccionada.Filter = "Ficheros GIF (*.gif)|*.gif|Ficheros PNG (*.png)|*.png|Ficheros JPEG(*.jpeg)|*.jpeg |Ficheros JPG (*.jpg)|*.jpg";
+            ImagenSeleccionada.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
+           
 
             if (ImagenSeleccionada.ShowDialog() == DialogResult.OK)
             {
-                
-
+                textBoxImagen.Text = ImagenSeleccionada.FileName;
             }
         }
 
         private void buttonAbrirFicherosSonido_Click(object sender, EventArgs e)
         {
             OpenFileDialog SonidoSeleccionado = new OpenFileDialog();
-            SonidoSeleccionado.Filter = "Archivo MP3 (*.mp3) | *.mp3";
-            SonidoSeleccionado.Filter = "Archivo WAV (*.wav) | *.wav";
-            SonidoSeleccionado.Filter = "Archivo WMA (*.wma) | *.wma";
-            SonidoSeleccionado.Filter = "Archivo MP3 (*.mp3)|*.mp3|Archivo WAV(*.wav)|*.wav|Archivo WMA (*.wma)|*.wma";
+            SonidoSeleccionado.Filter = "Archivos de Audio (*.mp3)(*.wav)(*.wma)|*.mp3; *.wav; *.wma";
 
             if (SonidoSeleccionado.ShowDialog() == DialogResult.OK)
             {
-
+                textBoxSonido.Text = SonidoSeleccionado.FileName;
 
             }
         }
