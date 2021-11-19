@@ -1135,36 +1135,33 @@ namespace PruebaMenuMADU
 
             foreach (Genero gen in generosEsp)
             {
-                List<Pregunta> preguntasPorGenero = new List<Pregunta>();
+               // List<Pregunta> preguntasPorGenero = new List<Pregunta>();
 
                 foreach (Pregunta pregunt in preguntas)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
 
-                        preguntasPorGenero.Add(pregunt);
+                        gen.Preguntas.Add(pregunt);
                                                
                     }
                 }
-
-                gen.Preguntas = preguntasPorGenero;
 
             }
 
             foreach (Genero gen in generosEng)
             {
-                List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
+               // List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
 
                 foreach (Pregunta pregunt in preguntasEng)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
-                        preguntasPorGeneroEng.Add(pregunt);
+                        gen.Preguntas.Add(pregunt);
                        
                     }
                 }
 
-                gen.Preguntas = preguntasPorGeneroEng;
 
             }
 
