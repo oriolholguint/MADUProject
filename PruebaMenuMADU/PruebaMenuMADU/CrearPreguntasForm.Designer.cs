@@ -446,6 +446,7 @@
             this.txtResp3.Name = "txtResp3";
             this.txtResp3.Size = new System.Drawing.Size(738, 75);
             this.txtResp3.TabIndex = 5;
+            this.txtResp3.Text = "Resp3";
             // 
             // txtResp2
             // 
@@ -505,6 +506,7 @@
             this.txtResp4.Name = "txtResp4";
             this.txtResp4.Size = new System.Drawing.Size(700, 75);
             this.txtResp4.TabIndex = 4;
+            this.txtResp4.Text = "Resp4";
             // 
             // flowLayoutPanel1
             // 
@@ -845,6 +847,7 @@
             this.txtAns3.Name = "txtAns3";
             this.txtAns3.Size = new System.Drawing.Size(738, 75);
             this.txtAns3.TabIndex = 5;
+            this.txtAns3.Text = "Ans3";
             // 
             // rdbAns4
             // 
@@ -869,6 +872,7 @@
             this.txtAns4.Name = "txtAns4";
             this.txtAns4.Size = new System.Drawing.Size(700, 75);
             this.txtAns4.TabIndex = 4;
+            this.txtAns4.Text = "Ans4";
             // 
             // label5
             // 
