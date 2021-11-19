@@ -217,6 +217,7 @@
             this.txtImgAnt.Name = "txtImgAnt";
             this.txtImgAnt.Size = new System.Drawing.Size(52, 22);
             this.txtImgAnt.TabIndex = 4;
+            this.txtImgAnt.Visible = false;
             // 
             // txtImgOrigen
             // 
@@ -224,6 +225,7 @@
             this.txtImgOrigen.Name = "txtImgOrigen";
             this.txtImgOrigen.Size = new System.Drawing.Size(290, 22);
             this.txtImgOrigen.TabIndex = 3;
+            this.txtImgOrigen.Visible = false;
             // 
             // txtUrlImg
             // 
@@ -231,6 +233,7 @@
             this.txtUrlImg.Name = "txtUrlImg";
             this.txtUrlImg.Size = new System.Drawing.Size(300, 22);
             this.txtUrlImg.TabIndex = 2;
+            this.txtUrlImg.Visible = false;
             // 
             // btnCargarImagen
             // 
@@ -314,6 +317,7 @@
             this.txtAudioAnt.Name = "txtAudioAnt";
             this.txtAudioAnt.Size = new System.Drawing.Size(34, 22);
             this.txtAudioAnt.TabIndex = 6;
+            this.txtAudioAnt.Visible = false;
             // 
             // Reproductor
             // 
@@ -330,6 +334,7 @@
             this.txtAudioNuevo.Name = "txtAudioNuevo";
             this.txtAudioNuevo.Size = new System.Drawing.Size(276, 22);
             this.txtAudioNuevo.TabIndex = 3;
+            this.txtAudioNuevo.Visible = false;
             // 
             // txtAudioOrigen
             // 
@@ -337,6 +342,7 @@
             this.txtAudioOrigen.Name = "txtAudioOrigen";
             this.txtAudioOrigen.Size = new System.Drawing.Size(320, 22);
             this.txtAudioOrigen.TabIndex = 2;
+            this.txtAudioOrigen.Visible = false;
             // 
             // btnCargarAudio
             // 
@@ -995,7 +1001,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnAñadirPregunta);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(206, 922);
@@ -1005,10 +1011,11 @@
             // 
             // pnlSeleccionIdioma
             // 
-            this.pnlSeleccionIdioma.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlSeleccionIdioma.BackColor = System.Drawing.Color.White;
             this.pnlSeleccionIdioma.Controls.Add(this.btnIngles);
             this.pnlSeleccionIdioma.Controls.Add(this.btnEspañol);
-            this.pnlSeleccionIdioma.Location = new System.Drawing.Point(282, 115);
+            this.pnlSeleccionIdioma.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeleccionIdioma.Location = new System.Drawing.Point(206, 96);
             this.pnlSeleccionIdioma.Name = "pnlSeleccionIdioma";
             this.pnlSeleccionIdioma.Size = new System.Drawing.Size(1718, 81);
             this.pnlSeleccionIdioma.TabIndex = 22;
