@@ -327,6 +327,8 @@ namespace PruebaMenuMADU
             CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng);
 
             cp.ShowDialog();
+
+            //this.SetGeneros(cp.getArrays()[0],cp.getArrays()[1]);
         }
 
         private void buttAddGenre_Click(object sender, EventArgs e)
