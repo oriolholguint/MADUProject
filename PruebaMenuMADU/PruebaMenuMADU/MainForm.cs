@@ -79,6 +79,12 @@ namespace PruebaMenuMADU
             DgvPreguntas.CargarPreguntaSeleccionada();
         }
 
+        public void SetGeneros(List<Genero> GenerosEsp, List<Genero>GenerosEng)
+        {
+            this.GenerosEsp = GenerosEsp;
+            this.GenerosEng = GenerosEng;
+        }
+
         //Relleno el combo box de generos
         #region
 
