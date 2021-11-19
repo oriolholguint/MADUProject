@@ -954,207 +954,243 @@ namespace PruebaMenuMADU
         private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg, Pregunta pregEng)
         {
 
-            //modificar Español
-
-            preg.PreguntaDescripcion = txtNombrePreg.Text;
-            preg.Genero = (String)cbxGeneroPreg.SelectedValue;
-
-            if (cbxEdad.SelectedIndex == 0)
+            if (txtQuestName.Text.Equals("") || txtNombrePreg.Text.Equals(""))
             {
-                preg.EsMayorEdad = false;
+                MessageBox.Show("Pregunta descripcion esta vacia");
+
+            }
+            else if (cbxTipoPreg.SelectedItem == null)
+            {
+                MessageBox.Show("Selecciona un tipo");
+            }
+            else if (cbxEdad.SelectedItem == null)
+            {
+                MessageBox.Show("Selecciona una edad");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 0 && rdbResp1.BackColor == Color.DarkGray || rdbResp2.BackColor == Color.DarkGray)
+            {
+                MessageBox.Show("Selecciona la respuesta correcta de las 2 opciones");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 1 && rdbResp1.BackColor == Color.DarkGray && rdbResp2.BackColor == Color.DarkGray && rdbResp3.BackColor == Color.DarkGray && rdbResp4.BackColor == Color.DarkGray)
+            {
+                MessageBox.Show("Selecciona la respuesta correcta de las 4 opciones");
+            }
+            else if (cbxTipoPreg.SelectedIndex == 1 && txtResp1.Text.Equals("") || txtResp2.Text.Equals("") || txtResp3.Text.Equals("") || txtResp4.Text.Equals("") || txtAns1.Text.Equals("") || txtAns2.Text.Equals("") || txtAns3.Text.Equals("") || txtAns4.Text.Equals(""))
+            {
+                MessageBox.Show("Hay respuestas vacias de las 4 opciones");
             }
             else
             {
-                preg.EsMayorEdad = true;
-            }
 
 
-            if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
-            {
-                               
-                preg.Imagen = "";
-            }
-            else
-            {
-                if (!File.Exists(txtUrlImg.Text))
+
+                //modificar Español
+
+                preg.PreguntaDescripcion = txtNombrePreg.Text;
+                preg.Genero = (String)cbxGeneroPreg.SelectedValue;
+
+                if (cbxEdad.SelectedIndex == 0)
                 {
-                        
-                    preg.Imagen = txtUrlImg.Text;
+                    preg.EsMayorEdad = false;
+                }
+                else
+                {
+                    preg.EsMayorEdad = true;
+                }
 
-                    File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
+
+                if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
+                {
+
+                    preg.Imagen = "";
+                }
+                else
+                {
+                    if (!File.Exists(txtUrlImg.Text))
+                    {
+
+                        preg.Imagen = txtUrlImg.Text;
+
+                        File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
+
+                    }
+                    else
+                    {
+                        //Si la imagen existe cogeme la existente
+                        preg.Imagen = txtUrlImg.Text;
+
+                    }
+
+                }
+
+
+                if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
+                {
+
+                    preg.Sonido = "";
 
                 }
                 else
                 {
-                   //Si la imagen existe cogeme la existente
-                    preg.Imagen = txtUrlImg.Text;
-                   
+                    if (!File.Exists(txtAudioNuevo.Text))
+                    {
+
+                        preg.Sonido = txtAudioNuevo.Text;
+                        File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
+
+                    }
+                    else
+                    {
+                        //Si el audio existe coger el audo existente
+                        preg.Sonido = txtAudioNuevo.Text;
+                    }
+
                 }
 
-            }
 
-
-            if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
-            {
-                                
-                preg.Sonido = "";
-
-            }
-            else
-            {
-                if (!File.Exists(txtAudioNuevo.Text))
+                if (cbxTipoPreg.SelectedIndex == 0)
                 {
-                    
-                    preg.Sonido = txtAudioNuevo.Text;
-                    File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
+
+                    preg.Respuestas = new Respuesta[2];
+
+                    Respuesta resp1 = new Respuesta("Verdadero", false);
+                    Respuesta resp2 = new Respuesta("Falso", false);
+
+
+                    if (rdbResp1.BackColor == Color.LightGreen)
+                    {
+                        resp1.EsCorrecta = true;
+
+                    }
+                    if (rdbResp2.BackColor == Color.LightGreen)
+                    {
+                        resp2.EsCorrecta = true;
+                    }
+
+                    preg.Respuestas.SetValue(resp1, 0);
+                    preg.Respuestas.SetValue(resp2, 1);
 
                 }
                 else
                 {
-                    //Si el audio existe coger el audo existente
-                    preg.Sonido = txtAudioNuevo.Text;
+                    preg.Respuestas = new Respuesta[4];
+
+                    Respuesta resp1 = new Respuesta(txtResp1.Text, false);
+                    Respuesta resp2 = new Respuesta(txtResp2.Text, false);
+                    Respuesta resp3 = new Respuesta(txtResp3.Text, false);
+                    Respuesta resp4 = new Respuesta(txtResp4.Text, false);
+
+
+                    if (rdbResp1.BackColor == Color.LightGreen)
+                    {
+                        resp1.EsCorrecta = true;
+                    }
+                    if (rdbResp2.BackColor == Color.LightGreen)
+                    {
+                        resp2.EsCorrecta = true;
+
+                    }
+                    if (rdbResp3.BackColor == Color.LightGreen)
+                    {
+                        resp3.EsCorrecta = true;
+                    }
+                    if (rdbResp4.BackColor == Color.LightGreen)
+                    {
+                        resp4.EsCorrecta = true;
+                    }
+
+
+                    preg.Respuestas.SetValue(resp1, 0);
+                    preg.Respuestas.SetValue(resp2, 1);
+                    preg.Respuestas.SetValue(resp3, 2);
+                    preg.Respuestas.SetValue(resp4, 3);
+
                 }
+
+
+                //Modificar Ingles
+
+
+                pregEng.PreguntaDescripcion = txtQuestName.Text;
+                pregEng.Genero = (String)cbxGenreQuest.SelectedValue;
+
+                if (cbxQuestAge.SelectedIndex == 0)
+                {
+                    pregEng.EsMayorEdad = false;
+                }
+                else
+                {
+                    pregEng.EsMayorEdad = true;
+                }
+
+                pregEng.Imagen = txtUrlImg.Text;
+                pregEng.Sonido = txtNewAudio.Text;
+
+
+
+                if (cbxQuestType.SelectedIndex == 0)
+                {
+
+                    pregEng.Respuestas = new Respuesta[2];
+
+                    Respuesta resp1 = new Respuesta("Verdadero", false);
+                    Respuesta resp2 = new Respuesta("Falso", false);
+
+
+                    if (rdbAns1.BackColor == Color.LightGreen)
+                    {
+                        resp1.EsCorrecta = true;
+
+                    }
+                    if (rdbAns2.BackColor == Color.LightGreen)
+                    {
+                        resp2.EsCorrecta = true;
+                    }
+
+                    pregEng.Respuestas.SetValue(resp1, 0);
+                    pregEng.Respuestas.SetValue(resp2, 1);
+
+                }
+                else
+                {
+                    pregEng.Respuestas = new Respuesta[4];
+
+                    Respuesta resp1 = new Respuesta(txtAns1.Text, false);
+                    Respuesta resp2 = new Respuesta(txtAns2.Text, false);
+                    Respuesta resp3 = new Respuesta(txtAns3.Text, false);
+                    Respuesta resp4 = new Respuesta(txtAns4.Text, false);
+
+
+                    if (rdbAns1.BackColor == Color.LightGreen)
+                    {
+                        resp1.EsCorrecta = true;
+                    }
+                    if (rdbAns2.BackColor == Color.LightGreen)
+                    {
+                        resp2.EsCorrecta = true;
+                    }
+                    if (rdbAns3.BackColor == Color.LightGreen)
+                    {
+                        resp3.EsCorrecta = true;
+                    }
+                    if (rdbAns4.BackColor == Color.LightGreen)
+                    {
+                        resp4.EsCorrecta = true;
+                    }
+
+
+                    pregEng.Respuestas.SetValue(resp1, 0);
+                    pregEng.Respuestas.SetValue(resp2, 1);
+                    pregEng.Respuestas.SetValue(resp3, 2);
+                    pregEng.Respuestas.SetValue(resp4, 3);
+
+                }
+
+
+
 
             }
 
-
-            if (cbxTipoPreg.SelectedIndex == 0)
-            {
-                
-                preg.Respuestas = new Respuesta[2];
-
-                Respuesta resp1 = new Respuesta("Verdadero", false);
-                Respuesta resp2 = new Respuesta("Falso", false);
-
-
-                if (rdbResp1.BackColor == Color.LightGreen)
-                {
-                    resp1.EsCorrecta = true;
-
-                }
-                if (rdbResp2.BackColor == Color.LightGreen)
-                {
-                    resp2.EsCorrecta = true;
-                }
-
-                preg.Respuestas.SetValue(resp1, 0);
-                preg.Respuestas.SetValue(resp2, 1);
-
-            }
-            else
-            {
-                preg.Respuestas = new Respuesta[4];
-
-                Respuesta resp1 = new Respuesta(txtResp1.Text,false);
-                Respuesta resp2 = new Respuesta(txtResp2.Text, false);
-                Respuesta resp3 = new Respuesta(txtResp3.Text, false);
-                Respuesta resp4 = new Respuesta(txtResp4.Text, false);
-                                
-
-                if (rdbResp1.BackColor == Color.LightGreen)
-                {
-                    resp1.EsCorrecta = true;                                        
-                }
-                if (rdbResp2.BackColor == Color.LightGreen)
-                {
-                    resp2.EsCorrecta = true;
-                   
-                }
-                if (rdbResp3.BackColor == Color.LightGreen)
-                {
-                    resp3.EsCorrecta = true;
-                }
-                if (rdbResp4.BackColor == Color.LightGreen)
-                {
-                    resp4.EsCorrecta = true;
-                }
-                               
-
-                preg.Respuestas.SetValue(resp1, 0);
-                preg.Respuestas.SetValue(resp2, 1);
-                preg.Respuestas.SetValue(resp3, 2);
-                preg.Respuestas.SetValue(resp4, 3);
-
-            }
-
-
-            //Modificar Ingles
-
-
-            pregEng.PreguntaDescripcion = txtQuestName.Text;
-            pregEng.Genero = (String)cbxGenreQuest.SelectedValue;
-
-            if (cbxQuestAge.SelectedIndex == 0)
-            {
-                pregEng.EsMayorEdad = false;
-            }
-            else
-            {
-                pregEng.EsMayorEdad = true;
-            }
-
-            pregEng.Imagen = txtUrlImg.Text;
-            pregEng.Sonido = txtNewAudio.Text;
-            
-
-
-            if (cbxQuestType.SelectedIndex == 0)
-            {
-
-                pregEng.Respuestas = new Respuesta[2];
-
-                Respuesta resp1 = new Respuesta("Verdadero", false);
-                Respuesta resp2 = new Respuesta("Falso", false);
-
-
-                if (rdbAns1.BackColor == Color.LightGreen)
-                {
-                    resp1.EsCorrecta = true;
-
-                }
-                if (rdbAns2.BackColor == Color.LightGreen)
-                {
-                    resp2.EsCorrecta = true;
-                }
-
-                pregEng.Respuestas.SetValue(resp1, 0);
-                pregEng.Respuestas.SetValue(resp2, 1);
-
-            }
-            else
-            {
-                pregEng.Respuestas = new Respuesta[4];
-
-                Respuesta resp1 = new Respuesta(txtAns1.Text, false);
-                Respuesta resp2 = new Respuesta(txtAns2.Text, false);
-                Respuesta resp3 = new Respuesta(txtAns3.Text, false);
-                Respuesta resp4 = new Respuesta(txtAns4.Text, false);
-
-
-                if (rdbAns1.BackColor == Color.LightGreen)
-                {
-                    resp1.EsCorrecta = true;
-                }
-                if (rdbAns2.BackColor == Color.LightGreen)
-                {
-                    resp2.EsCorrecta = true;
-                }
-                if (rdbAns3.BackColor == Color.LightGreen)
-                {
-                    resp3.EsCorrecta = true;
-                }
-                if (rdbAns4.BackColor == Color.LightGreen)
-                {
-                    resp4.EsCorrecta = true;
-                }
-
-
-                pregEng.Respuestas.SetValue(resp1, 0);
-                pregEng.Respuestas.SetValue(resp2, 1);
-                pregEng.Respuestas.SetValue(resp3, 2);
-                pregEng.Respuestas.SetValue(resp4, 3);
-
-            }
 
 
 
