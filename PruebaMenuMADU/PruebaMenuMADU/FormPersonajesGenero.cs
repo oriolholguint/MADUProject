@@ -72,7 +72,17 @@ namespace PruebaMenuMADU
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            List<Personaje> Personajes = GeneroEspanyol[comboBox1.SelectedIndex].Personajes;
+            TextBox [] nom = { textBoxRank1, textBoxRank2, textBoxRank3 };
+            PictureBox[] img = { pbImagenPRank3, pbImagenPRank2, pbImagenPRank1 };
+            int cont = 0;
 
+            foreach (Personaje personaje in Personajes)
+            {
+                nom[cont].Text = personaje.Nombre;
+                img[cont].Image = Image.FromFile(personaje.Imagen);
+                cont++;
+            }
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -104,11 +114,11 @@ namespace PruebaMenuMADU
             perRank3.Imagen = rutaImgR3;
             perRank3.PosicionRanking = 3;
 
-            if (!String.IsNullOrEmpty(nomRank1) || !String.IsNullOrWhiteSpace(nomRank1))
+            if (!String.IsNullOrEmpty(nomRank1) || !String.IsNullOrWhiteSpace(nomRank1) || pbImagenPRank1.Image == null)
             {
-                if (!String.IsNullOrEmpty(nomRank2) || !String.IsNullOrWhiteSpace(nomRank2))
+                if (!String.IsNullOrEmpty(nomRank2) || !String.IsNullOrWhiteSpace(nomRank2) || pbImagenPRank2.Image == null)
                 {
-                    if (!String.IsNullOrEmpty(nomRank3) || !String.IsNullOrWhiteSpace(nomRank3))
+                    if (!String.IsNullOrEmpty(nomRank3) || !String.IsNullOrWhiteSpace(nomRank3) || pbImagenPRank3.Image == null)
                     {
                         personatges.Add(perRank1);
                         personatges.Add(perRank2);
@@ -121,16 +131,16 @@ namespace PruebaMenuMADU
                     } 
                     else 
                     {
-                        MessageBox.Show("Error al Crear Personaje");
+                        MessageBox.Show("Error al Crear Personaje del Rank 3");
                     }
                 } 
                 else 
                 {
-                    MessageBox.Show("Error al Crear Personaje");
+                    MessageBox.Show("Error al Crear Personaje del Rank 2");
                 }
             } else 
             {
-                MessageBox.Show("Error al Crear Personaje");
+                MessageBox.Show("Error al Crear Personaje del Rank 1");
             } 
 
 
