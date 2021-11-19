@@ -36,7 +36,7 @@ namespace PruebaMenuMADU
         public CrearPreguntasForm(List<Genero> generosEsp, List<Genero> generosEng)
         {
             InitializeComponent();
-            this.generosEng = generosEsp;
+            this.generosEsp = generosEsp;
             this.generosEng = generosEng;
         }
 
@@ -45,34 +45,34 @@ namespace PruebaMenuMADU
         {
 
             OcultarColumna();
-            Genero Rock = new Genero("Rock", "xx", "xx", "xx", null, null, preguntas);
-            Genero Electronica = new Genero("Electronica", "xx", "xx", "xx", null, null, preguntas);
-            Genero HipHop = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntas);
-            Genero Pop = new Genero("Pop", "xx", "xx", "xx", null, null, preguntas);
+            //Genero Rock = new Genero("Rock", "xx", "xx", "xx", null, null, preguntas);
+            //Genero Electronica = new Genero("Electronica", "xx", "xx", "xx", null, null, preguntas);
+            //Genero HipHop = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntas);
+            //Genero Pop = new Genero("Pop", "xx", "xx", "xx", null, null, preguntas);
 
-            Genero RockEng = new Genero("Rock", "xx", "xx", "xx", null, null, preguntasEng);
-            Genero ElectronicEng = new Genero("Electronic", "xx", "xx", "xx", null, null, preguntasEng);
-            Genero HipHopEng = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntasEng);
-            Genero PopEng = new Genero("Pop", "xx", "xx", "xx", null, null, preguntasEng);
+            //Genero RockEng = new Genero("Rock", "xx", "xx", "xx", null, null, preguntasEng);
+            //Genero ElectronicEng = new Genero("Electronic", "xx", "xx", "xx", null, null, preguntasEng);
+            //Genero HipHopEng = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntasEng);
+            //Genero PopEng = new Genero("Pop", "xx", "xx", "xx", null, null, preguntasEng);
 
-            generosEsp.Add(Rock);
-            generosEsp.Add(Electronica);
-            generosEsp.Add(HipHop);
-            generosEsp.Add(Pop);
+            //generosEsp.Add(Rock);
+            //generosEsp.Add(Electronica);
+            //generosEsp.Add(HipHop);
+            //generosEsp.Add(Pop);
 
 
-            generosEng.Add(RockEng);
-            generosEng.Add(ElectronicEng);
-            generosEng.Add(HipHopEng);
-            generosEng.Add(PopEng);
+            //generosEng.Add(RockEng);
+            //generosEng.Add(ElectronicEng);
+            //generosEng.Add(HipHopEng);
+            //generosEng.Add(PopEng);
 
-            cbxGeneroPreg.DataSource = generosEsp;
-            cbxGeneroPreg.DisplayMember = "Nombre";
-            cbxGeneroPreg.ValueMember = "Nombre";
+            //cbxGeneroPreg.DataSource = generosEsp;
+            //cbxGeneroPreg.DisplayMember = "Nombre";
+            //cbxGeneroPreg.ValueMember = "Nombre";
 
-            cbxGenreQuest.DataSource = generosEng;
-            cbxGenreQuest.DisplayMember = "Nombre";
-            cbxGenreQuest.ValueMember = "Nombre";
+            //cbxGenreQuest.DataSource = generosEng;
+            //cbxGenreQuest.DisplayMember = "Nombre";
+            //cbxGenreQuest.ValueMember = "Nombre";
 
             tabIdioma.SelectedTab = tabEspañol;
 
@@ -591,26 +591,7 @@ namespace PruebaMenuMADU
 
                 txtResp2.Text = preg.Respuestas[1].RespuestaDescripcion;
                 rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;
-
-                if (rdbResp1.Checked)
-                {
-                   
-                    rdbResp1.BackColor = Color.LightGreen;                  
-                    rdbResp2.BackColor = Color.Red;                    
-                    rdbResp3.BackColor = Color.Red;                    
-                    rdbResp4.BackColor = Color.Red;
-                }
-
-                if (rdbResp2.Checked)
-                {
-                    
-                    rdbResp1.BackColor = Color.Red;                
-                    rdbResp2.BackColor = Color.LightGreen;                                        
-                    rdbResp3.BackColor = Color.Red;                   
-                    rdbResp4.BackColor = Color.Red;
-                }
-
-
+                       
             }
 
            else
@@ -630,43 +611,6 @@ namespace PruebaMenuMADU
                 txtResp4.Text = preg.Respuestas[3].RespuestaDescripcion;
                 rdbResp4.Checked = preg.Respuestas[3].EsCorrecta;
 
-
-                if (rdbResp1.Checked)
-                {
-                    
-                    rdbResp1.BackColor = Color.LightGreen;                   
-                    rdbResp2.BackColor = Color.Red;                   
-                    rdbResp3.BackColor = Color.Red;                   
-                    rdbResp4.BackColor = Color.Red;
-                }
-
-                if (rdbResp2.Checked)
-                {
-                    
-                    rdbResp1.BackColor = Color.Red;                    
-                    rdbResp2.BackColor = Color.LightGreen;                    
-                    rdbResp3.BackColor = Color.Red;                    
-                    rdbResp4.BackColor = Color.Red;
-                }
-
-                if (rdbResp3.Checked)
-                {
-                    
-                    rdbResp1.BackColor = Color.Red;                   
-                    rdbResp2.BackColor = Color.Red;                    
-                    rdbResp3.BackColor = Color.LightGreen;                    
-                    rdbResp4.BackColor = Color.Red;
-                }
-
-
-                if (rdbResp4.Checked)
-                {
-                    
-                    rdbResp1.BackColor = Color.Red;                
-                    rdbResp2.BackColor = Color.Red;                   
-                    rdbResp3.BackColor = Color.Red;                    
-                    rdbResp4.BackColor = Color.LightGreen;
-                }
 
             }
 
@@ -724,25 +668,7 @@ namespace PruebaMenuMADU
                 txtAns2.Text = pregEng.Respuestas[1].RespuestaDescripcion;
                 rdbAns2.Checked = pregEng.Respuestas[1].EsCorrecta;
 
-                if (rdbAns1.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.LightGreen;
-                    rdbAns2.BackColor = Color.Red;
-                    rdbAns3.BackColor = Color.Red;
-                    rdbAns4.BackColor = Color.Red;
-                }
-
-                if (rdbAns2.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.Red;
-                    rdbAns2.BackColor = Color.LightGreen;
-                    rdbAns3.BackColor = Color.Red;
-                    rdbAns4.BackColor = Color.Red;
-                }
-
-
+              
             }
 
            else
@@ -762,42 +688,6 @@ namespace PruebaMenuMADU
                 txtAns4.Text = pregEng.Respuestas[3].RespuestaDescripcion;
                 rdbAns4.Checked = pregEng.Respuestas[3].EsCorrecta;
 
-
-                if (rdbAns1.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.LightGreen;
-                    rdbAns2.BackColor = Color.Red;
-                    rdbAns3.BackColor = Color.Red;
-                    rdbAns4.BackColor = Color.Red;
-                }
-
-                if (rdbAns2.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.Red;
-                    rdbAns2.BackColor = Color.LightGreen;
-                    rdbAns3.BackColor = Color.Red;
-                    rdbAns4.BackColor = Color.Red;
-                }
-
-                if (rdbAns1.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.Red;
-                    rdbAns2.BackColor = Color.Red;
-                    rdbAns3.BackColor = Color.LightGreen;
-                    rdbAns4.BackColor = Color.Red;
-                }
-
-                if (rdbAns2.Checked)
-                {
-
-                    rdbAns1.BackColor = Color.Red;
-                    rdbAns2.BackColor = Color.Red;
-                    rdbAns3.BackColor = Color.Red;
-                    rdbAns4.BackColor = Color.LightGreen;
-                }
 
             }
 
@@ -905,7 +795,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp2_CheckedChanged(object sender, EventArgs e)
         {
-                        
+            
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.LightGreen;
             rdbResp3.BackColor = Color.Red;
@@ -920,7 +810,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp3_CheckedChanged(object sender, EventArgs e)
         {
-                        
+
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.LightGreen;
@@ -936,7 +826,7 @@ namespace PruebaMenuMADU
 
         private void rdbResp4_CheckedChanged(object sender, EventArgs e)
         {
-                     
+
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.Red;           
             rdbResp3.BackColor = Color.Red;
@@ -1279,11 +1169,11 @@ namespace PruebaMenuMADU
             }
 
 
-            JArray arrayGenerosEsp = (JArray)JToken.FromObject(generosEsp);
-            JArray arrayGenerosEng = (JArray)JToken.FromObject(generosEng);
+            //JArray arrayGenerosEsp = (JArray)JToken.FromObject(generosEsp);
+            //JArray arrayGenerosEng = (JArray)JToken.FromObject(generosEng);
 
-            File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\esp.json", arrayGenerosEsp.ToString());
-            File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\eng.json", arrayGenerosEng.ToString());
+            //File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\esp.json", arrayGenerosEsp.ToString());
+            //File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\eng.json", arrayGenerosEng.ToString());
 
 
         }
@@ -1441,7 +1331,8 @@ namespace PruebaMenuMADU
 
         private void rdbAns1_CheckedChanged(object sender, EventArgs e)
         {
-            
+                     
+
             rdbAns1.BackColor = Color.LightGreen;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
@@ -1457,8 +1348,7 @@ namespace PruebaMenuMADU
 
         private void rdbAns2_CheckedChanged(object sender, EventArgs e)
         {
-                       
-
+                        
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.LightGreen;
             rdbAns3.BackColor = Color.Red;
@@ -1474,7 +1364,7 @@ namespace PruebaMenuMADU
 
         private void rdbAns3_CheckedChanged(object sender, EventArgs e)
         {
-                        
+                                  
 
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
@@ -1491,7 +1381,6 @@ namespace PruebaMenuMADU
         private void rdbAns4_CheckedChanged(object sender, EventArgs e)
         {
                        
-           
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
