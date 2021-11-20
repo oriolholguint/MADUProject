@@ -66,13 +66,13 @@ namespace PruebaMenuMADU
             //generosEng.Add(HipHopEng);
             //generosEng.Add(PopEng);
 
-            //cbxGeneroPreg.DataSource = generosEsp;
-            //cbxGeneroPreg.DisplayMember = "Nombre";
-            //cbxGeneroPreg.ValueMember = "Nombre";
+            cbxGeneroPreg.DataSource = generosEsp;
+            cbxGeneroPreg.DisplayMember = "Nombre";
+            cbxGeneroPreg.ValueMember = "Nombre";
 
-            //cbxGenreQuest.DataSource = generosEng;
-            //cbxGenreQuest.DisplayMember = "Nombre";
-            //cbxGenreQuest.ValueMember = "Nombre";
+            cbxGenreQuest.DataSource = generosEng;
+            cbxGenreQuest.DisplayMember = "Nombre";
+            cbxGenreQuest.ValueMember = "Nombre";
 
             tabIdioma.SelectedTab = tabEspañol;
 
@@ -1135,48 +1135,49 @@ namespace PruebaMenuMADU
 
             foreach (Genero gen in generosEsp)
             {
-                List<Pregunta> preguntasPorGenero = new List<Pregunta>();
+               // List<Pregunta> preguntasPorGenero = new List<Pregunta>();
 
                 foreach (Pregunta pregunt in preguntas)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
 
-                        preguntasPorGenero.Add(pregunt);
+                        gen.Preguntas.Add(pregunt);
                                                
                     }
                 }
-
-                gen.Preguntas = preguntasPorGenero;
 
             }
 
             foreach (Genero gen in generosEng)
             {
-                List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
+               // List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
 
                 foreach (Pregunta pregunt in preguntasEng)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
-                        preguntasPorGeneroEng.Add(pregunt);
+                        gen.Preguntas.Add(pregunt);
                        
                     }
                 }
 
-                gen.Preguntas = preguntasPorGeneroEng;
 
             }
 
 
-            //JArray arrayGenerosEsp = (JArray)JToken.FromObject(generosEsp);
-            //JArray arrayGenerosEng = (JArray)JToken.FromObject(generosEng);
 
-            //File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\esp.json", arrayGenerosEsp.ToString());
-            //File.WriteAllText(@"C:\Users\david\Desktop\Jsonpruebas\eng.json", arrayGenerosEng.ToString());
+
 
 
         }
+
+
+        public List<Genero>[] getArrays()
+        {
+            return new List<Genero>[] { this.generosEsp,this.generosEng};
+        }
+
 
         private void btnCargarAudio_Click(object sender, EventArgs e)
         {
