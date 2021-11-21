@@ -26,8 +26,6 @@ namespace PruebaMenuMADU
         DataGridViewPreguntas DgvPreguntas;
 
         ModificarPregunta ModificarPregunta;
-        ModificarPersonaje ModificarPersonaje;
-        ModificarGenero ModificarGenero = new ModificarGenero();
 
         public Menu()
         {
@@ -329,6 +327,8 @@ namespace PruebaMenuMADU
             cp.ShowDialog();
 
             this.SetGeneros(cp.getArrays()[0],cp.getArrays()[1]);
+
+            DgvPreguntas.RecargarDataGridView();
         }
 
         private void buttAddGenre_Click(object sender, EventArgs e)
