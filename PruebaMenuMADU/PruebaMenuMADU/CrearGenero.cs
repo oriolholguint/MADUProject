@@ -18,12 +18,12 @@ namespace PruebaMenuMADU
         Genero createdEsp { get; set; }
 
         Boolean editBool = false;
-
         String path = "..\\..\\Resources\\generos\\";
 
         public Boolean deleteGenre { get; set; }
 
-        public Boolean manualCancel = false;
+
+    public Boolean manualCancel = false;
 
         public CrearGenero(Genero Esp, Genero Eng)
         {
@@ -84,6 +84,12 @@ namespace PruebaMenuMADU
             wmpMusic.URL = genEsp.MusicaFondo;
 
         }
+
+        private void txtUrlOculta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
         private void BntCargarFondo_Click(object sender, EventArgs e)
         {
@@ -138,11 +144,22 @@ namespace PruebaMenuMADU
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+
+            //save images to resources and switch object path value
+            Object[] generoResources = { txtUrlBackground, txtUrlOculta, txtUrlMusic };
+            System.IO.File.Copy("source", "destination");
+
+
+
             List<Personaje> personajes = new List<Personaje>();
             Partida[] partidas = new Partida[10];
             List<Pregunta> preguntas = new List<Pregunta>();
             String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
             int paths = 0;
+
+
+
             foreach(String element in nonNullableStrings)
             {
                 if (String.IsNullOrEmpty(element)){
@@ -160,6 +177,7 @@ namespace PruebaMenuMADU
             }
             if(paths<3)
             {
+
                 MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
@@ -199,6 +217,11 @@ namespace PruebaMenuMADU
             english = null;
             this.Close();
 
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
 
