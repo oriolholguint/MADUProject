@@ -106,7 +106,8 @@ namespace PruebaMenuMADU
                         ResourceManager.addImageToResources(pbImagenPRank1.ImageLocation);
                         ResourceManager.addImageToResources(pbImagenPRank2.ImageLocation);
                         ResourceManager.addImageToResources(pbImagenPRank3.ImageLocation);
-                        
+                        MessageBox.Show("Personajes modificados correctamente", "Gestión de Personajes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                         this.Close();
                     } 
                     else 
