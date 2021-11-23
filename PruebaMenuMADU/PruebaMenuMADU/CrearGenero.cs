@@ -137,7 +137,8 @@ namespace PruebaMenuMADU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List <Personaje> personajes = new List<Personaje>();
+
+            List<Personaje> personajes = new List<Personaje>();
             Partida[] partidas = new Partida[10];
             List<Pregunta> preguntas = new List<Pregunta>();
             String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
@@ -209,11 +210,25 @@ namespace PruebaMenuMADU
             this.Close();
         }
 
+        private void CrearGenero_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGenreName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreGenero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnDeleteGenre_Click(object sender, EventArgs e)
         {
             this.deleteGenre = true;
             this.Close();
         }
-
     }
 }
