@@ -23,14 +23,9 @@ namespace PruebaMenuMADU
         List<Genero> generosEsp = new List<Genero>();
         List<Genero> generosEng = new List<Genero>();
 
-        
-        
-
         public CrearPreguntasForm()
         {
             InitializeComponent();
-
-           
         }
 
         public CrearPreguntasForm(List<Genero> generosEsp, List<Genero> generosEng)
@@ -40,31 +35,9 @@ namespace PruebaMenuMADU
             this.generosEng = generosEng;
         }
 
-
         private void CrearPreguntasForm_Load(object sender, EventArgs e)
         {
-
             OcultarColumna();
-            //Genero Rock = new Genero("Rock", "xx", "xx", "xx", null, null, preguntas);
-            //Genero Electronica = new Genero("Electronica", "xx", "xx", "xx", null, null, preguntas);
-            //Genero HipHop = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntas);
-            //Genero Pop = new Genero("Pop", "xx", "xx", "xx", null, null, preguntas);
-
-            //Genero RockEng = new Genero("Rock", "xx", "xx", "xx", null, null, preguntasEng);
-            //Genero ElectronicEng = new Genero("Electronic", "xx", "xx", "xx", null, null, preguntasEng);
-            //Genero HipHopEng = new Genero("Hip-Hop", "xx", "xx", "xx", null, null, preguntasEng);
-            //Genero PopEng = new Genero("Pop", "xx", "xx", "xx", null, null, preguntasEng);
-
-            //generosEsp.Add(Rock);
-            //generosEsp.Add(Electronica);
-            //generosEsp.Add(HipHop);
-            //generosEsp.Add(Pop);
-
-
-            //generosEng.Add(RockEng);
-            //generosEng.Add(ElectronicEng);
-            //generosEng.Add(HipHopEng);
-            //generosEng.Add(PopEng);
 
             cbxGeneroPreg.DataSource = generosEsp;
             cbxGeneroPreg.DisplayMember = "Nombre";
@@ -78,11 +51,7 @@ namespace PruebaMenuMADU
 
             btnEspañol.FlatStyle = FlatStyle.Flat;
             btnEspañol.FlatAppearance.BorderColor = Color.Blue;
-            btnEspañol.FlatAppearance.BorderSize = 3;
-
-           
         }
-
 
         private void vaciarCampos()
         {
@@ -106,12 +75,6 @@ namespace PruebaMenuMADU
             txtAudioAnt.Text = "";
             txtAudioNuevo.Text = "";
             txtAudioOrigen.Text = "";
-
-            //txtResp1.Text = "";
-            //txtResp2.Text = "";
-            //txtResp3.Text = "";
-            //txtResp4.Text = "";
-
            
             rdbResp1.BackColor = Color.DarkGray;
             rdbResp1.Checked = false;
@@ -125,12 +88,10 @@ namespace PruebaMenuMADU
             rdbResp4.BackColor = Color.DarkGray;
             rdbResp4.Checked = false;
 
-
             rdbAns1.BackColor = Color.DarkGray;
             rdbAns2.BackColor = Color.DarkGray;
             rdbAns3.BackColor = Color.DarkGray;
             rdbAns4.BackColor = Color.DarkGray;
-
 
             rdbAns1.Checked = false;
             rdbAns2.Checked = false;
@@ -144,7 +105,6 @@ namespace PruebaMenuMADU
             btnEspañol.FlatAppearance.BorderSize = 3;
 
             btnIngles.FlatStyle = FlatStyle.Standard;
-
         }
 
         private void OcultarColumna()
@@ -164,10 +124,6 @@ namespace PruebaMenuMADU
             txtAns4.Visible = false;
             rdbAns3.Visible = false;
             rdbAns4.Visible = false;                      
-
-         
-
-
         }
 
         private void DesactivarRadiobutons()
@@ -175,7 +131,6 @@ namespace PruebaMenuMADU
             txtResp1.Text = "";
             txtResp2.Text = "";
             
-
             rdbResp1.BackColor = Color.DarkGray;
             rdbResp1.Checked = false;
 
@@ -188,12 +143,10 @@ namespace PruebaMenuMADU
             rdbResp4.BackColor = Color.DarkGray;
             rdbResp4.Checked = false;
 
-
             rdbAns1.BackColor = Color.DarkGray;
             rdbAns2.BackColor = Color.DarkGray;
             rdbAns3.BackColor = Color.DarkGray;
             rdbAns4.BackColor = Color.DarkGray;
-
 
             rdbAns1.Checked = false;
             rdbAns2.Checked = false;
@@ -201,10 +154,8 @@ namespace PruebaMenuMADU
             rdbAns4.Checked = false;
         }
 
-
         private void MostrarColumna()
         {
-            
             txtResp1.ReadOnly = false;
             txtResp2.ReadOnly = false;
             txtAns1.ReadOnly = false;
@@ -215,24 +166,18 @@ namespace PruebaMenuMADU
             rdbResp3.Visible = true;
             rdbResp4.Visible = true;
 
-
             txtAns3.Visible = true;
             txtAns4.Visible = true;
             rdbAns3.Visible = true;
             rdbAns4.Visible = true;
-
         }
-
-
 
         private void btnAñadirPregunta_Click(object sender, EventArgs e)
         {
             Pregunta pregunta = new Pregunta();
             Pregunta preguntaEng = new Pregunta();
 
-
             //Pregunta en Español
-
 
             pregunta.PreguntaDescripcion = txtNombrePreg.Text;
             pregunta.Genero = (String)cbxGeneroPreg.SelectedValue;
@@ -257,8 +202,6 @@ namespace PruebaMenuMADU
 
             }
 
-
-
             if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
             {
                 pregunta.Sonido = "";
@@ -269,16 +212,13 @@ namespace PruebaMenuMADU
                 {
                     pregunta.Sonido = txtAudioNuevo.Text;
                     File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
-
                 }
                 else
                 {
                     //Si el audio existe cogeme el audio existente
                     pregunta.Sonido = txtAudioNuevo.Text;
                 }
-
             }
-
 
             if (cbxEdad.SelectedIndex == 0)
             {
@@ -288,9 +228,6 @@ namespace PruebaMenuMADU
             {
                 pregunta.EsMayorEdad = true;
             }
-
-
-
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
@@ -310,13 +247,11 @@ namespace PruebaMenuMADU
 
                 pregunta.Respuestas[0] = respuesta1;
                 pregunta.Respuestas[1] = respuesta2;
-
             }
             else
             {
                 pregunta.Respuestas = new Respuesta[4];
 
-               
                 Respuesta respuesta1 = new Respuesta(txtResp1.Text, false);
                 Respuesta respuesta2 = new Respuesta(txtResp2.Text, false);
                 Respuesta respuesta3 = new Respuesta(txtResp3.Text, false);
@@ -325,7 +260,6 @@ namespace PruebaMenuMADU
                 if (rdbResp1.BackColor == Color.LightGreen)
                 {
                     respuesta1.EsCorrecta = true;                    
-
                 }
                 else if (rdbResp2.BackColor == Color.LightGreen)
                 {
@@ -344,19 +278,14 @@ namespace PruebaMenuMADU
                 pregunta.Respuestas[1] = respuesta2;
                 pregunta.Respuestas[2] = respuesta3;
                 pregunta.Respuestas[3] = respuesta4;
-
             }
 
             preguntas.Add(pregunta);
 
-
-
             //preguntas en Ingles
-
 
             preguntaEng.PreguntaDescripcion = txtQuestName.Text;
             preguntaEng.Genero = (String)cbxGenreQuest.SelectedValue;
-
 
             preguntaEng.Imagen = txtUrlImg.Text;
             preguntaEng.Sonido = txtNewAudio.Text;  
@@ -369,9 +298,6 @@ namespace PruebaMenuMADU
             {
                 preguntaEng.EsMayorEdad = true;
             }
-
-
-
 
             if (cbxQuestType.SelectedIndex == 0)
             {
@@ -401,7 +327,6 @@ namespace PruebaMenuMADU
                 Respuesta respuesta3 = new Respuesta(txtAns3.Text, false);
                 Respuesta respuesta4 = new Respuesta(txtAns4.Text, false);
 
-
                 if (rdbAns1.BackColor == Color.LightGreen)
                 {
                     respuesta1.EsCorrecta = true;    
@@ -417,14 +342,12 @@ namespace PruebaMenuMADU
                 else if (rdbAns4.BackColor == Color.LightGreen)
                 {
                     respuesta4.EsCorrecta = true;
-
                 }
 
                 preguntaEng.Respuestas[0] = respuesta1;
                 preguntaEng.Respuestas[1] = respuesta2;
                 preguntaEng.Respuestas[2] = respuesta3;
                 preguntaEng.Respuestas[3] = respuesta4;
-
             }
 
             if (txtQuestName.Text.Equals("") || txtNombrePreg.Text.Equals(""))
@@ -475,7 +398,6 @@ namespace PruebaMenuMADU
                 flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
                 btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, preguntaEng);
 
-
                 Button btnModificarPregunta = new Button();
                 btnModificarPregunta.Name = "btnModificarPregunta";
                 btnModificarPregunta.Text = "Modificar";
@@ -485,15 +407,11 @@ namespace PruebaMenuMADU
                 btnModificarPregunta.FlatAppearance.BorderSize = 2;
                 btnModificarPregunta.FlatAppearance.MouseOverBackColor = Color.LightYellow;
 
-
-
                 btnModificarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
                 btnModificarPregunta.Size = new Size(130, 40);
                 btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
                 flpListaPreguntas.Controls.Add(btnModificarPregunta);
                 btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, preguntaEng);
-
-
 
                 Button btnEliminarPregunta = new Button();
                 btnEliminarPregunta.Name = "btnEliminarPregunta";
@@ -504,29 +422,19 @@ namespace PruebaMenuMADU
                 btnEliminarPregunta.FlatAppearance.BorderSize = 2;
                 btnEliminarPregunta.FlatAppearance.MouseOverBackColor = Color.MistyRose;
 
-
-
                 btnEliminarPregunta.Font = new Font(new FontFamily("Microsoft Sans Serif"), 14);
                 btnEliminarPregunta.Size = new Size(130, 40);
                 btnEliminarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 50);
                 flpListaPreguntas.Controls.Add(btnEliminarPregunta);
                 btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta, preguntaEng, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
 
-
-
-
                 vaciarCampos();
                 OcultarColumna();
             }
-            
-
-
         }
-
 
         private void btnSeleccionarPregunta_Click(object sender, EventArgs e, Pregunta preg, Pregunta pregEng)
         {
-
             tabIdioma.SelectedTab = tabEspañol;
 
             btnEspañol.FlatStyle = FlatStyle.Flat;
@@ -534,7 +442,6 @@ namespace PruebaMenuMADU
             btnEspañol.FlatAppearance.BorderSize = 3;
 
             btnIngles.FlatStyle = FlatStyle.Standard;
-
 
             //Seleccionar preguntas Español
 
@@ -553,7 +460,6 @@ namespace PruebaMenuMADU
 
             txtImgAnt.Text = preg.Imagen;
             txtAudioAnt.Text = preg.Sonido;
-
 
             if (!preg.Imagen.Equals("")) {
                 pbImagenPregunta.ImageLocation = preg.Imagen;
@@ -580,24 +486,17 @@ namespace PruebaMenuMADU
                 cbxTipoPreg.SelectedIndex = 1;
             }
 
-           
-            
-
             if (cbxTipoPreg.SelectedIndex == 0)
-            {
-                               
+            {           
                 txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
                 rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
 
                 txtResp2.Text = preg.Respuestas[1].RespuestaDescripcion;
-                rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;
-                       
+                rdbResp2.Checked = preg.Respuestas[1].EsCorrecta;         
             }
 
            else
             {
-
-
                 MostrarColumna();
                 txtResp1.Text = preg.Respuestas[0].RespuestaDescripcion;
                 rdbResp1.Checked = preg.Respuestas[0].EsCorrecta;
@@ -610,13 +509,9 @@ namespace PruebaMenuMADU
 
                 txtResp4.Text = preg.Respuestas[3].RespuestaDescripcion;
                 rdbResp4.Checked = preg.Respuestas[3].EsCorrecta;
-
-
             }
 
-
             //Seleccionar pregunta Ingles
-
 
             txtQuestName.Text = pregEng.PreguntaDescripcion;
 
@@ -633,7 +528,6 @@ namespace PruebaMenuMADU
 
             txtOldImg.Text = pregEng.Imagen;
             txtOldAudio.Text = pregEng.Sonido;
-
 
             if (!pregEng.Imagen.Equals(""))
             {
@@ -657,24 +551,16 @@ namespace PruebaMenuMADU
                 cbxQuestType.SelectedIndex = 1;
             }
 
-
-
             if (cbxQuestType.SelectedIndex == 0)
             {
-
                 txtAns1.Text = pregEng.Respuestas[0].RespuestaDescripcion;
                 rdbAns1.Checked = pregEng.Respuestas[0].EsCorrecta;
 
                 txtAns2.Text = pregEng.Respuestas[1].RespuestaDescripcion;
                 rdbAns2.Checked = pregEng.Respuestas[1].EsCorrecta;
-
-              
             }
-
-           else
+            else
             {
-
-
                 MostrarColumna();
                 txtAns1.Text = pregEng.Respuestas[0].RespuestaDescripcion;
                 rdbAns1.Checked = pregEng.Respuestas[0].EsCorrecta;
@@ -687,19 +573,12 @@ namespace PruebaMenuMADU
 
                 txtAns4.Text = pregEng.Respuestas[3].RespuestaDescripcion;
                 rdbAns4.Checked = pregEng.Respuestas[3].EsCorrecta;
-
-
             }
-
-
-
         }
 
         private void cbxGeneroPreg_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
+        { 
           cbxGenreQuest.SelectedIndex = cbxGeneroPreg.SelectedIndex;
-            
         }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
@@ -710,16 +589,12 @@ namespace PruebaMenuMADU
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
-
                 String []palabras = getImage.FileName.Split('\\');
                 String nombreImagen = palabras[palabras.Length - 1];
-
-
-
+                
                 pbImagenPregunta.ImageLocation = getImage.FileName;
                 pbQuestImage.ImageLocation = getImage.FileName;
                
-
                 txtImgOrigen.Text = getImage.FileName;
                 txtOriginImg.Text = getImage.FileName;
 
@@ -731,29 +606,21 @@ namespace PruebaMenuMADU
                 {
                     path = System.IO.Directory.GetParent(path).ToString();
                     String rutaCompleta = "..\\..\\Resources\\";
-                    
 
                     txtUrlImg.Text = rutaCompleta + nombreImagen;                   
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
-
                 }
-
             }
             else
             {
                 MessageBox.Show("No se selecciono ninguna imagen", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
-
-
         }
 
         private void cbxTipoPreg_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-
                 OcultarColumna();
                 cbxQuestType.SelectedIndex = 0;
                 txtResp1.Text = "Verdadero";
@@ -761,11 +628,9 @@ namespace PruebaMenuMADU
 
                 txtAns1.Text = "True";
                 txtAns2.Text = "False";
-                
             }
             else
             {
-
                 MostrarColumna();
                 cbxQuestType.SelectedIndex = 1;
                 txtResp1.Text = "Resp1";
@@ -773,13 +638,11 @@ namespace PruebaMenuMADU
 
                 txtAns1.Text = "Ans1";
                 txtAns2.Text = "Ans2";
-                
             }
         }
 
         private void rdbResp1_CheckedChanged(object sender, EventArgs e)
         {
-
             rdbResp1.BackColor = Color.LightGreen;
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.Red;
@@ -789,13 +652,10 @@ namespace PruebaMenuMADU
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
             rdbAns4.BackColor = Color.Red;
-
-
         }
 
         private void rdbResp2_CheckedChanged(object sender, EventArgs e)
         {
-            
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.LightGreen;
             rdbResp3.BackColor = Color.Red;
@@ -805,7 +665,6 @@ namespace PruebaMenuMADU
             rdbAns2.BackColor = Color.LightGreen;
             rdbAns3.BackColor = Color.Red;
             rdbAns4.BackColor = Color.Red;
-
         }
 
         private void rdbResp3_CheckedChanged(object sender, EventArgs e)
@@ -826,28 +685,23 @@ namespace PruebaMenuMADU
 
         private void rdbResp4_CheckedChanged(object sender, EventArgs e)
         {
-
             rdbResp1.BackColor = Color.Red;
             rdbResp2.BackColor = Color.Red;           
             rdbResp3.BackColor = Color.Red;
             rdbResp4.BackColor = Color.LightGreen;
 
-
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
             rdbAns4.BackColor = Color.LightGreen;
-
         }
 
 
         private void btnModificarPregunta_Click(object sender, EventArgs e, Pregunta preg, Pregunta pregEng)
         {
-
             if (txtQuestName.Text.Equals("") || txtNombrePreg.Text.Equals(""))
             {
                 MessageBox.Show("Pregunta descripcion esta vacia");
-
             }
             else if (cbxTipoPreg.SelectedItem == null)
             {
@@ -871,9 +725,6 @@ namespace PruebaMenuMADU
             }
             else
             {
-
-
-
                 //modificar Español
 
                 preg.PreguntaDescripcion = txtNombrePreg.Text;
@@ -888,64 +739,50 @@ namespace PruebaMenuMADU
                     preg.EsMayorEdad = true;
                 }
 
-
                 if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
                 {
-
                     preg.Imagen = "";
                 }
                 else
                 {
                     if (!File.Exists(txtUrlImg.Text))
-                    {
-
+                    { 
                         preg.Imagen = txtUrlImg.Text;
 
                         File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
-
                     }
                     else
                     {
                         //Si la imagen existe cogeme la existente
                         preg.Imagen = txtUrlImg.Text;
-
                     }
 
                 }
 
-
                 if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
                 {
-
                     preg.Sonido = "";
-
                 }
                 else
                 {
                     if (!File.Exists(txtAudioNuevo.Text))
                     {
-
                         preg.Sonido = txtAudioNuevo.Text;
                         File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
-
                     }
                     else
                     {
-                        //Si el audio existe coger el audo existente
+                        //Si el audio existe coger el audio existente
                         preg.Sonido = txtAudioNuevo.Text;
                     }
-
                 }
-
 
                 if (cbxTipoPreg.SelectedIndex == 0)
                 {
-
                     preg.Respuestas = new Respuesta[2];
 
                     Respuesta resp1 = new Respuesta("Verdadero", false);
                     Respuesta resp2 = new Respuesta("Falso", false);
-
 
                     if (rdbResp1.BackColor == Color.LightGreen)
                     {
@@ -970,7 +807,6 @@ namespace PruebaMenuMADU
                     Respuesta resp3 = new Respuesta(txtResp3.Text, false);
                     Respuesta resp4 = new Respuesta(txtResp4.Text, false);
 
-
                     if (rdbResp1.BackColor == Color.LightGreen)
                     {
                         resp1.EsCorrecta = true;
@@ -989,17 +825,13 @@ namespace PruebaMenuMADU
                         resp4.EsCorrecta = true;
                     }
 
-
                     preg.Respuestas.SetValue(resp1, 0);
                     preg.Respuestas.SetValue(resp2, 1);
                     preg.Respuestas.SetValue(resp3, 2);
                     preg.Respuestas.SetValue(resp4, 3);
-
                 }
 
-
                 //Modificar Ingles
-
 
                 pregEng.PreguntaDescripcion = txtQuestName.Text;
                 pregEng.Genero = (String)cbxGenreQuest.SelectedValue;
@@ -1020,17 +852,14 @@ namespace PruebaMenuMADU
 
                 if (cbxQuestType.SelectedIndex == 0)
                 {
-
                     pregEng.Respuestas = new Respuesta[2];
 
                     Respuesta resp1 = new Respuesta("Verdadero", false);
                     Respuesta resp2 = new Respuesta("Falso", false);
 
-
                     if (rdbAns1.BackColor == Color.LightGreen)
                     {
                         resp1.EsCorrecta = true;
-
                     }
                     if (rdbAns2.BackColor == Color.LightGreen)
                     {
@@ -1039,7 +868,6 @@ namespace PruebaMenuMADU
 
                     pregEng.Respuestas.SetValue(resp1, 0);
                     pregEng.Respuestas.SetValue(resp2, 1);
-
                 }
                 else
                 {
@@ -1049,7 +877,6 @@ namespace PruebaMenuMADU
                     Respuesta resp2 = new Respuesta(txtAns2.Text, false);
                     Respuesta resp3 = new Respuesta(txtAns3.Text, false);
                     Respuesta resp4 = new Respuesta(txtAns4.Text, false);
-
 
                     if (rdbAns1.BackColor == Color.LightGreen)
                     {
@@ -1068,25 +895,13 @@ namespace PruebaMenuMADU
                         resp4.EsCorrecta = true;
                     }
 
-
                     pregEng.Respuestas.SetValue(resp1, 0);
                     pregEng.Respuestas.SetValue(resp2, 1);
                     pregEng.Respuestas.SetValue(resp3, 2);
                     pregEng.Respuestas.SetValue(resp4, 3);
-
                 }
-
-
-
-
             }
-
-
-
-
         }
-
-
 
         private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg,Pregunta pregEng, RadioButton botonSeleccionar, Button BotonEliminar, Button botonModificar)
         {
@@ -1100,7 +915,6 @@ namespace PruebaMenuMADU
             //    File.Delete(preg.Sonido);
             //}
 
-
             preguntas.Remove(preg);
             preguntasEng.Remove(pregEng);
 
@@ -1110,7 +924,6 @@ namespace PruebaMenuMADU
 
             vaciarCampos();
 
-            
             rdbResp1.BackColor = Color.DarkGray;
             rdbResp1.Checked = false;
 
@@ -1127,12 +940,10 @@ namespace PruebaMenuMADU
             rdbResp4.Checked = false;
 
             OcultarColumna();
-
         }
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-
             foreach (Genero gen in generosEsp)
             {
                // List<Pregunta> preguntasPorGenero = new List<Pregunta>();
@@ -1141,59 +952,41 @@ namespace PruebaMenuMADU
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
-
-                        gen.Preguntas.Add(pregunt);
-                                               
+                        gen.Preguntas.Add(pregunt);                   
                     }
                 }
-
             }
 
             foreach (Genero gen in generosEng)
             {
                // List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
-
                 foreach (Pregunta pregunt in preguntasEng)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
                         gen.Preguntas.Add(pregunt);
-                       
                     }
                 }
-
-
             }
-
-
-
-
-
-
         }
-
 
         public List<Genero>[] getArrays()
         {
             return new List<Genero>[] { this.generosEsp,this.generosEng};
         }
 
-
         private void btnCargarAudio_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog getAudio = new OpenFileDialog();
             getAudio.InitialDirectory = "C:\\";
             getAudio.Filter = "Archivos de Audio (*.mp3)(*.mp4)|*.mp3;*mp4|WAV (*.wav)|*.wav|WMA (*.wma)|*.wma";
 
             if (getAudio.ShowDialog() == DialogResult.OK)
-            {
-
+            { 
                 String[] palabras = getAudio.FileName.Split('\\');
                 String nombreAudio = palabras[palabras.Length - 1];
                 String[] nombreSinExtension = palabras[palabras.Length - 1].Split('.');
 
-                
                 txtAudioOrigen.Text = getAudio.FileName;
                 txtOriginAudio.Text = getAudio.FileName;
 
@@ -1211,36 +1004,24 @@ namespace PruebaMenuMADU
 
                     Reproductor.URL = txtAudioOrigen.Text;
                     Player.URL = txtOriginAudio.Text;
-
                 }
-
-
-
             }
             else
             {
                 MessageBox.Show("No se selecciono ningun audio", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
         }
-
-
 
         private void btnSinImagen_Click(object sender, EventArgs e)
         {
             pbImagenPregunta.Image = null;
 
-
             txtImgOrigen.Text = "";
             txtUrlImg.Text = "";
-
 
             pbQuestImage.Image = null;
             txtOriginImg.Text = "";
             txtUrlImageEngl.Text = "";
-
-
         }
 
         private void btnSinAudio_Click(object sender, EventArgs e)
@@ -1254,7 +1035,6 @@ namespace PruebaMenuMADU
 
             txtNewAudio.Text = "";
             txtOriginAudio.Text = "";
-
         }
         
 
@@ -1267,7 +1047,6 @@ namespace PruebaMenuMADU
             btnEspañol.FlatAppearance.BorderSize = 3;
 
             btnIngles.FlatStyle = FlatStyle.Standard;
-
         }
 
         private void btnIngles_Click(object sender, EventArgs e)
@@ -1279,30 +1058,23 @@ namespace PruebaMenuMADU
             btnIngles.FlatAppearance.BorderSize = 3;
 
             btnEspañol.FlatStyle = FlatStyle.Standard;
-
         }
 
         private void cbxQuestType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxQuestType.SelectedIndex == 0)
             {
-
                 OcultarColumna();
                 cbxTipoPreg.SelectedIndex = 0;
                 DesactivarRadiobutons();
                 txtResp1.Text = "Verdadero";
                 txtResp2.Text = "Falso";
 
-
                 txtAns1.Text = "True";
                 txtAns2.Text = "False";
-
-               
-
             }
             else
             {
-
                 MostrarColumna();
                 cbxTipoPreg.SelectedIndex = 1;
                 DesactivarRadiobutons();
@@ -1311,7 +1083,6 @@ namespace PruebaMenuMADU
 
                 txtAns1.Text = "";
                 txtAns2.Text = "";
-
             }
         }
 
@@ -1332,24 +1103,19 @@ namespace PruebaMenuMADU
 
         private void rdbAns1_CheckedChanged(object sender, EventArgs e)
         {
-                     
-
             rdbAns1.BackColor = Color.LightGreen;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
             rdbAns4.BackColor = Color.Red;
 
-
             rdbResp1.BackColor = Color.LightGreen;
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.Red;
             rdbResp4.BackColor = Color.Red;
-
         }
 
         private void rdbAns2_CheckedChanged(object sender, EventArgs e)
-        {
-                        
+        {         
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.LightGreen;
             rdbAns3.BackColor = Color.Red;
@@ -1359,14 +1125,10 @@ namespace PruebaMenuMADU
             rdbResp2.BackColor = Color.LightGreen;
             rdbResp3.BackColor = Color.Red;
             rdbResp4.BackColor = Color.Red;
-
-            
         }
 
         private void rdbAns3_CheckedChanged(object sender, EventArgs e)
         {
-                                  
-
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.LightGreen;
@@ -1376,12 +1138,10 @@ namespace PruebaMenuMADU
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.LightGreen;
             rdbResp4.BackColor = Color.Red;
-
         }
 
         private void rdbAns4_CheckedChanged(object sender, EventArgs e)
-        {
-                       
+        {        
             rdbAns1.BackColor = Color.Red;
             rdbAns2.BackColor = Color.Red;
             rdbAns3.BackColor = Color.Red;
@@ -1391,27 +1151,21 @@ namespace PruebaMenuMADU
             rdbResp2.BackColor = Color.Red;
             rdbResp3.BackColor = Color.Red;
             rdbResp4.BackColor = Color.LightGreen;
-
         }
 
         private void btnLoadImage_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
             getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
-
                 String[] palabras = getImage.FileName.Split('\\');
                 String nombreImagen = palabras[palabras.Length - 1];
 
-
-
                 pbQuestImage.ImageLocation = getImage.FileName;
                 pbImagenPregunta.ImageLocation = getImage.FileName;
-
 
                 txtOriginImg.Text = getImage.FileName;
                 txtImgOrigen.Text = getImage.FileName;
@@ -1428,24 +1182,16 @@ namespace PruebaMenuMADU
                     txtUrlImageEngl.Text = rutaCompleta + nombreImagen;
                     txtImgAnt.Text = rutaCompleta + nombreImagen;
                     txtUrlImg.Text = rutaCompleta + nombreImagen;
-                   
-
                 }
-
-
-
             }
             else
             {
                 MessageBox.Show("No se selecciono ninguna imagen", "Sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
         }
 
         private void btnWithoutImage_Click(object sender, EventArgs e)
         {
-
             pbQuestImage.Image = null;
             txtOriginImg.Text = "";
             txtUrlImageEngl.Text = "";
@@ -1453,21 +1199,16 @@ namespace PruebaMenuMADU
             pbImagenPregunta.Image = null;
             txtImgOrigen.Text = "";
             txtUrlImg.Text = "";
-
-
-
         }
 
         private void btnLoadAudio_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog getAudio = new OpenFileDialog();
             getAudio.InitialDirectory = "C:\\";
             getAudio.Filter = "Archivos de Audio (*.mp3)(*.mp4)|*.mp3;*mp4|WAV (*.wav)|*.wav|WMA (*.wma)|*.wma";
 
             if (getAudio.ShowDialog() == DialogResult.OK)
             {
-
                 String[] palabras = getAudio.FileName.Split('\\');
                 String nombreAudio = palabras[palabras.Length - 1];
                 String[] nombreSinExtension = palabras[palabras.Length - 1].Split('.');
@@ -1490,12 +1231,7 @@ namespace PruebaMenuMADU
 
                     Player.URL = txtOriginAudio.Text;
                     Reproductor.URL = txtAudioOrigen.Text;
-                   
-
                 }
-
-
-
             }
             else
             {

@@ -81,6 +81,7 @@ namespace PruebaMenuMADU
         {
             this.GenerosEsp = GenerosEsp;
             this.GenerosEng = GenerosEng;
+            
         }
 
         //Relleno el combo box de generos
@@ -328,7 +329,7 @@ namespace PruebaMenuMADU
 
             this.SetGeneros(cp.getArrays()[0],cp.getArrays()[1]);
 
-            DgvPreguntas.RecargarDataGridView();
+            //DgvPreguntas.RecargarDataGridView();
         }
 
         private void buttAddGenre_Click(object sender, EventArgs e)
