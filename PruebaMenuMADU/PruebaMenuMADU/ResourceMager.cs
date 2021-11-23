@@ -10,8 +10,8 @@ namespace PruebaMenuMADU
 {
     public class ResourceManager
     {
-        public const String SOUNDS_PATH = "..\\..\\resources\\sound\\";
-        public const String IMAGES_PATH = "..\\..\\resources\\images\\";
+        public const String SOUNDS_PATH = "..\\..\\Resources\\sound\\";
+        public const String IMAGES_PATH = "..\\..\\Resources\\images\\";
 
         public static void addSoundToResources(String pathOrigin)
         {

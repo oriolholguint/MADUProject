@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,17 +77,17 @@ namespace PruebaMenuMADU
             }
             Personaje perRank1 = new Personaje();
             perRank1.Nombre = textBoxRank1.Text;
-            perRank1.Imagen = pbImagenPRank1.ImageLocation;
+            perRank1.Imagen = Path.GetFileName(pbImagenPRank1.ImageLocation);
             perRank1.PosicionRanking = 1;
 
             Personaje perRank2 = new Personaje();
             perRank2.Nombre = textBoxRank2.Text;
-            perRank2.Imagen = pbImagenPRank2.ImageLocation;
+            perRank2.Imagen = Path.GetFileName(pbImagenPRank2.ImageLocation);
             perRank2.PosicionRanking = 2;
 
             Personaje perRank3 = new Personaje();
             perRank3.Nombre = textBoxRank3.Text;
-            perRank3.Imagen = pbImagenPRank3.ImageLocation;
+            perRank3.Imagen = Path.GetFileName(pbImagenPRank3.ImageLocation);
             perRank3.PosicionRanking = 3;
 
             if (!String.IsNullOrEmpty(textBoxRank1.Text) && !String.IsNullOrWhiteSpace(textBoxRank1.Text) && pbImagenPRank1.Image != null)
@@ -133,8 +134,8 @@ namespace PruebaMenuMADU
             foreach (Personaje personaje in Personajes)
             {
                 nom[cont].Text = personaje.Nombre;
-                img[cont].Image = Image.FromFile(personaje.Imagen);
-                img[cont].ImageLocation = personaje.Imagen;
+                img[cont].Image = Image.FromFile(ResourceManager.IMAGES_PATH + personaje.Imagen);
+                img[cont].ImageLocation = ResourceManager.IMAGES_PATH + personaje.Imagen;
                 cont++;
             }
         }

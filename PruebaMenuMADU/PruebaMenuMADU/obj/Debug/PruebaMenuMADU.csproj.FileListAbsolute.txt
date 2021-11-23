@@ -84,12 +84,9 @@ D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\AxInterop.WM
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.ResolveComReference.cache
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearGenero.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearPreguntasForm.resources
-D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPersonajes.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Login.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Menu.resources
-D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarGenero.resources
-D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPersonaje.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPregunta.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Properties.Resources.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.RecuperarContrasenya.resources

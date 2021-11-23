@@ -58,25 +58,8 @@
     <Compile Include="CrearPreguntasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <!-- <Compile Include="CrearPreguntasForm1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrearPreguntasForm.resx</DependentUpon>
-    </Compile> -->
-    <!-- <Compile Include="DataGridViewGeneros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataGridViewGeneros.Designer.cs">
-      <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
-    </Compile> -->
     <Compile Include="CrearPreguntasForm.Designer.cs">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataGridViewPersonajes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataGridViewPersonajes.Designer.cs">
-      <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>
     </Compile>
     <Compile Include="DataGridViewPreguntas.cs">
       <SubType>Form</SubType>
@@ -104,18 +87,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarGenero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarGenero.Designer.cs">
-      <DependentUpon>ModificarGenero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarPersonaje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarPersonaje.Designer.cs">
-      <DependentUpon>ModificarPersonaje.cs</DependentUpon>
-    </Compile>
     <Compile Include="ModificarPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,22 +112,6 @@
     <EmbeddedResource Include="CrearPreguntasForm.resx">
       <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- <EmbeddedResource Include="DataGridViewGeneros.resx">
-      <DependentUpon>DataGridViewGeneros.cs</DependentUpon>
-    </EmbeddedResource> -->
-    <!-- <EmbeddedResource Include="CrearPreguntasForm.resx">
-      <DependentUpon>CrearPreguntasForm.cs</DependentUpon> -->
-    <!-- <Generator>ResXFileCodeGenerator</Generator> -->
-    <!-- <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput> -->
-    <!-- </EmbeddedResource> -->
-    <!-- <EmbeddedResource Include="CrearPreguntasForm.resx">
-      <DependentUpon>CrearPreguntasForm.cs</DependentUpon>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>CrearPreguntasForm1.Designer.cs</LastGenOutput>
-    </EmbeddedResource> -->
-    <EmbeddedResource Include="DataGridViewPersonajes.resx">
-      <DependentUpon>DataGridViewPersonajes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewPreguntas.resx">
       <DependentUpon>DataGridViewPreguntas.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,12 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarGenero.resx">
-      <DependentUpon>ModificarGenero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarPersonaje.resx">
-      <DependentUpon>ModificarPersonaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarPregunta.resx">
       <DependentUpon>ModificarPregunta.cs</DependentUpon>
