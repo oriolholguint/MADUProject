@@ -29,7 +29,6 @@ namespace PruebaMenuMADU
         public List<Genero> GeneroIngles { get; set; }
 
         List<Personaje> personatges = new List<Personaje>();
-
         private void btnCargarImagen1_Click(object sender, EventArgs e)
         {
             
@@ -72,53 +71,34 @@ namespace PruebaMenuMADU
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<Personaje> Personajes = GeneroEspanyol[comboBox1.SelectedIndex].Personajes;
-            TextBox [] nom = { textBoxRank1, textBoxRank2, textBoxRank3 };
-            PictureBox[] img = { pbImagenPRank3, pbImagenPRank2, pbImagenPRank1 };
-            int cont = 0;
-
-            foreach (Personaje personaje in Personajes)
-            {
-                nom[cont].Text = personaje.Nombre;
-                img[cont].Image = Image.FromFile(personaje.Imagen);
-                cont++;
-            }
+            
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            
-            String nomRank1, nomRank2, nomRank3,rutaImgR1, rutaImgR2, rutaImgR3;
-            int posGenero;
 
-            posGenero = comboBox1.SelectedIndex;
+            int posGenero = comboBox1.SelectedIndex;
 
-            nomRank1 = textBoxRank1.Text;
-            rutaImgR1 = pbImagenPRank1.ImageLocation;
             Personaje perRank1 = new Personaje();
-            perRank1.Nombre = nomRank1;
-            perRank1.Imagen = rutaImgR1;
+            perRank1.Nombre = textBoxRank1.Text;
+            perRank1.Imagen = pbImagenPRank1.ImageLocation;
             perRank1.PosicionRanking = 1;
 
-            nomRank2 = textBoxRank2.Text;
-            rutaImgR2 = pbImagenPRank2.ImageLocation;
             Personaje perRank2 = new Personaje();
-            perRank2.Nombre = nomRank2;
-            perRank2.Imagen = rutaImgR2;
+            perRank2.Nombre = textBoxRank2.Text;
+            perRank2.Imagen = pbImagenPRank2.ImageLocation;
             perRank2.PosicionRanking = 2;
 
-            nomRank3 = textBoxRank3.Text;
-            rutaImgR3 = pbImagenPRank3.ImageLocation;
             Personaje perRank3 = new Personaje();
-            perRank3.Nombre = nomRank3;
-            perRank3.Imagen = rutaImgR3;
+            perRank3.Nombre = textBoxRank3.Text;
+            perRank3.Imagen = pbImagenPRank3.ImageLocation;
             perRank3.PosicionRanking = 3;
 
-            if (!String.IsNullOrEmpty(nomRank1) && !String.IsNullOrWhiteSpace(nomRank1) && pbImagenPRank1.Image != null)
+            if (!String.IsNullOrEmpty(textBoxRank1.Text) && !String.IsNullOrWhiteSpace(textBoxRank1.Text) && pbImagenPRank1.Image != null)
             {
-                if (!String.IsNullOrEmpty(nomRank2) && !String.IsNullOrWhiteSpace(nomRank2) && pbImagenPRank2.Image != null)
+                if (!String.IsNullOrEmpty(textBoxRank2.Text) && !String.IsNullOrWhiteSpace(textBoxRank2.Text) && pbImagenPRank2.Image != null)
                 {
-                    if (!String.IsNullOrEmpty(nomRank3) && !String.IsNullOrWhiteSpace(nomRank3) && pbImagenPRank3.Image != null)
+                    if (!String.IsNullOrEmpty(textBoxRank3.Text) && !String.IsNullOrWhiteSpace(textBoxRank3.Text) && pbImagenPRank3.Image != null)
                     {
                         personatges.Add(perRank1);
                         personatges.Add(perRank2);
@@ -145,6 +125,36 @@ namespace PruebaMenuMADU
 
 
 
+        }
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            List<Personaje> Personajes = GeneroEspanyol[comboBox1.SelectedIndex].Personajes;
+            TextBox[] nom = { textBoxRank1, textBoxRank2, textBoxRank3 };
+            PictureBox[] img = { pbImagenPRank1, pbImagenPRank2, pbImagenPRank3 };
+            int cont = 0;
+            if (!Personajes.Any()) cleanElements();
+            foreach (Personaje personaje in Personajes)
+            {
+                nom[cont].Text = personaje.Nombre;
+                img[cont].Image = Image.FromFile(personaje.Imagen);
+                img[cont].ImageLocation = personaje.Imagen;
+                cont++;
+            }
+        }
+        private void cleanElements()
+        {
+            TextBox[] nom = { textBoxRank1, textBoxRank2, textBoxRank3 };
+            PictureBox[] img = { pbImagenPRank1, pbImagenPRank2, pbImagenPRank3 };
+            int cont = 0;
+            
+            foreach (TextBox it in nom)
+            {
+                nom[cont].Text = "";
+                img[cont].Image = null;
+                img[cont].ImageLocation = null;
+                cont++;
+            }
         }
     }
 }
