@@ -114,11 +114,11 @@ namespace PruebaMenuMADU
             perRank3.Imagen = rutaImgR3;
             perRank3.PosicionRanking = 3;
 
-            if (!String.IsNullOrEmpty(nomRank1) || !String.IsNullOrWhiteSpace(nomRank1) || pbImagenPRank1.Image == null)
+            if (!String.IsNullOrEmpty(nomRank1) && !String.IsNullOrWhiteSpace(nomRank1) && pbImagenPRank1.Image != null)
             {
-                if (!String.IsNullOrEmpty(nomRank2) || !String.IsNullOrWhiteSpace(nomRank2) || pbImagenPRank2.Image == null)
+                if (!String.IsNullOrEmpty(nomRank2) && !String.IsNullOrWhiteSpace(nomRank2) && pbImagenPRank2.Image != null)
                 {
-                    if (!String.IsNullOrEmpty(nomRank3) || !String.IsNullOrWhiteSpace(nomRank3) || pbImagenPRank3.Image == null)
+                    if (!String.IsNullOrEmpty(nomRank3) && !String.IsNullOrWhiteSpace(nomRank3) && pbImagenPRank3.Image != null)
                     {
                         personatges.Add(perRank1);
                         personatges.Add(perRank2);
