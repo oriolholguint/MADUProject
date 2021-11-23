@@ -28,31 +28,122 @@ namespace PruebaMenuMADU
             String imageName = imageFullPath.Split('\\').Last();
             Boolean correcto = false;
 
-            if (File.Exists(IMAGES_PATH + imageName)) correcto = false;
-            try
+            if (File.Exists(IMAGES_PATH + imageName))
             {
-                System.IO.File.Copy(imageFullPath, IMAGES_PATH + imageName);
+                correcto = false;
             }
-            catch
+            else
             {
-                return false;
+
+                try
+                {
+                    System.IO.File.Copy(imageFullPath, IMAGES_PATH + imageName);
+                    correcto = true;
+                }
+                catch
+                {
+                    correcto = false;
+                }
             }
-            return true;
+            
+            return correcto;
         }
 
         public static Boolean deleteImageFromResources(String relativeFullPath)
         {
-            if (!File.Exists(relativeFullPath)) return false;
-            try
+            Boolean correcto = false;
+            if (File.Exists(relativeFullPath))
             {
-                File.Delete(relativeFullPath);
-            }
-            catch
-            {
-                return false;
-            }
-            return true;
 
+                try
+                {
+                    File.Delete(relativeFullPath);
+                    correcto = true;
+                }
+                catch
+                {
+                    correcto = false;
+                }
+            }
+            return correcto;
+
+        }
+        public static void deleteUnusedImages(List<Genero> esp, List<Genero> eng)//devuelve
+        {
+            List<string> imageNames = new List<string>();
+            foreach (Genero gen in esp)
+            {
+                imageNames.Add(gen.ImagenFondo.Split('\\').Last());
+                imageNames.Add(gen.ImagenMenu.Split('\\').Last());
+                foreach (Personaje pj in gen.Personajes)
+                {
+                    imageNames.Add(pj.Imagen.Split('\\').Last());
+                }
+                foreach (Pregunta pg in gen.Preguntas)
+                {
+                    imageNames.Add(pg.Imagen.Split('\\').Last());
+                }
+
+            }
+            foreach (Genero gen in eng)
+            {
+                imageNames.Add(gen.ImagenFondo.Split('\\').Last());
+                imageNames.Add(gen.ImagenMenu.Split('\\').Last());
+                foreach (Personaje pj in gen.Personajes)
+                {
+                    imageNames.Add(pj.Imagen.Split('\\').Last());
+                }
+                foreach (Pregunta pg in gen.Preguntas)
+                {
+                    imageNames.Add(pg.Imagen.Split('\\').Last());
+                }
+
+            }
+            DirectoryInfo di = new DirectoryInfo(ResourceManager.IMAGES_PATH);
+
+            FileInfo[] Images = di.GetFiles("*.*");
+            foreach (FileInfo img in Images)
+            {
+                if (!imageNames.Contains(img.Name))
+                {
+                    File.Delete(ResourceManager.IMAGES_PATH + img.Name);
+                }
+            }
+        }
+        public static void deleteUnusedSounds(List<Genero> esp, List<Genero> eng)//devuelve
+        {
+            List<string> soundNames = new List<string>();
+            foreach (Genero gen in esp)
+            {
+                soundNames.Add(gen.MusicaFondo.Split('\\').Last());
+
+                foreach (Pregunta pg in gen.Preguntas)
+                {
+                    soundNames.Add(pg.Sonido.Split('\\').Last());
+                }
+
+            }
+            foreach (Genero gen in eng)
+            {
+                soundNames.Add(gen.MusicaFondo.Split('\\').Last());
+
+                foreach (Pregunta pg in gen.Preguntas)
+                {
+                    soundNames.Add(pg.Sonido.Split('\\').Last());
+                }
+
+            }
+            
+            DirectoryInfo di = new DirectoryInfo(ResourceManager.SOUNDS_PATH);
+
+            FileInfo[] Sounds = di.GetFiles("*.*");
+            foreach (FileInfo sound in Sounds)
+            {
+                if (!soundNames.Contains(sound.Name))
+                {
+                    File.Delete(ResourceManager.SOUNDS_PATH + sound.Name);
+                }
+            }
         }
     }
 }

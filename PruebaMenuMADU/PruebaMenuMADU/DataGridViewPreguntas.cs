@@ -34,6 +34,12 @@ namespace PruebaMenuMADU
             RecargarDataGridView();
         }
 
+        public void SetGeneros(Genero GeneroSeleccionadoEsp, Genero GeneroSeleccionadoEng)
+        {
+            this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
+            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
+        }
+
         public void RecargarDataGridView()
         {
             //dataGridViewTablaPreguntas.DataSource = null; Si activo esta linea tengo que crear metodo que diseñe la data grid view
