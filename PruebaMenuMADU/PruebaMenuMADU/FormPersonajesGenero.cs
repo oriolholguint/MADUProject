@@ -76,9 +76,13 @@ namespace PruebaMenuMADU
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-
+            
             int posGenero = comboBox1.SelectedIndex;
-
+            if (posGenero == -1)
+            {
+                MessageBox.Show("Sel·lecciona un género");
+                return;
+                    }
             Personaje perRank1 = new Personaje();
             perRank1.Nombre = textBoxRank1.Text;
             perRank1.Imagen = pbImagenPRank1.ImageLocation;
