@@ -208,7 +208,23 @@
     "MusicaFondo": "iphone-notificacion.mp3",
     "ImagenFondo": "earth.png",
     "ImagenMenu": "earth.png",
-    "Personajes": [],
+    "Personajes": [
+      {
+        "Nombre": "asdasd",
+        "Imagen": "venus.png",
+        "PosicionRanking": 1
+      },
+      {
+        "Nombre": "asdasd",
+        "Imagen": "neptune.png",
+        "PosicionRanking": 2
+      },
+      {
+        "Nombre": "asdasda",
+        "Imagen": "sun.png",
+        "PosicionRanking": 3
+      }
+    ],
     "Partidas": [
       null,
       null,
