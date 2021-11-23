@@ -334,7 +334,7 @@ namespace PruebaMenuMADU
 
         private void buttAddGenre_Click(object sender, EventArgs e)
         {
-            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
+            CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp, this.GeneroSeleccionadoEng);
             cg.ShowDialog();
             if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {

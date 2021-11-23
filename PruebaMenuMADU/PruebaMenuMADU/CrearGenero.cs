@@ -22,7 +22,7 @@ namespace PruebaMenuMADU
         public Boolean deleteGenre { get; set; }
 
 
-    public Boolean manualCancel = false;
+        public Boolean manualCancel = false;
 
         public CrearGenero(Genero Esp, Genero Eng)
         {
