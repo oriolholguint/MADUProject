@@ -242,7 +242,7 @@ namespace PruebaMenuMADU
                     GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
                     GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
 
-                    //Se devuelven la lista de preguntas del mismo generos
+                    //Se devuelven la lista de preguntasEsp del mismo generos
                     GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
                     GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
                     MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, comboBoxGenero.Text);
