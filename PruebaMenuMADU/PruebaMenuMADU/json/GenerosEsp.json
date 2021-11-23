@@ -1,16 +1,16 @@
 [
   {
     "Nombre": "Rock",
-    "MusicaFondo": "Musica Fondo Rock",
-    "ImagenFondo": "Imagen Fondo Rock",
-    "ImagenMenu": "Imagen Menu Rock",
+    "MusicaFondo": "iphone-notificacion.mp3",
+    "ImagenFondo": "earth.png",
+    "ImagenMenu": "earth.png",
     "Personajes": [],
     "Partidas": [],
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿Qué banda nació primero?",
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -33,8 +33,8 @@
       },
       {
         "PreguntaDescripcion": "¿En qué año se formó Nirvana?",
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -57,8 +57,8 @@
       },
       {
         "PreguntaDescripcion": "¿Cuando inicio el Rock en Español?",
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -81,8 +81,8 @@
       },
       {
         "PreguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -107,16 +107,16 @@
   },
   {
     "Nombre": "Rap",
-    "MusicaFondo": "Musica Fondo Rap",
-    "ImagenFondo": "Imagen Fondo Rap",
-    "ImagenMenu": "Imagen Menu Rap",
+    "MusicaFondo": "iphone-notificacion.mp3",
+    "ImagenFondo": "earth.png",
+    "ImagenMenu": "earth.png",
     "Personajes": [],
     "Partidas": [],
     "Preguntas": [
       {
         "PreguntaDescripcion": "¿En que época surgió el hip-hop?",
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -139,8 +139,8 @@
       },
       {
         "PreguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -163,8 +163,8 @@
       },
       {
         "PreguntaDescripcion": "¿En que país surgió el rap?",
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -187,8 +187,8 @@
       },
       {
         "PreguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
+        "Imagen": "",
+        "Sonido": "",
         "EsMayorEdad": false,
         "Respuestas": [
           {
@@ -205,9 +205,9 @@
   },
   {
     "Nombre": "Pop",
-    "MusicaFondo": "C:\\Users\\cep.CEPNET0\\Downloads\\2Pac - Dear Mama (Official Music Video).mp3",
-    "ImagenFondo": "C:\\Users\\cep.CEPNET0\\Downloads\\1603970279-pexels-photo-3.jpg",
-    "ImagenMenu": "C:\\Users\\cep.CEPNET0\\Downloads\\offset_comp_772626-opt.jpg",
+    "MusicaFondo": "iphone-notificacion.mp3",
+    "ImagenFondo": "earth.png",
+    "ImagenMenu": "earth.png",
     "Personajes": [],
     "Partidas": [
       null,

@@ -18,10 +18,12 @@ namespace PruebaMenuMADU
         Genero createdEsp { get; set; }
 
         Boolean editBool = false;
+
+        String path = "..\\..\\Resources\\generos\\";
+
         public Boolean deleteGenre { get; set; }
 
-
-    public Boolean manualCancel = false;
+        public Boolean manualCancel = false;
 
         public CrearGenero(Genero Esp, Genero Eng)
         {
@@ -77,17 +79,11 @@ namespace PruebaMenuMADU
             txtUrlBackground.Text = genEsp.ImagenFondo;
             txtUrlMusic.Text = genEsp.MusicaFondo;
             txtUrlOculta.Text = genEsp.ImagenMenu;
-            pbBg.Image = Image.FromFile(genEsp.ImagenFondo);
-            pbImagenGenero.Image = Image.FromFile(genEsp.ImagenMenu);
+            pbBg.Image = Image.FromFile(path + genEsp.ImagenFondo);
+            pbImagenGenero.Image = Image.FromFile(path + genEsp.ImagenMenu); //Concateno el path donde se encuentran las imagenes
             wmpMusic.URL = genEsp.MusicaFondo;
 
         }
-
-        private void txtUrlOculta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         
         private void BntCargarFondo_Click(object sender, EventArgs e)
         {
@@ -163,7 +159,6 @@ namespace PruebaMenuMADU
             }
             if(paths<3)
             {
-
                 MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
@@ -203,11 +198,6 @@ namespace PruebaMenuMADU
             english = null;
             this.Close();
 
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 

@@ -81,7 +81,6 @@ namespace PruebaMenuMADU
             this.txtUrlOculta.ReadOnly = true;
             this.txtUrlOculta.Size = new System.Drawing.Size(484, 22);
             this.txtUrlOculta.TabIndex = 2;
-            this.txtUrlOculta.TextChanged += new System.EventHandler(this.txtUrlOculta_TextChanged);
             // 
             // btnCargarImagen
             // 
@@ -248,7 +247,6 @@ namespace PruebaMenuMADU
             this.lblNewNameEng.Size = new System.Drawing.Size(282, 29);
             this.lblNewNameEng.TabIndex = 14;
             this.lblNewNameEng.Text = "Name of the new genre:";
-            this.lblNewNameEng.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtGenreName
             // 
