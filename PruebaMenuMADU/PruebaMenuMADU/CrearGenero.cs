@@ -129,7 +129,7 @@ namespace PruebaMenuMADU
                 foreach (String type in videoTypeAccepted)
                 {
                     Console.WriteLine(musicFile.FileName.Split('.').Last());
-                    if (musicFile.FileName.Split('.').Last().Equals(type))
+                    if (musicFile.FileName.Split('.').Last().Contains(type))
                     {
                         break;
                     }
@@ -152,9 +152,6 @@ namespace PruebaMenuMADU
             //save images to resources and switch object path value
             /*Object[] generoResources = { txtUrlBackground, txtUrlOculta, txtUrlMusic };
             System.IO.File.Copy("source", "destination");*/
-            ResourceManager.addImageToResources(txtUrlOculta.Text);
-            ResourceManager.addImageToResources(txtUrlBackground.Text);
-            ResourceManager.addSoundToResources(txtUrlMusic.Text);
 
 
             List<Personaje> personajes = new List<Personaje>();
@@ -215,6 +212,10 @@ namespace PruebaMenuMADU
             if (controlDeNombre) {
                 this.createdEng = english;
                 this.createdEsp = spanish;
+                ResourceManager.addImageToResources(txtUrlOculta.Text);
+                ResourceManager.addImageToResources(txtUrlBackground.Text);
+                ResourceManager.addSoundToResources(txtUrlMusic.Text);
+
                 this.Close();
                     return;
             }
@@ -225,32 +226,12 @@ namespace PruebaMenuMADU
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         internal Genero getCreatedGenre(String lang){return (lang.Contains("es") ? this.createdEsp : this.createdEng);}
 
         private void butCancel_Click(object sender, EventArgs e)
         {
             manualCancel = true;
             this.Close();
-        }
-
-        private void CrearGenero_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtGenreName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombreGenero_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDeleteGenre_Click(object sender, EventArgs e)
