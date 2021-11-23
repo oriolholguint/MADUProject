@@ -25,16 +25,15 @@ namespace PruebaMenuMADU
         }
 
         public List<Genero> GeneroEspanyol { get; set; }
-        //generoespañol[2].persionajes =
+
         public List<Genero> GeneroIngles { get; set; }
 
         List<Personaje> personatges = new List<Personaje>();
         private void btnCargarImagen1_Click(object sender, EventArgs e)
         {
-            
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
-            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            getImage.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
@@ -45,10 +44,9 @@ namespace PruebaMenuMADU
 
         private void btnCargarImagen2_Click(object sender, EventArgs e)
         {
-            
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
-            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            getImage.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif) | *.jpg; *jpeg; *.png; *.png";
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
@@ -57,11 +55,10 @@ namespace PruebaMenuMADU
         }
 
         private void btnCargarImagen3_Click(object sender, EventArgs e)
-        {
-            
+        { 
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
-            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg;*jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            getImage.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
 
             if (getImage.ShowDialog() == DialogResult.OK)
             {
@@ -69,20 +66,14 @@ namespace PruebaMenuMADU
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            
             int posGenero = comboBox1.SelectedIndex;
             if (posGenero == -1)
             {
                 MessageBox.Show("Sel·lecciona un género");
                 return;
-                    }
+            }
             Personaje perRank1 = new Personaje();
             perRank1.Nombre = textBoxRank1.Text;
             perRank1.Imagen = pbImagenPRank1.ImageLocation;
@@ -111,6 +102,10 @@ namespace PruebaMenuMADU
                         GeneroEspanyol[posGenero].Personajes = personatges;
                         GeneroIngles[posGenero].Personajes = personatges;
 
+                        ResourceManager.addImageToResources(pbImagenPRank1.ImageLocation);
+                        ResourceManager.addImageToResources(pbImagenPRank2.ImageLocation);
+                        ResourceManager.addImageToResources(pbImagenPRank3.ImageLocation);
+                        
                         this.Close();
                     } 
                     else 
@@ -126,9 +121,6 @@ namespace PruebaMenuMADU
             {
                 MessageBox.Show("Error al Crear Personaje del Rank 1");
             } 
-
-
-
         }
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
