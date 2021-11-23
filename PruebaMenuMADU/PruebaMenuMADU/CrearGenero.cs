@@ -18,7 +18,6 @@ namespace PruebaMenuMADU
         Genero createdEsp { get; set; }
 
         Boolean editBool = false;
-        String path = "..\\..\\Resources\\generos\\";
 
         public Boolean deleteGenre { get; set; }
 
@@ -74,13 +73,17 @@ namespace PruebaMenuMADU
         }
         private void modifyGenre(Genero genEsp,Genero genEng)
         {
+            
+
             txtGenreName.Text = genEng.Nombre;
             txtNombreGenero.Text = genEsp.Nombre;
             txtUrlBackground.Text = genEsp.ImagenFondo;
             txtUrlMusic.Text = genEsp.MusicaFondo;
             txtUrlOculta.Text = genEsp.ImagenMenu;
-            pbBg.Image = Image.FromFile(path + genEsp.ImagenFondo);
-            pbImagenGenero.Image = Image.FromFile(path + genEsp.ImagenMenu); //Concateno el path donde se encuentran las imagenes
+
+
+            pbBg.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.ImagenFondo);
+            pbImagenGenero.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.ImagenMenu); //Concateno el path donde se encuentran las imagenes
             wmpMusic.URL = genEsp.MusicaFondo;
 
         }
@@ -125,7 +128,7 @@ namespace PruebaMenuMADU
                 String[] videoTypeAccepted = new String[] {"mp3", "wav", "wma"};
                 foreach (String type in videoTypeAccepted)
                 {
-
+                    Console.WriteLine(musicFile.FileName.Split('.').Last());
                     if (musicFile.FileName.Split('.').Last().Equals(type))
                     {
                         break;
@@ -147,9 +150,11 @@ namespace PruebaMenuMADU
 
 
             //save images to resources and switch object path value
-            Object[] generoResources = { txtUrlBackground, txtUrlOculta, txtUrlMusic };
-            System.IO.File.Copy("source", "destination");
-
+            /*Object[] generoResources = { txtUrlBackground, txtUrlOculta, txtUrlMusic };
+            System.IO.File.Copy("source", "destination");*/
+            ResourceManager.addImageToResources(txtUrlOculta.Text);
+            ResourceManager.addImageToResources(txtUrlBackground.Text);
+            ResourceManager.addSoundToResources(txtUrlMusic.Text);
 
 
             List<Personaje> personajes = new List<Personaje>();
