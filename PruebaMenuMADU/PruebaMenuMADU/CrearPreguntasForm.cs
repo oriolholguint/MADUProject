@@ -17,7 +17,7 @@ namespace PruebaMenuMADU
 {
     public partial class CrearPreguntasForm : Form
     {
-        List<Pregunta> preguntas = new List<Pregunta>();
+        List<Pregunta> preguntasEsp = new List<Pregunta>();
         List<Pregunta> preguntasEng = new List<Pregunta>();
 
         List<Genero> generosEsp = new List<Genero>();
@@ -46,6 +46,9 @@ namespace PruebaMenuMADU
             cbxGenreQuest.DataSource = generosEng;
             cbxGenreQuest.DisplayMember = "Nombre";
             cbxGenreQuest.ValueMember = "Nombre";
+
+            cbxQuestType.SelectedItem = cbxQuestType.Items[0];
+            cbxQuestAge.SelectedItem = cbxQuestAge.Items[0];
 
             tabIdioma.SelectedTab = tabEspañol;
 
@@ -171,67 +174,64 @@ namespace PruebaMenuMADU
             rdbAns3.Visible = true;
             rdbAns4.Visible = true;
         }
-
+  
         private void btnAñadirPregunta_Click(object sender, EventArgs e)
         {
-            Pregunta pregunta = new Pregunta();
+            Pregunta preguntaEsp = new Pregunta();
             Pregunta preguntaEng = new Pregunta();
 
             //Pregunta en Español
 
-            pregunta.PreguntaDescripcion = txtNombrePreg.Text;
-            pregunta.Genero = (String)cbxGeneroPreg.SelectedValue;
-
+            preguntaEsp.PreguntaDescripcion = txtNombrePreg.Text;
+            preguntaEsp.Genero = (String)cbxGeneroPreg.SelectedValue;
 
             if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
             {
-                pregunta.Imagen = "";
+                preguntaEsp.Imagen = "";
             }
             else {
                 if (!File.Exists(txtUrlImg.Text))
                 {
-                    pregunta.Imagen = txtUrlImg.Text;
+                    preguntaEsp.Imagen = txtUrlImg.Text;
                     File.Copy(txtImgOrigen.Text, txtUrlImg.Text);
-
                 }
                 else
                 {
-                   //Si la imagen exite coge la imagen existente
-                    pregunta.Imagen = txtUrlImg.Text;
+                    //Si la imagen exite coge la imagen existente
+                    preguntaEsp.Imagen = txtUrlImg.Text;
                 }
-
             }
 
             if (txtAudioNuevo.Text.Equals("") && txtAudioOrigen.Text.Equals(""))
             {
-                pregunta.Sonido = "";
+                preguntaEsp.Sonido = "";
             }
             else
             {
                 if (!File.Exists(txtAudioNuevo.Text))
                 {
-                    pregunta.Sonido = txtAudioNuevo.Text;
+                    preguntaEsp.Sonido = txtAudioNuevo.Text;
                     File.Copy(txtAudioOrigen.Text, txtAudioNuevo.Text);
                 }
                 else
                 {
                     //Si el audio existe cogeme el audio existente
-                    pregunta.Sonido = txtAudioNuevo.Text;
+                    preguntaEsp.Sonido = txtAudioNuevo.Text;
                 }
             }
 
             if (cbxEdad.SelectedIndex == 0)
             {
-                pregunta.EsMayorEdad = false;
+                preguntaEsp.EsMayorEdad = false;
             }
             else
             {
-                pregunta.EsMayorEdad = true;
+                preguntaEsp.EsMayorEdad = true;
             }
 
             if (cbxTipoPreg.SelectedIndex == 0)
             {
-                pregunta.Respuestas = new Respuesta[2];
+                preguntaEsp.Respuestas = new Respuesta[2];
 
                 Respuesta respuesta1 = new Respuesta("Verdadero", false);
                 Respuesta respuesta2 = new Respuesta("Falso", false);
@@ -245,12 +245,12 @@ namespace PruebaMenuMADU
                     respuesta2.EsCorrecta = true;
                 }
 
-                pregunta.Respuestas[0] = respuesta1;
-                pregunta.Respuestas[1] = respuesta2;
+                preguntaEsp.Respuestas[0] = respuesta1;
+                preguntaEsp.Respuestas[1] = respuesta2;
             }
             else
             {
-                pregunta.Respuestas = new Respuesta[4];
+                preguntaEsp.Respuestas = new Respuesta[4];
 
                 Respuesta respuesta1 = new Respuesta(txtResp1.Text, false);
                 Respuesta respuesta2 = new Respuesta(txtResp2.Text, false);
@@ -274,15 +274,15 @@ namespace PruebaMenuMADU
                     respuesta4.EsCorrecta = true;
                 }
 
-                pregunta.Respuestas[0] = respuesta1;
-                pregunta.Respuestas[1] = respuesta2;
-                pregunta.Respuestas[2] = respuesta3;
-                pregunta.Respuestas[3] = respuesta4;
+                preguntaEsp.Respuestas[0] = respuesta1;
+                preguntaEsp.Respuestas[1] = respuesta2;
+                preguntaEsp.Respuestas[2] = respuesta3;
+                preguntaEsp.Respuestas[3] = respuesta4;
             }
 
-            preguntas.Add(pregunta);
+            preguntasEsp.Add(preguntaEsp);
 
-            //preguntas en Ingles
+            //preguntasEsp en Ingles
 
             preguntaEng.PreguntaDescripcion = txtQuestName.Text;
             preguntaEng.Genero = (String)cbxGenreQuest.SelectedValue;
@@ -354,7 +354,8 @@ namespace PruebaMenuMADU
             {
                 MessageBox.Show("Pregunta descripcion esta vacia");
 
-            } else if (cbxTipoPreg.SelectedItem == null)
+            }
+            else if (cbxTipoPreg.SelectedItem == null)
             {
                 MessageBox.Show("Selecciona un tipo");
             }
@@ -372,7 +373,7 @@ namespace PruebaMenuMADU
             }
             else if (cbxTipoPreg.SelectedIndex == 1 && txtResp1.Text.Equals("") || txtResp2.Text.Equals("") || txtResp3.Text.Equals("") || txtResp4.Text.Equals("") || txtAns1.Text.Equals("") || txtAns2.Text.Equals("") || txtAns3.Text.Equals("") || txtAns4.Text.Equals(""))
             {
-                MessageBox.Show("Hay respuestas vacias de las 4 opciones" );
+                MessageBox.Show("Hay respuestas vacias de las 4 opciones");
             }
             else
             {
@@ -396,7 +397,7 @@ namespace PruebaMenuMADU
                 btnSeleccionarPregunta.FlatAppearance.CheckedBackColor = Color.Blue;
                 btnSeleccionarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 20);
                 flpListaPreguntas.Controls.Add(btnSeleccionarPregunta);
-                btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, pregunta, preguntaEng);
+                btnSeleccionarPregunta.Click += (sender2, e2) => btnSeleccionarPregunta_Click(sender2, e2, preguntaEsp, preguntaEng);
 
                 Button btnModificarPregunta = new Button();
                 btnModificarPregunta.Name = "btnModificarPregunta";
@@ -411,7 +412,7 @@ namespace PruebaMenuMADU
                 btnModificarPregunta.Size = new Size(130, 40);
                 btnModificarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 80);
                 flpListaPreguntas.Controls.Add(btnModificarPregunta);
-                btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, pregunta, preguntaEng);
+                btnModificarPregunta.Click += (sender2, e2) => btnModificarPregunta_Click(sender2, e2, preguntaEsp, preguntaEng);
 
                 Button btnEliminarPregunta = new Button();
                 btnEliminarPregunta.Name = "btnEliminarPregunta";
@@ -426,7 +427,7 @@ namespace PruebaMenuMADU
                 btnEliminarPregunta.Size = new Size(130, 40);
                 btnEliminarPregunta.Location = new Point(3, flpListaPreguntas.Controls.Count * 50);
                 flpListaPreguntas.Controls.Add(btnEliminarPregunta);
-                btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, pregunta, preguntaEng, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
+                btnEliminarPregunta.Click += (sender2, e2) => btnEliminarPregunta_Click(sender2, e2, preguntaEsp, preguntaEng, btnSeleccionarPregunta, btnEliminarPregunta, btnModificarPregunta);
 
                 vaciarCampos();
                 OcultarColumna();
@@ -443,7 +444,7 @@ namespace PruebaMenuMADU
 
             btnIngles.FlatStyle = FlatStyle.Standard;
 
-            //Seleccionar preguntas Español
+            //Seleccionar preguntasEsp Español
 
             txtNombrePreg.Text = preg.PreguntaDescripcion;
 
@@ -511,7 +512,7 @@ namespace PruebaMenuMADU
                 rdbResp4.Checked = preg.Respuestas[3].EsCorrecta;
             }
 
-            //Seleccionar pregunta Ingles
+            //Seleccionar preguntaEsp Ingles
 
             txtQuestName.Text = pregEng.PreguntaDescripcion;
 
@@ -901,6 +902,8 @@ namespace PruebaMenuMADU
                     pregEng.Respuestas.SetValue(resp4, 3);
                 }
             }
+            vaciarCampos();
+            OcultarColumna();
         }
 
         private void btnEliminarPregunta_Click(object sender, EventArgs e, Pregunta preg,Pregunta pregEng, RadioButton botonSeleccionar, Button BotonEliminar, Button botonModificar)
@@ -915,7 +918,7 @@ namespace PruebaMenuMADU
             //    File.Delete(preg.Sonido);
             //}
 
-            preguntas.Remove(preg);
+            preguntasEsp.Remove(preg);
             preguntasEng.Remove(pregEng);
 
             flpListaPreguntas.Controls.Remove(botonSeleccionar);
@@ -944,11 +947,13 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            foreach (Genero gen in generosEsp)
+            //Recorre los generos enviados desde el menu principal
+            /*foreach (Genero gen in generosEsp)
             {
                // List<Pregunta> preguntasPorGenero = new List<Pregunta>();
 
-                foreach (Pregunta pregunt in preguntas)
+                //Recorremos el array de preguntasEsp y si el genero coincide añadimos la preguntaEsp a la lista enviada del menu principal
+                foreach (Pregunta pregunt in preguntasEsp)
                 {
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
@@ -965,6 +970,26 @@ namespace PruebaMenuMADU
                     if (pregunt.Genero.Equals(gen.Nombre))
                     {
                         gen.Preguntas.Add(pregunt);
+                    }
+                }
+            }*/
+
+            //CODIGO OPTIMIZADO
+            for(int i = 0; i < preguntasEsp.Count; i++)
+            {
+                int counter = 0;
+                Boolean encontrado = false;
+                while(counter < generosEsp.Count && !encontrado)
+                {
+                    if(preguntasEsp[i].Genero.Equals(generosEsp[counter].Nombre))
+                    {
+                        generosEsp[counter].Preguntas.Add(preguntasEsp[i]);
+                        generosEng[counter].Preguntas.Add(preguntasEng[i]);
+                        encontrado = true;
+                    }
+                    else
+                    {
+                        counter++;
                     }
                 }
             }

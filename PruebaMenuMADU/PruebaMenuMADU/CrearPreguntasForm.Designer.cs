@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPreguntasForm));
             this.txtNombrePreg = new System.Windows.Forms.TextBox();
             this.cbxGeneroPreg = new System.Windows.Forms.ComboBox();
@@ -62,7 +63,6 @@
             this.rdbResp1 = new System.Windows.Forms.RadioButton();
             this.rdbResp2 = new System.Windows.Forms.RadioButton();
             this.txtResp4 = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlCrearPreguntas = new System.Windows.Forms.Panel();
             this.btnCrearPreguntas = new System.Windows.Forms.Button();
             this.tabIdioma = new System.Windows.Forms.TabControl();
@@ -107,13 +107,14 @@
             this.pnlSeleccionIdioma = new System.Windows.Forms.Panel();
             this.btnIngles = new System.Windows.Forms.Button();
             this.btnEspañol = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenPregunta)).BeginInit();
             this.gbAudio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
             this.gbRespuestas.SuspendLayout();
             this.tlpRespuestas.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.pnlCrearPreguntas.SuspendLayout();
             this.tabIdioma.SuspendLayout();
             this.tabEspañol.SuspendLayout();
@@ -130,15 +131,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbQuestImage)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlSeleccionIdioma.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombrePreg
             // 
             this.txtNombrePreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombrePreg.Location = new System.Drawing.Point(15, 21);
-            this.txtNombrePreg.Multiline = true;
+            this.txtNombrePreg.MaxLength = 112;
             this.txtNombrePreg.Name = "txtNombrePreg";
-            this.txtNombrePreg.Size = new System.Drawing.Size(1677, 103);
+            this.txtNombrePreg.Size = new System.Drawing.Size(1677, 98);
             this.txtNombrePreg.TabIndex = 2;
             // 
             // cbxGeneroPreg
@@ -449,6 +452,7 @@
             this.txtResp3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtResp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResp3.Location = new System.Drawing.Point(3, 87);
+            this.txtResp3.MaxLength = 45;
             this.txtResp3.Name = "txtResp3";
             this.txtResp3.Size = new System.Drawing.Size(738, 75);
             this.txtResp3.TabIndex = 5;
@@ -460,6 +464,7 @@
             this.txtResp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResp2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtResp2.Location = new System.Drawing.Point(845, 3);
+            this.txtResp2.MaxLength = 45;
             this.txtResp2.Name = "txtResp2";
             this.txtResp2.Size = new System.Drawing.Size(700, 75);
             this.txtResp2.TabIndex = 1;
@@ -470,6 +475,7 @@
             this.txtResp1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtResp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResp1.Location = new System.Drawing.Point(3, 3);
+            this.txtResp1.MaxLength = 45;
             this.txtResp1.Name = "txtResp1";
             this.txtResp1.Size = new System.Drawing.Size(738, 75);
             this.txtResp1.TabIndex = 0;
@@ -509,20 +515,11 @@
             this.txtResp4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtResp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResp4.Location = new System.Drawing.Point(845, 87);
+            this.txtResp4.MaxLength = 45;
             this.txtResp4.Name = "txtResp4";
             this.txtResp4.Size = new System.Drawing.Size(700, 75);
             this.txtResp4.TabIndex = 4;
             this.txtResp4.Text = "Resp4";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.flowLayoutPanel1.Controls.Add(this.pnlCrearPreguntas);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 96);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pnlCrearPreguntas
             // 
@@ -1042,6 +1039,20 @@
             this.btnEspañol.UseVisualStyleBackColor = true;
             this.btnEspañol.Click += new System.EventHandler(this.btnEspañol_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.flowLayoutPanel1.Controls.Add(this.pnlCrearPreguntas);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1924, 96);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // CrearPreguntasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1065,7 +1076,6 @@
             this.gbRespuestas.ResumeLayout(false);
             this.tlpRespuestas.ResumeLayout(false);
             this.tlpRespuestas.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.pnlCrearPreguntas.ResumeLayout(false);
             this.tabIdioma.ResumeLayout(false);
             this.tabEspañol.ResumeLayout(false);
@@ -1087,6 +1097,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbQuestImage)).EndInit();
             this.panel1.ResumeLayout(false);
             this.pnlSeleccionIdioma.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1117,7 +1129,6 @@
         private System.Windows.Forms.RadioButton rdbResp3;
         private System.Windows.Forms.TextBox txtResp3;
         private System.Windows.Forms.TextBox txtResp4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnlCrearPreguntas;
         private System.Windows.Forms.Button btnCrearPreguntas;
         private System.Windows.Forms.TextBox txtImgOrigen;
@@ -1170,5 +1181,7 @@
         private System.Windows.Forms.Button btnLoadImage;
         private System.Windows.Forms.PictureBox pbQuestImage;
         private System.Windows.Forms.ComboBox cbxQuestType;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
