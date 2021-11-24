@@ -40,12 +40,12 @@ namespace PruebaMenuMADU
             OcultarColumna();
 
             cbxGeneroPreg.DataSource = generosEsp;
-            cbxGeneroPreg.DisplayMember = "Nombre";
-            cbxGeneroPreg.ValueMember = "Nombre";
+            cbxGeneroPreg.DisplayMember = "nombre";
+            cbxGeneroPreg.ValueMember = "nombre";
 
             cbxGenreQuest.DataSource = generosEng;
-            cbxGenreQuest.DisplayMember = "Nombre";
-            cbxGenreQuest.ValueMember = "Nombre";
+            cbxGenreQuest.DisplayMember = "nombre";
+            cbxGenreQuest.ValueMember = "nombre";
 
             cbxQuestType.SelectedItem = cbxQuestType.Items[0];
             cbxQuestAge.SelectedItem = cbxQuestAge.Items[0];
@@ -955,9 +955,9 @@ namespace PruebaMenuMADU
                 //Recorremos el array de preguntasEsp y si el genero coincide añadimos la preguntaEsp a la lista enviada del menu principal
                 foreach (Pregunta pregunt in preguntasEsp)
                 {
-                    if (pregunt.Genero.Equals(gen.Nombre))
+                    if (pregunt.Genero.Equals(gen.nombre))
                     {
-                        gen.Preguntas.Add(pregunt);                   
+                        gen.preguntas.Add(pregunt);                   
                     }
                 }
             }
@@ -967,9 +967,9 @@ namespace PruebaMenuMADU
                // List<Pregunta> preguntasPorGeneroEng = new List<Pregunta>();
                 foreach (Pregunta pregunt in preguntasEng)
                 {
-                    if (pregunt.Genero.Equals(gen.Nombre))
+                    if (pregunt.Genero.Equals(gen.nombre))
                     {
-                        gen.Preguntas.Add(pregunt);
+                        gen.preguntas.Add(pregunt);
                     }
                 }
             }*/
@@ -981,10 +981,10 @@ namespace PruebaMenuMADU
                 Boolean encontrado = false;
                 while(counter < generosEsp.Count && !encontrado)
                 {
-                    if(preguntasEsp[i].genero.Equals(generosEsp[counter].Nombre))
+                    if(preguntasEsp[i].genero.Equals(generosEsp[counter].nombre))
                     {
-                        generosEsp[counter].Preguntas.Add(preguntasEsp[i]);
-                        generosEng[counter].Preguntas.Add(preguntasEng[i]);
+                        generosEsp[counter].preguntas.Add(preguntasEsp[i]);
+                        generosEng[counter].preguntas.Add(preguntasEng[i]);
                         encontrado = true;
                     }
                     else

@@ -20,7 +20,7 @@ namespace PruebaMenuMADU
             InitializeComponent();
             foreach (Genero item in GeneroEspanyol)
             {
-                comboBox1.Items.Add(item.Nombre);
+                comboBox1.Items.Add(item.nombre);
 
             }
         }
@@ -100,13 +100,13 @@ namespace PruebaMenuMADU
                         personatges.Add(perRank2);
                         personatges.Add(perRank3);
 
-                        GeneroEspanyol[posGenero].Personajes = personatges;
-                        GeneroIngles[posGenero].Personajes = personatges;
+                        GeneroEspanyol[posGenero].personajes = personatges;
+                        GeneroIngles[posGenero].personajes = personatges;
 
                         ResourceManager.addImageToResources(pbImagenPRank1.ImageLocation);
                         ResourceManager.addImageToResources(pbImagenPRank2.ImageLocation);
                         ResourceManager.addImageToResources(pbImagenPRank3.ImageLocation);
-                        MessageBox.Show("Personajes modificados correctamente", "Gestión de Personajes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("personajes modificados correctamente", "Gestión de personajes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         this.Close();
                     } 
@@ -127,7 +127,7 @@ namespace PruebaMenuMADU
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            List<Personaje> Personajes = GeneroEspanyol[comboBox1.SelectedIndex].Personajes;
+            List<Personaje> Personajes = GeneroEspanyol[comboBox1.SelectedIndex].personajes;
             TextBox[] nom = { textBoxRank1, textBoxRank2, textBoxRank3 };
             PictureBox[] img = { pbImagenPRank1, pbImagenPRank2, pbImagenPRank3 };
             int cont = 0;

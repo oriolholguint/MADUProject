@@ -43,7 +43,7 @@ namespace PruebaMenuMADU
         public void RecargarDataGridView()
         {
             //dataGridViewTablaPreguntas.DataSource = null; Si activo esta linea tengo que crear metodo que diseñe la data grid view
-            dataGridViewTablaPreguntas.DataSource = new BindingList<Pregunta>(GeneroSeleccionadoEsp.Preguntas);
+            dataGridViewTablaPreguntas.DataSource = new BindingList<Pregunta>(GeneroSeleccionadoEsp.preguntas);
             dataGridViewTablaPreguntas.Update();
             dataGridViewTablaPreguntas.Refresh();
             //Elimino la columna genero ya que no es necesario para el datagridview
@@ -53,7 +53,7 @@ namespace PruebaMenuMADU
 
         public void CargarPreguntaSeleccionada()
         {
-            if (GeneroSeleccionadoEsp.Preguntas.Count != 0 && dataGridViewTablaPreguntas.Rows.Count > 0 )
+            if (GeneroSeleccionadoEsp.preguntas.Count != 0 && dataGridViewTablaPreguntas.Rows.Count > 0 )
             {
                 int IndicePregunta = 0;
 
@@ -62,9 +62,9 @@ namespace PruebaMenuMADU
 
                 //Obtengo el objeto de la pregunta seleccionada.
                 PreguntaSeleccionadaEsp = (Pregunta) dataGridViewTablaPreguntas.CurrentRow.DataBoundItem;
-                IndicePregunta = GeneroSeleccionadoEsp.Preguntas.IndexOf(PreguntaSeleccionadaEsp);
+                IndicePregunta = GeneroSeleccionadoEsp.preguntas.IndexOf(PreguntaSeleccionadaEsp);
                 //Obtengo la pregunta seleccionada en ingles ya que tengo el indice de la fila seleccionada.
-                PreguntaSeleccionadaEng = GeneroSeleccionadoEng.Preguntas[IndicePregunta];
+                PreguntaSeleccionadaEng = GeneroSeleccionadoEng.preguntas[IndicePregunta];
 
                 ModificarPregunta.setPregunta(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, PreguntaSeleccionadaEsp, PreguntaSeleccionadaEng);
             }

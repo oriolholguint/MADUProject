@@ -218,7 +218,7 @@ namespace PruebaMenuMADU
             this.lblNewName.Name = "lblNewName";
             this.lblNewName.Size = new System.Drawing.Size(319, 29);
             this.lblNewName.TabIndex = 12;
-            this.lblNewName.Text = "Nombre del nuevo género :";
+            this.lblNewName.Text = "nombre del nuevo género :";
             // 
             // panel1
             // 

@@ -140,7 +140,7 @@ namespace PruebaMenuMADU
                 int counterGeneros = 0;
                 while (counterGeneros < comboBoxGenero.Items.Count && !GeneroEncontrado)
                 {
-                    if (GeneroSeleccionadoEsp.Nombre.Equals(comboBoxGenero.Items[counterGeneros].ToString()))
+                    if (GeneroSeleccionadoEsp.nombre.Equals(comboBoxGenero.Items[counterGeneros].ToString()))
                     {
                         comboBoxGenero.SelectedIndex = counterGeneros;
                         GeneroEncontrado = true;
@@ -191,10 +191,10 @@ namespace PruebaMenuMADU
         {
             if(PreguntaEsp != null)
             {
-                GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-                GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+                GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
 
-                MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, GeneroSeleccionadoEsp.Nombre);
+                MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, GeneroSeleccionadoEsp.nombre);
             }
         }
 
@@ -227,11 +227,11 @@ namespace PruebaMenuMADU
                     ResourceManager.addSoundToResources(textBoxSonido.Text);
                     //Se devuelven la lista de un nuevo genero
 
-                    GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-                    GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+                    GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                    GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
 
-                    GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
-                    GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
+                    GeneroEspCambio.preguntas.Add(PreguntaEspToAdd);
+                    GeneroEngCambio.preguntas.Add(PreguntaEngToAdd);
                     MainForm.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
                 }
                 else
@@ -239,12 +239,12 @@ namespace PruebaMenuMADU
                     ResourceManager.addImageToResources(textBoxImagen.Text);
                     ResourceManager.addSoundToResources(textBoxSonido.Text);
 
-                    GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-                    GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+                    GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                    GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
 
                     //Se devuelven la lista de preguntasEsp del mismo generos
-                    GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
-                    GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
+                    GeneroSeleccionadoEsp.preguntas.Add(PreguntaEspToAdd);
+                    GeneroSeleccionadoEng.preguntas.Add(PreguntaEngToAdd);
                     MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, comboBoxGenero.Text);
                 }
 
@@ -367,7 +367,7 @@ namespace PruebaMenuMADU
 
         #endregion
 
-        //Metodos Creacion Objetos Nuevas Preguntas Modificadas
+        //Metodos Creacion Objetos Nuevas preguntas Modificadas
         #region
 
         private Pregunta CrearPreguntaEsp()

@@ -70,7 +70,7 @@ namespace PruebaMenuMADU
             this.groupBox1.Size = new System.Drawing.Size(794, 464);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Crear Personajes para Género: ";
+            this.groupBox1.Text = "Crear personajes para Género: ";
             // 
             // groupBox3
             // 
@@ -210,7 +210,7 @@ namespace PruebaMenuMADU
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Nombre: ";
+            this.label1.Text = "nombre: ";
             // 
             // textBoxRank1
             // 
@@ -238,7 +238,7 @@ namespace PruebaMenuMADU
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(163, 48);
             this.btnCrear.TabIndex = 2;
-            this.btnCrear.Text = "Crear Personajes";
+            this.btnCrear.Text = "Crear personajes";
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 

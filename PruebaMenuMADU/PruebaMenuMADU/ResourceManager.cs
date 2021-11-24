@@ -73,13 +73,13 @@ namespace PruebaMenuMADU
             List<string> imageNames = new List<string>();
             foreach (Genero gen in esp)
             {
-                imageNames.Add(gen.ImagenFondo.Split('\\').Last());
-                imageNames.Add(gen.ImagenMenu.Split('\\').Last());
-                foreach (Personaje pj in gen.Personajes)
+                imageNames.Add(gen.imagenFondo.Split('\\').Last());
+                imageNames.Add(gen.imagenMenu.Split('\\').Last());
+                foreach (Personaje pj in gen.personajes)
                 {
                     imageNames.Add(pj.imagen.Split('\\').Last());
                 }
-                foreach (Pregunta pg in gen.Preguntas)
+                foreach (Pregunta pg in gen.preguntas)
                 {
                     imageNames.Add(pg.imagen.Split('\\').Last());
                 }
@@ -87,13 +87,13 @@ namespace PruebaMenuMADU
             }
             foreach (Genero gen in eng)
             {
-                imageNames.Add(gen.ImagenFondo.Split('\\').Last());
-                imageNames.Add(gen.ImagenMenu.Split('\\').Last());
-                foreach (Personaje pj in gen.Personajes)
+                imageNames.Add(gen.imagenFondo.Split('\\').Last());
+                imageNames.Add(gen.imagenMenu.Split('\\').Last());
+                foreach (Personaje pj in gen.personajes)
                 {
                     imageNames.Add(pj.imagen.Split('\\').Last());
                 }
-                foreach (Pregunta pg in gen.Preguntas)
+                foreach (Pregunta pg in gen.preguntas)
                 {
                     imageNames.Add(pg.imagen.Split('\\').Last());
                 }
@@ -115,9 +115,9 @@ namespace PruebaMenuMADU
             List<string> soundNames = new List<string>();
             foreach (Genero gen in esp)
             {
-                soundNames.Add(gen.MusicaFondo.Split('\\').Last());
+                soundNames.Add(gen.musicaFondo.Split('\\').Last());
 
-                foreach (Pregunta pg in gen.Preguntas)
+                foreach (Pregunta pg in gen.preguntas)
                 {
                     soundNames.Add(pg.sonido.Split('\\').Last());
                 }
@@ -125,9 +125,9 @@ namespace PruebaMenuMADU
             }
             foreach (Genero gen in eng)
             {
-                soundNames.Add(gen.MusicaFondo.Split('\\').Last());
+                soundNames.Add(gen.musicaFondo.Split('\\').Last());
 
-                foreach (Pregunta pg in gen.Preguntas)
+                foreach (Pregunta pg in gen.preguntas)
                 {
                     soundNames.Add(pg.sonido.Split('\\').Last());
                 }

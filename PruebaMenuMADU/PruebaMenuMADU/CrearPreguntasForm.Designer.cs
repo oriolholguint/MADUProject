@@ -542,7 +542,7 @@
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
             this.btnCrearPreguntas.Size = new System.Drawing.Size(288, 49);
             this.btnCrearPreguntas.TabIndex = 13;
-            this.btnCrearPreguntas.Text = "Crear Preguntas";
+            this.btnCrearPreguntas.Text = "Crear preguntas";
             this.btnCrearPreguntas.UseVisualStyleBackColor = false;
             this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
             // 
@@ -586,7 +586,7 @@
             this.bgPregEsp.Size = new System.Drawing.Size(1695, 723);
             this.bgPregEsp.TabIndex = 17;
             this.bgPregEsp.TabStop = false;
-            this.bgPregEsp.Text = "Preguntas Español";
+            this.bgPregEsp.Text = "preguntas Español";
             // 
             // pictureBox1
             // 

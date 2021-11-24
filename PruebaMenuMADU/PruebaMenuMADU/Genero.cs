@@ -9,19 +9,19 @@ namespace PruebaMenuMADU
 {
     public class Genero
     {
-        public String Nombre { get; set; }
+        public String nombre { get; set; }
         
-        public String MusicaFondo { get; set; }
+        public String musicaFondo { get; set; }
 
-        public String ImagenFondo { get; set; }
+        public String imagenFondo { get; set; }
 
-        public String ImagenMenu { get; set; }
+        public String imagenMenu { get; set; }
 
-        public List<Personaje> Personajes { get; set; }
+        public List<Personaje> personajes { get; set; }
 
-        public Partida [] Partidas { get; set; }
+        public Partida [] partidas { get; set; }
 
-        public List<Pregunta> Preguntas { get; set; }
+        public List<Pregunta> preguntas { get; set; }
 
      
 
@@ -33,13 +33,13 @@ namespace PruebaMenuMADU
         public Genero(String Nombre, String MusicaFondo, String ImagenFondo, String ImagenMenu,
                       List<Personaje>  Personajes, Partida[] Partidas, List <Pregunta> Preguntas)
         {
-            this.Nombre = Nombre;
-            this.MusicaFondo = MusicaFondo;
-            this.ImagenFondo = ImagenFondo;
-            this.ImagenMenu = ImagenMenu;
-            this.Personajes = Personajes;
-            this.Partidas = Partidas;
-            this.Preguntas = Preguntas;
+            this.nombre = Nombre;
+            this.musicaFondo = MusicaFondo;
+            this.imagenFondo = ImagenFondo;
+            this.imagenMenu = ImagenMenu;
+            this.personajes = Personajes;
+            this.partidas = Partidas;
+            this.preguntas = Preguntas;
         }
     }
 }

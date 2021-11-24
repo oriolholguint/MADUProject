@@ -41,7 +41,7 @@ namespace PruebaMenuMADU
         }
         public void editMode()
         {
-            lblNewName.Text = "Nombre del genero:";
+            lblNewName.Text = "nombre del genero:";
             lblNewNameEng.Text = "Name of the genre: ";
             btnCreateEdit.Text = "Editar Genero";
         }
@@ -75,16 +75,16 @@ namespace PruebaMenuMADU
         {
             
 
-            txtGenreName.Text = genEng.Nombre;
-            txtNombreGenero.Text = genEsp.Nombre;
-            txtUrlBackground.Text = genEsp.ImagenFondo;
-            txtUrlMusic.Text = genEsp.MusicaFondo;
-            txtUrlOculta.Text = genEsp.ImagenMenu;
+            txtGenreName.Text = genEng.nombre;
+            txtNombreGenero.Text = genEsp.nombre;
+            txtUrlBackground.Text = genEsp.imagenFondo;
+            txtUrlMusic.Text = genEsp.musicaFondo;
+            txtUrlOculta.Text = genEsp.imagenMenu;
 
 
-            pbBg.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.ImagenFondo);
-            pbImagenGenero.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.ImagenMenu); //Concateno el path donde se encuentran las imagenes
-            wmpMusic.URL = genEsp.MusicaFondo;
+            pbBg.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenFondo);
+            pbImagenGenero.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenMenu); //Concateno el path donde se encuentran las imagenes
+            wmpMusic.URL = genEsp.musicaFondo;
 
         }
 
@@ -191,18 +191,18 @@ namespace PruebaMenuMADU
             {
                 foreach (Genero gen in this.listaEsp)
                 {
-                    if (gen.Nombre.Equals(spanish.Nombre))
+                    if (gen.nombre.Equals(spanish.nombre))
                     {
-                        MessageBox.Show("Nombre para el nuevo genero incorrecto", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("nombre para el nuevo genero incorrecto", "Error de nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         controlDeNombre = false;
                         break;
                     }
                 }
                 foreach (Genero gen in this.listaEng)
                 {
-                    if (gen.Nombre.Equals(english.Nombre))
+                    if (gen.nombre.Equals(english.nombre))
                     {
-                        MessageBox.Show("Nombre para el nuevo genero(version ingles) incorrecto/a", "Error de Nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("nombre para el nuevo genero(version ingles) incorrecto/a", "Error de nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         controlDeNombre = false;
                         break;
                     }

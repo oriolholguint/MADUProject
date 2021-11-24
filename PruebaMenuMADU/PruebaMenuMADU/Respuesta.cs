@@ -26,7 +26,7 @@ namespace PruebaMenuMADU
 
         public override string ToString()
         {
-            return "Nombre Respuesta: " + this.respuestaDescripcion + ", Correcta: " + this.esCorrecta;
+            return "nombre Respuesta: " + this.respuestaDescripcion + ", Correcta: " + this.esCorrecta;
         }
     }
 }

@@ -1,231 +1,231 @@
 [
   {
-    "Nombre": "Rock",
-    "MusicaFondo": "iphone-notificacion.mp3",
-    "ImagenFondo": "earth.png",
-    "ImagenMenu": "earth.png",
-    "Personajes": [],
-    "Partidas": [],
-    "Preguntas": [
+    "nombre": "Rock",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [],
+    "partidas": [],
+    "preguntas": [
       {
-        "PreguntaDescripcion": "Which band was born first?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "Which band was born first?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "The Rolling Stones",
-            "EsCorrecta": false
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "The Beatles",
-            "EsCorrecta": true
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "The Doors",
-            "EsCorrecta": false
+            "respuestaDescripcion": "The Doors",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "The Who",
-            "EsCorrecta": false
+            "respuestaDescripcion": "The Who",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "What year was Nirvana formed?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "What year was Nirvana formed?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "1990",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1989",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1989",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1988",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1988",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1987",
-            "EsCorrecta": true
+            "respuestaDescripcion": "1987",
+            "esCorrecta": true
           }
         ]
       },
       {
-        "PreguntaDescripcion": "When did Rock en Español start?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "When did Rock en Español start?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Between 1930 & 1940",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Between 1930 & 1940",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Between 1950 & 1960",
-            "EsCorrecta": true
+            "respuestaDescripcion": "Between 1950 & 1960",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Between 1970 & 1980",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Between 1970 & 1980",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Between 1990 & 2000",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Between 1990 & 2000",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Try JSON 1",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Try JSON 1",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Try JSON 2",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Try JSON 2",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Try JSON 3",
-            "EsCorrecta": true
+            "respuestaDescripcion": "Try JSON 3",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Try JSON 4",
-            "EsCorrecta": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Nombre": "Rap",
-    "MusicaFondo": "iphone-notificacion.mp3",
-    "ImagenFondo": "earth.png",
-    "ImagenMenu": "earth.png",
-    "Personajes": [],
-    "Partidas": [],
-    "Preguntas": [
-      {
-        "PreguntaDescripcion": "At what time did hip-hop emerge?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
-          {
-            "RespuestaDescripcion": "In the 70s",
-            "EsCorrecta": true
-          },
-          {
-            "RespuestaDescripcion": "In the 60",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "In the 90",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "In the 80",
-            "EsCorrecta": false
-          }
-        ]
-      },
-      {
-        "PreguntaDescripcion": "How many 'elements' is hip-hop made of?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
-          {
-            "RespuestaDescripcion": "5",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "4",
-            "EsCorrecta": true
-          },
-          {
-            "RespuestaDescripcion": "2",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "3",
-            "EsCorrecta": false
-          }
-        ]
-      },
-      {
-        "PreguntaDescripcion": "In which country did rap emerge?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
-          {
-            "RespuestaDescripcion": "England",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "Mexico",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "France",
-            "EsCorrecta": false
-          },
-          {
-            "RespuestaDescripcion": "United States",
-            "EsCorrecta": true
-          }
-        ]
-      },
-      {
-        "PreguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
-        "Imagen": "",
-        "Sonido": "",
-        "EsMayorEdad": false,
-        "Respuestas": [
-          {
-            "RespuestaDescripcion": "True",
-            "EsCorrecta": true
-          },
-          {
-            "RespuestaDescripcion": "False",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Try JSON 4",
+            "esCorrecta": false
           }
         ]
       }
     ]
   },
   {
-    "Nombre": "Pop",
-    "MusicaFondo": "iphone-notificacion.mp3",
-    "ImagenFondo": "earth.png",
-    "ImagenMenu": "earth.png",
-    "Personajes": [
+    "nombre": "Rap",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [],
+    "partidas": [],
+    "preguntas": [
       {
-        "Nombre": "asdasd",
-        "Imagen": "venus.png",
-        "PosicionRanking": 1
+        "preguntaDescripcion": "At what time did hip-hop emerge?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "In the 70s",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "In the 60",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "In the 90",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "In the 80",
+            "esCorrecta": false
+          }
+        ]
       },
       {
-        "Nombre": "asdasd",
-        "Imagen": "neptune.png",
-        "PosicionRanking": 2
+        "preguntaDescripcion": "How many 'elements' is hip-hop made of?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          }
+        ]
       },
       {
-        "Nombre": "asdasda",
-        "Imagen": "sun.png",
-        "PosicionRanking": 3
+        "preguntaDescripcion": "In which country did rap emerge?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "England",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mexico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "France",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "United States",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
+        "imagen": "",
+        "sonido": "",
+        "esMayor": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Pop",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [
+      {
+        "nombre": "asdasd",
+        "imagen": "venus.png",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "asdasd",
+        "imagen": "neptune.png",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "asdasda",
+        "imagen": "sun.png",
+        "posicionRanking": 3
       }
     ],
-    "Partidas": [
+    "partidas": [
       null,
       null,
       null,
@@ -237,6 +237,6 @@
       null,
       null
     ],
-    "Preguntas": []
+    "preguntas": []
   }
 ]

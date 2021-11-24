@@ -40,12 +40,12 @@ namespace PruebaMenuMADU
             int IndiceGenero;
 
             IndiceGeneroCambio = this.GenerosEsp.IndexOf(GeneroEspCambio);
-            this.GenerosEsp[IndiceGeneroCambio].Preguntas = GeneroEspCambio.Preguntas;
-            this.GenerosEng[IndiceGeneroCambio].Preguntas = GeneroEngCambio.Preguntas;
+            this.GenerosEsp[IndiceGeneroCambio].preguntas = GeneroEspCambio.preguntas;
+            this.GenerosEng[IndiceGeneroCambio].preguntas = GeneroEngCambio.preguntas;
 
             IndiceGenero = this.GenerosEsp.IndexOf(GeneroEsp);
-            this.GenerosEsp[IndiceGenero].Preguntas = GeneroEsp.Preguntas;
-            this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
+            this.GenerosEsp[IndiceGenero].preguntas = GeneroEsp.preguntas;
+            this.GenerosEng[IndiceGenero].preguntas = GeneroEng.preguntas;
 
             DgvPreguntas.RecargarDataGridView();
             DgvPreguntas.CargarPreguntaSeleccionada();
@@ -59,7 +59,7 @@ namespace PruebaMenuMADU
 
             while(!GeneroEncontrado && Counter < GenerosEsp.Count)
             {
-                if(GenerosEsp[Counter].Nombre.Equals(Genero))
+                if(GenerosEsp[Counter].nombre.Equals(Genero))
                 {
                     GeneroEncontrado = true;
                     Indice = Counter;
@@ -96,7 +96,7 @@ namespace PruebaMenuMADU
             //Recogo todos los nombres de los generos en español para mostrarlos en el combobox
             for(int i = 0; i < Generos.Count; i++)
             {
-                cbxGeneros.Items.Add(Generos[i].Nombre);
+                cbxGeneros.Items.Add(Generos[i].nombre);
             }
         }
 
@@ -115,7 +115,7 @@ namespace PruebaMenuMADU
                 BorrarPanelDatos();
                 BorrarPanelModificar();
 
-                if (GeneroSeleccionadoEsp.Preguntas.Count != 0)
+                if (GeneroSeleccionadoEsp.preguntas.Count != 0)
                 {
                     MostrarFormModificarPregunta();
                     MostrarGridPreguntas();
@@ -140,7 +140,7 @@ namespace PruebaMenuMADU
             {
                 while(counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if(GenerosEsp[counter].Nombre.Equals(Genero))
+                    if(GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroSeleccionadoEsp = GenerosEsp[counter];
@@ -167,7 +167,7 @@ namespace PruebaMenuMADU
             {
                 while (counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    if (GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroEsp = GenerosEsp[counter];
@@ -193,7 +193,7 @@ namespace PruebaMenuMADU
             {
                 while (counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    if (GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroEng = GenerosEng[counter];
@@ -275,7 +275,7 @@ namespace PruebaMenuMADU
 
             for(int i = 0; i < GenerosEsp.Count; i++)
             {
-                NombreGeneros.Add(GenerosEsp[i].Nombre);
+                NombreGeneros.Add(GenerosEsp[i].nombre);
             }
 
             return NombreGeneros;
@@ -372,7 +372,7 @@ namespace PruebaMenuMADU
                     if(this.lista)
                 }
             }*/
-            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.Nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 
         }
     }
