@@ -64,32 +64,32 @@ namespace PruebaMenuMADU
             if (PreguntaEsp != null)
             {
                 //CheckBox Tipo de Pregunta
-                if (PreguntaEsp.Respuestas.Length == 2)
+                if (PreguntaEsp.respuestas.Length == 2)
                 {
                     checkBoxTipoPregunta.Checked = true;
 
                     //Añado el texto de las Respuestas Esp
-                    textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                    textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
+                    textBoxRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                    textBoxRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
                     textBoxRespuesta3.Text = "";
                     textBoxRespuesta4.Text = "";
                     textBoxRespuesta3.Enabled = false;
                     textBoxRespuesta4.Enabled = false;
 
                     //Añado el texto de las Respuestas Eng
-                    textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                    textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
+                    textBoxAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                    textBoxAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
                     textBoxAnwser3.Text = "";
                     textBoxAnwser4.Text = "";
                     textBoxAnwser3.Enabled = false;
                     textBoxAnwser4.Enabled = false;
 
                     //Activa el radio button de la respuesta correcta
-                    if (PreguntaEsp.Respuestas[0].EsCorrecta)
+                    if (PreguntaEsp.respuestas[0].esCorrecta)
                     {
                         radioButtonRespuesta1.Checked = true;
                     }
-                    else if (PreguntaEsp.Respuestas[1].EsCorrecta)
+                    else if (PreguntaEsp.respuestas[1].esCorrecta)
                     {
                         radioButtonRespuesta2.Checked = true;
                     }
@@ -102,16 +102,16 @@ namespace PruebaMenuMADU
                     checkBoxTipoPregunta.Checked = false;
 
                     //Respuestas en Esp
-                    textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                    textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
-                    textBoxRespuesta3.Text = PreguntaEsp.Respuestas[2].RespuestaDescripcion;
-                    textBoxRespuesta4.Text = PreguntaEsp.Respuestas[3].RespuestaDescripcion;
+                    textBoxRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                    textBoxRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
+                    textBoxRespuesta3.Text = PreguntaEsp.respuestas[2].respuestaDescripcion;
+                    textBoxRespuesta4.Text = PreguntaEsp.respuestas[3].respuestaDescripcion;
 
                     //Respuestas en Eng
-                    textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                    textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
-                    textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
-                    textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
+                    textBoxAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                    textBoxAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
+                    textBoxAnwser3.Text = PreguntaEng.respuestas[2].respuestaDescripcion;
+                    textBoxAnwser4.Text = PreguntaEng.respuestas[3].respuestaDescripcion;
 
                     radioButtonRespuesta3.Enabled = true;
                     radioButtonRespuesta4.Enabled = true;
@@ -121,12 +121,12 @@ namespace PruebaMenuMADU
                 }
 
                 //Añado texto de la pregunta en Español
-                textBoxPregunta.Text = PreguntaEsp.PreguntaDescripcion;
+                textBoxPregunta.Text = PreguntaEsp.preguntaDescripcion;
                 //Añado texto de la pregunta en Ingles
-                textBoxQuestion.Text = PreguntaEng.PreguntaDescripcion;
+                textBoxQuestion.Text = PreguntaEng.preguntaDescripcion;
 
                 //Añado informacion conjunta y utilizo la pregunta en español
-                if (PreguntaEsp.EsMayorEdad)
+                if (PreguntaEsp.esMayor)
                 {
                     checkBoxMayorEdad.Checked = true;
                 }
@@ -149,8 +149,8 @@ namespace PruebaMenuMADU
                     counterGeneros++;
                 }
 
-                textBoxImagen.Text = PreguntaEsp.Imagen;
-                textBoxSonido.Text = PreguntaEsp.Sonido;
+                textBoxImagen.Text = PreguntaEsp.imagen;
+                textBoxSonido.Text = PreguntaEsp.sonido;
             }
         }
 
@@ -303,7 +303,7 @@ namespace PruebaMenuMADU
                 else
                 {
                     //Si la pregunta original es de 2 respuestas entrara aqui
-                    if (PreguntaEsp.Respuestas.Length == 2)
+                    if (PreguntaEsp.respuestas.Length == 2)
                     {
                         //Vaciamos los campos de textos de la pregunta 1 y 2
                         textBoxRespuesta1.Text = "";
@@ -328,14 +328,14 @@ namespace PruebaMenuMADU
                     else //Si la pregunta original es de 4 respuestas entrara aqui
                     {
                         //Se coloca el texto de la pregunta en los text box
-                        textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                        textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
-                        textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                        textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
-                        textBoxRespuesta3.Text = PreguntaEsp.Respuestas[2].RespuestaDescripcion;
-                        textBoxRespuesta4.Text = PreguntaEsp.Respuestas[3].RespuestaDescripcion;
-                        textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
-                        textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
+                        textBoxRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                        textBoxRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
+                        textBoxAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                        textBoxAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
+                        textBoxRespuesta3.Text = PreguntaEsp.respuestas[2].respuestaDescripcion;
+                        textBoxRespuesta4.Text = PreguntaEsp.respuestas[3].respuestaDescripcion;
+                        textBoxAnwser3.Text = PreguntaEng.respuestas[2].respuestaDescripcion;
+                        textBoxAnwser4.Text = PreguntaEng.respuestas[3].respuestaDescripcion;
                         //Se activa los radiobuttons de las respuestas 3 y 4
                         radioButtonRespuesta3.Enabled = true;
                         radioButtonRespuesta4.Enabled = true;
@@ -374,20 +374,20 @@ namespace PruebaMenuMADU
         {
             Pregunta Pregunta = new Pregunta();
 
-            Pregunta.PreguntaDescripcion = textBoxPregunta.Text;
+            Pregunta.preguntaDescripcion = textBoxPregunta.Text;
             if (checkBoxMayorEdad.Checked == true)
             {
-                Pregunta.EsMayorEdad = true;
+                Pregunta.esMayor = true;
             }
             else
             {
-                Pregunta.EsMayorEdad = false;
+                Pregunta.esMayor = false;
             }
             String imageName = textBoxImagen.Text.Split('\\').Last();
-            Pregunta.Imagen = ResourceManager.IMAGES_PATH + imageName;
+            Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
             String soundName = textBoxSonido.Text.Split('\\').Last();
-            Pregunta.Sonido = ResourceManager.SOUNDS_PATH + soundName;
-            Pregunta.Respuestas = CrearRespuestaEsp();
+            Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+            Pregunta.respuestas = CrearRespuestaEsp();
             GuardarRespuestaCorrecta(Pregunta);
 
             return Pregunta;
@@ -397,20 +397,20 @@ namespace PruebaMenuMADU
         {
             Pregunta Pregunta = new Pregunta();
 
-            Pregunta.PreguntaDescripcion = textBoxQuestion.Text;
+            Pregunta.preguntaDescripcion = textBoxQuestion.Text;
             if (checkBoxMayorEdad.Checked == true)
             {
-                Pregunta.EsMayorEdad = true;
+                Pregunta.esMayor = true;
             }
             else
             {
-                Pregunta.EsMayorEdad = false;
+                Pregunta.esMayor = false;
             }
             String imageName = textBoxImagen.Text.Split('\\').Last();
-            Pregunta.Imagen = ResourceManager.IMAGES_PATH + imageName;
+            Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
             String soundName = textBoxSonido.Text.Split('\\').Last();
-            Pregunta.Sonido = ResourceManager.SOUNDS_PATH + soundName;
-            Pregunta.Respuestas = CrearRespuestasEng();
+            Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+            Pregunta.respuestas = CrearRespuestasEng();
             GuardarRespuestaCorrecta(Pregunta);
 
             return Pregunta;
@@ -480,19 +480,19 @@ namespace PruebaMenuMADU
         {
             if(radioButtonRespuesta1.Checked == true)
             {
-                Pregunta.Respuestas[0].EsCorrecta = true;
+                Pregunta.respuestas[0].esCorrecta = true;
             }
             else if(radioButtonRespuesta2.Checked == true)
             {
-                Pregunta.Respuestas[1].EsCorrecta = true;
+                Pregunta.respuestas[1].esCorrecta = true;
             }
             else if(radioButtonRespuesta3.Checked == true)
             {
-                Pregunta.Respuestas[2].EsCorrecta = true;
+                Pregunta.respuestas[2].esCorrecta = true;
             }
             else if(radioButtonRespuesta4.Checked == true)
             {
-                Pregunta.Respuestas[3].EsCorrecta = true;
+                Pregunta.respuestas[3].esCorrecta = true;
             }
         }
 
@@ -501,9 +501,9 @@ namespace PruebaMenuMADU
             Boolean RespuestaEncontrada = false;
             int counterRespuestas = 0;
 
-            while (!RespuestaEncontrada && counterRespuestas < PreguntaEsp.Respuestas.Count())
+            while (!RespuestaEncontrada && counterRespuestas < PreguntaEsp.respuestas.Count())
             {
-                if (PreguntaEsp.Respuestas[counterRespuestas].EsCorrecta == true)
+                if (PreguntaEsp.respuestas[counterRespuestas].esCorrecta == true)
                 {
                     switch (counterRespuestas + 1)
                     {

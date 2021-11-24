@@ -8,13 +8,13 @@ namespace PruebaMenuMADU
 {
     public class Partida
     {
-        public int Puntuacion { get; set; }
+        public int puntuacion { get; set; }
 
-        public String Dificultad { get; set; }
+        public String dificultad { get; set; }
 
-        public DateTime Fecha { get; set; }
+        public DateTime fecha { get; set; }
 
-        public Jugador Jugador { get; set; }
+        public Jugador jugador { get; set; }
 
         public Partida()
         {
@@ -23,10 +23,10 @@ namespace PruebaMenuMADU
 
         public Partida(int Puntuacion, String Dificultad, DateTime Fecha, Jugador Jugador)
         {
-            this.Puntuacion = Puntuacion;
-            this.Dificultad = Dificultad;
-            this.Fecha = Fecha;
-            this.Jugador = Jugador;
+            this.puntuacion = Puntuacion;
+            this.dificultad = Dificultad;
+            this.fecha = Fecha;
+            this.jugador = Jugador;
         }
 
 

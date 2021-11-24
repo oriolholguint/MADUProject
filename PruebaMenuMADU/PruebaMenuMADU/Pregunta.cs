@@ -11,18 +11,18 @@ namespace PruebaMenuMADU
 {
     public class Pregunta
     {
-        public String PreguntaDescripcion { get; set; }
+        public String preguntaDescripcion { get; set; }
 
         [JsonIgnore]
-        public String Genero { get; set; }
+        public String genero { get; set; }
 
-        public String Imagen { get; set; }
+        public String imagen { get; set; }
 
-        public String Sonido { get; set; }
+        public String sonido { get; set; }
 
-        public Boolean EsMayorEdad { get; set; }
+        public Boolean esMayor { get; set; }
 
-        public Respuesta[] Respuestas { get; set; }
+        public Respuesta[] respuestas { get; set; }
 
         public Pregunta()
         {
@@ -32,32 +32,32 @@ namespace PruebaMenuMADU
         public Pregunta(String PreguntaDescripcion, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
         {
 
-            this.PreguntaDescripcion = PreguntaDescripcion;
-            this.Imagen = Imagen;
-            this.Sonido = Sonido;
-            this.Genero = Genero;
-            this.EsMayorEdad = EsMayorEdad;
-            this.Respuestas = Respuestas;
+            this.preguntaDescripcion = PreguntaDescripcion;
+            this.imagen = Imagen;
+            this.sonido = Sonido;
+            this.genero = Genero;
+            this.esMayor = esMayor;
+            this.respuestas = Respuestas;
 
         }
         public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
         {
 
-            this.PreguntaDescripcion = PreguntaDescripcion;
-            this.Imagen = Imagen;
-            this.Sonido = Sonido;
-            this.EsMayorEdad = EsMayorEdad;
-            this.Respuestas = Respuestas;
+            this.preguntaDescripcion = PreguntaDescripcion;
+            this.imagen = Imagen;
+            this.sonido = Sonido;
+            this.esMayor = esMayor;
+            this.respuestas = Respuestas;
 
         }
 
         public override string ToString()
         {
-            return "Pregunta Descripcion: " + PreguntaDescripcion +
-                   "Imagen: " + Imagen +
-                   "Sonido: " + Sonido +
-                   "EsMayorEdad: " + EsMayorEdad +
-                   "Respuestas: " + Respuestas;
+            return "Pregunta Descripcion: " + preguntaDescripcion +
+                   "Imagen: " + imagen +
+                   "Sonido: " + sonido +
+                   "EsMayorEdad: " + esMayor +
+                   "Respuestas: " + respuestas;
         }
     }
 }

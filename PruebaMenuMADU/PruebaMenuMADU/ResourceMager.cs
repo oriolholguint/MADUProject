@@ -77,11 +77,11 @@ namespace PruebaMenuMADU
                 imageNames.Add(gen.ImagenMenu.Split('\\').Last());
                 foreach (Personaje pj in gen.Personajes)
                 {
-                    imageNames.Add(pj.Imagen.Split('\\').Last());
+                    imageNames.Add(pj.imagen.Split('\\').Last());
                 }
                 foreach (Pregunta pg in gen.Preguntas)
                 {
-                    imageNames.Add(pg.Imagen.Split('\\').Last());
+                    imageNames.Add(pg.imagen.Split('\\').Last());
                 }
 
             }
@@ -91,11 +91,11 @@ namespace PruebaMenuMADU
                 imageNames.Add(gen.ImagenMenu.Split('\\').Last());
                 foreach (Personaje pj in gen.Personajes)
                 {
-                    imageNames.Add(pj.Imagen.Split('\\').Last());
+                    imageNames.Add(pj.imagen.Split('\\').Last());
                 }
                 foreach (Pregunta pg in gen.Preguntas)
                 {
-                    imageNames.Add(pg.Imagen.Split('\\').Last());
+                    imageNames.Add(pg.imagen.Split('\\').Last());
                 }
 
             }
@@ -119,7 +119,7 @@ namespace PruebaMenuMADU
 
                 foreach (Pregunta pg in gen.Preguntas)
                 {
-                    soundNames.Add(pg.Sonido.Split('\\').Last());
+                    soundNames.Add(pg.sonido.Split('\\').Last());
                 }
 
             }
@@ -129,7 +129,7 @@ namespace PruebaMenuMADU
 
                 foreach (Pregunta pg in gen.Preguntas)
                 {
-                    soundNames.Add(pg.Sonido.Split('\\').Last());
+                    soundNames.Add(pg.sonido.Split('\\').Last());
                 }
 
             }

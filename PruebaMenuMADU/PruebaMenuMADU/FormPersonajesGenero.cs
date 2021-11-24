@@ -76,19 +76,19 @@ namespace PruebaMenuMADU
                 return;
             }
             Personaje perRank1 = new Personaje();
-            perRank1.Nombre = textBoxRank1.Text;
-            perRank1.Imagen = Path.GetFileName(pbImagenPRank1.ImageLocation);
-            perRank1.PosicionRanking = 1;
+            perRank1.nombre = textBoxRank1.Text;
+            perRank1.imagen = Path.GetFileName(pbImagenPRank1.ImageLocation);
+            perRank1.posicionRanking = 1;
 
             Personaje perRank2 = new Personaje();
-            perRank2.Nombre = textBoxRank2.Text;
-            perRank2.Imagen = Path.GetFileName(pbImagenPRank2.ImageLocation);
-            perRank2.PosicionRanking = 2;
+            perRank2.nombre = textBoxRank2.Text;
+            perRank2.imagen = Path.GetFileName(pbImagenPRank2.ImageLocation);
+            perRank2.posicionRanking = 2;
 
             Personaje perRank3 = new Personaje();
-            perRank3.Nombre = textBoxRank3.Text;
-            perRank3.Imagen = Path.GetFileName(pbImagenPRank3.ImageLocation);
-            perRank3.PosicionRanking = 3;
+            perRank3.nombre = textBoxRank3.Text;
+            perRank3.imagen = Path.GetFileName(pbImagenPRank3.ImageLocation);
+            perRank3.posicionRanking = 3;
 
             if (!String.IsNullOrEmpty(textBoxRank1.Text) && !String.IsNullOrWhiteSpace(textBoxRank1.Text) && pbImagenPRank1.Image != null)
             {
@@ -134,9 +134,9 @@ namespace PruebaMenuMADU
             if (!Personajes.Any()) cleanElements();
             foreach (Personaje personaje in Personajes)
             {
-                nom[cont].Text = personaje.Nombre;
-                img[cont].Image = Image.FromFile(ResourceManager.IMAGES_PATH + personaje.Imagen);
-                img[cont].ImageLocation = ResourceManager.IMAGES_PATH + personaje.Imagen;
+                nom[cont].Text = personaje.nombre;
+                img[cont].Image = Image.FromFile(ResourceManager.IMAGES_PATH + personaje.imagen);
+                img[cont].ImageLocation = ResourceManager.IMAGES_PATH + personaje.imagen;
                 cont++;
             }
         }
