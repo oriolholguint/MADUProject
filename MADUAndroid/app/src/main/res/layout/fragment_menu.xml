@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3498DB"
+    tools:context=".FragmentMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/lblMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MADU"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="424dp"
+            android:background="#59E73C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imgBtnRanking"
+                android:layout_width="106dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ranking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imgBtnInformacion"
+                android:layout_width="106dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="820dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/informacion"
+                app:layout_constraintStart_toEndOf="@+id/imgBtnRanking"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListGeneros"
+            android:layout_width="1270dp"
+            android:layout_height="325dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.391" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">MADUAndroid</string>
+    <string name="app_name">MADU_Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="radio_buttons">
+        <item>Respuesta 1</item>
+        <item>Respuesta 2</item>
+        <item>Respuesta 3</item>
+        <item>Respuesta 4</item>
+    </string-array>
 </resources>

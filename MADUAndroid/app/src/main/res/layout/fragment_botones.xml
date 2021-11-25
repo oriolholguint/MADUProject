@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E2A9"
+    tools:context=".FragmentBotones">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FragmentBotones">
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="500dp"
+            android:text="Atras"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSiguienteCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="352dp"
+            android:layout_marginTop="508dp"
+            android:text="Siguiente"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/btnAtras"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="400dp"
+            android:layout_marginTop="500dp"
+            android:text="Siguiente"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/btnSiguienteCentro"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grpBotones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="btnAtras,btnSiguiente"
+            android:visibility="invisible"
+            />
+
+
+        <FrameLayout
+            android:id="@+id/frLContenedorFragments"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

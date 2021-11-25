@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7BE81"
+    tools:context=".FragmentIdioma">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/lblTituloIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu idioma"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+
+        <ImageView
+            android:id="@+id/imgEspañol"
+            android:layout_width="302dp"
+            android:layout_height="201dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="136dp"
+            android:src="@drawable/bespana"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imgIngles"
+            android:layout_width="316dp"
+            android:layout_height="204dp"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="132dp"
+            android:src="@drawable/binglesa"
+            app:layout_constraintStart_toEndOf="@+id/imgEspañol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblDificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:text="Dificultad"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.335"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/sprDificultad"
+            android:layout_width="243dp"
+            android:layout_height="39dp"
+            android:background="@color/white"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="384dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.755"
+            app:layout_constraintStart_toEndOf="@+id/lblDificultad"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

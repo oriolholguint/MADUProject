@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEDED"
+    tools:context=".FragmentLogin">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/lblLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Login"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblLoginUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="124dp"
+            android:text="Usuario:"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtNombreUsuario"
+            android:layout_width="425dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="108dp"
+            android:textSize="30sp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/lblLoginUsuario"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="36dp"
+            android:text="Edad:"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblLoginUsuario" />
+
+        <Spinner
+            android:id="@+id/sprEdad"
+            android:layout_width="206dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="192dp"
+            android:background="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/lblEdad"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="24dp"
+            android:text="Avatar:"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblEdad" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="545dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

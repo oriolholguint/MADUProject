@@ -1,2 +1,2 @@
-rootProject.name = "MADUAndroid"
+rootProject.name = "MADU_Project"
 include ':app'
