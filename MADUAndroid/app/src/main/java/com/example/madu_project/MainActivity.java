@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity
 
         ImageButton imgBtnConfiguracion = findViewById(R.id.imgBtnConfiguracion);
 
+        //no tocar
         androidx.fragment.app.FragmentManager mgr = getSupportFragmentManager();
         androidx.fragment.app.FragmentTransaction fragmentTransaction = mgr.beginTransaction();
 
@@ -41,7 +42,10 @@ public class MainActivity extends AppCompatActivity
         fragmentTransaction.replace(R.id.ContenedorFragmentsPricipales,fragmentBotones);
         fragmentTransaction.commit();
 
-        generos = llenarGeneros();
+        //igualar array al idioma seleccionado
+        //generos = llenarGeneros();
+
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("").setTitle("Opciones");
         final AlertDialog dialog = builder.create();
@@ -58,42 +62,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
-    public ArrayList<Genero> llenarGeneros (){
-
-        ArrayList<Pregunta> preguntasElectronica = new ArrayList<>();
-        ArrayList<Pregunta> preguntasRock = new ArrayList<>();
-        ArrayList<Pregunta> preguntasPop = new ArrayList<>();
-        ArrayList<Pregunta> preguntasHipHop = new ArrayList<>();
-        ArrayList<Personaje> personajes = new ArrayList<>();
-        ArrayList<Partida> partidas = new ArrayList<>();
-        ArrayList<Genero> generos = new ArrayList<>();
-
-        Respuesta [] respuestas = {new Respuesta("Respuesta 1",true),
-                                    new Respuesta("Respuesta 2",false),
-                                    new Respuesta("Respuesta 3",false),
-                                    new Respuesta("Respuesta 4",false)};
-
-        preguntasElectronica.add(new Pregunta("Esta es la pregunta 1 Electronica?","","",true,respuestas));
-        preguntasElectronica.add(new Pregunta("Esta es la pregunta 2 Electronica?","","",true,respuestas));
-        preguntasRock.add(new Pregunta("Esta es la pregunta 1 Rock?","","",true,respuestas));
-        preguntasRock.add(new Pregunta("Esta es la pregunta 2 Rock?","","",true,respuestas));
-        preguntasPop.add(new Pregunta("Esta es la pregunta 1 Pop?","","",true,respuestas));
-        preguntasPop.add(new Pregunta("Esta es la pregunta 2 Pop?","","",true,respuestas));
-        preguntasHipHop.add(new Pregunta("Esta es la pregunta 1 Hip-Hop?","","",true,respuestas));
-        preguntasHipHop.add(new Pregunta("Esta es la pregunta 2 Hip-Hop?","","",true,respuestas));
-
-
-
-        generos.add(new Genero("Electronica","","","",preguntasElectronica,personajes,partidas));
-        generos.add(new Genero("Rock","","","",preguntasRock,personajes,partidas));
-        generos.add(new Genero("Pop","","","",preguntasPop,personajes,partidas));
-        generos.add(new Genero("Hip-Hop","","","",preguntasHipHop,personajes,partidas));
-
-
-        return generos;
-    }
 
 
 }
