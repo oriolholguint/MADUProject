@@ -55,7 +55,6 @@ namespace PruebaMenuMADU
             this.rdbRespuesta3 = new System.Windows.Forms.RadioButton();
             this.rdbRespuesta2 = new System.Windows.Forms.RadioButton();
             this.rdbRespuesta1 = new System.Windows.Forms.RadioButton();
-            this.btnAbrirFicherosImagen = new System.Windows.Forms.Button();
             this.btnAbrirFicherosSonido = new System.Windows.Forms.Button();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.txtQuestion = new System.Windows.Forms.TextBox();
@@ -70,6 +69,7 @@ namespace PruebaMenuMADU
             this.lblAnwser4 = new System.Windows.Forms.Label();
             this.cboTipoPregunta = new System.Windows.Forms.CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnAbrirFicherosImagen = new System.Windows.Forms.Button();
             this.gbRespuestas.SuspendLayout();
             this.gbAnwsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -114,7 +114,7 @@ namespace PruebaMenuMADU
             // 
             this.lblImagen.AutoSize = true;
             this.lblImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.Location = new System.Drawing.Point(13, 745);
+            this.lblImagen.Location = new System.Drawing.Point(15, 745);
             this.lblImagen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImagen.Name = "lblImagen";
             this.lblImagen.Size = new System.Drawing.Size(93, 29);
@@ -125,7 +125,7 @@ namespace PruebaMenuMADU
             // 
             this.lblSonido.AutoSize = true;
             this.lblSonido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSonido.Location = new System.Drawing.Point(13, 785);
+            this.lblSonido.Location = new System.Drawing.Point(18, 792);
             this.lblSonido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSonido.Name = "lblSonido";
             this.lblSonido.Size = new System.Drawing.Size(90, 29);
@@ -240,7 +240,7 @@ namespace PruebaMenuMADU
             // 
             this.txtImagen.Enabled = false;
             this.txtImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImagen.Location = new System.Drawing.Point(115, 743);
+            this.txtImagen.Location = new System.Drawing.Point(116, 745);
             this.txtImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(647, 30);
@@ -250,7 +250,7 @@ namespace PruebaMenuMADU
             // 
             this.txtSonido.Enabled = false;
             this.txtSonido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSonido.Location = new System.Drawing.Point(115, 785);
+            this.txtSonido.Location = new System.Drawing.Point(116, 792);
             this.txtSonido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSonido.Name = "txtSonido";
             this.txtSonido.Size = new System.Drawing.Size(647, 30);
@@ -367,22 +367,14 @@ namespace PruebaMenuMADU
             this.rdbRespuesta1.Text = "Pregunta/Anwser 1";
             this.rdbRespuesta1.UseVisualStyleBackColor = false;
             // 
-            // btnAbrirFicherosImagen
-            // 
-            this.btnAbrirFicherosImagen.Location = new System.Drawing.Point(771, 743);
-            this.btnAbrirFicherosImagen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAbrirFicherosImagen.Name = "btnAbrirFicherosImagen";
-            this.btnAbrirFicherosImagen.Size = new System.Drawing.Size(40, 30);
-            this.btnAbrirFicherosImagen.TabIndex = 19;
-            this.btnAbrirFicherosImagen.UseVisualStyleBackColor = true;
-            this.btnAbrirFicherosImagen.Click += new System.EventHandler(this.btnAbrirFicherosImagen_Click);
-            // 
             // btnAbrirFicherosSonido
             // 
+            this.btnAbrirFicherosSonido.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.carpeta;
+            this.btnAbrirFicherosSonido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAbrirFicherosSonido.Location = new System.Drawing.Point(771, 788);
             this.btnAbrirFicherosSonido.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbrirFicherosSonido.Name = "btnAbrirFicherosSonido";
-            this.btnAbrirFicherosSonido.Size = new System.Drawing.Size(40, 30);
+            this.btnAbrirFicherosSonido.Size = new System.Drawing.Size(40, 37);
             this.btnAbrirFicherosSonido.TabIndex = 21;
             this.btnAbrirFicherosSonido.UseVisualStyleBackColor = true;
             this.btnAbrirFicherosSonido.Click += new System.EventHandler(this.btnAbrirFicherosSonido_Click);
@@ -527,6 +519,18 @@ namespace PruebaMenuMADU
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // btnAbrirFicherosImagen
+            // 
+            this.btnAbrirFicherosImagen.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.carpeta;
+            this.btnAbrirFicherosImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAbrirFicherosImagen.Location = new System.Drawing.Point(771, 743);
+            this.btnAbrirFicherosImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAbrirFicherosImagen.Name = "btnAbrirFicherosImagen";
+            this.btnAbrirFicherosImagen.Size = new System.Drawing.Size(40, 37);
+            this.btnAbrirFicherosImagen.TabIndex = 19;
+            this.btnAbrirFicherosImagen.UseVisualStyleBackColor = true;
+            this.btnAbrirFicherosImagen.Click += new System.EventHandler(this.btnAbrirFicherosImagen_Click);
             // 
             // ModificarPregunta
             // 
