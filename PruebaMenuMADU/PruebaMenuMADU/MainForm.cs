@@ -1,18 +1,12 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebaMenuMADU
 {
-    public partial class Menu : Form
+    public partial class MainForm : Form
     {
         String PathGenerosEsp = "..\\..\\json\\GenerosEsp.json";
         String PathGenerosEng = "..\\..\\json\\GenerosEng.json";
@@ -27,7 +21,7 @@ namespace PruebaMenuMADU
 
         ModificarPregunta ModificarPregunta;
 
-        public Menu()
+        public MainForm()
         {
             InitializeComponent();
             LeerFicheroGeneros();
@@ -215,18 +209,18 @@ namespace PruebaMenuMADU
         private void BorrarPanelDatos()
         {
             //Elimino el form del panel datagridview en el caso que haya uno diferente
-            if (panelDatos.Controls.Count > 0)
+            if (pnlDatos.Controls.Count > 0)
             {
-                panelDatos.Controls.RemoveAt(0);
+                pnlDatos.Controls.RemoveAt(0);
             }
         }
 
         private void BorrarPanelModificar()
         {
             //Elimino el form del panel modificaciones en el caso que haya uno diferente
-            if (panelModificar.Controls.Count > 0)
+            if (pnlModificar.Controls.Count > 0)
             {
-                panelModificar.Controls.RemoveAt(0);
+                pnlModificar.Controls.RemoveAt(0);
             }
         }
 
@@ -235,7 +229,7 @@ namespace PruebaMenuMADU
             //Muestro en el panel de DataGridViews el correspondiente a PreguntasEsp
             DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
             DgvPreguntas.TopLevel = false;
-            panelDatos.Controls.Add(DgvPreguntas);
+            pnlDatos.Controls.Add(DgvPreguntas);
             DgvPreguntas.Show();
         }
 
@@ -244,7 +238,7 @@ namespace PruebaMenuMADU
             //Muestro en el panel de modificaciones el correspondiente a modificar una pregunta.
             ModificarPregunta = new ModificarPregunta(ObtenerNombreGeneros(), this);
             ModificarPregunta.TopLevel = false;
-            panelModificar.Controls.Add(ModificarPregunta);
+            pnlModificar.Controls.Add(ModificarPregunta);
             ModificarPregunta.Show();
         }
 
@@ -255,13 +249,13 @@ namespace PruebaMenuMADU
         private void ActivarBotonesOpciones()
         {
             buttonPreguntas.Enabled = true;
-            BtnGenConfig.Enabled = true;
+            btnGenConfig.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
             buttonPreguntas.Enabled = false;
-            BtnGenConfig.Enabled = false;
+            btnGenConfig.Enabled = false;
         }
 
         #endregion
@@ -300,7 +294,7 @@ namespace PruebaMenuMADU
         //Metodos Crear Fichero JSON
         #region
 
-        private void buttonGenerarJSON_Click(object sender, EventArgs e)
+        private void btnGenerarJSON_Click(object sender, EventArgs e)
         {
             CrearFicheroJson();
         }
@@ -332,7 +326,7 @@ namespace PruebaMenuMADU
             //DgvPreguntas.RecargarDataGridView();
         }
 
-        private void buttAddGenre_Click(object sender, EventArgs e)
+        private void btnAddGenre_Click(object sender, EventArgs e)
         {
             CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp, this.GeneroSeleccionadoEng);
             cg.ShowDialog();
@@ -351,13 +345,13 @@ namespace PruebaMenuMADU
 
         }
 
-        private void ButtonCrearP_Click(object sender, EventArgs e)
+        private void btnGestionarPersonajes_Click(object sender, EventArgs e)
         {
             FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng);
             f.ShowDialog();
         }
 
-        private void BtnGenConfig_Click(object sender, EventArgs e)
+        private void btnGenConfig_Click(object sender, EventArgs e)
         {
             
             CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
@@ -375,5 +369,6 @@ namespace PruebaMenuMADU
             if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 
         }
+
     }
 }

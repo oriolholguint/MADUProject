@@ -86,7 +86,6 @@ D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMA
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.CrearPreguntasForm.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.DataGridViewPreguntas.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Login.resources
-D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Menu.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.ModificarPregunta.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Properties.Resources.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.RecuperarContrasenya.resources
@@ -162,3 +161,4 @@ C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\
 C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.csproj.CopyComplete
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.MainForm.resources
