@@ -20,7 +20,7 @@ namespace PruebaMenuMADU
 
         public String sonido { get; set; }
 
-        public Boolean esMayor { get; set; }
+        public Boolean esMayorEdad { get; set; }
 
         public Respuesta[] respuestas { get; set; }
 
@@ -29,24 +29,24 @@ namespace PruebaMenuMADU
 
         }
 
-        public Pregunta(String PreguntaDescripcion, String Genero,String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
+        public Pregunta(String PreguntaDescripcion, String Genero,String Imagen, String Sonido, Boolean esMayorEdad, Respuesta[] Respuestas)
         {
 
             this.preguntaDescripcion = PreguntaDescripcion;
             this.imagen = Imagen;
             this.sonido = Sonido;
             this.genero = Genero;
-            this.esMayor = esMayor;
+            this.esMayorEdad = esMayorEdad;
             this.respuestas = Respuestas;
 
         }
-        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean MayorDeEdad, Respuesta[] Respuestas)
+        public Pregunta(String PreguntaDescripcion, String Imagen, String Sonido, Boolean esMayorEdad, Respuesta[] Respuestas)
         {
 
             this.preguntaDescripcion = PreguntaDescripcion;
             this.imagen = Imagen;
             this.sonido = Sonido;
-            this.esMayor = esMayor;
+            this.esMayorEdad = esMayorEdad;
             this.respuestas = Respuestas;
 
         }
@@ -56,7 +56,7 @@ namespace PruebaMenuMADU
             return "Pregunta Descripcion: " + preguntaDescripcion +
                    "Imagen: " + imagen +
                    "Sonido: " + sonido +
-                   "EsMayorEdad: " + esMayor +
+                   "EsMayorEdad: " + esMayorEdad +
                    "Respuestas: " + respuestas;
         }
     }

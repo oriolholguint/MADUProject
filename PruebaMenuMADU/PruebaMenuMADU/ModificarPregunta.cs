@@ -126,7 +126,7 @@ namespace PruebaMenuMADU
                 txtQuestion.Text = PreguntaEng.preguntaDescripcion;
 
                 //Añado informacion conjunta y utilizo la pregunta en español
-                if (PreguntaEsp.esMayor)
+                if (PreguntaEsp.esMayorEdad)
                 {
                     cboMayorEdad.Checked = true;
                 }
@@ -223,8 +223,14 @@ namespace PruebaMenuMADU
 
                 if (GeneroEspCambio != null)
                 {
-                    ResourceManager.addImageToResources(txtImagen.Text);
-                    ResourceManager.addSoundToResources(txtSonido.Text);
+                    if (!String.IsNullOrEmpty(txtImagen.Text))
+                    {
+                        ResourceManager.addImageToResources(txtImagen.Text);
+                    }
+                    if (!String.IsNullOrEmpty(txtSonido.Text))
+                    {
+                        ResourceManager.addSoundToResources(txtSonido.Text);
+                    }
                     //Se devuelven la lista de un nuevo genero
 
                     GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
@@ -236,8 +242,14 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
-                    ResourceManager.addImageToResources(txtImagen.Text);
-                    ResourceManager.addSoundToResources(txtSonido.Text);
+                    if (!String.IsNullOrEmpty(txtImagen.Text))
+                    {
+                        ResourceManager.addImageToResources(txtImagen.Text);
+                    }
+                    if (!String.IsNullOrEmpty(txtSonido.Text))
+                    {
+                        ResourceManager.addSoundToResources(txtSonido.Text);
+                    }
 
                     GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
                     GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
@@ -377,16 +389,24 @@ namespace PruebaMenuMADU
             Pregunta.preguntaDescripcion = txtPregunta.Text;
             if (cboMayorEdad.Checked == true)
             {
-                Pregunta.esMayor = true;
+                Pregunta.esMayorEdad = true;
             }
             else
             {
-                Pregunta.esMayor = false;
+                Pregunta.esMayorEdad = false;
             }
-            String imageName = txtImagen.Text.Split('\\').Last();
-            Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
-            String soundName = txtSonido.Text.Split('\\').Last();
-            Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+
+            if (!String.IsNullOrEmpty(txtImagen.Text))
+            {
+                String imageName = txtImagen.Text.Split('\\').Last();
+                Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
+            }
+
+            if (!String.IsNullOrEmpty(txtSonido.Text))
+            {
+                String soundName = txtSonido.Text.Split('\\').Last();
+                Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+            }
             Pregunta.respuestas = CrearRespuestaEsp();
             GuardarRespuestaCorrecta(Pregunta);
 
@@ -400,16 +420,24 @@ namespace PruebaMenuMADU
             Pregunta.preguntaDescripcion = txtQuestion.Text;
             if (cboMayorEdad.Checked == true)
             {
-                Pregunta.esMayor = true;
+                Pregunta.esMayorEdad = true;
             }
             else
             {
-                Pregunta.esMayor = false;
+                Pregunta.esMayorEdad = false;
             }
-            String imageName = txtImagen.Text.Split('\\').Last();
-            Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
-            String soundName = txtSonido.Text.Split('\\').Last();
-            Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+
+            if (!String.IsNullOrEmpty(txtImagen.Text))
+            {
+                String imageName = txtImagen.Text.Split('\\').Last();
+                Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
+            }
+
+            if (!String.IsNullOrEmpty(txtSonido.Text))
+            {
+                String soundName = txtSonido.Text.Split('\\').Last();
+                Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+            }
             Pregunta.respuestas = CrearRespuestasEng();
             GuardarRespuestaCorrecta(Pregunta);
 

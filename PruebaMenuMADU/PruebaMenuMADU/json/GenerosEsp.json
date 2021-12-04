@@ -11,7 +11,7 @@
         "preguntaDescripcion": "¿Qué banda nació primero?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "The Rolling Stones",
@@ -35,7 +35,7 @@
         "preguntaDescripcion": "¿En qué año se formó Nirvana?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "1990",
@@ -59,7 +59,7 @@
         "preguntaDescripcion": "¿Cuando inicio el Rock en Español?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Entre 1930 y 1940",
@@ -83,7 +83,7 @@
         "preguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Prueba JSON 1",
@@ -117,7 +117,7 @@
         "preguntaDescripcion": "¿En que época surgió el hip-hop?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "En los 70",
@@ -141,7 +141,7 @@
         "preguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "5",
@@ -165,7 +165,7 @@
         "preguntaDescripcion": "¿En que país surgió el rap?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Inglaterra",
@@ -189,7 +189,7 @@
         "preguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Verdadero",
@@ -197,6 +197,78 @@
           },
           {
             "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que significa \"MC\" en la cultura del rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Military Cross",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master of Ceremonies",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Master Creative",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master Crew",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el disco de rap mas vendido en la historia?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Life After Death",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Marshall Matters LP",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Eminem Show",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo murió el rapero Tupac Shakur?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Suicidio",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Sobredosis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Asesinato",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Muerte natural",
             "esCorrecta": false
           }
         ]

@@ -11,7 +11,7 @@
         "preguntaDescripcion": "Which band was born first?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "The Rolling Stones",
@@ -35,7 +35,7 @@
         "preguntaDescripcion": "What year was Nirvana formed?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "1990",
@@ -59,7 +59,7 @@
         "preguntaDescripcion": "When did Rock en Español start?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Between 1930 & 1940",
@@ -83,7 +83,7 @@
         "preguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Try JSON 1",
@@ -117,7 +117,7 @@
         "preguntaDescripcion": "At what time did hip-hop emerge?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "In the 70s",
@@ -141,7 +141,7 @@
         "preguntaDescripcion": "How many 'elements' is hip-hop made of?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "5",
@@ -165,7 +165,7 @@
         "preguntaDescripcion": "In which country did rap emerge?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "England",
@@ -189,7 +189,7 @@
         "preguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
         "imagen": "",
         "sonido": "",
-        "esMayor": false,
+        "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "True",
@@ -197,6 +197,78 @@
           },
           {
             "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What does \"MC\" mean in rap culture?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Military Cross",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master of Ceremonies",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Master Creative",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master Crew",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the best-selling rap album in history?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Life After Death",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Marshall Matters LP",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Eminem Show",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\r\nHow did rapper Tupac Shakur die?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Suicide",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Overdose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Murder",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Natural death",
             "esCorrecta": false
           }
         ]

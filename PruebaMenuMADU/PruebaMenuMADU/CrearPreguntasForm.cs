@@ -222,11 +222,11 @@ namespace PruebaMenuMADU
 
             if (cbxEdad.SelectedIndex == 0)
             {
-                preguntaEsp.esMayor = false;
+                preguntaEsp.esMayorEdad = false;
             }
             else
             {
-                preguntaEsp.esMayor = true;
+                preguntaEsp.esMayorEdad = true;
             }
 
             if (cbxTipoPreg.SelectedIndex == 0)
@@ -292,11 +292,11 @@ namespace PruebaMenuMADU
 
             if (cbxQuestAge.SelectedIndex == 0)
             {
-                preguntaEng.esMayor = false;
+                preguntaEng.esMayorEdad = false;
             }
             else
             {
-                preguntaEng.esMayor = true;
+                preguntaEng.esMayorEdad = true;
             }
 
             if (cbxQuestType.SelectedIndex == 0)
@@ -450,7 +450,7 @@ namespace PruebaMenuMADU
 
             cbxGeneroPreg.SelectedValue = preg.genero;
 
-            if (preg.esMayor)
+            if (preg.esMayorEdad)
             {
                 cbxEdad.SelectedIndex = 1;
             }
@@ -518,7 +518,7 @@ namespace PruebaMenuMADU
 
             cbxGenreQuest.SelectedValue = pregEng.genero;
 
-            if (pregEng.esMayor)
+            if (pregEng.esMayorEdad)
             {
                 cbxQuestAge.SelectedIndex = 1;
             }
@@ -733,11 +733,11 @@ namespace PruebaMenuMADU
 
                 if (cbxEdad.SelectedIndex == 0)
                 {
-                    preg.esMayor = false;
+                    preg.esMayorEdad = false;
                 }
                 else
                 {
-                    preg.esMayor = true;
+                    preg.esMayorEdad = true;
                 }
 
                 if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
@@ -839,11 +839,11 @@ namespace PruebaMenuMADU
 
                 if (cbxQuestAge.SelectedIndex == 0)
                 {
-                    pregEng.esMayor = false;
+                    pregEng.esMayorEdad = false;
                 }
                 else
                 {
-                    pregEng.esMayor = true;
+                    pregEng.esMayorEdad = true;
                 }
 
                 pregEng.imagen = txtUrlImg.Text;
