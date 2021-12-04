@@ -272,6 +272,30 @@
             "esCorrecta": false
           }
         ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué pelicula de rap protagonizó el rapero Eminem?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "El truco del manco",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rapero en Nueva York",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estilo Salvaje",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "8 Millas",
+            "esCorrecta": true
+          }
+        ]
       }
     ]
   },

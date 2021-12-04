@@ -180,7 +180,7 @@ namespace PruebaMenuMADU
             // 
             this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(20, 844);
+            this.btnEliminar.Location = new System.Drawing.Point(21, 843);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(133, 43);
@@ -193,7 +193,7 @@ namespace PruebaMenuMADU
             // 
             this.btnLimpiarModificacion.Enabled = false;
             this.btnLimpiarModificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarModificacion.Location = new System.Drawing.Point(402, 844);
+            this.btnLimpiarModificacion.Location = new System.Drawing.Point(403, 843);
             this.btnLimpiarModificacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiarModificacion.Name = "btnLimpiarModificacion";
             this.btnLimpiarModificacion.Size = new System.Drawing.Size(267, 43);
@@ -206,7 +206,7 @@ namespace PruebaMenuMADU
             // 
             this.btnGuardar.Enabled = false;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(677, 844);
+            this.btnGuardar.Location = new System.Drawing.Point(678, 843);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(133, 43);
@@ -537,7 +537,7 @@ namespace PruebaMenuMADU
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(827, 898);
+            this.ClientSize = new System.Drawing.Size(827, 965);
             this.Controls.Add(this.cboTipoPregunta);
             this.Controls.Add(this.rdbRespuesta4);
             this.Controls.Add(this.gbAnwsers);

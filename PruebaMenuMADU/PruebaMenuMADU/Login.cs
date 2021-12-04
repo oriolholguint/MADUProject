@@ -17,17 +17,10 @@ namespace PruebaMenuMADU
             InitializeComponent();
         }
 
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /*
+         Los usuarios se guardan en un fichero llamado passwd que se encuentra en la carpeta etc
+         Formato de los usuarios --> username:password encriptada
+         */
 
         private void button1_Click(object sender, EventArgs e)
         {

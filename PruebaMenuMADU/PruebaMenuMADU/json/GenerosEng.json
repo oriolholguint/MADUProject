@@ -272,6 +272,30 @@
             "esCorrecta": false
           }
         ]
+      },
+      {
+        "preguntaDescripcion": "What rap movie did rapper Eminem star in?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The One-Handed Trick",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Straight Outta Compton",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Wild Style",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "8 Mile",
+            "esCorrecta": true
+          }
+        ]
       }
     ]
   },

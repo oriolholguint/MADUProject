@@ -248,13 +248,11 @@ namespace PruebaMenuMADU
         #region
         private void ActivarBotonesOpciones()
         {
-            buttonPreguntas.Enabled = true;
             btnGenConfig.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
-            buttonPreguntas.Enabled = false;
             btnGenConfig.Enabled = false;
         }
 
