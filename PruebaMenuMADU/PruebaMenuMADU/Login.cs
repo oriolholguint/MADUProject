@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,34 +23,52 @@ namespace PruebaMenuMADU
          Formato de los usuarios --> username:password encriptada
          */
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            String user = "admin";
-            String pass = "admin";
-            String userTextBox = textBoxUser.Text;
-            String passTextBox = textBoxUser.Text;
-            if (userTextBox.Equals(user))
+            if(ComprobarUsuario(txtUser.Text, txtPassword.Text))
             {
-                if (passTextBox.Equals(pass))
-                {
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
-                }
-                else
-                {
-                    labelError.Visible = true;
-                }
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
             }
             else
             {
-                labelError.Visible = true;
+                lblError.Visible = true;
             }
         }
 
-        private void labelRegistro_Click_1(object sender, EventArgs e)
+        private void lblRegistro_Click(object sender, EventArgs e)
         {
             RecuperarContrasenya a = new RecuperarContrasenya();
             a.ShowDialog();
+        }
+
+        private Boolean ComprobarUsuario(String usuario, String password)
+        {
+            Boolean loginCorrecto = false;
+            
+            try
+            {
+                StreamReader sr = new StreamReader("..\\..\\etc\\passwd.txt");
+
+                String linea;
+
+                while ((linea = sr.ReadLine()) != null && !loginCorrecto)
+                {
+                    String [] info = linea.Split(':');
+                    if(info[0].Equals(usuario) && info[1].Equals(password))
+                    {
+                        loginCorrecto = true;
+                    }
+                }
+
+                sr.Close();
+            }
+            catch(FileNotFoundException ex)
+            {
+
+            }
+
+            return loginCorrecto;
         }
     }
 }
