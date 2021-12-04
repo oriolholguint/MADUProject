@@ -56,7 +56,7 @@ namespace PruebaMenuMADU
             this.dataGridViewTablaPreguntas.RowHeadersVisible = false;
             this.dataGridViewTablaPreguntas.RowHeadersWidth = 51;
             this.dataGridViewTablaPreguntas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewTablaPreguntas.Size = new System.Drawing.Size(1189, 965);
+            this.dataGridViewTablaPreguntas.Size = new System.Drawing.Size(1189, 929);
             this.dataGridViewTablaPreguntas.TabIndex = 0;
             this.dataGridViewTablaPreguntas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTablaPreguntas_CellClick);
             // 

@@ -27,8 +27,9 @@ namespace PruebaMenuMADU
         {
             if(ComprobarUsuario(txtUser.Text, txtPassword.Text))
             {
-                MainForm mainForm = new MainForm();
+                MainForm mainForm = new MainForm(this);
                 mainForm.Show();
+                this.Hide();
             }
             else
             {
@@ -58,6 +59,8 @@ namespace PruebaMenuMADU
                     if(info[0].Equals(usuario) && info[1].Equals(password))
                     {
                         loginCorrecto = true;
+                        txtUser.Text = "";
+                        txtPassword.Text = "";
                     }
                 }
 

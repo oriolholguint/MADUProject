@@ -8,6 +8,8 @@ namespace PruebaMenuMADU
 {
     public partial class MainForm : Form
     {
+        Login loginForm;
+
         String PathGenerosEsp = "..\\..\\json\\GenerosEsp.json";
         String PathGenerosEng = "..\\..\\json\\GenerosEng.json";
 
@@ -21,11 +23,12 @@ namespace PruebaMenuMADU
 
         ModificarPregunta ModificarPregunta;
 
-        public MainForm()
+        public MainForm(Login loginForm)
         {
             InitializeComponent();
             LeerFicheroGeneros();
             ObtenerComboBoxGeneros(GenerosEsp);
+            this.loginForm = loginForm;
         }
 
         public void SetPreguntasList(Genero GeneroEspCambio, Genero GeneroEngCambio, Genero GeneroEsp, Genero GeneroEng)
@@ -368,5 +371,15 @@ namespace PruebaMenuMADU
 
         }
 
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
