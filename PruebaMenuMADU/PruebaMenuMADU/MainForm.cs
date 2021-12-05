@@ -329,7 +329,7 @@ namespace PruebaMenuMADU
 
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
-            CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp, this.GeneroSeleccionadoEng);
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
             cg.ShowDialog();
             if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {
@@ -354,21 +354,25 @@ namespace PruebaMenuMADU
 
         private void btnGenConfig_Click(object sender, EventArgs e)
         {
-            
-            CrearGenero cg = new CrearGenero(this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng, this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
             cg.ShowDialog();
-            this.GeneroSeleccionadoEsp = cg.getCreatedGenre("esp") != null ? cg.getCreatedGenre("esp") : this.GeneroSeleccionadoEsp;
-            this.GeneroSeleccionadoEng = cg.getCreatedGenre("eng") != null ? cg.getCreatedGenre("eng") : this.GeneroSeleccionadoEng;
-            /*if (cg.deleteGenre)
+            if(cg.deleteGenre) //Si se ha eliminado un genero
             {
-                Boolean found = false;
-                while (found)
-                {
-                    if(this.lista)
-                }
-            }*/
-            if (cg.getCreatedGenre("esp") == null) MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.nombre,"Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-
+                MessageBox.Show("Se ha eliminado el genero" + this.GeneroSeleccionadoEsp.nombre, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.GenerosEsp = cg.ObtenerListaGeneros("esp");
+                this.GenerosEng = cg.ObtenerListaGeneros("eng");
+                ObtenerComboBoxGeneros(GenerosEsp);
+            }
+            else if (cg.getCreatedGenre("esp") == null || cg.manualCancel) //Si se ha cancelado o cerrado la ventana de crear genero
+            {
+                MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.nombre, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else //Si ha habido una modificacion en un genero
+            {
+                this.GenerosEsp = cg.ObtenerListaGeneros("esp");
+                this.GenerosEng = cg.ObtenerListaGeneros("eng");
+                ObtenerComboBoxGeneros(GenerosEsp);
+            }
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

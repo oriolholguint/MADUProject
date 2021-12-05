@@ -19,7 +19,7 @@ namespace PruebaMenuMADU
             
             if(!File.Exists(SOUNDS_PATH + imagePath))
             {
-                File.Move(pathOrigin, SOUNDS_PATH + imagePath);
+                File.Copy(pathOrigin, SOUNDS_PATH + imagePath);
             }
         }
 
@@ -34,10 +34,9 @@ namespace PruebaMenuMADU
             }
             else
             {
-
                 try
                 {
-                    System.IO.File.Copy(imageFullPath, IMAGES_PATH + imageName);
+                    File.Copy(imageFullPath, IMAGES_PATH + imageName);
                     correcto = true;
                 }
                 catch

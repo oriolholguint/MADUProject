@@ -12,42 +12,54 @@ namespace PruebaMenuMADU
 {
     public partial class CrearGenero : Form
     {
-        Genero createdEng { get; set; }
         List<Genero> listaEsp { get; set; }
         List<Genero> listaEng { get; set; }
+        Genero createdEng { get; set; }
         Genero createdEsp { get; set; }
+
+        Genero generoSeleccionadoEsp;
+        Genero generoSeleccionadoEng;
 
         Boolean editBool = false;
 
         public Boolean deleteGenre { get; set; }
 
-
         public Boolean manualCancel = false;
 
-        public CrearGenero(Genero Esp, Genero Eng)
+        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng, Genero Esp, Genero Eng)
         {
+            //Modo editar genero
             InitializeComponent();
             this.deleteGenre = false;
             this.editBool = true;
+            this.listaEsp = listaEsp;
+            this.listaEng = listaEng;
+            generoSeleccionadoEsp = Esp;
+            generoSeleccionadoEng = Eng;
             modifyGenre(Esp, Eng);
             editMode();
         }
         public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
         {
+            //Modo crear nuevo genero
             InitializeComponent();
             this.deleteGenre = false;
             this.listaEsp = listaEsp;
             this.listaEng = listaEng;
+            btnDeleteGenre.Visible = false; //Oculto boton eliminar genero cuando se va a crear uno
         }
+
         public void editMode()
         {
-            lblNewName.Text = "nombre del genero:";
+            lblNewName.Text = "Nombre del genero:";
             lblNewNameEng.Text = "Name of the genre: ";
             btnCreateEdit.Text = "Editar Genero";
         }
+
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog imagePick = new OpenFileDialog();
+            imagePick.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
 
             if (imagePick.ShowDialog() == DialogResult.OK)
             {
@@ -58,7 +70,7 @@ namespace PruebaMenuMADU
                     if (imagePick.FileName.Split('.').Last().Equals(type))
                     {
                         break;
-                    }else if (type.Equals(imageTypeAccepted.Last()))
+                    } else if (type.Equals(imageTypeAccepted.Last()))
                     {
                         MessageBox.Show("Tipo de archivo no admitido", "Error al añadir archivo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         return;
@@ -71,32 +83,25 @@ namespace PruebaMenuMADU
             }
 
         }
-        private void modifyGenre(Genero genEsp,Genero genEng)
+        private void modifyGenre(Genero genEsp, Genero genEng)
         {
-            
-
-            txtGenreName.Text = genEng.nombre;
             txtNombreGenero.Text = genEsp.nombre;
             txtUrlBackground.Text = genEsp.imagenFondo;
             txtUrlMusic.Text = genEsp.musicaFondo;
             txtUrlOculta.Text = genEsp.imagenMenu;
 
+            txtGenreName.Text = genEng.nombre;
 
             pbBg.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenFondo);
             pbImagenGenero.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenMenu); //Concateno el path donde se encuentran las imagenes
             wmpMusic.URL = genEsp.musicaFondo;
-
         }
 
-        private void txtUrlOculta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
         private void BntCargarFondo_Click(object sender, EventArgs e)
         {
             OpenFileDialog bgPick = new OpenFileDialog();
+            bgPick.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
+
             if (bgPick.ShowDialog() == DialogResult.OK)
             {
                 String[] imageTypeAccepted = new String[] { "png", "jpg", "jpeg", "gif" };
@@ -123,9 +128,11 @@ namespace PruebaMenuMADU
         private void btnCargarMusica_Click(object sender, EventArgs e)
         {
             OpenFileDialog musicFile = new OpenFileDialog();
+            musicFile.Filter = "Archivos de Audio (*.mp3)(*.wav)(*.wma)|*.mp3; *.wav; *.wma";
+
             if (musicFile.ShowDialog() == DialogResult.OK)
             {
-                String[] videoTypeAccepted = new String[] {"mp3", "wav", "wma"};
+                String[] videoTypeAccepted = new String[] { "mp3", "wav", "wma" };
                 foreach (String type in videoTypeAccepted)
                 {
                     Console.WriteLine(musicFile.FileName.Split('.').Last());
@@ -146,87 +153,128 @@ namespace PruebaMenuMADU
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-
-            //save images to resources and switch object path value
-            /*Object[] generoResources = { txtUrlBackground, txtUrlOculta, txtUrlMusic };
-            System.IO.File.Copy("source", "destination");*/
-
-
-            List<Personaje> personajes = new List<Personaje>();
-            Partida[] partidas = new Partida[10];
-            List<Pregunta> preguntas = new List<Pregunta>();
-            String[] nonNullableStrings = { txtNombreGenero.Text, txtGenreName.Text, txtUrlBackground.Text, txtUrlMusic.Text, txtUrlOculta.Text };
-            int paths = 0;
-
-
-
-            foreach(String element in nonNullableStrings)
+            if (ComprobarCampos()) //Compruebo que todos los campos esten rellenados
             {
-                if (String.IsNullOrEmpty(element)){
-
-                    MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return;
-                }
-
-                if (System.IO.File.Exists(element))
+                if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
                 {
-
-                    paths++;
-                }
-
-            }
-            if(paths<3)
-            {
-
-                MessageBox.Show("Corrige las rutas de los archivos", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            Genero spanish = new Genero(txtNombreGenero.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajes, partidas, preguntas);
-            Genero english = new Genero(txtGenreName.Text, txtUrlMusic.Text, txtUrlBackground.Text, txtUrlOculta.Text, personajes, partidas, preguntas);
-            Boolean controlDeNombre = true;
-            if (!this.editBool) 
-            {
-                foreach (Genero gen in this.listaEsp)
-                {
-                    if (gen.nombre.Equals(spanish.nombre))
+                    if (editBool) //Si estoy en modo de edicion
                     {
-                        MessageBox.Show("nombre para el nuevo genero incorrecto", "Error de nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        controlDeNombre = false;
-                        break;
+                        EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre); //Elimino los generos antiguos
+                        CrearGeneros(); //Creo los generos nuevos
+                        this.listaEsp.Add(createdEsp); //Añado a la lista el nuevo genero en espannol
+                        this.listaEng.Add(createdEng); //Añado a la lista el nuevo genero en ingles
+                        this.Close();
+                    }
+                    else
+                    {
+                        CrearGeneros(); //Creo los generos
+                        this.Close();
                     }
                 }
-                foreach (Genero gen in this.listaEng)
+                else
                 {
-                    if (gen.nombre.Equals(english.nombre))
-                    {
-                        MessageBox.Show("nombre para el nuevo genero(version ingles) incorrecto/a", "Error de nombre", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        controlDeNombre = false;
-                        break;
-                    }
+                    MessageBox.Show("El genero ya existe", "Error Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-
-            if (controlDeNombre) {
-                this.createdEng = english;
-                this.createdEsp = spanish;
-                ResourceManager.addImageToResources(txtUrlOculta.Text);
-                ResourceManager.addImageToResources(txtUrlBackground.Text);
-                ResourceManager.addSoundToResources(txtUrlMusic.Text);
-
-                this.Close();
-                    return;
+            else
+            {
+                MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            spanish = null;
-            english = null;
-            this.Close();
-
 
         }
 
-        internal Genero getCreatedGenre(String lang){return (lang.Contains("es") ? this.createdEsp : this.createdEng);}
+        public void CrearGeneros()
+        {
+            List<Personaje> personajes = new List<Personaje>();
+            Partida[] partidas = new Partida[10];
+            List<Pregunta> preguntas = new List<Pregunta>();
+
+            //Obtengo los nombres de las imagenes y sonido con su extension
+            String imagenMenu = txtUrlOculta.Text.Split('\\').Last();
+            String imagenFondo = txtUrlBackground.Text.Split('\\').Last();
+            String sonido = txtUrlMusic.Text.Split('\\').Last();
+
+            //Creo los generos
+            Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, personajes, partidas, preguntas);
+            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, personajes, partidas, preguntas);
+
+            this.createdEng = english;
+            this.createdEsp = spanish;
+
+            ResourceManager.addImageToResources(txtUrlOculta.Text);
+            ResourceManager.addImageToResources(txtUrlBackground.Text);
+            ResourceManager.addSoundToResources(txtUrlMusic.Text);
+        }
+
+        public void EliminarGeneros(String nombreGeneroEsp, String nombreGeneroEng)
+        {
+            Boolean generoEliminado = false;
+            int counter = 0;
+
+            while (counter < listaEsp.Count && !generoEliminado)
+            {
+                if (listaEsp[counter].nombre.Equals(nombreGeneroEsp))
+                {
+                    listaEsp.RemoveAt(counter);
+                    listaEng.RemoveAt(counter);
+
+                    generoEliminado = true;
+                }
+                else
+                {
+                    counter++;
+                }
+            }
+        }
+
+        public Boolean ComprobarGeneroExiste(String nombreGeneroEsp, String nombreGeneroEng)
+        {
+            Boolean generoExiste = false;
+
+            for (int i = 0; i < listaEsp.Count; i++)
+            {
+                if (listaEsp[i].nombre.Equals(nombreGeneroEsp) || listaEng[i].nombre.Equals(nombreGeneroEng))
+                {
+                    generoExiste = true;
+                }
+            }
+
+            return generoExiste;
+        }
+
+        public Boolean ComprobarCampos()
+        {
+            Boolean camposRellenados = true;
+
+            if (String.IsNullOrEmpty(txtGenreName.Text) || String.IsNullOrEmpty(txtNombreGenero.Text) ||
+               String.IsNullOrEmpty(txtUrlBackground.Text) || String.IsNullOrEmpty(txtUrlMusic.Text) ||
+               String.IsNullOrEmpty(txtUrlOculta.Text))
+            {
+                camposRellenados = false;
+            }
+
+            return camposRellenados;
+        }
+
+        internal Genero getCreatedGenre(String lang) { return (lang.Contains("es") ? this.createdEsp : this.createdEng); }
+
+        internal List<Genero> getListGenre(String lang) { return (lang.Contains("es") ? this.listaEsp : this.listaEng); }
+
+        public List<Genero> ObtenerListaGeneros(String lang)
+        {
+            List<Genero> listaGeneros = null;
+
+            if(lang.Equals("esp"))
+            {
+                listaGeneros = listaEsp;
+            }
+            else if (lang.Equals("eng"))
+            {
+                listaGeneros = listaEng;
+            }
+
+            return listaGeneros;
+        }
 
         private void butCancel_Click(object sender, EventArgs e)
         {
@@ -236,8 +284,13 @@ namespace PruebaMenuMADU
 
         private void btnDeleteGenre_Click(object sender, EventArgs e)
         {
-            this.deleteGenre = true;
-            this.Close();
+            if (MessageBox.Show("Estas seguro que deseas eliminar el genero " + generoSeleccionadoEsp.nombre + "?",
+                "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre);
+                this.deleteGenre = true;
+                this.Close();
+            }
         }
     }
 }

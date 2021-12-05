@@ -71,7 +71,7 @@ namespace PruebaMenuMADU
             this.gbImagen.Size = new System.Drawing.Size(532, 458);
             this.gbImagen.TabIndex = 8;
             this.gbImagen.TabStop = false;
-            this.gbImagen.Text = "Imagen principal del Género";
+            this.gbImagen.Text = "Imagen menu principal";
             // 
             // txtUrlOculta
             // 
@@ -117,7 +117,7 @@ namespace PruebaMenuMADU
             this.groupBox1.Size = new System.Drawing.Size(633, 458);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Imagen para el fondo del Género";
+            this.groupBox1.Text = "Imagen fondo preguntas";
             // 
             // txtUrlBackground
             // 
@@ -163,13 +163,13 @@ namespace PruebaMenuMADU
             this.groupBox2.Size = new System.Drawing.Size(531, 458);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cargar musica de fondo para el Género";
+            this.groupBox2.Text = "Musica de fondo";
             // 
             // wmpMusic
             // 
             this.wmpMusic.Enabled = true;
             this.wmpMusic.Location = new System.Drawing.Point(13, 26);
-            this.wmpMusic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wmpMusic.Margin = new System.Windows.Forms.Padding(4);
             this.wmpMusic.Name = "wmpMusic";
             this.wmpMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpMusic.OcxState")));
             this.wmpMusic.Size = new System.Drawing.Size(368, 237);
@@ -198,13 +198,12 @@ namespace PruebaMenuMADU
             // 
             // txtNombreGenero
             // 
-            this.txtNombreGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreGenero.Location = new System.Drawing.Point(15, 87);
             this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreGenero.MaxLength = 20;
-            this.txtNombreGenero.Multiline = true;
             this.txtNombreGenero.Name = "txtNombreGenero";
-            this.txtNombreGenero.Size = new System.Drawing.Size(703, 102);
+            this.txtNombreGenero.Size = new System.Drawing.Size(703, 75);
             this.txtNombreGenero.TabIndex = 11;
             // 
             // lblNewName
@@ -216,7 +215,7 @@ namespace PruebaMenuMADU
             this.lblNewName.Location = new System.Drawing.Point(8, 41);
             this.lblNewName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNewName.Name = "lblNewName";
-            this.lblNewName.Size = new System.Drawing.Size(319, 29);
+            this.lblNewName.Size = new System.Drawing.Size(315, 29);
             this.lblNewName.TabIndex = 12;
             this.lblNewName.Text = "nombre del nuevo género :";
             // 
@@ -230,7 +229,7 @@ namespace PruebaMenuMADU
             this.panel1.Controls.Add(this.btnCreateEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1736, 212);
             this.panel1.TabIndex = 13;
@@ -250,13 +249,12 @@ namespace PruebaMenuMADU
             // 
             // txtGenreName
             // 
-            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenreName.Location = new System.Drawing.Point(724, 87);
             this.txtGenreName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGenreName.MaxLength = 20;
-            this.txtGenreName.Multiline = true;
             this.txtGenreName.Name = "txtGenreName";
-            this.txtGenreName.Size = new System.Drawing.Size(647, 102);
+            this.txtGenreName.Size = new System.Drawing.Size(647, 75);
             this.txtGenreName.TabIndex = 14;
             // 
             // btnCreateEdit
@@ -266,7 +264,7 @@ namespace PruebaMenuMADU
             this.btnCreateEdit.Location = new System.Drawing.Point(1377, 87);
             this.btnCreateEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreateEdit.Name = "btnCreateEdit";
-            this.btnCreateEdit.Size = new System.Drawing.Size(344, 103);
+            this.btnCreateEdit.Size = new System.Drawing.Size(344, 75);
             this.btnCreateEdit.TabIndex = 3;
             this.btnCreateEdit.Text = "Crear Género";
             this.btnCreateEdit.UseVisualStyleBackColor = false;
@@ -276,7 +274,7 @@ namespace PruebaMenuMADU
             // 
             this.butCancel.BackColor = System.Drawing.Color.PaleGreen;
             this.butCancel.Location = new System.Drawing.Point(609, 714);
-            this.butCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butCancel.Margin = new System.Windows.Forms.Padding(4);
             this.butCancel.Name = "butCancel";
             this.butCancel.Size = new System.Drawing.Size(540, 28);
             this.butCancel.TabIndex = 14;
@@ -288,7 +286,7 @@ namespace PruebaMenuMADU
             // 
             this.btnDeleteGenre.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btnDeleteGenre.Location = new System.Drawing.Point(36, 714);
-            this.btnDeleteGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteGenre.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteGenre.Name = "btnDeleteGenre";
             this.btnDeleteGenre.Size = new System.Drawing.Size(540, 28);
             this.btnDeleteGenre.TabIndex = 15;
@@ -307,7 +305,7 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbImagen);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearGenero";
             this.Text = "CrearGenero";
             this.gbImagen.ResumeLayout(false);

@@ -39,6 +39,7 @@ namespace PruebaMenuMADU
             this.btnGenConfig = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnAddGenre = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlModificar
@@ -142,12 +143,25 @@ namespace PruebaMenuMADU
             this.btnAgregarUsuario.UseVisualStyleBackColor = true;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
+            // btnAddGenre
+            // 
+            this.btnAddGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddGenre.Location = new System.Drawing.Point(933, 14);
+            this.btnAddGenre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddGenre.Name = "btnAddGenre";
+            this.btnAddGenre.Size = new System.Drawing.Size(323, 39);
+            this.btnAddGenre.TabIndex = 13;
+            this.btnAddGenre.Text = "Gestionar Generos";
+            this.btnAddGenre.UseVisualStyleBackColor = true;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.btnAddGenre);
             this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnGenConfig);
@@ -176,5 +190,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Button btnGenConfig;
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnAgregarUsuario;
+        private System.Windows.Forms.Button btnAddGenre;
     }
 }

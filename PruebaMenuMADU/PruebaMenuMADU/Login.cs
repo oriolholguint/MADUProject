@@ -69,7 +69,7 @@ namespace PruebaMenuMADU
             }
             catch(FileNotFoundException ex)
             {
-
+             
             }
 
             return loginCorrecto;
