@@ -140,6 +140,7 @@ namespace PruebaMenuMADU
             this.btnAgregarUsuario.Size = new System.Drawing.Size(40, 39);
             this.btnAgregarUsuario.TabIndex = 18;
             this.btnAgregarUsuario.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
             // MainForm
             // 

@@ -162,3 +162,4 @@ C:\Users\cep.CEPNET0\Documents\GitHub\MADUProject\PruebaMenuMADU\PruebaMenuMADU\
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.MainForm.resources
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Registro.resources

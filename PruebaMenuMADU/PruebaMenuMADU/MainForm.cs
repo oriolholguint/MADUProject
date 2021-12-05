@@ -381,5 +381,13 @@ namespace PruebaMenuMADU
         {
             Application.Exit();
         }
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            Registro registro = new Registro();
+            registro.ShowDialog();
+        }
+
+
     }
 }

@@ -46,6 +46,7 @@ namespace PruebaMenuMADU
         private Boolean ComprobarUsuario(String usuario, String password)
         {
             Boolean loginCorrecto = false;
+            String passwordEncriptada = Encriptar(txtPassword.Text);
             
             try
             {
@@ -56,7 +57,7 @@ namespace PruebaMenuMADU
                 while ((linea = sr.ReadLine()) != null && !loginCorrecto)
                 {
                     String [] info = linea.Split(':');
-                    if(info[0].Equals(usuario) && info[1].Equals(password))
+                    if(info[0].Equals(usuario) && info[1].Equals(passwordEncriptada))
                     {
                         loginCorrecto = true;
                         txtUser.Text = "";
@@ -72,6 +73,13 @@ namespace PruebaMenuMADU
             }
 
             return loginCorrecto;
+        }
+
+        private String Encriptar(String text)
+        {
+            Byte[] passwordEncriptada = System.Text.Encoding.Unicode.GetBytes(text);
+            String result = Convert.ToBase64String(passwordEncriptada);
+            return result;
         }
     }
 }
