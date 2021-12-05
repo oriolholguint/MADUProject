@@ -30,6 +30,7 @@ namespace PruebaMenuMADU
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarPregunta));
             this.lblPregunta = new System.Windows.Forms.Label();
             this.cbxGenero = new System.Windows.Forms.ComboBox();
             this.cboMayorEdad = new System.Windows.Forms.CheckBox();
@@ -70,6 +71,8 @@ namespace PruebaMenuMADU
             this.cboTipoPregunta = new System.Windows.Forms.CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnAbrirFicherosImagen = new System.Windows.Forms.Button();
+            this.btnEliminarImagen = new System.Windows.Forms.Button();
+            this.btnEliminarSonido = new System.Windows.Forms.Button();
             this.gbRespuestas.SuspendLayout();
             this.gbAnwsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -243,7 +246,7 @@ namespace PruebaMenuMADU
             this.txtImagen.Location = new System.Drawing.Point(116, 745);
             this.txtImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtImagen.Name = "txtImagen";
-            this.txtImagen.Size = new System.Drawing.Size(647, 30);
+            this.txtImagen.Size = new System.Drawing.Size(599, 30);
             this.txtImagen.TabIndex = 18;
             // 
             // txtSonido
@@ -253,7 +256,7 @@ namespace PruebaMenuMADU
             this.txtSonido.Location = new System.Drawing.Point(116, 792);
             this.txtSonido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSonido.Name = "txtSonido";
-            this.txtSonido.Size = new System.Drawing.Size(647, 30);
+            this.txtSonido.Size = new System.Drawing.Size(599, 30);
             this.txtSonido.TabIndex = 20;
             // 
             // gbRespuestas
@@ -371,7 +374,7 @@ namespace PruebaMenuMADU
             // 
             this.btnAbrirFicherosSonido.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.carpeta;
             this.btnAbrirFicherosSonido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAbrirFicherosSonido.Location = new System.Drawing.Point(771, 788);
+            this.btnAbrirFicherosSonido.Location = new System.Drawing.Point(723, 790);
             this.btnAbrirFicherosSonido.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbrirFicherosSonido.Name = "btnAbrirFicherosSonido";
             this.btnAbrirFicherosSonido.Size = new System.Drawing.Size(40, 37);
@@ -524,7 +527,7 @@ namespace PruebaMenuMADU
             // 
             this.btnAbrirFicherosImagen.BackgroundImage = global::PruebaMenuMADU.Properties.Resources.carpeta;
             this.btnAbrirFicherosImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAbrirFicherosImagen.Location = new System.Drawing.Point(771, 743);
+            this.btnAbrirFicherosImagen.Location = new System.Drawing.Point(723, 745);
             this.btnAbrirFicherosImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbrirFicherosImagen.Name = "btnAbrirFicherosImagen";
             this.btnAbrirFicherosImagen.Size = new System.Drawing.Size(40, 37);
@@ -532,12 +535,38 @@ namespace PruebaMenuMADU
             this.btnAbrirFicherosImagen.UseVisualStyleBackColor = true;
             this.btnAbrirFicherosImagen.Click += new System.EventHandler(this.btnAbrirFicherosImagen_Click);
             // 
+            // btnEliminarImagen
+            // 
+            this.btnEliminarImagen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminarImagen.BackgroundImage")));
+            this.btnEliminarImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminarImagen.Location = new System.Drawing.Point(771, 745);
+            this.btnEliminarImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarImagen.Name = "btnEliminarImagen";
+            this.btnEliminarImagen.Size = new System.Drawing.Size(40, 37);
+            this.btnEliminarImagen.TabIndex = 25;
+            this.btnEliminarImagen.UseVisualStyleBackColor = true;
+            this.btnEliminarImagen.Click += new System.EventHandler(this.btnEliminarImagen_Click);
+            // 
+            // btnEliminarSonido
+            // 
+            this.btnEliminarSonido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminarSonido.BackgroundImage")));
+            this.btnEliminarSonido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminarSonido.Location = new System.Drawing.Point(771, 790);
+            this.btnEliminarSonido.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarSonido.Name = "btnEliminarSonido";
+            this.btnEliminarSonido.Size = new System.Drawing.Size(40, 37);
+            this.btnEliminarSonido.TabIndex = 26;
+            this.btnEliminarSonido.UseVisualStyleBackColor = true;
+            this.btnEliminarSonido.Click += new System.EventHandler(this.btnEliminarSonido_Click);
+            // 
             // ModificarPregunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(827, 929);
+            this.Controls.Add(this.btnEliminarSonido);
+            this.Controls.Add(this.btnEliminarImagen);
             this.Controls.Add(this.cboTipoPregunta);
             this.Controls.Add(this.rdbRespuesta4);
             this.Controls.Add(this.gbAnwsers);
@@ -615,5 +644,7 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.RadioButton rdbRespuesta1;
         private System.Windows.Forms.CheckBox cboTipoPregunta;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnEliminarSonido;
+        private System.Windows.Forms.Button btnEliminarImagen;
     }
 }

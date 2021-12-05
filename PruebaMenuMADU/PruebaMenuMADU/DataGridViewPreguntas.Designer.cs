@@ -104,7 +104,7 @@ namespace PruebaMenuMADU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 884);
+            this.ClientSize = new System.Drawing.Size(1189, 929);
             this.Controls.Add(this.dataGridViewTablaPreguntas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

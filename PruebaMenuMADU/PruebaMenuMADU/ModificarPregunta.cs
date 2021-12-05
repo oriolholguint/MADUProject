@@ -399,13 +399,13 @@ namespace PruebaMenuMADU
             if (!String.IsNullOrEmpty(txtImagen.Text))
             {
                 String imageName = txtImagen.Text.Split('\\').Last();
-                Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
+                Pregunta.imagen = imageName;
             }
 
             if (!String.IsNullOrEmpty(txtSonido.Text))
             {
                 String soundName = txtSonido.Text.Split('\\').Last();
-                Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+                Pregunta.sonido = soundName;
             }
             Pregunta.respuestas = CrearRespuestaEsp();
             GuardarRespuestaCorrecta(Pregunta);
@@ -430,13 +430,13 @@ namespace PruebaMenuMADU
             if (!String.IsNullOrEmpty(txtImagen.Text))
             {
                 String imageName = txtImagen.Text.Split('\\').Last();
-                Pregunta.imagen = ResourceManager.IMAGES_PATH + imageName;
+                Pregunta.imagen = imageName;
             }
 
             if (!String.IsNullOrEmpty(txtSonido.Text))
             {
                 String soundName = txtSonido.Text.Split('\\').Last();
-                Pregunta.sonido = ResourceManager.SOUNDS_PATH + soundName;
+                Pregunta.sonido = soundName;
             }
             Pregunta.respuestas = CrearRespuestasEng();
             GuardarRespuestaCorrecta(Pregunta);
@@ -612,5 +612,14 @@ namespace PruebaMenuMADU
             }
         }
 
+        private void btnEliminarImagen_Click(object sender, EventArgs e)
+        {
+            txtImagen.Text = "";
+        }
+
+        private void btnEliminarSonido_Click(object sender, EventArgs e)
+        {
+            txtSonido.Text = "";
+        }
     }
 }

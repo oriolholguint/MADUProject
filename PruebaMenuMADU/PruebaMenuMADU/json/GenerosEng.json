@@ -4,7 +4,23 @@
     "musicaFondo": "iphone-notificacion.mp3",
     "imagenFondo": "earth.png",
     "imagenMenu": "earth.png",
-    "personajes": [],
+    "personajes": [
+      {
+        "nombre": "Bob Dylan",
+        "imagen": "per_bob_dylan.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Elvis Presley",
+        "imagen": "per_elvis_presley.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Chuck Berry",
+        "imagen": "per_chuckberry.jpg",
+        "posicionRanking": 3
+      }
+    ],
     "partidas": [],
     "preguntas": [
       {
@@ -110,7 +126,23 @@
     "musicaFondo": "iphone-notificacion.mp3",
     "imagenFondo": "earth.png",
     "imagenMenu": "earth.png",
-    "personajes": [],
+    "personajes": [
+      {
+        "nombre": "Tupac Shakur",
+        "imagen": "per_tupac_shakur.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Eminem",
+        "imagen": "per_eminem.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Canserbero",
+        "imagen": "per_canserbero.jpg",
+        "posicionRanking": 3
+      }
+    ],
     "partidas": [],
     "preguntas": [
       {
@@ -296,6 +328,30 @@
             "esCorrecta": true
           }
         ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "snoop_dogg.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scholly D",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Public Enemy",
+            "esCorrecta": false
+          }
+        ]
       }
     ]
   },
@@ -306,18 +362,18 @@
     "imagenMenu": "earth.png",
     "personajes": [
       {
-        "nombre": "asdasd",
-        "imagen": "venus.png",
+        "nombre": "Michael Jackson",
+        "imagen": "per_michael_jackson.jpg",
         "posicionRanking": 1
       },
       {
-        "nombre": "asdasd",
-        "imagen": "neptune.png",
+        "nombre": "Dualipa",
+        "imagen": "per_dualipa.jpg",
         "posicionRanking": 2
       },
       {
-        "nombre": "asdasda",
-        "imagen": "sun.png",
+        "nombre": "Ke$ha",
+        "imagen": "per_kesha.jpg",
         "posicionRanking": 3
       }
     ],

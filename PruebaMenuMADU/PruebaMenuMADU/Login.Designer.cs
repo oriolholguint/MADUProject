@@ -57,9 +57,9 @@ namespace PruebaMenuMADU
             this.groupBoxLoginG.Controls.Add(this.lblMADU);
             this.groupBoxLoginG.Controls.Add(this.pictureBoxLogo);
             this.groupBoxLoginG.Location = new System.Drawing.Point(16, 10);
-            this.groupBoxLoginG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLoginG.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLoginG.Name = "groupBoxLoginG";
-            this.groupBoxLoginG.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLoginG.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxLoginG.Size = new System.Drawing.Size(1308, 766);
             this.groupBoxLoginG.TabIndex = 1;
             this.groupBoxLoginG.TabStop = false;
@@ -82,7 +82,7 @@ namespace PruebaMenuMADU
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(531, 656);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(287, 74);
             this.btnLogin.TabIndex = 7;
@@ -106,7 +106,7 @@ namespace PruebaMenuMADU
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(511, 523);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(356, 22);
             this.txtPassword.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace PruebaMenuMADU
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(509, 441);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(356, 22);
             this.txtUser.TabIndex = 4;
@@ -158,7 +158,7 @@ namespace PruebaMenuMADU
             this.pictureBoxLogo.Image = global::PruebaMenuMADU.Properties.Resources.logoAGeneral;
             this.pictureBoxLogo.ImageLocation = "";
             this.pictureBoxLogo.Location = new System.Drawing.Point(515, 17);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(339, 330);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,8 +171,9 @@ namespace PruebaMenuMADU
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1340, 795);
             this.Controls.Add(this.groupBoxLoginG);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.groupBoxLoginG.ResumeLayout(false);
             this.groupBoxLoginG.PerformLayout();
