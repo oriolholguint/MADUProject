@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,9 @@ namespace PruebaMenuMADU
 {
     public partial class Login : Form
     {
+
+        private static String KEY = "jwey89e09ewhfo24";
+
         public Login()
         {
             InitializeComponent();
@@ -46,7 +50,7 @@ namespace PruebaMenuMADU
         private Boolean ComprobarUsuario(String usuario, String password)
         {
             Boolean loginCorrecto = false;
-            String passwordEncriptada = Encriptar(txtPassword.Text);
+            String passwordEncriptada = Encriptar(txtPassword.Text, KEY);
             
             try
             {
@@ -75,11 +79,24 @@ namespace PruebaMenuMADU
             return loginCorrecto;
         }
 
-        private String Encriptar(String text)
+        private String Encriptar(String text, String key)
         {
-            Byte[] passwordEncriptada = System.Text.Encoding.Unicode.GetBytes(text);
-            String result = Convert.ToBase64String(passwordEncriptada);
-            return result;
+            byte[] keyArray;
+            byte[] encriptar = Encoding.UTF8.GetBytes(text);
+
+            keyArray = Encoding.UTF8.GetBytes(key);
+
+            var tdes = new TripleDESCryptoServiceProvider();
+
+            tdes.Key = keyArray; 
+            tdes.Mode = CipherMode.ECB;
+            tdes.Padding = PaddingMode.PKCS7;
+
+            ICryptoTransform cTransform = tdes.CreateEncryptor();
+            byte[] result = cTransform.TransformFinalBlock(encriptar, 0, encriptar.Length);
+            tdes.Clear();
+
+            return Convert.ToBase64String(result, 0, result.Length);
         }
     }
 }

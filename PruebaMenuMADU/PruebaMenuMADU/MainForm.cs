@@ -78,7 +78,6 @@ namespace PruebaMenuMADU
         {
             this.GenerosEsp = GenerosEsp;
             this.GenerosEng = GenerosEng;
-            
         }
 
         //Relleno el combo box de generos
