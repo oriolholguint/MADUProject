@@ -68,7 +68,7 @@ namespace PruebaMenuMADU
             this.btnCrearPreguntas.Name = "btnCrearPreguntas";
             this.btnCrearPreguntas.Size = new System.Drawing.Size(323, 39);
             this.btnCrearPreguntas.TabIndex = 12;
-            this.btnCrearPreguntas.Text = "Gestionar preguntas";
+            this.btnCrearPreguntas.Text = "Crear Preguntas";
             this.btnCrearPreguntas.UseVisualStyleBackColor = true;
             this.btnCrearPreguntas.Click += new System.EventHandler(this.btnCrearPreguntas_Click);
             // 
@@ -151,7 +151,7 @@ namespace PruebaMenuMADU
             this.btnAddGenre.Name = "btnAddGenre";
             this.btnAddGenre.Size = new System.Drawing.Size(323, 39);
             this.btnAddGenre.TabIndex = 13;
-            this.btnAddGenre.Text = "Gestionar Generos";
+            this.btnAddGenre.Text = "Crear Generos";
             this.btnAddGenre.UseVisualStyleBackColor = true;
             this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
