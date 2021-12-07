@@ -115,9 +115,9 @@ namespace PruebaMenuMADU
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(12, 121);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(120, 29);
+            this.lblPassword.Size = new System.Drawing.Size(136, 29);
             this.lblPassword.TabIndex = 7;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Contraseña";
             // 
             // lblRepeatPassword
             // 
@@ -125,9 +125,9 @@ namespace PruebaMenuMADU
             this.lblRepeatPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepeatPassword.Location = new System.Drawing.Point(12, 171);
             this.lblRepeatPassword.Name = "lblRepeatPassword";
-            this.lblRepeatPassword.Size = new System.Drawing.Size(204, 29);
+            this.lblRepeatPassword.Size = new System.Drawing.Size(221, 29);
             this.lblRepeatPassword.TabIndex = 8;
-            this.lblRepeatPassword.Text = "Repeat Password";
+            this.lblRepeatPassword.Text = "Repetir Contraseña";
             // 
             // lblFraseRecuperacion
             // 
