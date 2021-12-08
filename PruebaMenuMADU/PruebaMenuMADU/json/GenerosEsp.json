@@ -650,30 +650,6 @@
         ]
       },
       {
-        "preguntaDescripcion": "¿Quien aparece en la imagen?",
-        "imagen": "snoop_dogg.jpg",
-        "sonido": null,
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Snoop Dogg",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Big Daddy Kane",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Scholly D",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Public Enemy",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
         "preguntaDescripcion": "¿Cuál fue el sello discográfico de 2Pac antes de morir?",
         "imagen": "",
         "sonido": "",
@@ -853,6 +829,366 @@
           },
           {
             "respuestaDescripcion": "The Doggfather",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién es el autor del tema 'Smoke Weed Everyday'?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Wiz Khalifa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tyga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo se llamó el primer disco de rap en España?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rapin Madrid",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Urbano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mi Turno",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Hip Hop",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué grupo fue el primero en traer un Disco de Oro de rap a España?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "SFDK",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Violadores del verso",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Los chicos del maiz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ninguno de los anteriores",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué famoso DJ fue el pionero en la cultura del rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Coke La Rock",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrika Bambaataa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Grandmaster Caz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disco King Mario Sparks",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "snoop_dogg.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scholly D",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Public Enemy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "tupac_shakur.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doug E. Fresh",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué grupo aparece en la imagen?",
+        "imagen": "wutang_clan.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jungle Brothers",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Wu-Tang Clan",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Run DMC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "N.W.A",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "eminem.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Special Ed",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice T",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "50_cent.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kanye_west.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slick Rick",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "notorius_big.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LL Cool J",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suge Knight",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "jay_z.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sean Combs",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "dr_dre.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dr. Dre",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mc Ren",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "lil_wayne.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Chris Brown",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Birdman",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kendrick_lamar.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "J Cole",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Baby Keem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
             "esCorrecta": false
           }
         ]
