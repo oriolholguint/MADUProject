@@ -1051,30 +1051,6 @@
       },
       {
         "preguntaDescripcion": "¿Quién aparece en la imagen?",
-        "imagen": "kanye_west.jpg",
-        "sonido": null,
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Nas",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Jay-Z",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Kanye West",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Slick Rick",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "¿Quién aparece en la imagen?",
         "imagen": "notorius_big.jpg",
         "sonido": null,
         "esMayorEdad": false,
@@ -1190,6 +1166,246 @@
           {
             "respuestaDescripcion": "Kanye West",
             "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "rakim.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kool G Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "KRS-One",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rakim",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kanye_west.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slick Rick",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kase_o.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sho Hai",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lirico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "el_chojin.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Frank T",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Chojin",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tote King",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "zpu.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ambkor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Soma",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "vico_c.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hector El Father",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Don Omar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "canserbero.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "C-Kan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Canserbero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Apache",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "nach.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rapsusklei",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "residente.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Residente",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Eduardo Cabra",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rubén Blades",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "missy_elliott.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Lil' Kim",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mary J. Blige",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ciara",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Missy Elliott",
+            "esCorrecta": true
           }
         ]
       }
