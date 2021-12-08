@@ -330,6 +330,326 @@
         ]
       },
       {
+        "preguntaDescripcion": "Is \"rap\" the same as \"hip-hop\"?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the background music in which you usually rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Background",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Backsound",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Beat",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Music",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is the rapper who has won the most awards?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay Z",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the song with the most visits on YouTube?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rap God",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Life is good",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lose Yourself",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuck Tha Police",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In what year was Tupac Shakur assassinated?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1995",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1996",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1994",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1997",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Snoop Dogg's first album?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Doggyfather",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paid tha cost to be da boss",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is rapper 50 Cent's name?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sean Phillips",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jamal Grey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis Cranston",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis James Jackson",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is a subgenre of rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Freestyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Gangsta Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Trap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What brand organizes the largest Freestyle event in Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Monster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Redbull",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rockstar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Burn",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "When was the first Rap album published in Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1989",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1985",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "It is not known",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is Missi Elliot considered one of the first rappers in history?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What rapper has a mega-hit with the name 'In Da Club'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nelly",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the rhythm with which a rapper adapts to the beat?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Adapter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metric",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flow",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rhytm",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Finish 2Pac's song title: 'Dear ______'",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mama",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Child",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Shorter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Father",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
         "preguntaDescripcion": "Who appears in the image?",
         "imagen": "snoop_dogg.jpg",
         "sonido": null,
@@ -349,6 +669,190 @@
           },
           {
             "respuestaDescripcion": "Public Enemy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was 2Pac's record label before you died?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ruthless Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Deathrow Records",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bad boy Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Aftermath Records",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Was Dr Dre Eminem's mentor and first producer?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many members make up the Wu-Tang Clan group?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "10",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "6",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How did rapper Eazy E die?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Overdose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Car accident",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Heart attack",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "HIV",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is NOT a common instrument in rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sampler",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Synthetizer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Box of rhytm",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is not an element of hip-hop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Graffiti",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Break Dancing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the first 2Pac album?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Greatest Hits",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Better Dayz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2Pacalypse Now",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Snoop Dogg's first album?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Over the Counter",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Doggfather",
             "esCorrecta": false
           }
         ]
