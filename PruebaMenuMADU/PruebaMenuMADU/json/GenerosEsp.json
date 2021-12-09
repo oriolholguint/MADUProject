@@ -1433,18 +1433,353 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "¿Que banda tiene más premios Grammys de toda la historia?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "U2",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Dixie Chicks",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Foo Fighters",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Cuantos dislikes tenia la cancion de 'Baby' de Justin Bieber en youtube?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "12.3 mill",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "22 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "No tenia dislikes",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Que edad tenia Billie Eilish cuando empezó su carrera musical?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "13",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "15",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "18",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Que estatura tiene Ariana Grande?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1,53",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1,63",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,42",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,5",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "De donde es Selena Gomez?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Texas",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Brazil",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Colombia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Cual es la cantante de pop más popular del 2020?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ariana Grande",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Raphael",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Freddie Mercury",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Michael Jackson",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Que sigue la canción: I'm a barbie girl, in the ........ .......",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Barbie world",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Pretty world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puppy world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Barbie planet",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Como se llamaba Miley Cyrus en el programa que participó en Disney?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Hannah Montana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Megan Fox",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Ray",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Cyrus",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Como se llama Post Malone en la vida real?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Austin Richard Post",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bob Malone Poster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Chad Richard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Charles Post",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "En qué plataforma se hizo popular la canción Old Town Road de Lil Nas X?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "tiktok",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "facebook",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "linkedin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "github",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "Cual es el nombre real de Doja Cat?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Amala Ratna Zandile Dlamini",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Steva Molaca",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scarlett Johansson",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estela Reynolds",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "¿Qué músico canta 'Ice Ice Baby'?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Vanilla Ice",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2Pac",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "MC Ice",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "¿Quién fue el baterista de The Beatles?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Paul McCartney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Berta Lopin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suck Isucky",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "¿Cuál fue el primer video musical reproducido en MTV? ",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Video Killed the Radio Star",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "tik-tok",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pokerface",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Umbrella",
+            "esCorrecta": false
+          }
+        ]
+      },{
+        "preguntaDescripcion": "¿Qué banda famosa es originaria de Suecia?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "ABBA",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "ABA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AVVA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ACDC",
+            "esCorrecta": false
+          }
+        ]
+      }
   }
 ]
