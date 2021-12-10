@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebaMenuMADU
@@ -50,7 +44,6 @@ namespace PruebaMenuMADU
         private Boolean ComprobarUsuario(String usuario, String password)
         {
             Boolean loginCorrecto = false;
-            String passwordEncriptada = Encriptar(txtPassword.Text, KEY);
             
             try
             {
@@ -61,7 +54,7 @@ namespace PruebaMenuMADU
                 while ((linea = sr.ReadLine()) != null && !loginCorrecto)
                 {
                     String [] info = linea.Split(':');
-                    if(info[0].Equals(usuario) && info[1].Equals(passwordEncriptada))
+                    if(info[0].Equals(usuario) && ComprobarPassword(password, info[1]))
                     {
                         loginCorrecto = true;
                         txtUser.Text = "";
@@ -79,24 +72,9 @@ namespace PruebaMenuMADU
             return loginCorrecto;
         }
 
-        private String Encriptar(String text, String key)
+        private Boolean ComprobarPassword(String text, String password)
         {
-            byte[] keyArray;
-            byte[] encriptar = Encoding.UTF8.GetBytes(text);
-
-            keyArray = Encoding.UTF8.GetBytes(key);
-
-            var tdes = new TripleDESCryptoServiceProvider();
-
-            tdes.Key = keyArray; 
-            tdes.Mode = CipherMode.ECB;
-            tdes.Padding = PaddingMode.PKCS7;
-
-            ICryptoTransform cTransform = tdes.CreateEncryptor();
-            byte[] result = cTransform.TransformFinalBlock(encriptar, 0, encriptar.Length);
-            tdes.Clear();
-
-            return Convert.ToBase64String(result, 0, result.Length);
+            return BCrypt.Net.BCrypt.Verify(text, password);
         }
     }
 }

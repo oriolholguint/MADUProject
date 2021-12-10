@@ -107,24 +107,9 @@ namespace PruebaMenuMADU
 
         private String Encriptar(String text, String key)
         {
-            byte[] keyArray;
-            byte[] encriptar = Encoding.UTF8.GetBytes(text);
+            String hashedPassword = BCrypt.Net.BCrypt.HashPassword(text);
 
-            keyArray = Encoding.UTF8.GetBytes(key);
-
-            var tdes = new TripleDESCryptoServiceProvider();
-
-            tdes.Key = keyArray;
-            tdes.Mode = CipherMode.ECB;
-            tdes.Padding = PaddingMode.PKCS7;
-
-            ICryptoTransform cTransform = tdes.CreateEncryptor();
-            byte[] result = cTransform.TransformFinalBlock(encriptar, 0, encriptar.Length);
-            tdes.Clear();
-
-            
-
-            return Convert.ToBase64String(result, 0, result.Length);
+            return hashedPassword;
         }
 
         private Boolean ComprobarUsuario(String usuario)

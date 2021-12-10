@@ -1,2 +1,2 @@
-admin:fgspM8wMACA=:fgspM8wMACA=
-admin2:dpcJw0zVeJ8=:dpcJw0zVeJ8=
+admin:$2b$10$1M.B00serGeW/rjsWYTCtee2S9PIz7uicTXgdtMFttTHWJC/ebG/.:$2b$10$ouciq.agfH4ztLxssl04P.VfE5UmeAciWqRa/7p.iUh9im7Th5L.u
+admin2:$2b$10$cppVW89Lgq3y9yNAfwLALulE7zNs/Rqsif3i5vnTodVLqG5tZsC5.:$2b$10$FyLyMurEeJm7eIY/VJv3.ehCSPc89uMiltrgLbjwFlcGJ7kuxbrWG

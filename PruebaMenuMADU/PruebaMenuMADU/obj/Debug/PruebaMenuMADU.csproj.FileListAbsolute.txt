@@ -163,3 +163,5 @@ D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMA
 C:\Users\david\source\repos\MADUProject\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.FormPersonajesGenero.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.MainForm.resources
 D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\obj\Debug\PruebaMenuMADU.Registro.resources
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\BCrypt.Net-Core.dll
+D:\OriolHolguin\MADUProject\PruebaMenuMADU\PruebaMenuMADU\bin\Debug\BCrypt.Net-Core.pdb
