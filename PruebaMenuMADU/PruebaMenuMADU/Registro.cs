@@ -14,8 +14,6 @@ namespace PruebaMenuMADU
 {
     public partial class Registro : Form
     {
-        private static char USER_SEPARATOR = ':';
-
         public Registro()
         {
             InitializeComponent();

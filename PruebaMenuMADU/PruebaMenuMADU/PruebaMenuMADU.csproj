@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrador.cs" />
     <Compile Include="CrearGenero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +115,7 @@
     <Compile Include="RecuperarContrasenya.Designer.cs">
       <DependentUpon>RecuperarContrasenya.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserFileManager.cs" />
     <EmbeddedResource Include="CrearGenero.resx">
       <DependentUpon>CrearGenero.cs</DependentUpon>
     </EmbeddedResource>
