@@ -25,24 +25,9 @@ namespace PruebaMenuMADU
         {
             LimpiarErrores();
 
-            if(ComprobarCampos())
+            if (ComprobarCampos())
             {
-                String encryptPassword = Encriptar(txtPassword.Text);
-                String encryptPhrase = Encriptar(txtFraseRecuperacion.Text);
-
-                try 
-                {
-                    StreamWriter sw = new StreamWriter("..\\..\\etc\\passwd.txt", true);
-
-                    sw.Write(txtNombreUsuario.Text + USER_SEPARATOR + encryptPassword + USER_SEPARATOR + encryptPhrase + "\n");
-                    MessageBox.Show("Usuario registrado correctamente", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    sw.Close();
-                }
-                catch(FileNotFoundException ex)
-                {
-
-                }
+                UserFileManager.AgregarUsuario(txtNombreUsuario.Text, txtPassword.Text, txtFraseRecuperacion.Text);
 
                 LimpiarCampos();
             }
@@ -53,12 +38,12 @@ namespace PruebaMenuMADU
         {
             Boolean registroCorrecto = true;
 
-            if(String.IsNullOrEmpty(txtNombreUsuario.Text) || txtNombreUsuario.Text.Contains(":"))
+            if (String.IsNullOrEmpty(txtNombreUsuario.Text) || txtNombreUsuario.Text.Contains(":"))
             {
                 errorProviderRegistro.SetError(txtNombreUsuario, "El nombre de usuario no puede estar vacio o es incorrecto");
                 registroCorrecto = false;
             }
-            else if(!ComprobarUsuario(txtNombreUsuario.Text))
+            else if (UserFileManager.ComprobarUsuarioExiste(txtNombreUsuario.Text))
             {
                 errorProviderRegistro.SetError(txtNombreUsuario, "El usuario ya existe");
                 registroCorrecto = false;
@@ -71,18 +56,18 @@ namespace PruebaMenuMADU
                 registroCorrecto = false;
             }
 
-            if(String.IsNullOrEmpty(txtRepeatPassword.Text))
+            if (String.IsNullOrEmpty(txtRepeatPassword.Text))
             {
                 errorProviderRegistro.SetError(txtRepeatPassword, "El campo repeat password no puede estar vacio");
                 registroCorrecto = false;
             }
-            else if(!txtRepeatPassword.Text.Equals(txtPassword.Text))
+            else if (!txtRepeatPassword.Text.Equals(txtPassword.Text))
             {
                 errorProviderRegistro.SetError(txtRepeatPassword, "El password no coincide");
                 registroCorrecto = false;
             }
 
-            if(String.IsNullOrEmpty(txtFraseRecuperacion.Text))
+            if (String.IsNullOrEmpty(txtFraseRecuperacion.Text))
             {
                 errorProviderRegistro.SetError(txtFraseRecuperacion, "El campo frase recuperacion no puede estar vacio");
                 registroCorrecto = false;
@@ -104,41 +89,6 @@ namespace PruebaMenuMADU
             txtFraseRecuperacion.Text = "";
         }
 
-        private String Encriptar(String text)
-        {
-            String hashedPassword = BCrypt.Net.BCrypt.HashPassword(text);
 
-            return hashedPassword;
-        }
-
-        private Boolean ComprobarUsuario(String usuario)
-        {
-            Boolean usuarioCorrecto = true;
-
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\etc\\passwd.txt", true);
-
-                String linea;
-
-                while( (linea = sr.ReadLine()) != null )
-                {
-                    String[] userInfo = linea.Split(USER_SEPARATOR);
-
-                    if(userInfo[0].Equals(usuario))
-                    {
-                        usuarioCorrecto = false;
-                    }
-                }
-
-                sr.Close();
-            }
-            catch(FileNotFoundException ex)
-            {
-
-            }
-
-            return usuarioCorrecto;
-        }
     }
 }

@@ -13,7 +13,6 @@ namespace PruebaMenuMADU
 {
     public partial class RecuperarContrasenya : Form
     {
-        private static char USER_SEPARATOR = ':';
         private String userToChange;
 
         public RecuperarContrasenya()
@@ -26,7 +25,7 @@ namespace PruebaMenuMADU
             if (ComprobarCamposInfoUser()) //Compruebo que los campos estan rellenados y no estan vacios o son nulos
             {
                 //Compruebo que el usuario existe y la frase de recuperar password es correcta
-                if (ComprobarUsuario(txtUsuario.Text, txtFraseRecuperacion.Text)) 
+                if (UserFileManager.ComprobarUsuarioFrase(txtUsuario.Text, txtFraseRecuperacion.Text)) 
                 {
                     lblError.Visible = false; //En el caso que el mensaje de error este activo lo desactivo
 
@@ -61,65 +60,10 @@ namespace PruebaMenuMADU
             //Compruebo que los campos password y repeat password sean correctos
             if(ComprobarCamposPassword())
             {
-                EliminarUsuario(userToChange);
-                AgregarUsuario(userToChange);
+                UserFileManager.EliminarUsuario(userToChange);
+                UserFileManager.AgregarUsuario(userToChange, txtPassword.Text, txtFraseRecuperacion.Text);
                 MessageBox.Show("Se ha cambiado el password correctamente", "Cambiar password", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
-            }
-        }
-
-        private void EliminarUsuario(String userToRemove)
-        {
-            List<String> InfoUsuarios = new List<String>();
-
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\etc\\passwd.txt");
-
-                String linea;
-
-                while ((linea = sr.ReadLine()) != null)
-                {
-                    String[] info = linea.Split(':');
-                    if (!info[0].Equals(userToRemove))
-                    {
-                        InfoUsuarios.Add(linea);
-                    }
-                }
-
-                sr.Close();
-
-                StreamWriter sw = new StreamWriter("..\\..\\etc\\passwd.txt");
-
-                //Guardo usuarios anteriores
-                foreach (String userLine in InfoUsuarios)
-                {
-                    sw.Write(userLine + "\n");
-                }
-
-                sw.Close();                
-            }
-            catch (FileNotFoundException ex)
-            {
-
-            }
-        }
-
-        private void AgregarUsuario(String userToAdd)
-        {
-            try
-            {
-                StreamWriter sw = new StreamWriter("..\\..\\etc\\passwd.txt", true);
-
-                String encryptPassword = Encriptar(txtPassword.Text);
-                String encryptPhrase = Encriptar(txtFraseRecuperacion.Text);
-                sw.Write(userToAdd + USER_SEPARATOR + encryptPassword + USER_SEPARATOR + encryptPhrase + "\n");
-
-                sw.Close();
-            }
-            catch (FileNotFoundException ex)
-            {
-
             }
         }
 
@@ -167,50 +111,10 @@ namespace PruebaMenuMADU
             return CamposCorrectos;
         }
 
-        private Boolean ComprobarUsuario(String usuario, String fraseRecuperacion)
-        {
-            Boolean usuarioExiste = false;
-
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\etc\\passwd.txt");
-
-                String linea;
-
-                while ((linea = sr.ReadLine()) != null && !usuarioExiste)
-                {
-                    String[] info = linea.Split(':');
-                    if (info[0].Equals(usuario) && ComprobarFraseRecuperacion(fraseRecuperacion, info[2]))
-                    {
-                        usuarioExiste = true;
-                    }
-                }
-
-                sr.Close();
-            }
-            catch (FileNotFoundException ex)
-            {
-
-            }
-
-            return usuarioExiste;
-        }
-
-        private Boolean ComprobarFraseRecuperacion(String text, String fraseRecuperacion)
-        {
-            return BCrypt.Net.BCrypt.Verify(text, fraseRecuperacion);
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private String Encriptar(String text)
-        {
-            String hashedPassword = BCrypt.Net.BCrypt.HashPassword(text);
-
-            return hashedPassword;
-        }
     }
 }

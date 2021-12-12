@@ -21,8 +21,11 @@ namespace PruebaMenuMADU
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(ComprobarUsuario(txtUser.Text, txtPassword.Text))
+            if(UserFileManager.ComprobarLogin(txtUser.Text, txtPassword.Text))
             {
+                txtUser.Text = "";
+                txtPassword.Text = "";
+
                 MainForm mainForm = new MainForm(this);
                 mainForm.Show();
                 this.Hide();
@@ -39,40 +42,8 @@ namespace PruebaMenuMADU
             a.ShowDialog();
         }
 
-        private Boolean ComprobarUsuario(String usuario, String password)
-        {
-            Boolean loginCorrecto = false;
-            
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\etc\\passwd.txt");
+        
 
-                String linea;
-
-                while ((linea = sr.ReadLine()) != null && !loginCorrecto)
-                {
-                    String [] info = linea.Split(':');
-                    if(info[0].Equals(usuario) && ComprobarPassword(password, info[1]))
-                    {
-                        loginCorrecto = true;
-                        txtUser.Text = "";
-                        txtPassword.Text = "";
-                    }
-                }
-
-                sr.Close();
-            }
-            catch(FileNotFoundException ex)
-            {
-             
-            }
-
-            return loginCorrecto;
-        }
-
-        private Boolean ComprobarPassword(String text, String password)
-        {
-            return BCrypt.Net.BCrypt.Verify(text, password);
-        }
+        
     }
 }
