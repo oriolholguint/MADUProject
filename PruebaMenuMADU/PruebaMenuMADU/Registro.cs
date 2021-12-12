@@ -15,7 +15,6 @@ namespace PruebaMenuMADU
     public partial class Registro : Form
     {
         private static char USER_SEPARATOR = ':';
-        private static String KEY = "jwey89e09ewhfo24";
 
         public Registro()
         {
@@ -28,14 +27,14 @@ namespace PruebaMenuMADU
 
             if(ComprobarCampos())
             {
-                String encryptPassword = Encriptar(txtPassword.Text, KEY);
-                String encryptPhrase = Encriptar(txtFraseRecuperacion.Text, KEY);
+                String encryptPassword = Encriptar(txtPassword.Text);
+                String encryptPhrase = Encriptar(txtFraseRecuperacion.Text);
 
                 try 
                 {
                     StreamWriter sw = new StreamWriter("..\\..\\etc\\passwd.txt", true);
 
-                    sw.WriteLine(txtNombreUsuario.Text + USER_SEPARATOR + encryptPassword + USER_SEPARATOR + encryptPhrase + "\n");
+                    sw.Write(txtNombreUsuario.Text + USER_SEPARATOR + encryptPassword + USER_SEPARATOR + encryptPhrase + "\n");
                     MessageBox.Show("Usuario registrado correctamente", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     sw.Close();
@@ -105,7 +104,7 @@ namespace PruebaMenuMADU
             txtFraseRecuperacion.Text = "";
         }
 
-        private String Encriptar(String text, String key)
+        private String Encriptar(String text)
         {
             String hashedPassword = BCrypt.Net.BCrypt.HashPassword(text);
 

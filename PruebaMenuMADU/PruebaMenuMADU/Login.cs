@@ -9,8 +9,6 @@ namespace PruebaMenuMADU
     public partial class Login : Form
     {
 
-        private static String KEY = "jwey89e09ewhfo24";
-
         public Login()
         {
             InitializeComponent();
