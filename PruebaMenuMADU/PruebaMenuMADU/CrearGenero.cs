@@ -12,10 +12,10 @@ namespace PruebaMenuMADU
 {
     public partial class CrearGenero : Form
     {
-        List<Genero> listaEsp { get; set; }
-        List<Genero> listaEng { get; set; }
-        Genero createdEng { get; set; }
-        Genero createdEsp { get; set; }
+        List<Genero> listaEsp;
+        List<Genero> listaEng;
+        Genero createdEng;
+        Genero createdEsp;
 
         Genero generoSeleccionadoEsp;
         Genero generoSeleccionadoEng;
@@ -185,18 +185,14 @@ namespace PruebaMenuMADU
 
         public void CrearGeneros()
         {
-            List<Personaje> personajes = new List<Personaje>();
-            Partida[] partidas = new Partida[10];
-            List<Pregunta> preguntas = new List<Pregunta>();
-
             //Obtengo los nombres de las imagenes y sonido con su extension
             String imagenMenu = txtUrlOculta.Text.Split('\\').Last();
             String imagenFondo = txtUrlBackground.Text.Split('\\').Last();
             String sonido = txtUrlMusic.Text.Split('\\').Last();
 
             //Creo los generos
-            Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, personajes, partidas, preguntas);
-            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, personajes, partidas, preguntas);
+            Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new Partida[10], new List<Pregunta>());
+            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new Partida[10], new List<Pregunta>());
 
             this.createdEng = english;
             this.createdEsp = spanish;

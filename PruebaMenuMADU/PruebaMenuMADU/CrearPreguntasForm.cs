@@ -20,8 +20,8 @@ namespace PruebaMenuMADU
         List<Pregunta> preguntasEsp = new List<Pregunta>();
         List<Pregunta> preguntasEng = new List<Pregunta>();
 
-        List<Genero> generosEsp = new List<Genero>();
-        List<Genero> generosEng = new List<Genero>();
+        List<Genero> generosEsp;
+        List<Genero> generosEng;
 
         public CrearPreguntasForm()
         {
