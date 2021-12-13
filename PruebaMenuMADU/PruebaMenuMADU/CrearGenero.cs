@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -118,6 +119,7 @@ namespace PruebaMenuMADU
                         return;
                     }
                 }
+
                 txtUrlBackground.Text = bgPick.FileName;
                 Bitmap image = new Bitmap(bgPick.FileName);
                 pbBg.Dock = DockStyle.Fill;
@@ -163,11 +165,35 @@ namespace PruebaMenuMADU
                         CrearGeneros(); //Creo los generos nuevos
                         this.listaEsp.Add(createdEsp); //Añado a la lista el nuevo genero en espannol
                         this.listaEng.Add(createdEng); //Añado a la lista el nuevo genero en ingles
+
+                        if (pbImagenGenero.Image != null)
+                        {
+                            ((IDisposable)pbImagenGenero.Image).Dispose();
+                        }
+
+                        if(pbBg.Image != null)
+                        {
+                            ((IDisposable)pbBg.Image).Dispose();
+                        }
+
                         this.Close();
+
+                       
                     }
                     else
                     {
                         CrearGeneros(); //Creo los generos
+                        
+                        if (pbImagenGenero.Image != null)
+                        {
+                            ((IDisposable)pbImagenGenero.Image).Dispose();
+                        }
+
+                        if (pbBg.Image != null)
+                        {
+                            ((IDisposable)pbBg.Image).Dispose();
+                        }
+
                         this.Close();
                     }
                 }

@@ -96,12 +96,12 @@ namespace PruebaMenuMADU
             // 
             // pbImagenGenero
             // 
-            this.pbImagenGenero.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbImagenGenero.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbImagenGenero.Location = new System.Drawing.Point(3, 17);
             this.pbImagenGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbImagenGenero.Name = "pbImagenGenero";
-            this.pbImagenGenero.Size = new System.Drawing.Size(526, 209);
-            this.pbImagenGenero.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbImagenGenero.Size = new System.Drawing.Size(526, 439);
+            this.pbImagenGenero.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenGenero.TabIndex = 0;
             this.pbImagenGenero.TabStop = false;
             // 
