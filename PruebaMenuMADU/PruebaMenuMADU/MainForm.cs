@@ -362,10 +362,6 @@ namespace PruebaMenuMADU
                 this.GenerosEng = cg.ObtenerListaGeneros("eng");
                 ObtenerComboBoxGeneros(GenerosEsp);
             }
-            else if (cg.getCreatedGenre("esp") == null || cg.manualCancel) //Si se ha cancelado o cerrado la ventana de crear genero
-            {
-                MessageBox.Show("Se ha cancelado la edicion del genero " + this.GeneroSeleccionadoEsp.nombre, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
             else //Si ha habido una modificacion en un genero
             {
                 this.GenerosEsp = cg.ObtenerListaGeneros("esp");

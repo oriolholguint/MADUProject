@@ -157,30 +157,29 @@ namespace PruebaMenuMADU
         {
             if (ComprobarCampos()) //Compruebo que todos los campos esten rellenados
             {
-                if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
+                
+                if (editBool) //Si estoy en modo de edicion
                 {
-                    if (editBool) //Si estoy en modo de edicion
+                    EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre); //Elimino los generos antiguos
+                    EditarGeneros(); //Edito los generos
+                    this.listaEsp.Add(generoSeleccionadoEsp); //Añado a la lista el nuevo genero en espannol
+                    this.listaEng.Add(generoSeleccionadoEng); //Añado a la lista el nuevo genero en ingles
+
+                    if (pbImagenGenero.Image != null)
                     {
-                        EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre); //Elimino los generos antiguos
-                        CrearGeneros(); //Creo los generos nuevos
-                        this.listaEsp.Add(createdEsp); //Añado a la lista el nuevo genero en espannol
-                        this.listaEng.Add(createdEng); //Añado a la lista el nuevo genero en ingles
-
-                        if (pbImagenGenero.Image != null)
-                        {
-                            ((IDisposable)pbImagenGenero.Image).Dispose();
-                        }
-
-                        if(pbBg.Image != null)
-                        {
-                            ((IDisposable)pbBg.Image).Dispose();
-                        }
-
-                        this.Close();
-
-                       
+                        ((IDisposable)pbImagenGenero.Image).Dispose();
                     }
-                    else
+
+                    if(pbBg.Image != null)
+                    {
+                        ((IDisposable)pbBg.Image).Dispose();
+                    }
+
+                    this.Close();
+                }
+                else
+                {
+                    if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
                     {
                         CrearGeneros(); //Creo los generos
                         
@@ -196,11 +195,12 @@ namespace PruebaMenuMADU
 
                         this.Close();
                     }
+                    else
+                    {
+                        MessageBox.Show("El genero ya existe", "Error Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("El genero ya existe", "Error Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+                
             }
             else
             {
@@ -226,6 +226,45 @@ namespace PruebaMenuMADU
             ResourceManager.addImageToResources(txtUrlOculta.Text);
             ResourceManager.addImageToResources(txtUrlBackground.Text);
             ResourceManager.addSoundToResources(txtUrlMusic.Text);
+        }
+
+        public void EditarGeneros()
+        {
+            //Obtengo los nombres de las imagenes y sonido con su extension
+            String imagenMenu = txtUrlOculta.Text.Split('\\').Last();
+            String imagenFondo = txtUrlBackground.Text.Split('\\').Last();
+            String musicaFondo = txtUrlMusic.Text.Split('\\').Last();
+
+            if(!generoSeleccionadoEsp.imagenMenu.Equals(imagenMenu))
+            {
+                generoSeleccionadoEsp.imagenMenu = imagenMenu;
+                generoSeleccionadoEng.imagenMenu = imagenMenu;
+                ResourceManager.addImageToResources(txtUrlOculta.Text);
+            }
+
+            if (!generoSeleccionadoEsp.imagenFondo.Equals(imagenFondo))
+            {
+                generoSeleccionadoEsp.imagenFondo = imagenFondo;
+                generoSeleccionadoEng.imagenFondo = imagenFondo;
+                ResourceManager.addImageToResources(txtUrlBackground.Text);
+            }
+
+            if (!generoSeleccionadoEsp.musicaFondo.Equals(musicaFondo))
+            {
+                generoSeleccionadoEsp.musicaFondo = musicaFondo;
+                generoSeleccionadoEng.musicaFondo = musicaFondo;
+                ResourceManager.addSoundToResources(txtUrlMusic.Text);
+            }
+
+            if(!generoSeleccionadoEsp.nombre.Equals(txtNombreGenero))
+            {
+                generoSeleccionadoEsp.nombre = txtNombreGenero.Text;
+            }
+
+            if(!generoSeleccionadoEng.nombre.Equals(txtGenreName))
+            {
+                generoSeleccionadoEng.nombre = txtGenreName.Text;
+            }
         }
 
         public void EliminarGeneros(String nombreGeneroEsp, String nombreGeneroEng)

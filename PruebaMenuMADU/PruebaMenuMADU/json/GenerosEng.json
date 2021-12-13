@@ -1,9 +1,223 @@
 [
   {
+    "nombre": "Electronic",
+    "musicaFondo": "",
+    "imagenFondo": "electronica.jpg",
+    "imagenMenu": "electronica.jpg",
+    "personajes": [
+      {
+        "nombre": "Armin Van Bureen",
+        "imagen": "per_armin_van_bureen.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "David Guetta",
+        "imagen": "per_david_guetta.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Skrillex",
+        "imagen": "per_skrillex.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "When was the first electronic composition made?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1857",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1910",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1936",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1960",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "One way to compose a song is by mixing it with another",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the first composer of electronic music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Leonardo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lorenzo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luca Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luigi Russolo",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of these festivals is for electronic music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Shiva Valley",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Indian Spirit",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tomorrowland",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "A rave is a kind of illegal party",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Pop",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "PopMenu.jpg",
+    "personajes": [
+      {
+        "nombre": "Michael Jackson",
+        "imagen": "per_michael_jackson.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Dualipa",
+        "imagen": "per_dualipa.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Ke$ha",
+        "imagen": "per_kesha.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "partidas": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "preguntas": []
+  },
+  {
     "nombre": "Rock",
     "musicaFondo": "iphone-notificacion.mp3",
     "imagenFondo": "earth.png",
-    "imagenMenu": "earth.png",
+    "imagenMenu": "RockMenu.jpg",
     "personajes": [
       {
         "nombre": "Bob Dylan",
@@ -25,8 +239,8 @@
     "preguntas": [
       {
         "preguntaDescripcion": "Which band was born first?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -49,8 +263,8 @@
       },
       {
         "preguntaDescripcion": "What year was Nirvana formed?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -73,8 +287,8 @@
       },
       {
         "preguntaDescripcion": "When did Rock en Español start?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -97,8 +311,8 @@
       },
       {
         "preguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -125,7 +339,7 @@
     "nombre": "Rap",
     "musicaFondo": "iphone-notificacion.mp3",
     "imagenFondo": "earth.png",
-    "imagenMenu": "earth.png",
+    "imagenMenu": "RapMenu.jpg",
     "personajes": [
       {
         "nombre": "Tupac Shakur",
@@ -147,8 +361,8 @@
     "preguntas": [
       {
         "preguntaDescripcion": "At what time did hip-hop emerge?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -171,8 +385,8 @@
       },
       {
         "preguntaDescripcion": "How many 'elements' is hip-hop made of?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -195,8 +409,8 @@
       },
       {
         "preguntaDescripcion": "In which country did rap emerge?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -219,8 +433,8 @@
       },
       {
         "preguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -235,8 +449,8 @@
       },
       {
         "preguntaDescripcion": "What does \"MC\" mean in rap culture?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -259,8 +473,8 @@
       },
       {
         "preguntaDescripcion": "What was the best-selling rap album in history?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -307,8 +521,8 @@
       },
       {
         "preguntaDescripcion": "What rap movie did rapper Eminem star in?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -331,8 +545,8 @@
       },
       {
         "preguntaDescripcion": "Is \"rap\" the same as \"hip-hop\"?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -347,8 +561,8 @@
       },
       {
         "preguntaDescripcion": "What is the name of the background music in which you usually rap?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -371,8 +585,8 @@
       },
       {
         "preguntaDescripcion": "Who is the rapper who has won the most awards?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -395,8 +609,8 @@
       },
       {
         "preguntaDescripcion": "What is the song with the most visits on YouTube?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -419,8 +633,8 @@
       },
       {
         "preguntaDescripcion": "In what year was Tupac Shakur assassinated?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
           {
@@ -443,8 +657,8 @@
       },
       {
         "preguntaDescripcion": "What was Snoop Dogg's first album?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -467,8 +681,8 @@
       },
       {
         "preguntaDescripcion": "What is rapper 50 Cent's name?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -491,8 +705,8 @@
       },
       {
         "preguntaDescripcion": "Which of the following is a subgenre of rap?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -515,8 +729,8 @@
       },
       {
         "preguntaDescripcion": "What brand organizes the largest Freestyle event in Spain?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -539,8 +753,8 @@
       },
       {
         "preguntaDescripcion": "When was the first Rap album published in Spain?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -627,8 +841,8 @@
       },
       {
         "preguntaDescripcion": "Finish 2Pac's song title: 'Dear ______'",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -651,8 +865,8 @@
       },
       {
         "preguntaDescripcion": "What was 2Pac's record label before you died?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -675,8 +889,8 @@
       },
       {
         "preguntaDescripcion": "Was Dr Dre Eminem's mentor and first producer?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -811,8 +1025,8 @@
       },
       {
         "preguntaDescripcion": "What was Snoop Dogg's first album?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -835,8 +1049,8 @@
       },
       {
         "preguntaDescripcion": "Who is the author of the song 'Smoke Weed Everyday'?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -859,8 +1073,8 @@
       },
       {
         "preguntaDescripcion": "What was the name of the first rap album in Spain?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -883,8 +1097,8 @@
       },
       {
         "preguntaDescripcion": "Which group was the first to bring a Rap Gold Record to Spain?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -907,8 +1121,8 @@
       },
       {
         "preguntaDescripcion": "Which famous DJ was the pioneer in rap culture?",
-        "imagen": "",
-        "sonido": "",
+        "imagen": null,
+        "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
@@ -1406,204 +1620,6 @@
           {
             "respuestaDescripcion": "Missy Elliott",
             "esCorrecta": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "nombre": "Pop",
-    "musicaFondo": "iphone-notificacion.mp3",
-    "imagenFondo": "earth.png",
-    "imagenMenu": "earth.png",
-    "personajes": [
-      {
-        "nombre": "Michael Jackson",
-        "imagen": "per_michael_jackson.jpg",
-        "posicionRanking": 1
-      },
-      {
-        "nombre": "Dualipa",
-        "imagen": "per_dualipa.jpg",
-        "posicionRanking": 2
-      },
-      {
-        "nombre": "Ke$ha",
-        "imagen": "per_kesha.jpg",
-        "posicionRanking": 3
-      }
-    ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
-  },
-  {
-    "nombre": "Electronic",
-    "musicaFondo": "",
-    "imagenFondo": "electronica.jpg",
-    "imagenMenu": "electronica.jpg",
-    "personajes": [],
-    "partidas": [],
-    "preguntas": [
-      {
-        "preguntaDescripcion": "When was the first electronic composition made?",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "1857",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "1910",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "1936",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "1960",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "One way to compose a song is by mixing it with another",
-        "imagen": "imagen ejempo",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "True",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "False",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "What is the name of the first composer of electronic music?",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Leonardo Russolo",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Lorenzo Russolo",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Luca Russolo",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Luigi Russolo",
-            "esCorrecta": true
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Dark",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Progressive",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Psychedelic",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Hard",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "Which of these festivals is for electronic music?",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Shiva Valley",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Indian Spirit",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "All corrects",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Tomorrowland",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "LSD",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "cocaina",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "éxtasis",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "All corrects",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "A rave is a kind of illegal party",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "True",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "False",
-            "esCorrecta": false
           }
         ]
       }

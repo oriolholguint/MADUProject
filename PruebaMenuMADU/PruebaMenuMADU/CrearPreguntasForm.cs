@@ -187,7 +187,7 @@ namespace PruebaMenuMADU
 
             if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
             {
-                preguntaEsp.imagen = "";
+                preguntaEsp.imagen = null;
             }
             else {
                 if (!File.Exists(txtUrlImg.Text))
@@ -742,7 +742,7 @@ namespace PruebaMenuMADU
 
                 if (txtUrlImg.Text.Equals("") && txtImgOrigen.Text.Equals(""))
                 {
-                    preg.imagen = "";
+                    preg.imagen = null;
                 }
                 else
                 {
