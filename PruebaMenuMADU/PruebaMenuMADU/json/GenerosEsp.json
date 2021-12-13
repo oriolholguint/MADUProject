@@ -1446,5 +1446,167 @@
       null
     ],
     "preguntas": []
+  },
+  {
+    "nombre": "Electronica",
+    "musicaFondo": "",
+    "imagenFondo": "electronica.jpg",
+    "imagenMenu": "electronica.jpg",
+    "personajes": [],
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "Cuando se hizo la primera composicion electronica?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1857",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1910",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1936",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1960",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Una manera de componer una canción es mezclando con otra",
+        "imagen": "imagen ejemplo",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Como se llama el primer compositor de la musica electronica?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Leonardo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lorenzo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luca Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luigi Russolo",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual de estos festivales es de musica electronica?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Shiva Valley",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Indian Spirit",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todos son correctos",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tomorrowland",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "todas son correctas",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Una Rave es un tipo de fiesta ilegal",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
   }
 ]

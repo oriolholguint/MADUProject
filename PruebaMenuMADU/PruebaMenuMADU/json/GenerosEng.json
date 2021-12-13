@@ -1446,5 +1446,167 @@
       null
     ],
     "preguntas": []
+  },
+  {
+    "nombre": "Electronic",
+    "musicaFondo": "",
+    "imagenFondo": "electronica.jpg",
+    "imagenMenu": "electronica.jpg",
+    "personajes": [],
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "When was the first electronic composition made?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1857",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1910",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1936",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1960",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "One way to compose a song is by mixing it with another",
+        "imagen": "imagen ejempo",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the first composer of electronic music?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Leonardo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lorenzo Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luca Russolo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Luigi Russolo",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of these festivals is for electronic music?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Shiva Valley",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Indian Spirit",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tomorrowland",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "A rave is a kind of illegal party",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
   }
 ]
