@@ -157,31 +157,30 @@ namespace PruebaMenuMADU
         {
             if (ComprobarCampos()) //Compruebo que todos los campos esten rellenados
             {
-                
-                if (editBool) //Si estoy en modo de edicion
+                if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
                 {
-                    EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre); //Elimino los generos antiguos
-                    CrearGeneros(); //Creo los generos nuevos
-                    this.listaEsp.Add(createdEsp); //Añado a la lista el nuevo genero en espannol
-                    this.listaEng.Add(createdEng); //Añado a la lista el nuevo genero en ingles
-
-                    if (pbImagenGenero.Image != null)
+                    if (editBool) //Si estoy en modo de edicion
                     {
-                        ((IDisposable)pbImagenGenero.Image).Dispose();
+                        EliminarGeneros(generoSeleccionadoEsp.nombre, generoSeleccionadoEng.nombre); //Elimino los generos antiguos
+                        CrearGeneros(); //Creo los generos nuevos
+                        this.listaEsp.Add(createdEsp); //Añado a la lista el nuevo genero en espannol
+                        this.listaEng.Add(createdEng); //Añado a la lista el nuevo genero en ingles
+
+                        if (pbImagenGenero.Image != null)
+                        {
+                            ((IDisposable)pbImagenGenero.Image).Dispose();
+                        }
+
+                        if(pbBg.Image != null)
+                        {
+                            ((IDisposable)pbBg.Image).Dispose();
+                        }
+
+                        this.Close();
+
+                       
                     }
-
-                    if(pbBg.Image != null)
-                    {
-                        ((IDisposable)pbBg.Image).Dispose();
-                    }
-
-                    MessageBox.Show("El genero ha sido editado con exito", "Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                    this.Close();
-                }
-                else //Si estoy creando un nuevo genero
-                {
-                    if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
+                    else
                     {
                         CrearGeneros(); //Creo los generos
                         
@@ -195,19 +194,17 @@ namespace PruebaMenuMADU
                             ((IDisposable)pbBg.Image).Dispose();
                         }
 
-                        MessageBox.Show("El genero ha sido creado con exito", "Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
                         this.Close();
                     }
-                    else
-                    {
-                        MessageBox.Show("El genero ya existe", "Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                }  
+                }
+                else
+                {
+                    MessageBox.Show("El genero ya existe", "Error Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
             else
             {
-                MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Llena todos los campos del genero y vuelve a intentarlo", "Error al crear el Genero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }

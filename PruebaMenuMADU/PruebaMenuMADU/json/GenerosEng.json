@@ -1,5 +1,1453 @@
 [
   {
+    "nombre": "Rock",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [
+      {
+        "nombre": "Bob Dylan",
+        "imagen": "per_bob_dylan.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Elvis Presley",
+        "imagen": "per_elvis_presley.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Chuck Berry",
+        "imagen": "per_chuckberry.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "Which band was born first?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Doors",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Who",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What year was Nirvana formed?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1989",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1988",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1987",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "When did Rock en Español start?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Between 1930 & 1940",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Between 1950 & 1960",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Between 1970 & 1980",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Between 1990 & 2000",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Try JSON 1",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Try JSON 2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Try JSON 3",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Try JSON 4",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Rap",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [
+      {
+        "nombre": "Tupac Shakur",
+        "imagen": "per_tupac_shakur.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Eminem",
+        "imagen": "per_eminem.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Canserbero",
+        "imagen": "per_canserbero.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "partidas": [],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "At what time did hip-hop emerge?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "In the 70s",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "In the 60",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "In the 90",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "In the 80",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many 'elements' is hip-hop made of?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In which country did rap emerge?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "England",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mexico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "France",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "United States",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is Lil Wayne also known as Wheezy?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What does \"MC\" mean in rap culture?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Military Cross",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master of Ceremonies",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Master Creative",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master Crew",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the best-selling rap album in history?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Life After Death",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Marshall Matters LP",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Eminem Show",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\r\nHow did rapper Tupac Shakur die?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Suicide",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Overdose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Murder",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Natural death",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What rap movie did rapper Eminem star in?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The One-Handed Trick",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Straight Outta Compton",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Wild Style",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "8 Mile",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is \"rap\" the same as \"hip-hop\"?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the background music in which you usually rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Background",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Backsound",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Beat",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Music",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is the rapper who has won the most awards?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay Z",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the song with the most visits on YouTube?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rap God",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Life is good",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lose Yourself",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuck Tha Police",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In what year was Tupac Shakur assassinated?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1995",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1996",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1994",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1997",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Snoop Dogg's first album?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Doggyfather",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paid tha cost to be da boss",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is rapper 50 Cent's name?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sean Phillips",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jamal Grey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis Cranston",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis James Jackson",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is a subgenre of rap?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Freestyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Gangsta Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Trap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What brand organizes the largest Freestyle event in Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Monster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Redbull",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rockstar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Burn",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "When was the first Rap album published in Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1989",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1985",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "It is not known",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is Missi Elliot considered one of the first rappers in history?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What rapper has a mega-hit with the name 'In Da Club'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nelly",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the name of the rhythm with which a rapper adapts to the beat?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Adapter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metric",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flow",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rhytm",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Finish 2Pac's song title: 'Dear ______'",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mama",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Child",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Shorter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Father",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was 2Pac's record label before you died?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ruthless Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Deathrow Records",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bad boy Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Aftermath Records",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Was Dr Dre Eminem's mentor and first producer?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many members make up the Wu-Tang Clan group?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "10",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "6",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How did rapper Eazy E die?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Overdose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Car accident",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Heart attack",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "HIV",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is NOT a common instrument in rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sampler",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Synthetizer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Box of rhytm",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of the following is not an element of hip-hop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Graffiti",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Break Dancing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the first 2Pac album?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Greatest Hits",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Better Dayz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2Pacalypse Now",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Snoop Dogg's first album?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Over the Counter",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Doggfather",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is the author of the song 'Smoke Weed Everyday'?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Wiz Khalifa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tyga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the name of the first rap album in Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rapin Madrid",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Urbano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mi Turno",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Hip Hop",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which group was the first to bring a Rap Gold Record to Spain?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "SFDK",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Violadores del verso",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Los chicos del maiz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "None of the above",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which famous DJ was the pioneer in rap culture?",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Coke La Rock",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrika Bambaataa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Grandmaster Caz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disco King Mario Sparks",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "snoop_dogg.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scholly D",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Public Enemy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "tupac_shakur.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doug E. Fresh",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What group appears in the image?",
+        "imagen": "wutang_clan.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jungle Brothers",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Wu-Tang Clan",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Run DMC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "N.W.A",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "eminem.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Special Ed",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice T",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "50_cent.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "notorius_big.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LL Cool J",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suge Knight",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "jay_z.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sean Combs",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "dr_dre.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dr. Dre",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mc Ren",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "lil_wayne.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Chris Brown",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Birdman",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "kendrick_lamar.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "J Cole",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Baby Keem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "rakim.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kool G Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "KRS-One",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rakim",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "kanye_west.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slick Rick",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "kase_o.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sho Hai",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lirico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "el_chojin.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Frank T",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Chojin",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tote King",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "zpu.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ambkor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Soma",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "vico_c.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hector El Father",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Don Omar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "canserbero.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "C-Kan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Canserbero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Apache",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "nach.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rapsusklei",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "residente.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Residente",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Eduardo Cabra",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rubén Blades",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who appears in the image?",
+        "imagen": "missy_elliott.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Lil' Kim",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mary J. Blige",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ciara",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Missy Elliott",
+            "esCorrecta": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Pop",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "earth.png",
+    "imagenMenu": "earth.png",
+    "personajes": [
+      {
+        "nombre": "Michael Jackson",
+        "imagen": "per_michael_jackson.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Dualipa",
+        "imagen": "per_dualipa.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Ke$ha",
+        "imagen": "per_kesha.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "partidas": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "preguntas": []
+  },
+  {
     "nombre": "Electronic",
     "musicaFondo": "",
     "imagenFondo": "electronica.jpg",
@@ -160,65 +1608,5 @@
         ]
       }
     ]
-  },
-  {
-    "nombre": "Rock",
-    "musicaFondo": "iphone-notificacion.mp3",
-    "imagenFondo": "earth.png",
-    "imagenMenu": "RockMenu.jpg",
-    "personajes": [],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
-  },
-  {
-    "nombre": "Rap",
-    "musicaFondo": "iphone-notificacion.mp3",
-    "imagenFondo": "earth.png",
-    "imagenMenu": "RapMenu.jpg",
-    "personajes": [],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
-  },
-  {
-    "nombre": "Pop",
-    "musicaFondo": "iphone-notificacion.mp3",
-    "imagenFondo": "earth.png",
-    "imagenMenu": "PopMenu.jpg",
-    "personajes": [],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
   }
 ]
