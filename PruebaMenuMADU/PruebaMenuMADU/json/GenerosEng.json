@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Electronic",
-    "musicaFondo": "musica_juego_madu.wav",
+    "musicaFondo": "esp-escape-velocity-official.mp3",
     "imagenFondo": "electronica.jpg",
     "imagenMenu": "electronica.jpg",
     "personajes": [
