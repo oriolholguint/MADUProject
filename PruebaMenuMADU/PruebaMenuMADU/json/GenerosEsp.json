@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Electronica",
-    "musicaFondo": "",
+    "musicaFondo": "musica_juego_madu.wav",
     "imagenFondo": "electronica.jpg",
     "imagenMenu": "electronica.jpg",
     "personajes": [
