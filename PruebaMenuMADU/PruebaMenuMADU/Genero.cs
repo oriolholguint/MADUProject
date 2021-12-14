@@ -19,8 +19,6 @@ namespace PruebaMenuMADU
 
         public List<Personaje> personajes { get; set; }
 
-        public Partida [] partidas { get; set; }
-
         public List<Pregunta> preguntas { get; set; }
 
      
@@ -31,14 +29,13 @@ namespace PruebaMenuMADU
         }
 
         public Genero(String Nombre, String MusicaFondo, String ImagenFondo, String ImagenMenu,
-                      List<Personaje>  Personajes, Partida[] Partidas, List <Pregunta> Preguntas)
+                      List<Personaje>  Personajes, List <Pregunta> Preguntas)
         {
             this.nombre = Nombre;
             this.musicaFondo = MusicaFondo;
             this.imagenFondo = ImagenFondo;
             this.imagenMenu = ImagenMenu;
             this.personajes = Personajes;
-            this.partidas = Partidas;
             this.preguntas = Preguntas;
         }
     }

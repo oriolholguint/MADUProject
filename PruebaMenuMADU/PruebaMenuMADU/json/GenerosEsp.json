@@ -21,7 +21,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "Cuando se hizo la primera composicion electronica?",
@@ -199,18 +198,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
     "preguntas": []
   },
   {
@@ -235,7 +222,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿Qué banda nació primero?",
@@ -1221,7 +1207,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿En que época surgió el hip-hop?",

@@ -21,7 +21,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "When was the first electronic composition made?",
@@ -199,18 +198,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
     "preguntas": []
   },
   {
@@ -235,7 +222,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "Which band was born first?",
@@ -1221,7 +1207,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "At what time did hip-hop emerge?",

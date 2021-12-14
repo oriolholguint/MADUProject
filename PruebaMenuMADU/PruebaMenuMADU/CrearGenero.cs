@@ -217,8 +217,8 @@ namespace PruebaMenuMADU
             String sonido = txtUrlMusic.Text.Split('\\').Last();
 
             //Creo los generos
-            Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new Partida[10], new List<Pregunta>());
-            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new Partida[10], new List<Pregunta>());
+            Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new List<Pregunta>());
+            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new List<Pregunta>());
 
             this.createdEng = english;
             this.createdEsp = spanish;
