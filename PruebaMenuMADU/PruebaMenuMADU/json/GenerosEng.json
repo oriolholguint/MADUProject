@@ -310,26 +310,794 @@
         ]
       },
       {
-        "preguntaDescripcion": "¿Pregunta prueba de rock ingles and create JSON?",
+        "preguntaDescripcion": "Who was the first Metallica guitarist? (apart from James Hetfield)",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "Try JSON 1",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Try JSON 2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Try JSON 3",
+            "respuestaDescripcion": "Dave Mustaine",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Try JSON 4",
+            "respuestaDescripcion": "Kirk Hammett",
             "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ron McGovney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cliff Burton",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What band is the album \"Moving Pictures\" from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Pantera",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cream",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Black Sabbath",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rush",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which drummer is known to have put explosives in his kick drum?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dave Gorhi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Keith Moon",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nick Mason",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What year did John Frusciante leave the Red Hot Chili Peppers for good?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What great Latin American rock album was released in 1995?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Comfort y música para volar de Soda Stereo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Dorado de Aterciopelados",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "RE de Café Tacuba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El nervio del volcán de Caifanes",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is recognized as 'La iguana del rock'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Iggy Pop",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Alice Cooper",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eddie Vedder",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What's the name of Estopa's latest album?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rumbo a lo Desconocido",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Voces de Ultratumba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estopa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuego",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In the song 'The Raja of your skirt', with which car do they mention that they crash?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ford Fiesta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Seat Panda",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Fiat Panda",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ford Escort",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of these characters appears in the title of a song by Estopa?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paco de Lucía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Camarón",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jesús",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where does Estopa walk in the song 'Paseo'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "To a supermarket",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "To the beach",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "To nowhere",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "To a bar",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where was Saul Hudson, better known as Slash, born?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "United States",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puerto Rico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "England",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Mexico",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many albums has Melendi released? (excluding special editions)",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "7",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "9",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the song by Melendi from your album, 'Un alumno más'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Un jardín con Enanitos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lágrimas desordenadas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cheque al portamor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tocado y hundido",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "From which album is the song 'Learning to Fly' by Pink Floyd?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A Momentary Lapse of Reason",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Wall",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Division Bell",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark Side of the Moon",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "When was the album 'Por la boca vive el pez' by Fito and Fitipaldis released?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2006",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2005",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2007",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the previous group of Fito Cabrales before Fito and Fitipaldis?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Platero Y Tú",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Platero Y Él",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ñu",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fito Cabrales (Solo)",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How does the song continue? Por un beso de la ...",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Niña",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mujer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flaca",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rubia",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the longest song on Extremoduro's discography?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Locura Transitoria",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Si te Vas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pedrá",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Ley Innata ",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What Song is NOT from the Transgressive Rock Extremoduro album?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jesucristo García",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Extremaydura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Decidí",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "So payaso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of these songs is by Manolo Garcia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Cadillac Solitario",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pajaros de Barro",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El triste",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Salta",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "1",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A poco",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "A miel",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A mimbre",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A comida",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the most famous Guns & Roses song?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sweet Child O' Mine",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Welcome To The Jungle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paradise City",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Knockin' On Heaven's Door",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How does the title of the Song of La Fuga 'Buscando en ...' end?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "La calle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El mar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La basura",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El patio",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What song is NOT from the El Canto del Loco's 'Zapatillas' album?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tal Como Eres",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zapatillas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Besos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La madre de Jose",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which of these music groups is not Rock-style?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Marea",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Fuga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which group is the song The Dark Side of the Moon from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What group is the song 'Highway to Hell' from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which group is the song 'Yellow Submarine' from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "With what weapon was John Lennon killed?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Gun",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Knife",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Baseball bat",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Bottle",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which group is the song '(I Can't Get No) - Satisfaction' from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What group is the song 'Back In Black' from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which singer had anger problems because of drugs and alcohol?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "John Lennon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Syd Barrett",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What country is the Europe group from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Denmark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Norway",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Germany",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Sweden",
+            "esCorrecta": true
           }
         ]
       }

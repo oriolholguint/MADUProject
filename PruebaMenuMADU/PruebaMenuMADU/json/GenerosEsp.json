@@ -310,26 +310,794 @@
         ]
       },
       {
-        "preguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
+        "preguntaDescripcion": "¿Quién fué el primer guitarrista de Metallica? (a parte de James Hetfield)",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "Prueba JSON 1",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Prueba JSON 2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Prueba JSON 3",
+            "respuestaDescripcion": "Dave Mustaine",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Prueba JSON 4",
+            "respuestaDescripcion": "Kirk Hammett",
             "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ron McGovney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cliff Burton",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué banda es el álbum \"Moving Pictures\"?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Pantera",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cream",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Black Sabbath",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rush",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué baterista es conocido por haber metido explosivos en su bombo?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dave Gorhi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Keith Moon",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nick Mason",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué año se fue definitivamente John Frusciante de los Red Hot Chili Peppers?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué gran disco del rock latinoamericano fue estrenado en 1995?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Comfort y música para volar de Soda Stereo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Dorado de Aterciopelados",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "RE de Café Tacuba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El nervio del volcán de Caifanes",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién es reconocido como 'La iguana del rock'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Iggy Pop",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Alice Cooper",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eddie Vedder",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo se llama el último disco de Estopa?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rumbo a lo Desconocido",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Voces de Ultratumba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estopa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuego",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En la canción  'La Raja de tu falda', con qué coche mencionan que se estrellan?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ford Fiesta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Seat Panda",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Fiat Panda",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ford Escort",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estos personajes aparece en el título de una canción de Estopa?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paco de Lucía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Camarón",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jesús",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Hacia dónde pasea Estopa en la canción 'Paseo'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Al supermercado",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "A la playa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A ningún lugar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A un bar",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Dónde nació Saul Hudson, más conocido como Slash?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Estados Unidos ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puerto Rico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Inglaterra",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "México",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuántos álbums ha lanzado al mercado Melendi? (excluyendo ediciones especiales)",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "7",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "9",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cúal es la canción de Melendi de su disco, 'Un alumno más'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Un jardín con Enanitos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lágrimas desordenadas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cheque al portamor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tocado y hundido",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué álbum es la canción 'Learning to Fly' de Pink Floyd?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A Momentary Lapse of Reason",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Wall",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Division Bell",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark Side of the Moon",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuándo se lanzó el álbum \"Por la boca vive el pez\" de Fito y Fitipaldis?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2006",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2005",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2007",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el anterior grupo de Fito Cabrales antes de Fito y Fitipaldis?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Platero Y Tú",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Platero Y Él",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ñu",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fito Cabrales (En solitario)",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo sigue la cancion? Por un beso de la ...",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Niña",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mujer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flaca",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rubia",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál es la canción más larga de la discografía de Extremoduro?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Locura Transitoria",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Si te Vas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pedrá",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Ley Innata ",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que Cancion NO es del álbum de Extremoduro de Rock Transgresivo?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jesucristo García",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Extremaydura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Decidí",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Resp4",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estas canciones és de Manolo Garcia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Cadillac Solitario",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pajaros de Barro ",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El triste",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Resp4",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo acaba el título de la Cancion de Marea, 'La luna me sabe ...'? ",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A poco",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "A miel",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A mimbre",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A comida",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál es la canción más famosa de Guns & Roses?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sweet Child O' Mine",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Welcome To The Jungle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paradise City",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Knockin' On Heaven's Door",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Como acaba el título de la Cancion de La Fuga 'Buscando en ...'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "La calle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El mar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La basura",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El patio",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que cancion NO es del disco de 'Zapatillas' de El Canto del Loco?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tal Como Eres",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zapatillas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Besos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La madre de Jose",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estos grupos de música no és de estilo Rock?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Marea",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Fuga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción The Dark Side of the Moon?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Highway to Hell'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Yellow Submarine'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Con que arma mataron a John Lennon?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Pistola",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Cuchillo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Bate de béisbol",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Botella",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción '(I Can't Get No) - Satisfaction'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Back In Black'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que cantante tenía problemas de ira por culpa de las drogas y el alcohol?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "John Lennon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Syd Barrett",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué país es el grupo Europe?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dinamarca",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Noruega",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Alemania",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suecia",
+            "esCorrecta": true
           }
         ]
       }
