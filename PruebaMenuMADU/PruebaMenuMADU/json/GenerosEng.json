@@ -21,7 +21,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "When was the first electronic composition made?",
@@ -47,7 +46,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What is the name of the first composer of electronic music?",
         "imagen": null,
         "sonido": null,
@@ -71,7 +70,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What is the first instrument of electronic music?",
         "imagen": null,
         "sonido": null,
@@ -95,7 +94,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Currently, what is the best device for mixing electronic music?",
         "imagen": null,
         "sonido": null,
@@ -119,7 +118,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What are people who mix music called?",
         "imagen": "dj.jpg",
         "sonido": null,
@@ -159,7 +158,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What is the brand of a DJ controller?",
         "imagen": null,
         "sonido": null,
@@ -183,7 +182,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What is the program used to mix?",
         "imagen": null,
         "sonido": null,
@@ -206,7 +205,7 @@
             "esCorrecta": true
           }
         ]
-      },	  
+      },
       {
         "preguntaDescripcion": "Which of these artists is not electronic music?",
         "imagen": null,
@@ -231,7 +230,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What genre of electronic music is this image?",
         "imagen": "psytrance.jpg",
         "sonido": null,
@@ -279,7 +278,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
         "imagen": "mar_movido.jpg",
         "sonido": null,
@@ -303,7 +302,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "A DJ can play live without a computer",
         "imagen": "controladora_dj_sin_ordenador.jpg",
         "sonido": null,
@@ -343,7 +342,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "A rave is a kind of illegal party",
         "imagen": "rave.jpg",
         "sonido": null,
@@ -359,7 +358,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "What is the place of origin of psytrance?",
         "imagen": null,
         "sonido": null,
@@ -383,7 +382,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "One of the first composers of electronic music is?",
         "imagen": null,
         "sonido": null,
@@ -406,8 +405,8 @@
             "esCorrecta": false
           }
         ]
-      },       
-	  {
+      },
+      {
         "preguntaDescripcion": "How did Avicci die?",
         "imagen": null,
         "sonido": null,
@@ -431,7 +430,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "In a Rave it is forbidden to consume drugs",
         "imagen": null,
         "sonido": null,
@@ -446,8 +445,8 @@
             "esCorrecta": true
           }
         ]
-      },	
-	  {
+      },
+      {
         "preguntaDescripcion": "What is the most famous drug of the Raves?",
         "imagen": null,
         "sonido": null,
@@ -494,7 +493,7 @@
             "esCorrecta": false
           }
         ]
-      }      
+      }
     ]
   },
   {
@@ -519,19 +518,128 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
+    "preguntas": [
+      {
+        "preguntaDescripcion": "Which band has the most Grammys in history?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "U2",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Dixie Chicks",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Foo Fighters",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"How many dislikes does Justin Bieber's song\" \"Baby\" \"have on youtube?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "12.3 mill",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "22 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "No tiene dislikes",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How old was Billie Eilish when she started her music career?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "13",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "15",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "18",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How tall is Ariana Grande?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1,53",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1,63",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,42",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where is Selena Gomez from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Texas",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Brazil",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Colombia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
   },
   {
     "nombre": "Rock",
@@ -555,7 +663,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "Which band was born first?",
@@ -1541,7 +1648,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "At what time did hip-hop emerge?",

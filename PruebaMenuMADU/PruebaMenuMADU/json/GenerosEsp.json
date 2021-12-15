@@ -21,7 +21,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "Cuando se hizo la primera composicion electronica?",
@@ -47,7 +46,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Como se llama el primer compositor de la musica electronica?",
         "imagen": null,
         "sonido": null,
@@ -71,7 +70,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Cual es el primer instrumento de la musica electronica?",
         "imagen": null,
         "sonido": null,
@@ -95,7 +94,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "En la actualidad, cual es el mejor apararato para mezcar musica electronica?",
         "imagen": null,
         "sonido": null,
@@ -119,7 +118,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Como se les llaman a las personas que mezclan musica?",
         "imagen": "dj.jpg",
         "sonido": null,
@@ -159,7 +158,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Que marca es de una controladora DJ?",
         "imagen": null,
         "sonido": null,
@@ -183,7 +182,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Cual es el programa que se utiliza para mezclar?",
         "imagen": null,
         "sonido": null,
@@ -207,7 +206,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Cual de estos artistas no es de musica electronica?",
         "imagen": null,
         "sonido": null,
@@ -231,7 +230,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Que genero de musica electronica es esta imagen?",
         "imagen": "psytrance.jpg",
         "sonido": null,
@@ -254,7 +253,7 @@
             "esCorrecta": false
           }
         ]
-      },      
+      },
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
         "imagen": "mar_tranquilo.jpg",
@@ -279,7 +278,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
         "imagen": "mar_movido.jpg",
         "sonido": null,
@@ -303,7 +302,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Un DJ puede pinchar sin ordenador en directo",
         "imagen": "controladora_dj_sin_ordenador.jpg",
         "sonido": null,
@@ -343,7 +342,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Una Rave es un tipo de fiesta ilegal",
         "imagen": "lsd.jpg",
         "sonido": null,
@@ -359,7 +358,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Cual es el lugar de origen del psytrance?",
         "imagen": null,
         "sonido": null,
@@ -382,8 +381,8 @@
             "esCorrecta": false
           }
         ]
-      },      
-	  {
+      },
+      {
         "preguntaDescripcion": "Unos de los primeros compositores de la musica electronica es?",
         "imagen": null,
         "sonido": null,
@@ -407,7 +406,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "Como murió Avicci?",
         "imagen": null,
         "sonido": null,
@@ -431,7 +430,7 @@
           }
         ]
       },
-	  {
+      {
         "preguntaDescripcion": "En una Rave esta prohibido consumir drogas",
         "imagen": null,
         "sonido": null,
@@ -446,8 +445,8 @@
             "esCorrecta": true
           }
         ]
-      },	
-	  {
+      },
+      {
         "preguntaDescripcion": "Cual es la droga mas famosa de las Raves?",
         "imagen": null,
         "sonido": null,
@@ -470,7 +469,7 @@
             "esCorrecta": true
           }
         ]
-      },	  
+      },
       {
         "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
         "imagen": "lsd.jpg",
@@ -494,7 +493,7 @@
             "esCorrecta": false
           }
         ]
-      }      
+      }
     ]
   },
   {
@@ -519,19 +518,128 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "preguntas": []
+    "preguntas": [
+      {
+        "preguntaDescripcion": "¿Que banda tiene más premios Grammys de toda la historia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "U2",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Dixie Chicks",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Foo Fighters",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Cuantos dislikes tiene la cancion de \"\"Baby\"\" de Justin Bieber en youtube?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "12.3 mill",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "22 mill",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "No tiene dislikes",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que edad tenia Billie Eilish cuando empezó su carrera musical?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "13",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "15",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "18",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que estatura tiene Ariana Grande?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1,53",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1,63",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,42",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De donde es Selena Gomez?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Texas",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Brazil",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Colombia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
   },
   {
     "nombre": "Rock",
@@ -555,7 +663,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿Qué banda nació primero?",
@@ -1541,7 +1648,6 @@
         "posicionRanking": 3
       }
     ],
-    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿En que época surgió el hip-hop?",
