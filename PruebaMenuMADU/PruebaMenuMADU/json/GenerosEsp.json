@@ -422,6 +422,46 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Martin Garrix es neerlandés?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "querox.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Querox",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tristan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Morten Granau",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
         "imagen": "mar_movido.jpg",

@@ -406,7 +406,7 @@
           }
         ]
       },
-	   {
+	  {
         "preguntaDescripcion": "Steve Aoki is from China?",
         "imagen": null,
         "sonido": null,
@@ -419,6 +419,46 @@
           {
             "respuestaDescripcion": "False",
             "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Martin Garrix is ​​Dutch?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "querox.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Querox",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tristan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Morten Granau",
+            "esCorrecta": false
           }
         ]
       },
