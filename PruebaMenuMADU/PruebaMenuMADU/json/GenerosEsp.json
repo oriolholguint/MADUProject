@@ -159,7 +159,7 @@
           }
         ]
       },
-	   {
+	  {
         "preguntaDescripcion": "Que marca es de una controladora DJ?",
         "imagen": null,
         "sonido": null,
@@ -183,7 +183,54 @@
           }
         ]
       },
-      
+	  {
+        "preguntaDescripcion": "Cual es el programa que se utiliza para mezclar?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "RaverDeck",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Music Play",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Visual Mixing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rekordbox",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Cual de estos artistas no es de musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hardwell",
+            "esCorrecta": false
+          }
+        ]
+      },      
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
         "imagen": null,

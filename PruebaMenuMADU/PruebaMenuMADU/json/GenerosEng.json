@@ -183,7 +183,54 @@
           }
         ]
       },
-      
+	  {
+        "preguntaDescripcion": "What is the program used to mix?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "RaverDeck",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Music Play",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Visual Mixing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rekordbox",
+            "esCorrecta": true
+          }
+        ]
+      },	  
+      {
+        "preguntaDescripcion": "Which of these artists is not electronic music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hardwell",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
         "imagen": null,
