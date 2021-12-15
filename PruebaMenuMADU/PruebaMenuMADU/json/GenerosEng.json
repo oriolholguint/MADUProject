@@ -303,6 +303,22 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "A DJ depends on a computer to play live",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Which of these festivals is for electronic music?",
         "imagen": null,
@@ -343,6 +359,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "What is the place of origin of psytrance?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Arizona",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Goa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Haryana",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Idaho",
+            "esCorrecta": false
+          }
+        ]
+      },      
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
         "imagen": null,

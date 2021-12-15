@@ -303,6 +303,22 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Un DJ depende de un ordenador para pinchar en directo",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Cual de estos festivales es de musica electronica?",
         "imagen": null,
@@ -343,6 +359,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Cual es el lugar de origen del psytrance?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Arizona",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Goa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Haryana",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Idaho",
+            "esCorrecta": false
+          }
+        ]
+      },      
       {
         "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
         "imagen": null,
