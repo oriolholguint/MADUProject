@@ -842,7 +842,7 @@
         "preguntaDescripcion": "Who is this artist?",
         "imagen": "dj_pastis.jpg",
         "sonido": null,
-        "esMayorEdad": false,
+        "esMayorEdad": true,
         "respuestas": [
           {
             "respuestaDescripcion": "Bizzarre Contact",
@@ -891,6 +891,78 @@
           {
             "respuestaDescripcion": "False",
             "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "What incident happened to David Guetta in a performance?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "people did not dance",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "a light fell on him",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "they threw an object at him",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "the music stopped playing",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "What is the most common failure of DJs in a performance?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "that the music stop playing",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "that the light turn off",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "that people don't dance",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "that he confuse the button",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "phaxe.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Neelix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Querox",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ghost Rider",
+            "esCorrecta": false
           }
         ]
       }
