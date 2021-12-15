@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Electronica",
-    "musicaFondo": "esp-escape-velocity-official.mp3",
+    "musicaFondo": "in_&_out_dave_remix.wav",
     "imagenFondo": "electronica.jpg",
     "imagenMenu": "electronica.jpg",
     "personajes": [
@@ -21,6 +21,7 @@
         "posicionRanking": 3
       }
     ],
+    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "Cuando se hizo la primera composicion electronica?",
@@ -198,6 +199,18 @@
         "posicionRanking": 3
       }
     ],
+    "partidas": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
     "preguntas": []
   },
   {
@@ -222,6 +235,7 @@
         "posicionRanking": 3
       }
     ],
+    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿Qué banda nació primero?",
@@ -1207,6 +1221,7 @@
         "posicionRanking": 3
       }
     ],
+    "partidas": [],
     "preguntas": [
       {
         "preguntaDescripcion": "¿En que época surgió el hip-hop?",
