@@ -662,7 +662,7 @@
         "respuestas": [
           {
             "respuestaDescripcion": "accident",
-            "esCorrecta": true
+            "esCorrecta": false
           },
           {
             "respuestaDescripcion": "murder",
