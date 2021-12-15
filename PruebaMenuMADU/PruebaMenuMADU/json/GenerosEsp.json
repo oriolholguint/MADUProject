@@ -230,6 +230,30 @@
             "esCorrecta": false
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Que genero de musica electronica es esta imagen?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Psytrance",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Minimal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive Trance",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Techno",
+            "esCorrecta": false
+          }
+        ]
       },      
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
