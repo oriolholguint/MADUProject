@@ -368,13 +368,13 @@
       },
 	  {
         "preguntaDescripcion": "Quien es este artista?",
-        "imagen": null,
+        "imagen": "carl_cox.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
             "respuestaDescripcion": "Zedd",
-            "esCorrecta": true
+            "esCorrecta": false
           },
           {
             "respuestaDescripcion": "Marshmello",
@@ -386,7 +386,7 @@
           },
           {
             "respuestaDescripcion": "Carl Cox",
-            "esCorrecta": false
+            "esCorrecta": true
           }
         ]
       },
