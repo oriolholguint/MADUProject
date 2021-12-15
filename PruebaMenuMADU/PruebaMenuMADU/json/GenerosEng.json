@@ -279,6 +279,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Which of these festivals is for electronic music?",
         "imagen": null,

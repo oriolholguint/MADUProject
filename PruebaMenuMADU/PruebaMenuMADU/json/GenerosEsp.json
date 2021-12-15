@@ -279,6 +279,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Cual de estos festivales es de musica electronica?",
         "imagen": null,
