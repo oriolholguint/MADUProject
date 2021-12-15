@@ -47,23 +47,7 @@
           }
         ]
       },
-      {
-        "preguntaDescripcion": "One way to compose a song is by mixing it with another",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "True",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "False",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
+	  {
         "preguntaDescripcion": "What is the name of the first composer of electronic music?",
         "imagen": null,
         "sonido": null,
@@ -87,6 +71,23 @@
           }
         ]
       },
+      {
+        "preguntaDescripcion": "One way to compose a song is by mixing it with another",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      
       {
         "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
         "imagen": null,
@@ -115,7 +116,7 @@
         "preguntaDescripcion": "Which of these festivals is for electronic music?",
         "imagen": null,
         "sonido": null,
-        "esMayorEdad": false,
+        "esMayorEdad": true,
         "respuestas": [
           {
             "respuestaDescripcion": "Shiva Valley",
@@ -135,11 +136,27 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "A rave is a kind of illegal party",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
         "imagen": null,
         "sonido": null,
-        "esMayorEdad": false,
+        "esMayorEdad": true,
         "respuestas": [
           {
             "respuestaDescripcion": "LSD",
@@ -158,23 +175,7 @@
             "esCorrecta": false
           }
         ]
-      },
-      {
-        "preguntaDescripcion": "A rave is a kind of illegal party",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "True",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "False",
-            "esCorrecta": false
-          }
-        ]
-      }
+      }      
     ]
   },
   {
