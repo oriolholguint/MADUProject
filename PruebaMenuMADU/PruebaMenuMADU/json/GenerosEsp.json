@@ -2,7 +2,7 @@
   {
     "nombre": "Electronica",
     "musicaFondo": "in_&_out_dave_remix.wav",
-    "imagenFondo": "electronica.jpg",
+    "imagenFondo": "fondoElectronica.jpg",
     "imagenMenu": "electronica.jpg",
     "personajes": [
       {
@@ -145,7 +145,7 @@
       },
       {
         "preguntaDescripcion": "Una manera de componer una canción es mezclando con otra",
-        "imagen": null,
+        "imagen": controladora_dj.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -233,7 +233,7 @@
       },
 	  {
         "preguntaDescripcion": "Que genero de musica electronica es esta imagen?",
-        "imagen": null,
+        "imagen": psytrance.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -257,7 +257,7 @@
       },      
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
-        "imagen": null,
+        "imagen": mar_tranquilo.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -281,7 +281,7 @@
       },
 	  {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
-        "imagen": null,
+        "imagen": mar_movido.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -305,7 +305,7 @@
       },
 	  {
         "preguntaDescripcion": "Un DJ depende de un ordenador para pinchar en directo",
-        "imagen": null,
+        "imagen": controladora_dj.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [

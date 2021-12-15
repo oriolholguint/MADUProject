@@ -145,7 +145,7 @@
       },
       {
         "preguntaDescripcion": "One way to compose a song is by mixing it with another",
-        "imagen": null,
+        "imagen": controladora_dj.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -233,7 +233,7 @@
       },
 	  {
         "preguntaDescripcion": "What genre of electronic music is this image?",
-        "imagen": null,
+        "imagen": psytrance.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -257,7 +257,7 @@
       },
       {
         "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
-        "imagen": null,
+        "imagen": mar_tranquilo.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -281,7 +281,7 @@
       },
 	  {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
-        "imagen": null,
+        "imagen": mar_movido.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
