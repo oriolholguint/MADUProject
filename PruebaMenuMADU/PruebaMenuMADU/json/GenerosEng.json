@@ -473,7 +473,7 @@
       },
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
-        "imagen": null,
+        "imagen": lsd.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
