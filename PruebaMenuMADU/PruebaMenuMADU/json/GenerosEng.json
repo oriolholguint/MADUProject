@@ -95,6 +95,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Currently, what is the best device for mixing electronic music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Touch discs",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Mixer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "DJ Controller",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Touch pad",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "One way to compose a song is by mixing it with another",
         "imagen": null,

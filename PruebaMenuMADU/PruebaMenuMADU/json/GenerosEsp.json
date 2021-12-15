@@ -95,6 +95,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "En la actualidad, cual es el mejor apararato para mezcar musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Toca discos",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Mezcladora",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Controladora DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Touch pad",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Una manera de componer una canción es mezclando con otra",
         "imagen": null,
