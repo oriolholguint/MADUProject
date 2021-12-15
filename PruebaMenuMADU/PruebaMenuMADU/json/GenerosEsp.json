@@ -121,7 +121,7 @@
       },
 	  {
         "preguntaDescripcion": "Como se les llaman a las personas que mezclan musica?",
-        "imagen": null,
+        "imagen": dj.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -304,8 +304,8 @@
         ]
       },
 	  {
-        "preguntaDescripcion": "Un DJ depende de un ordenador para pinchar en directo",
-        "imagen": controladora_dj.jpg,
+        "preguntaDescripcion": "Un DJ puede pinchar sin ordenador en directo",
+        "imagen": controladora_dj_sin_ordenador.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -345,7 +345,7 @@
       },
 	  {
         "preguntaDescripcion": "Una Rave es un tipo de fiesta ilegal",
-        "imagen": null,
+        "imagen": rave.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [

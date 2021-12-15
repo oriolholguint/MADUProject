@@ -121,7 +121,7 @@
       },
 	  {
         "preguntaDescripcion": "What are people who mix music called?",
-        "imagen": null,
+        "imagen": dj.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -304,8 +304,8 @@
         ]
       },
 	  {
-        "preguntaDescripcion": "A DJ depends on a computer to play live",
-        "imagen": null,
+        "preguntaDescripcion": "A DJ can play live without a computer",
+        "imagen": controladora_dj_sin_ordenador.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -345,7 +345,7 @@
       },
 	  {
         "preguntaDescripcion": "A rave is a kind of illegal party",
-        "imagen": null,
+        "imagen": rave.jpg,
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
