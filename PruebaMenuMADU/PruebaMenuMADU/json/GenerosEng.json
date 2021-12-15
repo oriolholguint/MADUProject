@@ -837,6 +837,62 @@
             "esCorrecta": false
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "dj_pastis.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Bizzarre Contact",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dj Buenri",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dj Pastis",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hallucinogen",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Is this a good place for a rave?",
+        "imagen": "casa_abandonada.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Is this a good place for a rave?",
+        "imagen": "plaza_catalunya.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
       }
     ]
   },
