@@ -159,6 +159,30 @@
           }
         ]
       },
+	   {
+        "preguntaDescripcion": "Que marca es de una controladora DJ?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Fender",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pionerr",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Yamaha",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Stagg",
+            "esCorrecta": false
+          }
+        ]
+      },
       
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",

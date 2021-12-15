@@ -159,6 +159,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "What is the brand of a DJ controller?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Fender",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pionerr",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Yamaha",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Stagg",
+            "esCorrecta": false
+          }
+        ]
+      },
       
       {
         "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
