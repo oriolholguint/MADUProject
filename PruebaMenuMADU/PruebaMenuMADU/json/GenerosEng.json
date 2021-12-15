@@ -750,6 +750,950 @@
             "esCorrecta": false
           }
         ]
+      },
+      {
+        "preguntaDescripcion": "What is the most popular pop singer of 2020?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ariana Grande",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Raphael",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Freddie Mercury",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Michael Jackson",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"What's next in the song\" \"I'm a barbie girl; in the ........ .......\" \"\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Barbie world",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Pretty world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puppy world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Barbie planet",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Miley Cyrus called in the show that participated in Disney?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Hannah Montana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Megan Fox",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Ray",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Cyrus",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What's the name of Post Malone in real life?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Austin Richard Post",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bob Malone Poster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Chad Richard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Charles Post",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "On which platform did Lil Nas X's song Old Town Road become popular?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "tiktok",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "facebook",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "linkedin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "github",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is Doja Cat's real name?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Amala Ratna Zandile",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Steva Molaca",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scarlett Johansson",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estela Reynolds",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"What musician sings\" \"Ice Ice Baby\" \"?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Vanilla Ice",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2Pac",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "MC Ice",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who was the drummer for The Beatles?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Paul McCartney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Berta Lopin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suck Isucky",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was the first music video played on MTV?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Video Killed the Radio Star",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "tik-tok",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pokerface",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Umbrella",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Which famous band is originally from Sweden?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "ABBA",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "ABA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AVVA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ACDC",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What band was Beyoncé originally a part of?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Destiny’s Child",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jackson's Five",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ACDC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In what year was the Queen II album released?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1974",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1966",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1947",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1874",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What genre does pop music influence the most?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All are true",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Any of the answers is true",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What instrument does Lil Nas X play at school?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Trumpet",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Piano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flute",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where pop music originated ?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "North America and Great Britain",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Asia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Africa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "South America",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What do the pros say about the quality of pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The quality is getting lower",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Its getting better and more professional",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Its losing audience",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Worst music genre",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "On what date did pop originate?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Late 1950",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Late 1970",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Late 1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Late 1930",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the most popular Spanish pop singer in 2021?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Berlín Aitana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Selena Gómez",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "None",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "------------------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "3",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ans1",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ans2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ans3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ans4",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "3",
+        "imagen": "",
+        "sonido": "",
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ans1",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ans2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ans3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ans4",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is the pop singer with the most money in history?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Paul McCartney",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Michael Jackson",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jason Excelius",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Worder Docers",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is pop the most consumed music genre in the world?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Is K-pop related to pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Who sings the song\" \"Call me Maybe\" \"?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Carly Rae Jepsen",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rihanna",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Taylor Swift",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lana del Rey",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where does the song Gangnam Style come from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Corea del Sur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Corea del Norte",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "China",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Japón",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many votes did Kanye West get in the American elections?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "60k",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "30k",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "10k",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "He didnt run for president",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where is the kpop group BTS from?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Corea del Sur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Japón",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Gulag",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who is Abel Makkonen Tesfaye?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Weeknd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jason deRulo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Starboy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What singer was named Katy Hudson?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Katy Perry",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Katy Bellotte",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Katy Boluda",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Katy Malito",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What's the name of Dua Lipa's boyfriend in 2021?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Does'nt have",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Isaac Carew",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "-----------------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "-----------------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In November 2020, which artist donated money for the covid vaccine?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dolly Parton",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Madonna",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "--------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "--------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "50 years ago, what was a synonym for pop music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "------------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "------------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What was Freddie Mercury's real name?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Frederick Bulsara",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Frederick Bolsara",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Frederick Mercupol",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Frederick Bulsarra",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Blinding lights was a hit in 2020, who was the artist?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Weeknd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Who sings SexyBack?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Justin Timberlake",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Enrique Iglesias",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "In which video does Michael Jackson play a zombie?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Thriller",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bad",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "---------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "---------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"After his death in December 2019, which rapper added to his posthumous legacy with the album 'Legends Never Die",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Juice WRLD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "League of legends",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "---------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "---------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What instruments can Ed Sheeran play?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "\"Guitar, bass, piano, drums, violonchelo\"",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "----------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "A classic rocker nearly died of a heart attack after wrecking his rear muscles in a gardening accident in May. W",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Brian May",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rod Stewart",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "-------------",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "-------------",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "How many Grammys did the band Queen win?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "0",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2",
+            "esCorrecta": false
+          }
+        ]
       }
     ]
   },
