@@ -789,6 +789,54 @@
             "esCorrecta": false
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Astrix es un DJ de Psytrance",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Vini vici es duo de origen israelí",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "En las Raves se mezcla mucho la droga y el alcohol",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
       }
     ]
   },

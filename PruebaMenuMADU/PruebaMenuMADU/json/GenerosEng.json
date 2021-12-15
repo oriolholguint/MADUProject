@@ -789,6 +789,54 @@
             "esCorrecta": false
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Astrix is ​​a Psytrance DJ",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Vini vici is a duo of Israeli origin",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "In the Raves, drugs and alcohol mix a lot",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
       }
     ]
   },
