@@ -655,7 +655,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "How did Avicci die?",
+        "preguntaDescripcion": "How did Avicii die?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": true,
@@ -738,6 +738,54 @@
           },
           {
             "respuestaDescripcion": "All corrects",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "What incident happened to Martin Garrix in a nightclub in Las Vegas?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The music stopped",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "An object was thrown at him",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "He injured his foot",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Fell off the stage",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "What two artists made the Great Spirit song?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Alok & David Guetta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Armin van buren & Vini vici",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tiësto & Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Astrix & Calvin Harris",
             "esCorrecta": false
           }
         ]

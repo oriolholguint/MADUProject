@@ -655,7 +655,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "Como murió Avicci?",
+        "preguntaDescripcion": "Como murió Avicii?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": true,
@@ -738,6 +738,54 @@
           },
           {
             "respuestaDescripcion": "todas son correctas",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Que incidente le paso a Martin Garrix en una discoteca de las Vegas?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Se le paro la musica",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Le tiraron un objeto",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Se lesionó el pie",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Se cayo del escenario",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Que dos artistas hicieron el tema Great Spirit?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Alok & David Guetta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Armin van buren & Vini vici",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tiësto & Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Astrix & Calvin Harris",
             "esCorrecta": false
           }
         ]
