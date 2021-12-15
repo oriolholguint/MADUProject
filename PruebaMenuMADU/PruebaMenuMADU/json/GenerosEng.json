@@ -430,7 +430,47 @@
             "esCorrecta": false
           }
         ]
-      },        	  
+      },
+	  {
+        "preguntaDescripcion": "In a Rave it is forbidden to consume drugs",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },	
+	  {
+        "preguntaDescripcion": "What is the most famous drug of the Raves?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "cocaine",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ecstasy",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
         "imagen": null,
@@ -442,11 +482,11 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "cocaina",
+            "respuestaDescripcion": "cocaine",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "éxtasis",
+            "respuestaDescripcion": "ecstasy",
             "esCorrecta": false
           },
           {

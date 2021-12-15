@@ -430,7 +430,47 @@
             "esCorrecta": false
           }
         ]
-      },            
+      },
+	  {
+        "preguntaDescripcion": "En una Rave esta prohibido consumir drogas",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },	
+	  {
+        "preguntaDescripcion": "Cual es la droga mas famosa de las Raves?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },	  
       {
         "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
         "imagen": null,
