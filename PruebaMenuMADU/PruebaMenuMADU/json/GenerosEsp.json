@@ -103,7 +103,7 @@
         "respuestas": [
           {
             "respuestaDescripcion": "Toca discos",
-            "esCorrecta": true
+            "esCorrecta": false
           },
           {
             "respuestaDescripcion": "Mezcladora",
@@ -111,11 +111,35 @@
           },
           {
             "respuestaDescripcion": "Controladora DJ",
-            "esCorrecta": false
+            "esCorrecta": true
           },
           {
             "respuestaDescripcion": "Touch pad",
             "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Como se les llaman a las personas que mezclan musica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disc-jockey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "deejay",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": true
           }
         ]
       },

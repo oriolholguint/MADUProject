@@ -103,7 +103,7 @@
         "respuestas": [
           {
             "respuestaDescripcion": "Touch discs",
-            "esCorrecta": true
+            "esCorrecta": false
           },
           {
             "respuestaDescripcion": "Mixer",
@@ -111,11 +111,35 @@
           },
           {
             "respuestaDescripcion": "DJ Controller",
-            "esCorrecta": false
+            "esCorrecta": true
           },
           {
             "respuestaDescripcion": "Touch pad",
             "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "What are people who mix music called?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disc-jockey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "deejay",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All corrects",
+            "esCorrecta": true
           }
         ]
       },
