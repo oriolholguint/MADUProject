@@ -383,6 +383,54 @@
           }
         ]
       },      
+	  {
+        "preguntaDescripcion": "Unos de los primeros compositores de la musica electronica es?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Karlheinz Stockhausen",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Andreas Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jürgen Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Thorsten Stockhausen",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Como murió Avicci?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "accidente",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "asesinato",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "suicidio",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "sobredosis",
+            "esCorrecta": false
+          }
+        ]
+      },            
       {
         "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
         "imagen": null,

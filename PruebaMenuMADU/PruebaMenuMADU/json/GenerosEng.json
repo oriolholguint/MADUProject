@@ -382,7 +382,55 @@
             "esCorrecta": false
           }
         ]
-      },      
+      },
+	  {
+        "preguntaDescripcion": "One of the first composers of electronic music is?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Karlheinz Stockhausen",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Andreas Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jürgen Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Thorsten Stockhausen",
+            "esCorrecta": false
+          }
+        ]
+      },       
+	  {
+        "preguntaDescripcion": "How did Avicci die?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "accident",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "murder",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "suicide",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "overdose",
+            "esCorrecta": false
+          }
+        ]
+      },        	  
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
         "imagen": null,
