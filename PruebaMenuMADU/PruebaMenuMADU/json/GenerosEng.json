@@ -71,6 +71,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "What is the first instrument of electronic music?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Blasting machine",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Synthesizer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Touch discs",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Electric guitar",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "One way to compose a song is by mixing it with another",
         "imagen": null,

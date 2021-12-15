@@ -71,6 +71,30 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Cual es el primer instrumento de la musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Explosionador",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sintetizador",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Toca discos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitarra electrica",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "Una manera de componer una canción es mezclando con otra",
         "imagen": null,
