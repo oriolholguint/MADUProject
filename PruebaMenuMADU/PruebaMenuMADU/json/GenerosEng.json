@@ -390,6 +390,38 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "The maximum number of songs a DJ can mix is ​​2",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
+	   {
+        "preguntaDescripcion": "Steve Aoki is from China?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
         "imagen": "mar_movido.jpg",

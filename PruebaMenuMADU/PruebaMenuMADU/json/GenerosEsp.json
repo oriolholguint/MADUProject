@@ -390,6 +390,38 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "La cantidad maxima de canciones que puede mezclar un DJ es de 2",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Steve Aoki es de China?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
         "imagen": "mar_movido.jpg",
