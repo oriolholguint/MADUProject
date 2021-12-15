@@ -640,150 +640,6 @@
         ]
       },
       {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": null,
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Resp1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Resp2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Resp4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
         "preguntaDescripcion": "Cual es la cantante de pop más popular del 2020?",
         "imagen": null,
         "sonido": null,
@@ -1067,6 +923,150 @@
           },
           {
             "respuestaDescripcion": "1874",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De qué género influye mas la musica pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ninguna es Correcta",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que instrumento toca Lil Nas X en la escuela?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Trompeta",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Piano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flauta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitarra",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Donde se originó la música pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Norte America y Inglaterra",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Asia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "África",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "América del Sur",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Qué dicen los profesionales sobre la calidad del pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Está bajando la calidad",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Cada vez la música es mejor y mas profesional",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Está perdiendo audiencia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Es el peor genero de musica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En qué fecha se originó el pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Finales de 1950",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Finales de 1970",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Finales de 1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Finales de 1930",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el cantante de pop español más popular en 2021?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Berlín Aitana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Selena Gómez",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nadie",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "-----------------",
             "esCorrecta": false
           }
         ]

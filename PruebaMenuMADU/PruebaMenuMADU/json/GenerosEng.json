@@ -640,150 +640,6 @@
         ]
       },
       {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "2",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
         "preguntaDescripcion": "What is the most popular pop singer of 2020?",
         "imagen": null,
         "sonido": null,
@@ -1067,6 +923,150 @@
           },
           {
             "respuestaDescripcion": "1874",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What genre does pop music influence the most?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All are true",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Any of the answers is true",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What instrument does Lil Nas X play at school?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Trumpet",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Piano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flute",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitar",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Where pop music originated ?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "North America and Great Britain",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Asia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Africa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "South America",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What do the pros say about the quality of pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The quality is getting lower",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Its getting better and more professional",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Its losing audience",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Worst music genre",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "On what date did pop originate?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Late 1950",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Late 1970",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Late 1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Late 1930",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "What is the most popular Spanish pop singer in 2021?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Berlín Aitana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Selena Gómez",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "None",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "------------------",
             "esCorrecta": false
           }
         ]
