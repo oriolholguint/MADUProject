@@ -121,7 +121,7 @@
       },
 	  {
         "preguntaDescripcion": "What are people who mix music called?",
-        "imagen": dj.jpg,
+        "imagen": "dj.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -145,7 +145,7 @@
       },
       {
         "preguntaDescripcion": "One way to compose a song is by mixing it with another",
-        "imagen": controladora_dj.jpg,
+        "imagen": "controladora_dj.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -233,7 +233,7 @@
       },
 	  {
         "preguntaDescripcion": "What genre of electronic music is this image?",
-        "imagen": psytrance.jpg,
+        "imagen": "psytrance.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -257,7 +257,7 @@
       },
       {
         "preguntaDescripcion": "The _______ trance is the most relaxing subgenre of trance",
-        "imagen": mar_tranquilo.jpg,
+        "imagen": "mar_tranquilo.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
@@ -281,7 +281,7 @@
       },
 	  {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
-        "imagen": mar_movido.jpg,
+        "imagen": "mar_movido.jpg",
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -305,7 +305,7 @@
       },
 	  {
         "preguntaDescripcion": "A DJ can play live without a computer",
-        "imagen": controladora_dj_sin_ordenador.jpg,
+        "imagen": "controladora_dj_sin_ordenador.jpg",
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -345,7 +345,7 @@
       },
 	  {
         "preguntaDescripcion": "A rave is a kind of illegal party",
-        "imagen": rave.jpg,
+        "imagen": "rave.jpg",
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
@@ -473,7 +473,7 @@
       },
       {
         "preguntaDescripcion": "What is the most famous drug of the Raves in the US?",
-        "imagen": lsd.jpg,
+        "imagen": "lsd.jpg",
         "sonido": null,
         "esMayorEdad": true,
         "respuestas": [
