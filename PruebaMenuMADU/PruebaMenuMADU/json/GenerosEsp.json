@@ -462,6 +462,70 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "ace_ventura.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Liquid Soul",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Electric Universe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "metronome.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Metronome",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Neelix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Animals es una cancion de David Guetta?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
         "imagen": "mar_movido.jpg",

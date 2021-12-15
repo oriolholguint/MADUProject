@@ -462,6 +462,70 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "ace_ventura.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Liquid Soul",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Electric Universe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "metronome.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Metronome",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Neelix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Animals is a song by David Guetta?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
         "imagen": "mar_movido.jpg",
