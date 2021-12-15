@@ -2,7 +2,7 @@
   {
     "nombre": "Electronic",
     "musicaFondo": "in_&_out_dave_remix.wav",
-    "imagenFondo": "electronica.jpg",
+    "imagenFondo": "fondoElectronica.jpg",
     "imagenMenu": "electronica.jpg",
     "personajes": [
       {
