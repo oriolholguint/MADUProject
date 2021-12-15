@@ -278,6 +278,118 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "El techno es el genero de musica electronica mas escuchado",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "David Guetta - Titanium ft Sia, cuando salio?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Avicii - ____to myself",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Walk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Talk",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Calk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Balk",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "_________ ft Kid cudi - Memories",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "David Guetta",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Avicii",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tiësto",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Zedd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Marshmello",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrojack",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Carl Cox",
+            "esCorrecta": false
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
         "imagen": "mar_movido.jpg",

@@ -278,6 +278,118 @@
           }
         ]
       },
+	  {
+        "preguntaDescripcion": "Techno is the genre of electronic music most listened to",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "David Guetta - Titanium ft Sia, when did it come out?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Avicii - ____to myself",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Walk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Talk",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Calk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Balk",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "_________ ft Kid cudi - Memories",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "David Guetta",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Avicii",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tiësto",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "carl_cox.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Zedd",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Marshmello",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrojack",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Carl Cox",
+            "esCorrecta": true
+          }
+        ]
+      },
       {
         "preguntaDescripcion": "The _______ trance is the most lively trance subgenre",
         "imagen": "mar_movido.jpg",
