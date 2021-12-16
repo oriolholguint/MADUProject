@@ -159,25 +159,25 @@
         ]
       },
       {
-        "preguntaDescripcion": "What is the brand of a DJ controller?",
-        "imagen": null,
+        "preguntaDescripcion": "Who are these artists?",
+        "imagen": riktam_bansi.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "Fender",
+            "respuestaDescripcion": "Alok & Tiësto",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Pionerr",
+            "respuestaDescripcion": "Riktam & Bansi",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Yamaha",
+            "respuestaDescripcion": "Astrix & Gave",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Stagg",
+            "respuestaDescripcion": "Ace Ventura & Liquid Soul",
             "esCorrecta": false
           }
         ]
@@ -962,6 +962,78 @@
           },
           {
             "respuestaDescripcion": "Ghost Rider",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "You are allowed to go to a DJ booth to take pictures",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "DJs only mix at night",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "genre + style equals genre or subgenre",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "True",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "False",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "raja_ram.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Raja Ram",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hallucinogen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Space Tribe",
             "esCorrecta": false
           }
         ]

@@ -159,25 +159,25 @@
         ]
       },
       {
-        "preguntaDescripcion": "Que marca es de una controladora DJ?",
-        "imagen": null,
+        "preguntaDescripcion": "Quienes son estos artistas?",
+        "imagen": riktam_bansi.jpg,
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "Fender",
+            "respuestaDescripcion": "Alok & Tiësto",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Pionerr",
+            "respuestaDescripcion": "Riktam & Bansi",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Yamaha",
+            "respuestaDescripcion": "Astrix & Gave",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Stagg",
+            "respuestaDescripcion": "Ace Ventura & Liquid Soul",
             "esCorrecta": false
           }
         ]
@@ -962,6 +962,78 @@
           },
           {
             "respuestaDescripcion": "Ghost Rider",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Esta permitido ir a la cabina de un DJ para hacerse fotos",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Los DJs solo mezclan por la noche",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "genero + estilo es igual a genero o subgenero",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+	  {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "raja_ram.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Raja Ram",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hallucinogen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Space Tribe",
             "esCorrecta": false
           }
         ]
