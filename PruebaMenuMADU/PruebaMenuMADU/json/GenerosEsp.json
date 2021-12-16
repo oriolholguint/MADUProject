@@ -160,7 +160,7 @@
       },
       {
         "preguntaDescripcion": "Quienes son estos artistas?",
-        "imagen": riktam_bansi.jpg,
+        "imagen": "riktam_bansi.jpg",
         "sonido": null,
         "esMayorEdad": false,
         "respuestas": [

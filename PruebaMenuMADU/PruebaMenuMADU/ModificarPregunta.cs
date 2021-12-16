@@ -73,6 +73,8 @@ namespace PruebaMenuMADU
                     txtRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
                     txtRespuesta3.Text = "";
                     txtRespuesta4.Text = "";
+                    txtRespuesta1.Enabled = false;
+                    txtRespuesta2.Enabled = false;
                     txtRespuesta3.Enabled = false;
                     txtRespuesta4.Enabled = false;
 
@@ -81,6 +83,8 @@ namespace PruebaMenuMADU
                     txtAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
                     txtAnwser3.Text = "";
                     txtAnwser4.Text = "";
+                    txtAnwser1.Enabled = false;
+                    txtAnwser2.Enabled = false;
                     txtAnwser3.Enabled = false;
                     txtAnwser4.Enabled = false;
 
@@ -107,11 +111,21 @@ namespace PruebaMenuMADU
                     txtRespuesta3.Text = PreguntaEsp.respuestas[2].respuestaDescripcion;
                     txtRespuesta4.Text = PreguntaEsp.respuestas[3].respuestaDescripcion;
 
+                    txtRespuesta1.Enabled = true;
+                    txtRespuesta2.Enabled = true;
+                    txtRespuesta3.Enabled = true;
+                    txtRespuesta4.Enabled = true;
+
                     //Respuestas en Eng
                     txtAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
                     txtAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
                     txtAnwser3.Text = PreguntaEng.respuestas[2].respuestaDescripcion;
                     txtAnwser4.Text = PreguntaEng.respuestas[3].respuestaDescripcion;
+
+                    txtAnwser1.Enabled = true;
+                    txtAnwser2.Enabled = true;
+                    txtAnwser3.Enabled = true;
+                    txtAnwser4.Enabled = true;
 
                     rdbRespuesta3.Enabled = true;
                     rdbRespuesta4.Enabled = true;
