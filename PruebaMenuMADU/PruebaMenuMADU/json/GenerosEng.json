@@ -1037,6 +1037,30 @@
             "esCorrecta": false
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Who is this artist?",
+        "imagen": "laughing_buddha.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dj Buenri",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "D Maniac",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dickster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Laughing buddha",
+            "esCorrecta": true
+          }
+        ]
       }
     ]
   },
