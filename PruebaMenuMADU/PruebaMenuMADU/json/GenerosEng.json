@@ -1061,6 +1061,30 @@
             "esCorrecta": true
           }
         ]
+      },
+	  {
+        "preguntaDescripcion": "Who are these artists?",
+        "imagen": "avalon_tristan.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Astrix & Ace ventura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Riktam & Bansi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon & tristan",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Space tribe & Mad Max",
+            "esCorrecta": false
+          }
+        ]
       }
     ]
   },
