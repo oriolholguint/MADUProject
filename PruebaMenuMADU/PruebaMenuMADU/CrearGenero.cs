@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebaMenuMADU
@@ -53,7 +48,6 @@ namespace PruebaMenuMADU
         public void editMode()
         {
             lblNewName.Text = "Nombre del genero:";
-            lblNewNameEng.Text = "Name of the genre: ";
             btnCreateEdit.Text = "Editar Genero";
         }
 
@@ -90,8 +84,6 @@ namespace PruebaMenuMADU
             txtUrlBackground.Text = genEsp.imagenFondo;
             txtUrlMusic.Text = genEsp.musicaFondo;
             txtUrlOculta.Text = genEsp.imagenMenu;
-
-            txtGenreName.Text = genEng.nombre;
 
             pbBg.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenFondo);
             pbImagenGenero.Image = Image.FromFile(ResourceManager.IMAGES_PATH + genEsp.imagenMenu); //Concateno el path donde se encuentran las imagenes
@@ -179,7 +171,7 @@ namespace PruebaMenuMADU
                 }
                 else
                 {
-                    if (!ComprobarGeneroExiste(txtNombreGenero.Text, txtGenreName.Text))//Compruebo que el genero no existe
+                    if (!ComprobarGeneroExiste(txtNombreGenero.Text))//Compruebo que el genero no existe
                     {
                         CrearGeneros(); //Creo los generos
                         
@@ -218,7 +210,7 @@ namespace PruebaMenuMADU
 
             //Creo los generos
             Genero spanish = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new List<Pregunta>());
-            Genero english = new Genero(txtGenreName.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new List<Pregunta>());
+            Genero english = new Genero(txtNombreGenero.Text, sonido, imagenFondo, imagenMenu, new List<Personaje>(), new List<Pregunta>());
 
             this.createdEng = english;
             this.createdEsp = spanish;
@@ -260,11 +252,6 @@ namespace PruebaMenuMADU
             {
                 generoSeleccionadoEsp.nombre = txtNombreGenero.Text;
             }
-
-            if(!generoSeleccionadoEng.nombre.Equals(txtGenreName))
-            {
-                generoSeleccionadoEng.nombre = txtGenreName.Text;
-            }
         }
 
         public void EliminarGeneros(String nombreGeneroEsp, String nombreGeneroEng)
@@ -288,13 +275,13 @@ namespace PruebaMenuMADU
             }
         }
 
-        public Boolean ComprobarGeneroExiste(String nombreGeneroEsp, String nombreGeneroEng)
+        public Boolean ComprobarGeneroExiste(String nombreGenero)
         {
             Boolean generoExiste = false;
 
             for (int i = 0; i < listaEsp.Count; i++)
             {
-                if (listaEsp[i].nombre.Equals(nombreGeneroEsp) || listaEng[i].nombre.Equals(nombreGeneroEng))
+                if (listaEsp[i].nombre.Equals(nombreGenero))
                 {
                     generoExiste = true;
                 }
@@ -307,9 +294,8 @@ namespace PruebaMenuMADU
         {
             Boolean camposRellenados = true;
 
-            if (String.IsNullOrEmpty(txtGenreName.Text) || String.IsNullOrEmpty(txtNombreGenero.Text) ||
-               String.IsNullOrEmpty(txtUrlBackground.Text) || String.IsNullOrEmpty(txtUrlMusic.Text) ||
-               String.IsNullOrEmpty(txtUrlOculta.Text))
+            if (String.IsNullOrEmpty(txtNombreGenero.Text) || String.IsNullOrEmpty(txtUrlBackground.Text) 
+                 || String.IsNullOrEmpty(txtUrlMusic.Text) || String.IsNullOrEmpty(txtUrlOculta.Text))
             {
                 camposRellenados = false;
             }

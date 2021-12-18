@@ -45,8 +45,6 @@ namespace PruebaMenuMADU
             this.txtNombreGenero = new System.Windows.Forms.TextBox();
             this.lblNewName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNewNameEng = new System.Windows.Forms.Label();
-            this.txtGenreName = new System.Windows.Forms.TextBox();
             this.btnCreateEdit = new System.Windows.Forms.Button();
             this.butCancel = new System.Windows.Forms.Button();
             this.btnDeleteGenre = new System.Windows.Forms.Button();
@@ -203,7 +201,7 @@ namespace PruebaMenuMADU
             this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreGenero.MaxLength = 20;
             this.txtNombreGenero.Name = "txtNombreGenero";
-            this.txtNombreGenero.Size = new System.Drawing.Size(703, 75);
+            this.txtNombreGenero.Size = new System.Drawing.Size(1356, 75);
             this.txtNombreGenero.TabIndex = 11;
             // 
             // lblNewName
@@ -223,8 +221,6 @@ namespace PruebaMenuMADU
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.lblNewName);
-            this.panel1.Controls.Add(this.lblNewNameEng);
-            this.panel1.Controls.Add(this.txtGenreName);
             this.panel1.Controls.Add(this.txtNombreGenero);
             this.panel1.Controls.Add(this.btnCreateEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,29 +229,6 @@ namespace PruebaMenuMADU
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1736, 212);
             this.panel1.TabIndex = 13;
-            // 
-            // lblNewNameEng
-            // 
-            this.lblNewNameEng.AutoSize = true;
-            this.lblNewNameEng.BackColor = System.Drawing.Color.RoyalBlue;
-            this.lblNewNameEng.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewNameEng.ForeColor = System.Drawing.Color.White;
-            this.lblNewNameEng.Location = new System.Drawing.Point(717, 41);
-            this.lblNewNameEng.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNewNameEng.Name = "lblNewNameEng";
-            this.lblNewNameEng.Size = new System.Drawing.Size(282, 29);
-            this.lblNewNameEng.TabIndex = 14;
-            this.lblNewNameEng.Text = "Name of the new genre:";
-            // 
-            // txtGenreName
-            // 
-            this.txtGenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGenreName.Location = new System.Drawing.Point(724, 87);
-            this.txtGenreName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGenreName.MaxLength = 20;
-            this.txtGenreName.Name = "txtGenreName";
-            this.txtGenreName.Size = new System.Drawing.Size(647, 75);
-            this.txtGenreName.TabIndex = 14;
             // 
             // btnCreateEdit
             // 
@@ -341,8 +314,6 @@ namespace PruebaMenuMADU
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCreateEdit;
         private AxWMPLib.AxWindowsMediaPlayer wmpMusic;
-        private System.Windows.Forms.Label lblNewNameEng;
-        private System.Windows.Forms.TextBox txtGenreName;
         private System.Windows.Forms.Button butCancel;
         private System.Windows.Forms.Button btnDeleteGenre;
     }
