@@ -168,6 +168,8 @@ namespace PruebaMenuMADU
                     }
 
                     this.Close();
+                    wmpMusic.URL = null;
+                    MessageBox.Show("Genero editado correctamente", "Editar Genero", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -186,6 +188,8 @@ namespace PruebaMenuMADU
                         }
 
                         this.Close();
+                        wmpMusic.URL = null;
+                        MessageBox.Show("Genero creado correctamente", "crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -338,6 +342,11 @@ namespace PruebaMenuMADU
                 this.deleteGenre = true;
                 this.Close();
             }
+        }
+
+        private void CrearGenero_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            wmpMusic.URL = null;
         }
     }
 }

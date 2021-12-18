@@ -281,6 +281,7 @@ namespace PruebaMenuMADU
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearGenero";
             this.Text = "CrearGenero";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrearGenero_FormClosing);
             this.gbImagen.ResumeLayout(false);
             this.gbImagen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenGenero)).EndInit();
