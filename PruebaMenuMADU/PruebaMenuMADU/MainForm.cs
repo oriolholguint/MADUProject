@@ -23,6 +23,8 @@ namespace PruebaMenuMADU
 
         ModificarPregunta ModificarPregunta;
 
+        public Boolean modificacion = false;
+
         public MainForm(Login loginForm)
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace PruebaMenuMADU
 
             DgvPreguntas.RecargarDataGridView();
             DgvPreguntas.CargarPreguntaSeleccionada();
+            modificacion = true;
         }
 
         public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
@@ -72,6 +75,7 @@ namespace PruebaMenuMADU
 
             DgvPreguntas.RecargarDataGridView();
             DgvPreguntas.CargarPreguntaSeleccionada();
+            modificacion = true;
         }
 
         public void SetGeneros(List<Genero> GenerosEsp, List<Genero>GenerosEng)
@@ -317,7 +321,7 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng);
+            CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng, this);
 
             cp.ShowDialog();
 
@@ -333,7 +337,6 @@ namespace PruebaMenuMADU
             if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {
                 MessageBox.Show("No se ha añadido ningun genero", "Error en la creacion de Generos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
             }
             else
             {
@@ -341,13 +344,14 @@ namespace PruebaMenuMADU
                 this.GenerosEng.Add(cg.getCreatedGenre("eng"));
                 ObtenerComboBoxGeneros(GenerosEsp); //Recargo combo box de generos
                 Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
+                modificacion = true;
             }
 
         }
 
         private void btnGestionarPersonajes_Click(object sender, EventArgs e)
         {
-            FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng);
+            FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng, this);
             f.ShowDialog();
         }
 
@@ -361,12 +365,14 @@ namespace PruebaMenuMADU
                 this.GenerosEsp = cg.ObtenerListaGeneros("esp");
                 this.GenerosEng = cg.ObtenerListaGeneros("eng");
                 ObtenerComboBoxGeneros(GenerosEsp);
+                modificacion = true;
             }
             else //Si ha habido una modificacion en un genero
             {
                 this.GenerosEsp = cg.ObtenerListaGeneros("esp");
                 this.GenerosEng = cg.ObtenerListaGeneros("eng");
                 ObtenerComboBoxGeneros(GenerosEsp);
+                modificacion = true;
             }
         }
 
@@ -376,10 +382,7 @@ namespace PruebaMenuMADU
             this.Hide();
         }
 
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
@@ -387,6 +390,26 @@ namespace PruebaMenuMADU
             registro.ShowDialog();
         }
 
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (modificacion == true)
+            {
+                DialogResult dialogResult = new DialogResult();
+                dialogResult = MessageBox.Show("¿Estas seguro que deseas salir? Hay cambios sin guardar", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    e.Cancel = false;
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
 
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

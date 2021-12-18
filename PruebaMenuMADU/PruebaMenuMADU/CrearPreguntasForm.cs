@@ -17,6 +17,8 @@ namespace PruebaMenuMADU
 {
     public partial class CrearPreguntasForm : Form
     {
+        MainForm mainForm;
+
         List<Pregunta> preguntasEsp = new List<Pregunta>();
         List<Pregunta> preguntasEng = new List<Pregunta>();
 
@@ -28,11 +30,12 @@ namespace PruebaMenuMADU
             InitializeComponent();
         }
 
-        public CrearPreguntasForm(List<Genero> generosEsp, List<Genero> generosEng)
+        public CrearPreguntasForm(List<Genero> generosEsp, List<Genero> generosEng, MainForm mainForm)
         {
             InitializeComponent();
             this.generosEsp = generosEsp;
             this.generosEng = generosEng;
+            this.mainForm = mainForm;
         }
 
         private void CrearPreguntasForm_Load(object sender, EventArgs e)
@@ -993,6 +996,8 @@ namespace PruebaMenuMADU
                     }
                 }
             }
+
+            mainForm.modificacion = true;
         }
 
         public List<Genero>[] getArrays()

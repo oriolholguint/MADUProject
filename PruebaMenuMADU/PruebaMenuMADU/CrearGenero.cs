@@ -166,7 +166,7 @@ namespace PruebaMenuMADU
                     {
                         ((IDisposable)pbBg.Image).Dispose();
                     }
-
+                    
                     this.Close();
                     wmpMusic.URL = null;
                     MessageBox.Show("Genero editado correctamente", "Editar Genero", MessageBoxButtons.OK, MessageBoxIcon.Information);

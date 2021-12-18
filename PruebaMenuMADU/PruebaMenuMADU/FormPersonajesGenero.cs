@@ -13,7 +13,8 @@ namespace PruebaMenuMADU
 {
     public partial class FormPersonajesGenero : Form
     {
-        public FormPersonajesGenero(List<Genero>Espanyol, List<Genero> Ingles)
+        MainForm mainForm;
+        public FormPersonajesGenero(List<Genero>Espanyol, List<Genero> Ingles, MainForm mainForm)
         {
             this.GeneroEspanyol = Espanyol;
             this.GeneroIngles = Ingles;
@@ -21,8 +22,8 @@ namespace PruebaMenuMADU
             foreach (Genero item in GeneroEspanyol)
             {
                 comboBox1.Items.Add(item.nombre);
-
             }
+            this.mainForm = mainForm;
         }
 
         public List<Genero> GeneroEspanyol { get; set; }
@@ -41,7 +42,6 @@ namespace PruebaMenuMADU
                 pbImagenPRank1.ImageLocation = getImage.FileName;
             }
         }
-
 
         private void btnCargarImagen2_Click(object sender, EventArgs e)
         {
@@ -109,6 +109,7 @@ namespace PruebaMenuMADU
                         MessageBox.Show("personajes modificados correctamente", "Gestión de personajes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         this.Close();
+                        mainForm.modificacion = true;
                     } 
                     else 
                     {
