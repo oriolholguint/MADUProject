@@ -1232,7 +1232,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "Cual es la cantante de pop más popular del 2020?",
+        "preguntaDescripcion": "Quien es el/la cantante de pop más popular del 2020?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
@@ -1334,19 +1334,19 @@
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "tiktok",
+            "respuestaDescripcion": "Tik Tok",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "facebook",
+            "respuestaDescripcion": "Facebook",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "linkedin",
+            "respuestaDescripcion": "Linkedin",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "github",
+            "respuestaDescripcion": "GitHub",
             "esCorrecta": false
           }
         ]
@@ -1434,7 +1434,7 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "tik-tok",
+            "respuestaDescripcion": "Tik-Tok",
             "esCorrecta": false
           },
           {
@@ -1654,11 +1654,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Nadie",
+            "respuestaDescripcion": "Vanesa Martin",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "-----------------",
+            "respuestaDescripcion": "Pablo Alboran",
             "esCorrecta": false
           }
         ]
@@ -1792,7 +1792,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "De dónde és el grupo de kpop BTS ?",
+        "preguntaDescripcion": "De dónde és el grupo de kpop BTS?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
@@ -1864,31 +1864,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "Como se llama el novio de Dua Lipa en 2021?",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": true,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "No tiene",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Isaac Carew",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "--------------",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "---------------",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "En el noviembre de 2020 que artista donó dinero para la vacuna del covid?",
+        "preguntaDescripcion": "En noviembre de 2020 que artista donó dinero para la vacuna del covid?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
@@ -1902,11 +1878,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "--------",
+            "respuestaDescripcion": "Selena Gomez",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "--------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           }
         ]
@@ -1926,11 +1902,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "------------",
+            "respuestaDescripcion": "Rap",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "------------",
+            "respuestaDescripcion": "Jazz",
             "esCorrecta": false
           }
         ]
@@ -1974,11 +1950,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Selena Gomez",
             "esCorrecta": false
           }
         ]
@@ -1998,11 +1974,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Camilo",
             "esCorrecta": false
           }
         ]
@@ -2022,11 +1998,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Dangerous",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Billie Jean",
             "esCorrecta": false
           }
         ]
@@ -2042,15 +2018,15 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "League of legends",
+            "respuestaDescripcion": "Michael Jacksons",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Whitney Houston",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Aaliyah",
             "esCorrecta": false
           }
         ]
@@ -2062,7 +2038,7 @@
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "\"Guitarra, bajo, piano, batería, violonchelo\"",
+            "respuestaDescripcion": "Batería",
             "esCorrecta": true
           },
           {
@@ -2070,35 +2046,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Piano",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "Un rockero clásico casi muere de un ataque al corazón después de destrozar sus músculos traseros en un accidente",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": true,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Brian May",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Rod Stewart",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-------------",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-------------",
+            "respuestaDescripcion": "Todas son correctas",
             "esCorrecta": false
           }
         ]

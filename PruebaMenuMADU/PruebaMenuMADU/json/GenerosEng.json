@@ -1154,7 +1154,7 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "No tiene dislikes",
+            "respuestaDescripcion": "It doesn't have dislikes'",
             "esCorrecta": false
           }
         ]
@@ -1232,7 +1232,7 @@
         ]
       },
       {
-        "preguntaDescripcion": "What is the most popular pop singer of 2020?",
+        "preguntaDescripcion": "Who is the most popular pop singer of 2020?",
         "imagen": null,
         "sonido": null,
         "esMayorEdad": false,
@@ -1334,19 +1334,19 @@
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "tiktok",
+            "respuestaDescripcion": "Tik Tok",
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "facebook",
+            "respuestaDescripcion": "Facebook",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "linkedin",
+            "respuestaDescripcion": "Linkedin",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "github",
+            "respuestaDescripcion": "GitHub",
             "esCorrecta": false
           }
         ]
@@ -1434,7 +1434,7 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "tik-tok",
+            "respuestaDescripcion": "Tik-Tok",
             "esCorrecta": false
           },
           {
@@ -1530,15 +1530,15 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Poesía",
+            "respuestaDescripcion": "Poetry",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "All are true",
+            "respuestaDescripcion": "All are correct",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "Any of the answers is true",
+            "respuestaDescripcion": "None of the above",
             "esCorrecta": false
           }
         ]
@@ -1654,59 +1654,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "None",
+            "respuestaDescripcion": "Vanesa Martin",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "------------------",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "3",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "3",
-        "imagen": "",
-        "sonido": "",
-        "esMayorEdad": false,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Ans1",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Ans2",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans3",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "Ans4",
+            "respuestaDescripcion": "Pablo Alboran",
             "esCorrecta": false
           }
         ]
@@ -1912,30 +1864,6 @@
         ]
       },
       {
-        "preguntaDescripcion": "What's the name of Dua Lipa's boyfriend in 2021?",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": true,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Does'nt have",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Isaac Carew",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-----------------",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-----------------",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
         "preguntaDescripcion": "In November 2020, which artist donated money for the covid vaccine?",
         "imagen": null,
         "sonido": null,
@@ -1950,11 +1878,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "--------",
+            "respuestaDescripcion": "Selena Gomez",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "--------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           }
         ]
@@ -1970,15 +1898,15 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "Poesi",
+            "respuestaDescripcion": "Poetry",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "------------",
+            "respuestaDescripcion": "Rap",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "------------",
+            "respuestaDescripcion": "Jazz",
             "esCorrecta": false
           }
         ]
@@ -2022,11 +1950,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Selena Gomez",
             "esCorrecta": false
           }
         ]
@@ -2046,11 +1974,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Dualipa",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Camilo",
             "esCorrecta": false
           }
         ]
@@ -2070,11 +1998,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Dangerous",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Billie Jean",
             "esCorrecta": false
           }
         ]
@@ -2090,15 +2018,15 @@
             "esCorrecta": true
           },
           {
-            "respuestaDescripcion": "League of legends",
+            "respuestaDescripcion": "Michael Jackson",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Whitney Houston",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "---------",
+            "respuestaDescripcion": "Aaliyah",
             "esCorrecta": false
           }
         ]
@@ -2110,7 +2038,7 @@
         "esMayorEdad": false,
         "respuestas": [
           {
-            "respuestaDescripcion": "\"Guitar, bass, piano, drums, violonchelo\"",
+            "respuestaDescripcion": "Drums",
             "esCorrecta": true
           },
           {
@@ -2118,35 +2046,11 @@
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
+            "respuestaDescripcion": "Piano",
             "esCorrecta": false
           },
           {
-            "respuestaDescripcion": "----------",
-            "esCorrecta": false
-          }
-        ]
-      },
-      {
-        "preguntaDescripcion": "A classic rocker nearly died of a heart attack after wrecking his rear muscles in a gardening accident in May. W",
-        "imagen": null,
-        "sonido": null,
-        "esMayorEdad": true,
-        "respuestas": [
-          {
-            "respuestaDescripcion": "Brian May",
-            "esCorrecta": true
-          },
-          {
-            "respuestaDescripcion": "Rod Stewart",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-------------",
-            "esCorrecta": false
-          },
-          {
-            "respuestaDescripcion": "-------------",
+            "respuestaDescripcion": "All are correct",
             "esCorrecta": false
           }
         ]
