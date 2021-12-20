@@ -168,6 +168,7 @@ namespace PruebaMenuMADU
             this.Controls.Add(this.btnCrearPreguntas);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.pnlModificar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
