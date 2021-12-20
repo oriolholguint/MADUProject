@@ -62,31 +62,31 @@ namespace PruebaMenuMADU
             this.gbImagen.Controls.Add(this.txtUrlOculta);
             this.gbImagen.Controls.Add(this.btnCargarImagen);
             this.gbImagen.Controls.Add(this.pbImagenGenero);
-            this.gbImagen.Location = new System.Drawing.Point(15, 250);
-            this.gbImagen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbImagen.Location = new System.Drawing.Point(11, 203);
+            this.gbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbImagen.Name = "gbImagen";
-            this.gbImagen.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbImagen.Size = new System.Drawing.Size(532, 458);
+            this.gbImagen.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbImagen.Size = new System.Drawing.Size(399, 372);
             this.gbImagen.TabIndex = 8;
             this.gbImagen.TabStop = false;
             this.gbImagen.Text = "Imagen menu principal";
             // 
             // txtUrlOculta
             // 
-            this.txtUrlOculta.Location = new System.Drawing.Point(21, 350);
-            this.txtUrlOculta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUrlOculta.Location = new System.Drawing.Point(16, 284);
+            this.txtUrlOculta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUrlOculta.Name = "txtUrlOculta";
             this.txtUrlOculta.ReadOnly = true;
-            this.txtUrlOculta.Size = new System.Drawing.Size(484, 22);
+            this.txtUrlOculta.Size = new System.Drawing.Size(364, 20);
             this.txtUrlOculta.TabIndex = 2;
             // 
             // btnCargarImagen
             // 
             this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.Location = new System.Drawing.Point(159, 394);
-            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCargarImagen.Location = new System.Drawing.Point(119, 320);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCargarImagen.Name = "btnCargarImagen";
-            this.btnCargarImagen.Size = new System.Drawing.Size(211, 49);
+            this.btnCargarImagen.Size = new System.Drawing.Size(158, 40);
             this.btnCargarImagen.TabIndex = 1;
             this.btnCargarImagen.Text = "Cargar Imagen";
             this.btnCargarImagen.UseVisualStyleBackColor = true;
@@ -95,10 +95,10 @@ namespace PruebaMenuMADU
             // pbImagenGenero
             // 
             this.pbImagenGenero.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbImagenGenero.Location = new System.Drawing.Point(3, 17);
-            this.pbImagenGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbImagenGenero.Location = new System.Drawing.Point(2, 15);
+            this.pbImagenGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImagenGenero.Name = "pbImagenGenero";
-            this.pbImagenGenero.Size = new System.Drawing.Size(526, 439);
+            this.pbImagenGenero.Size = new System.Drawing.Size(395, 355);
             this.pbImagenGenero.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenGenero.TabIndex = 0;
             this.pbImagenGenero.TabStop = false;
@@ -108,31 +108,31 @@ namespace PruebaMenuMADU
             this.groupBox1.Controls.Add(this.txtUrlBackground);
             this.groupBox1.Controls.Add(this.BntCargarFondo);
             this.groupBox1.Controls.Add(this.pbBg);
-            this.groupBox1.Location = new System.Drawing.Point(552, 250);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(414, 203);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(633, 458);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(475, 372);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Imagen fondo preguntas";
             // 
             // txtUrlBackground
             // 
-            this.txtUrlBackground.Location = new System.Drawing.Point(20, 350);
-            this.txtUrlBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUrlBackground.Location = new System.Drawing.Point(15, 284);
+            this.txtUrlBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUrlBackground.Name = "txtUrlBackground";
             this.txtUrlBackground.ReadOnly = true;
-            this.txtUrlBackground.Size = new System.Drawing.Size(593, 22);
+            this.txtUrlBackground.Size = new System.Drawing.Size(446, 20);
             this.txtUrlBackground.TabIndex = 2;
             // 
             // BntCargarFondo
             // 
             this.BntCargarFondo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BntCargarFondo.Location = new System.Drawing.Point(169, 394);
-            this.BntCargarFondo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BntCargarFondo.Location = new System.Drawing.Point(127, 320);
+            this.BntCargarFondo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BntCargarFondo.Name = "BntCargarFondo";
-            this.BntCargarFondo.Size = new System.Drawing.Size(313, 49);
+            this.BntCargarFondo.Size = new System.Drawing.Size(235, 40);
             this.BntCargarFondo.TabIndex = 1;
             this.BntCargarFondo.Text = "Elegir imagen de fondo";
             this.BntCargarFondo.UseVisualStyleBackColor = true;
@@ -141,10 +141,10 @@ namespace PruebaMenuMADU
             // pbBg
             // 
             this.pbBg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbBg.Location = new System.Drawing.Point(3, 17);
-            this.pbBg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbBg.Location = new System.Drawing.Point(2, 15);
+            this.pbBg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbBg.Name = "pbBg";
-            this.pbBg.Size = new System.Drawing.Size(627, 439);
+            this.pbBg.Size = new System.Drawing.Size(471, 355);
             this.pbBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBg.TabIndex = 0;
             this.pbBg.TabStop = false;
@@ -154,11 +154,11 @@ namespace PruebaMenuMADU
             this.groupBox2.Controls.Add(this.wmpMusic);
             this.groupBox2.Controls.Add(this.txtUrlMusic);
             this.groupBox2.Controls.Add(this.btnCargarMusica);
-            this.groupBox2.Location = new System.Drawing.Point(1191, 250);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(893, 203);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(531, 458);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(398, 372);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Musica de fondo";
@@ -167,7 +167,6 @@ namespace PruebaMenuMADU
             // 
             this.wmpMusic.Enabled = true;
             this.wmpMusic.Location = new System.Drawing.Point(13, 26);
-            this.wmpMusic.Margin = new System.Windows.Forms.Padding(4);
             this.wmpMusic.Name = "wmpMusic";
             this.wmpMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpMusic.OcxState")));
             this.wmpMusic.Size = new System.Drawing.Size(368, 237);
@@ -175,20 +174,20 @@ namespace PruebaMenuMADU
             // 
             // txtUrlMusic
             // 
-            this.txtUrlMusic.Location = new System.Drawing.Point(17, 350);
-            this.txtUrlMusic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUrlMusic.Location = new System.Drawing.Point(13, 284);
+            this.txtUrlMusic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUrlMusic.Name = "txtUrlMusic";
             this.txtUrlMusic.ReadOnly = true;
-            this.txtUrlMusic.Size = new System.Drawing.Size(489, 22);
+            this.txtUrlMusic.Size = new System.Drawing.Size(368, 20);
             this.txtUrlMusic.TabIndex = 2;
             // 
             // btnCargarMusica
             // 
             this.btnCargarMusica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarMusica.Location = new System.Drawing.Point(167, 394);
-            this.btnCargarMusica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCargarMusica.Location = new System.Drawing.Point(125, 320);
+            this.btnCargarMusica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCargarMusica.Name = "btnCargarMusica";
-            this.btnCargarMusica.Size = new System.Drawing.Size(211, 49);
+            this.btnCargarMusica.Size = new System.Drawing.Size(158, 40);
             this.btnCargarMusica.TabIndex = 1;
             this.btnCargarMusica.Text = "Cargar Musica de fondo";
             this.btnCargarMusica.UseVisualStyleBackColor = true;
@@ -197,11 +196,11 @@ namespace PruebaMenuMADU
             // txtNombreGenero
             // 
             this.txtNombreGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreGenero.Location = new System.Drawing.Point(15, 87);
-            this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreGenero.Location = new System.Drawing.Point(11, 71);
+            this.txtNombreGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreGenero.MaxLength = 20;
             this.txtNombreGenero.Name = "txtNombreGenero";
-            this.txtNombreGenero.Size = new System.Drawing.Size(1356, 75);
+            this.txtNombreGenero.Size = new System.Drawing.Size(1018, 62);
             this.txtNombreGenero.TabIndex = 11;
             // 
             // lblNewName
@@ -210,10 +209,9 @@ namespace PruebaMenuMADU
             this.lblNewName.BackColor = System.Drawing.Color.RoyalBlue;
             this.lblNewName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewName.ForeColor = System.Drawing.Color.White;
-            this.lblNewName.Location = new System.Drawing.Point(8, 41);
-            this.lblNewName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNewName.Location = new System.Drawing.Point(6, 33);
             this.lblNewName.Name = "lblNewName";
-            this.lblNewName.Size = new System.Drawing.Size(319, 29);
+            this.lblNewName.Size = new System.Drawing.Size(248, 25);
             this.lblNewName.TabIndex = 12;
             this.lblNewName.Text = "Nombre del nuevo género :";
             // 
@@ -225,31 +223,29 @@ namespace PruebaMenuMADU
             this.panel1.Controls.Add(this.btnCreateEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1736, 212);
+            this.panel1.Size = new System.Drawing.Size(1302, 172);
             this.panel1.TabIndex = 13;
             // 
             // btnCreateEdit
             // 
             this.btnCreateEdit.BackColor = System.Drawing.Color.PaleGreen;
             this.btnCreateEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateEdit.Location = new System.Drawing.Point(1377, 87);
-            this.btnCreateEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCreateEdit.Location = new System.Drawing.Point(1033, 71);
+            this.btnCreateEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreateEdit.Name = "btnCreateEdit";
-            this.btnCreateEdit.Size = new System.Drawing.Size(344, 75);
+            this.btnCreateEdit.Size = new System.Drawing.Size(258, 61);
             this.btnCreateEdit.TabIndex = 3;
-            this.btnCreateEdit.Text = "Crear Género";
+            this.btnCreateEdit.Text = "Guardar Género";
             this.btnCreateEdit.UseVisualStyleBackColor = false;
             this.btnCreateEdit.Click += new System.EventHandler(this.button1_Click);
             // 
             // butCancel
             // 
             this.butCancel.BackColor = System.Drawing.Color.PaleGreen;
-            this.butCancel.Location = new System.Drawing.Point(609, 714);
-            this.butCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.butCancel.Location = new System.Drawing.Point(457, 580);
             this.butCancel.Name = "butCancel";
-            this.butCancel.Size = new System.Drawing.Size(540, 28);
+            this.butCancel.Size = new System.Drawing.Size(405, 23);
             this.butCancel.TabIndex = 14;
             this.butCancel.Text = "Cancelar y volver al menú";
             this.butCancel.UseVisualStyleBackColor = false;
@@ -258,10 +254,9 @@ namespace PruebaMenuMADU
             // btnDeleteGenre
             // 
             this.btnDeleteGenre.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDeleteGenre.Location = new System.Drawing.Point(36, 714);
-            this.btnDeleteGenre.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeleteGenre.Location = new System.Drawing.Point(27, 580);
             this.btnDeleteGenre.Name = "btnDeleteGenre";
-            this.btnDeleteGenre.Size = new System.Drawing.Size(540, 28);
+            this.btnDeleteGenre.Size = new System.Drawing.Size(405, 23);
             this.btnDeleteGenre.TabIndex = 15;
             this.btnDeleteGenre.Text = "Eliminar Genero";
             this.btnDeleteGenre.UseVisualStyleBackColor = false;
@@ -269,16 +264,15 @@ namespace PruebaMenuMADU
             // 
             // CrearGenero
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1736, 756);
+            this.ClientSize = new System.Drawing.Size(1302, 614);
             this.Controls.Add(this.btnDeleteGenre);
             this.Controls.Add(this.butCancel);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbImagen);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearGenero";
             this.Text = "CrearGenero";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CrearGenero_FormClosing);

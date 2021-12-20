@@ -332,7 +332,7 @@ namespace PruebaMenuMADU
 
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
-            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng, this);
             cg.ShowDialog();
             if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {
@@ -344,7 +344,6 @@ namespace PruebaMenuMADU
                 this.GenerosEng.Add(cg.getCreatedGenre("eng"));
                 ObtenerComboBoxGeneros(GenerosEsp); //Recargo combo box de generos
                 Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
-                modificacion = true;
             }
 
         }
@@ -357,7 +356,7 @@ namespace PruebaMenuMADU
 
         private void btnGenConfig_Click(object sender, EventArgs e)
         {
-            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng, this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng, this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng, this);
             cg.ShowDialog();
             if(cg.deleteGenre) //Si se ha eliminado un genero
             {
@@ -365,14 +364,12 @@ namespace PruebaMenuMADU
                 this.GenerosEsp = cg.ObtenerListaGeneros("esp");
                 this.GenerosEng = cg.ObtenerListaGeneros("eng");
                 ObtenerComboBoxGeneros(GenerosEsp);
-                modificacion = true;
             }
             else //Si ha habido una modificacion en un genero
             {
                 this.GenerosEsp = cg.ObtenerListaGeneros("esp");
                 this.GenerosEng = cg.ObtenerListaGeneros("eng");
                 ObtenerComboBoxGeneros(GenerosEsp);
-                modificacion = true;
             }
         }
 
@@ -381,8 +378,6 @@ namespace PruebaMenuMADU
             loginForm.Show();
             this.Hide();
         }
-
-        
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {

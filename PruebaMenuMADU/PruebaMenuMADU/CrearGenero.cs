@@ -8,6 +8,8 @@ namespace PruebaMenuMADU
 {
     public partial class CrearGenero : Form
     {
+        MainForm mainForm;
+
         List<Genero> listaEsp;
         List<Genero> listaEng;
         Genero createdEng;
@@ -22,10 +24,11 @@ namespace PruebaMenuMADU
 
         public Boolean manualCancel = false;
 
-        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng, Genero Esp, Genero Eng)
+        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng, Genero Esp, Genero Eng, MainForm mainForm)
         {
             //Modo editar genero
             InitializeComponent();
+            this.mainForm = mainForm;
             this.deleteGenre = false;
             this.editBool = true;
             this.listaEsp = listaEsp;
@@ -35,10 +38,11 @@ namespace PruebaMenuMADU
             modifyGenre(Esp, Eng);
             editMode();
         }
-        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng)
+        public CrearGenero(List<Genero> listaEsp, List<Genero> listaEng, MainForm mainForm)
         {
             //Modo crear nuevo genero
             InitializeComponent();
+            this.mainForm = mainForm;
             this.deleteGenre = false;
             this.listaEsp = listaEsp;
             this.listaEng = listaEng;
@@ -48,7 +52,6 @@ namespace PruebaMenuMADU
         public void editMode()
         {
             lblNewName.Text = "Nombre del genero:";
-            btnCreateEdit.Text = "Editar Genero";
         }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
@@ -170,6 +173,7 @@ namespace PruebaMenuMADU
                     this.Close();
                     wmpMusic.URL = null;
                     MessageBox.Show("Genero editado correctamente", "Editar Genero", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    mainForm.modificacion = true;
                 }
                 else
                 {
@@ -190,6 +194,7 @@ namespace PruebaMenuMADU
                         this.Close();
                         wmpMusic.URL = null;
                         MessageBox.Show("Genero creado correctamente", "crear Genero", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        mainForm.modificacion = true;
                     }
                     else
                     {

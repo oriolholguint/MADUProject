@@ -174,7 +174,7 @@ namespace PruebaMenuMADU
             // 
             this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(16, 685);
+            this.btnEliminar.Location = new System.Drawing.Point(14, 916);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 35);
             this.btnEliminar.TabIndex = 22;
@@ -186,7 +186,7 @@ namespace PruebaMenuMADU
             // 
             this.btnLimpiarModificacion.Enabled = false;
             this.btnLimpiarModificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarModificacion.Location = new System.Drawing.Point(302, 685);
+            this.btnLimpiarModificacion.Location = new System.Drawing.Point(300, 916);
             this.btnLimpiarModificacion.Name = "btnLimpiarModificacion";
             this.btnLimpiarModificacion.Size = new System.Drawing.Size(200, 35);
             this.btnLimpiarModificacion.TabIndex = 23;
@@ -198,7 +198,7 @@ namespace PruebaMenuMADU
             // 
             this.btnGuardar.Enabled = false;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(508, 685);
+            this.btnGuardar.Location = new System.Drawing.Point(506, 916);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 35);
             this.btnGuardar.TabIndex = 24;
@@ -301,7 +301,7 @@ namespace PruebaMenuMADU
             this.rdbRespuesta4.BackColor = System.Drawing.Color.Transparent;
             this.rdbRespuesta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbRespuesta4.Location = new System.Drawing.Point(244, 559);
-            this.rdbRespuesta4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbRespuesta4.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRespuesta4.Name = "rdbRespuesta4";
             this.rdbRespuesta4.Size = new System.Drawing.Size(190, 32);
             this.rdbRespuesta4.TabIndex = 17;
@@ -314,7 +314,7 @@ namespace PruebaMenuMADU
             this.rdbRespuesta3.BackColor = System.Drawing.Color.Transparent;
             this.rdbRespuesta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbRespuesta3.Location = new System.Drawing.Point(18, 559);
-            this.rdbRespuesta3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbRespuesta3.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRespuesta3.Name = "rdbRespuesta3";
             this.rdbRespuesta3.Size = new System.Drawing.Size(190, 32);
             this.rdbRespuesta3.TabIndex = 16;
@@ -327,7 +327,7 @@ namespace PruebaMenuMADU
             this.rdbRespuesta2.BackColor = System.Drawing.Color.Transparent;
             this.rdbRespuesta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbRespuesta2.Location = new System.Drawing.Point(244, 522);
-            this.rdbRespuesta2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbRespuesta2.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRespuesta2.Name = "rdbRespuesta2";
             this.rdbRespuesta2.Size = new System.Drawing.Size(190, 32);
             this.rdbRespuesta2.TabIndex = 15;
@@ -340,7 +340,7 @@ namespace PruebaMenuMADU
             this.rdbRespuesta1.BackColor = System.Drawing.Color.Transparent;
             this.rdbRespuesta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbRespuesta1.Location = new System.Drawing.Point(18, 522);
-            this.rdbRespuesta1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbRespuesta1.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRespuesta1.Name = "rdbRespuesta1";
             this.rdbRespuesta1.Size = new System.Drawing.Size(190, 32);
             this.rdbRespuesta1.TabIndex = 14;
@@ -525,7 +525,7 @@ namespace PruebaMenuMADU
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(620, 755);
+            this.ClientSize = new System.Drawing.Size(620, 963);
             this.Controls.Add(this.btnEliminarSonido);
             this.Controls.Add(this.btnEliminarImagen);
             this.Controls.Add(this.cboTipoPregunta);

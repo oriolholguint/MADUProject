@@ -34,9 +34,13 @@ namespace PruebaMenuMADU
 
                 sr.Close();
             }
-            catch (FileNotFoundException ex)
+            catch (DirectoryNotFoundException ex)
             {
 
+            }
+            catch (FileNotFoundException ex)
+            {
+               
             }
 
             return usuarioExiste;
@@ -63,6 +67,10 @@ namespace PruebaMenuMADU
                 }
 
                 sr.Close();
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+
             }
             catch (FileNotFoundException ex)
             {
@@ -93,6 +101,10 @@ namespace PruebaMenuMADU
 
                 sr.Close();
             }
+            catch (DirectoryNotFoundException ex)
+            {
+
+            }
             catch (FileNotFoundException ex)
             {
 
@@ -112,6 +124,10 @@ namespace PruebaMenuMADU
                 sw.Write(userToAdd + USER_SEPARATOR + encryptPassword + USER_SEPARATOR + encryptPhrase + "\n");
 
                 sw.Close();
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+
             }
             catch (FileNotFoundException ex)
             {
@@ -149,6 +165,10 @@ namespace PruebaMenuMADU
                 }
 
                 sw.Close();
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+
             }
             catch (FileNotFoundException ex)
             {
