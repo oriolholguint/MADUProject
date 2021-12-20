@@ -1,211 +1,4355 @@
 [
   {
-    "Nombre": "Rock",
-    "MusicaFondo": "Musica Fondo Rock",
-    "ImagenFondo": "Imagen Fondo Rock",
-    "ImagenMenu": "Imagen Menu Rock",
-    "Personajes": [],
-    "Partidas": [],
-    "Preguntas": [
+    "nombre": "Electronic",
+    "musicaFondo": "in_out_dave_remix.wav",
+    "imagenFondo": "fondoElectronica.jpg",
+    "imagenMenu": "electronica.jpg",
+    "personajes": [
       {
-        "PreguntaDescripcion": "¿Qué banda nació primero?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "nombre": "Armin Van Bureen",
+        "imagen": "per_armin_van_bureen.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "David Guetta",
+        "imagen": "per_david_guetta.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Skrillex",
+        "imagen": "per_skrillex.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "Cuando se hizo la primera composicion electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "The Rolling Stones",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1857",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "The Beatles",
-            "EsCorrecta": true
+            "respuestaDescripcion": "1910",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "The Doors",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1936",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "The Who",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1960",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿En qué año se formó Nirvana?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "Como se llama el primer compositor de la musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "1990",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Leonardo Russolo",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1989",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Lorenzo Russolo",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1988",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Luca Russolo",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "1987",
-            "EsCorrecta": true
+            "respuestaDescripcion": "Luigi Russolo",
+            "esCorrecta": true
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿Cuando inicio el Rock en Español?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "Cual es el primer instrumento de la musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Entre 1930 y 1940",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Explosionador",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Entre 1950 y 1960",
-            "EsCorrecta": true
+            "respuestaDescripcion": "Sintetizador",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Entre 1970 y 1980",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Toca discos",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Entre 1990 y 2000",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Guitarra electrica",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿Pregunta prueba de rock y generarJSON?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rock",
-        "Sonido": "Sonido Pregunta Rock",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "En la actualidad, cual es el mejor apararato para mezcar musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Prueba JSON 1",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Toca discos",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Prueba JSON 2",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Mezcladora",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Prueba JSON 3",
-            "EsCorrecta": true
+            "respuestaDescripcion": "Controladora DJ",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Prueba JSON 4",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Touch pad",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Como se les llaman a las personas que mezclan musica?",
+        "imagen": "dj.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disc-jockey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "deejay",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Una manera de componer una canción es mezclando con otra",
+        "imagen": "controladora_dj.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quienes son estos artistas?",
+        "imagen": "riktam_bansi.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Alok & Tiësto",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Riktam & Bansi",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Astrix & Gave",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ace Ventura & Liquid Soul",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el programa que se utiliza para mezclar?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "RaverDeck",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Music Play",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Visual Mixing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rekordbox",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual de estos artistas no es de musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hardwell",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que genero de musica electronica es esta imagen?",
+        "imagen": "psytrance.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Psytrance",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Minimal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive Trance",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Techno",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "El _______ trance es el subgenero de trance mas relajante",
+        "imagen": "mar_tranquilo.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "El techno es el genero de musica electronica mas escuchado",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "David Guetta - Titanium ft Sia, cuando salio?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2012",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Avicii - ____to myself",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Walk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Talk",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Calk",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Balk",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "_________ ft Kid cudi - Memories",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "David Guetta",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Avicii",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tiësto",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "carl_cox.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Zedd",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Marshmello",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrojack",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Carl Cox",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "La cantidad maxima de canciones que puede mezclar un DJ es de 2",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Steve Aoki es de China?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Martin Garrix es neerlandés?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "querox.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Querox",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tristan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Morten Granau",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "ace_ventura.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Liquid Soul",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Electric Universe",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ace Ventura",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "metronome.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Metronome",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Neelix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Animals es una cancion de David Guetta?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "El _______ trance es el subgenero de trance mas marchoso",
+        "imagen": "mar_movido.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Progressive",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Psychedelic",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Un DJ puede pinchar sin ordenador en directo",
+        "imagen": "controladora_dj_sin_ordenador.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual de estos festivales es de musica electronica?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Shiva Valley",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Indian Spirit",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todos son correctos",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tomorrowland",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Una Rave es un tipo de fiesta ilegal",
+        "imagen": "lsd.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el lugar de origen del psytrance?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Arizona",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Goa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Haryana",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Idaho",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Unos de los primeros compositores de la musica electronica es?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Karlheinz Stockhausen",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Andreas Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jürgen Stockhausen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Thorsten Stockhausen",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Como murió Avicii?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "accidente",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "asesinato",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "suicidio",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "sobredosis",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En una Rave esta prohibido consumir drogas",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es la droga mas famosa de las Raves?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es la droga mas famosa de las Raves en EEUU ?",
+        "imagen": "lsd.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LSD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "cocaina",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "éxtasis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "todas son correctas",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que incidente le paso a Martin Garrix en una discoteca de las Vegas?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Se le paro la musica",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Le tiraron un objeto",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Se lesionó el pie",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Se cayo del escenario",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que dos artistas hicieron el tema Great Spirit?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Alok & David Guetta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Armin van buren & Vini vici",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tiësto & Martin Garrix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Astrix & Calvin Harris",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Astrix es un DJ de Psytrance",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Vini vici es duo de origen israelí",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En las Raves se mezcla mucho la droga y el alcohol",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "dj_pastis.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Bizzarre Contact",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dj Buenri",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dj Pastis",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hallucinogen",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Este es un buen lugar para una Rave?",
+        "imagen": "casa_abandonada.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Este es un buen lugar para una Rave?",
+        "imagen": "plaza_catalunya.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que incidente le paso a David Guetta en una actuación?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "la gente no bailaba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "le cayo un foco encima",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "le tiraron un objeto",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "la musica dejo de sonar",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Qual es el fail mas comun de los DJs en una actuación?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "que la musica se vaya",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "que se vaya la luz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "que la gente no baile",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "que se equivoque de boton",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "phaxe.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Neelix",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Phaxe",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Querox",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ghost Rider",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Esta permitido ir a la cabina de un DJ para hacerse fotos",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Los DJs solo mezclan por la noche",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "genero + estilo es igual a genero o subgenero",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "raja_ram.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ranji",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Raja Ram",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Hallucinogen",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Space Tribe",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es este artista?",
+        "imagen": "laughing_buddha.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dj Buenri",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "D Maniac",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dickster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Laughing buddha",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quienes son estos artistas?",
+        "imagen": "avalon_tristan.jpg",
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Astrix & Ace ventura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Riktam & Bansi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Avalon & tristan",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Space tribe & Mad Max",
+            "esCorrecta": false
           }
         ]
       }
     ]
   },
   {
-    "Nombre": "Rap",
-    "MusicaFondo": "Musica Fondo Rap",
-    "ImagenFondo": "Imagen Fondo Rap",
-    "ImagenMenu": "Imagen Menu Rap",
-    "Personajes": [],
-    "Partidas": [],
-    "Preguntas": [
+    "nombre": "Pop",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "fondo_pop.jpg",
+    "imagenMenu": "PopMenu.jpg",
+    "personajes": [
       {
-        "PreguntaDescripcion": "¿En que época surgió el hip-hop?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "nombre": "Michael Jackson",
+        "imagen": "per_michael_jackson.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Dualipa",
+        "imagen": "per_dualipa.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Ke$ha",
+        "imagen": "per_kesha.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "¿Que banda tiene más premios Grammys de toda la historia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "En los 70",
-            "EsCorrecta": true
+            "respuestaDescripcion": "U2",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "En los 60",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Dixie Chicks",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "En los 90",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Foo Fighters",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "En los 80",
-            "EsCorrecta": false
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "\"Cuantos dislikes tiene la cancion de \"\"Baby\"\" de Justin Bieber en youtube?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "5",
-            "EsCorrecta": false
+            "respuestaDescripcion": "12.3 mill",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "4",
-            "EsCorrecta": true
+            "respuestaDescripcion": "4 mill",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "2",
-            "EsCorrecta": false
+            "respuestaDescripcion": "22 mill",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "3",
-            "EsCorrecta": false
+            "respuestaDescripcion": "No tiene dislikes",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿En que país surgió el rap?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "Que edad tenia Billie Eilish cuando empezó su carrera musical?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Inglaterra",
-            "EsCorrecta": false
+            "respuestaDescripcion": "13",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Mexico",
-            "EsCorrecta": false
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Francia",
-            "EsCorrecta": false
+            "respuestaDescripcion": "15",
+            "esCorrecta": false
           },
           {
-            "RespuestaDescripcion": "Estados Unidos",
-            "EsCorrecta": true
+            "respuestaDescripcion": "18",
+            "esCorrecta": false
           }
         ]
       },
       {
-        "PreguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
-        "Genero": null,
-        "Imagen": "Imagen Pregunta Rap",
-        "Sonido": "Sonido Pregunta Rap",
-        "EsMayorEdad": false,
-        "Respuestas": [
+        "preguntaDescripcion": "Que estatura tiene Ariana Grande?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
           {
-            "RespuestaDescripcion": "Verdadero",
-            "EsCorrecta": true
+            "respuestaDescripcion": "1,53",
+            "esCorrecta": true
           },
           {
-            "RespuestaDescripcion": "Falso",
-            "EsCorrecta": false
+            "respuestaDescripcion": "1,63",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,42",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1,5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De donde es Selena Gomez?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Texas",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Brazil",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Colombia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es el/la cantante de pop más popular del 2020?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ariana Grande",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Raphael",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Freddie Mercury",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Michael Jackson",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Que sigue la canción \"\" I'm a barbie girl; in the ........ .......\"\"\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Barbie world",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Pretty world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puppy world",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Barbie planet",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Como se llamaba Miley Cyrus en el programa que participó en Disney?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Hannah Montana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Megan Fox",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Ray",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Miley Cyrus",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Como se llama Post Malone en la vida real?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Austin Richard Post",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bob Malone Poster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Chad Richard",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Charles Post",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En qué plataforma se hizo popular la canción Old Town Road de Lil Nas X?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tik Tok",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Facebook",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Linkedin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "GitHub",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el nombre real de Doja Cat?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Amala Ratna Zandile",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Steva Molaca",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scarlett Johansson",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estela Reynolds",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"¿Qué músico canta \"\"Ice Ice Baby\"\"?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Vanilla Ice",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2Pac",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "MC Ice",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién fue el baterista de The Beatles?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Paul McCartney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Berta Lopin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suck Isucky",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el primer video musical reproducido en MTV?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Video Killed the Radio Star",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tik-Tok",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pokerface",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Umbrella",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué banda famosa es originaria de Suecia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "ABBA",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "ABA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AVVA",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ACDC",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué banda formaba parte originalmente Beyoncé?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Destiny’s Child",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jackson's Five",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ACDC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metallica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué año se lanzó el álbum Queen II?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1974",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1966",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1947",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1874",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De qué género influye mas la musica pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ninguna es Correcta",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que instrumento toca Lil Nas X en la escuela?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Trompeta",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Piano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flauta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitarra",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Donde se originó la música pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Norte America y Inglaterra",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Asia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "África",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "América del Sur",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Qué dicen los profesionales sobre la calidad del pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Está bajando la calidad",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Cada vez la música es mejor y mas profesional",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Está perdiendo audiencia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Es el peor genero de musica",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En qué fecha se originó el pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Finales de 1950",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Finales de 1970",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Finales de 1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Finales de 1930",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el cantante de pop español más popular en 2021?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Berlín Aitana",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Selena Gómez",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vanesa Martin",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pablo Alboran",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cual es el cantante de pop con más dinero de la historia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Paul McCartney",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Michael Jackson",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jason Excelius",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Worder Docers",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Es el pop el genero de música más consumido en el mundo?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "El K-pop tiene relación con el pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Quien canta la canción \"\"Call me Maybe\"\" ?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Carly Rae Jepsen",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rihanna",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Taylor Swift",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lana del Rey",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De donde viene la canción Gangnam Style?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Corea del Sur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Corea del Norte",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "China",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Japón",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cuántos votos obtuvo Kanye West en las elecciones Americanas?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "60k",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "30k",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "10k",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "No se presentó",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "De dónde és el grupo de kpop BTS?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Corea del Sur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Japón",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "España",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Gulag",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Quien es Abel Makkonen Tesfaye?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Weeknd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jason deRulo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Starboy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Que cantante se llamaba Katy Hudson?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Katy Perry",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Katy Bellotte",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Katy Boluda",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Katy Malito",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "En noviembre de 2020 que artista donó dinero para la vacuna del covid?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dolly Parton",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Madonna",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Selena Gomez",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dualipa",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Fa 50 anys quin era un sinònim de musica pop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rock & Roll",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Poesía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jazz",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál era el verdadero nombre de Freddie Mercury?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Frederick Bulsara",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Frederick Bolsara",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Frederick Mercupol",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Frederick Bulsarra",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Blinding lights fué un hit en 2020, quien fué el artista?\"",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Weeknd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dualipa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Selena Gomez",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién canta SexyBack?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Justin Timberlake",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Enrique Iglesias",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dualipa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Camilo",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué video michael Jackson interpreta a un zombi?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Thriller",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bad",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dangerous",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Billie Jean",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "\"Después de su muerte en diciembre de 2019, ¿qué rapero agregó a su legado póstumo con el álbum 'Legends Never D",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Juice WRLD",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Michael Jacksons",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Whitney Houston",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Aaliyah",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué instrumentos puede tocar Ed Sheeran?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Batería",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guitarra",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Piano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Cuantos Grammys ganó la banda Queen?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "0",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2",
+            "esCorrecta": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Rap",
+    "musicaFondo": "musica_rap.mp3",
+    "imagenFondo": "fondo_rap.jpg",
+    "imagenMenu": "RapMenu.jpg",
+    "personajes": [
+      {
+        "nombre": "Tupac Shakur",
+        "imagen": "per_tupac_shakur.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Eminem",
+        "imagen": "per_eminem.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Canserbero",
+        "imagen": "per_canserbero.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "¿En que época surgió el hip-hop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "En los 70",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "En los 60",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "En los 90",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "En los 80",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De cuántos 'elementos' se compone el hip-hop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En que país surgió el rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Inglaterra",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mexico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Francia",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estados Unidos",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Lil Wayne también es conocido como Wheezy?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que significa \"MC\" en la cultura del rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Military Cross",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master of Ceremonies",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Master Creative",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Master Crew",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el disco de rap mas vendido en la historia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Life After Death",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Marshall Matters LP",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Eminem Show",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo murió el rapero Tupac Shakur?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Suicidio",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Sobredosis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Asesinato",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Muerte natural",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué pelicula de rap protagonizó el rapero Eminem?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "El truco del manco",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rapero en Nueva York",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estilo Salvaje",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "8 Millas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿\"Rap\" es lo mismo que \"hip-hop\"?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Como se llama la musica de fondo en la que se suele rapear?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Background",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Backsound",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Beat",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Music",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién es el rapero que ha ganado mas premios?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay Z",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cual es la canción con mas visitas en Youtube?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rap God",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Life is good",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lose Yourself",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuck Tha Police",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué año fue asesinado Tupac Shakur?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1995",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1996",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1994",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1997",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el primer album de Snoop Dogg?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Doggyfather",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paid tha cost to be da boss",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál es el nombre del rapero 50 Cent?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sean Phillips",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jamal Grey",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis Cranston",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Curtis James Jackson",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cual de las siguientes es un subgenero del rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Freestyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Gangsta Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Trap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Todas son correctas",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que marca organiza el evento de Freestyle mas grande de España?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Monster",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Redbull",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rockstar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Burn",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuando se publicó el primer disco de Rap en España?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1989",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1985",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "No se sabe",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Missi Elliot es considerada una de las primeras raperas de la historia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que rapero tiene un mega-hit con el nombre 'In Da Club'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nelly",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Como se llama el ritmo con el que un raper@ se adapta al beat?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Adapter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Metric",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flow",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rhytm",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Termina el título de la canción de 2Pac: 'Dear ______'",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mama",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Child",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Shorter",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Father",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el sello discográfico de 2Pac antes de morir?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ruthless Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Deathrow Records",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Bad boy Records",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Aftermath Records",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Fue Dr Dre el mentor y primer productor de Eminem?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuántos miembros forman el grupo Wu-Tang Clan?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "10",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "4",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "3",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "6",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo murió el rapero Eazy E?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sobredosis",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Accidente de trafico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ataque al corazón",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "VIH",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de los siguientes NO es un instrumento común en el rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sampler",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Synthetizer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Caja de ritmos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitarra",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de las siguientes no es un elemento del hip-hop?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Graffiti",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Break Dancing",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "DJ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guitarra",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el primer disco de 2Pac?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Greatest Hits",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "All eyez on me",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Better Dayz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2Pacalypse Now",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el primer disco de Snoop Dogg?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Last Meal",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doggystyle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Over the Counter",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Doggfather",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién es el autor del tema 'Smoke Weed Everyday'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Wiz Khalifa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tyga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo se llamó el primer disco de rap en España?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rapin Madrid",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Urbano",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mi Turno",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Madrid Hip Hop",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué grupo fue el primero en traer un Disco de Oro de rap a España?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "SFDK",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Violadores del verso",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Los chicos del maiz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ninguno de los anteriores",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué famoso DJ fue el pionero en la cultura del rap?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Coke La Rock",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Afrika Bambaataa",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Grandmaster Caz",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Disco King Mario Sparks",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "snoop_dogg.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Scholly D",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Public Enemy",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "tupac_shakur.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Doug E. Fresh",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué grupo aparece en la imagen?",
+        "imagen": "wutang_clan.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jungle Brothers",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Wu-Tang Clan",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Run DMC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "N.W.A",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "eminem.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Special Ed",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eminem",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice T",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "50_cent.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tupac Shakur",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "50 Cent",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "notorius_big.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "LL Cool J",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suge Knight",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Notorius Big",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "jay_z.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sean Combs",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "dr_dre.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dr. Dre",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ice Cube",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eazy-E",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mc Ren",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "lil_wayne.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Chris Brown",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Drake",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lil Wayne",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Birdman",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kendrick_lamar.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "J Cole",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kendrick Lamar",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Baby Keem",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "rakim.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kool G Rap",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Big Daddy Kane",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "KRS-One",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rakim",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kanye_west.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Jay-Z",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kanye West",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slick Rick",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "kase_o.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Sho Hai",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lirico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "el_chojin.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Frank T",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Chojin",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Tote King",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "zpu.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "ZPU",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Ambkor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Soma",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "vico_c.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Hector El Father",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Don Omar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "canserbero.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "C-Kan",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Vico C",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Canserbero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Apache",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "nach.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Nach",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rapsusklei",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Kase O",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zatu",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "residente.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tego Calderon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Residente",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Eduardo Cabra",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rubén Blades",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién aparece en la imagen?",
+        "imagen": "missy_elliott.jpg",
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Lil' Kim",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mary J. Blige",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ciara",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Missy Elliott",
+            "esCorrecta": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Rock",
+    "musicaFondo": "iphone-notificacion.mp3",
+    "imagenFondo": "fondo_rock.jpg",
+    "imagenMenu": "RockMenu.jpg",
+    "personajes": [
+      {
+        "nombre": "Bob Dylan",
+        "imagen": "per_bob_dylan.jpg",
+        "posicionRanking": 1
+      },
+      {
+        "nombre": "Elvis Presley",
+        "imagen": "per_elvis_presley.jpg",
+        "posicionRanking": 2
+      },
+      {
+        "nombre": "Chuck Berry",
+        "imagen": "per_chuckberry.jpg",
+        "posicionRanking": 3
+      }
+    ],
+    "preguntas": [
+      {
+        "preguntaDescripcion": "¿Qué banda nació primero?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Doors",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Who",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué año se formó Nirvana?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "1990",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1989",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1988",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "1987",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuando inicio el Rock en Español?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Entre 1930 y 1940",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Entre 1950 y 1960",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Entre 1970 y 1980",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Entre 1990 y 2000",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién fué el primer guitarrista de Metallica? (a parte de James Hetfield)",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dave Mustaine",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Kirk Hammett",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ron McGovney",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cliff Burton",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué banda es el álbum \"Moving Pictures\"?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Pantera",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cream",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Black Sabbath",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Rush",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué baterista es conocido por haber metido explosivos en su bombo?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dave Gorhi",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ringo Starr",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Keith Moon",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Nick Mason",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En qué año se fue definitivamente John Frusciante de los Red Hot Chili Peppers?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2011",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2010",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2009",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Qué gran disco del rock latinoamericano fue estrenado en 1995?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Comfort y música para volar de Soda Stereo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El Dorado de Aterciopelados",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "RE de Café Tacuba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El nervio del volcán de Caifanes",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Quién es reconocido como 'La iguana del rock'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Iggy Pop",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Alice Cooper",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Eddie Vedder",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo se llama el último disco de Estopa?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Rumbo a lo Desconocido",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Voces de Ultratumba",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Estopa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fuego",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿En la canción  'La Raja de tu falda', con qué coche mencionan que se estrellan?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Ford Fiesta",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Seat Panda",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Fiat Panda",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ford Escort",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estos personajes aparece en el título de una canción de Estopa?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paco de Lucía",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Camarón",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Jesús",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Hacia dónde pasea Estopa en la canción 'Paseo'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Al supermercado",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "A la playa",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A ningún lugar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A un bar",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Dónde nació Saul Hudson, más conocido como Slash?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Estados Unidos ",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Puerto Rico",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Inglaterra",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "México",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuántos álbums ha lanzado al mercado Melendi? (excluyendo ediciones especiales)",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "7",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "11",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "9",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "5",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cúal es la canción de Melendi de su disco, 'Un alumno más'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Un jardín con Enanitos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Lágrimas desordenadas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Cheque al portamor",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Tocado y hundido",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué álbum es la canción 'Learning to Fly' de Pink Floyd?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A Momentary Lapse of Reason",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "The Wall",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Division Bell",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Dark Side of the Moon",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuándo se lanzó el álbum \"Por la boca vive el pez\" de Fito y Fitipaldis?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "2008",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2006",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "2005",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "2007",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál fue el anterior grupo de Fito Cabrales antes de Fito y Fitipaldis?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Platero Y Tú",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Platero Y Él",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Ñu",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Fito Cabrales (En solitario)",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo sigue la cancion? Por un beso de la ...",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Niña",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mujer",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Flaca",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Rubia",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál es la canción más larga de la discografía de Extremoduro?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Locura Transitoria",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Si te Vas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pedrá",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Ley Innata ",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que Cancion NO es del álbum de Extremoduro de Rock Transgresivo?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Jesucristo García",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Extremaydura",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Decidí",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Resp4",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estas canciones és de Manolo Garcia?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Cadillac Solitario",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pajaros de Barro ",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El triste",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Resp4",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cómo acaba el título de la Cancion de Marea, 'La luna me sabe ...'? ",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "A poco",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "A miel",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A mimbre",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "A comida",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál es la canción más famosa de Guns & Roses?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Sweet Child O' Mine",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Welcome To The Jungle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Paradise City",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Knockin' On Heaven's Door",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Como acaba el título de la Cancion de La Fuga 'Buscando en ...'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "La calle",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "El mar",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La basura",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "El patio",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que cancion NO es del disco de 'Zapatillas' de El Canto del Loco?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Tal Como Eres",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Zapatillas",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Besos",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La madre de Jose",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Cuál de estos grupos de música no és de estilo Rock?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Marea",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "La Fuga",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Snoop Dogg",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción The Dark Side of the Moon?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Highway to Hell'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Aeromith",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Pink Floyd",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Yellow Submarine'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Con que arma mataron a John Lennon?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Pistola",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Cuchillo",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Bate de béisbol",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Botella",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción '(I Can't Get No) - Satisfaction'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Beatles",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué grupo es la canción 'Back In Black'?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "The Rolling Stones",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "AC/DC",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Guns & Roses",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Slash",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿Que cantante tenía problemas de ira por culpa de las drogas y el alcohol?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": true,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Axl Rose",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "John Lennon",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Syd Barrett",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Mick Jagger",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "¿De qué país es el grupo Europe?",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Dinamarca",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Noruega",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Alemania",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Suecia",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "Se podría considerar que una canción es de rock sin estar presente la batería",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "'Fito y Fitipalidis' son Españoles",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "'The Dark Side Of The Moon' es el disco Rock más vendido de la historia después de Thriller",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "'Stairway to Heaven' es de Aeromith",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": false
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": true
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "'Call me' pertenece a Blondie",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
+          }
+        ]
+      },
+      {
+        "preguntaDescripcion": "'In the end' es de Linkin Park",
+        "imagen": null,
+        "sonido": null,
+        "esMayorEdad": false,
+        "respuestas": [
+          {
+            "respuestaDescripcion": "Verdadero",
+            "esCorrecta": true
+          },
+          {
+            "respuestaDescripcion": "Falso",
+            "esCorrecta": false
           }
         ]
       }

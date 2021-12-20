@@ -1,19 +1,15 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebaMenuMADU
 {
-    public partial class Menu : Form
+    public partial class MainForm : Form
     {
+        Login loginForm;
+
         String PathGenerosEsp = "..\\..\\json\\GenerosEsp.json";
         String PathGenerosEng = "..\\..\\json\\GenerosEng.json";
 
@@ -23,17 +19,18 @@ namespace PruebaMenuMADU
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
 
-        //BindingList<Pregunta> Preguntas;
+        DataGridViewPreguntas DgvPreguntas;
 
         ModificarPregunta ModificarPregunta;
-        ModificarPersonaje ModificarPersonaje;
-        ModificarGenero ModificarGenero = new ModificarGenero();
 
-        public Menu()
+        public Boolean modificacion = false;
+
+        public MainForm(Login loginForm)
         {
             InitializeComponent();
             LeerFicheroGeneros();
             ObtenerComboBoxGeneros(GenerosEsp);
+            this.loginForm = loginForm;
         }
 
         public void SetPreguntasList(Genero GeneroEspCambio, Genero GeneroEngCambio, Genero GeneroEsp, Genero GeneroEng)
@@ -42,35 +39,49 @@ namespace PruebaMenuMADU
             int IndiceGenero;
 
             IndiceGeneroCambio = this.GenerosEsp.IndexOf(GeneroEspCambio);
-            this.GenerosEsp[IndiceGeneroCambio].Preguntas = GeneroEspCambio.Preguntas;
-            this.GenerosEng[IndiceGeneroCambio].Preguntas = GeneroEngCambio.Preguntas;
+            this.GenerosEsp[IndiceGeneroCambio].preguntas = GeneroEspCambio.preguntas;
+            this.GenerosEng[IndiceGeneroCambio].preguntas = GeneroEngCambio.preguntas;
 
             IndiceGenero = this.GenerosEsp.IndexOf(GeneroEsp);
-            this.GenerosEsp[IndiceGenero].Preguntas = GeneroEsp.Preguntas;
-            this.GenerosEng[IndiceGenero].Preguntas = GeneroEng.Preguntas;
+            this.GenerosEsp[IndiceGenero].preguntas = GeneroEsp.preguntas;
+            this.GenerosEng[IndiceGenero].preguntas = GeneroEng.preguntas;
+
+            DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
+            modificacion = true;
         }
 
-        public void SetPreguntasList(List<Pregunta> PreguntasEsp, List<Pregunta> PreguntasEng, String Genero)
+        public void SetPreguntasList(Genero GeneroEsp, Genero GeneroEng, String Genero)
         {
             Boolean GeneroEncontrado = false;
-            int counter = 0;
+            int Counter = 0;
             int Indice = 0;
 
-            while(!GeneroEncontrado && counter < GenerosEsp.Count)
+            while(!GeneroEncontrado && Counter < GenerosEsp.Count)
             {
-                if(GenerosEsp[counter].Nombre.Equals(Genero))
+                if(GenerosEsp[Counter].nombre.Equals(Genero))
                 {
                     GeneroEncontrado = true;
-                    Indice = counter;
+                    Indice = Counter;
                 }
                 else
                 {
-                    counter++;
+                    Counter++;
                 }
             }
 
-            GenerosEsp[Indice].Preguntas = PreguntasEsp;
-            GenerosEng[Indice].Preguntas = PreguntasEng;
+            GenerosEsp[Indice] = GeneroEsp;
+            GenerosEng[Indice] = GeneroEng;
+
+            DgvPreguntas.RecargarDataGridView();
+            DgvPreguntas.CargarPreguntaSeleccionada();
+            modificacion = true;
+        }
+
+        public void SetGeneros(List<Genero> GenerosEsp, List<Genero>GenerosEng)
+        {
+            this.GenerosEsp = GenerosEsp;
+            this.GenerosEng = GenerosEng;
         }
 
         //Relleno el combo box de generos
@@ -85,35 +96,8 @@ namespace PruebaMenuMADU
             //Recogo todos los nombres de los generos en español para mostrarlos en el combobox
             for(int i = 0; i < Generos.Count; i++)
             {
-                cbxGeneros.Items.Add(Generos[i].Nombre);
+                cbxGeneros.Items.Add(Generos[i].nombre);
             }
-        }
-
-        #endregion
-
-        //Eventos Botones Click (Preguntas y Personajes)
-        #region
-
-        private void buttonPreguntas_Click(object sender, EventArgs e)
-        {
-            BorrarPanelModificar();
-
-            MostrarFormModificarPregunta();
-
-            BorrarPanelDatos();
-
-            MostrarGridPreguntas();
-        }
-
-        private void buttonPersonajes_Click(object sender, EventArgs e)
-        {
-            BorrarPanelModificar();
-
-            MostrarFormModificarPersonaje();
-
-            BorrarPanelDatos();
-
-            MostrarGridPersonajes();
         }
 
         #endregion
@@ -130,8 +114,14 @@ namespace PruebaMenuMADU
                 ActivarBotonesOpciones();
                 BorrarPanelDatos();
                 BorrarPanelModificar();
+
+                if (GeneroSeleccionadoEsp.preguntas.Count != 0)
+                {
+                    MostrarFormModificarPregunta();
+                    MostrarGridPreguntas();
+                }
             }
-            else
+            else 
             {
                 DesactivarBotonesOpciones();
                 BorrarPanelDatos();
@@ -141,6 +131,8 @@ namespace PruebaMenuMADU
 
         public void GetGenerosSeleccionados(String Genero)
         {
+            GeneroSeleccionadoEsp = null;
+            GeneroSeleccionadoEng = null;
             Boolean generoEncontrado = false;
             int counter = 0;
 
@@ -148,7 +140,7 @@ namespace PruebaMenuMADU
             {
                 while(counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if(GenerosEsp[counter].Nombre.Equals(Genero))
+                    if(GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroSeleccionadoEsp = GenerosEsp[counter];
@@ -175,7 +167,7 @@ namespace PruebaMenuMADU
             {
                 while (counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    if (GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroEsp = GenerosEsp[counter];
@@ -201,7 +193,7 @@ namespace PruebaMenuMADU
             {
                 while (counter < GenerosEsp.Count && !generoEncontrado)
                 {
-                    if (GenerosEsp[counter].Nombre.Equals(Genero))
+                    if (GenerosEsp[counter].nombre.Equals(Genero))
                     {
                         generoEncontrado = true;
                         GeneroEng = GenerosEng[counter];
@@ -223,27 +215,27 @@ namespace PruebaMenuMADU
         private void BorrarPanelDatos()
         {
             //Elimino el form del panel datagridview en el caso que haya uno diferente
-            if (panelDatos.Controls.Count > 0)
+            if (pnlDatos.Controls.Count > 0)
             {
-                panelDatos.Controls.RemoveAt(0);
+                pnlDatos.Controls.RemoveAt(0);
             }
         }
 
         private void BorrarPanelModificar()
         {
             //Elimino el form del panel modificaciones en el caso que haya uno diferente
-            if (panelModificar.Controls.Count > 0)
+            if (pnlModificar.Controls.Count > 0)
             {
-                panelModificar.Controls.RemoveAt(0);
+                pnlModificar.Controls.RemoveAt(0);
             }
         }
 
         private void MostrarGridPreguntas()
         {
             //Muestro en el panel de DataGridViews el correspondiente a PreguntasEsp
-            DataGridViewPreguntas DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
+            DgvPreguntas = new DataGridViewPreguntas(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPregunta);
             DgvPreguntas.TopLevel = false;
-            panelDatos.Controls.Add(DgvPreguntas);
+            pnlDatos.Controls.Add(DgvPreguntas);
             DgvPreguntas.Show();
         }
 
@@ -252,24 +244,8 @@ namespace PruebaMenuMADU
             //Muestro en el panel de modificaciones el correspondiente a modificar una pregunta.
             ModificarPregunta = new ModificarPregunta(ObtenerNombreGeneros(), this);
             ModificarPregunta.TopLevel = false;
-            panelModificar.Controls.Add(ModificarPregunta);
+            pnlModificar.Controls.Add(ModificarPregunta);
             ModificarPregunta.Show();
-        }
-
-        private void MostrarGridPersonajes()
-        {
-            DataGridViewPersonajes DgvPersonajes = new DataGridViewPersonajes(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, ModificarPersonaje);
-            DgvPersonajes.TopLevel = false;
-            panelDatos.Controls.Add(DgvPersonajes);
-            DgvPersonajes.Show();
-        }
-
-        private void MostrarFormModificarPersonaje()
-        {
-            ModificarPersonaje = new ModificarPersonaje();
-            ModificarPersonaje.TopLevel = false;
-            panelModificar.Controls.Add(ModificarPersonaje);
-            ModificarPersonaje.Show();
         }
 
         #endregion
@@ -278,14 +254,12 @@ namespace PruebaMenuMADU
         #region
         private void ActivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = true;
-            buttonPreguntas.Enabled = true;
+            btnGenConfig.Enabled = true;
         }
 
         private void DesactivarBotonesOpciones()
         {
-            buttonPersonajes.Enabled = false;
-            buttonPreguntas.Enabled = false;
+            btnGenConfig.Enabled = false;
         }
 
         #endregion
@@ -299,7 +273,7 @@ namespace PruebaMenuMADU
 
             for(int i = 0; i < GenerosEsp.Count; i++)
             {
-                NombreGeneros.Add(GenerosEsp[i].Nombre);
+                NombreGeneros.Add(GenerosEsp[i].nombre);
             }
 
             return NombreGeneros;
@@ -324,7 +298,7 @@ namespace PruebaMenuMADU
         //Metodos Crear Fichero JSON
         #region
 
-        private void buttonGenerarJSON_Click(object sender, EventArgs e)
+        private void btnGenerarJSON_Click(object sender, EventArgs e)
         {
             CrearFicheroJson();
         }
@@ -347,20 +321,22 @@ namespace PruebaMenuMADU
 
         private void btnCrearPreguntas_Click(object sender, EventArgs e)
         {
-            CrearPreguntasForm cp = new CrearPreguntasForm();
+            CrearPreguntasForm cp = new CrearPreguntasForm(GenerosEsp, GenerosEng, this);
 
             cp.ShowDialog();
+
+            this.SetGeneros(cp.getArrays()[0],cp.getArrays()[1]);
+
+            //DgvPreguntas.RecargarDataGridView();
         }
 
-
-        private void buttAddGenre_Click(object sender, EventArgs e)
+        private void btnAddGenre_Click(object sender, EventArgs e)
         {
             CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng);
             cg.ShowDialog();
             if (cg.getCreatedGenre("esp") == null || cg.manualCancel)
             {
                 MessageBox.Show("No se ha añadido ningun genero", "Error en la creacion de Generos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
             }
             else
             {
@@ -368,9 +344,72 @@ namespace PruebaMenuMADU
                 this.GenerosEng.Add(cg.getCreatedGenre("eng"));
                 ObtenerComboBoxGeneros(GenerosEsp); //Recargo combo box de generos
                 Console.WriteLine(cg.getCreatedGenre("esp") + " " + cg.getCreatedGenre("eng"));
+                modificacion = true;
             }
 
         }
 
+        private void btnGestionarPersonajes_Click(object sender, EventArgs e)
+        {
+            FormPersonajesGenero f = new FormPersonajesGenero(this.GenerosEsp, this.GenerosEng, this);
+            f.ShowDialog();
+        }
+
+        private void btnGenConfig_Click(object sender, EventArgs e)
+        {
+            CrearGenero cg = new CrearGenero(this.GenerosEsp, this.GenerosEng, this.GeneroSeleccionadoEsp,this.GeneroSeleccionadoEng);
+            cg.ShowDialog();
+            if(cg.deleteGenre) //Si se ha eliminado un genero
+            {
+                MessageBox.Show("Se ha eliminado el genero" + this.GeneroSeleccionadoEsp.nombre, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.GenerosEsp = cg.ObtenerListaGeneros("esp");
+                this.GenerosEng = cg.ObtenerListaGeneros("eng");
+                ObtenerComboBoxGeneros(GenerosEsp);
+                modificacion = true;
+            }
+            else //Si ha habido una modificacion en un genero
+            {
+                this.GenerosEsp = cg.ObtenerListaGeneros("esp");
+                this.GenerosEng = cg.ObtenerListaGeneros("eng");
+                ObtenerComboBoxGeneros(GenerosEsp);
+                modificacion = true;
+            }
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            loginForm.Show();
+            this.Hide();
+        }
+
+        
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            Registro registro = new Registro();
+            registro.ShowDialog();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (modificacion == true)
+            {
+                DialogResult dialogResult = new DialogResult();
+                dialogResult = MessageBox.Show("¿Estas seguro que deseas salir? Hay cambios sin guardar", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    e.Cancel = false;
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

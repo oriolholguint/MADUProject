@@ -32,14 +32,14 @@ namespace PruebaMenuMADU
         private void InitializeComponent()
         {
             this.groupBoxLoginG = new System.Windows.Forms.GroupBox();
-            this.labelError = new System.Windows.Forms.Label();
-            this.buttonLogIn = new System.Windows.Forms.Button();
-            this.labelRegistro = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelMADU = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblRegistro = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.lblMADU = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.groupBoxLoginG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -47,120 +47,133 @@ namespace PruebaMenuMADU
             // 
             // groupBoxLoginG
             // 
-            this.groupBoxLoginG.Controls.Add(this.labelError);
-            this.groupBoxLoginG.Controls.Add(this.buttonLogIn);
-            this.groupBoxLoginG.Controls.Add(this.labelRegistro);
-            this.groupBoxLoginG.Controls.Add(this.textBoxPassword);
-            this.groupBoxLoginG.Controls.Add(this.textBoxUser);
-            this.groupBoxLoginG.Controls.Add(this.label3);
-            this.groupBoxLoginG.Controls.Add(this.label2);
-            this.groupBoxLoginG.Controls.Add(this.labelMADU);
+            this.groupBoxLoginG.Controls.Add(this.lblError);
+            this.groupBoxLoginG.Controls.Add(this.btnLogin);
+            this.groupBoxLoginG.Controls.Add(this.lblRegistro);
+            this.groupBoxLoginG.Controls.Add(this.txtPassword);
+            this.groupBoxLoginG.Controls.Add(this.txtUser);
+            this.groupBoxLoginG.Controls.Add(this.lblPassword);
+            this.groupBoxLoginG.Controls.Add(this.lblUser);
+            this.groupBoxLoginG.Controls.Add(this.lblMADU);
             this.groupBoxLoginG.Controls.Add(this.pictureBoxLogo);
-            this.groupBoxLoginG.Location = new System.Drawing.Point(12, 8);
+            this.groupBoxLoginG.Location = new System.Drawing.Point(16, 10);
+            this.groupBoxLoginG.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLoginG.Name = "groupBoxLoginG";
-            this.groupBoxLoginG.Size = new System.Drawing.Size(981, 622);
+            this.groupBoxLoginG.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxLoginG.Size = new System.Drawing.Size(1308, 766);
             this.groupBoxLoginG.TabIndex = 1;
             this.groupBoxLoginG.TabStop = false;
             // 
-            // labelError
+            // lblError
             // 
-            this.labelError.AutoSize = true;
-            this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(413, 510);
-            this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(188, 20);
-            this.labelError.TabIndex = 9;
-            this.labelError.Text = "¡Invalid user or Password!";
-            this.labelError.Visible = false;
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(551, 628);
+            this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(237, 25);
+            this.lblError.TabIndex = 9;
+            this.lblError.Text = "¡Invalid user or Password!";
+            this.lblError.Visible = false;
             // 
-            // buttonLogIn
+            // btnLogin
             // 
-            this.buttonLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogIn.Location = new System.Drawing.Point(398, 533);
-            this.buttonLogIn.Name = "buttonLogIn";
-            this.buttonLogIn.Size = new System.Drawing.Size(215, 60);
-            this.buttonLogIn.TabIndex = 7;
-            this.buttonLogIn.Text = "Log In";
-            this.buttonLogIn.UseVisualStyleBackColor = true;
-            this.buttonLogIn.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(531, 656);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(287, 74);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "Log In";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // labelRegistro
+            // lblRegistro
             // 
-            this.labelRegistro.AutoSize = true;
-            this.labelRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRegistro.Location = new System.Drawing.Point(430, 463);
-            this.labelRegistro.Name = "labelRegistro";
-            this.labelRegistro.Size = new System.Drawing.Size(162, 18);
-            this.labelRegistro.TabIndex = 6;
-            this.labelRegistro.Text = "Forgot your password?";
-            this.labelRegistro.Click += new System.EventHandler(this.labelRegistro_Click_1);
+            this.lblRegistro.AutoSize = true;
+            this.lblRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistro.Location = new System.Drawing.Point(573, 570);
+            this.lblRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRegistro.Name = "lblRegistro";
+            this.lblRegistro.Size = new System.Drawing.Size(203, 24);
+            this.lblRegistro.TabIndex = 6;
+            this.lblRegistro.Text = "Forgot your password?";
+            this.lblRegistro.Click += new System.EventHandler(this.lblRegistro_Click);
             // 
-            // textBoxPassword
+            // txtPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(383, 425);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(268, 20);
-            this.textBoxPassword.TabIndex = 5;
-            this.textBoxPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Location = new System.Drawing.Point(511, 523);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(356, 22);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // textBoxUser
+            // txtUser
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(382, 358);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(268, 20);
-            this.textBoxUser.TabIndex = 4;
+            this.txtUser.Location = new System.Drawing.Point(509, 441);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(356, 22);
+            this.txtUser.TabIndex = 4;
             // 
-            // label3
+            // lblPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(228, 419);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 28);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Password: ";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(304, 516);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(176, 34);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password: ";
             // 
-            // label2
+            // lblUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(289, 352);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "User: ";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(385, 433);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(102, 34);
+            this.lblUser.TabIndex = 2;
+            this.lblUser.Text = "User: ";
             // 
-            // labelMADU
+            // lblMADU
             // 
-            this.labelMADU.AutoSize = true;
-            this.labelMADU.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMADU.Location = new System.Drawing.Point(425, 288);
-            this.labelMADU.Name = "labelMADU";
-            this.labelMADU.Size = new System.Drawing.Size(168, 43);
-            this.labelMADU.TabIndex = 1;
-            this.labelMADU.Text = "M.A.D.U";
+            this.lblMADU.AutoSize = true;
+            this.lblMADU.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMADU.Location = new System.Drawing.Point(567, 354);
+            this.lblMADU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMADU.Name = "lblMADU";
+            this.lblMADU.Size = new System.Drawing.Size(212, 54);
+            this.lblMADU.TabIndex = 1;
+            this.lblMADU.Text = "M.A.D.U";
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Image = global::PruebaMenuMADU.Properties.Resources.logoAGeneral;
             this.pictureBoxLogo.ImageLocation = "";
-            this.pictureBoxLogo.Location = new System.Drawing.Point(386, 14);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(515, 17);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(254, 268);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(339, 330);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 646);
+            this.ClientSize = new System.Drawing.Size(1340, 795);
             this.Controls.Add(this.groupBoxLoginG);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.groupBoxLoginG.ResumeLayout(false);
             this.groupBoxLoginG.PerformLayout();
@@ -177,14 +190,14 @@ namespace PruebaMenuMADU
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxLoginG;
-        private System.Windows.Forms.Label labelError;
-        private System.Windows.Forms.Button buttonLogIn;
-        private System.Windows.Forms.Label labelRegistro;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.TextBox textBoxUser;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelMADU;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblRegistro;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lblMADU;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }

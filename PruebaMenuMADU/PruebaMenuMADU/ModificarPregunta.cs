@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,39 +19,39 @@ namespace PruebaMenuMADU
         Genero GeneroSeleccionadoEsp;
         Genero GeneroSeleccionadoEng;
 
+        //Se usa en el caso que el usuario quiera cambiar el genero de la pregunta
         Genero GeneroEspCambio = null;
         Genero GeneroEngCambio = null;
 
-        List<String> NombreGeneros;
-        Menu Menu;
- 
+        MainForm MainForm;
+
         public ModificarPregunta()
         {
             InitializeComponent();
         }
 
-        public ModificarPregunta(List<String> NombreGeneros, Menu Menu)
+        public ModificarPregunta(List<String> NombreGeneros, MainForm Menu)
         {
             InitializeComponent();
             RellenarComboBoxGeneros(NombreGeneros);
-            this.Menu = Menu;
+            this.MainForm = Menu;
         }
 
         public void setPregunta(Genero GeneroSeleccionadoEsp,
                                 Genero GeneroSeleccionadoEng,
-                                Pregunta PreguntaEsp, 
+                                Pregunta PreguntaEsp,
                                 Pregunta PreguntaEng)
         {
             this.GeneroSeleccionadoEsp = GeneroSeleccionadoEsp;
-            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng; 
+            this.GeneroSeleccionadoEng = GeneroSeleccionadoEng;
             this.PreguntaEsp = PreguntaEsp;
             this.PreguntaEng = PreguntaEng;
-            textBoxRespuesta3.Enabled = true;
-            textBoxRespuesta4.Enabled = true;
-            textBoxAnwser3.Enabled = true;
-            textBoxAnwser4.Enabled = true;
-            radioButtonRespuesta3.Enabled = true;
-            radioButtonRespuesta4.Enabled = true;
+            txtRespuesta3.Enabled = true;
+            txtRespuesta4.Enabled = true;
+            txtAnwser3.Enabled = true;
+            txtAnwser4.Enabled = true;
+            rdbRespuesta3.Enabled = true;
+            rdbRespuesta4.Enabled = true;
 
             RellenarDatosPregunta(PreguntaEsp, PreguntaEng);
         }
@@ -60,101 +61,118 @@ namespace PruebaMenuMADU
 
         private void RellenarDatosPregunta(Pregunta PreguntaEsp, Pregunta PreguntaEng)
         {
-            //CheckBox Tipo de Pregunta
-            if(PreguntaEsp.Respuestas.Length == 2)
+            if (PreguntaEsp != null)
             {
-                checkBoxTipoPregunta.Checked = true;
-
-                //Añado el texto de las Respuestas Esp
-                textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
-                textBoxRespuesta3.Text = "";
-                textBoxRespuesta4.Text = "";
-                textBoxRespuesta3.Enabled = false;
-                textBoxRespuesta4.Enabled = false;
-
-                //Añado el texto de las Respuestas Eng
-                textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
-                textBoxAnwser3.Text = "";
-                textBoxAnwser4.Text = "";
-                textBoxAnwser3.Enabled = false;
-                textBoxAnwser4.Enabled = false;
-
-                //Activa el radio button de la respuesta correcta
-                if (PreguntaEsp.Respuestas[0].EsCorrecta)
+                //CheckBox Tipo de Pregunta
+                if (PreguntaEsp.respuestas.Length == 2)
                 {
-                    radioButtonRespuesta1.Checked = true;
+                    cboTipoPregunta.Checked = true;
+
+                    //Añado el texto de las Respuestas Esp
+                    txtRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                    txtRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
+                    txtRespuesta3.Text = "";
+                    txtRespuesta4.Text = "";
+                    txtRespuesta1.Enabled = false;
+                    txtRespuesta2.Enabled = false;
+                    txtRespuesta3.Enabled = false;
+                    txtRespuesta4.Enabled = false;
+
+                    //Añado el texto de las Respuestas Eng
+                    txtAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                    txtAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
+                    txtAnwser3.Text = "";
+                    txtAnwser4.Text = "";
+                    txtAnwser1.Enabled = false;
+                    txtAnwser2.Enabled = false;
+                    txtAnwser3.Enabled = false;
+                    txtAnwser4.Enabled = false;
+
+                    //Activa el radio button de la respuesta correcta
+                    if (PreguntaEsp.respuestas[0].esCorrecta)
+                    {
+                        rdbRespuesta1.Checked = true;
+                    }
+                    else if (PreguntaEsp.respuestas[1].esCorrecta)
+                    {
+                        rdbRespuesta2.Checked = true;
+                    }
+
+                    rdbRespuesta3.Enabled = false;
+                    rdbRespuesta4.Enabled = false;
                 }
-                else if (PreguntaEsp.Respuestas[1].EsCorrecta)
+                else
                 {
-                    radioButtonRespuesta2.Checked = true;
-                }
+                    cboTipoPregunta.Checked = false;
 
-                radioButtonRespuesta3.Enabled = false;
-                radioButtonRespuesta4.Enabled = false;
-            }
-            else
-            {
-                checkBoxTipoPregunta.Checked = false;
+                    //Respuestas en Esp
+                    txtRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                    txtRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
+                    txtRespuesta3.Text = PreguntaEsp.respuestas[2].respuestaDescripcion;
+                    txtRespuesta4.Text = PreguntaEsp.respuestas[3].respuestaDescripcion;
 
-                //Respuestas en Esp
-                textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
-                textBoxRespuesta3.Text = PreguntaEsp.Respuestas[2].RespuestaDescripcion;
-                textBoxRespuesta4.Text = PreguntaEsp.Respuestas[3].RespuestaDescripcion;
+                    txtRespuesta1.Enabled = true;
+                    txtRespuesta2.Enabled = true;
+                    txtRespuesta3.Enabled = true;
+                    txtRespuesta4.Enabled = true;
 
-                //Respuestas en Eng
-                textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
-                textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
-                textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
+                    //Respuestas en Eng
+                    txtAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                    txtAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
+                    txtAnwser3.Text = PreguntaEng.respuestas[2].respuestaDescripcion;
+                    txtAnwser4.Text = PreguntaEng.respuestas[3].respuestaDescripcion;
 
-                radioButtonRespuesta3.Enabled = true;
-                radioButtonRespuesta4.Enabled = true;
+                    txtAnwser1.Enabled = true;
+                    txtAnwser2.Enabled = true;
+                    txtAnwser3.Enabled = true;
+                    txtAnwser4.Enabled = true;
 
-                //Activa el radio button de la respuesta correcta
-                SeleccionarRespuestaCorrecta(PreguntaEsp);
-            }
+                    rdbRespuesta3.Enabled = true;
+                    rdbRespuesta4.Enabled = true;
 
-            //Añado texto de la pregunta en Español
-            textBoxPregunta.Text = PreguntaEsp.PreguntaDescripcion;
-            //Añado texto de la pregunta en Ingles
-            textBoxQuestion.Text = PreguntaEng.PreguntaDescripcion;
-
-            //Añado informacion conjunta y utilizo la pregunta en español
-            if (PreguntaEsp.EsMayorEdad)
-            {
-                checkBoxMayorEdad.Checked = true;
-            }
-            else
-            {
-                checkBoxMayorEdad.Checked = false;
-            }
-
-            //Añado el genero de la pregunta en el combobox
-            Boolean GeneroEncontrado = false;
-            int counterGeneros = 0;
-            while (counterGeneros < comboBoxGenero.Items.Count && !GeneroEncontrado)
-            {
-                if (GeneroSeleccionadoEsp.Nombre.Equals(comboBoxGenero.Items[counterGeneros].ToString()))
-                {
-                    comboBoxGenero.SelectedIndex = counterGeneros;
-                    GeneroEncontrado = true;
+                    //Activa el radio button de la respuesta correcta
+                    SeleccionarRespuestaCorrecta(PreguntaEsp);
                 }
 
-                counterGeneros++;
-            }
+                //Añado texto de la pregunta en Español
+                txtPregunta.Text = PreguntaEsp.preguntaDescripcion;
+                //Añado texto de la pregunta en Ingles
+                txtQuestion.Text = PreguntaEng.preguntaDescripcion;
 
-            textBoxImagen.Text = PreguntaEsp.Imagen;
-            textBoxSonido.Text = PreguntaEsp.Sonido;
+                //Añado informacion conjunta y utilizo la pregunta en español
+                if (PreguntaEsp.esMayorEdad)
+                {
+                    cboMayorEdad.Checked = true;
+                }
+                else
+                {
+                    cboMayorEdad.Checked = false;
+                }
+
+                //Añado el genero de la pregunta en el combobox
+                Boolean GeneroEncontrado = false;
+                int counterGeneros = 0;
+                while (counterGeneros < cbxGenero.Items.Count && !GeneroEncontrado)
+                {
+                    if (GeneroSeleccionadoEsp.nombre.Equals(cbxGenero.Items[counterGeneros].ToString()))
+                    {
+                        cbxGenero.SelectedIndex = counterGeneros;
+                        GeneroEncontrado = true;
+                    }
+
+                    counterGeneros++;
+                }
+
+                txtImagen.Text = PreguntaEsp.imagen;
+                txtSonido.Text = PreguntaEsp.sonido;
+            }
         }
 
         private void RellenarComboBoxGeneros(List<String> NombreGeneros)
         {
             for (int i = 0; i < NombreGeneros.Count; i++)
             {
-                comboBoxGenero.Items.Add(NombreGeneros[i]);
+                cbxGenero.Items.Add(NombreGeneros[i]);
             }
         }
 
@@ -163,10 +181,10 @@ namespace PruebaMenuMADU
         //Evento Seleccion de Nuevo Genero
         #region
 
-        private void comboBoxGenero_SelectionChangeCommitted(object sender, EventArgs e)
+        private void cbxGenero_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            GeneroEspCambio = Menu.GetGeneroEsp(comboBoxGenero.SelectedItem.ToString());
-            GeneroEngCambio = Menu.GetGeneroEng(comboBoxGenero.SelectedItem.ToString());
+            GeneroEspCambio = MainForm.GetGeneroEsp(cbxGenero.SelectedItem.ToString());
+            GeneroEngCambio = MainForm.GetGeneroEng(cbxGenero.SelectedItem.ToString());
         }
 
         #endregion
@@ -174,7 +192,7 @@ namespace PruebaMenuMADU
         //Evento Eliminar Pregunta
         #region
 
-        private void buttonEliminar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Estas seguro que deseas eliminar la pregunta?", "Eliminar Pregunta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
@@ -185,11 +203,13 @@ namespace PruebaMenuMADU
 
         private void EliminarPregunta()
         {
-            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
+            if(PreguntaEsp != null)
+            {
+                GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
 
-            Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, GeneroSeleccionadoEsp.Nombre);
-            
+                MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, GeneroSeleccionadoEsp.nombre);
+            }
         }
 
         #endregion
@@ -197,7 +217,7 @@ namespace PruebaMenuMADU
         //Evento Limpiar Modificacion
         #region
 
-        private void buttonLimpiarModificacion_Click(object sender, EventArgs e)
+        private void btnLimpiarModificacion_Click(object sender, EventArgs e)
         {
             RellenarDatosPregunta(PreguntaEsp, PreguntaEng);
             CambiarTipoPregunta();
@@ -208,34 +228,54 @@ namespace PruebaMenuMADU
         //Evento Guardar Modificacion
         #region
 
-        private void buttonGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
-            Pregunta PreguntaEngToAdd = CrearPreguntaEng();
-
-            GeneroSeleccionadoEsp.Preguntas.Remove(PreguntaEsp);
-            GeneroSeleccionadoEng.Preguntas.Remove(PreguntaEng);
-
-            if (GeneroEspCambio != null)
+            if (PreguntaEsp != null && !ValidarCampos())
             {
-                //Se devuelven la lista de un nuevo genero
-                GeneroEspCambio.Preguntas.Add(PreguntaEspToAdd);
-                GeneroEngCambio.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
+                Pregunta PreguntaEspToAdd = CrearPreguntaEsp();
+                Pregunta PreguntaEngToAdd = CrearPreguntaEng();
+
+                if (GeneroEspCambio != null)
+                {
+                    if (!String.IsNullOrEmpty(txtImagen.Text))
+                    {
+                        ResourceManager.addImageToResources(txtImagen.Text);
+                    }
+                    if (!String.IsNullOrEmpty(txtSonido.Text))
+                    {
+                        ResourceManager.addSoundToResources(txtSonido.Text);
+                    }
+                    //Se devuelven la lista de un nuevo genero
+
+                    GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                    GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
+
+                    GeneroEspCambio.preguntas.Add(PreguntaEspToAdd);
+                    GeneroEngCambio.preguntas.Add(PreguntaEngToAdd);
+                    MainForm.SetPreguntasList(GeneroEspCambio, GeneroEngCambio, GeneroSeleccionadoEsp, GeneroSeleccionadoEng);
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(txtImagen.Text))
+                    {
+                        ResourceManager.addImageToResources(txtImagen.Text);
+                    }
+                    if (!String.IsNullOrEmpty(txtSonido.Text))
+                    {
+                        ResourceManager.addSoundToResources(txtSonido.Text);
+                    }
+
+                    GeneroSeleccionadoEsp.preguntas.Remove(PreguntaEsp);
+                    GeneroSeleccionadoEng.preguntas.Remove(PreguntaEng);
+
+                    //Se devuelven la lista de preguntasEsp del mismo generos
+                    GeneroSeleccionadoEsp.preguntas.Add(PreguntaEspToAdd);
+                    GeneroSeleccionadoEng.preguntas.Add(PreguntaEngToAdd);
+                    MainForm.SetPreguntasList(GeneroSeleccionadoEsp, GeneroSeleccionadoEng, cbxGenero.Text);
+                }
+
+                errorProvider1.Clear();
             }
-            else
-            {
-                //Se devuelven la lista de preguntas del mismo generos
-                GeneroSeleccionadoEsp.Preguntas.Add(PreguntaEspToAdd);
-                GeneroSeleccionadoEng.Preguntas.Add(PreguntaEngToAdd);
-                Menu.SetPreguntasList(GeneroSeleccionadoEsp.Preguntas, GeneroSeleccionadoEng.Preguntas, comboBoxGenero.Text);
-            }
-
-        }
-
-        public void ComprobarCamposVacios()
-        {
-
         }
 
         #endregion
@@ -243,108 +283,145 @@ namespace PruebaMenuMADU
         //Evento Cambiar Tipo Pregunta
         #region
 
-        private void checkBoxTipoPregunta_Click(object sender, EventArgs e)
+        private void cboTipoPreguntaTipoPregunta_Click(object sender, EventArgs e)
         {
-            CambiarTipoPregunta();   
+            CambiarTipoPregunta();
+            CleanErrorProvider();
         }
 
         private void CambiarTipoPregunta()
         {
-            if (checkBoxTipoPregunta.Checked == true)
+            if (PreguntaEsp != null)
             {
-                //Si alguno de los radiobuttons no disponibles estan seleccionados, se selecciona el primer radio button.
-                if (radioButtonRespuesta3.Enabled == true || radioButtonRespuesta4.Enabled == true)
+                if (cboTipoPregunta.Checked == true)
                 {
-                    radioButtonRespuesta1.Checked = true;
-                }
-                //Añado las respuestas disponibles
-                textBoxRespuesta1.Text = "Verdadero";
-                textBoxRespuesta2.Text = "Falso";
-                textBoxAnwser1.Text = "True";
-                textBoxAnwser2.Text = "False";
-                //Deshabilito opcion de escribir en textbox no necesarios
-                textBoxRespuesta3.Enabled = false;
-                textBoxRespuesta4.Enabled = false;
-                textBoxAnwser3.Enabled = false;
-                textBoxAnwser4.Enabled = false;
-                //Borro el texto que hay en los textbox no necesarios
-                textBoxAnwser3.Text = "";
-                textBoxAnwser4.Text = "";
-                textBoxRespuesta3.Text = "";
-                textBoxRespuesta4.Text = "";
-                //Deshabilito la opcion de marcar radio buttons no necesarios.
-                radioButtonRespuesta3.Enabled = false;
-                radioButtonRespuesta4.Enabled = false;
-                radioButtonRespuesta3.Checked = false;
-                radioButtonRespuesta4.Checked = false;
+                    //Si alguno de los radiobuttons no disponibles estan seleccionados, se selecciona el primer radio button.
+                    if (rdbRespuesta3.Enabled == true || rdbRespuesta4.Enabled == true)
+                    {
+                        rdbRespuesta1.Checked = true;
+                    }
+                    //Añado las respuestas disponibles
+                    txtRespuesta1.Text = "Verdadero";
+                    txtRespuesta2.Text = "Falso";
+                    txtAnwser1.Text = "True";
+                    txtAnwser2.Text = "False";
+                    //Deshabilito opcion de escribir en textbox no necesarios
+                    txtRespuesta1.Enabled = false;
+                    txtRespuesta2.Enabled = false;
+                    txtRespuesta3.Enabled = false;
+                    txtRespuesta4.Enabled = false;
+                    txtAnwser1.Enabled = false;
+                    txtAnwser2.Enabled = false;
+                    txtAnwser3.Enabled = false;
+                    txtAnwser4.Enabled = false;
+                    //Borro el texto que hay en los textbox no necesarios
+                    txtAnwser3.Text = "";
+                    txtAnwser4.Text = "";
+                    txtRespuesta3.Text = "";
+                    txtRespuesta4.Text = "";
+                    //Deshabilito la opcion de marcar radio buttons no necesarios.
+                    rdbRespuesta3.Enabled = false;
+                    rdbRespuesta4.Enabled = false;
+                    rdbRespuesta3.Checked = false;
+                    rdbRespuesta4.Checked = false;
 
+                }
+                else
+                {
+                    //Si la pregunta original es de 2 respuestas entrara aqui
+                    if (PreguntaEsp.respuestas.Length == 2)
+                    {
+                        //Vaciamos los campos de textos de la pregunta 1 y 2
+                        txtRespuesta1.Text = "";
+                        txtRespuesta2.Text = "";
+                        txtAnwser1.Text = "";
+                        txtAnwser2.Text = "";
+                        //Se activa las respuestas 3 y 4, ya que el tipo se cambia de 2 a 4 respuestas
+                        txtRespuesta1.Enabled = true;
+                        txtRespuesta2.Enabled = true;
+                        txtRespuesta3.Enabled = true;
+                        txtRespuesta4.Enabled = true;
+                        txtAnwser1.Enabled = true;
+                        txtAnwser2.Enabled = true;
+                        txtAnwser3.Enabled = true;
+                        txtAnwser4.Enabled = true;
+                        //Se activa los radiobuttons de las respuestas 3 y 4
+                        rdbRespuesta3.Enabled = true;
+                        rdbRespuesta4.Enabled = true;
+
+                        SeleccionarRespuestaCorrecta(PreguntaEsp);
+                    }
+                    else //Si la pregunta original es de 4 respuestas entrara aqui
+                    {
+                        //Se coloca el texto de la pregunta en los text box
+                        txtRespuesta1.Text = PreguntaEsp.respuestas[0].respuestaDescripcion;
+                        txtRespuesta2.Text = PreguntaEsp.respuestas[1].respuestaDescripcion;
+                        txtAnwser1.Text = PreguntaEng.respuestas[0].respuestaDescripcion;
+                        txtAnwser2.Text = PreguntaEng.respuestas[1].respuestaDescripcion;
+                        txtRespuesta3.Text = PreguntaEsp.respuestas[2].respuestaDescripcion;
+                        txtRespuesta4.Text = PreguntaEsp.respuestas[3].respuestaDescripcion;
+                        txtAnwser3.Text = PreguntaEng.respuestas[2].respuestaDescripcion;
+                        txtAnwser4.Text = PreguntaEng.respuestas[3].respuestaDescripcion;
+                        //Se activa los radiobuttons de las respuestas 3 y 4
+                        rdbRespuesta3.Enabled = true;
+                        rdbRespuesta4.Enabled = true;
+                        txtRespuesta1.Enabled = true;
+                        txtRespuesta2.Enabled = true;
+                        txtRespuesta3.Enabled = true;
+                        txtRespuesta4.Enabled = true;
+                        txtAnwser1.Enabled = true;
+                        txtAnwser2.Enabled = true;
+                        txtAnwser3.Enabled = true;
+                        txtAnwser4.Enabled = true;
+
+                        SeleccionarRespuestaCorrecta(PreguntaEsp);
+                    }
+                }
             }
-            else
+        }
+
+        private void CleanErrorProvider()
+        {
+            TextBox[] textBoxes = { txtAnwser1, txtAnwser2, txtAnwser3, txtAnwser4, txtRespuesta1, txtRespuesta2,
+                txtRespuesta3, txtRespuesta4};
+
+            for(int i = 0; i < textBoxes.Length; i++)
             {
-                //Si la pregunta original es de 2 respuestas entrara aqui
-                if (PreguntaEsp.Respuestas.Length == 2)
-                {
-                    //Vaciamos los campos de textos de la pregunta 1 y 2
-                    textBoxRespuesta1.Text = "";
-                    textBoxRespuesta2.Text = "";
-                    textBoxAnwser1.Text = "";
-                    textBoxAnwser2.Text = "";
-                    //Se activa las respuestas 3 y 4, ya que el tipo se cambia de 2 a 4 respuestas
-                    textBoxRespuesta3.Enabled = true;
-                    textBoxRespuesta4.Enabled = true;
-                    textBoxAnwser3.Enabled = true;
-                    textBoxAnwser4.Enabled = true;
-                    //Se activa los radiobuttons de las respuestas 3 y 4
-                    radioButtonRespuesta3.Enabled = true;
-                    radioButtonRespuesta4.Enabled = true;
-
-                    SeleccionarRespuestaCorrecta(PreguntaEsp);
-                }
-                else //Si la pregunta original es de 4 respuestas entrara aqui
-                {
-                    //Se coloca el texto de la pregunta en los text box
-                    textBoxRespuesta1.Text = PreguntaEsp.Respuestas[0].RespuestaDescripcion;
-                    textBoxRespuesta2.Text = PreguntaEsp.Respuestas[1].RespuestaDescripcion;
-                    textBoxAnwser1.Text = PreguntaEng.Respuestas[0].RespuestaDescripcion;
-                    textBoxAnwser2.Text = PreguntaEng.Respuestas[1].RespuestaDescripcion;
-                    textBoxRespuesta3.Text = PreguntaEsp.Respuestas[2].RespuestaDescripcion;
-                    textBoxRespuesta4.Text = PreguntaEsp.Respuestas[3].RespuestaDescripcion;
-                    textBoxAnwser3.Text = PreguntaEng.Respuestas[2].RespuestaDescripcion;
-                    textBoxAnwser4.Text = PreguntaEng.Respuestas[3].RespuestaDescripcion;
-                    //Se activa los radiobuttons de las respuestas 3 y 4
-                    textBoxRespuesta3.Enabled = true;
-                    textBoxRespuesta4.Enabled = true;
-                    textBoxAnwser3.Enabled = true;
-                    textBoxAnwser4.Enabled = true;
-                    radioButtonRespuesta3.Enabled = true;
-                    radioButtonRespuesta4.Enabled = true;
-
-                    SeleccionarRespuestaCorrecta(PreguntaEsp);
-                }
+                errorProvider1.SetError(textBoxes[i], null);
             }
         }
 
         #endregion
 
-        //Metodos Creacion Objetos Nuevas Preguntas Modificadas
+        //Metodos Creacion Objetos Nuevas preguntas Modificadas
         #region
 
         private Pregunta CrearPreguntaEsp()
         {
-            Pregunta Pregunta = new Pregunta(); 
+            Pregunta Pregunta = new Pregunta();
 
-            Pregunta.PreguntaDescripcion = textBoxPregunta.Text;
-            if (checkBoxMayorEdad.Checked == true)
+            Pregunta.preguntaDescripcion = txtPregunta.Text;
+            if (cboMayorEdad.Checked == true)
             {
-                Pregunta.EsMayorEdad = true;
+                Pregunta.esMayorEdad = true;
             }
             else
             {
-                Pregunta.EsMayorEdad = false;
+                Pregunta.esMayorEdad = false;
             }
-            Pregunta.Imagen = textBoxImagen.Text;
-            Pregunta.Sonido = textBoxSonido.Text;
-            Pregunta.Respuestas = CrearRespuestaEsp();
+
+            if (!String.IsNullOrEmpty(txtImagen.Text))
+            {
+                String imageName = txtImagen.Text.Split('\\').Last();
+                Pregunta.imagen = imageName;
+            }
+
+            if (!String.IsNullOrEmpty(txtSonido.Text))
+            {
+                String soundName = txtSonido.Text.Split('\\').Last();
+                Pregunta.sonido = soundName;
+            }
+            Pregunta.respuestas = CrearRespuestaEsp();
             GuardarRespuestaCorrecta(Pregunta);
 
             return Pregunta;
@@ -354,18 +431,28 @@ namespace PruebaMenuMADU
         {
             Pregunta Pregunta = new Pregunta();
 
-            Pregunta.PreguntaDescripcion = textBoxQuestion.Text;
-            if (checkBoxMayorEdad.Checked == true)
+            Pregunta.preguntaDescripcion = txtQuestion.Text;
+            if (cboMayorEdad.Checked == true)
             {
-                Pregunta.EsMayorEdad = true;
+                Pregunta.esMayorEdad = true;
             }
             else
             {
-                Pregunta.EsMayorEdad = false;
+                Pregunta.esMayorEdad = false;
             }
-            Pregunta.Imagen = textBoxImagen.Text;
-            Pregunta.Sonido = textBoxSonido.Text;
-            Pregunta.Respuestas = CrearRespuestasEng();
+
+            if (!String.IsNullOrEmpty(txtImagen.Text))
+            {
+                String imageName = txtImagen.Text.Split('\\').Last();
+                Pregunta.imagen = imageName;
+            }
+
+            if (!String.IsNullOrEmpty(txtSonido.Text))
+            {
+                String soundName = txtSonido.Text.Split('\\').Last();
+                Pregunta.sonido = soundName;
+            }
+            Pregunta.respuestas = CrearRespuestasEng();
             GuardarRespuestaCorrecta(Pregunta);
 
             return Pregunta;
@@ -376,23 +463,23 @@ namespace PruebaMenuMADU
             Respuesta[] Respuestas;
             int CantidadRespuestas = 4;
 
-            if (checkBoxTipoPregunta.Checked == true)
+            if (cboTipoPregunta.Checked == true)
             {
                 CantidadRespuestas = 2;
             }
 
             Respuestas = new Respuesta[CantidadRespuestas];
 
-            Respuesta Respuesta1 = new Respuesta(textBoxAnwser1.Text, false);
-            Respuesta Respuesta2 = new Respuesta(textBoxAnwser2.Text, false);
+            Respuesta Respuesta1 = new Respuesta(txtAnwser1.Text, false);
+            Respuesta Respuesta2 = new Respuesta(txtAnwser2.Text, false);
 
             Respuestas[0] = Respuesta1;
             Respuestas[1] = Respuesta2;
 
             if (CantidadRespuestas == 4)
             {
-                Respuesta Respuesta3 = new Respuesta(textBoxAnwser3.Text, false);
-                Respuesta Respuesta4 = new Respuesta(textBoxAnwser4.Text, false);
+                Respuesta Respuesta3 = new Respuesta(txtAnwser3.Text, false);
+                Respuesta Respuesta4 = new Respuesta(txtAnwser4.Text, false);
 
                 Respuestas[2] = Respuesta3;
                 Respuestas[3] = Respuesta4;
@@ -406,23 +493,23 @@ namespace PruebaMenuMADU
             Respuesta[] Respuestas;
             int CantidadRespuestas = 4;
 
-            if (checkBoxTipoPregunta.Checked == true)
+            if (cboTipoPregunta.Checked == true)
             {
                 CantidadRespuestas = 2;
             }
 
             Respuestas = new Respuesta[CantidadRespuestas];
 
-            Respuesta Respuesta1 = new Respuesta(textBoxRespuesta1.Text, false);
-            Respuesta Respuesta2 = new Respuesta(textBoxRespuesta2.Text, false);
+            Respuesta Respuesta1 = new Respuesta(txtRespuesta1.Text, false);
+            Respuesta Respuesta2 = new Respuesta(txtRespuesta2.Text, false);
 
             Respuestas[0] = Respuesta1;
             Respuestas[1] = Respuesta2;
 
             if (CantidadRespuestas == 4)
             {
-                Respuesta Respuesta3 = new Respuesta(textBoxRespuesta3.Text, false);
-                Respuesta Respuesta4 = new Respuesta(textBoxRespuesta4.Text, false);
+                Respuesta Respuesta3 = new Respuesta(txtRespuesta3.Text, false);
+                Respuesta Respuesta4 = new Respuesta(txtRespuesta4.Text, false);
 
                 Respuestas[2] = Respuesta3;
                 Respuestas[3] = Respuesta4;
@@ -433,21 +520,21 @@ namespace PruebaMenuMADU
 
         private void GuardarRespuestaCorrecta(Pregunta Pregunta)
         {
-            if(radioButtonRespuesta1.Checked == true)
+            if(rdbRespuesta1.Checked == true)
             {
-                Pregunta.Respuestas[0].EsCorrecta = true;
+                Pregunta.respuestas[0].esCorrecta = true;
             }
-            else if(radioButtonRespuesta2.Checked == true)
+            else if(rdbRespuesta2.Checked == true)
             {
-                Pregunta.Respuestas[1].EsCorrecta = true;
+                Pregunta.respuestas[1].esCorrecta = true;
             }
-            else if(radioButtonRespuesta3.Checked == true)
+            else if(rdbRespuesta3.Checked == true)
             {
-                Pregunta.Respuestas[2].EsCorrecta = true;
+                Pregunta.respuestas[2].esCorrecta = true;
             }
-            else if(radioButtonRespuesta4.Checked == true)
+            else if(rdbRespuesta4.Checked == true)
             {
-                Pregunta.Respuestas[3].EsCorrecta = true;
+                Pregunta.respuestas[3].esCorrecta = true;
             }
         }
 
@@ -456,23 +543,23 @@ namespace PruebaMenuMADU
             Boolean RespuestaEncontrada = false;
             int counterRespuestas = 0;
 
-            while (!RespuestaEncontrada && counterRespuestas < PreguntaEsp.Respuestas.Count())
+            while (!RespuestaEncontrada && counterRespuestas < PreguntaEsp.respuestas.Count())
             {
-                if (PreguntaEsp.Respuestas[counterRespuestas].EsCorrecta == true)
+                if (PreguntaEsp.respuestas[counterRespuestas].esCorrecta == true)
                 {
                     switch (counterRespuestas + 1)
                     {
                         case 1:
-                            radioButtonRespuesta1.Checked = true;
+                            rdbRespuesta1.Checked = true;
                             break;
                         case 2:
-                            radioButtonRespuesta2.Checked = true;
+                            rdbRespuesta2.Checked = true;
                             break;
                         case 3:
-                            radioButtonRespuesta3.Checked = true;
+                            rdbRespuesta3.Checked = true;
                             break;
                         case 4:
-                            radioButtonRespuesta4.Checked = true;
+                            rdbRespuesta4.Checked = true;
                             break;
                     }
 
@@ -483,8 +570,70 @@ namespace PruebaMenuMADU
             }
         }
 
+
         #endregion
 
-        
+        public void ActivarBotonesOpciones()
+        {
+            btnGuardar.Enabled = true;
+            btnLimpiarModificacion.Enabled = true;
+            btnEliminar.Enabled = true;
+        }
+
+        private Boolean ValidarCampos()
+        {
+            Boolean ErrorEncontrado = false;
+
+            TextBox[] textBoxes = { txtAnwser1, txtAnwser2, txtAnwser3, txtAnwser4, txtRespuesta1, txtRespuesta2, 
+                txtRespuesta3, txtRespuesta4, txtPregunta, txtQuestion };
+
+            for(int i = 0; i < textBoxes.Length; i++)
+            {
+                if (String.IsNullOrEmpty(textBoxes[i].Text))
+                {
+                    if (textBoxes[i].Enabled == true)
+                    {
+                        errorProvider1.SetError(textBoxes[i], "El campo no puede quedar vacio");
+                        ErrorEncontrado = true;
+                    }
+                }
+            }
+
+            return ErrorEncontrado;
+        }
+
+        private void btnAbrirFicherosImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ImagenSeleccionada = new OpenFileDialog();
+            ImagenSeleccionada.Filter = "Archivos de Imagen(*.jpg)(*.jpeg)(*.png)(*.gif)|*.jpg; *jpeg; *.png; *.png";
+           
+
+            if (ImagenSeleccionada.ShowDialog() == DialogResult.OK)
+            {
+                txtImagen.Text = ImagenSeleccionada.FileName;
+            }
+        }
+
+        private void btnAbrirFicherosSonido_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog SonidoSeleccionado = new OpenFileDialog();
+            SonidoSeleccionado.Filter = "Archivos de Audio (*.mp3)(*.wav)(*.wma)|*.mp3; *.wav; *.wma";
+
+            if (SonidoSeleccionado.ShowDialog() == DialogResult.OK)
+            {
+                txtSonido.Text = SonidoSeleccionado.FileName;
+
+            }
+        }
+
+        private void btnEliminarImagen_Click(object sender, EventArgs e)
+        {
+            txtImagen.Text = "";
+        }
+
+        private void btnEliminarSonido_Click(object sender, EventArgs e)
+        {
+            txtSonido.Text = "";
+        }
     }
 }

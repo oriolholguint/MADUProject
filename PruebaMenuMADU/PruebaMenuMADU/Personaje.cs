@@ -8,11 +8,11 @@ namespace PruebaMenuMADU
 {
     public class Personaje
     {
-        public String Nombre { get; set; }
+        public String nombre { get; set; }
 
-        public String Imagen { get; set; }
+        public String imagen { get; set; }
 
-        public int PosicionRanking { get; set; }
+        public int posicionRanking { get; set; }
 
         public Personaje()
         {
@@ -21,9 +21,9 @@ namespace PruebaMenuMADU
 
         public Personaje(String Nombre, String Imagen, int PosicionRanking)
         {
-            this.Nombre = Nombre;
-            this.Imagen = Imagen;
-            this.PosicionRanking = PosicionRanking;
+            this.nombre = Nombre;
+            this.imagen = Imagen;
+            this.posicionRanking = PosicionRanking;
         }
     }
 }
