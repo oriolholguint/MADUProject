@@ -1090,7 +1090,7 @@
   },
   {
     "nombre": "Pop",
-    "musicaFondo": "musica_rock.mp3",
+    "musicaFondo": "musica_pop.mp3",
     "imagenFondo": "fondo_pop.jpg",
     "imagenMenu": "PopMenu.jpg",
     "personajes": [
@@ -3372,7 +3372,7 @@
   },
   {
     "nombre": "Rock",
-    "musicaFondo": "iphone-notificacion.mp3",
+    "musicaFondo": "musica_rock.mp3",
     "imagenFondo": "fondo_rock.jpg",
     "imagenMenu": "RockMenu.jpg",
     "personajes": [
