@@ -9,6 +9,6 @@ GENERO MIX
 Los recursos del Genero Mix tendrán que llamarse de la siguiente manera.
 Imagen Fondo Pregunta = fondo_mix.jpg
 Imagen Fondo Menu     = fondo_menu_mix.jpg
-Musica 		      = msuica_mix.mp3	
+Musica 		      = musica_mix.mp3
 
 Las imagenes se guardar en la carpeta images y el sonido en la carpeta sound.
